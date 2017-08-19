@@ -4,65 +4,65 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"io/ioutil"
+	"log"
+	"os"
 )
 
 func main() {
-	// get bytes from file
-	b, err := ioutil.ReadFile("uniquewords.txt")
+	// runes in alphabetical order
+	runes := []rune{
+		'a', 'ā', 'æ', 'b', 'ч', 'd', 'ð',
+		'e', 'ē', 'f', 'g', 'h', 'i', 'ī', 'j',
+		'k', 'l', 'm', 'n', 'o', 'p', 'r', 's',
+		'ʃ', 't', 'θ', 'u', 'ū', 'v', 'w', 'y', 'z', 'ʒ',
+	}
+
+	// create map of all runes to count (same runes, so copy above map)
+	var allRunes = make(map[rune]int)
+	// create map of word-initial runes to count
+	var wordInit = make(map[rune]int)
+
+	for _, k := range runes {
+		allRunes[k] = 0
+		wordInit[k] = 0
+	}
+
+	// get first letter of each word for counts
+	file, err := os.Open("uniquewords.txt")
 	if err != nil {
-		fmt.Print(err)
+		log.Fatal(err)
 	}
+	defer file.Close()
 
-	// create string from bytes
-	words := string(b)
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		current := scanner.Text()
 
-	// create list of runes to count
-	runes := map[rune]int{
-		'a': 0,
-		'ā': 0,
-		'æ': 0,
-		'b': 0,
-		'd': 0,
-		'e': 0,
-		'ē': 0,
-		'f': 0,
-		'g': 0,
-		'h': 0,
-		'i': 0,
-		'ī': 0,
-		'k': 0,
-		'l': 0,
-		'm': 0,
-		'n': 0,
-		'o': 0,
-		'p': 0,
-		'r': 0,
-		's': 0,
-		'ʃ': 0,
-		't': 0,
-		'u': 0,
-		'ū': 0,
-		'v': 0,
-		'w': 0,
-		'y': 0,
-		'z': 0,
-		'ʒ': 0,
-	}
-
-	// for each rune in the string
-	for _, element := range words {
-		// if it's in the map
-		if _, ok := runes[element]; ok {
-			//increment its count
-			runes[element]++
+		// add all letters to map of total letter counts
+		index := 0
+		for _, element := range current {
+			// for each rune in the string, if it's in the map
+			if _, ok := allRunes[element]; ok {
+				//increment its count
+				allRunes[element]++
+				// if first, add first letter to map of first letter counts
+				if index == 0 {
+					wordInit[element]++
+					index++
+				}
+			}
 		}
 	}
 
-	// print counts for each rune
-	for r, k := range runes {
-		fmt.Println(string(r), ": ", k)
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
 	}
 
+	// print counts for each rune
+	fmt.Println("rune,total,initial")
+	for _, k := range runes {
+		fmt.Print(string(k), ",", allRunes[k], ",", wordInit[k], "\n")
+	}
 }
