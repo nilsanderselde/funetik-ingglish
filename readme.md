@@ -100,13 +100,13 @@ Dhu alfibet for Fonetik Ingliš has 30 letørz (4 mór dhan trudišinul Ingliš)
 
 Inførmášin rigording dhéz letørz and dhu similerités bitúén fonetik and trudišinul speling can bé faúnd on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing).
 
->*(Information regarding these letters and the similarities between phonetic and traditional spelling can be found on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing).))*
+>*Information regarding these letters and the similarities between phonetic and traditional spelling can be found on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing).)*
 
 ## Úí iz H dhu Last Letør? (Why Is H the Last Letter?)
 
 Bikuz it iz éúzd in 'th' (az in 'think') and 'dh' (as in 'dhu') and Í thot dhóz saúndz šød hav dher ón sekšinz in dhu dikšineré. Dhá dón't ukør frékúintlé inuf tú dikšineré to dizørv dher ón keriktør (and ét førdhør uúá at dhu kébórd's simbul kéz).
 
->*(Because it is used in 'th' (as in 'think') and 'dh' (as in 'the') and I thought those sounds should have their own sections in the dictionary. They don't occur frequently enough to deserve their own character (and eat further away at the keyboard's symbol keys).)*
+>*Because it is used in 'th' (as in 'think') and 'dh' (as in 'the') and I thought those sounds should have their own sections in the dictionary. They don't occur frequently enough to deserve their own character (and eat further away at the keyboard's symbol keys.*
 
 ## Lísinz (License)
 
@@ -116,42 +116,43 @@ Bikuz it iz éúzd in 'th' (az in 'think') and 'dh' (as in 'dhu') and Í thot dh
 
 U kulekšin uv túlz dhat Í hav éúzd tú úørk on u fonetik órthogrifé fór dhu Ingliš lengúij.
 
->*(A collection of tools that I have used to work on a phonetic orthography for the English language.)*
+>*A collection of tools that I have used to work on a phonetic orthography for the English language.*
 
-###distance.py
+### distance.py
 
 Requires NLTK. Calculates Levenshtein distance between fonetik and traditional spellings.
 
-###sort.py
+### sort.py
 
 Sorts a text file using the first character in each line according to the fonetik alphabet.
 
-###runestats.go
+### runestats.go
 
 Prints in the console character count information for all fonetik alphabet letters in a given text file. Also counts word-initial occurrences.
 
-###ingfon.klc
+### ingfon.klc
 
 Fonetik keyboard layout for Microsoft Keyboard Layout Creator 1.4
 
-###ingfon/setup.exe
+### ingfon/setup.exe
 
 Setup file for Windows Fonetik keyboard. Once installed, press Ctrl+Shift to switch between layouts.
 
 ## Kébórd Láaút
 
-#ž1234567890-=
+# ž1234567890-=
 
-#óúertéuiopøš\
+# óúertéuiopøš\
 
-#asdfghjklá'
+# asdfghjklá'
 
-#zícvbnm,./
+# zícvbnm,./
 
-#Ž!@#$%^&*()_+
 
-#ÓÚERTÉUIOPØŠ|
+# Ž!@#$%^&*()_+
 
-#ASDFGHJKLÁ"
+# ÓÚERTÉUIOPØŠ|
 
-#ZÍCVBNM;:?
+# ASDFGHJKLÁ"
+
+# ZÍCVBNM;:?
