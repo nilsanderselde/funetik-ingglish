@@ -1,5 +1,7 @@
-// nils elde
-// count occurrences of characters in a text file given an alphabet
+// Nils Elde
+// https://gitlab.com/nilsanderselde
+// Count occurrences of characters in a text file given an alphabet.
+// Used to determine location of new keys in keyboard layout.
 
 package main
 
@@ -11,26 +13,25 @@ import (
 )
 
 func main() {
-	// runes in alphabetical order
+	// Runes in alphabetical order
 	runes := []rune{
-		'a', 'ā', 'æ', 'b', 'ч', 'd', 'ð',
-		'e', 'ē', 'f', 'g', 'h', 'i', 'ī', 'j',
-		'k', 'l', 'm', 'n', 'o', 'p', 'r', 's',
-		'ʃ', 't', 'θ', 'u', 'ū', 'v', 'w', 'y', 'z', 'ʒ',
+		'a', 'á', 'b', 'c', 'd', 'e', 'é', 'f', 'g', 'i', 'í', 'j', 'k', 'l', 'm',
+		'n', 'o', 'ó', 'ø', 'p', 'r', 's', 'š', 't', 'u', 'ú', 'v', 'z', 'ž', 'h',
 	}
 
-	// create map of all runes to count (same runes, so copy above map)
+	// Create map of all runes to count (same runes, so copy above map)
 	var allRunes = make(map[rune]int)
-	// create map of word-initial runes to count
+	// Create map of word-initial runes to count
 	var wordInit = make(map[rune]int)
 
+	// Initialize maps
 	for _, k := range runes {
 		allRunes[k] = 0
 		wordInit[k] = 0
 	}
 
-	// get first letter of each word for counts
-	file, err := os.Open("uniquewords.txt")
+	// Get first letter of each word for counts
+	file, err := os.Open("dictionary.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -40,14 +41,14 @@ func main() {
 	for scanner.Scan() {
 		current := scanner.Text()
 
-		// add all letters to map of total letter counts
+		// Add all letters to map of total letter counts
 		index := 0
 		for _, element := range current {
-			// for each rune in the string, if it's in the map
+			// For each rune in the string, if it's in the map...
 			if _, ok := allRunes[element]; ok {
-				//increment its count
+				// ...increment its count
 				allRunes[element]++
-				// if first, add first letter to map of first letter counts
+				// If first, add first letter to map of first letter counts
 				if index == 0 {
 					wordInit[element]++
 					index++
@@ -55,12 +56,11 @@ func main() {
 			}
 		}
 	}
-
 	if err := scanner.Err(); err != nil {
 		log.Fatal(err)
 	}
 
-	// print counts for each rune
+	// Print counts for each rune
 	fmt.Println("rune,total,initial")
 	for _, k := range runes {
 		fmt.Print(string(k), ",", allRunes[k], ",", wordInit[k], "\n")
