@@ -5,8 +5,8 @@ Vøržin 1 *(Version 1)*
 ## Intrudukšin *(Introduction)*
 
 Aftør studéing Spaniš, Rušin, and Finiš, I cám tú réilíz just haú komplikátid and caúntørintúitiv aúr alfibet and speling sistim for Umerikin Ingliš iz.
-
-Transcription: >! *(After studying Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is.)*
+Transcription:
+>! *(After studying Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is.)*
 
 Í disídid tú trí tú réúørk it in u úá dhat is cunsistint and intúitiv, léving thingz as uncánjd as posibul.
 
