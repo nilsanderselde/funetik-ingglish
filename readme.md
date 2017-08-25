@@ -140,19 +140,8 @@ Setup file for Windows Fonetik keyboard. Once installed, press Ctrl+Shift to swi
 
 ## Kébórd Láaút
 
-# ž1234567890-=
+![Kébord](https://gitlab.com/nilsanderselde/fonetik-inglish/raw/master/keyboard.png)
 
-# óúertéuiopøš\
+![Kébord úith Shift prest](https://gitlab.com/nilsanderselde/fonetik-inglish/raw/master/keyboard_shift.png)
 
-# asdfghjklá'
-
-# zícvbnm,./
-
-
-# Ž!@#$%^&*()_+
-
-# ÓÚERTÉUIOPØŠ|
-
-# ASDFGHJKLÁ"
-
-# ZÍCVBNM;:?
+![Kébord úith Caps Lock prest](https://gitlab.com/nilsanderselde/fonetik-inglish/raw/master/keyboard_caps.png)
