@@ -5,38 +5,38 @@ Vøržin 1 *(Version 1)*
 ## Intrudukšin *(Introduction)*
 
 Aftør studéing Spaniš, Rušin, and Finiš, I cám tú réilíz just haú komplikátid and caúntørintúitiv aúr alfibet and speling sistim for Umerikin Ingliš iz.
-Transcription:
->! *(After studying Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is.)*
+
+>*After studying Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is.*
 
 Í disídid tú trí tú réúørk it in u úá dhat is cunsistint and intúitiv, léving thingz as uncánjd as posibul.
 
-*(I decided to try to rework it in a way that is consistent and intuitive, leaving things as unchanged as possible.)*
+*I decided to try to rework it in a way that is consistent and intuitive, leaving things as unchanged as possible.*
 
 Í úontid tú dú dhis só dhat ekstru nolij izn't rikúírd tú pik up u bøk and réd evré úørd kurektlé.
 
-*(I wanted to do this so that extra knowledge isn't required to pick up a book and read every word correctly.)*
+*I wanted to do this so that extra knowledge isn't required to pick up a book and read every word correctly.*
 
 Cildrin and fórin spékørz uv Ingliš hav trubul disíføring dhu labirinthéin and orbitreré sistim uv "rúlz" úic orn't rilé rúlz and unnórmulízd fórin spelingz úic stik aút lík u sór thum.
 
-*(Children and foreign speakers of English have trouble decyphering the labirinthian and arbitrary system of "rules" which aren't really rules and unnormalized foreign spellings which stick out like a sore thumb.)*
+*Children and foreign speakers of English have trouble decyphering the labirinthian and arbitrary system of "rules" which aren't really rules and unnormalized foreign spellings which stick out like a sore thumb.*
 
 Dhis duzn't cánj dhu lengúij at ol -- ritin "lengúij" iz akšúulé órthogrifé, and dhu ónlé nacirul héúmin lengúijiz or spókin ór sínd.
 
-*(This doesn't change the language at all -- written "language" is actually orthography, and the only natural human languages are spoken or signed.)*
+*This doesn't change the language at all -- written "language" is actually orthography, and the only natural human languages are spoken or signed.*
 
 Dhis ríting sistim úød probiblé créát sum cunféúžin fór non-Umerikin Ingliš spékørz, só dhe standørd órthogrifé sød uv kórs kuntinéú tú bé éúzd in u similør úá az Latin (as u síintifik standørd), Modørn Standørd Eribik (as u go-bitúén for difirint díuleks), or Cínéz keriktørz (as simbulz tú jóin tú méúcøúulé unintelijibul lengúijiz).
 
-*(This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy should of course continue to be used in a similar way as Latin (as a scientific standard), Modern Standard Arabic (as a go-between for different dialects), or Chinese characters (as symbols to join two mutually unintelligible languages).)*
+*This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy should of course continue to be used in a similar way as Latin (as a scientific standard), Modern Standard Arabic (as a go-between for different dialects), or Chinese characters (as symbols to join two mutually unintelligible languages).*
 
 ## Dhu Alfibet and Speling Rúlz *(The Alphabet and Spelling Rules)*
 
 Dhu alfibet for Fonetik Ingliš has 30 letørz (4 mór dhan trudišinul Ingliš).
 
-*(The alphabet for Phonetik English has 30 letters (4 more than traditional English).)*
+*The alphabet for Phonetik English has 30 letters (4 more than traditional English).*
 
-aábcdeéfgiíjklmnoóøprsštuúvzžh
+#aábcdeéfgiíjklmnoóøprsštuúvzžh
 
-AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH
+#AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH
 
 * **a** as in **a**pul (**a**pple)
 * **á** as in **Á**pril (**A**pril)
@@ -94,3 +94,15 @@ U kulekšin uv túlz dhat Í hav éúzd tú úørk on u fonetik órthogrifé fó
 * runestats.go - Prints in the console character count information for all fonetik alphabet letters in a given text file. Also counts word-initial occurrences.
 * ingfon.klc - Fonetik keyboard layout for Microsoft Keyboard Layout Creator 1.4
 * ingfon/setup.exe - Setup file for Windows Fonetik keyboard. Once installed, press Ctrl+Shift to switch between layouts.
+
+## Kébórd Láaút
+
+#ž1234567890-=
+#óúertéuiopøš\
+#asdfghjklá'
+#zícvbnm,./
+
+#Ž!@#$%^&*()_+
+#ÓÚERTÉUIOPØŠ|
+#ASDFGHJKLÁ"
+#ZÍCVBNM;:?
