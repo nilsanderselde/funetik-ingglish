@@ -121,7 +121,7 @@ U kulekšin uv túlz dhat Í hav éúzd tú úørk on u fonetik órthogrifé fó
 
 ### distance.py
 
-Requires NLTK. Calculates Levenshtein distance between fonetik and traditional spellings.
+Requires [NLTK](http://www.nltk.org/). Calculates Levenshtein distance between fonetik and traditional spellings.
 
 ### sort.py
 
@@ -133,11 +133,11 @@ Prints in the console character count information for all fonetik alphabet lette
 
 ### ingfon.klc
 
-Fonetik keyboard layout for Microsoft Keyboard Layout Creator 1.4
+Fonetik keyboard layout for [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339).
 
-### ingfon/setup.exe
+### ingfon.zip
 
-Setup file for Windows Fonetik keyboard. Once installed, press Ctrl+Shift to switch between layouts.
+Contains setup.exe, which installs the Ingliš (Fonetik) keyboard layout for the English (United States) display language in Windows. Once installed, press Ctrl+Shift to switch between layouts.
 
 ## Kébórd Láaút
 
