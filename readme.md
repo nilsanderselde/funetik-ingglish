@@ -115,9 +115,9 @@ Bikuz it iz éúzd in 'th' (az in 'think') and 'dh' (as in 'dhu') and Í thot dh
 
 ## Ubaút Dhis Ripozitoré *(About This Repository)*
 
-U kulekšin uv túlz dhat Í hav éúzd tú úørk on u fonetik órthogrifé fór dhu Ingliš lengúij.
+U kulekšin uv túlz dhat Í hav éúzd tú úørk on dhis fonetik órthogrifé fór Ingliš.
 
->*A collection of tools that I have used to work on a phonetic orthography for the English language.*
+>*A collection of tools that I have used to work on this phonetic orthography for English.*
 
 ### distance.py
 
