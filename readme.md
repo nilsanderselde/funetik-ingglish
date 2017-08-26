@@ -91,7 +91,7 @@ Q and X ar éúslis, ridundint letørz. 'Kú', 'k', 'ks', 'gz' and 'z' ar al é�
 
 >*Q and X are useless, redundant letters. 'Kú', 'k', 'ks', 'gz' and 'z' are all you need. W and Y can be replaced úith dedicated voúels Ú and É.*
 
-## C iz Naú 'Ch'?
+## C iz Naú 'Ch'? *(C is Now 'Ch'?)*
 
 Ées. It úuz ridundint in its prévéis éúsis az 'k' and 's', but dher nédid tú bé é vóislis caúntørpart for J.
 
