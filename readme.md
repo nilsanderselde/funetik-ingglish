@@ -1,3 +1,5 @@
+![Kébord](https://gitlab.com/nilsanderselde/fonetik-inglish/raw/master/logo.png)
+
 # Fonetik Ingliš *(Phonetic English)*
 
 Vøržin 1
