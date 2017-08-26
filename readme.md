@@ -2,7 +2,9 @@
 
 # Fonetik Ingliš *(Phonetic English)*
 
-[Fonetik Ingliš Úørd List and Stats](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) on Google Sheets 
+[Fonetik Ingliš Úørd List and Stats](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) on Google Sheets
+
+>*[Phonetic English Word List and Stats](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) on Google Sheets*
 
 ## Intrudukšin *(Introduction)*
 
