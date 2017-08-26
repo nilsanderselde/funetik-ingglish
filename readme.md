@@ -36,9 +36,14 @@ Dhu alfibet for Fonetik Ingliš has 30 letørz (4 mór dhan trudišinul Ingliš)
 
 >*The alphabet for Phonetik English has 30 letters (4 more than traditional English).*
 
-**aábcdeéfgiíjklmnoóøprsštuúvzžh**
+```
+aábcdeéfgiíjklmnoóøprsštuúvzžh
+```
 
-**AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH**
+```
+AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH
+```
+
 
 **a** as in **a**pul (**a**pple)
 
