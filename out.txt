@@ -1,4355 +1,4355 @@
-absins	absence	3
-abstrakt	abstract	1
-absulút	absolute	3
-absulútlé	absolutely	4
-ad.	ad	1
-ad	add	1
-adid	added	2
-adikúit	adequate	5
-administør	administer	1
-administrášin	administration	3
-administrátør	administrator	2
-administritiv	administrative	2
-admišin	admission	3
-admit	admit	0
-admír	admire	2
-adres	address	2
-adulesint	adolescent	3
-advans	advance	2
-advanst	advanced	3
-advantij	advantage	3
-advencør	adventure	3
-advís	advice	3
-advíz	advise	3
-advízør	adviser	3
-advørtízing	advertising	3
-advukát	advocate	4
-advukit	advocate	4
-afekt	affect	2
-Afrikin-Umerikin	African-American	5
-Afrikin	African	2
-aftør	after	1
-aftørnún	afternoon	3
-aftørúørd	afterward	3
-agrikulcør	agriculture	4
-agrikulcørul	agricultural	4
-akéørisé	accuracy	6
-akéørit	accurate	5
-akéøritlé	accurately	6
-akéøzášin	accusation	7
-akidemik	academic	3
-aknolij	acknowledge	6
-aksent	accent	2
-aksept	accept	2
-akseptibul	acceptable	5
-akses	access	3
-aksesibul	accessible	5
-aksidint	accident	3
-akšin	action	3
-akšúulé	actually	6
-akšúul	actual	4
-akt	act	1
-aktiv	active	2
-aktivist	activist	1
-aktivité	activity	2
-aktivlé	actively	3
-aktør	actor	2
-aktris	actress	3
-akúizišin	acquisition	6
-album	album	0
-alé	alley	3
-aligášin	allegation	5
-alí	ally	2
-alkuhol	alcohol	2
-ambasidør	ambassador	3
-ambišin	ambition	2
-ambišis	ambitious	3
-and	and	0
-anéúulé	annually	5
-anéúul	annual	3
-animul	animal	1
-anivørsøré	anniversary	4
-ankul	ankle	2
-ansestør	ancestor	2
-ansør	answer	2
-antisipát	anticipate	3
-anulist	analyst	2
-anulíz	analyze	3
-aplikášin	application	5
-apul	apple	2
-aset	asset	1
-asf.	etc	4
-as	ass	1
-asid	acid	1
-ask	ask	0
-aspekt	aspect	1
-asthetik	aesthetic	2
-aš	ash	2
-at	at	0
-atitúd	attitude	3
-atmusfér	atmosphere	5
-atribéút	attribute	4
-athletik	athletic	1
-athlét	athlete	2
-aúr	our	2
-aúr	hour	3
-aúrselvz	ourselves	4
-aúrz	ours	3
-aútdór	outdoor	4
-aútfit	outfit	2
-aút	out	2
-aútkum	outcome	5
-aútlit	outlet	3
-aútlín	outline	4
-aútør	outer	3
-aútpøt	output	3
-aútsíd	outside	4
-aútsídør	outsider	4
-aútstanding	outstanding	2
-avrij	average	4
-az	as	1
-ábul	able	3
-ád	aide	3
-ád	aid	2
-áj	age	3
-ájinsé	agency	5
-ájint	agent	3
-áléin	alien	3
-ám	aim	2
-ángør	anger	2
-ángré	angry	2
-ángul	angle	3
-ánjul	angel	3
-ánšint	ancient	3
-ár	air	2
-árkraft	aircraft	3
-árlín	airline	4
-árplán	airplane	4
-árpórt	airport	3
-át	eight	4
-átth	eighth	4
-Ážin	Asian	3
-bad	bad	0
-badlé	badly	1
-bag	bag	0
-bakéord	backyard	3
-bak	back	1
-bakgraúnd	background	3
-baktéréu	bacteria	4
-balins	balance	3
-balinst	balanced	4
-balit	ballot	2
-band	band	0
-ban	ban	0
-bank	bank	0
-banking	banking	0
-bankør	banker	1
-bankrupsé	bankruptcy	3
-baskitbol	basketball	3
-baskit	basket	1
-bat	bat	0
-batøré	battery	3
-batul	battle	2
-bath	bath	0
-bathrúm	bathroom	2
-baú	bow	2
-baúndré	boundary	4
-baúns	bounce	4
-bábé	baby	2
-bá	bay	2
-bák	bake	2
-báré	bury	2
-báréør	barrier	4
-bár	bare	2
-bár	bear	2
-bárlé	barely	3
-bárul	barrel	3
-básbol	baseball	4
-bás	base	2
-básik	basic	2
-básiklé	basically	5
-básis	basis	1
-básmint	basement	3
-bedrúm	bedroom	2
-beg	beg	0
-belé	belly	2
-bel	bell	1
-belt	belt	0
-benc	bench	1
-bend	bend	0
-benifit	benefit	1
-best	best	0
-bet	bet	0
-betør	better	2
-béc	beach	3
-bé	bee	2
-bé	be	1
-béf	beef	2
-béing	being	1
-bém	beam	2
-bén	bean	2
-béond	beyond	2
-béøró	bureau	5
-bérd	beard	2
-bér	beer	2
-bést	beast	2
-bét	beat	2
-béúté	beauty	4
-béútiful	beautiful	3
-bid	bed	1
-bid	bid	0
-bifór	before	3
-big	big	0
-bigin	begin	1
-bigining	beginning	2
-bikum	become	4
-bikuz	because	5
-bild	build	1
-bilding	building	1
-bildør	builder	2
-biléf	belief	3
-biléin	billion	2
-bilév	believe	4
-bil	bill	1
-bilong	belong	1
-biló	below	3
-binéth	beneath	3
-bisíd	beside	3
-bisídz	besides	4
-bit	bit	0
-bitør	bitter	2
-bitúén	between	4
-bizé	busy	3
-biznis	business	5
-biznismin	businessman	6
-bihaf	behalf	2
-bihávéórul	behavioral	5
-bihávéør	behavior	4
-biháv	behave	3
-bihínd	behind	2
-Bíbul	Bible	3
-bí	buy	2
-bí	by	1
-bíis	bias	2
-bík	bike	2
-bínd	bind	1
-bíogrifé	biography	5
-bíolijé	biology	4
-bíør	buyer	3
-bísikul	bicycle	6
-bít	bite	2
-bíulojikul	biological	5
-blak	black	1
-blast	blast	0
-blád	blade	2
-blám	blame	2
-blánk	blank	1
-blánkit	blanket	2
-blend	blend	0
-bles	bless	1
-blesing	blessing	1
-blink	blink	0
-blínd	blind	1
-blok	block	1
-blond	blond	0
-bló	blow	2
-bludé	bloody	3
-blud	blood	2
-blú	blue	2
-bodé	body	1
-bodhør	bother	2
-boks	box	2
-bol	ball	2
-bom	bomb	1
-boming	bombing	1
-bond	bond	0
-bor	bar	1
-born	barn	1
-boró	borrow	3
-bos	boss	1
-botul	bottle	2
-botum	bottom	2
-bói	boy	2
-bóifrend	boyfriend	3
-bóil	boil	1
-bóld	bold	1
-ból	bowl	2
-bólt	bolt	1
-bón	bone	2
-bónis	bonus	2
-bórd	board	2
-bórdør	border	2
-bóring	boring	1
-bórn	born	1
-bóst	boast	2
-bót	boat	2
-bóth	both	1
-bøk	book	2
-børd	bird	1
-børdin	burden	2
-børn	burn	1
-børning	burning	1
-børst	burst	1
-børthdá	birthday	3
-børth	birth	1
-bøš	bush	3
-branc	branch	1
-brand	brand	0
-braún	brown	2
-brák	brake	2
-brák	break	2
-brán	brain	2
-bráv	brave	2
-brekfist	breakfast	2
-brest	breast	1
-breth	breath	1
-brédh	breathe	4
-brédhing	breathing	3
-bréf	brief	2
-bréflé	briefly	3
-bréz	breeze	3
-brid	bread	2
-brij	bridge	3
-brik	brick	1
-briléint	brilliant	2
-bring	bring	0
-Britiš	British	2
-bríd	bride	2
-brít	bright	3
-brod	broad	1
-brodkast	broadcast	2
-bronz	bronze	1
-brókin	broken	2
-brókør	broker	2
-brudhør	brother	3
-bruš	brush	2
-brútul	brutal	2
-bubul	bubble	2
-budé	buddy	2
-bug	bug	0
-bujit	budget	3
-buk	buck	1
-bukit	bucket	2
-bulb	bulb	0
-bul	bull	1
-bulit	bullet	2
-bulk	bulk	0
-bulún	balloon	4
-bunanu	banana	2
-bunc	bunch	1
-bus	bus	0
-but	but	0
-but	butt	1
-butøn	button	2
-butør	butter	2
-butørflí	butterfly	3
-búm	boom	2
-búst	boost	2
-bút	boot	2
-búth	booth	2
-calinj	challenge	5
-campéin	champion	3
-campéinšip	championship	5
-cans	chance	3
-canul	channel	3
-captør	chapter	2
-cámbør	chamber	3
-cán	chain	3
-cánj	change	4
-cánjing	changing	3
-cás	chase	3
-cek	check	2
-CEO	CEO	0
-cer	chair	3
-cerité	charity	3
-cermin	chairman	4
-cest	chest	1
-céf	chief	3
-cék	cheek	3
-cép	cheap	3
-cér	cheer	3
-cét	cheat	3
-céz	cheese	5
-cikin	chicken	3
-cil	chill	2
-cin	chin	1
-cip	chip	1
-cíld	child	2
-cíldhød	childhood	4
-Cínéz	Chinese	5
-coklit	chocolate	5
-cop	chop	1
-corj	charge	4
-corm	charm	2
-cort	chart	2
-cortør	charter	3
-cóis	choice	4
-cørc	church	3
-cunk	chunk	1
-cú	chew	3
-cúz	choose	5
-dad	dad	0
-dam	dam	0
-dam	damn	1
-damij	damage	3
-dans	dance	2
-dansing	dancing	1
-dansør	dancer	2
-daún	down	2
-daúntaún	downtown	4
-daút	doubt	3
-dábéú	debut	3
-dá	day	2
-dálé	daily	3
-dánjør	danger	3
-dánjøris	dangerous	5
-dár	dare	2
-dát	date	2
-dátubás	database	4
-dátu	data	2
-dedikát	dedicate	3
-dedlé	deadly	2
-dedlín	deadline	3
-definišin	definition	2
-definitlé	definitely	2
-defisit	deficit	1
-dekád	decade	3
-dek	deck	1
-dekørát	decorate	4
-delikit	delicate	3
-demigrafik	demographic	4
-demikratik	democratic	3
-deminstrášin	demonstration	4
-deminstrát	demonstrate	3
-dens	dense	1
-densité	density	1
-depéøté	deputy	3
-depth	depth	0
-desk	desk	0
-desprit	desperate	3
-despritlé	desperately	4
-destinášin	destination	3
-det	debt	1
-deth	death	1
-devistáting	devastating	2
-devul	devil	1
-dezørt	desert	2
-dékrés	decrease	5
-dél	deal	2
-délør	dealer	3
-dém	deem	2
-dép	deep	2
-déplé	deeply	3
-dér	dear	2
-dér	deer	2
-désint	decent	3
-détáld	detailed	4
-détál	detail	3
-dibát	debate	3
-did	dead	2
-difend	defend	1
-difendint	defendant	2
-difendør	defender	2
-difens	defense	2
-difensiv	defensive	2
-difét	defeat	3
-difikulté	difficulty	3
-difikult	difficult	2
-difín	define	3
-difør	differ	2
-diførins	difference	5
-diførint	different	3
-diførintlé	differently	4
-dig	dig	0
-dignité	dignity	1
-digré	degree	3
-dijitul	digital	2
-dikler	declare	4
-diklín	decline	4
-dikrés	decrease	5
-diktát	dictate	3
-dilá	delay	3
-dilemu	dilemma	2
-dilibritlé	deliberately	5
-dilivøré	delivery	3
-dilivør	deliver	2
-dilít	delight	4
-dimand	demand	1
-dimenšin	dimension	2
-diminiš	diminish	2
-dimokrisé	democracy	5
-diní	deny	2
-diníul	denial	3
-dinør	dinner	2
-dipend	depend	1
-dipending	depending	1
-dipendint	dependent	2
-dip	dip	0
-dipikt	depict	2
-diplimat	diplomat	1
-diplimatik	diplomatic	2
-diplói	deploy	3
-diporcør	departure	5
-diport	depart	2
-diportmint	department	3
-dipósit	deposit	2
-diprest	depressed	4
-diprešin	depression	4
-direkšin	direction	3
-direkt	direct	1
-direktlé	directly	2
-direktør	director	2
-dirív	derive	3
-disábld	disabled	2
-disend	descend	2
-disiplin	discipline	2
-disižin	decision	4
-disíd	decide	4
-diskaúnt	discount	3
-disk	disc	1
-disk	disk	0
-disklóz	disclose	4
-diskórs	discourse	4
-diskørij	discourage	6
-diskriminášin	discrimination	4
-diskripšin	description	4
-diskríb	describe	4
-diskus	discuss	2
-diskušin	discussion	4
-diskuvøré	discovery	4
-diskuvør	discover	3
-dismis	dismiss	1
-disórdør	disorder	2
-dispéút	dispute	3
-dispít	despite	3
-displá	display	2
-distingúiš	distinguish	3
-distinkšin	distinction	3
-distinkt	distinct	1
-distinktiv	distinctive	2
-distins	distance	3
-distint	distant	1
-distørb	disturb	1
-distørbing	disturbing	1
-distrakt	distract	1
-distribéúšin	distribution	4
-distribéút	distribute	3
-distrikt	district	1
-distrói	destroy	3
-distrukšin	destruction	4
-disubilité	disability	2
-disugré	disagree	3
-disupér	disappear	4
-disupóintid	disappointed	4
-disupóintmint	disappointment	4
-diš	dish	2
-ditekt	detect	2
-ditektiv	detective	3
-ditørminášin	determination	5
-ditørmin	determine	3
-divelup	develop	2
-diveluping	developing	2
-divelupmentul	developmental	3
-divelupmint	development	3
-divelupør	developer	3
-divižin	division	2
-divíd	divide	2
-divín	divine	2
-divís	device	4
-divórs	divorce	3
-divót	devote	3
-divørs	diverse	2
-divørsité	diversity	2
-dizastør	disaster	2
-dizéz	disease	5
-dizín	design	4
-dizínør	designer	5
-dizír	desire	4
-dizolv	dissolve	3
-dizørt	dessert	4
-dizørv	deserve	4
-díagnós	diagnose	3
-díagnósis	diagnosis	2
-dí	die	2
-díing	dying	1
-díit	diet	2
-dímind	diamond	3
-dínamik	dynamic	2
-dínamiks	dynamics	2
-díning	dining	1
-díørí	diary	3
-díubétéz	diabetes	5
-díulog	dialogue	4
-dog	dog	0
-dokéømentøré	documentary	5
-dokéømint	document	4
-dok	dock	1
-doktør	doctor	2
-doktrin	doctrine	2
-dol	doll	1
-dominát	dominate	2
-dominint	dominant	1
-don	dawn	2
-dork	dark	1
-dorknis	darkness	3
-dot	dot	0
-dotør	daughter	5
-dó	dough	4
-dómán	domain	3
-dónášin	donation	4
-dónát	donate	3
-dónør	donor	2
-dór	door	2
-dórúá	doorway	5
-dós	dose	2
-døring	during	1
-dørté	dirty	2
-dørt	dirt	1
-draft	draft	0
-drag	drag	0
-draún	drown	2
-drán	drain	2
-dres	dress	1
-drém	dream	2
-drift	drift	0
-dril	drill	1
-drink	drink	0
-drinking	drinking	0
-dríd	dried	2
-drí	dry	1
-drív	drive	2
-dríving	driving	1
-drívør	driver	2
-drívúá	driveway	5
-dro	draw	2
-droing	drawing	2
-dromu	drama	2
-drop	drop	0
-drór	drawer	3
-drug	drug	0
-drumatik	dramatic	2
-drumatiklé	dramatically	5
-drum	drum	0
-drunk	drunk	0
-dubré	debris	3
-dubul	double	3
-Duc	Dutch	2
-duk	duck	1
-dumestik	domestic	2
-dum	dumb	1
-dump	dump	0
-dust	dust	0
-duzin	dozen	2
-dú	do	1
-dú	due	2
-dúté	duty	2
-dhan	than	1
-dhat	that	1
-dhá	they	3
-dhem	them	1
-dhemselvz	themselves	3
-dhen	then	1
-dherbí	thereby	3
-dherfór	therefore	4
-dher	their	2
-dher	there	2
-dhéz	these	4
-dhis	this	1
-dhó	though	5
-dhóz	those	4
-dhu	the	2
-dhus	thus	1
-e-mál	e-mail	2
-edišin	edition	2
-edit	edit	0
-editør	editor	1
-efekt	effect	2
-efektiv	effective	3
-efektivlé	effectively	4
-efektivnis	effectiveness	5
-eført	effort	2
-eg	egg	1
-egzakt	exact	3
-egzaktlé	exactly	4
-egzam	exam	2
-egzaminášin	examination	5
-egzamin	examine	3
-egzampul	example	4
-egzekéøtiv	executive	6
-egzekéúšin	execution	7
-egzibišin	exhibition	4
-egzibit	exhibit	2
-egzist	exist	2
-egzisting	existing	2
-egzistins	existence	5
-egzost	exhaust	4
-egzotik	exotic	3
-ejéøkášin	education	7
-ejéøkášinul	educational	8
-ejéøkát	educate	6
-ejéøkátør	educator	6
-ej	edge	3
-ekilojikul	ecological	5
-ekinomik	economic	3
-ekinomiklé	economically	6
-ekinomiks	economics	3
-ekonimé	economy	3
-ekonimist	economist	2
-ekó	echo	3
-ekscánj	exchange	6
-eksekéút	execute	6
-ekselirát	accelerate	6
-eksepšin	exception	4
-eksept	except	2
-ekseptins	acceptance	6
-eksesiv	excessive	4
-ekséd	exceed	4
-eksilint	excellent	5
-eksit	exit	2
-eksítid	excited	4
-eksíting	exciting	3
-eksítmint	excitement	5
-ekskéús	excuse	6
-ekskéúz	excuse	6
-eksklúd	exclude	5
-eksklúsiv	exclusive	5
-eksklúsivlé	exclusively	6
-eksørsíz	exercise	7
-ekspand	expand	2
-ekspanšin	expansion	4
-ekspedišin	expedition	4
-ekspektášin	expectation	6
-ekspekt	expect	3
-ekspektid	expected	4
-ekspens	expense	3
-ekspens	expensive	5
-ekspiréins	experience	7
-ekspiréinst	experienced	8
-ekspirimentul	experimental	4
-ekspirimint	experiment	4
-eksplán	explain	4
-eksplinášin	explanation	6
-eksplisit	explicit	3
-eksplód	explode	4
-eksplóit	exploit	3
-eksplórášin	exploration	6
-eksplór	explore	4
-eksplóžin	explosion	5
-ekspórt	export	3
-ekspóz	expose	5
-ekspóžør	exposure	6
-ekspørtéz	expertise	6
-ekspørt	expert	3
-ekspres	express	3
-eksprešin	expression	5
-ekstend	extend	2
-ekstendid	extended	3
-ekstensiv	extensive	3
-ekstenšin	extension	4
-ekstent	extent	2
-ekstørnul	external	4
-ekstrém	extreme	4
-ekstrémlé	extremely	5
-ekstrórdineré	extraordinary	6
-ekstru	extra	3
-ekúip	equip	2
-ekúipmint	equipment	3
-ekúité	equity	3
-ekúivilint	equivalent	4
-elbó	elbow	2
-eldør	elder	1
-eldørlé	elderly	2
-elét	elite	2
-elifint	elephant	4
-eligint	elegant	2
-elijibul	eligible	3
-elimentøré	elementary	3
-elimint	element	2
-elivátør	elevator	3
-els	else	1
-elsúer	elsewhere	4
-emberist	embarrassed	6
-embrás	embrace	3
-emfisis	emphasis	3
-emfisíz	emphasize	5
-empír	empire	2
-emplóié	employee	4
-emplói	employ	2
-emplóimint	employment	3
-emplóiør	employer	3
-empté	empty	1
-enakt	enact	1
-enábul	enable	3
-end	end	0
-endlis	endless	2
-endórs	endorse	2
-endør	endure	2
-enébudé	anybody	4
-ené	any	2
-enémór	anymore	4
-enéthing	anything	2
-enéúá	anyway	5
-enéúer	anywhere	5
-enéúun	anyone	5
-enfórs	enforce	3
-enfórsmint	enforcement	4
-engáj	engage	3
-engájmint	engagement	4
-engšis	anxious	5
-enimé	enemy	2
-enjinér	engineer	3
-enjinéring	engineering	3
-enjin	engine	2
-enjói	enjoy	2
-enkaúntør	encounter	4
-enkørij	encourage	6
-enkørijing	encouraging	5
-enksíeté	anxiety	5
-enørjé	energy	3
-enról	enroll	2
-enšør	ensure	3
-entité	entity	1
-entír	entire	2
-entírlé	entirely	3
-entítul	entitle	3
-entør	enter	1
-entørpríz	enterprise	4
-entørtánmint	entertainment	4
-entrens	entrance	3
-entré	entry	1
-enthuzéazm	enthusiasm	3
-envelóp	envelope	2
-envižin	envision	2
-envírnmentul	environmental	3
-envírnmint	environment	3
-enhans	enhance	2
-epidemik	epidemic	1
-episód	episode	2
-eréu	area	3
-eró	arrow	4
-erør	error	2
-eru	era	1
-esá	essay	3
-esens	essence	3
-esenšulé	essentially	6
-esenšul	essential	4
-eskáp	escape	3
-espešulé	especially	5
-establiš	establish	2
-establišmint	establishment	3
-estát	estate	2
-estimátid	estimated	2
-estimit	estimate	2
-ethiks	ethics	1
-ethikul	ethical	2
-ethnik	ethnic	1
-evaléúášin	evaluation	5
-evaléúát	evaluate	4
-evencúulé	eventually	5
-event	event	0
-evidens	evidence	2
-evidint	evident	1
-evilúšin	evolution	4
-evolv	evolve	1
-evør	ever	1
-evrébudé	everybody	4
-evrédá	everyday	4
-evré	every	2
-evréthing	everything	2
-evréúer	everywhere	5
-evréúun	everyone	5
-éa	yeah	3
-éc	each	3
-édhør	either	4
-éel	yell	2
-éeló	yellow	4
-ées	yes	1
-éestørdá	yesterday	4
-éet	yet	1
-égó	ego	2
-égør	eager	3
-éiéld	yield	2
-éiér	year	3
-ékósistum	ecosystem	5
-ékúážin	equation	6
-ékúolité	equality	5
-ékúulé	equally	6
-ékúul	equal	4
-éord	yard	2
-éór	your	3
-éórself	yourself	3
-éórz	yours	4
-Éørupéin	European	5
-ér	ear	2
-ést	east	2
-éstørn	eastern	3
-ét	eat	2
-éting	eating	2
-éung	young	2
-éungstør	youngster	3
-éú	you	3
-éúnéin	union	4
-éúnék	unique	6
-éúnifórm	uniform	3
-éúnité	unity	3
-éúnit	unit	2
-éúnivørs	universe	4
-éúnivørsité	university	4
-éúnivørsul	universal	4
-éúnít	unite	4
-éúnítid	United	4
-éúsful	useful	3
-éús	use	3
-éútilité	utility	3
-éútilíz	utilize	4
-éúth	youth	3
-éúzd	used	3
-éúz	use	3
-éúzør	user	4
-éúžúulé	usually	6
-éúžúul	usual	5
-évin	even	2
-évning	evening	2
-évul	evil	2
-ézé	easy	4
-éz	ease	4
-ézilé	easily	4
-fabrik	fabric	1
-fakt	fact	1
-faktøré	factory	3
-faktør	factor	2
-fakulté	faculty	2
-familé	family	1
-fan	fan	0
-fantastik	fantastic	1
-fantusé	fantasy	2
-fasináting	fascinating	2
-fast	fast	0
-fastør	faster	1
-fašin	fashion	3
-fat	fat	0
-faúndášin	foundation	5
-faúnd	found	2
-faúndør	founder	3
-fád	fade	2
-fáléør	failure	5
-fál	fail	2
-fám	fame	2
-fámis	famous	3
-fánt	faint	2
-fár	fair	2
-fár	fare	2
-fárlé	fairly	3
-fás	face	3
-fát	fate	2
-fátul	fatal	2
-fáth	faith	2
-fávør	favor	2
-fávøribul	favorable	5
-fávrit	favorite	3
-fáz	phase	5
-fedørul	federal	2
-fedhør	feather	3
-feló	fellow	3
-feminist	feminist	0
-fens	fence	2
-festivul	festival	1
-fécør	feature	5
-fédbak	feedback	3
-féd	feed	2
-fé	fee	2
-féld	field	2
-fél	feel	2
-féling	feeling	2
-fémál	female	3
-fér	fear	2
-férs	fierce	4
-féúcør	future	5
-féú	few	2
-féúl	fuel	2
-féúnirul	funeral	4
-féúør	fewer	3
-févør	fever	2
-fifté	fifty	1
-fiftén	fifteen	2
-fifth	fifth	0
-figéør	figure	3
-fiks	fix	2
-fikst	fixed	3
-fikšin	fiction	3
-fil	fill	1
-filisofikul	philosophical	7
-film	film	0
-filosifé	philosophy	6
-filtør	filter	1
-fingør	finger	1
-finiš	finish	2
-finominon	phenomenon	4
-fiskul	fiscal	2
-fist	fist	0
-fiš	fish	2
-fišing	fishing	2
-fišørmin	fisherman	4
-fit	fit	0
-fitnis	fitness	2
-fiziklé	physically	8
-fiziks	physics	5
-fizikul	physical	6
-fizišin	physician	6
-fíbør	fiber	2
-fíl	file	2
-fínans	finance	3
-fínanšul	financial	4
-fínd	find	1
-fínding	finding	1
-fín	fine	2
-fínulé	finally	4
-fínul	final	2
-fír	fire	2
-fít	fight	3
-fíting	fighting	3
-fítør	fighter	4
-fív	five	2
-flag	flag	0
-flaš	flash	2
-flat	flat	0
-flaúr	flour	2
-flaúr	flower	3
-flám	flame	2
-flávør	flavor	2
-fleksibilité	flexibility	3
-fleksibul	flexible	4
-fleš	flesh	2
-flé	flee	2
-flét	fleet	2
-flip	flip	0
-flí	fly	1
-flíing	flying	1
-flít	flight	3
-fló	flow	2
-flór	floor	2
-flót	float	2
-flud	flood	2
-flúid	fluid	1
-fodhør	father	3
-fog	fog	0
-fol	fall	2
-foló	follow	3
-folóing	following	3
-fols	false	2
-folt	fault	2
-for	far	1
-form	farm	1
-formør	farmer	2
-fostør	foster	1
-fók	folk	2
-fókis	focus	3
-fóld	fold	1
-fón	phone	4
-fórcin	fortune	4
-fórcinitlé	fortunately	6
-fórevør	forever	2
-fór	for	1
-fór	four	2
-fórget	forget	1
-fórgiv	forgive	2
-fórin	foreign	3
-fórinør	foreigner	4
-fórist	forest	2
-fórk	fork	1
-fórmat	format	1
-fórmášin	formation	4
-fórméølu	formula	4
-fórm	form	1
-fórmør	former	2
-fórmørlé	formerly	3
-fórmul	formal	2
-fórs	force	3
-fórté	forty	2
-fórth	forth	1
-fórth	fourth	2
-fórum	forum	1
-fórúørd	forward	3
-fórhed	forehead	3
-fótó	photo	4
-fótugraf	photograph	6
-førbid	forbid	1
-førdhørmór	furthermore	5
-før	fur	1
-førm	firm	1
-førmlé	firmly	2
-førnicør	furniture	4
-først	first	1
-føtbol	football	4
-føt	foot	2
-fragmint	fragment	1
-frajul	fragile	3
-frakšin	fraction	3
-francíz	franchise	4
-fraún	frown	2
-frám	frame	2
-frámúørk	framework	4
-fránklé	frankly	2
-fráz	phrase	5
-Frenc	French	1
-frend	friend	1
-frendlé	friendly	2
-frendšip	friendship	3
-freš	fresh	2
-frešmin	freshman	3
-frédum	freedom	3
-fré	free	2
-frékúinsé	frequency	6
-frékúint	frequent	4
-frékúintlé	frequently	5
-frélé	freely	3
-fréz	freeze	3
-Frídá	Friday	3
-frod	fraud	2
-frózin	frozen	2
-frum	from	1
-fruntér	frontier	3
-frunt	front	1
-frustrášin	frustration	3
-frustrát	frustrate	2
-frút	fruit	2
-fuking	fucking	1
-ful-tím	full-time	3
-fulé	fully	2
-ful	full	1
-fumiléør	familiar	3
-fund	fund	0
-fundimentul	fundamental	2
-funding	funding	0
-funé	funny	2
-fun	fun	0
-funkšin	function	3
-funkšinul	functional	4
-fusilitát	facilitate	4
-fusilité	facility	3
-futég	fatigue	4
-futogrifé	photography	7
-futogrifør	photographer	7
-fúd	food	2
-fúl	fool	2
-		0
-gadhør	gather	2
-gadhøring	gathering	2
-galiksé	galaxy	4
-galøré	gallery	3
-gang	gang	0
-gap	gap	0
-gas	gas	0
-gasilén	gasoline	3
-gá	gay	2
-gám	game	2
-gán	gain	2
-gát	gate	2
-gáz	gaze	2
-gerinté	guarantee	5
-ges	guess	2
-gest	guest	1
-get	get	0
-gér	gear	2
-gift	gift	0
-giftid	gifted	1
-gilté	guilty	2
-gilt	guilt	1
-gitor	guitar	2
-giv	give	1
-givin	given	1
-gíd	guide	3
-gídins	guidance	5
-gídlín	guideline	5
-gí	guy	2
-glad	glad	0
-glans	glance	2
-glas	glass	1
-glimps	glimpse	1
-glób	globe	2
-glóbul	global	2
-glóré	glory	2
-gluv	glove	2
-God	God	0
-golf	golf	0
-gorbij	garbage	4
-gord	guard	2
-gordin	garden	2
-gorlik	garlic	2
-gó	go	1
-góld	gold	1
-góldin	golden	2
-gól	goal	2
-góst	ghost	2
-gót	goat	2
-gød	good	2
-gørl	girl	1
-gørlfrend	girlfriend	2
-gørož	garage	4
-grab	grab	0
-grajúášin	graduation	5
-grajúát	graduate	4
-grajúilé	gradually	5
-grajúit	graduate	4
-grancíld	grandchild	3
-grand	grand	0
-grandfodhør	grandfather	3
-grandmudhør	grandmother	3
-grandperint	grandparent	2
-grant	grant	0
-gras	grass	1
-grasp	grasp	0
-graúnd	ground	2
-gravité	gravity	1
-grád	grade	2
-grá	gray	2
-grán	grain	2
-gráp	grape	2
-grás	grace	3
-grát	great	2
-grátful	grateful	2
-grátist	greatest	3
-grátlé	greatly	3
-gráv	grave	2
-gréf	grief	2
-Grék	Greek	2
-grén	green	2
-grét	greet	2
-grin	grin	0
-grip	grip	0
-gró	grow	2
-gróing	growing	2
-grós	gross	2
-gróšré	grocery	4
-gróth	growth	2
-grúp	group	2
-gun	gun	0
-gut	gut	0
-guvinør	governor	4
-guvørmint	government	4
-guvørn	govern	2
-if	if	0
-ifišinsé	efficiency	6
-ifišint	efficient	4
-ignór	ignore	2
-ilégul	illegal	3
-il	ill	1
-ilnis	illness	3
-ilustrát	illustrate	3
-ilúžin	illusion	4
-imajinášin	imagination	4
-imajin	imagine	2
-imédéit	immediate	5
-imédéitlé	immediately	6
-iméún	immune	3
-imigrášin	immigration	4
-imigrint	immigrant	2
-imij	image	3
-imišin	emission	4
-imóšin	emotion	4
-imóšinulé	emotionally	7
-imóšinul	emotional	5
-imørjensé	emergency	5
-imørj	emerge	4
-imørjing	emerging	3
-impakt	impact	1
-implikášin	implication	4
-implimentášin	implementation	4
-implimint	implement	2
-implí	imply	1
-imposibul	impossible	3
-impórt	import	1
-impórtins	importance	4
-impórtint	important	2
-impórtintlé	importantly	3
-impóz	impose	3
-impres	impress	1
-impresiv	impressive	2
-imprešin	impression	3
-imprúvd	improved	2
-imprúv	improve	2
-imprúvmint	improvement	3
-impuls	impulse	1
-indeks	index	2
-indéd	indeed	2
-Indéin	Indian	2
-indijinis	indigenous	4
-indikášin	indication	4
-indikát	indicate	3
-indikátør	indicator	3
-indipendins	independence	4
-indipendint	independent	2
-indivijúul	individual	3
-industré	industry	1
-industréul	industrial	2
-inevitibul	inevitable	3
-inevitublé	inevitably	2
-infekšin	infection	3
-in	in	0
-infint	infant	1
-inflášin	inflation	3
-inflúens	influence	3
-inflúenšul	influential	4
-infórm	inform	1
-infórmul	informal	2
-inførmášin	information	4
-infrustrukšør	infrastructure	5
-Ingliš	English	3
-ingrédéint	ingredient	3
-inišéát	initiate	4
-inišéitiv	initiative	4
-inišulé	initially	5
-inišul	initial	3
-injøré	injury	2
-injør	injure	2
-inklúd	include	3
-inklúding	including	2
-inkórpørát	incorporate	5
-inkrediblé	incredibly	2
-inkredibul	incredible	3
-inkrés	increase	4
-inkrésing	increasing	3
-inkrésinglé	increasingly	4
-inkrést	increased	5
-inkum	income	3
-inkúiré	inquiry	3
-inmát	inmate	2
-inórmus	enormous	3
-inør	inner	2
-inpøt	input	1
-insekt	insect	1
-insentiv	incentive	2
-insidint	incident	2
-insist	insist	0
-insíd	inside	2
-insít	insight	3
-insørt	insert	1
-inspekšin	inspection	3
-inspektør	inspector	2
-inspirášin	inspiration	3
-inspír	inspire	2
-insted	instead	1
-instinkt	instinct	1
-instins	instance	3
-instint	instant	1
-instintlé	instantly	2
-institúšin	institution	3
-institúšinul	institutional	4
-instol	install	2
-instrukšin	instruction	3
-instrukšinul	instructional	4
-instrukt	instruct	1
-instruktør	instructor	2
-instrumint	instrument	1
-instulášin	installation	5
-inšørins	insurance	5
-intakt	intact	1
-integrité	integrity	1
-intelijins	intelligence	5
-intelijint	intelligent	3
-intend	intend	0
-intens	intense	1
-intensité	intensity	1
-intenšin	intention	2
-intent	intent	0
-intéréør	interior	3
-intigrášin	integration	4
-intigrát	integrate	3
-intigrátid	integrated	3
-intilekšúul	intellectual	6
-intimit	intimate	2
-intørakšin	interaction	4
-intørakt	interact	2
-intørfér	interfere	3
-intørnašinul	international	4
-intørnet	Internet	2
-intørnul	internal	2
-intørpritášin	interpretation	5
-intørprit	interpret	2
-intørupt	interrupt	2
-intørvenšin	intervention	3
-intørvéú	interview	4
-intørvul	interval	2
-intrist	interest	2
-intristid	interested	3
-intristing	interesting	2
-intrudukšin	introduction	4
-intrudús	introduce	4
-intú	into	1
-inuf	enough	4
-inusint	innocent	4
-inuvášin	innovation	5
-inuvátiv	innovative	4
-invád	invade	2
-invážin	invasion	3
-invenšin	invention	2
-invent	invent	0
-inventóré	inventory	2
-invest	invest	0
-investigášin	investigation	3
-investigát	investigate	2
-investigátør	investigator	2
-investmint	investment	1
-investør	investor	1
-invisibul	invisible	2
-invitášin	invitation	3
-invít	invite	2
-involvd	involved	1
-involv	involve	1
-involvmint	involvement	2
-inherint	inherent	1
-inherit	inherit	0
-išéú	issue	4
-Italéin	Italian	2
-it	it	0
-itself	itself	0
-its	its	0
-iuú	ie	2
-íbraú	eyebrow	5
-ídentifikášin	identification	5
-ídentifí	identify	2
-ídentikul	identical	3
-ídentité	identity	2
-ídél	ideal	3
-ídéolijé	ideology	5
-ídéu	idea	3
-ídéulojikul	ideological	6
-ídhør	either	4
-í	eye	3
-Í	I	1
-íkon	icon	2
-íl	aisle	4
-ílind	island	3
-Íriš	Irish	3
-írn	iron	2
-íroniklé	ironically	5
-íruné	irony	3
-ís	ice	3
-ísulášin	isolation	5
-ísulát	isolate	4
-ísulátid	isolated	4
-ítum	item	2
-jakit	jacket	2
-Japinéz	Japanese	4
-jaz	jazz	1
-jál	jail	2
-jendør	gender	2
-jenéúin	genuine	4
-jenørášin	generation	5
-jenørát	generate	4
-jenøris	generous	4
-jenørulé	generally	5
-jenørul	general	3
-jentlé	gently	2
-jentul	gentle	3
-jentulmin	gentleman	4
-jescør	gesture	4
-jet	jet	0
-jénéis	genius	4
-jén	gene	3
-jénz	jeans	3
-jim	gym	2
-jinetik	genetic	3
-jíint	giant	3
-job	job	0
-jo	jaw	2
-jor	jar	1
-jói	joy	2
-jóin	join	1
-jóint	joint	1
-jók	joke	2
-jøré	jury	2
-Jørmin	German	3
-jørné	journey	4
-jørnul	journal	3
-jørnulist	journalist	3
-jørnulizm	journalism	4
-jørør	juror	2
-juj	judge	3
-jujmint	judgment	3
-jump	jump	0
-jungul	jungle	2
-just	just	0
-justifí	justify	1
-justis	justice	2
-júdišul	judicial	4
-júlré	jewelry	4
-júnéør	junior	3
-júrisdikšin	jurisdiction	4
-jús	juice	4
-kab	cab	1
-kabin	cabin	1
-kabinit	cabinet	2
-kac	catch	3
-kalindør	calendar	3
-kalkéølášin	calculation	7
-kalkéølát	calculate	6
-kampán	campaign	4
-kamp	camp	1
-kampis	campus	2
-kamru	camera	3
-kandé	candy	2
-kandidit	candidate	3
-kandul	candle	3
-kan	can	1
-kansør	cancer	3
-kansul	cancel	3
-kanvis	canvas	2
-kap	cap	1
-kapitul	capital	2
-kapšør	capture	4
-kaptin	captain	2
-kast	cast	1
-kaš	cash	3
-kat	cat	1
-katigóré	category	4
-katul	cattle	3
-katulog	catalog	2
-Kathlik	Catholic	3
-kaúc	couch	4
-kaú	cow	3
-kaúnsul	council	5
-kaúnsul	counsel	4
-kaúnsuling	counseling	4
-kaúnsulør	counselor	5
-kaúnté	county	4
-kaúnt	count	3
-kaúntør	counter	4
-kaúntørport	counterpart	5
-kažulté	casualty	4
-kažúul	casual	4
-kábul	cable	4
-káj	cage	4
-kák	cake	3
-káos	chaos	3
-kápibilité	capability	4
-kápibul	capable	5
-kás	case	3
-káv	cave	3
-kemikul	chemical	4
-kemistré	chemistry	3
-keré	carry	4
-keréør	carrier	5
-ker	care	3
-kerfulé	carefully	5
-kerful	careful	3
-keriktør	character	6
-keriktøristik	characteristic	7
-keriktøríz	characterize	8
-kerit	carrot	4
-ké	key	2
-kéøréis	curious	6
-kéøréosité	curiosity	5
-kéør	cure	4
-kép	keep	2
-Kéúbin	Cuban	4
-kéú	cue	3
-kéút	cute	4
-kicin	kitchen	3
-kid	kid	0
-kik	kick	1
-kil	kill	1
-kiling	killing	1
-kilør	killer	2
-kingdum	kingdom	1
-king	king	0
-kis	kiss	1
-kit	kit	0
-kínd	kind	1
-klas	class	2
-klasifí	classify	3
-klasik	classic	3
-klasikul	classical	4
-klasrúm	classroom	4
-klaúd	cloud	3
-klá	clay	3
-klám	claim	3
-klén	clean	3
-klér	clear	3
-klérlé	clearly	4
-klif	cliff	2
-klik	click	2
-kling	cling	1
-klinik	clinic	2
-klinikul	clinical	3
-klip	clip	1
-klíint	client	3
-klím	climb	3
-klímit	climate	4
-klok	clock	2
-kloth	cloth	1
-klozit	closet	3
-klódhing	clothing	3
-klódhz	clothes	5
-klós	close	3
-klósist	closest	3
-klóslé	closely	4
-klósør	closer	3
-klózd	closed	4
-klóz	close	4
-klørk	clerk	2
-klub	club	1
-klustør	cluster	2
-klú	clue	3
-kofé	coffee	4
-kognitiv	cognitive	2
-kolég	colleague	6
-kol	call	3
-kolij	college	5
-koliné	colony	3
-kolm	calm	2
-kolør	collar	3
-kolum	column	2
-kolumnist	columnist	1
-kombat	combat	1
-kombinášin	combination	4
-komin	common	3
-kominlé	commonly	4
-komint	comment	3
-kompinsášin	compensation	5
-kompitišin	competition	4
-komplikátid	complicated	4
-kompréhensiv	comprehensive	3
-komprimíz	compromise	5
-komprubul	comparable	5
-kompuzišin	composition	5
-komudé	comedy	3
-kondukt	conduct	2
-konfidins	confidence	4
-konfidint	confident	2
-konflikt	conflict	2
-konfrins	conference	5
-konfrintášin	confrontation	5
-Kongris	Congress	3
-konkrét	concrete	4
-konsept	concept	2
-konsikúens	consequence	6
-konsikúentlé	consequently	5
-konsintrášin	concentration	6
-konsintrát	concentrate	5
-konsørt	concert	3
-konsørvášin	conservation	5
-konstint	constant	2
-konstintlé	constantly	3
-konstitúšin	constitution	4
-konstitúšinul	constitutional	5
-konstitút	constitute	3
-konstrukt	construct	2
-konšins	conscience	6
-konšis	conscious	5
-konšisnis	consciousness	7
-kontakt	contact	2
-kontekst	context	3
-kontest	contest	1
-kontinint	continent	2
-kontrakt	contract	2
-kontraktør	contractor	3
-kontrast	contrast	1
-kontribéúšin	contribution	5
-kontruvørsé	controversy	4
-kontruvøršul	controversial	6
-kontumplát	contemplate	4
-konvikt	convict	2
-konvørsášin	conversation	5
-kopé	copy	2
-kop	cop	1
-korbin	carbon	3
-korbuhídrát	carbohydrate	6
-kord	card	2
-kor	car	2
-korgó	cargo	3
-korpit	carpet	3
-kort	cart	2
-kortún	cartoon	4
-korv	carve	3
-kost	cost	1
-kostlé	costly	2
-kostúm	costume	3
-kotij	cottage	5
-kotin	cotton	3
-koz	cause	5
-kóc	coach	4
-kód	code	3
-kóilišin	coalition	5
-kóin	coin	2
-kókán	cocaine	6
-kóld	cold	2
-kól	coal	3
-kóopørášin	cooperation	6
-kóopørát	cooperate	5
-kóopøritiv	cooperative	5
-kóp	cope	3
-kórd	cord	2
-Kóréin	Korean	3
-kór	core	3
-kóridór	corridor	4
-kórilášin	correlation	7
-kórispondint	correspondent	5
-kórn	corn	2
-kórnør	corner	3
-kórpørášin	corporation	6
-kórpørit	corporate	5
-kórs	coarse	4
-kórs	course	4
-kórt	court	3
-kórtrúm	courtroom	5
-kóst	coast	3
-kóstul	coastal	4
-kót	coat	3
-kød	could	4
-køké	cookie	5
-køk	cook	3
-køking	cooking	3
-kørekt	correct	4
-kørektlé	correctly	5
-kørér	career	4
-kørij	courage	6
-kørikéølum	curriculum	6
-kørinsé	currency	6
-kørint	current	4
-kørintlé	currently	5
-kørtin	curtain	3
-kørupšin	corruption	5
-kørv	curve	3
-køúórdinát	coordinate	6
-køúórdinátør	coordinator	6
-køúórdinits	coordinates	6
-kraft	craft	1
-krak	crack	2
-kraš	crash	3
-kraúd	crowd	3
-kraúdid	crowded	4
-krázé	crazy	3
-kredibilité	credibility	2
-kredit	credit	1
-kréášin	creation	5
-kréát	create	4
-kréátiv	creative	4
-kréátivité	creativity	4
-krécør	creature	6
-krém	cream	3
-kriminul	criminal	2
-Kriscéanité	Christianity	5
-Kriscin	Christian	4
-Krismis	Christmas	4
-kristul	crystal	3
-kritik	critic	2
-kritikul	critical	3
-kritisizm	criticism	3
-kritisíz	criticize	4
-krí	cry	2
-krím	crime	3
-krísis	crisis	2
-krítéréu	criteria	5
-krol	crawl	3
-kronik	chronic	3
-krop	crop	1
-kros	cross	2
-kruš	crush	3
-krú	crew	3
-krúl	cruel	3
-krúšul	crucial	5
-krúz	cruise	5
-kulabørášin	collaboration	7
-kulaps	collapse	4
-kulcør	culture	4
-kulcørul	cultural	4
-kulekšin	collection	6
-kulekt	collect	4
-kulektiv	collective	5
-kulektør	collector	5
-kulestørol	cholesterol	4
-kulónéul	colonial	5
-kulør	color	3
-kulørful	colorful	3
-kumand	command	3
-kumandør	commander	4
-kumbínd	combined	4
-kumbín	combine	4
-kuméúnikášin	communication	8
-kuméúnikát	communicate	7
-kuméúnité	community	5
-kum	come	3
-kumført	comfort	3
-kumftørbul	comfortable	8
-kuming	coming	2
-kumišin	commission	6
-kumišinør	commissioner	7
-kumité	committee	6
-kumit	commit	3
-kumitmint	commitment	4
-kumodité	commodity	4
-kumøršul	commercial	7
-kumpanéin	companion	4
-kumpaúnd	compound	4
-kumpel	compel	2
-kumpeling	compelling	3
-kumper	compare	4
-kumperisin	comparison	4
-kumpetitiv	competitive	3
-kumpetitør	competitor	3
-kumpét	compete	4
-kumpéútør	computer	5
-kumpiné	company	4
-kumplán	complain	4
-kumplánt	complaint	4
-kumpleks	complex	4
-kumpleksité	complexity	5
-kumplét	complete	4
-kumplétlé	completely	5
-kumplí	comply	3
-kumplíins	compliance	6
-kumpónint	component	4
-kumpóz	compose	5
-kumpríz	comprise	5
-Kunádéin	Canadian	5
-kundem	condemn	3
-kundišin	condition	4
-kundukt	conduct	3
-kunekšin	connection	6
-kunekt	connect	4
-kunfes	confess	3
-kunfešin	confession	5
-kunféúz	confuse	5
-kunféúžin	confusion	6
-kunfirm	confirm	2
-kunflikt	conflict	3
-kunfrunt	confront	3
-kungrešinul	congressional	6
-kunklúd	conclude	5
-kunklúžin	conclusion	6
-kunsekéøtiv	consecutive	6
-kunsensis	consensus	3
-kunsent	consent	2
-kunsepšin	conception	5
-kunséd	concede	5
-kunsév	conceive	6
-kunsidørášin	consideration	6
-kunsidør	consider	3
-kunsidøriblé	considerably	5
-kunsidøribul	considerable	6
-kunsist	consist	2
-kunsistint	consistent	3
-kunsistintlé	consistently	4
-kunsørnd	concerned	5
-kunsørn	concern	4
-kunsørning	concerning	4
-kunsørvitiv	conservative	5
-kunspirisé	conspiracy	5
-kunstránt	constraint	4
-kunstrukšin	construction	5
-kunstrukt	construct	3
-kunsult	consult	2
-kunsultint	consultant	3
-kunsumpšin	consumption	4
-kunsúm	consume	4
-kunsúmør	consumer	4
-kuntán	contain	4
-kuntánør	container	5
-kuntempøreré	contemporary	5
-kuntend	contend	2
-kuntent	content	2
-kuntinéúd	continued	4
-kuntinéú	continue	4
-kuntinéúing	continuing	4
-kuntinéúis	continuous	5
-kuntré	country	3
-kuntribéøtør	contributor	5
-kuntribéút	contribute	5
-kuntról	control	3
-kunvá	convey	4
-kunvenšin	convention	4
-kunvenšinul	conventional	5
-kunvénéins	convenience	7
-kunvikšin	conviction	5
-kunvins	convince	4
-kunvinst	convinced	5
-kunvørt	convert	3
-kunvøržin	conversion	5
-kupasité	capacity	4
-kup	cup	1
-kupul	couple	4
-kusénó	casino	4
-kustidé	custody	3
-kustum	custom	2
-kustumør	customer	3
-kut	cut	1
-kuvør	cover	3
-kuvrij	coverage	6
-kuzin	cousin	3
-kúescinár	questionnaire	8
-kúescin	question	4
-kúest	quest	2
-kúén	queen	4
-kú	coup	4
-kúik	quick	3
-kúiklé	quickly	4
-kúit	quit	2
-kúíit	quiet	4
-kúíitlé	quietly	5
-kúít	quite	4
-kúl	cool	3
-kúolifí	qualify	4
-kúolité	quality	4
-kúontité	quantity	4
-kúórtørbak	quarterback	5
-kúórtør	quarter	4
-kúót	quote	4
-lab	lab	0
-labritóré	laboratory	4
-ladør	ladder	2
-laf	laugh	3
-laftør	laughter	4
-lak	lack	1
-lamp	lamp	0
-land	land	0
-landing	landing	0
-landmork	landmark	1
-landskáp	landscape	3
-lap	lap	0
-last	last	0
-Latin	Latin	0
-latør	latter	2
-laúd	loud	2
-lábør	labor	2
-lábul	label	2
-ládé	lady	2
-lá	lay	2
-lák	lake	2
-lán	lane	2
-lángúij	language	5
-láør	layer	3
-lásør	laser	2
-lát	late	2
-látlé	lately	3
-látør	later	2
-led	lead	1
-ledhør	leather	3
-left	left	0
-leg	leg	0
-legisé	legacy	3
-lejind	legend	2
-lejislácør	legislature	5
-lejislášin	legislation	4
-lejislátiv	legislative	3
-lejislátør	legislator	3
-lekšør	lecture	4
-lemin	lemon	1
-lend	lend	0
-length	length	0
-lenz	lens	1
-les	less	1
-lesin	lesson	2
-let	let	0
-letør	letter	2
-levul	level	1
-léd	lead	2
-léding	leading	2
-lédør	leader	3
-lédøršip	leadership	5
-léf	leaf	2
-lég	league	4
-légulé	legally	4
-légul	legal	2
-lén	lean	2
-lép	leap	2
-lést	least	2
-lév	leave	3
-libørté	liberty	2
-libørul	liberal	2
-lid	lid	0
-lift	lift	0
-lijitimit	legitimate	4
-likúid	liquid	2
-lim	limb	1
-limitášin	limitation	3
-limit	limit	0
-limitid	limited	1
-link	link	0
-lip	lip	0
-lisin	listen	2
-lisinør	listener	3
-list	list	0
-litøreré	literary	3
-litørucør	literature	5
-litørulé	literally	4
-litul	little	2
-living	living	0
-líbreré	library	3
-líf	life	2
-lí	lie	2
-lífstíl	lifestyle	4
-líftím	lifetime	4
-líibilité	liability	3
-líin	lion	2
-lík	like	2
-líklé	likely	3
-líkléhød	likelihood	5
-líkúíz	likewise	6
-lín	line	2
-lísinz	license	5
-lít	light	3
-líting	lighting	3
-lítlé	lightly	4
-lítning	lightning	3
-lív	live	2
-lívør	liver	2
-lobé	lobby	2
-lo	law	2
-log	log	0
-lojik	logic	2
-lojikul	logical	3
-lok	lock	1
-lomákør	lawmaker	4
-lonc	launch	3
-londré	laundry	3
-lon	lawn	2
-long-tørm	long-term	1
-long	long	0
-longtím	longtime	2
-lorj	large	3
-lorjlé	largely	4
-los	loss	1
-lost	lost	0
-losút	lawsuit	4
-lot	lot	0
-lots	lots	0
-lód	load	2
-lóéør	lawyer	4
-lóéul	loyal	3
-lóéulté	loyalty	4
-ló	low	2
-lókášin	location	5
-lókát	locate	4
-lókul	local	3
-lón	loan	2
-lónlé	lonely	3
-lóúør	lower	3
-løk	look	2
-lørn	learn	2
-lørning	learning	2
-luké	lucky	2
-luk	luck	1
-lunc	lunch	1
-lung	lung	0
-luv	love	2
-luvlé	lovely	3
-luvør	lover	2
-lúp	loop	2
-lús	loose	3
-lúz	lose	3
-mac	match	2
-mad	mad	0
-magizén	magazine	3
-magnetik	magnetic	1
-magnitúd	magnitude	2
-majik	magic	2
-maksimum	maximum	2
-mandát	mandate	2
-manéøfakcøring	manufacturing	5
-manéøfakcørør	manufacturer	6
-manéúul	manual	3
-man	man	0
-manij	manage	3
-manijing	managing	2
-manijmint	management	4
-manijør	manager	3
-manør	manner	2
-manšin	mansion	2
-map	map	0
-mas	mass	1
-masiv	massive	2
-mask	mask	0
-mastør	master	1
-matør	matter	2
-math	math	0
-mathmatiks	mathematics	2
-maúnt	mount	2
-maúntin	mountain	3
-maús	mouse	3
-maúth	mouth	2
-mábé	maybe	3
-má	may	2
-májør	major	2
-mák	make	2
-mákør	maker	2
-mákup	makeup	2
-mál	mail	2
-mál	male	2
-mán	main	2
-mánlé	mainly	3
-mánstrém	mainstream	4
-mántán	maintain	4
-mántinins	maintenance	6
-máør	mayor	3
-mát	mate	2
-medikášin	medication	4
-medikul	medical	2
-medisin	medicine	2
-medul	medal	1
-mekinism	mechanism	3
-Meksikin	Mexican	4
-melt	melt	0
-membør	member	1
-membøršip	membership	3
-memøré	memory	2
-mené	many	2
-menéú	menu	2
-menšin	mention	2
-mentór	mentor	1
-mentulé	mentally	3
-mentul	mental	1
-meréd	married	4
-meré	marry	3
-merij	marriage	5
-merit	merit	0
-mes	mess	1
-mesij	message	4
-metifór	metaphor	4
-metrupolitin	metropolitan	2
-metul	metal	1
-methid	method	1
-mežør	measure	4
-mežørmint	measurement	5
-médéu	media	3
-médéum	medium	2
-mé	me	1
-mél	meal	2
-mén	mean	2
-méning	meaning	2
-méningful	meaningful	2
-méntím	meantime	4
-ménúíl	meanwhile	6
-ménz	means	3
-mér	mere	2
-mérikul	miracle	5
-mérlé	merely	3
-mét	meat	2
-mét	meet	2
-méting	meeting	2
-métør	meter	2
-méúcúul	mutual	5
-méúnisipul	municipal	4
-méúzéim	museum	5
-méúzik	music	4
-méúzikul	musical	5
-méúzišin	musician	5
-midnít	midnight	3
-midst	midst	0
-midul	middle	2
-mikanik	mechanic	4
-mikanikul	mechanical	5
-mikscør	mixture	5
-miks	mix	2
-mikst	mixed	3
-miléin	million	2
-mil	mill	1
-militeré	military	2
-milk	milk	0
-minimíz	minimize	2
-minimul	minimal	1
-minimum	minimum	0
-minirul	mineral	2
-ministør	minister	1
-ministré	ministry	1
-minit	minute	2
-mirør	mirror	2
-mis	miss	1
-mising	missing	1
-misták	mistake	2
-mistéréis	mysterious	5
-mistiré	mystery	3
-misul	missile	3
-mišineré	missionary	5
-mišin	mission	3
-mith	myth	1
-mí	my	1
-mígrášin	migration	4
-míld	mild	1
-mínd	mind	1
-mín	mine	2
-mínórité	minority	3
-mínør	minor	2
-míself	myself	1
-mít	might	3
-modifí	modify	1
-modist	modest	1
-modørit	moderate	3
-modørn	modern	1
-modul	model	1
-mol	mall	2
-molikéúl	molecule	5
-mom	mom	0
-monéømint	monument	3
-monitør	monitor	1
-monstør	monster	1
-morbul	marble	3
-morc	march	2
-morjin	margin	2
-mork	mark	1
-morkit	market	2
-morkiting	marketing	2
-morkitplás	marketplace	5
-morkør	marker	2
-móbul	mobile	3
-mód	mode	2
-mómentum	momentum	1
-mómint	moment	2
-mór	more	2
-mórgij	mortgage	5
-mórning	morning	1
-móróvør	moreover	4
-mórtalité	mortality	2
-mórul	moral	2
-móst	most	1
-móstlé	mostly	2
-móšin	motion	3
-mótivášin	motivation	4
-mótivát	motivate	3
-mótiv	motive	2
-mótør	motor	2
-mørcint	merchant	3
-mørdør	murder	2
-mørén	marine	3
-muc	much	1
-mud	mud	0
-mujórité	majority	3
-multipul	multiple	2
-Mundá	Monday	3
-muné	money	3
-munipéølát	manipulate	5
-munké	monkey	3
-munth	month	1
-munthlé	monthly	2
-must	must	0
-musul	muscle	2
-mušén	machine	5
-mušrúm	mushroom	4
-mutériéul	material	4
-mutør	mutter	2
-muthør	mother	2
-múd	mood	2
-mún	moon	2
-múvé	movie	3
-múv	move	2
-múvmint	movement	3
-nacørulé	naturally	5
-nacørul	natural	3
-nasté	nasty	1
-našinul	national	3
-naú	now	2
-nábør	neighbor	5
-nábøring	neighboring	5
-nábørhød	neighborhood	7
-nácør	nature	4
-nákid	naked	2
-nál	nail	2
-nám	name	2
-nášin	nation	3
-nášinúíd	nationwide	6
-nátiv	native	2
-návul	naval	2
-negitiv	negative	2
-nek	neck	1
-nekst	next	2
-neritiv	narrative	4
-neró	narrow	4
-nesiseré	necessary	5
-nesiserilé	necessarily	5
-nest	nest	0
-net	net	0
-netúørk	network	2
-nevør-dhe-les	nevertheless	5
-nevør	never	1
-néd	need	2
-nédul	needle	4
-nédhør	neither	4
-né	knee	3
-nél	kneel	3
-nérbí	nearby	3
-nér	near	2
-nérlé	nearly	3
-nét	neat	2
-nigóšéášin	negotiation	7
-nigóšéát	negotiate	6
-nisesité	necessity	4
-níf	knife	3
-nín	nine	2
-nís	nice	3
-nít	night	3
-nítmár	nightmare	5
-nod	nod	0
-nok	knock	2
-nolij	knowledge	6
-nominášin	nomination	3
-nominé	nominee	2
-nonprofit	nonprofit	0
-not	not	0
-novul	novel	1
-nóbudé	nobody	3
-nó	know	3
-nó	no	1
-nóiz	noise	3
-nón	known	3
-nórdhørn	northern	3
-nór	nor	1
-nórm	norm	1
-nórmulé	normally	4
-nórmul	normal	2
-nórthést	northeast	3
-nórth	north	1
-nórthúest	northwest	2
-nóšin	notion	3
-nótbøk	notebook	4
-nót	note	2
-nótis	notice	3
-nóúer	nowhere	4
-nóz	nose	3
-nørs	nurse	2
-nørv	nerve	2
-nørvis	nervous	3
-numbør	number	1
-nun-dhe-les	nonetheless	5
-nun	none	2
-nut	nut	0
-nuthing	nothing	1
-nú	new	2
-núklér	nuclear	4
-núlé	newly	3
-númøris	numerous	4
-nún	noon	2
-nútréint	nutrient	3
-nútrul	neutral	3
-núz	news	3
-núzpápør	newspaper	5
-obligášin	obligation	3
-obstikul	obstacle	4
-obvéis	obvious	3
-obvéislé	obviously	4
-obzørvášin	observation	5
-odéins	audience	6
-od	odd	1
-odz	odds	2
-o	ah	2
-of	off	1
-ofin	often	2
-ofis	office	3
-ofisør	officer	3
-ofør	offer	2
-oføring	offering	2
-oful	awful	2
-okéøpášin	occupation	6
-okéøpí	occupy	4
-oksijen	oxygen	4
-okšin	auction	5
-oldhó	although	6
-ol	all	2
-olmóst	almost	2
-olredé	already	3
-olsó	also	2
-oltør	alter	2
-oltørnitiv	alternative	4
-oltugedhør	altogether	4
-olúáz	always	5
-Omerikin	American	3
-on	on	0
-ongóing	ongoing	1
-onist	honest	2
-onistlé	honestly	3
-onlín	online	2
-onør	honor	2
-ont	aunt	2
-ontrepenúr	entrepreneur	4
-ontú	onto	1
-onvelóp	envelope	3
-opørášin	operation	4
-opørát	operate	3
-opøráting	operating	2
-opørátør	operator	3
-opørtúnité	opportunity	4
-opru	opera	2
-opšin	option	2
-opt	opt	0
-optimistik	optimistic	1
-opuzišin	opposition	5
-opuzit	opposite	4
-orgéú	argue	3
-orgéúmint	argument	4
-orkitekšør	architecture	7
-orkitekt	architect	4
-ormd	armed	2
-ormé	army	2
-orm	arm	1
-ort	art	1
-ortifakt	artifact	2
-ortifišul	artificial	4
-ortikéølát	articulate	6
-ortikul	article	4
-ortist	artist	1
-ortistik	artistic	2
-ot	ought	3
-otó	auto	3
-otumatik	automatic	4
-otumatiklé	automatically	7
-otumubél	automobile	6
-othør	author	3
-othøríz	authorize	5
-ó	oh	2
-ó	owe	3
-óil	oil	1
-óká	okay	3
-ók	oak	2
-óld-fašind	old-fashioned	5
-óld	old	1
-ón	own	2
-ónlé	only	2
-ónør	owner	3
-ónøršip	ownership	5
-ópin	open	2
-ópining	opening	2
-ópinlé	openly	3
-órbit	orbit	1
-órdineré	ordinary	3
-órdør	order	2
-óréintášin	orientation	6
-ór	or	1
-órganik	organic	2
-órgin	organ	2
-órginism	organism	2
-órginizášin	organization	5
-órginizášinul	organizational	6
-órginízd	organized	4
-órginíz	organize	4
-órijin	origin	2
-órinj	orange	4
-órul	oral	2
-óšin	ocean	4
-óvør	over	2
-óvørkum	overcome	5
-óvørløk	overlook	4
-óvørnít	overnight	5
-óvørol	overall	4
-óvørsé	oversee	4
-óvørúelm	overwhelm	4
-óvørúelming	overwhelming	4
-ørb	herb	2
-ørbin	urban	2
-ørj	urge	3
-ørlé	early	3
-ørn	earn	2
-ørninks	earnings	3
-ørth	earth	2
-ørthkúák	earthquake	6
-pac	patch	2
-pad	pad	0
-pak	pack	1
-pakij	package	4
-palis	palace	3
-pan	pan	0
-panik	panic	1
-pants	pants	0
-panul	panel	1
-pas	pass	1
-pasij	passage	4
-pasing	passing	1
-pasinjør	passenger	4
-past	past	0
-pašin	passion	3
-pat	pat	0
-patint	patent	1
-patørn	pattern	2
-path	path	0
-paúdør	powder	3
-paúnd	pound	2
-paúør	power	3
-paúørful	powerful	3
-pá	pay	2
-páj	page	3
-pál	pale	2
-pámint	payment	3
-pán	pain	2
-pánful	painful	2
-pánt	paint	2
-pánting	painting	2
-pántør	painter	3
-pápør	paper	2
-pár	pair	2
-pás	pace	3
-pášins	patience	5
-pášint	patient	3
-pátrin	patron	2
-pen	pen	0
-pensul	pencil	2
-penšin	pension	2
-penulté	penalty	2
-pepør	pepper	2
-perint	parent	2
-pesint	peasant	2
-pet	pet	0
-péanó	piano	2
-pék	peak	2
-pél	peel	2
-pénut	peanut	2
-pépul	people	4
-péréid	period	3
-pér	peer	2
-pés	peace	4
-pés	piece	4
-pésful	peaceful	4
-pétso	pizza	4
-péúr	pure	3
-pic	pitch	2
-picør	pitcher	3
-pig	pig	0
-pik	pick	1
-pikšør	picture	4
-pikup	pickup	1
-pil	pill	1
-piló	pillow	3
-pin	pin	0
-pink	pink	0
-pistul	pistol	1
-pit	pit	0
-pí	pie	2
-píl	pile	2
-pílit	pilot	2
-pín	pine	2
-píp	pipe	2
-píunér	pioneer	4
-PK	PC	1
-plan	plan	0
-planing	planning	1
-planit	planet	1
-planør	planner	2
-plant	plant	0
-plastik	plastic	1
-platfórm	platform	1
-plá	play	2
-plán	plain	2
-plán	plane	2
-plántif	plaintiff	3
-pláof	playoff	3
-pláør	player	3
-plás	place	3
-plásmint	placement	4
-plát	plate	2
-plenté	plenty	1
-plezint	pleasant	3
-pležør	pleasure	4
-pléd	plead	2
-plé	plea	2
-plézd	pleased	4
-pléz	please	4
-plot	plot	0
-plunj	plunge	2
-plus	plus	0
-pokit	pocket	2
-polisé	policy	2
-politiks	politics	1
-politišin	politician	2
-polm	palm	1
-pond	pond	0
-popéølášin	population	5
-popéølerité	popularity	4
-popéølør	popular	3
-pop	pop	0
-pork	park	1
-porking	parking	1
-poršulé	partially	6
-poršul	partial	4
-porté	party	2
-port	part	1
-portikéølør	particular	5
-portikéølørlé	particularly	6
-portikul	particle	4
-portisipášin	participation	5
-portisipát	participate	4
-portisipent	participant	3
-portlé	partly	2
-portnør	partner	2
-portnøršip	partnership	4
-posibilité	possibility	2
-posiblé	possibly	2
-posibul	possible	3
-posto	pasta	2
-pot	pot	0
-povørté	poverty	2
-poz	pause	4
-pozitiv	positive	2
-póint	point	1
-pók	poke	2
-pól	pole	2
-pól	poll	2
-pórc	porch	2
-pór	poor	2
-pór	pour	2
-pórk	pork	1
-póršin	portion	3
-pórtfóléó	portfolio	4
-pórt	port	1
-pórtrá	portray	3
-pórtrit	portrait	2
-póst	post	1
-póstør	poster	2
-póum	poem	2
-póúit	poet	3
-póúitré	poetry	4
-póz	pose	3
-pørád	parade	3
-pørcis	purchase	4
-pørentul	parental	2
-pørfikt	perfect	3
-pørfiktlé	perfectly	4
-pørfórm	perform	2
-pørfórmins	performance	5
-pørfórmør	performer	3
-pør	per	1
-pørminint	permanent	3
-pørmišin	permission	4
-pørmit	permit	1
-pørpis	purpose	3
-pørpul	purple	3
-pørsentij	percentage	5
-pørsepšin	perception	4
-pørsévd	perceived	5
-pørsév	perceive	5
-pørs	purse	2
-pørsinalité	personality	3
-pørsinel	personnel	3
-pørsin	person	2
-pørsinulé	personally	5
-pørsinul	personal	3
-pørsist	persist	1
-pørspektiv	perspective	3
-pørsúád	persuade	4
-pørsú	pursue	3
-pørsút	pursuit	3
-Pøržin	Persian	3
-pørhaps	perhaps	1
-pøš	push	3
-pøt	put	1
-praktiklé	practically	5
-praktikul	practical	3
-praktis	practice	3
-praktišinør	practitioner	4
-praúd	proud	2
-prá	pray	2
-prá	pray	2
-prár	prayer	3
-práz	praise	4
-preditør	predator	2
-prefrins	preference	4
-pregninsé	pregnancy	3
-pregnint	pregnant	1
-premis	premise	1
-prepørášin	preparation	4
-pres	press	1
-prešis	precious	3
-prešør	pressure	4
-prezidenšul	presidential	4
-prezidinsé	presidency	4
-prezidint	president	2
-prezins	presence	4
-prezintášin	presentation	5
-préc	preach	3
-préméum	premium	2
-prést	priest	2
-prévéis	previous	4
-prévéislé	previously	5
-pridikšin	prediction	4
-pridikt	predict	2
-prifør	prefer	2
-prilimineré	preliminary	3
-prinsipul	principal	2
-prinsipul	principle	3
-print	print	0
-pripár	prepare	3
-prisís	precise	4
-prisíslé	precisely	5
-priskripšin	prescription	4
-pritend	pretend	1
-prité	pretty	3
-privál	prevail	3
-privenšin	prevention	3
-privent	prevent	1
-privlij	privilege	4
-prizent	present	2
-prizent	present	2
-prizin	prison	2
-prizinør	prisoner	3
-prizørv	preserve	4
-prizúmublé	presumably	5
-príd	pride	2
-prímeré	primary	3
-prímerilé	primarily	3
-prím	prime	2
-príórité	priority	3
-príør	prior	2
-prís	price	3
-prívisé	privacy	4
-prívit	private	3
-prívitlé	privately	4
-príz	prize	2
-problum	problem	1
-probublé	probably	2
-produkt	product	1
-produktivité	productivity	2
-profit	profit	0
-progres	progress	1
-projekt	project	1
-prominint	prominent	1
-promis	promise	1
-promising	promising	0
-prompt	prompt	0
-propør	proper	1
-propørlé	properly	2
-propørté	property	2
-proses	process	2
-prosesing	processing	2
-prosesør	processor	3
-prosikéúšin	prosecution	6
-prosikéútør	prosecutor	5
-prospekt	prospect	1
-provins	province	2
-pródús	produce	4
-prófaúnd	profound	3
-prófíl	profile	3
-prógram	program	1
-prógraming	programming	2
-próklám	proclaim	4
-prótest	protest	1
-prótén	protein	3
-prótikul	protocol	4
-próhibit	prohibit	1
-prudukšin	production	4
-pruduktiv	productive	3
-prudús	produce	4
-prudúsør	producer	4
-prufesør	professor	3
-prufešin	profession	4
-prufešinul	professional	5
-prugres	progress	2
-prugresiv	progressive	3
-prujekšin	projection	4
-prujekt	project	2
-prumóšin	promotion	4
-prumót	promote	3
-prupóršin	proportion	4
-prupózd	proposed	4
-prupóz	propose	4
-prupózul	proposal	4
-pruséd	proceed	4
-pruséjør	procedure	6
-prutekšin	protection	4
-prutekt	protect	2
-prutektiv	protective	3
-pruvižin	provision	3
-pruvíd	provide	3
-pruvídid	provided	3
-pruvídør	provider	3
-pruvók	provoke	3
-prúf	proof	2
-prúv	prove	2
-publikášin	publication	4
-publik	public	1
-publiklé	publicly	2
-publisité	publicity	2
-publiš	publish	2
-publišør	publisher	3
-pulés	police	4
-pulésmin	policeman	5
-pul	pull	1
-pulitiklé	politically	5
-pulitikul	political	3
-puls	pulse	1
-pulúšin	pollution	5
-pump	pump	0
-punc	punch	1
-puniš	punish	2
-punišmint	punishment	3
-putátó	potato	3
-putenšulé	potentially	6
-putenšul	potential	4
-putról	patrol	2
-puzes	possess	4
-puzešin	possession	6
-puzišin	position	4
-puzul	puzzle	2
-púl	pool	2
-rabit	rabbit	1
-radikul	radical	2
-radhør	rather	2
-rak	rack	1
-ralé	rally	2
-ranc	ranch	1
-randum	random	1
-rap	wrap	1
-rapid	rapid	0
-rapidlé	rapidly	1
-rašinul	rational	3
-rat	rat	0
-raúnd	round	2
-raút	route	3
-rádéášin	radiation	5
-rádéó	radio	3
-rádor	radar	2
-ráj	rage	3
-rál	rail	2
-rálród	railroad	4
-rán	rain	2
-ránj	range	3
-ránk	rank	1
-ráp	rape	2
-rás	race	3
-rásizm	racism	3
-rášéó	ratio	4
-rášul	racial	4
-rát	rate	2
-ráting	rating	1
-ráz	raise	4
-rebul	rebel	1
-redé	ready	2
-red	red	0
-redilé	readily	2
-reféújé	refugee	4
-reféúj	refuge	3
-reførens	reference	3
-regéølášin	regulation	5
-regéølát	regulate	4
-regéølátør	regulator	4
-regéølør	regular	3
-regéølørlé	regularly	4
-regéølutóré	regulatory	5
-rejistør	register	2
-rekørd	record	2
-rekugnišin	recognition	4
-rekugníz	recognize	4
-rekumend	recommend	3
-rekumindášin	recommendation	7
-relitiv	relative	2
-relitivlé	relatively	3
-relivint	relevant	2
-relm	realm	1
-rendør	render	1
-rent	rent	0
-rentul	rental	1
-repéøtášin	reputation	5
-reprizent	represent	2
-reprizentitiv	representative	4
-reprizintášin	representation	6
-rer	rare	2
-rerlé	rarely	3
-resipé	recipe	2
-reskéú	rescue	3
-rest	rest	0
-restront	restaurant	3
-retørik	rhetoric	3
-revenú	revenue	2
-revulášin	revelation	4
-revulúšineré	revolutionary	6
-revulúšin	revolution	4
-rezidens	residence	3
-rezidenšul	residential	4
-rezident	resident	1
-rezilúšin	resolution	5
-rezørvášin	reservation	5
-rezumá	resume	2
-réakšin	reaction	4
-réakt	react	2
-réalité	reality	2
-rébild	rebuild	2
-réc	reach	3
-réd	read	2
-réding	reading	2
-rédør	reader	3
-réinfórs	reinforce	4
-réjekt	reject	2
-réjin	region	3
-réjinul	regional	4
-rékol	recall	4
-rél	real	2
-réølistik	realistic	3
-réølíz	realize	4
-rér	rear	2
-résint	recent	3
-résintlé	recently	4
-résórs	resource	5
-résørc	research	4
-résørcør	researcher	5
-rétál	retail	3
-rétálør	retailer	4
-rézin	reason	4
-rézinibul	reasonable	7
-réhubilitášin	rehabilitation	5
-rib	rib	0
-ribin	ribbon	2
-ric	rich	1
-ricúul	ritual	3
-rid	rid	0
-ridikéølis	ridiculous	5
-ridthm	rhythm	2
-ridukšin	reduction	4
-ridús	reduce	4
-riféúz	refuse	4
-riflekšin	reflection	4
-riflekt	reflect	2
-rifórm	reform	2
-rifør	refer	2
-rifrijørátør	refrigerator	5
-rigán	regain	3
-rigord	regard	2
-rigording	regarding	2
-rigordlis	regardless	4
-rigret	regret	1
-rij	ridge	3
-rikol	recall	4
-rikórd	record	3
-rikórding	recording	3
-rikrút	recruit	4
-rikuvøré	recovery	5
-rikuvør	recover	4
-rikúest	request	3
-rikúírd	required	5
-rikúír	require	5
-rikúírmint	requirement	6
-rilaks	relax	3
-rilášin	relation	4
-rilášinšip	relationship	6
-rilát	relate	3
-rilátid	related	3
-riléf	relief	3
-rilé	really	4
-rilés	release	4
-rilév	relieve	4
-rilijin	religion	3
-rilijis	religious	4
-rilí	rely	2
-rilíibilité	reliability	4
-rilíibul	reliable	5
-riluktint	reluctant	3
-rimán	remain	3
-rimáning	remaining	3
-rimembør	remember	2
-rim	rim	0
-rimínd	remind	2
-rimíndør	reminder	3
-rimork	remark	2
-rimorkubul	remarkable	5
-rimót	remote	3
-rimúv	remove	3
-rimúvul	removal	3
-ring	ring	0
-ripár	repair	3
-ripét	repeat	3
-ripétidlé	repeatedly	5
-rip	rip	0
-riplás	replace	4
-riplásmint	replacement	5
-riplí	reply	2
-ripórt	report	2
-ripórtidlé	reportedly	4
-ripórting	reporting	2
-ripórtør	reporter	3
-ripublik	republic	2
-ripublikin	republican	3
-risepšin	reception	4
-risešin	recession	5
-risév	receive	5
-risévør	receiver	5
-risipéint	recipient	4
-riské	risky	1
-risk	risk	0
-rispekt	respect	2
-rispektivlé	respectively	4
-rispond	respond	1
-rispondint	respondent	2
-rispons	response	2
-risponsibilité	responsibility	2
-risponsibul	responsible	3
-rist	wrist	1
-ristór	restore	3
-ristrikšin	restriction	4
-ristrikt	restrict	2
-ritán	retain	3
-ritin	written	3
-ritírd	retired	3
-ritír	retire	3
-ritírmint	retirement	4
-ritørn	return	2
-ritrét	retreat	3
-riúórd	reward	3
-rivél	reveal	3
-rivéú	review	4
-rivør	river	1
-rivørs	reverse	3
-rizembul	resemble	4
-rizist	resist	2
-rizistins	resistance	5
-rizín	resign	4
-rizolv	resolve	3
-rizórt	resort	3
-rizørv	reserve	4
-rizult	result	2
-rizúm	resume	4
-rižém	regime	4
-ríd	ride	2
-rídør	rider	2
-ríful	rifle	3
-ríit	riot	2
-rís	rice	3
-rít	right	3
-rít	write	3
-ríting	writing	2
-rítør	writer	3
-rívul	rival	2
-ríz	rise	3
-rod	rod	0
-ro	raw	2
-rok	rock	1
-rokit	rocket	2
-rong	wrong	1
-róbot	robot	1
-ród	road	2
-róéul	royal	3
-ró	row	2
-ról	role	2
-ról	roll	2
-róling	rolling	2
-rómans	romance	3
-rómantik	romantic	2
-Rómin	Roman	2
-róp	rope	2
-róz	rose	3
-røf	roof	2
-rørul	rural	2
-rub	rub	0
-rubør	rubber	2
-ruf	rough	3
-ruflé	roughly	4
-run	run	0
-runing	running	1
-runør	runner	2
-ruš	rush	2
-Rušin	Russian	3
-rúf	roof	2
-rúin	ruin	1
-rúl	rule	2
-rúling	ruling	1
-rúm	room	2
-rúmør	rumor	2
-rútén	routine	4
-rúténlé	routinely	5
-rút	root	2
-rút	route	3
-sad	sad	0
-sak	sack	1
-sakrifís	sacrifice	4
-salid	salad	1
-saløré	salary	2
-samin	salmon	2
-sampul	sample	2
-sand	sand	0
-sandúic	sandwich	2
-satisfakšin	satisfaction	3
-satisfí	satisfy	1
-Satørdá	Saturday	3
-satulít	satellite	4
-saúnd	sound	2
-saúthést	southeast	4
-saúth	south	2
-saúthúest	southwest	3
-sáf	safe	2
-sáflé	safely	3
-sá	say	2
-sáfté	safety	3
-sák	sake	2
-sákrid	sacred	3
-sál	sail	2
-sál	sale	2
-sálz	sales	3
-sám	same	2
-sánkšin	sanction	4
-sáv	save	2
-sáving	saving	1
-segmint	segment	1
-sekéølør	secular	4
-sekéør	secure	4
-sekéørité	security	4
-sekind	second	2
-sekriteré	secretary	4
-sekšin	section	3
-sektør	sector	2
-sekunderé	secondary	4
-seldum	seldom	1
-self-estém	self-esteem	2
-sel	cell	2
-self	self	0
-sel	sell	1
-selør	seller	2
-selubrášin	celebration	5
-selubrát	celebrate	4
-seminor	seminar	1
-semiteré	cemetery	3
-sencøré	century	4
-send	send	0
-Senit	Senate	2
-senitór	senator	2
-sensášin	sensation	3
-sens	sense	1
-sensitiv	sensitive	1
-sensitivité	sensitivity	1
-sensør	sensor	1
-sent	scent	1
-sentimint	sentiment	1
-sentins	sentence	3
-sentør	center	2
-sentrul	central	2
-sepirát	separate	3
-sepirit	separate	3
-sepørášin	separation	4
-serumóné	ceremony	4
-sešin	session	3
-set	set	0
-seting	setting	1
-setul	settle	2
-setulmint	settlement	3
-sevér	severe	2
-sevin	seven	1
-sevinth	seventh	1
-sevørul	several	2
-séd	seed	2
-sé	sea	2
-sé	see	2
-sék	seek	2
-sékrit	secret	3
-sékúins	sequence	6
-sél	seal	2
-séling	ceiling	3
-sém	seem	2
-séminglé	seemingly	3
-sénéør	senior	3
-sén	scene	3
-sés	cease	4
-sét	seat	2
-séz	seize	3
-sézin	season	4
-sfér	sphere	4
-sibling	sibling	0
-sicúášin	situation	5
-signicør	signature	4
-signifikins	significance	4
-signifikint	significant	2
-signifikintlé	significantly	3
-signul	signal	1
-sigøret	cigarette	4
-sik	sick	1
-siks	six	2
-siksth	sixth	2
-silebrité	celebrity	3
-silekšin	selection	4
-silekt	select	2
-silé	silly	2
-silk	silk	0
-silvør	silver	1
-simbolik	symbolic	2
-simbul	symbol	2
-similerité	similarity	2
-similør	similar	1
-similørlé	similarly	2
-simpithé	sympathy	3
-simplé	simply	1
-simptum	symptom	2
-simpul	simple	2
-sindróm	syndrome	3
-sineréó	scenario	5
-sin	sin	0
-sing	sing	0
-singør	singer	1
-singul	single	2
-sink	sink	0
-sins	since	2
-siréis	serious	4
-siréislé	seriously	5
-siréz	series	4
-sistør	sister	1
-sistum	system	2
-sité	city	2
-sit	sit	0
-sitizin	citizen	2
-sitizinšip	citizenship	4
-sivérlé	severely	4
-sivik	civic	2
-siviléin	civilian	3
-sivilizášin	civilization	4
-sivul	civil	2
-síd	side	2
-sídúok	sidewalk	5
-sí	sigh	3
-síins	science	4
-síintifik	scientific	3
-síintist	scientist	2
-síkolijé	psychology	7
-síkolijist	psychologist	6
-síkul	cycle	5
-síkulojikul	psychological	8
-sílins	silence	4
-sílint	silent	2
-símultánéøslé	simultaneously	6
-sín	sign	2
-sít	cite	3
-sít	sight	3
-sít	site	2
-síz	size	2
-skandul	scandal	2
-skan	scan	1
-skatør	scatter	3
-skál	scale	3
-skárd	scared	3
-skejul	schedule	4
-skeré	scary	3
-sker	scare	3
-ské	ski	1
-ském	scheme	4
-skild	skilled	2
-skil	skill	1
-skin	skin	0
-skip	skip	0
-skí	sky	1
-skolør	scholar	3
-skoløršip	scholarship	5
-skóp	scope	3
-skór	score	3
-skørt	skirt	1
-skrac	scratch	3
-skrambul	scramble	3
-skrém	scream	3
-skrén	screen	3
-skréning	screening	3
-skript	script	1
-skrú	screw	3
-skul	skull	1
-skulpcør	sculpture	4
-skúer	square	4
-skúéz	squeeze	5
-skúl	school	4
-skúod	squad	3
-slam	slam	0
-slap	slap	0
-sláv	slave	2
-slávøré	slavery	3
-slép	sleep	2
-slév	sleeve	3
-slip	slip	0
-slíd	slide	2
-slís	slice	3
-slít	slight	3
-slítlé	slightly	4
-slot	slot	0
-sló	slow	2
-slólé	slowly	3
-slóp	slope	2
-smel	smell	1
-smíl	smile	2
-smol	small	2
-smort	smart	1
-smók	smoke	2
-smúdh	smooth	3
-snap	snap	0
-snák	snake	2
-snék	sneak	2
-snó	snow	2
-sofin	soften	2
-soft	soft	0
-softlé	softly	1
-softúer	software	3
-sok	sock	1
-sokør	soccer	3
-solid	solid	0
-solt	salt	1
-solv	solve	1
-song	song	0
-soré	sorry	2
-sos	sauce	4
-sovrinté	sovereignty	4
-só-kold	so-called	5
-sódéim	sodium	3
-só	so	1
-sófu	sofa	2
-sóil	soil	1
-sók	soak	2
-sól	sole	2
-sól	soul	2
-sóljør	soldier	4
-sóllé	solely	3
-sólør	solar	2
-sóp	soap	2
-sórd	sword	2
-sór	soar	2
-sórs	source	4
-sórt	sort	1
-sóšulé	socially	6
-sóšul	social	4
-Sóvéit	Soviet	3
-søraúnd	surround	4
-søraúnding	surrounding	4
-sørc	search	3
-sørfis	surface	4
-sør	sir	1
-sørjin	surgeon	4
-sørjøré	surgery	4
-sørkit	circuit	4
-sørkul	circle	5
-sørkumstans	circumstance	5
-sørtin	certain	3
-sørtinlé	certainly	4
-sørvá	survey	3
-sørválins	surveillance	7
-sørv	serve	2
-sørving	serving	1
-sørvint	servant	2
-sørvis	service	3
-sørvív	survive	3
-sørvívør	survivor	3
-sørvívul	survival	3
-Spaniš	Spanish	2
-spaús	spouse	3
-spár	spare	2
-spás	space	3
-spekéølášin	speculation	6
-spekéølát	speculate	5
-spektakéølør	spectacular	5
-spektrum	spectrum	1
-spel	spell	1
-spend	spend	0
-spending	spending	0
-spesifik	specific	2
-spesifiklé	specifically	5
-spesifí	specify	2
-spešul	special	3
-spešulist	specialist	3
-spešulíz	specialize	5
-spešulté	specialty	4
-spéc	speech	3
-spéd	speed	2
-spék	speak	2
-spékør	speaker	3
-spéšéz	species	5
-spil	spill	1
-spin	spin	0
-spiricúul	spiritual	3
-spirit	spirit	0
-spit	spit	0
-spí	spy	1
-spín	spine	2
-spít	spite	2
-split	split	0
-sponsør	sponsor	1
-spork	spark	1
-spot	spot	0
-spóksmin	spokesman	3
-spórt	sport	1
-sprá	spray	2
-spred	spread	1
-spring	spring	0
-sprinkul	sprinkle	2
-spún	spoon	2
-stacéú	statue	3
-stacéút	statute	4
-stadéum	stadium	1
-staf	staff	1
-stak	stack	1
-stand	stand	0
-standing	standing	0
-standørd	standard	1
-stans	stance	2
-statis	status	1
-stábul	stable	3
-stá	stay	2
-stáj	stage	3
-sták	stake	2
-sták	steak	2
-stár	stare	2
-stášin	station	3
-stát	state	2
-státmint	statement	3
-stedé	steady	2
-stedilé	steadily	2
-stem	stem	0
-step	step	0
-steréótíp	stereotype	4
-ster	stair	2
-stél	steal	2
-stél	steel	2
-stém	steam	2
-stép	steep	2
-stér	steer	2
-stif	stiff	1
-stik	stick	1
-stil	still	1
-stiméølát	stimulate	4
-stiméølis	stimulus	3
-stíl	style	2
-stok	stock	1
-stop	stop	0
-stor	star	1
-stort	start	1
-storting	starting	1
-stortør	starter	2
-stón	stone	2
-stóré	story	2
-stór	store	2
-stórij	storage	4
-stórm	storm	1
-stóv	stove	2
-stør	stir	1
-stratijé	strategy	3
-strán	strain	2
-stránj	strange	3
-stránjør	stranger	3
-strát	straight	4
-strátin	straighten	5
-strec	stretch	2
-strength	strength	0
-strengthin	strengthen	1
-stres	stress	1
-strék	streak	2
-strém	stream	2
-strét	street	2
-strikt	strict	1
-striktlé	strictly	2
-string	string	0
-strip	strip	0
-strík	strike	2
-stríking	striking	1
-stro	straw	2
-strong	strong	0
-stronglé	strongly	1
-strók	stroke	2
-strugul	struggle	2
-strukšør	structure	4
-strukšørul	structural	4
-strutéjik	strategic	4
-stubilité	stability	2
-studé	study	1
-stuf	stuff	1
-stumbul	stumble	2
-stumik	stomach	4
-stutistiks	statistics	2
-stutistikul	statistical	3
-stúdéó	studio	3
-stúdint	student	2
-stúpid	stupid	1
-subjekt	subject	1
-submit	submit	0
-subørb	suburb	1
-subørbin	suburban	2
-subsidé	subsidy	1
-subsikúint	subsequent	4
-substanšulé	substantially	5
-substanšul	substantial	3
-substins	substance	3
-suc	such	1
-sudin	sudden	2
-sudinlé	suddenly	3
-sudhørn	southern	3
-sufistikátid	sophisticated	6
-sufišint	sufficient	3
-sufør	suffer	2
-suføring	suffering	2
-sugjescin	suggestion	3
-sugjest	suggest	1
-suk	suck	1
-sukses	success	3
-suksesfulé	successfully	5
-suksesful	successful	3
-sukséd	succeed	4
-sulektid	selected	3
-sulúšin	solution	4
-sumbudé	somebody	4
-sumdá	someday	4
-sum	some	2
-sum	sum	0
-sumit	summit	1
-sumøré	summary	3
-sumør	summer	2
-sumtím	sometime	4
-sumtímz	sometimes	5
-sumthing	something	2
-sumúer	somewhere	5
-sumúun	someone	4
-sumúut	somewhat	5
-sumhaú	somehow	4
-Sundá	Sunday	2
-suné	sunny	2
-sun	son	1
-sun	sun	0
-sunlít	sunlight	3
-suplí	supply	2
-suplíør	supplier	3
-supórt	support	2
-supórtiv	supportive	3
-supórtør	supporter	3
-supózd	supposed	4
-supóz	suppose	4
-supózidlé	supposedly	5
-suprízd	surprised	4
-supríz	surprise	4
-suprízing	surprising	3
-suprízinglé	surprisingly	4
-susíité	society	5
-suspekt	suspect	1
-suspend	suspend	0
-suspišin	suspicion	2
-suspišis	suspicious	3
-sustán	sustain	2
-sustánibul	sustainable	5
-sutul	subtle	3
-súel	swell	2
-súer	swear	2
-súet	sweat	2
-súetør	sweater	3
-súép	sweep	3
-súét	suite	3
-súét	sweet	3
-sú	sue	2
-súic	switch	3
-súim	swim	1
-súiming	swimming	2
-súing	swing	1
-súisíd	suicide	4
-sún	soon	2
-súoló	swallow	5
-súpéréør	superior	4
-súp	soup	2
-súpør	super	2
-súpørmorkit	supermarket	4
-súpørvízør	supervisor	5
-súprém	Supreme	4
-sút	suit	2
-sútibul	suitable	5
-šadó	shadow	4
-šal	shall	3
-šaló	shallow	5
-šaúør	shower	5
-šaút	shout	4
-šád	shade	4
-šák	shake	4
-šám	shame	4
-šáp	shape	4
-šed	shed	2
-šef	chef	2
-šelf	shelf	2
-šel	shell	3
-šeltør	shelter	3
-šerd	shared	4
-šer	share	4
-šerhóldør	shareholder	6
-šé	she	3
-šép	sheep	4
-šér	sheer	4
-šét	sheet	4
-šift	shift	2
-šip	ship	2
-šit	shit	2
-ší	shy	3
-šín	shine	4
-šok	shock	3
-šop	shop	2
-šoping	shopping	3
-šork	shark	3
-šorp	sharp	3
-šorplé	sharply	4
-šot	shot	2
-šó	show	4
-šóldør	shoulder	5
-šór	shore	4
-šórt-tørm	short-term	4
-šórt	short	3
-šórtij	shortage	6
-šórtlé	shortly	4
-šórts	shorts	3
-šød	should	5
-šøgør	sugar	3
-šør	sure	3
-šørlé	surely	4
-šørt	shirt	3
-šrimp	shrimp	2
-šrink	shrink	2
-šrug	shrug	2
-šut	shut	2
-šutul	shuttle	4
-šuv	shove	4
-šú	shoe	4
-šút	shoot	4
-šúting	shooting	4
-T-šørt	T-shirt	3
-tag	tag	0
-taks	tax	2
-takspáør	taxpayer	5
-taktik	tactic	2
-takul	tackle	3
-talentid	talented	1
-talint	talent	1
-tap	tap	0
-task	task	0
-taúl	towel	3
-taún	town	2
-taúør	tower	3
-tábul	table	3
-tábulspún	tablespoon	5
-ták	take	2
-tál	tail	2
-tál	tale	2
-tánk	tank	1
-táp	tape	2
-tást	taste	2
-teknék	technique	6
-teknikul	technical	4
-teknilojikul	technological	6
-teknišin	technician	4
-teknolijé	technology	5
-tekscør	texture	5
-tekstbøk	textbook	4
-tekst	text	2
-telefón	telephone	4
-teleskóp	telescope	3
-televižin	television	2
-tel	tell	1
-tempøreré	temporary	3
-tempricør	temperature	5
-tempul	temple	2
-tend	tend	0
-tendinsé	tendency	3
-tendør	tender	1
-ten	ten	0
-tenis	tennis	1
-tenšin	tension	2
-tent	tent	0
-ter	tear	1
-teriblé	terribly	2
-teribul	terrible	3
-teritóré	territory	3
-terør	terror	2
-terørism	terrorism	2
-terørist	terrorist	2
-test	test	0
-testifí	testify	1
-testimóné	testimony	2
-testing	testing	0
-téc	teach	3
-técing	teaching	3
-técør	teacher	4
-té	tea	2
-tém	team	2
-témmát	teammate	4
-ténáj	teenage	5
-ténájør	teenager	5
-tén	teen	2
-téspún	teaspoon	4
-tikit	ticket	2
-til	till	1
-timbør	timber	1
-tip	tip	0
-tipiklé	typically	5
-tipikul	typical	3
-tišéú	tissue	4
-tíd	tide	2
-tí	tie	2
-tíl	tile	2
-tím	time	2
-tíming	timing	1
-tíné	tiny	2
-típ	type	2
-tírd	tired	2
-tír	tire	2
-tít	tight	3
-títin	tighten	4
-títlé	tightly	4
-títul	title	3
-tok	talk	2
-toksik	toxic	3
-tol	tall	2
-tolørát	tolerate	3
-tolørins	tolerance	4
-top	top	0
-topik	topic	1
-torgit	target	2
-tos	toss	1
-tó	toe	2
-tói	toy	2
-tóilit	toilet	2
-tól	toll	2
-tón	tone	2
-tótulé	totally	4
-tótul	total	2
-tørán	terrain	4
-tørifik	terrific	3
-tørké	turkey	3
-tørm	term	1
-tørmz	terms	2
-tørn	turn	1
-tørnimint	tournament	4
-trafik	traffic	2
-trajidé	tragedy	3
-trajik	tragic	2
-trak	track	1
-transakšin	transaction	3
-transfórm	transform	1
-transfør	transfer	1
-transførmášin	transformation	4
-transišin	transition	2
-transit	transit	0
-translášin	translation	3
-translát	translate	2
-transmišin	transmission	3
-transmit	transmit	0
-transpórt	transport	1
-transpørtášin	transportation	4
-trap	trap	0
-traš	trash	2
-travilør	traveler	2
-travul	travel	1
-trád	trade	2
-tráding	trading	1
-trá	tray	2
-trál	trail	2
-trálør	trailer	3
-trán	train	2
-tráning	training	2
-tránør	trainer	3
-trás	trace	3
-trát	trait	2
-trend	trend	0
-trežør	treasure	4
-tré	tree	2
-trété	treaty	3
-trét	treat	2
-trétmint	treatment	3
-trigør	trigger	2
-trik	trick	1
-trimendis	tremendous	3
-trim	trim	0
-trip	trip	0
-tríb	tribe	2
-tríbul	tribal	2
-trí	try	1
-tríul	trial	2
-tríumf	triumph	3
-tromu	trauma	3
-tropikul	tropical	2
-trubuld	troubled	3
-trubul	trouble	3
-trudišin	tradition	3
-trudišinulé	traditionally	6
-trudišinul	traditional	4
-truk	truck	1
-trunk	trunk	0
-trust	trust	0
-trú	true	2
-trúlé	truly	2
-trúp	troop	2
-trúth	truth	1
-tu	to	1
-tubakó	tobacco	4
-tucdaún	touchdown	4
-tuc	touch	2
-tudá	today	3
-tuf	tough	3
-tugedhør	together	3
-tuk	tuck	1
-tumátó	tomato	3
-tumoró	tomorrow	4
-tumotó	tomato	3
-tung	tongue	3
-tunít	tonight	4
-tunul	tunnel	2
-tú-thørdz	two-thirds	4
-túb	tube	2
-túelv	twelve	2
-túenté	twenty	2
-túentéith	twentieth	3
-tú	too	2
-tú	two	2
-túin	twin	1
-túist	twist	1
-túís	twice	4
-túl	tool	2
-túmør	tumor	2
-tún	tune	2
-túórd	toward	3
-túórdz	towards	4
-túr	tour	2
-túrism	tourism	2
-túrist	tourist	2
-túth	tooth	2
-Túzdá	Tuesday	5
-TV	TV	0
-thank	thank	0
-thanks	thanks	0
-Thanksgiving	Thanksgiving	0
-thaúzind	thousand	4
-theripé	therapy	2
-theripist	therapist	1
-théilojikul	theological	5
-théiretikul	theoretical	4
-théitør	theater	3
-thém	theme	2
-théolijé	theology	4
-thik	thick	1
-thin	thin	0
-thing	thing	0
-think	think	0
-thinking	thinking	0
-thiré	theory	3
-thí	thigh	3
-thot	thought	3
-thørd	third	1
-thøró	thorough	5
-thørté	thirty	2
-thørulé	thoroughly	5
-Thørzdá	Thursday	4
-thred	thread	1
-threšhóld	threshold	2
-thret	threat	1
-thretin	threaten	2
-thré	three	2
-thrív	thrive	2
-thró	throw	2
-thrót	throat	2
-thrúaút	throughout	6
-thrú	through	4
-thum	thumb	1
-ubandin	abandon	2
-ubaút	about	3
-ubéús	abuse	4
-ubilité	ability	2
-ubjekšin	objection	4
-ubjekt	object	2
-ubjektiv	objective	3
-ubrod	abroad	2
-ubtán	obtain	3
-ubuv	above	3
-ubzórb	absorb	3
-ubzørv	observe	4
-ubzørvør	observer	4
-ucév	achieve	5
-ucévmint	achievement	6
-udapt	adapt	1
-udišin	addition	4
-udišinul	additional	5
-udopšin	adoption	3
-udopt	adopt	1
-udres	address	3
-udult	adult	1
-udhør	other	3
-udhørúíz	otherwise	7
-udhørz	others	4
-u	a	1
-ufár	affair	4
-ufekt	affect	3
-ufendør	offender	3
-ufens	offense	3
-ufensiv	offensive	3
-ufišulé	officially	7
-ufišul	official	5
-ufórd	afford	3
-ufrád	afraid	3
-u	uh	1
-ugen	again	3
-ugenst	against	3
-uglé	ugly	1
-ugó	ago	2
-ugresiv	aggressive	4
-ugrešin	aggression	5
-ugré	agree	3
-ugrémint	agreement	4
-ujendu	agenda	3
-ujust	adjust	2
-ujustmint	adjustment	3
-ukaúnt	account	5
-ukaúntibilité	accountability	7
-ukaúnting	accounting	5
-ukážin	occasion	6
-ukážinulé	occasionally	9
-ukážinul	occasional	7
-ukéuz	accuse	5
-ukompliš	accomplish	5
-ukomplišmint	accomplishment	6
-ukomudát	accommodate	7
-ukórding	according	4
-ukør	occur	4
-ukros	across	3
-ukumpiné	accompany	6
-ukúír	acquire	6
-ulabørát	elaborate	4
-ulaú	allow	4
-ulejid	alleged	4
-ulejidlé	allegedly	5
-ulekšin	election	4
-ulekt	elect	2
-ulektrik	electric	3
-ulektrikul	electrical	4
-ulektrisité	electricity	4
-ulektronik	electronic	3
-ulektroniks	electronics	3
-ulevin	eleven	2
-uliminát	eliminate	3
-Ulimpik	Olympic	3
-Ulimpiks	Olympics	3
-ulíins	alliance	5
-ulík	alike	3
-ulív	alive	3
-ulong	along	1
-ulongsíd	alongside	3
-ulorm	alarm	2
-ulón	alone	3
-ultimit	ultimate	2
-ultimitlé	ultimately	3
-ulúminum	aluminum	2
-umaúnt	amount	3
-umázing	amazing	2
-umendmint	amendment	2
-umid	amid	1
-umung	among	2
-unalisis	analysis	2
-unaúns	announce	6
-unaúnsmint	announcement	7
-unábul	unable	3
-undør	under	1
-undørgó	undergo	2
-undørgrajúit	undergraduate	5
-undørlíing	underlying	2
-undørmín	undermine	3
-undørstand	understand	1
-undørstanding	understanding	1
-undørták	undertake	3
-unekspektid	unexpected	4
-unemplóimint	unemployment	3
-unéin	onion	3
-unéúžúul	unusual	5
-unfár	unfair	2
-unfóld	unfold	1
-unfórcinitlé	unfortunately	6
-unkul	uncle	3
-unkumftørbul	uncomfortable	8
-unkuvør	uncover	3
-unles	unless	1
-unlík	unlike	2
-unlíklé	unlikely	3
-unnón	unknown	3
-unonimis	anonymous	4
-unpresidentid	unprecedented	3
-unsørtin	uncertain	3
-unsørtinté	uncertainty	4
-until	until	0
-unudhør	another	4
-unhapé	unhappy	2
-updát	update	2
-uperint	apparent	4
-uperintlé	apparently	5
-upél	appeal	4
-upér	appear	4
-upérins	appearance	7
-up	up	0
-upinéin	opinion	3
-uplí	apply	3
-upolijé	apology	4
-upolijíz	apologize	5
-upon	upon	0
-uport	apart	2
-uportmint	apartment	3
-upóint	appoint	3
-upóintmint	appointment	4
-upónint	opponent	4
-upózd	opposed	5
-upóz	oppose	5
-upør	upper	2
-upréšéášin	appreciation	8
-upréšéát	appreciate	7
-uproksimitlé	approximately	7
-upróc	approach	5
-uprópréit	appropriate	6
-uprúv	approve	4
-uprúvul	approval	4
-upset	upset	0
-upsterz	upstairs	3
-uraúnd	around	3
-urá	array	4
-uránj	arrange	5
-uránjmint	arrangement	6
-urest	arrest	2
-urénu	arena	3
-urijinulé	originally	5
-urijinul	original	3
-urív	arrive	4
-urívul	arrival	4
-uríz	arise	4
-usemblé	assembly	3
-usembul	assemble	4
-uses	assess	3
-usesmint	assessment	4
-us	us	0
-usist	assist	2
-usistins	assistance	5
-usistint	assistant	3
-usíd	aside	3
-usín	assign	4
-usínmint	assignment	5
-uslép	asleep	3
-usolt	assault	4
-usóšéášin	association	8
-usóšéátid	associated	7
-usóšéit	associate	6
-usørt	assert	3
-ustronimør	astronomer	3
-usumpšin	assumption	4
-usúm	assume	4
-ušúr	assure	5
-utac	attach	3
-utak	attack	3
-utempt	attempt	2
-utend	attend	2
-utendins	attendance	5
-utenšin	attention	4
-utonimé	autonomy	3
-utop	atop	1
-utørné	attorney	5
-utrakšin	attraction	5
-utrakt	attract	3
-utraktiv	attractive	4
-utribéút	attribute	5
-uthórité	authority	3
-uúá	away	4
-uúák	awake	4
-uúát	await	4
-uúer	aware	4
-uúernis	awareness	6
-uúórd	award	3
-uválibilité	availability	5
-uválibul	available	6
-uv	of	2
-uvin	oven	2
-uvóid	avoid	2
-uhed	ahead	2
-u'klok	o'clock	3
-úagin	wagon	2
-úaú	wow	3
-úá	way	3
-úá	weigh	5
-úáj	wage	4
-úák	wake	3
-úál	whale	4
-úást	waist	3
-úást	waste	3
-úát	wait	3
-úát	weight	5
-úáv	wave	3
-úeb	web	1
-úeding	wedding	2
-úedhør	weather	4
-úedhør	whether	4
-úel-béing	well-being	3
-úel-nón	well-known	5
-úelfár	welfare	3
-úel	well	2
-úelkum	welcome	4
-úelthé	wealthy	3
-úelth	wealth	2
-úenevør	whenever	3
-úen	when	2
-Úenzdá	Wednesday	6
-úepin	weapon	3
-úeraz	whereas	4
-úerevør	wherever	3
-úer	wear	2
-úer	where	3
-úerhaús	warehouse	6
-úest	west	1
-úestørn	western	2
-úet	wet	1
-úéd	weed	3
-úé	we	2
-úékend	weekend	3
-úék	weak	3
-úék	week	3
-úékin	weaken	4
-úéklé	weekly	4
-úéknis	weakness	5
-úélcár	wheelchair	7
-úél	wheel	4
-úérd	weird	3
-úét	wheat	4
-úév	weave	4
-úic	which	3
-úidó	widow	3
-úildørnis	wilderness	4
-úil	will	2
-úiling	willing	2
-úilingnis	willingness	4
-úind	wind	1
-úindó	window	3
-úin	win	1
-úing	wing	1
-úinør	winner	3
-úintør	winter	2
-úip	whip	2
-úisdum	wisdom	2
-úispør	whisper	3
-úiš	wish	3
-úitnis	witness	3
-úithaút	without	3
-úithdro	withdraw	3
-úithdrol	withdrawal	4
-úith	with	1
-úithin	within	1
-úíd	wide	3
-úídlé	widely	4
-úídspred	widespread	4
-úíf	wife	3
-úí	why	3
-úíld	wild	2
-úíldlíf	wildlife	4
-úíl	while	4
-úín	wine	3
-úíp	wipe	3
-úír	wire	3
-úít	white	4
-úíz	wise	4
-úoc	watch	4
-úok	walk	3
-úoking	walking	3
-úol	wall	3
-úondør	wander	3
-úont	want	2
-úoš	wash	4
-úotør	water	3
-úóréør	warrior	5
-úór	war	2
-úórm	warm	2
-úórmth	warmth	2
-úórn	warn	2
-úórning	warning	2
-úød	wood	3
-úød	would	4
-úødin	wooden	4
-úømin	woman	3
-úørd	word	2
-úøréd	worried	5
-úøré	worry	4
-úørkaút	workout	4
-úørk	work	2
-úørking	working	2
-úørkør	worker	3
-úørkplás	workplace	5
-úørks	works	2
-úørkšop	workshop	4
-úørld	world	2
-úørldúíd	worldwide	5
-úørth	worth	2
-úøúnd	wound	3
-úulf	wolf	2
-úun-thørd	one-third	4
-úundørful	wonderful	3
-úundør	wonder	3
-úun	one	3
-úuns	once	4
-úutevør	whatever	4
-úut	what	3
-vakéúm	vacuum	3
-vaksén	vaccine	4
-valé	valley	3
-valéibul	valuable	4
-valéú	value	2
-valid	valid	0
-van	van	0
-vaniš	vanish	2
-vast	vast	0
-vákášin	vacation	5
-vejtibul	vegetable	5
-vencør	venture	3
-vendør	vendor	1
-veréášin	variation	5
-veré	vary	2
-veré	very	1
-veréibul	variable	5
-veréis	various	4
-vesul	vessel	2
-vetirin	veteran	2
-véikul	vehicle	5
-véu	via	2
-véú	view	3
-véúør	viewer	4
-vidéó	video	2
-viktim	victim	1
-viktøré	victory	3
-vilij	village	4
-vizibul	visible	3
-vizit	visit	1
-vizitør	visitor	2
-vižin	vision	2
-vižúul	visual	3
-vílins	violence	5
-vílint	violent	3
-víris	virus	2
-vítimin	vitamin	2
-vítul	vital	2
-víulášin	violation	5
-víulát	violate	4
-voléúm	volume	3
-volinteré	voluntary	3
-volintér	volunteer	3
-vóis	voice	3
-vókul	vocal	3
-vót	vote	2
-vóting	voting	1
-vótør	voter	2
-vørbul	verbal	2
-vørcú	virtue	4
-vørcúulé	virtually	6
-vørcúul	virtual	4
-vørdikt	verdict	2
-vørsis	versus	2
-vørtikul	vertical	3
-vøržin	version	3
-vulidité	validity	2
-vulnribul	vulnerable	4
-vuríité	variety	4
-zón	zone	2
-žonru	genre	3
-habitat	habitat	0
-habit	habit	0
-haf	half	1
-hafúá	halfway	4
-handful	handful	0
-hand	hand	0
-handul	handle	2
-hang	hang	0
-hansum	handsome	3
-hapé	happy	2
-hapénis	happiness	4
-hapilé	happily	2
-hapin	happen	2
-hat	hat	0
-haúevør	however	3
-haú	how	2
-haús	house	3
-haúshóld	household	4
-haúzing	housing	3
-hav	have	1
-hazørd	hazard	1
-há	hey	2
-hár	hair	2
-hát	hate	2
-hedák	headache	5
-hed	head	1
-hedkúórtørz	headquarters	6
-hedlín	headline	3
-hel	hell	1
-helikoptør	helicopter	2
-helmit	helmet	1
-heló	hello	2
-helpful	helpful	0
-help	help	0
-helthé	healthy	2
-helth	health	1
-hens	hence	2
-heritij	heritage	3
-hevé	heavy	2
-hevilé	heavily	2
-hevin	heaven	2
-hezitát	hesitate	3
-hé	he	1
-hél	heal	2
-hél	heel	2
-hér	hear	2
-hér	here	2
-héring	hearing	2
-héró	hero	2
-hét	heat	2
-héúj	huge	3
-héúmanité	humanity	3
-héúmin	human	3
-héúmør	humor	3
-hidin	hidden	2
-hil	hill	1
-him	him	0
-himself	himself	0
-hint	hint	0
-hip	hip	0
-Hispanik	Hispanic	1
-históréin	historian	3
-histórik	historic	2
-históriklé	historically	5
-histórikul	historical	3
-histøré	history	2
-hit	hit	0
-hiz	his	1
-hí-tek	high-tech	5
-híd	hide	2
-hí	hi	1
-hí	high	3
-hík	hike	2
-hílé	highly	4
-hílít	highlight	6
-hípothisis	hypothesis	2
-hír	hire	2
-hít	height	4
-híúá	highway	6
-ho	ha	1
-hoké	hockey	3
-hol	hall	2
-hol	haul	2
-holidá	holiday	2
-holúá	hallway	5
-hord	hard	1
-hordlé	hardly	2
-hordúer	hardware	4
-horm	harm	1
-hormuné	harmony	3
-horš	harsh	3
-hort	heart	2
-horvist	harvest	2
-hospitul	hospital	1
-hostij	hostage	3
-hostul	hostile	2
-hot	hot	0
-hóld	hold	1
-hólé	holy	2
-hól	hole	2
-hól	whole	3
-hóm	home	2
-hómland	homeland	2
-hómlis	homeless	4
-hómúørk	homework	4
-hópfulé	hopefully	4
-hóp	hope	2
-hóribul	horrible	4
-hórmón	hormone	3
-hórn	horn	1
-hórør	horror	3
-hórs	horse	2
-hóst	host	1
-hótel	hotel	1
-høk	hook	2
-hørasmint	harassment	3
-høré	hurry	3
-hør	her	1
-hørikán	hurricane	5
-hørízin	horizon	3
-hørself	herself	1
-hørt	hurt	1
-hørz	hers	2
-hu	huh	1
-hug	hug	0
-hundrid	hundred	1
-huné	honey	3
-hungør	hunger	1
-hungré	hungry	1
-hunt	hunt	0
-hunting	hunting	0
-huntør	hunter	1
-huzbind	husband	2
-húevør	whoever	3
-hú	who	2
-húm	whom	2
-húz	whose	4
+absins	absence	3	noun		
+abstrakt	abstract	1	adjective		
+absulút	absolute	3	adjective		
+absulútlé	absolutely	4	adverb		
+ad.	ad	1	noun		
+ad	add	1	verb		
+adid	added	2	adjective		
+adikúit	adequate	5	adjective		
+administør	administer	1	verb		
+administrášin	administration	3	noun		
+administrátør	administrator	2	noun		
+administritiv	administrative	2	adjective		
+admišin	admission	3	noun		
+admit	admit	0	verb		
+admír	admire	2	verb		
+adres	address	2	noun		
+adulesint	adolescent	3	noun		
+advans	advance	2	noun		
+advanst	advanced	3	adjective		
+advantij	advantage	3	noun		
+advencør	adventure	3	noun		
+advís	advice	3	noun		
+advíz	advise	3	verb		
+advízør	adviser	3	noun		
+advørtízing	advertising	3	noun		
+advukát	advocate	4	verb		
+advukit	advocate	4	noun		
+afekt	affect	2	noun		
+Afrikin-Umerikin	African-American	5	adjective		
+Afrikin	African	2	adjective		
+aftør	after	1	preposition		
+aftørnún	afternoon	3	noun		
+aftørúørd	afterward	3	adverb		
+agrikulcør	agriculture	4	noun		
+agrikulcørul	agricultural	4	adjective		
+akéørisé	accuracy	6	noun		
+akéørit	accurate	5	adjective		
+akéøritlé	accurately	6	adverb		
+akéøzášin	accusation	7	noun		
+akidemik	academic	3	adjective		
+aknolij	acknowledge	6	verb		
+aksent	accent	2	noun		
+aksept	accept	2	verb		
+akseptibul	acceptable	5	adjective		
+akses	access	3	noun		
+aksesibul	accessible	5	adjective		
+aksidint	accident	3	noun		
+akšin	action	3	noun		
+akšúulé	actually	6	adverb		
+akšúul	actual	4	adjective		
+akt	act	1	noun		
+aktiv	active	2	adjective		
+aktivist	activist	1	noun		
+aktivité	activity	2	noun		
+aktivlé	actively	3	adverb		
+aktør	actor	2	noun		
+aktris	actress	3	noun		
+akúizišin	acquisition	6	noun		
+album	album	0	noun		
+alé	alley	3	noun		
+aligášin	allegation	5	noun		
+alí	ally	2	noun		
+alkuhol	alcohol	2	noun		
+ambasidør	ambassador	3	noun		
+ambišin	ambition	2	noun		
+ambišis	ambitious	3	adjective		
+and	and	0	conjunction		
+anéúulé	annually	5	adverb		
+anéúul	annual	3	adjective		
+animul	animal	1	noun		
+anivørsøré	anniversary	4	noun		
+ankul	ankle	2	noun		
+ansestør	ancestor	2	noun		
+ansør	answer	2	noun		
+antisipát	anticipate	3	verb		
+anulist	analyst	2	noun		
+anulíz	analyze	3	verb		
+aplikášin	application	5	noun		
+apul	apple	2	noun		
+aset	asset	1	noun		
+asf.	etc	4	adverb	and só fórth	
+as	ass	1	noun		
+asid	acid	1	noun		
+ask	ask	0	verb		
+aspekt	aspect	1	noun		
+asthetik	aesthetic	2	adjective		
+aš	ash	2	noun		
+at	at	0	preposition		
+atitúd	attitude	3	noun		
+atmusfér	atmosphere	5	noun		
+atribéút	attribute	4	noun		
+athletik	athletic	1	adjective		
+athlét	athlete	2	noun		
+aúr	our	2	article		
+aúr	hour	3	noun		
+aúrselvz	ourselves	4	pronoun		
+aúrz	ours	3	pronoun		
+aútdór	outdoor	4	adjective		
+aútfit	outfit	2	noun		
+aút	out	2	adverb		
+aútkum	outcome	5	noun		
+aútlit	outlet	3	noun		
+aútlín	outline	4	verb		
+aútør	outer	3	adjective		
+aútpøt	output	3	noun		
+aútsíd	outside	4	adverb		
+aútsídør	outsider	4	noun		
+aútstanding	outstanding	2	adjective		
+avrij	average	4	adjective		
+az	as	1	adverb		
+ábul	able	3	adjective		
+ád	aide	3	noun		
+ád	aid	2	noun		
+áj	age	3	noun		
+ájinsé	agency	5	noun		
+ájint	agent	3	noun		
+áléin	alien	3	noun		
+ám	aim	2	noun		
+ángør	anger	2	noun		
+ángré	angry	2	adjective		
+ángul	angle	3	noun		
+ánjul	angel	3	noun		
+ánšint	ancient	3	adjective		
+ár	air	2	noun		
+árkraft	aircraft	3	noun		
+árlín	airline	4	noun		
+árplán	airplane	4	noun		
+árpórt	airport	3	noun		
+át	eight	4	numeral		
+átth	eighth	4	numeral		
+Ážin	Asian	3	adjective		
+bad	bad	0	adjective		
+badlé	badly	1	adverb		
+bag	bag	0	noun		
+bakéord	backyard	3	noun		
+bak	back	1	adverb		
+bakgraúnd	background	3	noun		
+baktéréu	bacteria	4	noun		
+balins	balance	3	noun		
+balinst	balanced	4	adjective		
+balit	ballot	2	noun		
+band	band	0	noun		
+ban	ban	0	noun		
+bank	bank	0	noun		
+banking	banking	0	noun		
+bankør	banker	1	noun		
+bankrupsé	bankruptcy	3	noun		
+baskitbol	basketball	3	noun		
+baskit	basket	1	noun		
+bat	bat	0	noun		
+batøré	battery	3	noun		
+batul	battle	2	noun		
+bath	bath	0	noun		
+bathrúm	bathroom	2	noun		
+baú	bow	2	noun		
+baúndré	boundary	4	noun		
+baúns	bounce	4	verb		
+bábé	baby	2	noun		
+bá	bay	2	noun		
+bák	bake	2	verb		
+báré	bury	2	verb		
+báréør	barrier	4	noun		
+bár	bare	2	adjective		
+bár	bear	2	noun		
+bárlé	barely	3	adverb		
+bárul	barrel	3	noun		
+básbol	baseball	4	noun		
+bás	base	2	noun		
+básik	basic	2	adjective		
+básiklé	basically	5	adverb		
+básis	basis	1	noun		
+básmint	basement	3	noun		
+bedrúm	bedroom	2	noun		
+beg	beg	0	verb		
+belé	belly	2	noun		
+bel	bell	1	noun		
+belt	belt	0	noun		
+benc	bench	1	noun		
+bend	bend	0	verb		
+benifit	benefit	1	noun		
+best	best	0	adverb		
+bet	bet	0	noun		
+betør	better	2	adverb		
+béc	beach	3	noun		
+bé	bee	2	noun		
+bé	be	1	verb		
+béf	beef	2	noun		
+béing	being	1	noun		
+bém	beam	2	noun		
+bén	bean	2	noun		
+béond	beyond	2	adverb		
+béøró	bureau	5	noun		
+bérd	beard	2	noun		
+bér	beer	2	noun		
+bést	beast	2	noun		
+bét	beat	2	noun		
+béúté	beauty	4	noun		
+béútiful	beautiful	3	adjective		
+bid	bed	1	noun		
+bid	bid	0	noun		
+bifór	before	3	adverb		
+big	big	0	adjective		
+bigin	begin	1	verb		
+bigining	beginning	2	noun		
+bikum	become	4	verb		
+bikuz	because	5	preposition		
+bild	build	1	verb		
+bilding	building	1	noun		
+bildør	builder	2	noun		
+biléf	belief	3	noun		
+biléin	billion	2	numeral		
+bilév	believe	4	verb		
+bil	bill	1	noun		
+bilong	belong	1	verb		
+biló	below	3	adverb		
+binéth	beneath	3	preposition		
+bisíd	beside	3	preposition		
+bisídz	besides	4	adverb		
+bit	bit	0	adverb		
+bitør	bitter	2	adjective		
+bitúén	between	4	preposition		
+bizé	busy	3	adjective		
+biznis	business	5	noun		
+biznismin	businessman	6	noun		
+bihaf	behalf	2	preposition		
+bihávéórul	behavioral	5	adjective		
+bihávéør	behavior	4	noun		
+biháv	behave	3	verb		
+bihínd	behind	2	adverb		
+Bíbul	Bible	3	noun		
+bí	buy	2	verb		
+bí	by	1	adverb		
+bíis	bias	2	noun		
+bík	bike	2	noun		
+bínd	bind	1	verb		
+bíogrifé	biography	5	noun		
+bíolijé	biology	4	noun		
+bíør	buyer	3	noun		
+bísikul	bicycle	6	noun		
+bít	bite	2	noun		
+bíulojikul	biological	5	adjective		
+blak	black	1	adjective		
+blast	blast	0	noun		
+blád	blade	2	noun		
+blám	blame	2	verb		
+blánk	blank	1	adjective		
+blánkit	blanket	2	noun		
+blend	blend	0	verb		
+bles	bless	1	verb		
+blesing	blessing	1	noun		
+blink	blink	0	verb		
+blínd	blind	1	adjective		
+blok	block	1	noun		
+blond	blond	0	adjective		
+bló	blow	2	noun		
+bludé	bloody	3	adjective		
+blud	blood	2	noun		
+blú	blue	2	adjective		
+bodé	body	1	noun		
+bodhør	bother	2	verb		
+boks	box	2	noun		
+bol	ball	2	noun		
+bom	bomb	1	noun		
+boming	bombing	1	noun		
+bond	bond	0	noun		
+bor	bar	1	noun		
+born	barn	1	noun		
+boró	borrow	3	verb		
+bos	boss	1	noun		
+botul	bottle	2	noun		
+botum	bottom	2	adjective		
+bói	boy	2	noun		
+bóifrend	boyfriend	3	noun		
+bóil	boil	1	verb		
+bóld	bold	1	adjective		
+ból	bowl	2	noun		
+bólt	bolt	1	noun		
+bón	bone	2	noun		
+bónis	bonus	2	noun		
+bórd	board	2	noun		
+bórdør	border	2	noun		
+bóring	boring	1	adjective		
+bórn	born	1	verb		
+bóst	boast	2	verb		
+bót	boat	2	noun		
+bóth	both	1	adverb		
+bøk	book	2	noun		
+børd	bird	1	noun		
+børdin	burden	2	noun		
+børn	burn	1	verb		
+børning	burning	1	adjective		
+børst	burst	1	verb		
+børthdá	birthday	3	noun		
+børth	birth	1	noun		
+bøš	bush	3	noun		
+branc	branch	1	noun		
+brand	brand	0	noun		
+braún	brown	2	adjective		
+brák	brake	2	noun		
+brák	break	2	noun		
+brán	brain	2	noun		
+bráv	brave	2	adjective		
+brekfist	breakfast	2	noun		
+brest	breast	1	noun		
+breth	breath	1	noun		
+brédh	breathe	4	verb		
+brédhing	breathing	3	noun		
+bréf	brief	2	adjective		
+bréflé	briefly	3	adverb		
+bréz	breeze	3	noun		
+brid	bread	2	noun		
+brij	bridge	3	noun		
+brik	brick	1	noun		
+briléint	brilliant	2	adjective		
+bring	bring	0	verb		
+Britiš	British	2	adjective		
+bríd	bride	2	noun		
+brít	bright	3	adjective		
+brod	broad	1	adjective		
+brodkast	broadcast	2	noun		
+bronz	bronze	1	noun		
+brókin	broken	2	adjective		
+brókør	broker	2	noun		
+brudhør	brother	3	noun		
+bruš	brush	2	noun		
+brútul	brutal	2	adjective		
+bubul	bubble	2	noun		
+budé	buddy	2	noun		
+bug	bug	0	noun		
+bujit	budget	3	noun		
+buk	buck	1	noun		
+bukit	bucket	2	noun		
+bulb	bulb	0	noun		
+bul	bull	1	noun		
+bulit	bullet	2	noun		
+bulk	bulk	0	noun		
+bulún	balloon	4	noun		
+bunanu	banana	2	noun		
+bunc	bunch	1	noun		
+bus	bus	0	noun		
+but	but	0	preposition		
+but	butt	1	noun		
+butøn	button	2	noun		
+butør	butter	2	noun		
+butørflí	butterfly	3	noun		
+búm	boom	2	noun		
+búst	boost	2	verb		
+bút	boot	2	noun		
+búth	booth	2	noun		
+calinj	challenge	5	noun		
+campéin	champion	3	noun		
+campéinšip	championship	5	noun		
+cans	chance	3	noun		
+canul	channel	3	noun		
+captør	chapter	2	noun		
+cámbør	chamber	3	noun		
+cán	chain	3	noun		
+cánj	change	4	noun		
+cánjing	changing	3	adjective		
+cás	chase	3	verb		
+cek	check	2	noun		
+CEO	CEO	0	noun		
+cer	chair	3	noun		
+cerité	charity	3	noun		
+cermin	chairman	4	noun		
+cest	chest	1	noun		
+céf	chief	3	adjective		
+cék	cheek	3	noun		
+cép	cheap	3	adjective		
+cér	cheer	3	verb		
+cét	cheat	3	verb		
+céz	cheese	5	noun		
+cikin	chicken	3	noun		
+cil	chill	2	noun		
+cin	chin	1	noun		
+cip	chip	1	noun		
+cíld	child	2	noun		
+cíldhød	childhood	4	noun		
+Cínéz	Chinese	5	adjective		
+coklit	chocolate	5	noun		
+cop	chop	1	verb		
+corj	charge	4	noun		
+corm	charm	2	noun		
+cort	chart	2	noun		
+cortør	charter	3	noun		
+cóis	choice	4	noun		
+cørc	church	3	noun		
+cunk	chunk	1	noun		
+cú	chew	3	verb		
+cúz	choose	5	verb		
+dad	dad	0	noun		
+dam	dam	0	noun		
+dam	damn	1	adjective		
+damij	damage	3	noun		
+dans	dance	2	noun		
+dansing	dancing	1	noun		
+dansør	dancer	2	noun		
+daún	down	2	adverb		
+daúntaún	downtown	4	adverb		
+daút	doubt	3	noun		
+dábéú	debut	3	noun		
+dá	day	2	noun		
+dálé	daily	3	adverb		
+dánjør	danger	3	noun		
+dánjøris	dangerous	5	adjective		
+dár	dare	2	verb		
+dát	date	2	noun		
+dátubás	database	4	noun		
+dátu	data	2	noun		
+dedikát	dedicate	3	verb		
+dedlé	deadly	2	adjective		
+dedlín	deadline	3	noun		
+definišin	definition	2	noun		
+definitlé	definitely	2	adverb		
+defisit	deficit	1	noun		
+dekád	decade	3	noun		
+dek	deck	1	noun		
+dekørát	decorate	4	verb		
+delikit	delicate	3	adjective		
+demigrafik	demographic	4	adjective		
+demikratik	democratic	3	adjective		
+deminstrášin	demonstration	4	noun		
+deminstrát	demonstrate	3	verb		
+dens	dense	1	adjective		
+densité	density	1	noun		
+depéøté	deputy	3	noun		
+depth	depth	0	noun		
+desk	desk	0	noun		
+desprit	desperate	3	adjective		
+despritlé	desperately	4	adverb		
+destinášin	destination	3	noun		
+det	debt	1	noun		
+deth	death	1	noun		
+devistáting	devastating	2	adjective		
+devul	devil	1	noun		
+dezørt	desert	2	noun		
+dékrés	decrease	5	noun		
+dél	deal	2	noun		
+délør	dealer	3	noun		
+dém	deem	2	verb		
+dép	deep	2	adverb		
+déplé	deeply	3	adverb		
+dér	dear	2	adjective		
+dér	deer	2	noun		
+désint	decent	3	adjective		
+détáld	detailed	4	adjective		
+détál	detail	3	noun		
+dibát	debate	3	noun		
+did	dead	2	adjective		
+difend	defend	1	verb		
+difendint	defendant	2	noun		
+difendør	defender	2	noun		
+difens	defense	2	noun		
+difensiv	defensive	2	adjective		
+difét	defeat	3	noun		
+difikulté	difficulty	3	noun		
+difikult	difficult	2	adjective		
+difín	define	3	verb		
+difør	differ	2	verb		
+diførins	difference	5	noun		
+diførint	different	3	adjective		
+diførintlé	differently	4	adverb		
+dig	dig	0	verb		
+dignité	dignity	1	noun		
+digré	degree	3	noun		
+dijitul	digital	2	adjective		
+dikler	declare	4	verb		
+diklín	decline	4	verb		
+dikrés	decrease	5	verb		
+diktát	dictate	3	verb		
+dilá	delay	3	noun		
+dilemu	dilemma	2	noun		
+dilibritlé	deliberately	5	adverb		
+dilivøré	delivery	3	noun		
+dilivør	deliver	2	verb		
+dilít	delight	4	noun		
+dimand	demand	1	noun		
+dimenšin	dimension	2	noun		
+diminiš	diminish	2	verb		
+dimokrisé	democracy	5	noun		
+diní	deny	2	verb		
+diníul	denial	3	noun		
+dinør	dinner	2	noun		
+dipend	depend	1	verb		
+dipending	depending	1	preposition		
+dipendint	dependent	2	adjective		
+dip	dip	0	verb		
+dipikt	depict	2	verb		
+diplimat	diplomat	1	noun		
+diplimatik	diplomatic	2	adjective		
+diplói	deploy	3	verb		
+diporcør	departure	5	noun		
+diport	depart	2	verb		
+diportmint	department	3	noun		
+dipósit	deposit	2	noun		
+diprest	depressed	4	adjective		
+diprešin	depression	4	noun		
+direkšin	direction	3	noun		
+direkt	direct	1	adjective		
+direktlé	directly	2	adverb		
+direktør	director	2	noun		
+dirív	derive	3	verb		
+disábld	disabled	2	adjective		
+disend	descend	2	verb		
+disiplin	discipline	2	noun		
+disižin	decision	4	noun		
+disíd	decide	4	verb		
+diskaúnt	discount	3	noun		
+disk	disc	1	noun		
+disk	disk	0	noun		
+disklóz	disclose	4	verb		
+diskórs	discourse	4	noun		
+diskørij	discourage	6	verb		
+diskriminášin	discrimination	4	noun		
+diskripšin	description	4	noun		
+diskríb	describe	4	verb		
+diskus	discuss	2	verb		
+diskušin	discussion	4	noun		
+diskuvøré	discovery	4	noun		
+diskuvør	discover	3	verb		
+dismis	dismiss	1	verb		
+disórdør	disorder	2	noun		
+dispéút	dispute	3	noun		
+dispít	despite	3	preposition		
+displá	display	2	noun		
+distingúiš	distinguish	3	verb		
+distinkšin	distinction	3	noun		
+distinkt	distinct	1	adjective		
+distinktiv	distinctive	2	adjective		
+distins	distance	3	noun		
+distint	distant	1	adjective		
+distørb	disturb	1	verb		
+distørbing	disturbing	1	adjective		
+distrakt	distract	1	verb		
+distribéúšin	distribution	4	noun		
+distribéút	distribute	3	verb		
+distrikt	district	1	noun		
+distrói	destroy	3	verb		
+distrukšin	destruction	4	noun		
+disubilité	disability	2	noun		
+disugré	disagree	3	verb		
+disupér	disappear	4	verb		
+disupóintid	disappointed	4	adjective		
+disupóintmint	disappointment	4	noun		
+diš	dish	2	noun		
+ditekt	detect	2	verb		
+ditektiv	detective	3	noun		
+ditørminášin	determination	5	noun		
+ditørmin	determine	3	verb		
+divelup	develop	2	verb		
+diveluping	developing	2	adjective		
+divelupmentul	developmental	3	adjective		
+divelupmint	development	3	noun		
+divelupør	developer	3	noun		
+divižin	division	2	noun		
+divíd	divide	2	verb		
+divín	divine	2	adjective		
+divís	device	4	noun		
+divórs	divorce	3	noun		
+divót	devote	3	verb		
+divørs	diverse	2	adjective		
+divørsité	diversity	2	noun		
+dizastør	disaster	2	noun		
+dizéz	disease	5	noun		
+dizín	design	4	noun		
+dizínør	designer	5	noun		
+dizír	desire	4	noun		
+dizolv	dissolve	3	verb		
+dizørt	dessert	4	noun		
+dizørv	deserve	4	verb		
+díagnós	diagnose	3	verb		
+díagnósis	diagnosis	2	noun		
+dí	die	2	verb		
+díing	dying	1	adjective		
+díit	diet	2	noun		
+dímind	diamond	3	noun		
+dínamik	dynamic	2	adjective		
+dínamiks	dynamics	2	noun		
+díning	dining	1	noun		
+díørí	diary	3	noun		
+díubétéz	diabetes	5	noun		
+díulog	dialogue	4	noun		
+dog	dog	0	noun		
+dokéømentøré	documentary	5	noun		
+dokéømint	document	4	noun		
+dok	dock	1	noun		
+doktør	doctor	2	noun		
+doktrin	doctrine	2	noun		
+dol	doll	1	noun		
+dominát	dominate	2	verb		
+dominint	dominant	1	adjective		
+don	dawn	2	noun		
+dork	dark	1	adjective		
+dorknis	darkness	3	noun		
+dot	dot	0	noun		
+dotør	daughter	5	noun		
+dó	dough	4	noun		
+dómán	domain	3	noun		
+dónášin	donation	4	noun		
+dónát	donate	3	verb		
+dónør	donor	2	noun		
+dór	door	2	noun		
+dórúá	doorway	5	noun		
+dós	dose	2	noun		
+døring	during	1	preposition		
+dørté	dirty	2	adjective		
+dørt	dirt	1	noun		
+draft	draft	0	noun		
+drag	drag	0	verb		
+draún	drown	2	verb		
+drán	drain	2	verb		
+dres	dress	1	noun		
+drém	dream	2	noun		
+drift	drift	0	verb		
+dril	drill	1	verb		
+drink	drink	0	noun		
+drinking	drinking	0	noun		
+dríd	dried	2	adjective		
+drí	dry	1	adjective		
+drív	drive	2	noun		
+dríving	driving	1	adjective		
+drívør	driver	2	noun		
+drívúá	driveway	5	noun		
+dro	draw	2	verb		
+droing	drawing	2	noun		
+dromu	drama	2	noun		
+drop	drop	0	noun		
+drór	drawer	3	noun		
+drug	drug	0	noun		
+drumatik	dramatic	2	adjective		
+drumatiklé	dramatically	5	adverb		
+drum	drum	0	noun		
+drunk	drunk	0	adjective		
+dubré	debris	3	noun		
+dubul	double	3	adjective		
+Duc	Dutch	2	adjective		
+duk	duck	1	noun		
+dumestik	domestic	2	adjective		
+dum	dumb	1	adjective		
+dump	dump	0	verb		
+dust	dust	0	noun		
+duzin	dozen	2	numeral		
+dú	do	1	verb		
+dú	due	2	adjective		
+dúté	duty	2	noun		
+dhan	than	1	preposition		
+dhat	that	1	adverb		
+dhá	they	3	pronoun		
+dhem	them	1	pronoun		
+dhemselvz	themselves	3	pronoun		
+dhen	then	1	adverb		
+dherbí	thereby	3	adverb		
+dherfór	therefore	4	adverb		
+dher	their	2	article		
+dher	there	2	adverb		
+dhéz	these	4	determiner		
+dhis	this	1	adverb		
+dhó	though	5	adverb		
+dhóz	those	4	determiner		
+dhu	the	2	article		
+dhus	thus	1	adverb		
+e-mál	e-mail	2	noun		
+edišin	edition	2	noun		
+edit	edit	0	verb		
+editør	editor	1	noun		
+efekt	effect	2	noun		
+efektiv	effective	3	adjective		
+efektivlé	effectively	4	adverb		
+efektivnis	effectiveness	5	noun		
+eført	effort	2	noun		
+eg	egg	1	noun		
+egzakt	exact	3	adjective		
+egzaktlé	exactly	4	adverb		
+egzam	exam	2	noun		
+egzaminášin	examination	5	noun		
+egzamin	examine	3	verb		
+egzampul	example	4	noun		
+egzekéøtiv	executive	6	noun		
+egzekéúšin	execution	7	noun		
+egzibišin	exhibition	4	noun		
+egzibit	exhibit	2	noun		
+egzist	exist	2	verb		
+egzisting	existing	2	adjective		
+egzistins	existence	5	noun		
+egzost	exhaust	4	verb		
+egzotik	exotic	3	adjective		
+ejéøkášin	education	7	noun		
+ejéøkášinul	educational	8	adjective		
+ejéøkát	educate	6	verb		
+ejéøkátør	educator	6	noun		
+ej	edge	3	noun		
+ekilojikul	ecological	5	adjective		
+ekinomik	economic	3	adjective		
+ekinomiklé	economically	6	adverb		
+ekinomiks	economics	3	noun		
+ekonimé	economy	3	noun		
+ekonimist	economist	2	noun		
+ekó	echo	3	verb		
+ekscánj	exchange	6	noun		
+eksekéút	execute	6	verb		
+ekselirát	accelerate	6	verb		
+eksepšin	exception	4	noun		
+eksept	except	2	preposition		
+ekseptins	acceptance	6	noun		
+eksesiv	excessive	4	adjective		
+ekséd	exceed	4	verb		
+eksilint	excellent	5	adjective		
+eksit	exit	2	noun		
+eksítid	excited	4	adjective		
+eksíting	exciting	3	adjective		
+eksítmint	excitement	5	noun		
+ekskéús	excuse	6	noun		
+ekskéúz	excuse	6	verb		
+eksklúd	exclude	5	verb		
+eksklúsiv	exclusive	5	adjective		
+eksklúsivlé	exclusively	6	adverb		
+eksørsíz	exercise	7	noun		
+ekspand	expand	2	verb		
+ekspanšin	expansion	4	noun		
+ekspedišin	expedition	4	noun		
+ekspektášin	expectation	6	noun		
+ekspekt	expect	3	verb		
+ekspektid	expected	4	adjective		
+ekspens	expense	3	noun		
+ekspens	expensive	5	adjective		
+ekspiréins	experience	7	noun		
+ekspiréinst	experienced	8	adjective		
+ekspirimentul	experimental	4	adjective		
+ekspirimint	experiment	4	noun		
+eksplán	explain	4	verb		
+eksplinášin	explanation	6	noun		
+eksplisit	explicit	3	adjective		
+eksplód	explode	4	verb		
+eksplóit	exploit	3	verb		
+eksplórášin	exploration	6	noun		
+eksplór	explore	4	verb		
+eksplóžin	explosion	5	noun		
+ekspórt	export	3	noun		
+ekspóz	expose	5	verb		
+ekspóžør	exposure	6	noun		
+ekspørtéz	expertise	6	noun		
+ekspørt	expert	3	noun		
+ekspres	express	3	verb		
+eksprešin	expression	5	noun		
+ekstend	extend	2	verb		
+ekstendid	extended	3	adjective		
+ekstensiv	extensive	3	adjective		
+ekstenšin	extension	4	noun		
+ekstent	extent	2	noun		
+ekstørnul	external	4	adjective		
+ekstrém	extreme	4	adjective		
+ekstrémlé	extremely	5	adverb		
+ekstrórdineré	extraordinary	6	adjective		
+ekstru	extra	3	adjective		
+ekúip	equip	2	verb		
+ekúipmint	equipment	3	noun		
+ekúité	equity	3	noun		
+ekúivilint	equivalent	4	noun		
+elbó	elbow	2	noun		
+eldør	elder	1	noun		
+eldørlé	elderly	2	adjective		
+elét	elite	2	noun		
+elifint	elephant	4	noun		
+eligint	elegant	2	adjective		
+elijibul	eligible	3	adjective		
+elimentøré	elementary	3	adjective		
+elimint	element	2	noun		
+elivátør	elevator	3	noun		
+els	else	1	adverb		
+elsúer	elsewhere	4	adverb		
+emberist	embarrassed	6	adjective		
+embrás	embrace	3	verb		
+emfisis	emphasis	3	noun		
+emfisíz	emphasize	5	verb		
+empír	empire	2	noun		
+emplóié	employee	4	noun		
+emplói	employ	2	verb		
+emplóimint	employment	3	noun		
+emplóiør	employer	3	noun		
+empté	empty	1	adjective		
+enakt	enact	1	verb		
+enábul	enable	3	verb		
+end	end	0	noun		
+endlis	endless	2	adjective		
+endórs	endorse	2	verb		
+endør	endure	2	verb		
+enébudé	anybody	4	pronoun		
+ené	any	2	adverb		
+enémór	anymore	4	adverb		
+enéthing	anything	2	pronoun		
+enéúá	anyway	5	adverb		
+enéúer	anywhere	5	adverb		
+enéúun	anyone	5	pronoun		
+enfórs	enforce	3	verb		
+enfórsmint	enforcement	4	noun		
+engáj	engage	3	verb		
+engájmint	engagement	4	noun		
+engšis	anxious	5	adjective		
+enimé	enemy	2	noun		
+enjinér	engineer	3	noun		
+enjinéring	engineering	3	noun		
+enjin	engine	2	noun		
+enjói	enjoy	2	verb		
+enkaúntør	encounter	4	noun		
+enkørij	encourage	6	verb		
+enkørijing	encouraging	5	adjective		
+enksíeté	anxiety	5	noun		
+enørjé	energy	3	noun		
+enról	enroll	2	verb		
+enšør	ensure	3	verb		
+entité	entity	1	noun		
+entír	entire	2	adjective		
+entírlé	entirely	3	adverb		
+entítul	entitle	3	verb		
+entør	enter	1	verb		
+entørpríz	enterprise	4	noun		
+entørtánmint	entertainment	4	noun		
+entrens	entrance	3	noun		
+entré	entry	1	noun		
+enthuzéazm	enthusiasm	3	noun		
+envelóp	envelope	2	noun		
+envižin	envision	2	verb		
+envírnmentul	environmental	3	adjective		
+envírnmint	environment	3	noun		
+enhans	enhance	2	verb		
+epidemik	epidemic	1	noun		
+episód	episode	2	noun		
+eréu	area	3	noun		
+eró	arrow	4	noun		
+erør	error	2	noun		
+eru	era	1	noun		
+esá	essay	3	noun		
+esens	essence	3	noun		
+esenšulé	essentially	6	adverb		
+esenšul	essential	4	adjective		
+eskáp	escape	3	noun		
+espešulé	especially	5	adverb		
+establiš	establish	2	verb		
+establišmint	establishment	3	noun		
+estát	estate	2	noun		
+estimátid	estimated	2	adjective		
+estimit	estimate	2	noun		
+ethiks	ethics	1	noun		
+ethikul	ethical	2	adjective		
+ethnik	ethnic	1	adjective		
+evaléúášin	evaluation	5	noun		
+evaléúát	evaluate	4	verb		
+evencúulé	eventually	5	adverb		
+event	event	0	noun		
+evidens	evidence	2	noun		
+evidint	evident	1	adjective		
+evilúšin	evolution	4	noun		
+evolv	evolve	1	verb		
+evør	ever	1	adverb		
+evrébudé	everybody	4	pronoun		
+evrédá	everyday	4	adjective		
+evré	every	2	article		
+evréthing	everything	2	pronoun		
+evréúer	everywhere	5	adverb		
+evréúun	everyone	5	pronoun		
+éa	yeah	3	interjection		
+éc	each	3	pronoun		
+édhør	either	4	adverb		
+éel	yell	2	verb		
+éeló	yellow	4	adjective		
+ées	yes	1	interjection		
+éestørdá	yesterday	4	adverb		
+éet	yet	1	adverb		
+égó	ego	2	noun		
+égør	eager	3	adjective		
+éiéld	yield	2	noun		
+éiér	year	3	noun		
+ékósistum	ecosystem	5	noun		
+ékúážin	equation	6	noun		
+ékúolité	equality	5	noun		
+ékúulé	equally	6	adverb		
+ékúul	equal	4	adjective		
+éord	yard	2	noun		
+éór	your	3	article		
+éórself	yourself	3	pronoun		
+éórz	yours	4	pronoun		
+Éørupéin	European	5	adjective		
+ér	ear	2	noun		
+ést	east	2	noun		
+éstørn	eastern	3	adjective		
+ét	eat	2	verb		
+éting	eating	2	noun		
+éung	young	2	adjective		
+éungstør	youngster	3	noun		
+éú	you	3	pronoun		
+éúnéin	union	4	noun		
+éúnék	unique	6	adjective		
+éúnifórm	uniform	3	noun		
+éúnité	unity	3	noun		
+éúnit	unit	2	noun		
+éúnivørs	universe	4	noun		
+éúnivørsité	university	4	noun		
+éúnivørsul	universal	4	adjective		
+éúnít	unite	4	verb		
+éúnítid	United	4	adjective		
+éúsful	useful	3	adjective		
+éús	use	3	noun		
+éútilité	utility	3	noun		
+éútilíz	utilize	4	verb		
+éúth	youth	3	noun		
+éúzd	used	3	adjective		
+éúz	use	3	verb		
+éúzør	user	4	noun		
+éúžúulé	usually	6	adverb		
+éúžúul	usual	5	adjective		
+évin	even	2	adverb		
+évning	evening	2	noun		
+évul	evil	2	adjective		
+ézé	easy	4	adverb		
+éz	ease	4	noun		
+ézilé	easily	4	adverb		
+fabrik	fabric	1	noun		
+fakt	fact	1	noun		
+faktøré	factory	3	noun		
+faktør	factor	2	noun		
+fakulté	faculty	2	noun		
+familé	family	1	noun		
+fan	fan	0	noun		
+fantastik	fantastic	1	adjective		
+fantusé	fantasy	2	noun		
+fasináting	fascinating	2	adjective		
+fast	fast	0	adverb		
+fastør	faster	1	adjective		
+fašin	fashion	3	noun		
+fat	fat	0	adjective		
+faúndášin	foundation	5	noun		
+faúnd	found	2	verb		
+faúndør	founder	3	noun		
+fád	fade	2	verb		
+fáléør	failure	5	noun		
+fál	fail	2	verb		
+fám	fame	2	noun		
+fámis	famous	3	adjective		
+fánt	faint	2	adjective		
+fár	fair	2	adjective		
+fár	fare	2	noun		
+fárlé	fairly	3	adverb		
+fás	face	3	noun		
+fát	fate	2	noun		
+fátul	fatal	2	adjective		
+fáth	faith	2	noun		
+fávør	favor	2	noun		
+fávøribul	favorable	5	adjective		
+fávrit	favorite	3	adjective		
+fáz	phase	5	noun		
+fedørul	federal	2	adjective		
+fedhør	feather	3	noun		
+feló	fellow	3	adjective		
+feminist	feminist	0	adjective		
+fens	fence	2	noun		
+festivul	festival	1	noun		
+fécør	feature	5	noun		
+fédbak	feedback	3	noun		
+féd	feed	2	verb		
+fé	fee	2	noun		
+féld	field	2	noun		
+fél	feel	2	noun		
+féling	feeling	2	noun		
+fémál	female	3	adjective		
+fér	fear	2	noun		
+férs	fierce	4	adjective		
+féúcør	future	5	adjective		
+féú	few	2	determiner		
+féúl	fuel	2	noun		
+féúnirul	funeral	4	noun		
+féúør	fewer	3	determiner		
+févør	fever	2	noun		
+fifté	fifty	1	numeral		
+fiftén	fifteen	2	numeral		
+fifth	fifth	0	numeral		
+figéør	figure	3	noun		
+fiks	fix	2	verb		
+fikst	fixed	3	adjective		
+fikšin	fiction	3	noun		
+fil	fill	1	verb		
+filisofikul	philosophical	7	adjective		
+film	film	0	noun		
+filosifé	philosophy	6	noun		
+filtør	filter	1	noun		
+fingør	finger	1	noun		
+finiš	finish	2	noun		
+finominon	phenomenon	4	noun		
+fiskul	fiscal	2	adjective		
+fist	fist	0	noun		
+fiš	fish	2	noun		
+fišing	fishing	2	noun		
+fišørmin	fisherman	4	noun		
+fit	fit	0	adjective		
+fitnis	fitness	2	noun		
+fiziklé	physically	8	adverb		
+fiziks	physics	5	noun		
+fizikul	physical	6	adjective		
+fizišin	physician	6	noun		
+fíbør	fiber	2	noun		
+fíl	file	2	noun		
+fínans	finance	3	noun		
+fínanšul	financial	4	adjective		
+fínd	find	1	verb		
+fínding	finding	1	noun		
+fín	fine	2	adjective		
+fínulé	finally	4	adverb		
+fínul	final	2	adjective		
+fír	fire	2	noun		
+fít	fight	3	noun		
+fíting	fighting	3	noun		
+fítør	fighter	4	noun		
+fív	five	2	numeral		
+flag	flag	0	noun		
+flaš	flash	2	noun		
+flat	flat	0	adjective		
+flaúr	flour	2	noun		
+flaúr	flower	3	noun		
+flám	flame	2	noun		
+flávør	flavor	2	noun		
+fleksibilité	flexibility	3	noun		
+fleksibul	flexible	4	adjective		
+fleš	flesh	2	noun		
+flé	flee	2	verb		
+flét	fleet	2	noun		
+flip	flip	0	verb		
+flí	fly	1	noun		
+flíing	flying	1	adjective		
+flít	flight	3	noun		
+fló	flow	2	noun		
+flór	floor	2	noun		
+flót	float	2	verb		
+flud	flood	2	noun		
+flúid	fluid	1	noun		
+fodhør	father	3	noun		
+fog	fog	0	noun		
+fol	fall	2	noun		
+foló	follow	3	verb		
+folóing	following	3	adjective		
+fols	false	2	adjective		
+folt	fault	2	noun		
+for	far	1	adverb		
+form	farm	1	noun		
+formør	farmer	2	noun		
+fostør	foster	1	verb		
+fók	folk	2	noun		
+fókis	focus	3	noun		
+fóld	fold	1	verb		
+fón	phone	4	noun		
+fórcin	fortune	4	noun		
+fórcinitlé	fortunately	6	adverb		
+fórevør	forever	2	adverb		
+fór	for	1	preposition		
+fór	four	2	numeral		
+fórget	forget	1	verb		
+fórgiv	forgive	2	verb		
+fórin	foreign	3	adjective		
+fórinør	foreigner	4	noun		
+fórist	forest	2	noun		
+fórk	fork	1	noun		
+fórmat	format	1	noun		
+fórmášin	formation	4	noun		
+fórméølu	formula	4	noun		
+fórm	form	1	noun		
+fórmør	former	2	determiner		
+fórmørlé	formerly	3	adverb		
+fórmul	formal	2	adjective		
+fórs	force	3	noun		
+fórté	forty	2	numeral		
+fórth	forth	1	adverb		
+fórth	fourth	2	numeral		
+fórum	forum	1	noun		
+fórúørd	forward	3	adverb		
+fórhed	forehead	3	noun		
+fótó	photo	4	noun		
+fótugraf	photograph	6	noun		
+førbid	forbid	1	verb		
+førdhørmór	furthermore	5	adverb		
+før	fur	1	noun		
+førm	firm	1	adjective		
+førmlé	firmly	2	adverb		
+førnicør	furniture	4	noun		
+først	first	1	adverb		
+føtbol	football	4	noun		
+føt	foot	2	noun		
+fragmint	fragment	1	noun		
+frajul	fragile	3	adjective		
+frakšin	fraction	3	noun		
+francíz	franchise	4	noun		
+fraún	frown	2	verb		
+frám	frame	2	noun		
+frámúørk	framework	4	noun		
+fránklé	frankly	2	adverb		
+fráz	phrase	5	noun		
+Frenc	French	1	adjective		
+frend	friend	1	noun		
+frendlé	friendly	2	adjective		
+frendšip	friendship	3	noun		
+freš	fresh	2	adjective		
+frešmin	freshman	3	noun		
+frédum	freedom	3	noun		
+fré	free	2	adjective		
+frékúinsé	frequency	6	noun		
+frékúint	frequent	4	adjective		
+frékúintlé	frequently	5	adverb		
+frélé	freely	3	adverb		
+fréz	freeze	3	verb		
+Frídá	Friday	3	noun		
+frod	fraud	2	noun		
+frózin	frozen	2	adjective		
+frum	from	1	preposition		
+fruntér	frontier	3	noun		
+frunt	front	1	adjective		
+frustrášin	frustration	3	noun		
+frustrát	frustrate	2	verb		
+frút	fruit	2	noun		
+fuking	fucking	1	adjective		
+ful-tím	full-time	3	adjective		
+fulé	fully	2	adverb		
+ful	full	1	adjective		
+fumiléør	familiar	3	adjective		
+fund	fund	0	noun		
+fundimentul	fundamental	2	adjective		
+funding	funding	0	noun		
+funé	funny	2	adjective		
+fun	fun	0	adjective		
+funkšin	function	3	noun		
+funkšinul	functional	4	adjective		
+fusilitát	facilitate	4	verb		
+fusilité	facility	3	noun		
+futég	fatigue	4	noun		
+futogrifé	photography	7	noun		
+futogrifør	photographer	7	noun		
+fúd	food	2	noun		
+fúl	fool	2	noun		
+
+gadhør	gather	2	verb		
+gadhøring	gathering	2	noun		
+galiksé	galaxy	4	noun		
+galøré	gallery	3	noun		
+gang	gang	0	noun		
+gap	gap	0	noun		
+gas	gas	0	noun		
+gasilén	gasoline	3	noun		
+gá	gay	2	adjective		
+gám	game	2	noun		
+gán	gain	2	noun		
+gát	gate	2	noun		
+gáz	gaze	2	noun		
+gerinté	guarantee	5	noun		
+ges	guess	2	verb		
+gest	guest	1	noun		
+get	get	0	verb		
+gér	gear	2	noun		
+gift	gift	0	noun		
+giftid	gifted	1	adjective		
+gilté	guilty	2	adjective		
+gilt	guilt	1	noun		
+gitor	guitar	2	noun		
+giv	give	1	verb		
+givin	given	1	adjective		
+gíd	guide	3	noun		
+gídins	guidance	5	noun		
+gídlín	guideline	5	noun		
+gí	guy	2	noun		
+glad	glad	0	adjective		
+glans	glance	2	noun		
+glas	glass	1	noun		
+glimps	glimpse	1	noun		
+glób	globe	2	noun		
+glóbul	global	2	adjective		
+glóré	glory	2	noun		
+gluv	glove	2	noun		
+God	God	0	noun		
+golf	golf	0	noun		
+gorbij	garbage	4	noun		
+gord	guard	2	noun		
+gordin	garden	2	noun		
+gorlik	garlic	2	noun		
+gó	go	1	verb		
+góld	gold	1	noun		
+góldin	golden	2	adjective		
+gól	goal	2	noun		
+góst	ghost	2	noun		
+gót	goat	2	noun		
+gød	good	2	adjective		
+gørl	girl	1	noun		
+gørlfrend	girlfriend	2	noun		
+gørož	garage	4	noun		
+grab	grab	0	verb		
+grajúášin	graduation	5	noun		
+grajúát	graduate	4	noun		
+grajúilé	gradually	5	adverb		
+grajúit	graduate	4	noun		
+grancíld	grandchild	3	noun		
+grand	grand	0	adjective		
+grandfodhør	grandfather	3	noun		
+grandmudhør	grandmother	3	noun		
+grandperint	grandparent	2	noun		
+grant	grant	0	noun		
+gras	grass	1	noun		
+grasp	grasp	0	verb		
+graúnd	ground	2	noun		
+gravité	gravity	1	noun		
+grád	grade	2	noun		
+grá	gray	2	adjective		
+grán	grain	2	noun		
+gráp	grape	2	noun		
+grás	grace	3	noun		
+grát	great	2	adjective		
+grátful	grateful	2	adjective		
+grátist	greatest	3	adjective		
+grátlé	greatly	3	adverb		
+gráv	grave	2	noun		
+gréf	grief	2	noun		
+Grék	Greek	2	adjective		
+grén	green	2	adjective		
+grét	greet	2	verb		
+grin	grin	0	noun		
+grip	grip	0	noun		
+gró	grow	2	verb		
+gróing	growing	2	adjective		
+grós	gross	2	adjective		
+gróšré	grocery	4	noun		
+gróth	growth	2	noun		
+grúp	group	2	noun		
+gun	gun	0	noun		
+gut	gut	0	noun		
+guvinør	governor	4	noun		
+guvørmint	government	4	noun		
+guvørn	govern	2	verb		
+if	if	0	conjunction		
+ifišinsé	efficiency	6	noun		
+ifišint	efficient	4	adjective		
+ignór	ignore	2	verb		
+ilégul	illegal	3	adjective		
+il	ill	1	adjective		
+ilnis	illness	3	noun		
+ilustrát	illustrate	3	verb		
+ilúžin	illusion	4	noun		
+imajinášin	imagination	4	noun		
+imajin	imagine	2	verb		
+imédéit	immediate	5	adjective		
+imédéitlé	immediately	6	adverb		
+iméún	immune	3	adjective		
+imigrášin	immigration	4	noun		
+imigrint	immigrant	2	noun		
+imij	image	3	noun		
+imišin	emission	4	noun		
+imóšin	emotion	4	noun		
+imóšinulé	emotionally	7	adverb		
+imóšinul	emotional	5	adjective		
+imørjensé	emergency	5	noun		
+imørj	emerge	4	verb		
+imørjing	emerging	3	adjective		
+impakt	impact	1	noun		
+implikášin	implication	4	noun		
+implimentášin	implementation	4	noun		
+implimint	implement	2	verb		
+implí	imply	1	verb		
+imposibul	impossible	3	adjective		
+impórt	import	1	noun		
+impórtins	importance	4	noun		
+impórtint	important	2	adjective		
+impórtintlé	importantly	3	adverb		
+impóz	impose	3	verb		
+impres	impress	1	verb		
+impresiv	impressive	2	adjective		
+imprešin	impression	3	noun		
+imprúvd	improved	2	adjective		
+imprúv	improve	2	verb		
+imprúvmint	improvement	3	noun		
+impuls	impulse	1	noun		
+indeks	index	2	noun		
+indéd	indeed	2	adverb		
+Indéin	Indian	2	adjective		
+indijinis	indigenous	4	adjective		
+indikášin	indication	4	noun		
+indikát	indicate	3	verb		
+indikátør	indicator	3	noun		
+indipendins	independence	4	noun		
+indipendint	independent	2	adjective		
+indivijúul	individual	3	adjective		
+industré	industry	1	noun		
+industréul	industrial	2	adjective		
+inevitibul	inevitable	3	adjective		
+inevitublé	inevitably	2	adverb		
+infekšin	infection	3	noun		
+in	in	0	adverb		
+infint	infant	1	noun		
+inflášin	inflation	3	noun		
+inflúens	influence	3	noun		
+inflúenšul	influential	4	adjective		
+infórm	inform	1	verb		
+infórmul	informal	2	adjective		
+inførmášin	information	4	noun		
+infrustrukšør	infrastructure	5	noun		
+Ingliš	English	3	adjective		
+ingrédéint	ingredient	3	noun		
+inišéát	initiate	4	verb		
+inišéitiv	initiative	4	noun		
+inišulé	initially	5	adverb		
+inišul	initial	3	adjective		
+injøré	injury	2	noun		
+injør	injure	2	verb		
+inklúd	include	3	verb		
+inklúding	including	2	preposition		
+inkórpørát	incorporate	5	verb		
+inkrediblé	incredibly	2	adverb		
+inkredibul	incredible	3	adjective		
+inkrés	increase	4	noun		
+inkrésing	increasing	3	adjective		
+inkrésinglé	increasingly	4	adverb		
+inkrést	increased	5	adjective		
+inkum	income	3	noun		
+inkúiré	inquiry	3	noun		
+inmát	inmate	2	noun		
+inórmus	enormous	3	adjective		
+inør	inner	2	adjective		
+inpøt	input	1	noun		
+insekt	insect	1	noun		
+insentiv	incentive	2	noun		
+insidint	incident	2	noun		
+insist	insist	0	verb		
+insíd	inside	2	adverb		
+insít	insight	3	noun		
+insørt	insert	1	verb		
+inspekšin	inspection	3	noun		
+inspektør	inspector	2	noun		
+inspirášin	inspiration	3	noun		
+inspír	inspire	2	verb		
+insted	instead	1	adverb		
+instinkt	instinct	1	noun		
+instins	instance	3	noun		
+instint	instant	1	adjective		
+instintlé	instantly	2	adverb		
+institúšin	institution	3	noun		
+institúšinul	institutional	4	adjective		
+instol	install	2	verb		
+instrukšin	instruction	3	noun		
+instrukšinul	instructional	4	adjective		
+instrukt	instruct	1	verb		
+instruktør	instructor	2	noun		
+instrumint	instrument	1	noun		
+instulášin	installation	5	noun		
+inšørins	insurance	5	noun		
+intakt	intact	1	adjective		
+integrité	integrity	1	noun		
+intelijins	intelligence	5	noun		
+intelijint	intelligent	3	adjective		
+intend	intend	0	verb		
+intens	intense	1	adjective		
+intensité	intensity	1	noun		
+intenšin	intention	2	noun		
+intent	intent	0	noun		
+intéréør	interior	3	adjective		
+intigrášin	integration	4	noun		
+intigrát	integrate	3	verb		
+intigrátid	integrated	3	adjective		
+intilekšúul	intellectual	6	adjective		
+intimit	intimate	2	adjective		
+intørakšin	interaction	4	noun		
+intørakt	interact	2	verb		
+intørfér	interfere	3	verb		
+intørnašinul	international	4	adjective		
+intørnet	Internet	2	noun		
+intørnul	internal	2	adjective		
+intørpritášin	interpretation	5	noun		
+intørprit	interpret	2	verb		
+intørupt	interrupt	2	verb		
+intørvenšin	intervention	3	noun		
+intørvéú	interview	4	noun		
+intørvul	interval	2	noun		
+intrist	interest	2	noun		
+intristid	interested	3	adjective		
+intristing	interesting	2	adjective		
+intrudukšin	introduction	4	noun		
+intrudús	introduce	4	verb		
+intú	into	1	preposition		
+inuf	enough	4	adverb		
+inusint	innocent	4	adjective		
+inuvášin	innovation	5	noun		
+inuvátiv	innovative	4	adjective		
+invád	invade	2	verb		
+invážin	invasion	3	noun		
+invenšin	invention	2	noun		
+invent	invent	0	verb		
+inventóré	inventory	2	noun		
+invest	invest	0	verb		
+investigášin	investigation	3	noun		
+investigát	investigate	2	verb		
+investigátør	investigator	2	noun		
+investmint	investment	1	noun		
+investør	investor	1	noun		
+invisibul	invisible	2	adjective		
+invitášin	invitation	3	noun		
+invít	invite	2	verb		
+involvd	involved	1	adjective		
+involv	involve	1	verb		
+involvmint	involvement	2	noun		
+inherint	inherent	1	adjective		
+inherit	inherit	0	verb		
+išéú	issue	4	noun		
+Italéin	Italian	2	adjective		
+it	it	0	pronoun		
+itself	itself	0	pronoun		
+its	its	0	article		
+iuú	ie	2	adverb	in udhør úørdz	
+íbraú	eyebrow	5	noun		
+ídentifikášin	identification	5	noun		
+ídentifí	identify	2	verb		
+ídentikul	identical	3	adjective		
+ídentité	identity	2	noun		
+ídél	ideal	3	adjective		
+ídéolijé	ideology	5	noun		
+ídéu	idea	3	noun		
+ídéulojikul	ideological	6	adjective		
+ídhør	either	4	adverb		
+í	eye	3	noun		
+Í	I	1	pronoun		
+íkon	icon	2	noun		
+íl	aisle	4	noun		
+ílind	island	3	noun		
+Íriš	Irish	3	adjective		
+írn	iron	2	noun		
+íroniklé	ironically	5	adverb		
+íruné	irony	3	noun		
+ís	ice	3	noun		
+ísulášin	isolation	5	noun		
+ísulát	isolate	4	verb		
+ísulátid	isolated	4	adjective		
+ítum	item	2	noun		
+jakit	jacket	2	noun		
+Japinéz	Japanese	4	adjective		
+jaz	jazz	1	noun		
+jál	jail	2	noun		
+jendør	gender	2	noun		
+jenéúin	genuine	4	adjective		
+jenørášin	generation	5	noun		
+jenørát	generate	4	verb		
+jenøris	generous	4	adjective		
+jenørulé	generally	5	adverb		
+jenørul	general	3	adverb		
+jentlé	gently	2	adverb		
+jentul	gentle	3	adjective		
+jentulmin	gentleman	4	noun		
+jescør	gesture	4	noun		
+jet	jet	0	noun		
+jénéis	genius	4	noun		
+jén	gene	3	noun		
+jénz	jeans	3	noun		
+jim	gym	2	noun		
+jinetik	genetic	3	adjective		
+jíint	giant	3	adjective		
+job	job	0	noun		
+jo	jaw	2	noun		
+jor	jar	1	noun		
+jói	joy	2	noun		
+jóin	join	1	verb		
+jóint	joint	1	adjective		
+jók	joke	2	noun		
+jøré	jury	2	noun		
+Jørmin	German	3	adjective		
+jørné	journey	4	noun		
+jørnul	journal	3	noun		
+jørnulist	journalist	3	noun		
+jørnulizm	journalism	4	noun		
+jørør	juror	2	noun		
+juj	judge	3	noun		
+jujmint	judgment	3	noun		
+jump	jump	0	noun		
+jungul	jungle	2	noun		
+just	just	0	adverb		
+justifí	justify	1	verb		
+justis	justice	2	noun		
+júdišul	judicial	4	adjective		
+júlré	jewelry	4	noun		
+júnéør	junior	3	adjective		
+júrisdikšin	jurisdiction	4	noun		
+jús	juice	4	noun		
+kab	cab	1	noun		
+kabin	cabin	1	noun		
+kabinit	cabinet	2	noun		
+kac	catch	3	noun		
+kalindør	calendar	3	noun		
+kalkéølášin	calculation	7	noun		
+kalkéølát	calculate	6	verb		
+kampán	campaign	4	noun		
+kamp	camp	1	noun		
+kampis	campus	2	noun		
+kamru	camera	3	noun		
+kandé	candy	2	noun		
+kandidit	candidate	3	noun		
+kandul	candle	3	noun		
+kan	can	1	noun		
+kansør	cancer	3	noun		
+kansul	cancel	3	verb		
+kanvis	canvas	2	noun		
+kap	cap	1	noun		
+kapitul	capital	2	noun		
+kapšør	capture	4	verb		
+kaptin	captain	2	noun		
+kast	cast	1	noun		
+kaš	cash	3	noun		
+kat	cat	1	noun		
+katigóré	category	4	noun		
+katul	cattle	3	noun		
+katulog	catalog	2	noun		
+Kathlik	Catholic	3	adjective		
+kaúc	couch	4	noun		
+kaú	cow	3	noun		
+kaúnsul	council	5	noun		
+kaúnsul	counsel	4	noun		
+kaúnsuling	counseling	4	noun		
+kaúnsulør	counselor	5	noun		
+kaúnté	county	4	noun		
+kaúnt	count	3	noun		
+kaúntør	counter	4	noun		
+kaúntørport	counterpart	5	noun		
+kažulté	casualty	4	noun		
+kažúul	casual	4	adjective		
+kábul	cable	4	noun		
+káj	cage	4	noun		
+kák	cake	3	noun		
+káos	chaos	3	noun		
+kápibilité	capability	4	noun		
+kápibul	capable	5	adjective		
+kás	case	3	noun		
+káv	cave	3	noun		
+kemikul	chemical	4	adjective		
+kemistré	chemistry	3	noun		
+keré	carry	4	verb		
+keréør	carrier	5	noun		
+ker	care	3	noun		
+kerfulé	carefully	5	adverb		
+kerful	careful	3	adjective		
+keriktør	character	6	noun		
+keriktøristik	characteristic	7	noun		
+keriktøríz	characterize	8	verb		
+kerit	carrot	4	noun		
+ké	key	2	adjective		
+kéøréis	curious	6	adjective		
+kéøréosité	curiosity	5	noun		
+kéør	cure	4	noun		
+kép	keep	2	verb		
+Kéúbin	Cuban	4	adjective		
+kéú	cue	3	noun		
+kéút	cute	4	adjective		
+kicin	kitchen	3	noun		
+kid	kid	0	noun		
+kik	kick	1	verb		
+kil	kill	1	verb		
+kiling	killing	1	noun		
+kilør	killer	2	noun		
+kingdum	kingdom	1	noun		
+king	king	0	noun		
+kis	kiss	1	noun		
+kit	kit	0	noun		
+kínd	kind	1	adverb		
+klas	class	2	noun		
+klasifí	classify	3	verb		
+klasik	classic	3	adjective		
+klasikul	classical	4	adjective		
+klasrúm	classroom	4	noun		
+klaúd	cloud	3	noun		
+klá	clay	3	noun		
+klám	claim	3	noun		
+klén	clean	3	adjective		
+klér	clear	3	adjective		
+klérlé	clearly	4	adverb		
+klif	cliff	2	noun		
+klik	click	2	verb		
+kling	cling	1	verb		
+klinik	clinic	2	noun		
+klinikul	clinical	3	adjective		
+klip	clip	1	noun		
+klíint	client	3	noun		
+klím	climb	3	verb		
+klímit	climate	4	noun		
+klok	clock	2	noun		
+kloth	cloth	1	noun		
+klozit	closet	3	noun		
+klódhing	clothing	3	noun		
+klódhz	clothes	5	noun		
+klós	close	3	adverb		
+klósist	closest	3	adjective		
+klóslé	closely	4	adverb		
+klósør	closer	3	adjective		
+klózd	closed	4	adjective		
+klóz	close	4	verb		
+klørk	clerk	2	noun		
+klub	club	1	noun		
+klustør	cluster	2	noun		
+klú	clue	3	noun		
+kofé	coffee	4	noun		
+kognitiv	cognitive	2	adjective		
+kolég	colleague	6	noun		
+kol	call	3	noun		
+kolij	college	5	noun		
+koliné	colony	3	noun		
+kolm	calm	2	adjective		
+kolør	collar	3	noun		
+kolum	column	2	noun		
+kolumnist	columnist	1	noun		
+kombat	combat	1	noun		
+kombinášin	combination	4	noun		
+komin	common	3	adjective		
+kominlé	commonly	4	adverb		
+komint	comment	3	noun		
+kompinsášin	compensation	5	noun		
+kompitišin	competition	4	noun		
+komplikátid	complicated	4	adjective		
+kompréhensiv	comprehensive	3	adjective		
+komprimíz	compromise	5	noun		
+komprubul	comparable	5	adjective		
+kompuzišin	composition	5	noun		
+komudé	comedy	3	noun		
+kondukt	conduct	2	noun		
+konfidins	confidence	4	noun		
+konfidint	confident	2	adjective		
+konflikt	conflict	2	noun		
+konfrins	conference	5	noun		
+konfrintášin	confrontation	5	noun		
+Kongris	Congress	3	noun		
+konkrét	concrete	4	adjective		
+konsept	concept	2	noun		
+konsikúens	consequence	6	noun		
+konsikúentlé	consequently	5	adverb		
+konsintrášin	concentration	6	noun		
+konsintrát	concentrate	5	verb		
+konsørt	concert	3	noun		
+konsørvášin	conservation	5	noun		
+konstint	constant	2	adjective		
+konstintlé	constantly	3	adverb		
+konstitúšin	constitution	4	noun		
+konstitúšinul	constitutional	5	adjective		
+konstitút	constitute	3	verb		
+konstrukt	construct	2	noun		
+konšins	conscience	6	noun		
+konšis	conscious	5	adjective		
+konšisnis	consciousness	7	noun		
+kontakt	contact	2	noun		
+kontekst	context	3	noun		
+kontest	contest	1	noun		
+kontinint	continent	2	noun		
+kontrakt	contract	2	noun		
+kontraktør	contractor	3	noun		
+kontrast	contrast	1	noun		
+kontribéúšin	contribution	5	noun		
+kontruvørsé	controversy	4	noun		
+kontruvøršul	controversial	6	adjective		
+kontumplát	contemplate	4	verb		
+konvikt	convict	2	verb		
+konvørsášin	conversation	5	noun		
+kopé	copy	2	noun		
+kop	cop	1	noun		
+korbin	carbon	3	noun		
+korbuhídrát	carbohydrate	6	noun		
+kord	card	2	noun		
+kor	car	2	noun		
+korgó	cargo	3	noun		
+korpit	carpet	3	noun		
+kort	cart	2	noun		
+kortún	cartoon	4	noun		
+korv	carve	3	verb		
+kost	cost	1	noun		
+kostlé	costly	2	adjective		
+kostúm	costume	3	noun		
+kotij	cottage	5	noun		
+kotin	cotton	3	noun		
+koz	cause	5	noun		
+kóc	coach	4	noun		
+kód	code	3	noun		
+kóilišin	coalition	5	noun		
+kóin	coin	2	noun		
+kókán	cocaine	6	noun		
+kóld	cold	2	adjective		
+kól	coal	3	noun		
+kóopørášin	cooperation	6	noun		
+kóopørát	cooperate	5	verb		
+kóopøritiv	cooperative	5	adjective		
+kóp	cope	3	verb		
+kórd	cord	2	noun		
+Kóréin	Korean	3	adjective		
+kór	core	3	noun		
+kóridór	corridor	4	noun		
+kórilášin	correlation	7	noun		
+kórispondint	correspondent	5	noun		
+kórn	corn	2	noun		
+kórnør	corner	3	noun		
+kórpørášin	corporation	6	noun		
+kórpørit	corporate	5	adjective		
+kórs	coarse	4	adjective		
+kórs	course	4	adverb		
+kórt	court	3	noun		
+kórtrúm	courtroom	5	noun		
+kóst	coast	3	noun		
+kóstul	coastal	4	adjective		
+kót	coat	3	noun		
+kød	could	4	verb		
+køké	cookie	5	noun		
+køk	cook	3	noun		
+køking	cooking	3	noun		
+kørekt	correct	4	adjective		
+kørektlé	correctly	5	adverb		
+kørér	career	4	noun		
+kørij	courage	6	noun		
+kørikéølum	curriculum	6	noun		
+kørinsé	currency	6	noun		
+kørint	current	4	adjective		
+kørintlé	currently	5	adverb		
+kørtin	curtain	3	noun		
+kørupšin	corruption	5	noun		
+kørv	curve	3	noun		
+køúórdinát	coordinate	6	verb		
+køúórdinátør	coordinator	6	noun		
+køúórdinits	coordinates	6	noun		
+kraft	craft	1	noun		
+krak	crack	2	noun		
+kraš	crash	3	noun		
+kraúd	crowd	3	noun		
+kraúdid	crowded	4	adjective		
+krázé	crazy	3	adjective		
+kredibilité	credibility	2	noun		
+kredit	credit	1	noun		
+kréášin	creation	5	noun		
+kréát	create	4	verb		
+kréátiv	creative	4	adjective		
+kréátivité	creativity	4	noun		
+krécør	creature	6	noun		
+krém	cream	3	noun		
+kriminul	criminal	2	adjective		
+Kriscéanité	Christianity	5	noun		
+Kriscin	Christian	4	adjective		
+Krismis	Christmas	4	noun		
+kristul	crystal	3	noun		
+kritik	critic	2	noun		
+kritikul	critical	3	adjective		
+kritisizm	criticism	3	noun		
+kritisíz	criticize	4	verb		
+krí	cry	2	noun		
+krím	crime	3	noun		
+krísis	crisis	2	noun		
+krítéréu	criteria	5	noun		
+krol	crawl	3	verb		
+kronik	chronic	3	adjective		
+krop	crop	1	noun		
+kros	cross	2	noun		
+kruš	crush	3	verb		
+krú	crew	3	noun		
+krúl	cruel	3	adjective		
+krúšul	crucial	5	adjective		
+krúz	cruise	5	noun		
+kulabørášin	collaboration	7	noun		
+kulaps	collapse	4	noun		
+kulcør	culture	4	noun		
+kulcørul	cultural	4	adjective		
+kulekšin	collection	6	noun		
+kulekt	collect	4	verb		
+kulektiv	collective	5	adjective		
+kulektør	collector	5	noun		
+kulestørol	cholesterol	4	noun		
+kulónéul	colonial	5	adjective		
+kulør	color	3	noun		
+kulørful	colorful	3	adjective		
+kumand	command	3	noun		
+kumandør	commander	4	noun		
+kumbínd	combined	4	adjective		
+kumbín	combine	4	verb		
+kuméúnikášin	communication	8	noun		
+kuméúnikát	communicate	7	verb		
+kuméúnité	community	5	noun		
+kum	come	3	verb		
+kumført	comfort	3	noun		
+kumftørbul	comfortable	8	adjective		
+kuming	coming	2	adjective		
+kumišin	commission	6	noun		
+kumišinør	commissioner	7	noun		
+kumité	committee	6	noun		
+kumit	commit	3	verb		
+kumitmint	commitment	4	noun		
+kumodité	commodity	4	noun		
+kumøršul	commercial	7	adjective		
+kumpanéin	companion	4	noun		
+kumpaúnd	compound	4	noun		
+kumpel	compel	2	verb		
+kumpeling	compelling	3	adjective		
+kumper	compare	4	verb		
+kumperisin	comparison	4	noun		
+kumpetitiv	competitive	3	adjective		
+kumpetitør	competitor	3	noun		
+kumpét	compete	4	verb		
+kumpéútør	computer	5	noun		
+kumpiné	company	4	noun		
+kumplán	complain	4	verb		
+kumplánt	complaint	4	noun		
+kumpleks	complex	4	adjective		
+kumpleksité	complexity	5	noun		
+kumplét	complete	4	adjective		
+kumplétlé	completely	5	adverb		
+kumplí	comply	3	verb		
+kumplíins	compliance	6	noun		
+kumpónint	component	4	noun		
+kumpóz	compose	5	verb		
+kumpríz	comprise	5	verb		
+Kunádéin	Canadian	5	adjective		
+kundem	condemn	3	verb		
+kundišin	condition	4	noun		
+kundukt	conduct	3	verb		
+kunekšin	connection	6	noun		
+kunekt	connect	4	verb		
+kunfes	confess	3	verb		
+kunfešin	confession	5	noun		
+kunféúz	confuse	5	verb		
+kunféúžin	confusion	6	noun		
+kunfirm	confirm	2	verb		
+kunflikt	conflict	3	verb		
+kunfrunt	confront	3	verb		
+kungrešinul	congressional	6	adjective		
+kunklúd	conclude	5	verb		
+kunklúžin	conclusion	6	noun		
+kunsekéøtiv	consecutive	6	adjective		
+kunsensis	consensus	3	noun		
+kunsent	consent	2	noun		
+kunsepšin	conception	5	noun		
+kunséd	concede	5	verb		
+kunsév	conceive	6	verb		
+kunsidørášin	consideration	6	noun		
+kunsidør	consider	3	verb		
+kunsidøriblé	considerably	5	adverb		
+kunsidøribul	considerable	6	adjective		
+kunsist	consist	2	verb		
+kunsistint	consistent	3	adjective		
+kunsistintlé	consistently	4	adverb		
+kunsørnd	concerned	5	adjective		
+kunsørn	concern	4	noun		
+kunsørning	concerning	4	preposition		
+kunsørvitiv	conservative	5	adjective		
+kunspirisé	conspiracy	5	noun		
+kunstránt	constraint	4	noun		
+kunstrukšin	construction	5	noun		
+kunstrukt	construct	3	verb		
+kunsult	consult	2	verb		
+kunsultint	consultant	3	noun		
+kunsumpšin	consumption	4	noun		
+kunsúm	consume	4	verb		
+kunsúmør	consumer	4	noun		
+kuntán	contain	4	verb		
+kuntánør	container	5	noun		
+kuntempøreré	contemporary	5	adjective		
+kuntend	contend	2	verb		
+kuntent	content	2	adjective		
+kuntinéúd	continued	4	adjective		
+kuntinéú	continue	4	verb		
+kuntinéúing	continuing	4	adjective		
+kuntinéúis	continuous	5	adjective		
+kuntré	country	3	noun		
+kuntribéøtør	contributor	5	noun		
+kuntribéút	contribute	5	verb		
+kuntról	control	3	noun		
+kunvá	convey	4	verb		
+kunvenšin	convention	4	noun		
+kunvenšinul	conventional	5	adjective		
+kunvénéins	convenience	7	noun		
+kunvikšin	conviction	5	noun		
+kunvins	convince	4	verb		
+kunvinst	convinced	5	adjective		
+kunvørt	convert	3	verb		
+kunvøržin	conversion	5	noun		
+kupasité	capacity	4	noun		
+kup	cup	1	noun		
+kupul	couple	4	noun		
+kusénó	casino	4	noun		
+kustidé	custody	3	noun		
+kustum	custom	2	noun		
+kustumør	customer	3	noun		
+kut	cut	1	noun		
+kuvør	cover	3	noun		
+kuvrij	coverage	6	noun		
+kuzin	cousin	3	noun		
+kúescinár	questionnaire	8	noun		
+kúescin	question	4	noun		
+kúest	quest	2	noun		
+kúén	queen	4	noun		
+kú	coup	4	noun		
+kúik	quick	3	adjective		
+kúiklé	quickly	4	adverb		
+kúit	quit	2	verb		
+kúíit	quiet	4	adjective		
+kúíitlé	quietly	5	adverb		
+kúít	quite	4	adverb		
+kúl	cool	3	adjective		
+kúolifí	qualify	4	verb		
+kúolité	quality	4	noun		
+kúontité	quantity	4	noun		
+kúórtørbak	quarterback	5	noun		
+kúórtør	quarter	4	noun		
+kúót	quote	4	noun		
+lab	lab	0	noun		
+labritóré	laboratory	4	noun		
+ladør	ladder	2	noun		
+laf	laugh	3	noun		
+laftør	laughter	4	noun		
+lak	lack	1	noun		
+lamp	lamp	0	noun		
+land	land	0	noun		
+landing	landing	0	noun		
+landmork	landmark	1	noun		
+landskáp	landscape	3	noun		
+lap	lap	0	noun		
+last	last	0	adverb		
+Latin	Latin	0	adjective		
+latør	latter	2	determiner		
+laúd	loud	2	adverb		
+lábør	labor	2	noun		
+lábul	label	2	noun		
+ládé	lady	2	noun		
+lá	lay	2	verb		
+lák	lake	2	noun		
+lán	lane	2	noun		
+lángúij	language	5	noun		
+láør	layer	3	noun		
+lásør	laser	2	noun		
+lát	late	2	adverb		
+látlé	lately	3	adverb		
+látør	later	2	adverb		
+led	lead	1	noun		
+ledhør	leather	3	noun		
+left	left	0	adjective		
+leg	leg	0	noun		
+legisé	legacy	3	noun		
+lejind	legend	2	noun		
+lejislácør	legislature	5	noun		
+lejislášin	legislation	4	noun		
+lejislátiv	legislative	3	adjective		
+lejislátør	legislator	3	noun		
+lekšør	lecture	4	noun		
+lemin	lemon	1	noun		
+lend	lend	0	verb		
+length	length	0	noun		
+lenz	lens	1	noun		
+les	less	1	adverb		
+lesin	lesson	2	noun		
+let	let	0	verb		
+letør	letter	2	noun		
+levul	level	1	adjective		
+léd	lead	2	verb		
+léding	leading	2	adjective		
+lédør	leader	3	noun		
+lédøršip	leadership	5	noun		
+léf	leaf	2	noun		
+lég	league	4	noun		
+légulé	legally	4	adverb		
+légul	legal	2	adjective		
+lén	lean	2	verb		
+lép	leap	2	verb		
+lést	least	2	adverb		
+lév	leave	3	noun		
+libørté	liberty	2	noun		
+libørul	liberal	2	adjective		
+lid	lid	0	noun		
+lift	lift	0	verb		
+lijitimit	legitimate	4	adjective		
+likúid	liquid	2	adjective		
+lim	limb	1	noun		
+limitášin	limitation	3	noun		
+limit	limit	0	noun		
+limitid	limited	1	adjective		
+link	link	0	noun		
+lip	lip	0	noun		
+lisin	listen	2	verb		
+lisinør	listener	3	noun		
+list	list	0	noun		
+litøreré	literary	3	adjective		
+litørucør	literature	5	noun		
+litørulé	literally	4	adverb		
+litul	little	2	adverb		
+living	living	0	adjective		
+líbreré	library	3	noun		
+líf	life	2	noun		
+lí	lie	2	noun		
+lífstíl	lifestyle	4	noun		
+líftím	lifetime	4	noun		
+líibilité	liability	3	noun		
+líin	lion	2	noun		
+lík	like	2	adverb		
+líklé	likely	3	adverb		
+líkléhød	likelihood	5	noun		
+líkúíz	likewise	6	adverb		
+lín	line	2	noun		
+lísinz	license	5	noun		
+lít	light	3	adjective		
+líting	lighting	3	noun		
+lítlé	lightly	4	adverb		
+lítning	lightning	3	noun		
+lív	live	2	adjective		
+lívør	liver	2	noun		
+lobé	lobby	2	noun		
+lo	law	2	noun		
+log	log	0	noun		
+lojik	logic	2	noun		
+lojikul	logical	3	adjective		
+lok	lock	1	noun		
+lomákør	lawmaker	4	noun		
+lonc	launch	3	noun		
+londré	laundry	3	noun		
+lon	lawn	2	noun		
+long-tørm	long-term	1	adjective		
+long	long	0	adverb		
+longtím	longtime	2	adjective		
+lorj	large	3	adjective		
+lorjlé	largely	4	adverb		
+los	loss	1	noun		
+lost	lost	0	adjective		
+losút	lawsuit	4	noun		
+lot	lot	0	noun		
+lots	lots	0	pronoun		
+lód	load	2	noun		
+lóéør	lawyer	4	noun		
+lóéul	loyal	3	adjective		
+lóéulté	loyalty	4	noun		
+ló	low	2	adverb		
+lókášin	location	5	noun		
+lókát	locate	4	verb		
+lókul	local	3	adjective		
+lón	loan	2	noun		
+lónlé	lonely	3	adjective		
+lóúør	lower	3	verb		
+løk	look	2	noun		
+lørn	learn	2	verb		
+lørning	learning	2	noun		
+luké	lucky	2	adjective		
+luk	luck	1	noun		
+lunc	lunch	1	noun		
+lung	lung	0	noun		
+luv	love	2	noun		
+luvlé	lovely	3	adjective		
+luvør	lover	2	noun		
+lúp	loop	2	noun		
+lús	loose	3	adjective		
+lúz	lose	3	verb		
+mac	match	2	noun		
+mad	mad	0	adjective		
+magizén	magazine	3	noun		
+magnetik	magnetic	1	adjective		
+magnitúd	magnitude	2	noun		
+majik	magic	2	adjective		
+maksimum	maximum	2	adjective		
+mandát	mandate	2	noun		
+manéøfakcøring	manufacturing	5	noun		
+manéøfakcørør	manufacturer	6	noun		
+manéúul	manual	3	noun		
+man	man	0	noun		
+manij	manage	3	verb		
+manijing	managing	2	adjective		
+manijmint	management	4	noun		
+manijør	manager	3	noun		
+manør	manner	2	noun		
+manšin	mansion	2	noun		
+map	map	0	noun		
+mas	mass	1	adjective		
+masiv	massive	2	adjective		
+mask	mask	0	noun		
+mastør	master	1	noun		
+matør	matter	2	noun		
+math	math	0	noun		
+mathmatiks	mathematics	2	noun		
+maúnt	mount	2	verb		
+maúntin	mountain	3	noun		
+maús	mouse	3	noun		
+maúth	mouth	2	noun		
+mábé	maybe	3	adverb		
+má	may	2	verb		
+májør	major	2	adjective		
+mák	make	2	verb		
+mákør	maker	2	noun		
+mákup	makeup	2	noun		
+mál	mail	2	noun		
+mál	male	2	adjective		
+mán	main	2	adjective		
+mánlé	mainly	3	adverb		
+mánstrém	mainstream	4	adjective		
+mántán	maintain	4	verb		
+mántinins	maintenance	6	noun		
+máør	mayor	3	noun		
+mát	mate	2	noun		
+medikášin	medication	4	noun		
+medikul	medical	2	adjective		
+medisin	medicine	2	noun		
+medul	medal	1	noun		
+mekinism	mechanism	3	noun		
+Meksikin	Mexican	4	adjective		
+melt	melt	0	verb		
+membør	member	1	noun		
+membøršip	membership	3	noun		
+memøré	memory	2	noun		
+mené	many	2	determiner		
+menéú	menu	2	noun		
+menšin	mention	2	noun		
+mentór	mentor	1	noun		
+mentulé	mentally	3	adverb		
+mentul	mental	1	adjective		
+meréd	married	4	adjective		
+meré	marry	3	verb		
+merij	marriage	5	noun		
+merit	merit	0	noun		
+mes	mess	1	noun		
+mesij	message	4	noun		
+metifór	metaphor	4	noun		
+metrupolitin	metropolitan	2	adjective		
+metul	metal	1	noun		
+methid	method	1	noun		
+mežør	measure	4	noun		
+mežørmint	measurement	5	noun		
+médéu	media	3	noun		
+médéum	medium	2	adjective		
+mé	me	1	pronoun		
+mél	meal	2	noun		
+mén	mean	2	adjective		
+méning	meaning	2	noun		
+méningful	meaningful	2	adjective		
+méntím	meantime	4	noun		
+ménúíl	meanwhile	6	adverb		
+ménz	means	3	noun		
+mér	mere	2	adjective		
+mérikul	miracle	5	noun		
+mérlé	merely	3	adverb		
+mét	meat	2	noun		
+mét	meet	2	verb		
+méting	meeting	2	noun		
+métør	meter	2	noun		
+méúcúul	mutual	5	adjective		
+méúnisipul	municipal	4	adjective		
+méúzéim	museum	5	noun		
+méúzik	music	4	noun		
+méúzikul	musical	5	adjective		
+méúzišin	musician	5	noun		
+midnít	midnight	3	noun		
+midst	midst	0	noun		
+midul	middle	2	adjective		
+mikanik	mechanic	4	noun		
+mikanikul	mechanical	5	adjective		
+mikscør	mixture	5	noun		
+miks	mix	2	noun		
+mikst	mixed	3	adjective		
+miléin	million	2	numeral		
+mil	mill	1	noun		
+militeré	military	2	adjective		
+milk	milk	0	noun		
+minimíz	minimize	2	verb		
+minimul	minimal	1	adjective		
+minimum	minimum	0	adjective		
+minirul	mineral	2	noun		
+ministør	minister	1	noun		
+ministré	ministry	1	noun		
+minit	minute	2	noun		
+mirør	mirror	2	noun		
+mis	miss	1	verb		
+mising	missing	1	adjective		
+misták	mistake	2	noun		
+mistéréis	mysterious	5	adjective		
+mistiré	mystery	3	noun		
+misul	missile	3	noun		
+mišineré	missionary	5	noun		
+mišin	mission	3	noun		
+mith	myth	1	noun		
+mí	my	1	article		
+mígrášin	migration	4	noun		
+míld	mild	1	adjective		
+mínd	mind	1	noun		
+mín	mine	2	noun		
+mínórité	minority	3	noun		
+mínør	minor	2	adjective		
+míself	myself	1	pronoun		
+mít	might	3	verb		
+modifí	modify	1	verb		
+modist	modest	1	adjective		
+modørit	moderate	3	adjective		
+modørn	modern	1	adjective		
+modul	model	1	noun		
+mol	mall	2	noun		
+molikéúl	molecule	5	noun		
+mom	mom	0	noun		
+monéømint	monument	3	noun		
+monitør	monitor	1	noun		
+monstør	monster	1	noun		
+morbul	marble	3	noun		
+morc	march	2	verb		
+morjin	margin	2	noun		
+mork	mark	1	noun		
+morkit	market	2	noun		
+morkiting	marketing	2	noun		
+morkitplás	marketplace	5	noun		
+morkør	marker	2	noun		
+móbul	mobile	3	adjective		
+mód	mode	2	noun		
+mómentum	momentum	1	noun		
+mómint	moment	2	noun		
+mór	more	2	adverb		
+mórgij	mortgage	5	noun		
+mórning	morning	1	noun		
+móróvør	moreover	4	adverb		
+mórtalité	mortality	2	noun		
+mórul	moral	2	adjective		
+móst	most	1	adverb		
+móstlé	mostly	2	adverb		
+móšin	motion	3	noun		
+mótivášin	motivation	4	noun		
+mótivát	motivate	3	verb		
+mótiv	motive	2	noun		
+mótør	motor	2	noun		
+mørcint	merchant	3	noun		
+mørdør	murder	2	noun		
+mørén	marine	3	adjective		
+muc	much	1	adverb		
+mud	mud	0	noun		
+mujórité	majority	3	noun		
+multipul	multiple	2	adjective		
+Mundá	Monday	3	noun		
+muné	money	3	noun		
+munipéølát	manipulate	5	verb		
+munké	monkey	3	noun		
+munth	month	1	noun		
+munthlé	monthly	2	adjective		
+must	must	0	verb		
+musul	muscle	2	noun		
+mušén	machine	5	noun		
+mušrúm	mushroom	4	noun		
+mutériéul	material	4	noun		
+mutør	mutter	2	verb		
+muthør	mother	2	noun		
+múd	mood	2	noun		
+mún	moon	2	noun		
+múvé	movie	3	noun		
+múv	move	2	noun		
+múvmint	movement	3	noun		
+nacørulé	naturally	5	adverb		
+nacørul	natural	3	adjective		
+nasté	nasty	1	adjective		
+našinul	national	3	adjective		
+naú	now	2	adverb		
+nábør	neighbor	5	noun		
+nábøring	neighboring	5	adjective		
+nábørhød	neighborhood	7	noun		
+nácør	nature	4	noun		
+nákid	naked	2	adjective		
+nál	nail	2	noun		
+nám	name	2	noun		
+nášin	nation	3	noun		
+nášinúíd	nationwide	6	adverb		
+nátiv	native	2	adjective		
+návul	naval	2	adjective		
+negitiv	negative	2	adjective		
+nek	neck	1	noun		
+nekst	next	2	numeral		
+neritiv	narrative	4	noun		
+neró	narrow	4	adjective		
+nesiseré	necessary	5	adjective		
+nesiserilé	necessarily	5	adverb		
+nest	nest	0	noun		
+net	net	0	adjective		
+netúørk	network	2	noun		
+nevør-dhe-les	nevertheless	5	adverb		
+nevør	never	1	adverb		
+néd	need	2	noun		
+nédul	needle	4	noun		
+nédhør	neither	4	adverb		
+né	knee	3	noun		
+nél	kneel	3	verb		
+nérbí	nearby	3	adverb		
+nér	near	2	adverb		
+nérlé	nearly	3	adverb		
+nét	neat	2	adjective		
+nigóšéášin	negotiation	7	noun		
+nigóšéát	negotiate	6	verb		
+nisesité	necessity	4	noun		
+níf	knife	3	noun		
+nín	nine	2	numeral		
+nís	nice	3	adjective		
+nít	night	3	noun		
+nítmár	nightmare	5	noun		
+nod	nod	0	verb		
+nok	knock	2	verb		
+nolij	knowledge	6	noun		
+nominášin	nomination	3	noun		
+nominé	nominee	2	noun		
+nonprofit	nonprofit	0	adjective		
+not	not	0	suffix		
+novul	novel	1	noun		
+nóbudé	nobody	3	pronoun		
+nó	know	3	verb		
+nó	no	1	article		
+nóiz	noise	3	noun		
+nón	known	3	adjective		
+nórdhørn	northern	3	adjective		
+nór	nor	1	conjunction		
+nórm	norm	1	noun		
+nórmulé	normally	4	adverb		
+nórmul	normal	2	adjective		
+nórthést	northeast	3	noun		
+nórth	north	1	noun		
+nórthúest	northwest	2	noun		
+nóšin	notion	3	noun		
+nótbøk	notebook	4	noun		
+nót	note	2	noun		
+nótis	notice	3	noun		
+nóúer	nowhere	4	adverb		
+nóz	nose	3	noun		
+nørs	nurse	2	noun		
+nørv	nerve	2	noun		
+nørvis	nervous	3	adjective		
+numbør	number	1	noun		
+nun-dhe-les	nonetheless	5	adverb		
+nun	none	2	pronoun		
+nut	nut	0	noun		
+nuthing	nothing	1	pronoun		
+nú	new	2	adjective		
+núklér	nuclear	4	adjective		
+núlé	newly	3	adverb		
+númøris	numerous	4	adjective		
+nún	noon	2	noun		
+nútréint	nutrient	3	noun		
+nútrul	neutral	3	adjective		
+núz	news	3	noun		
+núzpápør	newspaper	5	noun		
+obligášin	obligation	3	noun		
+obstikul	obstacle	4	noun		
+obvéis	obvious	3	adjective		
+obvéislé	obviously	4	adverb		
+obzørvášin	observation	5	noun		
+odéins	audience	6	noun		
+od	odd	1	adjective		
+odz	odds	2	noun		
+o	ah	2	interjection		
+of	off	1	adverb		
+ofin	often	2	adverb		
+ofis	office	3	noun		
+ofisør	officer	3	noun		
+ofør	offer	2	noun		
+oføring	offering	2	noun		
+oful	awful	2	adjective		
+okéøpášin	occupation	6	noun		
+okéøpí	occupy	4	verb		
+oksijen	oxygen	4	noun		
+okšin	auction	5	noun		
+oldhó	although	6	conjunction		
+ol	all	2	adverb		
+olmóst	almost	2	adverb		
+olredé	already	3	adverb		
+olsó	also	2	adverb		
+oltør	alter	2	verb		
+oltørnitiv	alternative	4	adjective		
+oltugedhør	altogether	4	adverb		
+olúáz	always	5	adverb		
+Omerikin	American	3	adjective		
+on	on	0	adverb		
+ongóing	ongoing	1	adjective		
+onist	honest	2	adjective		
+onistlé	honestly	3	adverb		
+onlín	online	2	adverb		
+onør	honor	2	noun		
+ont	aunt	2	noun		
+ontrepenúr	entrepreneur	4	noun		
+ontú	onto	1	preposition		
+onvelóp	envelope	3	noun		
+opørášin	operation	4	noun		
+opørát	operate	3	verb		
+opøráting	operating	2	noun		
+opørátør	operator	3	noun		
+opørtúnité	opportunity	4	noun		
+opru	opera	2	noun		
+opšin	option	2	noun		
+opt	opt	0	verb		
+optimistik	optimistic	1	adjective		
+opuzišin	opposition	5	noun		
+opuzit	opposite	4	adjective		
+orgéú	argue	3	verb		
+orgéúmint	argument	4	noun		
+orkitekšør	architecture	7	noun		
+orkitekt	architect	4	noun		
+ormd	armed	2	adjective		
+ormé	army	2	noun		
+orm	arm	1	noun		
+ort	art	1	noun		
+ortifakt	artifact	2	noun		
+ortifišul	artificial	4	adjective		
+ortikéølát	articulate	6	verb		
+ortikul	article	4	noun		
+ortist	artist	1	noun		
+ortistik	artistic	2	adjective		
+ot	ought	3	verb		
+otó	auto	3	noun		
+otumatik	automatic	4	adjective		
+otumatiklé	automatically	7	adverb		
+otumubél	automobile	6	noun		
+othør	author	3	noun		
+othøríz	authorize	5	verb		
+ó	oh	2	interjection		
+ó	owe	3	verb		
+óil	oil	1	noun		
+óká	okay	3	adverb		
+ók	oak	2	noun		
+óld-fašind	old-fashioned	5	adjective		
+óld	old	1	adjective		
+ón	own	2	verb		
+ónlé	only	2	adverb		
+ónør	owner	3	noun		
+ónøršip	ownership	5	noun		
+ópin	open	2	adjective		
+ópining	opening	2	noun		
+ópinlé	openly	3	adverb		
+órbit	orbit	1	noun		
+órdineré	ordinary	3	adjective		
+órdør	order	2	noun		
+óréintášin	orientation	6	noun		
+ór	or	1	conjunction		
+órganik	organic	2	adjective		
+órgin	organ	2	noun		
+órginism	organism	2	noun		
+órginizášin	organization	5	noun		
+órginizášinul	organizational	6	adjective		
+órginízd	organized	4	adjective		
+órginíz	organize	4	verb		
+órijin	origin	2	noun		
+órinj	orange	4	adjective		
+órul	oral	2	adjective		
+óšin	ocean	4	noun		
+óvør	over	2	adverb		
+óvørkum	overcome	5	verb		
+óvørløk	overlook	4	verb		
+óvørnít	overnight	5	adverb		
+óvørol	overall	4	adverb		
+óvørsé	oversee	4	verb		
+óvørúelm	overwhelm	4	verb		
+óvørúelming	overwhelming	4	adjective		
+ørb	herb	2	noun		
+ørbin	urban	2	adjective		
+ørj	urge	3	verb		
+ørlé	early	3	adverb		
+ørn	earn	2	verb		
+ørninks	earnings	3	noun		
+ørth	earth	2	noun		
+ørthkúák	earthquake	6	noun		
+pac	patch	2	noun		
+pad	pad	0	noun		
+pak	pack	1	noun		
+pakij	package	4	noun		
+palis	palace	3	noun		
+pan	pan	0	noun		
+panik	panic	1	noun		
+pants	pants	0	noun		
+panul	panel	1	noun		
+pas	pass	1	noun		
+pasij	passage	4	noun		
+pasing	passing	1	adjective		
+pasinjør	passenger	4	noun		
+past	past	0	adverb		
+pašin	passion	3	noun		
+pat	pat	0	verb		
+patint	patent	1	noun		
+patørn	pattern	2	noun		
+path	path	0	noun		
+paúdør	powder	3	noun		
+paúnd	pound	2	noun		
+paúør	power	3	noun		
+paúørful	powerful	3	adjective		
+pá	pay	2	noun		
+páj	page	3	noun		
+pál	pale	2	adjective		
+pámint	payment	3	noun		
+pán	pain	2	noun		
+pánful	painful	2	adjective		
+pánt	paint	2	noun		
+pánting	painting	2	noun		
+pántør	painter	3	noun		
+pápør	paper	2	noun		
+pár	pair	2	noun		
+pás	pace	3	noun		
+pášins	patience	5	noun		
+pášint	patient	3	adjective		
+pátrin	patron	2	noun		
+pen	pen	0	noun		
+pensul	pencil	2	noun		
+penšin	pension	2	noun		
+penulté	penalty	2	noun		
+pepør	pepper	2	noun		
+perint	parent	2	noun		
+pesint	peasant	2	noun		
+pet	pet	0	noun		
+péanó	piano	2	noun		
+pék	peak	2	noun		
+pél	peel	2	verb		
+pénut	peanut	2	noun		
+pépul	people	4	noun		
+péréid	period	3	noun		
+pér	peer	2	noun		
+pés	peace	4	noun		
+pés	piece	4	noun		
+pésful	peaceful	4	adjective		
+pétso	pizza	4	noun		
+péúr	pure	3	adjective		
+pic	pitch	2	noun		
+picør	pitcher	3	noun		
+pig	pig	0	noun		
+pik	pick	1	verb		
+pikšør	picture	4	noun		
+pikup	pickup	1	noun		
+pil	pill	1	noun		
+piló	pillow	3	noun		
+pin	pin	0	noun		
+pink	pink	0	adjective		
+pistul	pistol	1	noun		
+pit	pit	0	noun		
+pí	pie	2	noun		
+píl	pile	2	noun		
+pílit	pilot	2	noun		
+pín	pine	2	noun		
+píp	pipe	2	noun		
+píunér	pioneer	4	noun		
+PK	PC	1	noun	pørsinul kumpéútør	
+plan	plan	0	noun		
+planing	planning	1	noun		
+planit	planet	1	noun		
+planør	planner	2	noun		
+plant	plant	0	noun		
+plastik	plastic	1	noun		
+platfórm	platform	1	noun		
+plá	play	2	noun		
+plán	plain	2	adjective		
+plán	plane	2	noun		
+plántif	plaintiff	3	noun		
+pláof	playoff	3	noun		
+pláør	player	3	noun		
+plás	place	3	noun		
+plásmint	placement	4	noun		
+plát	plate	2	noun		
+plenté	plenty	1	pronoun		
+plezint	pleasant	3	adjective		
+pležør	pleasure	4	noun		
+pléd	plead	2	verb		
+plé	plea	2	noun		
+plézd	pleased	4	adjective		
+pléz	please	4	adverb		
+plot	plot	0	noun		
+plunj	plunge	2	verb		
+plus	plus	0	preposition		
+pokit	pocket	2	noun		
+polisé	policy	2	noun		
+politiks	politics	1	noun		
+politišin	politician	2	noun		
+polm	palm	1	noun		
+pond	pond	0	noun		
+popéølášin	population	5	noun		
+popéølerité	popularity	4	noun		
+popéølør	popular	3	adjective		
+pop	pop	0	noun		
+pork	park	1	noun		
+porking	parking	1	noun		
+poršulé	partially	6	adverb		
+poršul	partial	4	adjective		
+porté	party	2	noun		
+port	part	1	adverb		
+portikéølør	particular	5	adverb		
+portikéølørlé	particularly	6	adverb		
+portikul	particle	4	noun		
+portisipášin	participation	5	noun		
+portisipát	participate	4	verb		
+portisipent	participant	3	noun		
+portlé	partly	2	adverb		
+portnør	partner	2	noun		
+portnøršip	partnership	4	noun		
+posibilité	possibility	2	noun		
+posiblé	possibly	2	adverb		
+posibul	possible	3	adjective		
+posto	pasta	2	noun		
+pot	pot	0	noun		
+povørté	poverty	2	noun		
+poz	pause	4	noun		
+pozitiv	positive	2	adjective		
+póint	point	1	noun		
+pók	poke	2	verb		
+pól	pole	2	noun		
+pól	poll	2	noun		
+pórc	porch	2	noun		
+pór	poor	2	adjective		
+pór	pour	2	verb		
+pórk	pork	1	noun		
+póršin	portion	3	noun		
+pórtfóléó	portfolio	4	noun		
+pórt	port	1	noun		
+pórtrá	portray	3	verb		
+pórtrit	portrait	2	noun		
+póst	post	1	noun		
+póstør	poster	2	noun		
+póum	poem	2	noun		
+póúit	poet	3	noun		
+póúitré	poetry	4	noun		
+póz	pose	3	verb		
+pørád	parade	3	noun		
+pørcis	purchase	4	noun		
+pørentul	parental	2	adjective		
+pørfikt	perfect	3	adjective		
+pørfiktlé	perfectly	4	adverb		
+pørfórm	perform	2	verb		
+pørfórmins	performance	5	noun		
+pørfórmør	performer	3	noun		
+pør	per	1	preposition		
+pørminint	permanent	3	adjective		
+pørmišin	permission	4	noun		
+pørmit	permit	1	noun		
+pørpis	purpose	3	noun		
+pørpul	purple	3	adjective		
+pørsentij	percentage	5	noun		
+pørsepšin	perception	4	noun		
+pørsévd	perceived	5	adjective		
+pørsév	perceive	5	verb		
+pørs	purse	2	noun		
+pørsinalité	personality	3	noun		
+pørsinel	personnel	3	noun		
+pørsin	person	2	noun		
+pørsinulé	personally	5	adverb		
+pørsinul	personal	3	adjective		
+pørsist	persist	1	verb		
+pørspektiv	perspective	3	noun		
+pørsúád	persuade	4	verb		
+pørsú	pursue	3	verb		
+pørsút	pursuit	3	noun		
+Pøržin	Persian	3	adjective		
+pørhaps	perhaps	1	adverb		
+pøš	push	3	verb		
+pøt	put	1	verb		
+praktiklé	practically	5	adverb		
+praktikul	practical	3	adjective		
+praktis	practice	3	noun		
+praktišinør	practitioner	4	noun		
+praúd	proud	2	adjective		
+prá	pray	2	verb		
+prá	pray	2	verb		
+prár	prayer	3	noun		
+práz	praise	4	noun		
+preditør	predator	2	noun		
+prefrins	preference	4	noun		
+pregninsé	pregnancy	3	noun		
+pregnint	pregnant	1	adjective		
+premis	premise	1	noun		
+prepørášin	preparation	4	noun		
+pres	press	1	noun		
+prešis	precious	3	adjective		
+prešør	pressure	4	noun		
+prezidenšul	presidential	4	adjective		
+prezidinsé	presidency	4	noun		
+prezidint	president	2	noun		
+prezins	presence	4	noun		
+prezintášin	presentation	5	noun		
+préc	preach	3	verb		
+préméum	premium	2	noun		
+prést	priest	2	noun		
+prévéis	previous	4	adjective		
+prévéislé	previously	5	adverb		
+pridikšin	prediction	4	noun		
+pridikt	predict	2	verb		
+prifør	prefer	2	verb		
+prilimineré	preliminary	3	adjective		
+prinsipul	principal	2	adjective		
+prinsipul	principle	3	noun		
+print	print	0	noun		
+pripár	prepare	3	verb		
+prisís	precise	4	adjective		
+prisíslé	precisely	5	adverb		
+priskripšin	prescription	4	noun		
+pritend	pretend	1	verb		
+prité	pretty	3	adverb		
+privál	prevail	3	verb		
+privenšin	prevention	3	noun		
+privent	prevent	1	verb		
+privlij	privilege	4	noun		
+prizent	present	2	adjective		
+prizent	present	2	verb		
+prizin	prison	2	noun		
+prizinør	prisoner	3	noun		
+prizørv	preserve	4	verb		
+prizúmublé	presumably	5	adverb		
+príd	pride	2	noun		
+prímeré	primary	3	adjective		
+prímerilé	primarily	3	adverb		
+prím	prime	2	adjective		
+príórité	priority	3	noun		
+príør	prior	2	adjective		
+prís	price	3	noun		
+prívisé	privacy	4	noun		
+prívit	private	3	adjective		
+prívitlé	privately	4	adverb		
+príz	prize	2	noun		
+problum	problem	1	noun		
+probublé	probably	2	adverb		
+produkt	product	1	noun		
+produktivité	productivity	2	noun		
+profit	profit	0	noun		
+progres	progress	1	noun		
+projekt	project	1	noun		
+prominint	prominent	1	adjective		
+promis	promise	1	noun		
+promising	promising	0	adjective		
+prompt	prompt	0	verb		
+propør	proper	1	adjective		
+propørlé	properly	2	adverb		
+propørté	property	2	noun		
+proses	process	2	noun		
+prosesing	processing	2	noun		
+prosesør	processor	3	noun		
+prosikéúšin	prosecution	6	noun		
+prosikéútør	prosecutor	5	noun		
+prospekt	prospect	1	noun		
+provins	province	2	noun		
+pródús	produce	4	noun		
+prófaúnd	profound	3	adjective		
+prófíl	profile	3	noun		
+prógram	program	1	noun		
+prógraming	programming	2	noun		
+próklám	proclaim	4	verb		
+prótest	protest	1	noun		
+prótén	protein	3	noun		
+prótikul	protocol	4	noun		
+próhibit	prohibit	1	verb		
+prudukšin	production	4	noun		
+pruduktiv	productive	3	adjective		
+prudús	produce	4	verb		
+prudúsør	producer	4	noun		
+prufesør	professor	3	noun		
+prufešin	profession	4	noun		
+prufešinul	professional	5	adjective		
+prugres	progress	2	verb		
+prugresiv	progressive	3	adjective		
+prujekšin	projection	4	noun		
+prujekt	project	2	verb		
+prumóšin	promotion	4	noun		
+prumót	promote	3	verb		
+prupóršin	proportion	4	noun		
+prupózd	proposed	4	adjective		
+prupóz	propose	4	verb		
+prupózul	proposal	4	noun		
+pruséd	proceed	4	verb		
+pruséjør	procedure	6	noun		
+prutekšin	protection	4	noun		
+prutekt	protect	2	verb		
+prutektiv	protective	3	adjective		
+pruvižin	provision	3	noun		
+pruvíd	provide	3	verb		
+pruvídid	provided	3	conjunction		
+pruvídør	provider	3	noun		
+pruvók	provoke	3	verb		
+prúf	proof	2	noun		
+prúv	prove	2	verb		
+publikášin	publication	4	noun		
+publik	public	1	adverb		
+publiklé	publicly	2	adverb		
+publisité	publicity	2	noun		
+publiš	publish	2	verb		
+publišør	publisher	3	noun		
+pulés	police	4	noun		
+pulésmin	policeman	5	noun		
+pul	pull	1	verb		
+pulitiklé	politically	5	adverb		
+pulitikul	political	3	adjective		
+puls	pulse	1	noun		
+pulúšin	pollution	5	noun		
+pump	pump	0	noun		
+punc	punch	1	verb		
+puniš	punish	2	verb		
+punišmint	punishment	3	noun		
+putátó	potato	3	noun		
+putenšulé	potentially	6	adverb		
+putenšul	potential	4	adjective		
+putról	patrol	2	noun		
+puzes	possess	4	verb		
+puzešin	possession	6	noun		
+puzišin	position	4	noun		
+puzul	puzzle	2	noun		
+púl	pool	2	noun		
+rabit	rabbit	1	noun		
+radikul	radical	2	adjective		
+radhør	rather	2	adverb		
+rak	rack	1	noun		
+ralé	rally	2	noun		
+ranc	ranch	1	noun		
+randum	random	1	adjective		
+rap	wrap	1	verb		
+rapid	rapid	0	adjective		
+rapidlé	rapidly	1	adverb		
+rašinul	rational	3	adjective		
+rat	rat	0	noun		
+raúnd	round	2	adjective		
+raút	route	3	noun		
+rádéášin	radiation	5	noun		
+rádéó	radio	3	noun		
+rádor	radar	2	noun		
+ráj	rage	3	noun		
+rál	rail	2	noun		
+rálród	railroad	4	noun		
+rán	rain	2	noun		
+ránj	range	3	noun		
+ránk	rank	1	noun		
+ráp	rape	2	noun		
+rás	race	3	noun		
+rásizm	racism	3	noun		
+rášéó	ratio	4	noun		
+rášul	racial	4	adjective		
+rát	rate	2	noun		
+ráting	rating	1	noun		
+ráz	raise	4	verb		
+rebul	rebel	1	noun		
+redé	ready	2	adjective		
+red	red	0	adjective		
+redilé	readily	2	adverb		
+reféújé	refugee	4	noun		
+reféúj	refuge	3	noun		
+reførens	reference	3	noun		
+regéølášin	regulation	5	noun		
+regéølát	regulate	4	verb		
+regéølátør	regulator	4	noun		
+regéølør	regular	3	adjective		
+regéølørlé	regularly	4	adverb		
+regéølutóré	regulatory	5	adjective		
+rejistør	register	2	verb		
+rekørd	record	2	noun		
+rekugnišin	recognition	4	noun		
+rekugníz	recognize	4	verb		
+rekumend	recommend	3	verb		
+rekumindášin	recommendation	7	noun		
+relitiv	relative	2	adjective		
+relitivlé	relatively	3	adverb		
+relivint	relevant	2	adjective		
+relm	realm	1	noun		
+rendør	render	1	verb		
+rent	rent	0	noun		
+rentul	rental	1	noun		
+repéøtášin	reputation	5	noun		
+reprizent	represent	2	verb		
+reprizentitiv	representative	4	adjective		
+reprizintášin	representation	6	noun		
+rer	rare	2	adjective		
+rerlé	rarely	3	adverb		
+resipé	recipe	2	noun		
+reskéú	rescue	3	noun		
+rest	rest	0	noun		
+restront	restaurant	3	noun		
+retørik	rhetoric	3	noun		
+revenú	revenue	2	noun		
+revulášin	revelation	4	noun		
+revulúšineré	revolutionary	6	adjective		
+revulúšin	revolution	4	noun		
+rezidens	residence	3	noun		
+rezidenšul	residential	4	adjective		
+rezident	resident	1	noun		
+rezilúšin	resolution	5	noun		
+rezørvášin	reservation	5	noun		
+rezumá	resume	2	noun		
+réakšin	reaction	4	noun		
+réakt	react	2	verb		
+réalité	reality	2	noun		
+rébild	rebuild	2	verb		
+réc	reach	3	noun		
+réd	read	2	verb		
+réding	reading	2	noun		
+rédør	reader	3	noun		
+réinfórs	reinforce	4	verb		
+réjekt	reject	2	verb		
+réjin	region	3	noun		
+réjinul	regional	4	adjective		
+rékol	recall	4	noun		
+rél	real	2	adjective		
+réølistik	realistic	3	adjective		
+réølíz	realize	4	verb		
+rér	rear	2	adjective		
+résint	recent	3	adjective		
+résintlé	recently	4	adverb		
+résórs	resource	5	noun		
+résørc	research	4	noun		
+résørcør	researcher	5	noun		
+rétál	retail	3	adjective		
+rétálør	retailer	4	noun		
+rézin	reason	4	noun		
+rézinibul	reasonable	7	adjective		
+réhubilitášin	rehabilitation	5	noun		
+rib	rib	0	noun		
+ribin	ribbon	2	noun		
+ric	rich	1	adjective		
+ricúul	ritual	3	noun		
+rid	rid	0	verb		
+ridikéølis	ridiculous	5	adjective		
+ridthm	rhythm	2	noun		
+ridukšin	reduction	4	noun		
+ridús	reduce	4	verb		
+riféúz	refuse	4	verb		
+riflekšin	reflection	4	noun		
+riflekt	reflect	2	verb		
+rifórm	reform	2	noun		
+rifør	refer	2	verb		
+rifrijørátør	refrigerator	5	noun		
+rigán	regain	3	verb		
+rigord	regard	2	noun		
+rigording	regarding	2	preposition		
+rigordlis	regardless	4	adverb		
+rigret	regret	1	verb		
+rij	ridge	3	noun		
+rikol	recall	4	verb		
+rikórd	record	3	verb		
+rikórding	recording	3	noun		
+rikrút	recruit	4	verb		
+rikuvøré	recovery	5	noun		
+rikuvør	recover	4	verb		
+rikúest	request	3	noun		
+rikúírd	required	5	adjective		
+rikúír	require	5	verb		
+rikúírmint	requirement	6	noun		
+rilaks	relax	3	verb		
+rilášin	relation	4	noun		
+rilášinšip	relationship	6	noun		
+rilát	relate	3	verb		
+rilátid	related	3	adjective		
+riléf	relief	3	noun		
+rilé	really	4	adverb		
+rilés	release	4	noun		
+rilév	relieve	4	verb		
+rilijin	religion	3	noun		
+rilijis	religious	4	adjective		
+rilí	rely	2	verb		
+rilíibilité	reliability	4	noun		
+rilíibul	reliable	5	adjective		
+riluktint	reluctant	3	adjective		
+rimán	remain	3	verb		
+rimáning	remaining	3	adjective		
+rimembør	remember	2	verb		
+rim	rim	0	noun		
+rimínd	remind	2	verb		
+rimíndør	reminder	3	noun		
+rimork	remark	2	noun		
+rimorkubul	remarkable	5	adjective		
+rimót	remote	3	adjective		
+rimúv	remove	3	verb		
+rimúvul	removal	3	noun		
+ring	ring	0	noun		
+ripár	repair	3	noun		
+ripét	repeat	3	verb		
+ripétidlé	repeatedly	5	adverb		
+rip	rip	0	verb		
+riplás	replace	4	verb		
+riplásmint	replacement	5	noun		
+riplí	reply	2	verb		
+ripórt	report	2	noun		
+ripórtidlé	reportedly	4	adverb		
+ripórting	reporting	2	noun		
+ripórtør	reporter	3	noun		
+ripublik	republic	2	noun		
+ripublikin	republican	3	adjective		
+risepšin	reception	4	noun		
+risešin	recession	5	noun		
+risév	receive	5	verb		
+risévør	receiver	5	noun		
+risipéint	recipient	4	noun		
+riské	risky	1	adjective		
+risk	risk	0	noun		
+rispekt	respect	2	noun		
+rispektivlé	respectively	4	adverb		
+rispond	respond	1	verb		
+rispondint	respondent	2	noun		
+rispons	response	2	noun		
+risponsibilité	responsibility	2	noun		
+risponsibul	responsible	3	adjective		
+rist	wrist	1	noun		
+ristór	restore	3	verb		
+ristrikšin	restriction	4	noun		
+ristrikt	restrict	2	verb		
+ritán	retain	3	verb		
+ritin	written	3	adjective		
+ritírd	retired	3	adjective		
+ritír	retire	3	verb		
+ritírmint	retirement	4	noun		
+ritørn	return	2	noun		
+ritrét	retreat	3	noun		
+riúórd	reward	3	noun		
+rivél	reveal	3	verb		
+rivéú	review	4	noun		
+rivør	river	1	noun		
+rivørs	reverse	3	verb		
+rizembul	resemble	4	verb		
+rizist	resist	2	verb		
+rizistins	resistance	5	noun		
+rizín	resign	4	verb		
+rizolv	resolve	3	verb		
+rizórt	resort	3	noun		
+rizørv	reserve	4	noun		
+rizult	result	2	noun		
+rizúm	resume	4	verb		
+rižém	regime	4	noun		
+ríd	ride	2	noun		
+rídør	rider	2	noun		
+ríful	rifle	3	noun		
+ríit	riot	2	noun		
+rís	rice	3	noun		
+rít	right	3	adverb		
+rít	write	3	verb		
+ríting	writing	2	noun		
+rítør	writer	3	noun		
+rívul	rival	2	noun		
+ríz	rise	3	noun		
+rod	rod	0	noun		
+ro	raw	2	adjective		
+rok	rock	1	noun		
+rokit	rocket	2	noun		
+rong	wrong	1	adverb		
+róbot	robot	1	noun		
+ród	road	2	noun		
+róéul	royal	3	adjective		
+ró	row	2	noun		
+ról	role	2	noun		
+ról	roll	2	noun		
+róling	rolling	2	adjective		
+rómans	romance	3	noun		
+rómantik	romantic	2	adjective		
+Rómin	Roman	2	adjective		
+róp	rope	2	noun		
+róz	rose	3	noun		
+røf	roof	2	noun		
+rørul	rural	2	adjective		
+rub	rub	0	verb		
+rubør	rubber	2	adjective		
+ruf	rough	3	adjective		
+ruflé	roughly	4	adverb		
+run	run	0	noun		
+runing	running	1	adjective		
+runør	runner	2	noun		
+ruš	rush	2	noun		
+Rušin	Russian	3	adjective		
+rúf	roof	2	noun		
+rúin	ruin	1	verb		
+rúl	rule	2	noun		
+rúling	ruling	1	noun		
+rúm	room	2	noun		
+rúmør	rumor	2	noun		
+rútén	routine	4	noun		
+rúténlé	routinely	5	adverb		
+rút	root	2	noun		
+rút	route	3	noun		
+sad	sad	0	adjective		
+sak	sack	1	noun		
+sakrifís	sacrifice	4	noun		
+salid	salad	1	noun		
+saløré	salary	2	noun		
+samin	salmon	2	noun		
+sampul	sample	2	noun		
+sand	sand	0	noun		
+sandúic	sandwich	2	noun		
+satisfakšin	satisfaction	3	noun		
+satisfí	satisfy	1	verb		
+Satørdá	Saturday	3	noun		
+satulít	satellite	4	noun		
+saúnd	sound	2	noun		
+saúthést	southeast	4	noun		
+saúth	south	2	noun		
+saúthúest	southwest	3	noun		
+sáf	safe	2	adjective		
+sáflé	safely	3	adverb		
+sá	say	2	verb		
+sáfté	safety	3	noun		
+sák	sake	2	noun		
+sákrid	sacred	3	adjective		
+sál	sail	2	verb		
+sál	sale	2	noun		
+sálz	sales	3	noun		
+sám	same	2	determiner		
+sánkšin	sanction	4	noun		
+sáv	save	2	verb		
+sáving	saving	1	noun		
+segmint	segment	1	noun		
+sekéølør	secular	4	adjective		
+sekéør	secure	4	adjective		
+sekéørité	security	4	noun		
+sekind	second	2	noun		
+sekriteré	secretary	4	noun		
+sekšin	section	3	noun		
+sektør	sector	2	noun		
+sekunderé	secondary	4	adjective		
+seldum	seldom	1	adverb		
+self-estém	self-esteem	2	noun		
+sel	cell	2	noun		
+self	self	0	noun		
+sel	sell	1	verb		
+selør	seller	2	noun		
+selubrášin	celebration	5	noun		
+selubrát	celebrate	4	verb		
+seminor	seminar	1	noun		
+semiteré	cemetery	3	noun		
+sencøré	century	4	noun		
+send	send	0	verb		
+Senit	Senate	2	noun		
+senitór	senator	2	noun		
+sensášin	sensation	3	noun		
+sens	sense	1	noun		
+sensitiv	sensitive	1	adjective		
+sensitivité	sensitivity	1	noun		
+sensør	sensor	1	noun		
+sent	scent	1	noun		
+sentimint	sentiment	1	noun		
+sentins	sentence	3	noun		
+sentør	center	2	noun		
+sentrul	central	2	adjective		
+sepirát	separate	3	verb		
+sepirit	separate	3	adjective		
+sepørášin	separation	4	noun		
+serumóné	ceremony	4	noun		
+sešin	session	3	noun		
+set	set	0	noun		
+seting	setting	1	noun		
+setul	settle	2	verb		
+setulmint	settlement	3	noun		
+sevér	severe	2	adjective		
+sevin	seven	1	numeral		
+sevinth	seventh	1	numeral		
+sevørul	several	2	determiner		
+séd	seed	2	noun		
+sé	sea	2	noun		
+sé	see	2	verb		
+sék	seek	2	verb		
+sékrit	secret	3	adjective		
+sékúins	sequence	6	noun		
+sél	seal	2	noun		
+séling	ceiling	3	noun		
+sém	seem	2	verb		
+séminglé	seemingly	3	adverb		
+sénéør	senior	3	adjective		
+sén	scene	3	noun		
+sés	cease	4	verb		
+sét	seat	2	noun		
+séz	seize	3	verb		
+sézin	season	4	noun		
+sfér	sphere	4	noun		
+sibling	sibling	0	noun		
+sicúášin	situation	5	noun		
+signicør	signature	4	noun		
+signifikins	significance	4	noun		
+signifikint	significant	2	adjective		
+signifikintlé	significantly	3	adverb		
+signul	signal	1	noun		
+sigøret	cigarette	4	noun		
+sik	sick	1	adjective		
+siks	six	2	numeral		
+siksth	sixth	2	numeral		
+silebrité	celebrity	3	noun		
+silekšin	selection	4	noun		
+silekt	select	2	verb		
+silé	silly	2	adjective		
+silk	silk	0	noun		
+silvør	silver	1	noun		
+simbolik	symbolic	2	adjective		
+simbul	symbol	2	noun		
+similerité	similarity	2	noun		
+similør	similar	1	adjective		
+similørlé	similarly	2	adverb		
+simpithé	sympathy	3	noun		
+simplé	simply	1	adverb		
+simptum	symptom	2	noun		
+simpul	simple	2	adjective		
+sindróm	syndrome	3	noun		
+sineréó	scenario	5	noun		
+sin	sin	0	noun		
+sing	sing	0	verb		
+singør	singer	1	noun		
+singul	single	2	adjective		
+sink	sink	0	noun		
+sins	since	2	adverb		
+siréis	serious	4	adjective		
+siréislé	seriously	5	adverb		
+siréz	series	4	noun		
+sistør	sister	1	noun		
+sistum	system	2	noun		
+sité	city	2	noun		
+sit	sit	0	verb		
+sitizin	citizen	2	noun		
+sitizinšip	citizenship	4	noun		
+sivérlé	severely	4	adverb		
+sivik	civic	2	adjective		
+siviléin	civilian	3	adjective		
+sivilizášin	civilization	4	noun		
+sivul	civil	2	adjective		
+síd	side	2	noun		
+sídúok	sidewalk	5	noun		
+sí	sigh	3	verb		
+síins	science	4	noun		
+síintifik	scientific	3	adjective		
+síintist	scientist	2	noun		
+síkolijé	psychology	7	noun		
+síkolijist	psychologist	6	noun		
+síkul	cycle	5	noun		
+síkulojikul	psychological	8	adjective		
+sílins	silence	4	noun		
+sílint	silent	2	adjective		
+símultánéøslé	simultaneously	6	adverb		
+sín	sign	2	noun		
+sít	cite	3	verb		
+sít	sight	3	noun		
+sít	site	2	noun		
+síz	size	2	noun		
+skandul	scandal	2	noun		
+skan	scan	1	verb		
+skatør	scatter	3	verb		
+skál	scale	3	noun		
+skárd	scared	3	adjective		
+skejul	schedule	4	noun		
+skeré	scary	3	adjective		
+sker	scare	3	verb		
+ské	ski	1	noun		
+ském	scheme	4	noun		
+skild	skilled	2	adjective		
+skil	skill	1	noun		
+skin	skin	0	noun		
+skip	skip	0	verb		
+skí	sky	1	noun		
+skolør	scholar	3	noun		
+skoløršip	scholarship	5	noun		
+skóp	scope	3	noun		
+skór	score	3	noun		
+skørt	skirt	1	noun		
+skrac	scratch	3	verb		
+skrambul	scramble	3	verb		
+skrém	scream	3	verb		
+skrén	screen	3	noun		
+skréning	screening	3	noun		
+skript	script	1	noun		
+skrú	screw	3	verb		
+skul	skull	1	noun		
+skulpcør	sculpture	4	noun		
+skúer	square	4	adjective		
+skúéz	squeeze	5	verb		
+skúl	school	4	noun		
+skúod	squad	3	noun		
+slam	slam	0	verb		
+slap	slap	0	verb		
+sláv	slave	2	noun		
+slávøré	slavery	3	noun		
+slép	sleep	2	noun		
+slév	sleeve	3	noun		
+slip	slip	0	verb		
+slíd	slide	2	noun		
+slís	slice	3	noun		
+slít	slight	3	adjective		
+slítlé	slightly	4	adverb		
+slot	slot	0	noun		
+sló	slow	2	adjective		
+slólé	slowly	3	adverb		
+slóp	slope	2	noun		
+smel	smell	1	noun		
+smíl	smile	2	noun		
+smol	small	2	adjective		
+smort	smart	1	adjective		
+smók	smoke	2	noun		
+smúdh	smooth	3	adjective		
+snap	snap	0	verb		
+snák	snake	2	noun		
+snék	sneak	2	verb		
+snó	snow	2	noun		
+sofin	soften	2	verb		
+soft	soft	0	adjective		
+softlé	softly	1	adverb		
+softúer	software	3	noun		
+sok	sock	1	noun		
+sokør	soccer	3	noun		
+solid	solid	0	adjective		
+solt	salt	1	noun		
+solv	solve	1	verb		
+song	song	0	noun		
+soré	sorry	2	adjective		
+sos	sauce	4	noun		
+sovrinté	sovereignty	4	noun		
+só-kold	so-called	5	adjective		
+sódéim	sodium	3	noun		
+só	so	1	adverb		
+sófu	sofa	2	noun		
+sóil	soil	1	noun		
+sók	soak	2	verb		
+sól	sole	2	adjective		
+sól	soul	2	noun		
+sóljør	soldier	4	noun		
+sóllé	solely	3	adverb		
+sólør	solar	2	adjective		
+sóp	soap	2	noun		
+sórd	sword	2	noun		
+sór	soar	2	verb		
+sórs	source	4	noun		
+sórt	sort	1	noun		
+sóšulé	socially	6	adverb		
+sóšul	social	4	adjective		
+Sóvéit	Soviet	3	adjective		
+søraúnd	surround	4	verb		
+søraúnding	surrounding	4	adjective		
+sørc	search	3	noun		
+sørfis	surface	4	noun		
+sør	sir	1	noun		
+sørjin	surgeon	4	noun		
+sørjøré	surgery	4	noun		
+sørkit	circuit	4	noun		
+sørkul	circle	5	noun		
+sørkumstans	circumstance	5	noun		
+sørtin	certain	3	adjective		
+sørtinlé	certainly	4	adverb		
+sørvá	survey	3	noun		
+sørválins	surveillance	7	noun		
+sørv	serve	2	verb		
+sørving	serving	1	noun		
+sørvint	servant	2	noun		
+sørvis	service	3	noun		
+sørvív	survive	3	verb		
+sørvívør	survivor	3	noun		
+sørvívul	survival	3	noun		
+Spaniš	Spanish	2	adjective		
+spaús	spouse	3	noun		
+spár	spare	2	verb		
+spás	space	3	noun		
+spekéølášin	speculation	6	noun		
+spekéølát	speculate	5	verb		
+spektakéølør	spectacular	5	adjective		
+spektrum	spectrum	1	noun		
+spel	spell	1	verb		
+spend	spend	0	verb		
+spending	spending	0	noun		
+spesifik	specific	2	adjective		
+spesifiklé	specifically	5	adverb		
+spesifí	specify	2	verb		
+spešul	special	3	adjective		
+spešulist	specialist	3	noun		
+spešulíz	specialize	5	verb		
+spešulté	specialty	4	noun		
+spéc	speech	3	noun		
+spéd	speed	2	noun		
+spék	speak	2	verb		
+spékør	speaker	3	noun		
+spéšéz	species	5	noun		
+spil	spill	1	verb		
+spin	spin	0	verb		
+spiricúul	spiritual	3	adjective		
+spirit	spirit	0	noun		
+spit	spit	0	verb		
+spí	spy	1	noun		
+spín	spine	2	noun		
+spít	spite	2	preposition		
+split	split	0	verb		
+sponsør	sponsor	1	noun		
+spork	spark	1	verb		
+spot	spot	0	noun		
+spóksmin	spokesman	3	noun		
+spórt	sport	1	noun		
+sprá	spray	2	noun		
+spred	spread	1	noun		
+spring	spring	0	noun		
+sprinkul	sprinkle	2	verb		
+spún	spoon	2	noun		
+stacéú	statue	3	noun		
+stacéút	statute	4	noun		
+stadéum	stadium	1	noun		
+staf	staff	1	noun		
+stak	stack	1	noun		
+stand	stand	0	noun		
+standing	standing	0	noun		
+standørd	standard	1	adjective		
+stans	stance	2	noun		
+statis	status	1	noun		
+stábul	stable	3	adjective		
+stá	stay	2	noun		
+stáj	stage	3	noun		
+sták	stake	2	noun		
+sták	steak	2	noun		
+stár	stare	2	verb		
+stášin	station	3	noun		
+stát	state	2	noun		
+státmint	statement	3	noun		
+stedé	steady	2	adjective		
+stedilé	steadily	2	adverb		
+stem	stem	0	noun		
+step	step	0	noun		
+steréótíp	stereotype	4	noun		
+ster	stair	2	noun		
+stél	steal	2	verb		
+stél	steel	2	noun		
+stém	steam	2	noun		
+stép	steep	2	adjective		
+stér	steer	2	verb		
+stif	stiff	1	adjective		
+stik	stick	1	noun		
+stil	still	1	adverb		
+stiméølát	stimulate	4	verb		
+stiméølis	stimulus	3	noun		
+stíl	style	2	noun		
+stok	stock	1	noun		
+stop	stop	0	noun		
+stor	star	1	noun		
+stort	start	1	noun		
+storting	starting	1	noun		
+stortør	starter	2	noun		
+stón	stone	2	noun		
+stóré	story	2	noun		
+stór	store	2	noun		
+stórij	storage	4	noun		
+stórm	storm	1	noun		
+stóv	stove	2	noun		
+stør	stir	1	verb		
+stratijé	strategy	3	noun		
+strán	strain	2	noun		
+stránj	strange	3	adjective		
+stránjør	stranger	3	noun		
+strát	straight	4	adverb		
+strátin	straighten	5	verb		
+strec	stretch	2	noun		
+strength	strength	0	noun		
+strengthin	strengthen	1	verb		
+stres	stress	1	noun		
+strék	streak	2	noun		
+strém	stream	2	noun		
+strét	street	2	noun		
+strikt	strict	1	adjective		
+striktlé	strictly	2	adverb		
+string	string	0	noun		
+strip	strip	0	noun		
+strík	strike	2	noun		
+stríking	striking	1	adjective		
+stro	straw	2	noun		
+strong	strong	0	adjective		
+stronglé	strongly	1	adverb		
+strók	stroke	2	noun		
+strugul	struggle	2	noun		
+strukšør	structure	4	noun		
+strukšørul	structural	4	adjective		
+strutéjik	strategic	4	adjective		
+stubilité	stability	2	noun		
+studé	study	1	noun		
+stuf	stuff	1	noun		
+stumbul	stumble	2	verb		
+stumik	stomach	4	noun		
+stutistiks	statistics	2	noun		
+stutistikul	statistical	3	adjective		
+stúdéó	studio	3	noun		
+stúdint	student	2	noun		
+stúpid	stupid	1	adjective		
+subjekt	subject	1	noun		
+submit	submit	0	verb		
+subørb	suburb	1	noun		
+subørbin	suburban	2	adjective		
+subsidé	subsidy	1	noun		
+subsikúint	subsequent	4	adjective		
+substanšulé	substantially	5	adverb		
+substanšul	substantial	3	adjective		
+substins	substance	3	noun		
+suc	such	1	preposition		
+sudin	sudden	2	adverb		
+sudinlé	suddenly	3	adverb		
+sudhørn	southern	3	adjective		
+sufistikátid	sophisticated	6	adjective		
+sufišint	sufficient	3	adjective		
+sufør	suffer	2	verb		
+suføring	suffering	2	noun		
+sugjescin	suggestion	3	noun		
+sugjest	suggest	1	verb		
+suk	suck	1	verb		
+sukses	success	3	noun		
+suksesfulé	successfully	5	adverb		
+suksesful	successful	3	adjective		
+sukséd	succeed	4	verb		
+sulektid	selected	3	adjective		
+sulúšin	solution	4	noun		
+sumbudé	somebody	4	pronoun		
+sumdá	someday	4	adverb		
+sum	some	2	determiner		
+sum	sum	0	noun		
+sumit	summit	1	noun		
+sumøré	summary	3	noun		
+sumør	summer	2	noun		
+sumtím	sometime	4	adverb		
+sumtímz	sometimes	5	adverb		
+sumthing	something	2	pronoun		
+sumúer	somewhere	5	adverb		
+sumúun	someone	4	pronoun		
+sumúut	somewhat	5	adverb		
+sumhaú	somehow	4	adverb		
+Sundá	Sunday	2	noun		
+suné	sunny	2	adjective		
+sun	son	1	noun		
+sun	sun	0	noun		
+sunlít	sunlight	3	noun		
+suplí	supply	2	noun		
+suplíør	supplier	3	noun		
+supórt	support	2	noun		
+supórtiv	supportive	3	adjective		
+supórtør	supporter	3	noun		
+supózd	supposed	4	adjective		
+supóz	suppose	4	verb		
+supózidlé	supposedly	5	adverb		
+suprízd	surprised	4	adjective		
+supríz	surprise	4	noun		
+suprízing	surprising	3	adjective		
+suprízinglé	surprisingly	4	adverb		
+susíité	society	5	noun		
+suspekt	suspect	1	noun		
+suspend	suspend	0	verb		
+suspišin	suspicion	2	noun		
+suspišis	suspicious	3	adjective		
+sustán	sustain	2	verb		
+sustánibul	sustainable	5	adjective		
+sutul	subtle	3	adjective		
+súel	swell	2	verb		
+súer	swear	2	verb		
+súet	sweat	2	noun		
+súetør	sweater	3	noun		
+súép	sweep	3	verb		
+súét	suite	3	noun		
+súét	sweet	3	adjective		
+sú	sue	2	verb		
+súic	switch	3	noun		
+súim	swim	1	verb		
+súiming	swimming	2	noun		
+súing	swing	1	noun		
+súisíd	suicide	4	noun		
+sún	soon	2	adverb		
+súoló	swallow	5	verb		
+súpéréør	superior	4	adjective		
+súp	soup	2	noun		
+súpør	super	2	adjective		
+súpørmorkit	supermarket	4	noun		
+súpørvízør	supervisor	5	noun		
+súprém	Supreme	4	adjective		
+sút	suit	2	noun		
+sútibul	suitable	5	adjective		
+šadó	shadow	4	noun		
+šal	shall	3	verb		
+šaló	shallow	5	adjective		
+šaúør	shower	5	noun		
+šaút	shout	4	verb		
+šád	shade	4	noun		
+šák	shake	4	verb		
+šám	shame	4	noun		
+šáp	shape	4	noun		
+šed	shed	2	verb		
+šef	chef	2	noun		
+šelf	shelf	2	noun		
+šel	shell	3	noun		
+šeltør	shelter	3	noun		
+šerd	shared	4	adjective		
+šer	share	4	noun		
+šerhóldør	shareholder	6	noun		
+šé	she	3	pronoun		
+šép	sheep	4	noun		
+šér	sheer	4	adjective		
+šét	sheet	4	noun		
+šift	shift	2	noun		
+šip	ship	2	noun		
+šit	shit	2	noun		
+ší	shy	3	adjective		
+šín	shine	4	verb		
+šok	shock	3	noun		
+šop	shop	2	noun		
+šoping	shopping	3	noun		
+šork	shark	3	noun		
+šorp	sharp	3	adjective		
+šorplé	sharply	4	adverb		
+šot	shot	2	noun		
+šó	show	4	noun		
+šóldør	shoulder	5	noun		
+šór	shore	4	noun		
+šórt-tørm	short-term	4	adjective		
+šórt	short	3	adverb		
+šórtij	shortage	6	noun		
+šórtlé	shortly	4	adverb		
+šórts	shorts	3	noun		
+šød	should	5	verb		
+šøgør	sugar	3	noun		
+šør	sure	3	adverb		
+šørlé	surely	4	adverb		
+šørt	shirt	3	noun		
+šrimp	shrimp	2	noun		
+šrink	shrink	2	verb		
+šrug	shrug	2	verb		
+šut	shut	2	verb		
+šutul	shuttle	4	noun		
+šuv	shove	4	verb		
+šú	shoe	4	noun		
+šút	shoot	4	verb		
+šúting	shooting	4	noun		
+T-šørt	T-shirt	3	noun		
+tag	tag	0	noun		
+taks	tax	2	noun		
+takspáør	taxpayer	5	noun		
+taktik	tactic	2	noun		
+takul	tackle	3	verb		
+talentid	talented	1	adjective		
+talint	talent	1	noun		
+tap	tap	0	verb		
+task	task	0	noun		
+taúl	towel	3	noun		
+taún	town	2	noun		
+taúør	tower	3	noun		
+tábul	table	3	noun		
+tábulspún	tablespoon	5	noun		
+ták	take	2	verb		
+tál	tail	2	noun		
+tál	tale	2	noun		
+tánk	tank	1	noun		
+táp	tape	2	noun		
+tást	taste	2	noun		
+teknék	technique	6	noun		
+teknikul	technical	4	adjective		
+teknilojikul	technological	6	adjective		
+teknišin	technician	4	noun		
+teknolijé	technology	5	noun		
+tekscør	texture	5	noun		
+tekstbøk	textbook	4	noun		
+tekst	text	2	noun		
+telefón	telephone	4	noun		
+teleskóp	telescope	3	noun		
+televižin	television	2	noun		
+tel	tell	1	verb		
+tempøreré	temporary	3	adjective		
+tempricør	temperature	5	noun		
+tempul	temple	2	noun		
+tend	tend	0	verb		
+tendinsé	tendency	3	noun		
+tendør	tender	1	adjective		
+ten	ten	0	numeral		
+tenis	tennis	1	noun		
+tenšin	tension	2	noun		
+tent	tent	0	noun		
+ter	tear	1	noun		
+teriblé	terribly	2	adverb		
+teribul	terrible	3	adjective		
+teritóré	territory	3	noun		
+terør	terror	2	noun		
+terørism	terrorism	2	noun		
+terørist	terrorist	2	adjective		
+test	test	0	noun		
+testifí	testify	1	verb		
+testimóné	testimony	2	noun		
+testing	testing	0	noun		
+téc	teach	3	verb		
+técing	teaching	3	noun		
+técør	teacher	4	noun		
+té	tea	2	noun		
+tém	team	2	noun		
+témmát	teammate	4	noun		
+ténáj	teenage	5	adjective		
+ténájør	teenager	5	noun		
+tén	teen	2	noun		
+téspún	teaspoon	4	noun		
+tikit	ticket	2	noun		
+til	till	1	preposition		
+timbør	timber	1	noun		
+tip	tip	0	noun		
+tipiklé	typically	5	adverb		
+tipikul	typical	3	adjective		
+tišéú	tissue	4	noun		
+tíd	tide	2	noun		
+tí	tie	2	noun		
+tíl	tile	2	noun		
+tím	time	2	noun		
+tíming	timing	1	noun		
+tíné	tiny	2	adjective		
+típ	type	2	noun		
+tírd	tired	2	adjective		
+tír	tire	2	verb		
+tít	tight	3	adverb		
+títin	tighten	4	verb		
+títlé	tightly	4	adverb		
+títul	title	3	noun		
+tok	talk	2	noun		
+toksik	toxic	3	adjective		
+tol	tall	2	adjective		
+tolørát	tolerate	3	verb		
+tolørins	tolerance	4	noun		
+top	top	0	adjective		
+topik	topic	1	noun		
+torgit	target	2	noun		
+tos	toss	1	verb		
+tó	toe	2	noun		
+tói	toy	2	noun		
+tóilit	toilet	2	noun		
+tól	toll	2	noun		
+tón	tone	2	noun		
+tótulé	totally	4	adverb		
+tótul	total	2	adjective		
+tørán	terrain	4	noun		
+tørifik	terrific	3	adjective		
+tørké	turkey	3	noun		
+tørm	term	1	noun		
+tørmz	terms	2	preposition		
+tørn	turn	1	noun		
+tørnimint	tournament	4	noun		
+trafik	traffic	2	noun		
+trajidé	tragedy	3	noun		
+trajik	tragic	2	adjective		
+trak	track	1	noun		
+transakšin	transaction	3	noun		
+transfórm	transform	1	verb		
+transfør	transfer	1	noun		
+transførmášin	transformation	4	noun		
+transišin	transition	2	noun		
+transit	transit	0	noun		
+translášin	translation	3	noun		
+translát	translate	2	verb		
+transmišin	transmission	3	noun		
+transmit	transmit	0	verb		
+transpórt	transport	1	noun		
+transpørtášin	transportation	4	noun		
+trap	trap	0	noun		
+traš	trash	2	noun		
+travilør	traveler	2	noun		
+travul	travel	1	noun		
+trád	trade	2	noun		
+tráding	trading	1	noun		
+trá	tray	2	noun		
+trál	trail	2	noun		
+trálør	trailer	3	noun		
+trán	train	2	noun		
+tráning	training	2	noun		
+tránør	trainer	3	noun		
+trás	trace	3	noun		
+trát	trait	2	noun		
+trend	trend	0	noun		
+trežør	treasure	4	noun		
+tré	tree	2	noun		
+trété	treaty	3	noun		
+trét	treat	2	verb		
+trétmint	treatment	3	noun		
+trigør	trigger	2	verb		
+trik	trick	1	noun		
+trimendis	tremendous	3	adjective		
+trim	trim	0	verb		
+trip	trip	0	noun		
+tríb	tribe	2	noun		
+tríbul	tribal	2	adjective		
+trí	try	1	verb		
+tríul	trial	2	noun		
+tríumf	triumph	3	noun		
+tromu	trauma	3	noun		
+tropikul	tropical	2	adjective		
+trubuld	troubled	3	adjective		
+trubul	trouble	3	noun		
+trudišin	tradition	3	noun		
+trudišinulé	traditionally	6	adverb		
+trudišinul	traditional	4	adjective		
+truk	truck	1	noun		
+trunk	trunk	0	noun		
+trust	trust	0	noun		
+trú	true	2	adjective		
+trúlé	truly	2	adverb		
+trúp	troop	2	noun		
+trúth	truth	1	noun		
+tubakó	tobacco	4	noun		
+tucdaún	touchdown	4	noun		
+tuc	touch	2	noun		
+tudá	today	3	adverb		
+tuf	tough	3	adjective		
+tugedhør	together	3	adverb		
+tuk	tuck	1	verb		
+tumátó	tomato	3	noun		
+tumoró	tomorrow	4	adverb		
+tumotó	tomato	3	noun		
+tung	tongue	3	noun		
+tunít	tonight	4	adverb		
+tunul	tunnel	2	noun		
+tú-thørdz	two-thirds	4	numeral		
+túb	tube	2	noun		
+túelv	twelve	2	numeral		
+túenté	twenty	2	numeral		
+túentéith	twentieth	3	numeral		
+tú	to	1	preposition		
+tú	too	2	adverb		
+tú	two	2	numeral		
+túin	twin	1	noun		
+túist	twist	1	noun		
+túís	twice	4	adverb		
+túl	tool	2	noun		
+túmør	tumor	2	noun		
+tún	tune	2	noun		
+túórd	toward	3	preposition		
+túórdz	towards	4	preposition		
+túr	tour	2	noun		
+túrism	tourism	2	noun		
+túrist	tourist	2	noun		
+túth	tooth	2	noun		
+Túzdá	Tuesday	5	noun		
+TV	TV	0	noun		
+thank	thank	0	verb		
+thanks	thanks	0	noun		
+Thanksgiving	Thanksgiving	0	noun		
+thaúzind	thousand	4	numeral		
+theripé	therapy	2	noun		
+theripist	therapist	1	noun		
+théilojikul	theological	5	adjective		
+théiretikul	theoretical	4	adjective		
+théitør	theater	3	noun		
+thém	theme	2	noun		
+théolijé	theology	4	noun		
+thik	thick	1	adjective		
+thin	thin	0	adjective		
+thing	thing	0	noun		
+think	think	0	verb		
+thinking	thinking	0	noun		
+thiré	theory	3	noun		
+thí	thigh	3	noun		
+thot	thought	3	noun		
+thørd	third	1	numeral		
+thøró	thorough	5	adjective		
+thørté	thirty	2	numeral		
+thørulé	thoroughly	5	adverb		
+Thørzdá	Thursday	4	noun		
+thred	thread	1	noun		
+threšhóld	threshold	2	noun		
+thret	threat	1	noun		
+thretin	threaten	2	verb		
+thré	three	2	numeral		
+thrív	thrive	2	verb		
+thró	throw	2	verb		
+thrót	throat	2	noun		
+thrúaút	throughout	6	preposition		
+thrú	through	4	adverb		
+thum	thumb	1	noun		
+ubandin	abandon	2	verb		
+ubaút	about	3	adverb		
+ubéús	abuse	4	noun		
+ubilité	ability	2	noun		
+ubjekšin	objection	4	noun		
+ubjekt	object	2	noun		
+ubjektiv	objective	3	noun		
+ubrod	abroad	2	adverb		
+ubtán	obtain	3	verb		
+ubuv	above	3	adverb		
+ubzórb	absorb	3	verb		
+ubzørv	observe	4	verb		
+ubzørvør	observer	4	noun		
+ucév	achieve	5	verb		
+ucévmint	achievement	6	noun		
+udapt	adapt	1	verb		
+udišin	addition	4	noun		
+udišinul	additional	5	adjective		
+udopšin	adoption	3	noun		
+udopt	adopt	1	verb		
+udres	address	3	noun		
+udult	adult	1	noun		
+udhør	other	3	adjective		
+udhørúíz	otherwise	7	adverb		
+udhørz	others	4	noun		
+u	a	1	article		
+ufár	affair	4	noun		
+ufekt	affect	3	verb		
+ufendør	offender	3	noun		
+ufens	offense	3	noun		
+ufensiv	offensive	3	adjective		
+ufišulé	officially	7	adverb		
+ufišul	official	5	adjective		
+ufórd	afford	3	verb		
+ufrád	afraid	3	adjective		
+u	uh	1	interjection		
+ugen	again	3	adverb		
+ugenst	against	3	preposition		
+uglé	ugly	1	adjective		
+ugó	ago	2	adverb		
+ugresiv	aggressive	4	adjective		
+ugrešin	aggression	5	noun		
+ugré	agree	3	verb		
+ugrémint	agreement	4	noun		
+ujendu	agenda	3	noun		
+ujust	adjust	2	verb		
+ujustmint	adjustment	3	noun		
+ukaúnt	account	5	noun		
+ukaúntibilité	accountability	7	noun		
+ukaúnting	accounting	5	noun		
+ukážin	occasion	6	noun		
+ukážinulé	occasionally	9	adverb		
+ukážinul	occasional	7	adjective		
+ukéuz	accuse	5	verb		
+ukompliš	accomplish	5	verb		
+ukomplišmint	accomplishment	6	noun		
+ukomudát	accommodate	7	verb		
+ukórding	according	4	preposition		
+ukør	occur	4	verb		
+ukros	across	3	adverb		
+ukumpiné	accompany	6	verb		
+ukúír	acquire	6	verb		
+ulabørát	elaborate	4	adjective		
+ulaú	allow	4	verb		
+ulejid	alleged	4	adjective		
+ulejidlé	allegedly	5	adverb		
+ulekšin	election	4	noun		
+ulekt	elect	2	verb		
+ulektrik	electric	3	adjective		
+ulektrikul	electrical	4	adjective		
+ulektrisité	electricity	4	noun		
+ulektronik	electronic	3	adjective		
+ulektroniks	electronics	3	noun		
+ulevin	eleven	2	numeral		
+uliminát	eliminate	3	verb		
+Ulimpik	Olympic	3	adjective		
+Ulimpiks	Olympics	3	noun		
+ulíins	alliance	5	noun		
+ulík	alike	3	adverb		
+ulív	alive	3	adjective		
+ulong	along	1	adverb		
+ulongsíd	alongside	3	preposition		
+ulorm	alarm	2	noun		
+ulón	alone	3	adverb		
+ultimit	ultimate	2	adjective		
+ultimitlé	ultimately	3	adverb		
+ulúminum	aluminum	2	noun		
+umaúnt	amount	3	noun		
+umázing	amazing	2	adjective		
+umendmint	amendment	2	noun		
+umid	amid	1	preposition		
+umung	among	2	preposition		
+unalisis	analysis	2	noun		
+unaúns	announce	6	verb		
+unaúnsmint	announcement	7	noun		
+unábul	unable	3	adjective		
+undør	under	1	adverb		
+undørgó	undergo	2	verb		
+undørgrajúit	undergraduate	5	noun		
+undørlíing	underlying	2	adjective		
+undørmín	undermine	3	verb		
+undørstand	understand	1	verb		
+undørstanding	understanding	1	noun		
+undørták	undertake	3	verb		
+unekspektid	unexpected	4	adjective		
+unemplóimint	unemployment	3	noun		
+unéin	onion	3	noun		
+unéúžúul	unusual	5	adjective		
+unfár	unfair	2	adjective		
+unfóld	unfold	1	verb		
+unfórcinitlé	unfortunately	6	adverb		
+unkul	uncle	3	noun		
+unkumftørbul	uncomfortable	8	adjective		
+unkuvør	uncover	3	verb		
+unles	unless	1	conjunction		
+unlík	unlike	2	adjective		
+unlíklé	unlikely	3	adjective		
+unnón	unknown	3	adjective		
+unonimis	anonymous	4	adjective		
+unpresidentid	unprecedented	3	adjective		
+unsørtin	uncertain	3	adjective		
+unsørtinté	uncertainty	4	noun		
+until	until	0	preposition		
+unudhør	another	4	pronoun		
+unhapé	unhappy	2	adjective		
+updát	update	2	verb		
+uperint	apparent	4	adjective		
+uperintlé	apparently	5	adverb		
+upél	appeal	4	noun		
+upér	appear	4	verb		
+upérins	appearance	7	noun		
+up	up	0	adverb		
+upinéin	opinion	3	noun		
+uplí	apply	3	verb		
+upolijé	apology	4	noun		
+upolijíz	apologize	5	verb		
+upon	upon	0	preposition		
+uport	apart	2	adverb		
+uportmint	apartment	3	noun		
+upóint	appoint	3	verb		
+upóintmint	appointment	4	noun		
+upónint	opponent	4	noun		
+upózd	opposed	5	preposition		
+upóz	oppose	5	verb		
+upør	upper	2	adjective		
+upréšéášin	appreciation	8	noun		
+upréšéát	appreciate	7	verb		
+uproksimitlé	approximately	7	adverb		
+upróc	approach	5	noun		
+uprópréit	appropriate	6	adjective		
+uprúv	approve	4	verb		
+uprúvul	approval	4	noun		
+upset	upset	0	adjective		
+upsterz	upstairs	3	adverb		
+uraúnd	around	3	adverb		
+urá	array	4	noun		
+uránj	arrange	5	verb		
+uránjmint	arrangement	6	noun		
+urest	arrest	2	noun		
+urénu	arena	3	noun		
+urijinulé	originally	5	adverb		
+urijinul	original	3	adjective		
+urív	arrive	4	verb		
+urívul	arrival	4	noun		
+uríz	arise	4	verb		
+usemblé	assembly	3	noun		
+usembul	assemble	4	verb		
+uses	assess	3	verb		
+usesmint	assessment	4	noun		
+us	us	0	pronoun		
+usist	assist	2	verb		
+usistins	assistance	5	noun		
+usistint	assistant	3	adjective		
+usíd	aside	3	adverb		
+usín	assign	4	verb		
+usínmint	assignment	5	noun		
+uslép	asleep	3	adjective		
+usolt	assault	4	noun		
+usóšéášin	association	8	noun		
+usóšéátid	associated	7	adjective		
+usóšéit	associate	6	noun		
+usørt	assert	3	verb		
+ustronimør	astronomer	3	noun		
+usumpšin	assumption	4	noun		
+usúm	assume	4	verb		
+ušúr	assure	5	verb		
+utac	attach	3	verb		
+utak	attack	3	noun		
+utempt	attempt	2	noun		
+utend	attend	2	verb		
+utendins	attendance	5	noun		
+utenšin	attention	4	noun		
+utonimé	autonomy	3	noun		
+utop	atop	1	preposition		
+utørné	attorney	5	noun		
+utrakšin	attraction	5	noun		
+utrakt	attract	3	verb		
+utraktiv	attractive	4	adjective		
+utribéút	attribute	5	verb		
+uthórité	authority	3	noun		
+uúá	away	4	adverb		
+uúák	awake	4	adjective		
+uúát	await	4	verb		
+uúer	aware	4	adjective		
+uúernis	awareness	6	noun		
+uúórd	award	3	noun		
+uválibilité	availability	5	noun		
+uválibul	available	6	adjective		
+uv	of	2	preposition		
+uvin	oven	2	noun		
+uvóid	avoid	2	verb		
+uhed	ahead	2	adverb		
+u'klok	o'clock	3	adverb		
+úagin	wagon	2	noun		
+úaú	wow	3	interjection		
+úá	way	3	adverb		
+úá	weigh	5	verb		
+úáj	wage	4	noun		
+úák	wake	3	noun		
+úál	whale	4	noun		
+úást	waist	3	noun		
+úást	waste	3	noun		
+úát	wait	3	verb		
+úát	weight	5	noun		
+úáv	wave	3	noun		
+úeb	web	1	noun		
+úeding	wedding	2	noun		
+úedhør	weather	4	noun		
+úedhør	whether	4	conjunction		
+úel-béing	well-being	3	noun		
+úel-nón	well-known	5	adjective		
+úelfár	welfare	3	noun		
+úel	well	2	adverb		
+úelkum	welcome	4	adjective		
+úelthé	wealthy	3	adjective		
+úelth	wealth	2	noun		
+úenevør	whenever	3	adverb		
+úen	when	2	adverb		
+Úenzdá	Wednesday	6	noun		
+úepin	weapon	3	noun		
+úeraz	whereas	4	conjunction		
+úerevør	wherever	3	adverb		
+úer	wear	2	verb		
+úer	where	3	adverb		
+úerhaús	warehouse	6	noun		
+úest	west	1	noun		
+úestørn	western	2	adjective		
+úet	wet	1	adjective		
+úéd	weed	3	noun		
+úé	we	2	pronoun		
+úékend	weekend	3	noun		
+úék	weak	3	adjective		
+úék	week	3	noun		
+úékin	weaken	4	verb		
+úéklé	weekly	4	adjective		
+úéknis	weakness	5	noun		
+úélcár	wheelchair	7	noun		
+úél	wheel	4	noun		
+úérd	weird	3	adjective		
+úét	wheat	4	noun		
+úév	weave	4	verb		
+úic	which	3	determiner		
+úidó	widow	3	noun		
+úildørnis	wilderness	4	noun		
+úil	will	2	noun		
+úiling	willing	2	adjective		
+úilingnis	willingness	4	noun		
+úind	wind	1	noun		
+úindó	window	3	noun		
+úin	win	1	noun		
+úing	wing	1	noun		
+úinør	winner	3	noun		
+úintør	winter	2	noun		
+úip	whip	2	verb		
+úisdum	wisdom	2	noun		
+úispør	whisper	3	verb		
+úiš	wish	3	noun		
+úitnis	witness	3	noun		
+úithaút	without	3	preposition		
+úithdro	withdraw	3	verb		
+úithdrol	withdrawal	4	noun		
+úith	with	1	preposition		
+úithin	within	1	adverb		
+úíd	wide	3	adjective		
+úídlé	widely	4	adverb		
+úídspred	widespread	4	adjective		
+úíf	wife	3	noun		
+úí	why	3	adverb		
+úíld	wild	2	adjective		
+úíldlíf	wildlife	4	noun		
+úíl	while	4	noun		
+úín	wine	3	noun		
+úíp	wipe	3	verb		
+úír	wire	3	noun		
+úít	white	4	adjective		
+úíz	wise	4	adjective		
+úoc	watch	4	noun		
+úok	walk	3	noun		
+úoking	walking	3	noun		
+úol	wall	3	noun		
+úondør	wander	3	verb		
+úont	want	2	verb		
+úoš	wash	4	verb		
+úotør	water	3	noun		
+úóréør	warrior	5	noun		
+úór	war	2	noun		
+úórm	warm	2	adjective		
+úórmth	warmth	2	noun		
+úórn	warn	2	verb		
+úórning	warning	2	noun		
+úød	wood	3	noun		
+úød	would	4	verb		
+úødin	wooden	4	adjective		
+úømin	woman	3	noun		
+úørd	word	2	noun		
+úøréd	worried	5	adjective		
+úøré	worry	4	noun		
+úørkaút	workout	4	noun		
+úørk	work	2	noun		
+úørking	working	2	adjective		
+úørkør	worker	3	noun		
+úørkplás	workplace	5	noun		
+úørks	works	2	noun		
+úørkšop	workshop	4	noun		
+úørld	world	2	noun		
+úørldúíd	worldwide	5	adverb		
+úørth	worth	2	noun		
+úøúnd	wound	3	noun		
+úulf	wolf	2	noun		
+úun-thørd	one-third	4	numeral		
+úundørful	wonderful	3	adjective		
+úundør	wonder	3	noun		
+úun	one	3	noun		
+úuns	once	4	adverb		
+úutevør	whatever	4	determiner		
+úut	what	3	determiner		
+vakéúm	vacuum	3	noun		
+vaksén	vaccine	4	noun		
+valé	valley	3	noun		
+valéibul	valuable	4	adjective		
+valéú	value	2	noun		
+valid	valid	0	adjective		
+van	van	0	noun		
+vaniš	vanish	2	verb		
+vast	vast	0	adjective		
+vákášin	vacation	5	noun		
+vejtibul	vegetable	5	noun		
+vencør	venture	3	noun		
+vendør	vendor	1	noun		
+veréášin	variation	5	noun		
+veré	vary	2	verb		
+veré	very	1	adverb		
+veréibul	variable	5	noun		
+veréis	various	4	adjective		
+vesul	vessel	2	noun		
+vetirin	veteran	2	adjective		
+véikul	vehicle	5	noun		
+véu	via	2	preposition		
+véú	view	3	noun		
+véúør	viewer	4	noun		
+vidéó	video	2	noun		
+viktim	victim	1	noun		
+viktøré	victory	3	noun		
+vilij	village	4	noun		
+vizibul	visible	3	adjective		
+vizit	visit	1	noun		
+vizitør	visitor	2	noun		
+vižin	vision	2	noun		
+vižúul	visual	3	adjective		
+vílins	violence	5	noun		
+vílint	violent	3	adjective		
+víris	virus	2	noun		
+vítimin	vitamin	2	noun		
+vítul	vital	2	adjective		
+víulášin	violation	5	noun		
+víulát	violate	4	verb		
+voléúm	volume	3	noun		
+volinteré	voluntary	3	adjective		
+volintér	volunteer	3	noun		
+vóis	voice	3	noun		
+vókul	vocal	3	adjective		
+vót	vote	2	noun		
+vóting	voting	1	noun		
+vótør	voter	2	noun		
+vørbul	verbal	2	adjective		
+vørcú	virtue	4	noun		
+vørcúulé	virtually	6	adverb		
+vørcúul	virtual	4	adjective		
+vørdikt	verdict	2	noun		
+vørsis	versus	2	preposition		
+vørtikul	vertical	3	adjective		
+vøržin	version	3	noun		
+vulidité	validity	2	noun		
+vulnribul	vulnerable	4	adjective		
+vuríité	variety	4	noun		
+zón	zone	2	noun		
+žonru	genre	3	noun		
+habitat	habitat	0	noun		
+habit	habit	0	noun		
+haf	half	1	noun		
+hafúá	halfway	4	adverb		
+handful	handful	0	noun		
+hand	hand	0	noun		
+handul	handle	2	noun		
+hang	hang	0	verb		
+hansum	handsome	3	adjective		
+hapé	happy	2	adjective		
+hapénis	happiness	4	noun		
+hapilé	happily	2	adverb		
+hapin	happen	2	verb		
+hat	hat	0	noun		
+haúevør	however	3	adverb		
+haú	how	2	adverb		
+haús	house	3	noun		
+haúshóld	household	4	noun		
+haúzing	housing	3	noun		
+hav	have	1	verb		
+hazørd	hazard	1	noun		
+há	hey	2	interjection		
+hár	hair	2	noun		
+hát	hate	2	verb		
+hedák	headache	5	noun		
+hed	head	1	noun		
+hedkúórtørz	headquarters	6	noun		
+hedlín	headline	3	noun		
+hel	hell	1	noun		
+helikoptør	helicopter	2	noun		
+helmit	helmet	1	noun		
+heló	hello	2	interjection		
+helpful	helpful	0	adjective		
+help	help	0	noun		
+helthé	healthy	2	adjective		
+helth	health	1	noun		
+hens	hence	2	adverb		
+heritij	heritage	3	noun		
+hevé	heavy	2	adjective		
+hevilé	heavily	2	adverb		
+hevin	heaven	2	noun		
+hezitát	hesitate	3	verb		
+hé	he	1	pronoun		
+hél	heal	2	verb		
+hél	heel	2	noun		
+hér	hear	2	verb		
+hér	here	2	adverb		
+héring	hearing	2	noun		
+héró	hero	2	noun		
+hét	heat	2	noun		
+héúj	huge	3	adjective		
+héúmanité	humanity	3	noun		
+héúmin	human	3	adjective		
+héúmør	humor	3	noun		
+hidin	hidden	2	adjective		
+hil	hill	1	noun		
+him	him	0	pronoun		
+himself	himself	0	pronoun		
+hint	hint	0	noun		
+hip	hip	0	noun		
+Hispanik	Hispanic	1	adjective		
+históréin	historian	3	noun		
+histórik	historic	2	adjective		
+históriklé	historically	5	adverb		
+histórikul	historical	3	adjective		
+histøré	history	2	noun		
+hit	hit	0	noun		
+hiz	his	1	article		
+hí-tek	high-tech	5	adjective		
+híd	hide	2	verb		
+hí	hi	1	interjection		
+hí	high	3	adverb		
+hík	hike	2	verb		
+hílé	highly	4	adverb		
+hílít	highlight	6	verb		
+hípothisis	hypothesis	2	noun		
+hír	hire	2	verb		
+hít	height	4	noun		
+híúá	highway	6	noun		
+ho	ha	1	interjection		
+hoké	hockey	3	noun		
+hol	hall	2	noun		
+hol	haul	2	verb		
+holidá	holiday	2	noun		
+holúá	hallway	5	noun		
+hord	hard	1	adverb		
+hordlé	hardly	2	adverb		
+hordúer	hardware	4	noun		
+horm	harm	1	noun		
+hormuné	harmony	3	noun		
+horš	harsh	3	adjective		
+hort	heart	2	noun		
+horvist	harvest	2	noun		
+hospitul	hospital	1	noun		
+hostij	hostage	3	noun		
+hostul	hostile	2	adjective		
+hot	hot	0	adjective		
+hóld	hold	1	noun		
+hólé	holy	2	adjective		
+hól	hole	2	noun		
+hól	whole	3	adjective		
+hóm	home	2	adverb		
+hómland	homeland	2	noun		
+hómlis	homeless	4	adjective		
+hómúørk	homework	4	noun		
+hópfulé	hopefully	4	adverb		
+hóp	hope	2	noun		
+hóribul	horrible	4	adjective		
+hórmón	hormone	3	noun		
+hórn	horn	1	noun		
+hórør	horror	3	noun		
+hórs	horse	2	noun		
+hóst	host	1	noun		
+hótel	hotel	1	noun		
+høk	hook	2	noun		
+hørasmint	harassment	3	noun		
+høré	hurry	3	verb		
+hør	her	1	article		
+hørikán	hurricane	5	noun		
+hørízin	horizon	3	noun		
+hørself	herself	1	pronoun		
+hørt	hurt	1	verb		
+hørz	hers	2	pronoun		
+hu	huh	1	interjection		
+hug	hug	0	verb		
+hundrid	hundred	1	numeral		
+huné	honey	3	noun		
+hungør	hunger	1	noun		
+hungré	hungry	1	adjective		
+hunt	hunt	0	verb		
+hunting	hunting	0	noun		
+huntør	hunter	1	noun		
+huzbind	husband	2	noun		
+húevør	whoever	3	pronoun		
+hú	who	2	pronoun		
+húm	whom	2	pronoun		
+húz	whose	4	determiner		
