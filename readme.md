@@ -79,11 +79,23 @@ Inførmášin rigording dhéz letørz and dhu similerités bitúén fonetik and 
 
 >*Information regarding these letters and the similarities between phonetic and traditional spelling can be found on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) and [Google Docs](https://docs.google.com/document/d/1TkmmmTPur1muMsuUYzvJ74PZPTSit42XvJn6vMR5Kjg/edit?usp=sharing).*
 
-## Úí iz H dhu Last Letør? *(Why Is H the Last Letter?)*
+## Úí iz H dhu Last Letør? *(Why is H the Last Letter?)*
 
 Bikuz it iz éúzd in 'th' (az in 'think') and 'dh' (as in 'dhu') and Í thot dhóz saúndz šød hav dher ón sekšinz in dhu dikšineré. Dhá dón't ukør frékúintlé inuf to dizørv dher ón keriktør (and ét førdhør uúá at dhu kébórd's simbul kéz).
 
 >*Because it is used in 'th' (as in 'think') and 'dh' (as in 'the') and I thought those sounds should have their own sections in the dictionary. They don't occur frequently enough to deserve their own character (and eat further away at the keyboard's symbol keys.*
+
+## Úer iz Q, W, X, and Y? *(Where is Q, W, X, and Y?)*
+
+Q and X ar éúslis, ridundint letørz. 'Kú', 'k', 'ks', 'gz' and 'z' ar al éú néd. W and Y can bé riplást úith dedikátid vaúlz Ú and É.
+
+>*Q and X are useless, redundant letters. 'Kú', 'k', 'ks', 'gz' and 'z' are all you need. W and Y can be replaced úith dedicated voúels Ú and É.*
+
+## C iz Naú 'Ch'?
+
+Ées. It úuz ridundint in its prévéis éúsis az 'k' and 's', but dher nédid tú bé é vóislis caúntørpart for J.
+
+>*Yes. It was redundant in its previous uses as 'k' and 's', but there needed to be a voiceless counterpart for J.*
 
 ## Ubaút Dhis Ripozitoré *(About This Repository)*
 
