@@ -1,12 +1,15 @@
 # Nils Elde
 # https://gitlab.com/nilsanderselde
+# https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing
 # Sort words in Fonetik Ingliš dictionary according to custom alphabetical order
 
 # Define order in which to sort words
 alphabet = {c: i for i, c in enumerate('-.aábcdeéfgiíjklmnoóøprsštuúvzžh')}
 
-# Load dictionary.txt as a string
-dictionary = open('dictionary.txt', encoding='utf-8').readlines()
+# Load words_to_sort.txt as a string
+# Dictionary must separate word rows by new lines and values by tabs, including all 
+# related fields in order to preserve data integrity.
+dictionary = open('words_to_sort.txt', encoding='utf-8').readlines()
 
 # Append newline character to dictionary so all lines will be processed the same,
 # without two lines being glued together in output

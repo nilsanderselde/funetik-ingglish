@@ -1132,7 +1132,6 @@ futogrifé	photography	7	noun
 futogrifør	photographer	7	noun	
 fúd	food	2	noun	
 fúl	fool	2	noun	
-
 gadhør	gather	2	verb	
 gadhøring	gathering	2	noun	
 galiksé	galaxy	4	noun	

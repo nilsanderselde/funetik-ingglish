@@ -3,8 +3,9 @@
 # Calculate distance between words stored in text file and save results
 import nltk
 
-# Load dictionary.txt as a string
-dictionary = open('dictionary.txt', encoding='utf-8').readlines()
+# Load words_for_distance.txt as a string
+# Dictionary must be in the form of [fonetik]\t[traditional]\n
+dictionary = open('words_for_distance.txt', encoding='utf-8').readlines()
 
 # Open output file
 output = open('out.txt', 'w', encoding='utf-8')

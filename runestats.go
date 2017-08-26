@@ -30,8 +30,8 @@ func main() {
 		wordInit[k] = 0
 	}
 
-	// Get first letter of each word for counts
-	file, err := os.Open("dictionary.txt")
+	// Open file in which to count runes
+	file, err := os.Open("words_for_runestats.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
