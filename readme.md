@@ -43,65 +43,65 @@ AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH
 ```
 
 
-**a** as in **a**pul *(**a**pple)*
+<strong>a</strong> as in <strong>a</strong>pul *(<strong>a</strong>pple)*
 
-**á** as in **Á**pril *(**A**pril)*
+<strong>á</strong> as in <strong>Á</strong>pril *(<strong>A</strong>pril)*
 
-**b** as in **b**ói *(**b**oy)*
+<strong>b</strong> as in <strong>b</strong>ói *(<strong>b</strong>oy)*
 
-**c** as in **c**er *(**ch**air)*
+<strong>c</strong> as in <strong>c</strong>er *(<strong>ch</strong>air)*
 
-**d** as in **d**ór *(**d**oor)*
+<strong>d</strong> as in <strong>d</strong>ór *(<strong>d</strong>oor)*
 
-**e** as in **e**vré *(**e**very)*
+<strong>e</strong> as in <strong>e</strong>vré *(<strong>e</strong>very)*
 
-**é** as in **é**vning *(**e**vening)*
+<strong>é</strong> as in <strong>é</strong>vning *(<strong>e</strong>vening)*
 
-**f** as in **f**un *(**f**un)*
+<strong>f</strong> as in <strong>f</strong>un *(<strong>f</strong>un)*
 
-**g** as in **g**ørl *(**g**irl)*
+<strong>g</strong> as in <strong>g</strong>ørl *(<strong>g</strong>irl)*
 
-**i** as in **i**ntristing *(**i**nteresting)*
+<strong>i</strong> as in <strong>i</strong>ntristing *(<strong>i</strong>nteresting)*
 
-**í** as in **í**s *(**i**ce)*
+<strong>í</strong> as in <strong>í</strong>s *(<strong>i</strong>ce)*
 
-**j** as in **j**ump *(**j**ump)*
+<strong>j</strong> as in <strong>j</strong>ump *(<strong>j</strong>ump)*
 
-**k** as in **k**úl *(**c**ool)*
+<strong>k</strong> as in <strong>k</strong>úl *(<strong>c</strong>ool)*
 
-**l** as in **l**ink *(**l**ink)*
+<strong>l</strong> as in <strong>l</strong>ink *(<strong>l</strong>ink)*
 
-**m** as in **m**irør *(**m**irror)*
+<strong>m</strong> as in <strong>m</strong>irør *(<strong>m</strong>irror)*
 
-**n** as in **n**ábør *(**n**eighbor)*
+<strong>n</strong> as in <strong>n</strong>ábør *(<strong>n</strong>eighbor)*
 
-**o** as in **o**n *(**o**n)*
+<strong>o</strong> as in <strong>o</strong>n *(<strong>o</strong>n)*
 
-**ó** as in **ó**nlé *(**o**nly)*
+<strong>ó</strong> as in <strong>ó</strong>nlé *(<strong>o</strong>nly)*
 
-**ø** as in ú**ø**d *(w**oul**d)*
+<strong>ø</strong> as in ú<strong>ø</strong>d *(w<strong>oul</strong>d)*
 
-**p** as in **p**ørfikt *(**p**erfect)*
+<strong>p</strong> as in <strong>p</strong>ørfikt *(<strong>p</strong>erfect)*
 
-**r** as in **r**ít *(**r**ight)*
+<strong>r</strong> as in <strong>r</strong>ít *(<strong>r</strong>ight)*
 
-**s** as in **s**ukses *(**s**uccess)*
+<strong>s</strong> as in <strong>s</strong>ukses *(<strong>s</strong>uccess)*
 
-**š** as in **š**aút *(**sh**out)*
+<strong>š</strong> as in <strong>š</strong>aút *(<strong>sh</strong>out)*
 
-**t** as in **t**ørtul *(**t**urtle)*
+<strong>t</strong> as in <strong>t</strong>ørtul *(<strong>t</strong>urtle)*
 
-**u** as in **u**p *(**u**p)*
+<strong>u</strong> as in <strong>u</strong>p *(<strong>u</strong>p)*
 
-**ú** as in m**ú**v *(m**o**ve)*
+<strong>ú</strong> as in m<strong>ú</strong>v *(m<strong>o<strong>ve)*
 
-**v** as in mú**v** *(mo**v**e)*
+<strong>v</strong> as in mú<strong>v</strong> *(mo<strong>v</strong>e)*
 
-**z** as in dog**z** *(dog**s**)*
+<strong>z</strong> as in dog<strong>z</strong> *(dog<strong>s</strong>)*
 
-**ž** as in lé**ž**ør *(lei**s**ure)*
+<strong>ž</strong> as in lé<strong>ž</strong>ør *(lei<strong>s</strong>ure)*
 
-**h** as in **h**apé *(**h**appy)*
+<strong>h</strong> as in <strong>h</strong>apé *(<strong>h</strong>appy)*
 
 Inførmášin rigording dhéz letørz and dhu similerités bitúén fonetik and trudišinul speling can bé faúnd on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) and [Google Docs](https://docs.google.com/document/d/1TkmmmTPur1muMsuUYzvJ74PZPTSit42XvJn6vMR5Kjg/edit?usp=sharing).
 
