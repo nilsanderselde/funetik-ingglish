@@ -103,9 +103,9 @@ AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH
 
 **h** as in **h**apé *(**h**appy)*
 
-Inførmášin rigording dhéz letørz and dhu similerités bitúén fonetik and trudišinul speling can bé faúnd on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing).
+Inførmášin rigording dhéz letørz and dhu similerités bitúén fonetik and trudišinul speling can bé faúnd on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) and [Google Docs](https://docs.google.com/document/d/1TkmmmTPur1muMsuUYzvJ74PZPTSit42XvJn6vMR5Kjg/edit?usp=sharing).
 
->*Information regarding these letters and the similarities between phonetic and traditional spelling can be found on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing).)*
+>*Information regarding these letters and the similarities between phonetic and traditional spelling can be found on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) and [Google Docs](https://docs.google.com/document/d/1TkmmmTPur1muMsuUYzvJ74PZPTSit42XvJn6vMR5Kjg/edit?usp=sharing).*
 
 ## Úí iz H dhu Last Letør? *(Why Is H the Last Letter?)*
 
@@ -150,6 +150,7 @@ Contains setup.exe, which installs the Ingliš (Fonetik) keyboard layout for the
 ## Mór Infó *(More Info)*
 
 [Fonetik Ingliš Úørd List and Stats](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) on Google Sheets
+[Fonetik Ingliš Alfibit](https://docs.google.com/document/d/1TkmmmTPur1muMsuUYzvJ74PZPTSit42XvJn6vMR5Kjg/edit?usp=sharing) on Google Docs
 
 ## Lísinz *(License)*
 
