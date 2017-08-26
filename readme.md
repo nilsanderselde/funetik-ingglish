@@ -111,9 +111,9 @@ Requires [NLTK](http://www.nltk.org/). Calculates Levenshtein distance between f
 
 Sorts words_to_sort.txt using the first character in each line according to the fonetik alphabet. Outputs to out.txt.
 
-### runestats.exe (compiled from runestats.go)
+### runestats.exe
 
-Counts all occurrences of letters in the fonetik alphabet in words_for_runestats.txt. Also counts word-initial occurrences. Outputs to console.
+Compiled from runestats.go. Counts all occurrences of letters in the fonetik alphabet in words_for_runestats.txt. Also counts word-initial occurrences. Outputs to console.
 
 ### ingfon.klc
 
@@ -133,7 +133,7 @@ Contains setup.exe, which installs the Ingliš (Fonetik) keyboard layout for the
 
 ## Mór Infó *(More Info)*
 
-[Fonetik Ingliš Úørd List and Stats](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) on Google Sheets
+[Fonetik Ingliš Úørd List and Stats](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) on Google Sheets  
 [Fonetik Ingliš Alfibit](https://docs.google.com/document/d/1TkmmmTPur1muMsuUYzvJ74PZPTSit42XvJn6vMR5Kjg/edit?usp=sharing) on Google Docs
 
 ## Lísinz *(License)*
