@@ -93,7 +93,7 @@ Q and X ar éúslis, ridundint letørz. 'Kú', 'k', 'ks', 'gz' and 'z' ar al é�
 
 ## C iz Naú 'Ch'? *(C is Now 'Ch'?)*
 
-Ées. It úuz ridundint in its prévéis éúsis az 'k' and 's', but dher nédid tú bé é vóislis caúntørpart for J.
+Ées. It úuz ridundint in its prévéis éúsis az 'k' and 's', but dher nédid tú bé u vóislis caúntørpart for J.
 
 >*Yes. It was redundant in its previous uses as 'k' and 's', but there needed to be a voiceless counterpart for J.*
 
