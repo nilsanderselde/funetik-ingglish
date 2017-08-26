@@ -113,10 +113,6 @@ Bikuz it iz éúzd in 'th' (az in 'think') and 'dh' (as in 'dhu') and Í thot dh
 
 >*Because it is used in 'th' (as in 'think') and 'dh' (as in 'the') and I thought those sounds should have their own sections in the dictionary. They don't occur frequently enough to deserve their own character (and eat further away at the keyboard's symbol keys.*
 
-## Lísinz *(License)*
-
-[GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
-
 ## Ubaút Dhis Ripozitoré *(About This Repository)*
 
 U kulekšin uv túlz dhat Í hav éúzd tú úørk on u fonetik órthogrifé fór dhu Ingliš lengúij.
@@ -154,3 +150,7 @@ Setup file for Windows Fonetik keyboard. Once installed, press Ctrl+Shift to swi
 ## Mór Infó *(More Info)*
 
 [Fonetik Ingliš Úørd List and Stats](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing) on Google Sheets
+
+## Lísinz *(License)*
+
+[GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
