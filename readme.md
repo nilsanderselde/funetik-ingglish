@@ -121,15 +121,15 @@ U kulekšin uv túlz dhat Í hav éúzd tú úørk on dhis fonetik órthogrifé 
 
 ### distance.py
 
-Requires [NLTK](http://www.nltk.org/). Calculates Levenshtein distance between fonetik and traditional spellings.
+Requires [NLTK](http://www.nltk.org/). Calculates Levenshtein distance between fonetik and traditional spellings in words_for_distance.txt. Outputs to out.txt.
 
 ### sort.py
 
-Sorts a text file using the first character in each line according to the fonetik alphabet.
+Sorts words_to_sort.txt using the first character in each line according to the fonetik alphabet. Outputs to out.txt.
 
-### runestats.go
+### runestats.exe (compiled from runestats.go)
 
-Prints in the console character count information for all fonetik alphabet letters in a given text file. Also counts word-initial occurrences.
+Counts all occurrences of letters in the fonetik alphabet in words_for_runestats.txt. Also counts word-initial occurrences. Outputs to console.
 
 ### ingfon.klc
 
