@@ -1,6 +1,8 @@
 # Fonetik Ingliš *(Phonetic English)*
 
-Vøržin 1 *(Version 1)*
+Vøržin 1
+
+>*Version 1*
 
 ## Intrudukšin *(Introduction)*
 
@@ -34,9 +36,9 @@ Dhu alfibet for Fonetik Ingliš has 30 letørz (4 mór dhan trudišinul Ingliš)
 
 >*The alphabet for Phonetik English has 30 letters (4 more than traditional English).*
 
-#aábcdeéfgiíjklmnoóøprsštuúvzžh
+# aábcdeéfgiíjklmnoóøprsštuúvzžh
 
-#AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH
+# AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH
 
 **a** as in **a**pul (**a**pple)
 
@@ -102,17 +104,17 @@ Inførmášin rigording dhéz letørz and dhu similerités bitúén fonetik and 
 
 >*Information regarding these letters and the similarities between phonetic and traditional spelling can be found on [Google Sheets](https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing).)*
 
-## Úí iz H dhu Last Letør? (Why Is H the Last Letter?)
+## Úí iz H dhu Last Letør? *(Why Is H the Last Letter?)*
 
 Bikuz it iz éúzd in 'th' (az in 'think') and 'dh' (as in 'dhu') and Í thot dhóz saúndz šød hav dher ón sekšinz in dhu dikšineré. Dhá dón't ukør frékúintlé inuf tú dikšineré to dizørv dher ón keriktør (and ét førdhør uúá at dhu kébórd's simbul kéz).
 
 >*Because it is used in 'th' (as in 'think') and 'dh' (as in 'the') and I thought those sounds should have their own sections in the dictionary. They don't occur frequently enough to deserve their own character (and eat further away at the keyboard's symbol keys.*
 
-## Lísinz (License)
+## Lísinz *(License)*
 
 [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
 
-## Ubaút Dhis Ripozitoré (About This Repository)
+## Ubaút Dhis Ripozitoré *(About This Repository)*
 
 U kulekšin uv túlz dhat Í hav éúzd tú úørk on u fonetik órthogrifé fór dhu Ingliš lengúij.
 
