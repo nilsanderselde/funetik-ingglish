@@ -38,9 +38,7 @@ Dhu alfibet for Fonetik Ingliš has 30 letørz (4 mór dhan trudišinul Ingliš)
 
 ```
 aábcdeéfgiíjklmnoóøprsštuúvzžh
-```
 
-```
 AÁBCDEÉFGIÍJKLMNOÓØPRSŠTUÚVZŽH
 ```
 
