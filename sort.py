@@ -22,6 +22,5 @@ dictionary = sorted(dictionary, key=lambda word: [alphabet.get(c, ord(c)) for c 
 output = open('out.txt', 'w', encoding='utf-8') 
 for word in dictionary:
     output.write(word)
-    
+
 output.close()
-dictionary.close()

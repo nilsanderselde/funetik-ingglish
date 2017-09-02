@@ -20,4 +20,3 @@ for line in dictionary:
     output.write(''.join([line.replace('\n', ''), '\t', str(distance), '\n']))
 
 output.close()
-dictionary.close()
