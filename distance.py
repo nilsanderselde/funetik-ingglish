@@ -5,7 +5,8 @@ import nltk
 
 # Load words_for_distance.txt as a string
 # Dictionary must be in the form of [fonetik]\t[traditional]\n
-dictionary = open('words_for_distance.txt', encoding='utf-8').readlines()
+dictionary_file = open('words_for_distance.txt', encoding='utf-8')
+dictionary = dictionary_file.readlines()
 
 # Open output file
 output = open('out.txt', 'w', encoding='utf-8')
@@ -20,3 +21,4 @@ for line in dictionary:
     output.write(''.join([line.replace('\n', ''), '\t', str(distance), '\n']))
 
 output.close()
+dictionary_file.close()

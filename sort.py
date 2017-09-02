@@ -9,7 +9,8 @@ alphabet = {c: i for i, c in enumerate('-.aábcdeéfgiíjklmnoóøprsštuúvzžh
 # Load words_to_sort.txt as a string
 # Dictionary must separate word rows by new lines and values by tabs, including all 
 # related fields in order to preserve data integrity.
-dictionary = open('words_to_sort.txt', encoding='utf-8').readlines()
+dictionary_file = open('words_to_sort.txt', encoding='utf-8')
+dictionary = dictionary_file.readlines()
 
 # Append newline character to dictionary so all lines will be processed the same,
 # without two lines being glued together in output
@@ -24,3 +25,4 @@ for word in dictionary:
     output.write(word)
 
 output.close()
+dictionary_file.close()
