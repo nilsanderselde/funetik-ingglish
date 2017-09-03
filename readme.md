@@ -95,7 +95,7 @@ J, dhu vóist kaútørport uv 'ch', iz éúzd ubaút az infrékúintlé. It iz r
 W and Y kan bé riplást úith dhu vaúlz Ú and É, sins dhá saúnd lík [semévaúulz](https://en.wikipedia.org/wiki/Semivowel) úen unstrest.
 >*W and Y can be replaced with the vowels Ú and É, since they sound like [semivowels](https://en.wikipedia.org/wiki/Semivowel) when unstressed.*
 
-## Ubaút Dhis Ripozitoré *(About This Repository)*
+## Ubaút Dhis Ripozitóré *(About This Repository)*
 
 U kulekshin uv túlz dhat Í hav éúzd tú úørk on dhis funetik órthogrifé fór Inglish.
 
