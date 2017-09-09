@@ -61,8 +61,28 @@ func main() {
 	}
 
 	// Print counts for each rune
-	fmt.Println("rune,total,initial")
 	for _, k := range runes {
-		fmt.Print(string(k), ",", allRunes[k], ",", wordInit[k], "\n")
+		fmt.Print(string(k), "\t", allRunes[k], "\t", wordInit[k], "\n")
+	}
+
+	// Save counts for each rune to file
+
+	f, err := os.Create("out.txt")
+	check(err)
+
+	defer f.Close()
+
+	for i, k := range runes {
+		f.Write([]byte(fmt.Sprintf("%s\t%d\t%d", string(k), allRunes[k], wordInit[k])))
+		if i < len(runes)-1 {
+			f.Write([]byte("\n"))
+		}
+	}
+	fmt.Println("Results saved in out.txt")
+}
+
+func check(e error) {
+	if e != nil {
+		panic(e)
 	}
 }
