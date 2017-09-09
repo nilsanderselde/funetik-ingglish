@@ -1157,6 +1157,9 @@ ges	guess
 gest	guest
 get	get
 gér	gear
+	
+	
+	
 gift	gift
 giftid	gifted
 gilté	guilty
@@ -1372,7 +1375,7 @@ húevør	whoever
 hú	who
 húm	whom
 húz	whose
-ifishinsé	efficiency
+if	if
 ifishint	efficient
 ignór	ignore
 ilégul	illegal
@@ -4008,9 +4011,9 @@ ukázhin	occasion
 ukázhinulé	occasionally
 ukázhinul	occasional
 ukéuz	accuse
+ukomidát	accommodate
 ukomplish	accomplish
 ukomplishmint	accomplishment
-ukomudát	accommodate
 ukórding	according
 ukør	occur
 ukros	across
@@ -4348,7 +4351,7 @@ vørtshúulé	virtually
 vørtshúul	virtual
 vørzhin	version
 vulidité	validity
-vulnribul	vulnerable
+vulnøribul	vulnerable
 vuríité	variety
 zhonru	genre
 zón	zone

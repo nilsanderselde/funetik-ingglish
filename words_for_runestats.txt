@@ -1157,6 +1157,9 @@ ges
 gest
 get
 gér
+
+
+
 gift
 giftid
 gilté
@@ -1372,7 +1375,7 @@ húevør
 hú
 húm
 húz
-ifishinsé
+if
 ifishint
 ignór
 ilégul
@@ -4008,9 +4011,9 @@ ukázhin
 ukázhinulé
 ukázhinul
 ukéuz
+ukomidát
 ukomplish
 ukomplishmint
-ukomudát
 ukórding
 ukør
 ukros
@@ -4348,7 +4351,7 @@ vørtshúulé
 vørtshúul
 vørzhin
 vulidité
-vulnribul
+vulnøribul
 vuríité
 zhonru
 zón
