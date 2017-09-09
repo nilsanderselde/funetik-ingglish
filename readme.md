@@ -103,15 +103,15 @@ U kulekshin uv túlz dhat Í hav éúzd tú úørk on dhis funetik órthogrifé 
 
 ### distance.py
 
-Requires [NLTK](http://www.nltk.org/). Calculates Levenshtein distance between funetik and traditional spellings in words_for_distance.txt. Outputs to out.txt.
+Requires [NLTK](http://www.nltk.org/). Calculates Levenshtein distance between funetik and traditional spellings in words_for_distance.txt. Saves results in out.txt.
 
 ### sort.py
 
-Sorts words_to_sort.txt using the first character in each line according to the funetik alfibit. Outputs to out.txt.
+Sorts words_to_sort.txt using the first character in each line according to the funetik alfibit. Saves results in out.txt.
 
-### runestats.exe
+### runestats.go
 
-Compiled from runestats.go. Counts all occurrences of letters in the funetik alfibit in words_for_runestats.txt. Also counts word-initial occurrences. Outputs to console.
+Counts all occurrences of letters in the funetik alfibit in words_for_runestats.txt. Also counts word-initial occurrences. Saves results in out.txt.
 
 ### ingfon.klc
 
