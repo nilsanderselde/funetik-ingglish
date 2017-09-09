@@ -117,9 +117,9 @@ az	as	1	adverb
 áléin	alien	3	noun	
 ám	aim	2	noun	
 ándzhul	angel	5	noun	
-ánggør	anger	2	noun	
-ánggré	angry	2	adjective	
-ánggul	angle	3	noun	
+ánggør	anger	3	noun	
+ánggré	angry	3	adjective	
+ánggul	angle	4	noun	
 ánshint	ancient	4	adjective	
 ár	air	2	noun	
 árkraft	aircraft	3	noun	
@@ -499,7 +499,7 @@ disórdør	disorder	2	noun
 dispéút	dispute	3	noun	
 dispít	despite	3	preposition	
 displá	display	2	noun	
-distinggúish	distinguish	1	verb	
+distinggúish	distinguish	2	verb	
 distinkshin	distinction	4	noun	
 distinkt	distinct	1	adjective	
 distinktiv	distinctive	2	adjective	
@@ -657,7 +657,7 @@ dzhørør	juror	5	noun
 dzhudzh	judge	5	noun	
 dzhudzhmint	judgment	6	noun	
 dzhump	jump	3	noun	
-dzhunggul	jungle	5	noun	
+dzhunggul	jungle	6	noun	
 dzhust	just	3	adverb	
 dzhustifí	justify	4	verb	
 dzhustis	justice	5	noun	
@@ -804,8 +804,8 @@ enéúer	anywhere	5	adverb
 enéúun	anyone	5	pronoun	
 enfórs	enforce	3	verb	
 enfórsmint	enforcement	4	noun	
-enggádzh	engage	4	verb	
-enggádzhmint	engagement	5	noun	
+enggádzh	engage	5	verb	
+enggádzhmint	engagement	6	noun	
 engshis	anxious	5	adjective	
 enhans	enhance	2	verb	
 enimé	enemy	2	noun	
@@ -989,7 +989,7 @@ filisofikul	philosophical	7	adjective
 film	film	0	noun	
 filosifé	philosophy	6	noun	
 filtør	filter	1	noun	
-finggør	finger	1	noun	
+finggør	finger	2	noun	
 finish	finish	0	noun	
 finominon	phenomenon	4	noun	
 fish	fish	0	noun	
@@ -1157,9 +1157,6 @@ ges	guess	2	verb
 gest	guest	1	noun	
 get	get	0	verb	
 gér	gear	2	noun	
-		0		
-		0		
-		0		
 gift	gift	0	noun	
 giftid	gifted	1	adjective	
 gilté	guilty	2	adjective	
@@ -1237,7 +1234,6 @@ gut	gut	0	noun
 guvinør	governor	4	noun	
 guvørmint	government	4	noun	
 guvørn	govern	2	verb	
-		0		
 habitat	habitat	0	noun	
 habit	habit	0	noun	
 haf	half	1	noun	
@@ -1365,8 +1361,8 @@ hug	hug	0	verb
 hu	huh	1	interjection	
 hundrid	hundred	1	numeral	
 huné	honey	3	noun	
-hunggør	hunger	1	noun	
-hunggré	hungry	1	adjective	
+hunggør	hunger	2	noun	
+hunggré	hungry	2	adjective	
 hunt	hunt	0	verb	
 hunting	hunting	0	noun	
 huntør	hunter	1	noun	
@@ -1441,9 +1437,9 @@ infórm	inform	1	verb
 infórmul	informal	2	adjective	
 inførmáshin	information	5	noun	
 infrustrukshør	infrastructure	6	noun	
+Ingglish	English	2	adjective	
+inggrédéint	ingredient	4	noun	
 in	in	0	adverb	
-Ingglish	English	1	adjective	
-inggrédéint	ingredient	3	noun	
 inherint	inherent	1	adjective	
 inherit	inherit	0	verb	
 inishéát	initiate	5	verb	
@@ -1718,7 +1714,7 @@ konfidint	confident	2	adjective
 konflikt	conflict	2	noun	
 konfrins	conference	5	noun	
 konfrintáshin	confrontation	6	noun	
-Konggris	Congress	3	noun	
+Konggris	Congress	4	noun	
 konkrét	concrete	4	adjective	
 konsept	concept	2	noun	
 konshins	conscience	5	noun	
@@ -1913,7 +1909,7 @@ kunféúzhin	confusion	7	noun
 kunfirm	confirm	2	verb	
 kunflikt	conflict	3	verb	
 kunfrunt	confront	3	verb	
-kunggreshinul	congressional	5	adjective	
+kunggreshinul	congressional	6	adjective	
 kunklúd	conclude	5	verb	
 kunklúzhin	conclusion	7	noun	
 kunsekéøtiv	consecutive	6	adjective	
@@ -2014,8 +2010,8 @@ lábul	label	2	noun
 ládé	lady	2	noun	
 lá	lay	2	verb	
 lák	lake	2	noun	
+lánggúidzh	language	7	noun	
 lán	lane	2	noun	
-lánggúidzh	language	6	noun	
 láør	layer	3	noun	
 lásør	laser	2	noun	
 lát	late	2	adverb	
@@ -2450,8 +2446,8 @@ oltørnitiv	alternative	4	adjective
 oltugedhør	altogether	4	adverb	
 olúáz	always	5	adverb	
 Omerikin	American	3	adjective	
+on-góing	ongoing	2	adjective	
 on	on	0	adverb	
-on-góing	ongoing	1	adjective	
 onist	honest	2	adjective	
 onistlé	honestly	3	adverb	
 onlín	online	2	adverb	
@@ -3315,9 +3311,9 @@ simpul	simple	2	adjective
 sindróm	syndrome	3	noun	
 sineréó	scenario	5	noun	
 sing	sing	0	verb	
+singgul	single	3	adjective	
 singør	singer	1	noun	
 sin	sin	0	noun	
-singgul	single	2	adjective	
 sink	sink	0	noun	
 sins	since	2	adverb	
 siréis	serious	4	adjective	
@@ -3894,7 +3890,7 @@ tshándzhing	changing	6	adjective
 tshán	chain	4	noun	
 tshás	chase	4	verb	
 tshek	check	3	noun	
-tshEO	CEO	3	noun	
+TEO	CEO	3	noun	
 tsher	chair	4	noun	
 tsherité	charity	4	noun	
 tshermin	chairman	5	noun	

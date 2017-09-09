@@ -11,9 +11,9 @@ Aftør studéing Spanish, Rushin, and Finish, I kám tú réilíz dzhust haú ko
 
 >*After studying Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is.*
 
-Í disídid tú trí tú réúørk it in u úá dhat is kunsistint and intúitiv, léving thingz as untshándzhd as posibul. Ónlé siks letørz hav tshándzhd, and mené úørdz' spelingz or veré similør. Uv u list uv 4355 uv dhu móst komin úørdz, 2981 funetik spelingz (68%) or 3 ór féúør tshándzhiz uúá frum dhu trudishinul speling.
+Í disídid tú trí tú réúørk it in u úá dhat is kunsistint and intúitiv, léving thingz as untshándzhd as posibul. Ónlé siks letørz hav tshándzhd, and mené úørdz' spelingz or veré similør. Uv u list uv 4353 uv dhu móst komin úørdz, 2980 funetik spelingz (68%) or 3 ór féúør tshándzhiz uúá frum dhu trudishinul speling.
 
->*I decided to try to rework it in a way that is consistent and intuitive, leaving things as unchanged as possible. Only six letters have changed, and many words' spellings are very similar. Of a list of 4355 of the most common words, 2981 funetik spellings (68%) are 3 or fewer changes away from the traditional spelling.*
+>*I decided to try to rework it in a way that is consistent and intuitive, leaving things as unchanged as possible. Only six letters have changed, and many words' spellings are very similar. Of a list of 4353 of the most common words, 2980 funetik spellings (68%) are 3 or fewer changes away from the traditional spelling.*
 
 Í úontid tú dú dhis só dhat ekstru nolidzh izn't rikúírd tú pik up u bøk and réd evré úørd kurektlé.
 

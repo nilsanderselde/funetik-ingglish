@@ -1157,9 +1157,6 @@ ges
 gest
 get
 gér
-
-
-
 gift
 giftid
 gilté
@@ -1237,7 +1234,6 @@ gut
 guvinør
 guvørmint
 guvørn
-
 habitat
 habit
 haf
@@ -1441,9 +1437,9 @@ infórm
 infórmul
 inførmáshin
 infrustrukshør
-in
 Ingglish
 inggrédéint
+in
 inherint
 inherit
 inishéát
@@ -2014,8 +2010,8 @@ lábul
 ládé
 lá
 lák
-lán
 lánggúidzh
+lán
 láør
 lásør
 lát
@@ -2450,8 +2446,8 @@ oltørnitiv
 oltugedhør
 olúáz
 Omerikin
-on
 on-góing
+on
 onist
 onistlé
 onlín
@@ -3315,9 +3311,9 @@ simpul
 sindróm
 sineréó
 sing
+singgul
 singør
 sin
-singgul
 sink
 sins
 siréis
@@ -3723,6 +3719,7 @@ ten
 tenis
 tenshin
 tent
+TEO
 ter
 teriblé
 teribul
@@ -3894,7 +3891,6 @@ tshándzhing
 tshán
 tshás
 tshek
-tshEO
 tsher
 tsherité
 tshermin

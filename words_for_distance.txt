@@ -1157,10 +1157,6 @@ ges	guess
 gest	guest
 get	get
 gér	gear
-	
-	
-	
-	
 gift	gift
 giftid	gifted
 gilté	guilty
@@ -1238,7 +1234,6 @@ gut	gut
 guvinør	governor
 guvørmint	government
 guvørn	govern
-	
 habitat	habitat
 habit	habit
 haf	half
@@ -3724,6 +3719,7 @@ ten	ten
 tenis	tennis
 tenshin	tension
 tent	tent
+TEO	CEO
 ter	tear
 teriblé	terribly
 teribul	terrible
@@ -3895,7 +3891,6 @@ tshándzhing	changing
 tshán	chain
 tshás	chase
 tshek	check
-tshEO	CEO
 tsher	chair
 tsherité	charity
 tshermin	chairman
