@@ -1,7 +1,6 @@
 # Nils Elde
 # https://gitlab.com/nilsanderselde
-# https://docs.google.com/spreadsheets/d/1Y-NClJDkBJsc3roRPA0Mzo04YCKjlAL8J8pJApCd7mQ/edit?usp=sharing
-# Sort words in Funetik Ingliš dictionary according to custom alphabetical order
+"""Sort words in a text file by custom alphabetical order"""
 
 # Define order in which to sort words
 ALPHABET = {c: i for i, c in enumerate('-.aábdeéfghiíklmnoóøprstuúvz')}

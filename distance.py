@@ -1,6 +1,7 @@
 # Nils Elde
 # https://gitlab.com/nilsanderselde
-# Calculate distance between words stored in text file and save results
+"""Calculate distance between words stored in text file and save results"""
+
 import nltk
 
 # Load words_for_distance.txt as a string
