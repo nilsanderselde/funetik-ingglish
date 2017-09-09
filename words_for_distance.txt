@@ -117,9 +117,9 @@ az	as
 áléin	alien
 ám	aim
 ándzhul	angel
-ángør	anger
-ángré	angry
-ángul	angle
+ánggør	anger
+ánggré	angry
+ánggul	angle
 ánshint	ancient
 ár	air
 árkraft	aircraft
@@ -499,7 +499,7 @@ disórdør	disorder
 dispéút	dispute
 dispít	despite
 displá	display
-distingúish	distinguish
+distinggúish	distinguish
 distinkshin	distinction
 distinkt	distinct
 distinktiv	distinctive
@@ -657,7 +657,7 @@ dzhørør	juror
 dzhudzh	judge
 dzhudzhmint	judgment
 dzhump	jump
-dzhungul	jungle
+dzhunggul	jungle
 dzhust	just
 dzhustifí	justify
 dzhustis	justice
@@ -804,8 +804,8 @@ enéúer	anywhere
 enéúun	anyone
 enfórs	enforce
 enfórsmint	enforcement
-engádzh	engage
-engádzhmint	engagement
+enggádzh	engage
+enggádzhmint	engagement
 engshis	anxious
 enhans	enhance
 enimé	enemy
@@ -989,7 +989,7 @@ filisofikul	philosophical
 film	film
 filosifé	philosophy
 filtør	filter
-fingør	finger
+finggør	finger
 finish	finish
 finominon	phenomenon
 fish	fish
@@ -1157,6 +1157,7 @@ ges	guess
 gest	guest
 get	get
 gér	gear
+	
 	
 	
 	
@@ -1365,8 +1366,8 @@ hug	hug
 hu	huh
 hundrid	hundred
 huné	honey
-hungør	hunger
-hungré	hungry
+hunggør	hunger
+hunggré	hungry
 hunt	hunt
 hunting	hunting
 huntør	hunter
@@ -1441,9 +1442,9 @@ infórm	inform
 infórmul	informal
 inførmáshin	information
 infrustrukshør	infrastructure
+Ingglish	English
+inggrédéint	ingredient
 in	in
-Inglish	English
-ingrédéint	ingredient
 inherint	inherent
 inherit	inherit
 inishéát	initiate
@@ -1718,7 +1719,7 @@ konfidint	confident
 konflikt	conflict
 konfrins	conference
 konfrintáshin	confrontation
-Kongris	Congress
+Konggris	Congress
 konkrét	concrete
 konsept	concept
 konshins	conscience
@@ -1913,7 +1914,7 @@ kunféúzhin	confusion
 kunfirm	confirm
 kunflikt	conflict
 kunfrunt	confront
-kungreshinul	congressional
+kunggreshinul	congressional
 kunklúd	conclude
 kunklúzhin	conclusion
 kunsekéøtiv	consecutive
@@ -2014,8 +2015,8 @@ lábul	label
 ládé	lady
 lá	lay
 lák	lake
+lánggúidzh	language
 lán	lane
-lángúidzh	language
 láør	layer
 lásør	laser
 lát	late
@@ -2450,8 +2451,8 @@ oltørnitiv	alternative
 oltugedhør	altogether
 olúáz	always
 Omerikin	American
+on-góing	ongoing
 on	on
-ongóing	ongoing
 onist	honest
 onistlé	honestly
 onlín	online
@@ -3315,9 +3316,9 @@ simpul	simple
 sindróm	syndrome
 sineréó	scenario
 sing	sing
+singgul	single
 singør	singer
 sin	sin
-singul	single
 sink	sink
 sins	since
 siréis	serious

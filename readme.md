@@ -1,39 +1,39 @@
-![Kébord](https://gitlab.com/nilsanderselde/funetik-inglish/raw/master/logo_medium.png)
+![Kébord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/logo_medium.png)
 
-# Funetik Inglish *(Phonetic English)*
+# Funetik Ingglish *(Phonetic English)*
 
-[Funetik Inglish Úørd List and Stats](https://drive.google.com/open?id=1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA) on Google Sheets  
-[Funetik Inglish Alfibit](https://drive.google.com/open?id=1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8) on Google Docs
+[Funetik Ingglish Úørd List and Stats](https://drive.google.com/open?id=1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA) on Google Sheets  
+[Funetik Ingglish Alfibit](https://drive.google.com/open?id=1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8) on Google Docs
 
 ## Intrudukshin *(Introduction)*
 
-Aftør studéing Spanish, Rushin, and Finish, I kám tú réilíz dzhust haú komplikátid and kaúntørintúitiv aúr alfibit and speling sistim for Umerikin Inglish iz.
+Aftør studéing Spanish, Rushin, and Finish, I kám tú réilíz dzhust haú komplikátid and kaúntørintúitiv aúr alfibit and speling sistim for Umerikin Ingglish iz.
 
 >*After studying Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is.*
 
-Í disídid tú trí tú réúørk it in u úá dhat is kunsistint and intúitiv, léving thingz as untshándzhd as posibul. Ónlé siks letørz hav tshándzhd, and mené úørdz' spelingz or veré similør. Uv u list uv 4357 uv dhu móst komin úørdz, 2986 funetik spelingz (69%) úør 3 ór féúør tshándzhiz uúá frum dhu trudishinul speling.
+Í disídid tú trí tú réúørk it in u úá dhat is kunsistint and intúitiv, léving thingz as untshándzhd as posibul. Ónlé siks letørz hav tshándzhd, and mené úørdz' spelingz or veré similør. Uv u list uv 4355 uv dhu móst komin úørdz, 2981 funetik spelingz (68%) or 3 ór féúør tshándzhiz uúá frum dhu trudishinul speling.
 
->*I decided to try to rework it in a way that is consistent and intuitive, leaving things as unchanged as possible. Only six letters have changed, and many words' spellings are very similar. Of a list of 4357 of the most common words, 2986 funetik spellings (69%) were 3 or fewer changes away from the traditional spelling.*
+>*I decided to try to rework it in a way that is consistent and intuitive, leaving things as unchanged as possible. Only six letters have changed, and many words' spellings are very similar. Of a list of 4355 of the most common words, 2981 funetik spellings (68%) are 3 or fewer changes away from the traditional spelling.*
 
 Í úontid tú dú dhis só dhat ekstru nolidzh izn't rikúírd tú pik up u bøk and réd evré úørd kurektlé.
 
 >*I wanted to do this so that extra knowledge isn't required to pick up a book and read every word correctly.*
 
-Tshildrin and fórin spékørz uv Inglish hav trubul disíføring dhu labirinthéin and orbitreré sistim uv "rúlz" (úitsh orn't rilé rúlz) and unnórmulízd fórin spelingz úitsh stik aút lík u sór thum.
+Tshildrin and fórin spékørz uv Ingglish hav trubul disíføring dhu labirinthéin and orbitreré sistim uv "rúlz" (úitsh orn't rilé rúlz) and unnórmulízd fórin spelingz úitsh stik aút lík u sór thum.
 
 >*Children and foreign speakers of English have trouble decyphering the labyrinthian and arbitrary system of "rules" (which aren't really rules) and unnormalized foreign spellings which stick out like a sore thumb.*
 
-Dhis duzn't tshándzh dhu lengúidzh at ol -- ritin "lengúidzh" iz akshúulé [órthogrifé](https://en.wikipedia.org/wiki/Orthography).
+Dhis duzn't tshándzh dhu lenggúidzh at ol -- ritin "lenggúidzh" iz akshúulé [órthogrifé](https://en.wikipedia.org/wiki/Orthography).
 
 >*This doesn't change the language at all -- written "language" is actually [orthography](https://en.wikipedia.org/wiki/Orthography).
 
-Dhis ríting sistim úød probiblé kréát sum kunféúzhin fór non-Umerikin Inglish spékørz, só dhe standørd órthogrifé shød uv kórs kuntinéú tú bé éúzd in u similør úá az Latin (az u síintifik standørd), Modørn Standørd Eribik (as u gó-bitúén fór difirint díuleks), ór Tshínéz keriktørz (az simbulz tú dzhóin méútshøúulé unintelidzhibul lengúidzhiz).
+Dhis ríting sistim úød probiblé kréát sum kunféúzhin fór non-Umerikin Ingglish spékørz, só dhe standørd órthogrifé shød uv kórs kuntinéú tú bé éúzd in u similør úá az Latin (az u síintifik standørd), Modørn Standørd Eribik (as u gó-bitúén fór difirint díuleks), ór Tshínéz keriktørz (az simbulz tú dzhóin méútshøúulé unintelidzhibul lenggúidzhiz).
 
 >*This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy should of course continue to be used in a similar way as Latin (as a scientific standard), Modern Standard Arabic (as a go-between for different dialects), or Chinese characters (as symbols to join mutually unintelligible languages).*
 
 ## Dhu Alfibit and Speling Rúlz *(The Alphabet and Spelling Rules)*
 
-Dhu alfibit fór Funetik Inglish haz 26 letørz (4 mór dhan trudishinul Inglish).
+Dhu alfibit fór Funetik Ingglish haz 26 letørz (4 mór dhan trudishinul Ingglish).
 
 >*The alphabet for Phonetic English has 26 letters (4 more than traditional English).*
 
@@ -60,6 +60,7 @@ aábdeéfghiíklmnoóøprstuúvz
 <strong>l</strong> as in <strong>l</strong>ink *(<strong>l</strong>ink)*  
 <strong>m</strong> as in <strong>m</strong>irør *(<strong>m</strong>irror)*  
 <strong>n</strong> as in <strong>n</strong>ábør *(<strong>n</strong>eighbor)*  
+<strong>ng</strong> as in stro<strong>ng</strong> *(stro<strong>ng</strong>)* [(Dígraf)](https://en.wikipedia.org/wiki/Digraph_%28orthography%29)  
 <strong>o</strong> as in <strong>o</strong>n *(<strong>o</strong>n)*  
 <strong>ó</strong> as in <strong>ó</strong>nlé *(<strong>o</strong>nly)*  
 <strong>ø</strong> as in ú<strong>ø</strong>d *(w<strong>oul</strong>d)*  
@@ -81,12 +82,12 @@ aábdeéfghiíklmnoóøprstuúvz
 
 C, Q and X or ridundint letørz:  
 * C iz ídhør K ór S. 'Ch' iz akshúulé u kombináshin uv T and 'sh', só it iz ritin az 'Tsh'.
-* Q prité mutsh ónlé upérz úith U, and saúndz lík 'kw', az in "kwik". 'Kú' iz haú tú dú dhis in Funetik Inglish. 
+* Q prité mutsh ónlé upérz úith U, and saúndz lík 'kw', az in "kwik". 'Kú' iz haú tú dú dhis in Funetik Ingglish. 
 * X iz 'ks', 'gz', ór dzhust 'z'
 
 >*C, Q and X are redundant letters:*
 >* *C is either K or S. 'Ch' is actually a combination of T and 'sh', so it iz written as 'Tsh'*.
->* *Q pretty much only appears with U, and sounds like "kw', as in "kwik". 'Kú' is how to do this in Funetik Inglish*
+>* *Q pretty much only appears with U, and sounds like "kw', as in "kwik". 'Kú' is how to do this in Phonetic English*
 >* *X iz 'ks', 'gz', or just 'z'*
 
 J, dhu vóist kaútørport uv 'ch', iz éúzd ubaút az infrékúintlé. It iz ritin az 'dzh'.
@@ -97,7 +98,7 @@ W and Y kan bé riplást úith dhu vaúlz Ú and É, sins dhá saúnd lík [sem�
 
 ## Ubaút Dhis Ripozitóré *(About This Repository)*
 
-U kulekshin uv túlz dhat Í hav éúzd tú úørk on dhis funetik órthogrifé fór Inglish.
+U kulekshin uv túlz dhat Í hav éúzd tú úørk on dhis funetik órthogrifé fór Ingglish.
 
 >*A collection of tools that I have used to work on this phonetic orthography for English.*
 
@@ -113,37 +114,36 @@ Sorts words_to_sort.txt using the first character in each line according to the 
 
 Counts all occurrences of letters in the funetik alfibit in words_for_runestats.txt. Also counts word-initial occurrences. Saves results in out.txt.
 
-### ingfon.klc
+### funetik-ingglish-windows-keyboard-layout.zip
 
-Funetik keyboard layout for [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339).
+Contains setup.exe, which installs the Ingglish (Funetik) keyboard layout for the English (United States) display language in Windows. Once installed, press Ctrl+Shift to switch between layouts.
 
-### ingfon.zip
-
-Contains setup.exe, which installs the Inglish (Funetik) keyboard layout for the English (United States) display language in Windows. Once installed, press Ctrl+Shift to switch between layouts.
+Also contains ingg.klc, the keyboard layout file for [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339).
 
 ## Kébórd Láaút
 
-![Kébord](https://gitlab.com/nilsanderselde/funetik-inglish/raw/master/keyboard.png)
+![Kébord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/keyboard.png)
 
-![Kébord úith Shift prest](https://gitlab.com/nilsanderselde/funetik-inglish/raw/master/keyboard_shift.png)
+![Kébord úith Shift prest](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/keyboard_shift.png)
 
-![Kébord úith Caps Lock prest](https://gitlab.com/nilsanderselde/funetik-inglish/raw/master/keyboard_caps.png)
+![Kébord úith Caps Lock prest](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/keyboard_caps.png)
 
 ## Mór Infó *(More Info)*
 
-[Funetik Inglish Úørd List and Stats](https://drive.google.com/open?id=1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA) on Google Sheets  
-[Funetik Inglish Alfibit](https://drive.google.com/open?id=1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8) on Google Docs
+[Funetik Ingglish Úørd List and Stats](https://drive.google.com/open?id=1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA) on Google Sheets  
+[Funetik Ingglish Alfibit](https://drive.google.com/open?id=1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8) on Google Docs
 
 ## Lísinz *(License)*
 
-[GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). 
 
 ## 🎶Alfibit Song🎶
 
-A Á Bé Dé E É Fo,
-Gu Hu I Í Ká eL eM eN O.
-Ó Ø Pé,
-oR eS Té,
-U,
-Ú,
-Vé and Zé.
+A Á Bé Dé E É Fo,  
+Gu Hu I Í Ká eL eM eN O.  
+Ó Ø Pé,  
+oR eS Té,  
+U and Ú and Vé and Zé.
+
+Naú Í nó mí A-Á-Bé,  
+Nekst tím úil éú sing úith mé?  
