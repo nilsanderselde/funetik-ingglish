@@ -14,10 +14,7 @@ import (
 
 func main() {
 	// Runes in alphabetical order
-	runes := []rune{
-		'a', 'á', 'b', 'd', 'e', 'é', 'f', 'g', 'h', 'i', 'í', 'k', 'l',
-		'm', 'n', 'o', 'ó', 'ø', 'p', 'r', 's', 't', 'u', 'ú', 'v', 'z',
-	}
+	runes := []rune("aäeoøiuywlrmnbpvfgkdtzsžšh")
 
 	// Create map of all runes to count (same runes, so copy above map)
 	var allRunes = make(map[rune]int)

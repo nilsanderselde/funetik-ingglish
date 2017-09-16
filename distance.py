@@ -9,9 +9,8 @@ import nltk
 DICTIONARY_FILE = open('words_for_distance.txt', encoding='utf-8')
 DICTIONARY = DICTIONARY_FILE.readlines()
 
-# Open output file
+# Open output file and write to it
 OUTPUT = open('out.txt', 'w', encoding='utf-8')
-
 i = 0
 for line in DICTIONARY:
     # Split line into words on tab (since data comes from spreadsheet)

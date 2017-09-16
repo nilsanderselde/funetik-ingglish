@@ -3,7 +3,7 @@
 """Sort words in a text file by custom alphabetical order"""
 
 # Define order in which to sort words
-ALPHABET = {c: i for i, c in enumerate('-.aábdeéfghiíklmnoóøprstuúvz')}
+ALPHABET = {c: i for i, c in enumerate('aäeoøiuywlrmnbpvfgkdtzsžšh')}
 
 # Load words_to_sort.txt as a string
 # Dictionary must separate word rows by new lines and values by tabs, including all 
@@ -14,10 +14,16 @@ DICTIONARY = DICTIONARY_FILE.readlines()
 # Sort dictionary according to custom alphabet
 DICTIONARY = sorted(DICTIONARY, key=lambda word: [ALPHABET.get(c, ord(c)) for c in word.lower()])
 
-# Save output to file
+# Open output file and write to it
 OUTPUT = open('out.txt', 'w', encoding='utf-8')
-for word in DICTIONARY:
-    OUTPUT.write(word)
+i = 0
+for line in DICTIONARY:
+    # line with the newline character removed
+    OUTPUT.write(line.replace('\n', ''))
+    # Avoid adding extra line at end of file
+    if i < len(DICTIONARY) - 1:
+        OUTPUT.write('\n')
+    i += 1
 
 OUTPUT.close()
 DICTIONARY_FILE.close()
