@@ -2,22 +2,14 @@
 
 # Funetik Inggliš *(Phonetic English)*
 
-[Funetik Inggliš Wørd List änd Stäts](https://drive.google.com/open?id=1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA) on Google Sheets  
-[Funetik Inggliš Älfubit](https://drive.google.com/open?id=1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8) on Google Docs
+[Funetik Inggliš Wørd List änd Stäts](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383) on Google Sheets  
+[Funetik Inggliš Älfubit](https://docs.google.com/document/d/1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8/edit) on Google Docs
 
 ## Intrudukšin *(Introduction)*
 
 Äftør studying Späniš, Rušin, änd Finiš, I keim tw ryilaiz džust häw kamplikeitid änd käwntørintwitiv äwr älfubit änd speling sistim for Umerikin Inggliš iz.
 
 >*After studying Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is.*
-
-Ai disaidid tw trai tw rywørk it in u wei dhät iz kunsistint änd intwitiv. Only 4 letørz häv tšeindžd, änd meny wørdz' spelingz ar very similør. Uv u list uv 4353 kamin wørdz, 3064 funetik spelingz (70%) ar 3 or fywør tšándžiz uwei frum dhu trudišinul speling.
-
->*I decided to try to rework it in a way that is consistent and intuitive. Only 4 letters have changed, and many words' spellings are very similar. Of a list of 4353 common words, 3064 funetik spellings (70%) are 3 or fewer changes away from the traditional spelling.*
-
-Funetik Inggliš also meiks wørdz slaitly šortør an ävridž. In dhu 4353-wørd sämpul Ai ywzd, dhu ävridž wørd length (inklwding punkšøweišin) in Funetik Inggliš iz 6.23 keriktørz pør wørd, weräz trudišinul Inggliš iz 6.65 keriktørz pør wørd.
-
->*Phonetic English also makes words slightly shorter on average. In the 4353-word sample I used, the average word length (including punctuation) in Phonetic English is 6.23 characters per word, whereas traditional English is 6.65 characters per word.*
 
 Tšildrin änd forin spykørz uv Inggliž häv trubul disaiføring dhu labirinthéin änd arbitrery sistim uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz witsh stik äwt laik u sor thum.
 
@@ -35,9 +27,9 @@ Dhis raiting sistim wød prabibly kryeit sum kunfywžin for nan-Umerikin Inggli�
 
 >*This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy should of course continue to be used in a similar way as Latin (as a scientific standard), Modern Standard Arabic (as a go-between for different dialects), or Chinese characters (as symbols to join mutually unintelligible languages).*
 
-## Dhu Alfubit änd Speling Rwlz *(The Alphabet and Spelling Rules)*
+## [Dhu Älfubit *(The Alphabet)*](https://docs.google.com/document/d/1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8/edit)
 
-Dhu alfubit for Funetik Inggliš iz ureindžd with väwulz først, dhen [sonørint](https://en.wikipedia.org/wiki/Sonorant) kansunintz, änd dhen [abstrwint](https://en.wikipedia.org/wiki/Obstruent) kansunintz. Abstrwint kansunintz ar ureindžd in perz with dhu [voist](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) wun først.
+Dhu älfubit for Funetik Inggliš iz ureindžd with väwulz først, dhen [sonørint](https://en.wikipedia.org/wiki/Sonorant) kansunintz, änd dhen [abstrwint](https://en.wikipedia.org/wiki/Obstruent) kansunintz. Abstrwint kansunintz ar ureindžd in perz with dhu [voist](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) wun først.
 
 >*The alphabet for Phonetic English is arranged with vowels first, then [sonorant](https://en.wikipedia.org/wiki/Sonorant) consonants, and then [obstruent](https://en.wikipedia.org/wiki/Obstruent) consonants. Obstruent consonants are arranged in pairs with the [voiced](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) one first.*
 
@@ -88,6 +80,16 @@ AÄEOØIUYWLRMNBPVFGKDTZSŽŠH
 <strong>th</strong> as in <strong>th</strong>in *(<strong>th</strong>in)*  
 <strong>dž</strong> as in <strong>dž</strong>yr *(<strong>j</strong>eer)*  
 <strong>tš</strong> as in <strong>tš</strong>yr *(<strong>ch</strong>eer)*
+
+## [Speling änd Stäts *(Spelling and Stats)*](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383)
+
+Ai disaidid tw rywørk Umerikin Inggliš in u wei dhät iz kunsistint änd intwitiv. Only 4 letørz häv tšeindžd, änd meny wørdz' spelingz ar very similør. Uv u list uv 4353 kamin wørdz, [3064 funetik spelingz (70%) ar 3 or fywør tšándžiz uwei frum dhu trudišinul speling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)
+
+>*I decided to rework American English in a way that is consistent and intuitive. Only 4 letters have changed, and many words' spellings are very similar. Of a list of 4353 common words, [3064 funetik spellings (70%) are 3 or fewer changes away from the traditional spelling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)*
+
+Funetik Inggliš also meiks wørdz slaitly šortør an ävridž. In dhu 4353-wørd sämpul Ai ywzd, dhu ävridž wørd length (inklwding punkšøweišin) in Funetik Inggliš iz 6.24 keriktørz pør wørd, weräz trudišinul Inggliš iz 6.65 keriktørz pør wørd.
+
+>*Phonetic English also makes words slightly shorter on average. In the 4353-word sample I used, the average word length (including punctuation) in Phonetic English is 6.24 characters per word, whereas traditional English is 6.65 characters per word.*
 
 ## Wer ar C, J, Q, and X? *(Where are C, J, Q and X?)*
 
