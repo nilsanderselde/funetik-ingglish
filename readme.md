@@ -1,4 +1,4 @@
-![Kybord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/logo_medium.png)
+![Kybord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/logo-medium.png)
 
 # Funetik Inggliš *(Phonetic English)*
 
@@ -80,6 +80,8 @@ AÄEOØIUYWLRMNBPVFGKDTZSŽŠH
 <strong>th</strong> as in <strong>th</strong>in *(<strong>th</strong>in)*  
 <strong>dž</strong> as in <strong>dž</strong>yr *(<strong>j</strong>eer)*  
 <strong>tš</strong> as in <strong>tš</strong>yr *(<strong>ch</strong>eer)*
+
+![Älfubit Sang](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/älfubit-sang.png)
 
 ## [Speling änd Stäts *(Spelling and Stats)*](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383)
 
