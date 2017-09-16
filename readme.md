@@ -7,25 +7,21 @@
 
 ## Intrudukšin *(Introduction)*
 
-Äftør studying Späniš, Rušin, änd Finiš, I keim tw ryilaiz džust häw kamplikeitid änd käwntørintwitiv äwr älfubit änd speling sistim for Umerikin Inggliš iz.
+Äftør studying Linggwistiks, Späniš, Rušin, änd Finiš, I keim tw ryilaiz džust häw kamplikeitid änd käwntørintwitiv äwr älfubit änd speling sistim for Umerikin Inggliš iz. Tšildrin änd forin spykørz häv trubul disaiføring dhu labirinthyin änd arbitrery sistim uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz. Ai disaidid tw rywørk Umerikin Inggliš in u wei dhät iz kunsistint änd intwitiv.
 
->*After studying Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is.*
+>*After studying Linguistics, Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is. Children and foreign speakers have trouble decyphering the labyrinthian and arbitrary system of "rules" (which aren't really rules) and unnormalized foreign spellings. I decided to rework American English in a way that is consistent and intuitive. *
 
-Tšildrin änd forin spykørz uv Inggliž häv trubul disaiføring dhu labirinthyin änd arbitrery sistim uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz witsh stik äwt laik u sor thum.
+Nätšørul lengwidžiz ar al spokin or saind, weräz ritin "lenggwidž" iz džust [orthagrify](https://en.wikipedia.org/wiki/Orthography). Bai kryeiting u nw orthagrify, Ai'm nat äkšwuly tšendžing Inggliž itself ät al. 
 
->*Children and foreign speakers of English have trouble decyphering the labyrinthian and arbitrary system of "rules" (which aren't really rules) and unnormalized foreign spellings which stick out like a sore thumb.*
-
-Nätšørul lengwidžiz ar al spokin or saind. Ritin "lenggwidž" iz džust [orthagrify](https://en.wikipedia.org/wiki/Orthography). Bai kryeiting u nw orthagrify, Ai'm nat äkšwuly tšendžing Inggliž itself ät al. 
-
->*Natural languages are all spoken or signed. Written "language" is just [orthography](https://en.wikipedia.org/wiki/Orthography). By creating a new orthography, I'm not actually changing English itself at all.
+>*Natural languages are all spoken or signed, whereas written "language" is just [orthography](https://en.wikipedia.org/wiki/Orthography). By creating a new orthography, I'm not actually changing English itself at all.
 
 With dhis orthagrify, ekstru nalidž wødn't by rikwaird tw pik up u bøk änd ryd evry wørd kurektly.
 
 >*With this orthography, extra knowledge wouldn't be required to pick up a book and read every word correctly.*
 
-Dhis raiting sistim wød prabibly kryeit sum kunfywžin for nan-Umerikin Inggliš spykørz, so dhe ständørd orthagrify šød uv kórs kuntinyw tw by ywzd in u similør wei äz Lätin (äz u saiintifik ständørd), Madørn Ständørd Eribik (äs u go-bitwyn for difirint daiuleks), or Tšainyz keriktørz (äz simbulz tw džoin mywtšøwuly unintelidžibul lenggwidžiz).
+Dhis raiting sistim wød prabibly kryeit sum kunfywžin for nan-Umerikin Inggliš spykørz, so dhe ständørd orthagrify wød kuntinyw tw by ywzd in u similør wei äz Lätin (äz u saiintifik ständørd) or Tšainyz keriktørz (äz simbulz tw džoin mywtšøwuly unintelidžibul lenggwidžiz).
 
->*This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy should of course continue to be used in a similar way as Latin (as a scientific standard), Modern Standard Arabic (as a go-between for different dialects), or Chinese characters (as symbols to join mutually unintelligible languages).*
+>*This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy would continue to be used in a similar way as Latin (as a scientific standard) or Chinese characters (as symbols to join mutually unintelligible languages).*
 
 ## [Dhu Älfubit *(The Alphabet)*](https://docs.google.com/document/d/1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8/edit)
 
@@ -87,9 +83,9 @@ AÄEOØIUYWLRMNBPVFGKDTZSŽŠH
 
 ## [Speling änd Stäts *(Spelling and Stats)*](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383)
 
-Ai disaidid tw rywørk Umerikin Inggliš in u wei dhät iz kunsistint änd intwitiv. Only 4 letørz häv tšeindžd, änd meny wørdz' spelingz ar very similør. Uv u list uv 4353 kamin wørdz, [3065 funetik spelingz (70%) ar 3 or fywør tšeindžiz uwei frum dhu trudišinul speling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)
+Only 4 letørz häv tšeindžd, änd meny wørdz' spelingz ar very similør. Uv u list uv 4353 kamin wørdz, [3065 funetik spelingz (70%) ar 3 or fywør tšeindžiz uwei frum dhu trudišinul speling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)
 
->*I decided to rework American English in a way that is consistent and intuitive. Only 4 letters have changed, and many words' spellings are very similar. Of a list of 4353 common words, [3065 funetik spellings (70%) are 3 or fewer changes away from the traditional spelling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)*
+>*Only 4 letters have changed, and many words' spellings are very similar. Of a list of 4353 common words, [3065 funetik spellings (70%) are 3 or fewer changes away from the traditional spelling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)*
 
 Funetik Inggliš also meiks wørdz slaitly šortør an ävridž. In dhu 4353-wørd sämpul Ai ywzd, dhu ävridž wørd length (inklwding punkšøweišin) in Funetik Inggliš iz 6.24 keriktørz pør wørd, weräz in trudišinul Inggliš it's 6.65 keriktørz pør wørd.
 
@@ -100,7 +96,7 @@ Funetik Inggliš also meiks wørdz slaitly šortør an ävridž. In dhu 4353-wø
 C, Q änd X ar ridundint letørz:  
 * C iz aidhør K or S. 'Ch' iz u kambineišin uv T änd Š, so it's ritin äz 'tš'.
 * Q prity mutš only upyrz with U, änd säwndz laik 'kw', so 'kw' iz häw tw rait dhis in Funetik Inggliš. 
-* X iz 'ks', 'gz', ór dzhust 'z'
+* X iz 'ks', 'gz', or džust 'z'
 
 >*C, Q and X are redundant letters:*
 >* *C is either K or S. 'Ch' is a combination of T and Š, so it's written as 'tš'*.
