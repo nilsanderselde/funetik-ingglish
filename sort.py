@@ -3,7 +3,7 @@
 """Sort words in a text file by custom alphabetical order"""
 
 # Define order in which to sort words
-ALPHABET = {c: i for i, c in enumerate('aäeoøiuywlrmnbpvfgkdtzsžšh')}
+ALPHABET = {c: i for i, c in enumerate('\taäeoøiuywlrmnbpvfgkdtzsžšh')}
 
 # Load words_to_sort.txt as a string
 # Dictionary must separate word rows by new lines and values by tabs, including all 

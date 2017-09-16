@@ -87,9 +87,9 @@ AÄEOØIUYWLRMNBPVFGKDTZSŽŠH
 
 ## [Speling änd Stäts *(Spelling and Stats)*](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383)
 
-Ai disaidid tw rywørk Umerikin Inggliš in u wei dhät iz kunsistint änd intwitiv. Only 4 letørz häv tšeindžd, änd meny wørdz' spelingz ar very similør. Uv u list uv 4353 kamin wørdz, [3064 funetik spelingz (70%) ar 3 or fywør tšeindžiz uwei frum dhu trudišinul speling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)
+Ai disaidid tw rywørk Umerikin Inggliš in u wei dhät iz kunsistint änd intwitiv. Only 4 letørz häv tšeindžd, änd meny wørdz' spelingz ar very similør. Uv u list uv 4353 kamin wørdz, [3065 funetik spelingz (70%) ar 3 or fywør tšeindžiz uwei frum dhu trudišinul speling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)
 
->*I decided to rework American English in a way that is consistent and intuitive. Only 4 letters have changed, and many words' spellings are very similar. Of a list of 4353 common words, [3064 funetik spellings (70%) are 3 or fewer changes away from the traditional spelling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)*
+>*I decided to rework American English in a way that is consistent and intuitive. Only 4 letters have changed, and many words' spellings are very similar. Of a list of 4353 common words, [3065 funetik spellings (70%) are 3 or fewer changes away from the traditional spelling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)*
 
 Funetik Inggliš also meiks wørdz slaitly šortør an ävridž. In dhu 4353-wørd sämpul Ai ywzd, dhu ävridž wørd length (inklwding punkšøweišin) in Funetik Inggliš iz 6.24 keriktørz pør wørd, weräz in trudišinul Inggliš it's 6.65 keriktørz pør wørd.
 
