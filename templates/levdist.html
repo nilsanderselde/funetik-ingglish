@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>levdist results</title>
+    </head>
+    <body>
+        <table>
+            {{ range GetDistances }}
+                <tr>
+                    <td>{{index . 0}}</td>
+                    <td>{{index . 1}}</td>
+                    <td>{{index . 2}}</td>
+                </tr>
+            {{end}}
+        </table>
+    </body>
+</html>

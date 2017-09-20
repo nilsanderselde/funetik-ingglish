@@ -6,18 +6,18 @@ import nltk
 
 # Load words_for_distance.txt as a string
 # Dictionary must be in the form of [fonetik]\t[traditional]\n
-DICTIONARY_FILE = open('words_for_distance.txt', encoding='utf-8')
+DICTIONARY_FILE = open('C:/Users/Nils/Go/io/words_for_distance.txt', encoding='utf-8')
 DICTIONARY = DICTIONARY_FILE.readlines()
 
 # Open output file and write to it
-OUTPUT = open('out.txt', 'w', encoding='utf-8')
+OUTPUT = open('C:/Users/Nils/Go/io/output_from_distance.txt', 'w', encoding='utf-8')
 i = 0
 for line in DICTIONARY:
     # Split line into words on tab (since data comes from spreadsheet)
     words = line.split('\t')
     # Calculate the distance between the first word (fonetik) and second word
     # (traditional) with the newline character removed
-    distance = nltk.edit_distance(words[0], words[1].replace('\n', ''))
+    distance = nltk.edit_distance(words[0], words[1].replace('\n', ''), 1, True)
     # Write the words and the Levenshtein distance value into output file
     OUTPUT.write(''.join([line.replace('\n', ''), '\t', str(distance)]))
     # Avoid adding extra line at end of file
