@@ -1,4 +1,4 @@
-![Kybord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/logo-medium.png)
+![Kybord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/logo-medium.png)
 
 # Funetik Inggliš *(Phonetic English)*
 
@@ -79,7 +79,7 @@ AÄEOØIUYWLRMNBPVFGKDTZSŽŠH
 
 ### Älfubit Sang *(Alphabet Song)*
 
-![Älfubit Sang](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/älfubit-sang.png)
+![Älfubit Sang](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/älfubit-sang.png)
 
 ## [Speling änd Stäts *(Spelling and Stats)*](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383)
 
@@ -112,31 +112,31 @@ U kulekšin uv twlz dhät Ai häv ywzd tw wørk an dhis funetik orthagrify for I
 
 >*A collection of tools that I have used to work on this phonetic orthography for English.*
 
-### distance.py
+### levdist/main.go
 
-Requires [NLTK](http://www.nltk.org/). Calculates Levenshtein distance between phonetic and traditional spellings in words_for_distance.txt. Saves results in out.txt.
+Calculates Levenshtein distance between phonetic and traditional spellings.
 
-### sort.py
+### funetiksort/main.go
 
-Sorts words_to_sort.txt using the first character in each line according to the phonetic alphabet. Saves results in out.txt.
+Sorts list of words according to the phonetic alphabet.
 
-### runestats.go
+### runestats/main.go
 
-Counts all occurrences of phonetic alphabet letters in words_for_runestats.txt. Also counts word-initial occurrences. Saves results in out.txt.
+Counts all occurrences of phonetic alphabet letters in list of words. Also counts word-initial occurrences.
 
 ### funetik-inggliš-windows-keyboard-layout.zip
 
 Contains setup.exe, which installs the Inggliš (Funetik) keyboard layout for the English (United States) display language in Windows. Once installed, press Ctrl+Shift to switch between layouts.
 
-Also contains ingg-fun.klc, the keyboard layout file for [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339).
+Also contains ingfun.klc, the keyboard layout file for [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339).
 
 ## Kybord Leiäwt
 
-![Kybord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/keyboard.png)
+![Kybord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/keyboard.png)
 
-![Kybord with Shift prest](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/keyboard_shift.png)
+![Kybord with Shift prest](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/keyboard_shift.png)
 
-![Kybord with Caps Lock prest](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/keyboard_caps.png)
+![Kybord with Caps Lock prest](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/keyboard_caps.png)
 
 ## Laisinz *(License)*
 
