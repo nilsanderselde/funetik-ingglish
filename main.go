@@ -1,15 +1,5 @@
 package main
 
-// import (
-// 	"fmt"
-
-// 	"gitlab.com/nilsanderselde/funetik-ingglish/levdist"
-// )
-
-// func main() {
-// 	fmt.Println(levdist.EditDistance("at", "ta", 1, true))
-// }
-
 import (
 	"html/template"
 	"io/ioutil"
@@ -18,6 +8,7 @@ import (
 	"path/filepath"
 	"sync"
 
+	"gitlab.com/nilsanderselde/funetik-ingglish/funetiksort"
 	"gitlab.com/nilsanderselde/funetik-ingglish/levdist"
 	"gitlab.com/nilsanderselde/funetik-ingglish/runestats"
 )
@@ -33,6 +24,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	funcMap := template.FuncMap{
 		"GetStats":     runestats.GetStats,
 		"GetDistances": levdist.GetDistances,
+		"SortWords":    funetiksort.SortWords,
 	}
 
 	t.once.Do(func() {
@@ -50,6 +42,7 @@ func main() {
 	http.Handle("/", &templateHandler{filename: "menu.html"})
 	http.Handle("/runestats", &templateHandler{filename: "runestats.html"})
 	http.Handle("/levdist", &templateHandler{filename: "levdist.html"})
+	http.Handle("/funetiksort", &templateHandler{filename: "funetiksort.html"})
 
 	// start server
 	if err := http.ListenAndServe(":8080", nil); err != nil {
