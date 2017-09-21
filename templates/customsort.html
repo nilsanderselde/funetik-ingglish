@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>levdist results</title>
+    <title>customsort results</title>
     <link rel="stylesheet" href="/static/stylesheets/main.css">
 </head>
 
@@ -11,12 +11,14 @@
             <th>Funetik</th>
             <th>Trudišinul</th>
             <th>Distins</th>
+            <th>Part uv Spytš</th>
         </tr>
-        {{ range GetDistances }}
+        {{ range SortWords }}
         <tr>
             <td>{{index . 0}}</td>
             <td>{{index . 1}}</td>
             <td>{{index . 2}}</td>
+            <td>{{index . 3}}</td>
         </tr>
         {{end}}
     </table>

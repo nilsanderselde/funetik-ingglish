@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/funetiksort"
+	"gitlab.com/nilsanderselde/funetik-ingglish/customsort"
 	"gitlab.com/nilsanderselde/funetik-ingglish/levdist"
 	"gitlab.com/nilsanderselde/funetik-ingglish/runestats"
 )
@@ -24,7 +24,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	funcMap := template.FuncMap{
 		"GetStats":     runestats.GetStats,
 		"GetDistances": levdist.GetDistances,
-		"SortWords":    funetiksort.SortWords,
+		"SortWords":    customsort.SortWords,
 	}
 
 	t.once.Do(func() {
@@ -39,10 +39,11 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 	http.Handle("/", &templateHandler{filename: "menu.html"})
 	http.Handle("/runestats", &templateHandler{filename: "runestats.html"})
 	http.Handle("/levdist", &templateHandler{filename: "levdist.html"})
-	http.Handle("/funetiksort", &templateHandler{filename: "funetiksort.html"})
+	http.Handle("/customsort", &templateHandler{filename: "customsort.html"})
 
 	// start server
 	if err := http.ListenAndServe(":8080", nil); err != nil {

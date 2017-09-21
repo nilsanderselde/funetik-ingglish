@@ -83,7 +83,7 @@ AÄEOØIUYWLRMNBPVFGKDTZSŽŠH
 
 ## [Speling änd Stäts *(Spelling and Stats)*](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383)
 
-Only 4 letørz häv tšeindžd, änd meny wørdz' spelingz ar very similør. Uv u list uv 4353 kamin wørdz, [3065 funetik spelingz (70%) ar 3 or fywør tšeindžiz uwei frum dhu trudišinul speling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)
+Only 4 letørz häv tšeindžd (Q→Ä, J→Ø, X→Ž, C→Š), änd meny wørdz' spelingz ar very similør. Uv u list uv 4353 kamin wørdz, [3065 funetik spelingz (70%) ar 3 or fywør tšeindžiz uwei frum dhu trudišinul speling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)
 
 >*Only 4 letters have changed, and many words' spellings are very similar. Of a list of 4353 common words, [3065 funetik spellings (70%) are 3 or fewer changes away from the traditional spelling.](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=917066122)*
 
@@ -105,6 +105,24 @@ C, Q änd X ar ridundint letørz:
 
 J, dhu voist käwntørpart uv 'ch', iz ywzd ubäwt äz infrykwintly. It's ritin äz 'dž'.
 >*J, the voiced counterpart of 'ch', is used about as infrequently. It's written as 'dž'.*
+
+## Altørnit Spelingz *(Alternate Spellings)*
+
+Dhu 4 nw letoorz kaan also by ritin with daigraafs if yw kaan't taip dhu nw keriktoorz. Ai inishuly tshoz tw ywz digraafs laik dhyz, but in mai dzhudzhmint dhei meik dhu woordz dhzust u litul bit tw hard tw ryd.
+>*The 4 new letters can also be written with digraphs if you can't type the new characters. I initially chose to use digrafs like these, but in my judgment they make the words just a little bit too hard to read.*
+
+* ä → aa
+* ø → oo
+* ž → zh
+* š → sh
+
+Yw kqn also dxust ywz dhu uridxinul keriktjrz, but yw cjdn't dw dhis. It ljks bqd.
+>*You can also just use the original characters, but you shouldn't do this. It looks bad.*
+
+* ä → q
+* ø → j
+* ž → x
+* š → c
 
 ## Ubäwt dhis Ripazitory *(About this Repository)*
 

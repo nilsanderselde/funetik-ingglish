@@ -22,9 +22,9 @@ func GetStats() [][]string {
 	var wordInit = make(map[rune]int)
 
 	// Initialize maps
-	for _, k := range runes {
-		allRunes[k] = 0
-		wordInit[k] = 0
+	for _, r := range runes {
+		allRunes[r] = 0
+		wordInit[r] = 0
 	}
 
 	// Open file in which to count runes

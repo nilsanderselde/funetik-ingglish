@@ -1,16 +1,25 @@
 <html>
-    <head>
-        <title>runestats results</title>
-    </head>
-    <body>
-        <table>
-            {{ range GetStats }}
-                <tr>
-                    <td>{{index . 0}}</td>
-                    <td>{{index . 1}}</td>
-                    <td>{{index . 2}}</td>
-                </tr>
-            {{end}}
-        </table>
-    </body>
+
+<head>
+    <title>runestats results</title>
+    <link rel="stylesheet" href="/static/stylesheets/main.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Letør</th>
+            <th>Käwnt</th>
+            <th>Wørd-Inišul</th>
+        </tr>
+        {{ range GetStats }}
+        <tr>
+            <td>{{index . 0}}</td>
+            <td>{{index . 1}}</td>
+            <td>{{index . 2}}</td>
+        </tr>
+        {{end}}
+    </table>
+</body>
+
 </html>
