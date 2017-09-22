@@ -19,9 +19,9 @@ With dhis orthagrify, ekstru nalidž wødn't by rikwaird tw pik up u bøk änd r
 
 >*With this orthography, extra knowledge wouldn't be required to pick up a book and read every word correctly.*
 
-Dhis raiting sistim wød prabibly kryeit sum kunfywžin for nan-Umerikin Inggliš spykørz, so dhe ständørd orthagrify wød kuntinyw tw by ywzd in u similør wei äz Lätin (äz u saiintifik ständørd) or Tšainyz keriktørz (äz simbulz tw džoin mywtšøwuly unintelidžibul lenggwidžiz).
+Dhis raiting sistim wød prabibly kryeit sum kunfywžin for nan-Umerikin Inggliš spykørz, so dhe ständørd orthagrify kød kuntinyw tw by ywzd in u similør wei äz Lätin (äz u saiintifik ständørd) or Tšainyz keriktørz (äz simbulz tw džoin mywtšøwuly unintelidžibul lenggwidžiz).
 
->*This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy would continue to be used in a similar way as Latin (as a scientific standard) or Chinese characters (as symbols to join mutually unintelligible languages).*
+>*This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy could continue to be used in a similar way as Latin (as a scientific standard) or Chinese characters (as symbols to join mutually unintelligible languages).*
 
 ## [Dhu Älfubit *(The Alphabet)*](https://docs.google.com/document/d/1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8/edit)
 
