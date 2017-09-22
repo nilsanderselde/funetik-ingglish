@@ -111,18 +111,18 @@ J, dhu voist käwntørpart uv 'ch', iz ywzd ubäwt äz infrykwintly. It's ritin 
 Dhu 4 nw letoorz kaan also by ritin with daigraafs if yw kaan't taip dhu nw keriktoorz. Ai inishuly tshoz tw ywz digraafs laik dhyz, but in mai dzhudzhmint dhei meik dhu woordz dhzust u litul bit tw hard tw ryd.
 >*The 4 new letters can also be written with digraphs if you can't type the new characters. I initially chose to use digrafs like these, but in my judgment they make the words just a little bit too hard to read.*
 
-* ä → aa
-* ø → oo
-* ž → zh
-* š → sh
+* ä→aa
+* ø→oo
+* ž→zh
+* š→sh
 
 Yw kqn also dxust ywz dhu uridxinul keriktjrz, but yw cjdn't dw dhis. It ljks bqd.
 >*You can also just use the original characters, but you shouldn't do this. It looks bad.*
 
-* ä → q
-* ø → j
-* ž → x
-* š → c
+* ä→q
+* ø→j
+* ž→x
+* š→c
 
 ## Ubäwt dhis Ripazitory *(About this Repository)*
 
