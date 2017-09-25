@@ -25,25 +25,26 @@ Dhis raiting sistim wød prabibly kryeit sum kunfywžin for nan-Umerikin Inggli�
 
 ## [Dhu Älfubit *(The Alphabet)*](https://docs.google.com/document/d/1M5mRpCn1Qg0vGJbViTQkRUgCQC8SZaXUi_SXyodNPx8/edit)
 
+### Funetik Ordør *(Phonetic Order)*
+
 Dhu älfubit for Funetik Inggliš iz ureindžd with väwlz først, dhen [sonørint](https://en.wikipedia.org/wiki/Sonorant) kansunintz, änd dhen [abstrwint](https://en.wikipedia.org/wiki/Obstruent) kansunintz. Abstrwint kansunintz ar ureindžd in perz with dhu [voist](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) wun først.
 
 >*The alphabet for Phonetic English is arranged with vowels first, then [sonorant](https://en.wikipedia.org/wiki/Sonorant) consonants, and then [obstruent](https://en.wikipedia.org/wiki/Obstruent) consonants. Obstruent consonants are arranged in pairs with the [voiced](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) one first.*
 
 ```
-aäeoøiuywlrmnbpvfgkdtzsžšh
-
-AÄEOØIUYWLRMNBPVFGKDTZSŽŠH
-
+aäeiywuøolrmnbpvfgkdtzsžšh
+AÄEIYWUØOLRMNBPVFGKDTZSŽŠH
 ```
+
 <strong>a</strong> as in <strong>a</strong>t *(<strong>o</strong>ught)*  
 <strong>ä</strong> as in <strong>ä</strong>t *(<strong>a</strong>t)*  
 <strong>e</strong> as in <strong>e</strong>vry *(<strong>e</strong>very)*  
-<strong>o</strong> as in <strong>o</strong>nly *(<strong>o</strong>nly)*  
-<strong>ø</strong> as in w<strong>ø</strong>d *(w<strong>oul</strong>d, w<strong>oo</strong>d)*  
 <strong>i</strong> as in f<strong>i</strong>n *(f<strong>i</strong>n)*  
-<strong>u</strong> as in f<strong>u</strong>n *(f<strong>u</strong>n)*  
 <strong>y</strong> as in f<strong>y</strong>d *(f<strong>ee</strong>d)*  
 <strong>w</strong> as in f<strong>w</strong>d *(f<strong>oo</strong>d)*  
+<strong>u</strong> as in f<strong>u</strong>n *(f<strong>u</strong>n)*  
+<strong>ø</strong> as in w<strong>ø</strong>d *(w<strong>oul</strong>d, w<strong>oo</strong>d)*  
+<strong>o</strong> as in <strong>o</strong>nly *(<strong>o</strong>nly)*  
 <strong>l</strong> as in <strong>l</strong>o *(<strong>l</strong>ow)*  
 <strong>r</strong> as in <strong>r</strong>o *(<strong>r</strong>ow)*  
 <strong>m</strong> as in <strong>m</strong>äp *(<strong>m</strong>ap)*  
@@ -74,12 +75,30 @@ AÄEOØIUYWLRMNBPVFGKDTZSŽŠH
 <strong>ng</strong> as in stra<strong>ng</strong> *(stro<strong>ng</strong>)*  
 <strong>dh</strong> as in <strong>dh</strong>en *(<strong>th</strong>en)*  
 <strong>th</strong> as in <strong>th</strong>in *(<strong>th</strong>in)*  
-<strong>dž</strong> as in <strong>dž</strong>yr *(<strong>j</strong>eer)*  
-<strong>tš</strong> as in <strong>tš</strong>yr *(<strong>ch</strong>eer)*
+<strong>dž</strong> as in <strong>dž</strong>ir *(<strong>j</strong>eer)*  
+<strong>tš</strong> as in <strong>tš</strong>ir *(<strong>ch</strong>eer)*
 
 ### Älfubit Sang *(Alphabet Song)*
 
+aäbd
+efgh
+iklm
+noøp
+rsš
+tuv
+wy
+zž
+
 ![Älfubit Sang](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/älfubit-sang.png)
+
+### Trudišinul Ordør *(Traditional Order)*
+
+
+```
+aäbdefghiklmnoøprsštuvwyzž
+AÄBDEFGHIKLMNOØPRSŠTUVWYZŽ
+```
+
 
 ## [Speling änd Stäts *(Spelling and Stats)*](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383)
 
