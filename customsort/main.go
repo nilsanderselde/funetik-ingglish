@@ -79,14 +79,23 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 	return false
 }
 
-// SortWords sorts a list of words in custom alphabetical order
+// SortWords sorts a list of words
+//
 // It splits a tab-delimited text file into lines, and sorts by the
 // first word in each line (useful for dictionary/glossary/encyclopedia sorting)
 //
+// If param trud is false, custom alphabetical order is used
+// If param trud is true, traditional alphabetical order is used.
+func SortWords(trud bool) [][]string {
 
-func SortWords() [][]string {
-	// Letters in custom alphabetical order
-	letters = []rune("aäeoøiuywlrmnbpvfgkdtzsžšh")
+	var letters []rune
+	if trud {
+		// Letters in traditional alphabetical order
+		letters = []rune("aäbdefghiklmnoøprsštuvwyzž")
+	} else {
+		// Letters in custom alphabetical order
+		letters = []rune("aäeoøiuywlrmnbpvfgkdtzsžšh")
+	}
 
 	// Create map of all letters in order
 	alphabet = make(map[rune]int)
