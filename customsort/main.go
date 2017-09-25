@@ -7,6 +7,7 @@ package customsort
 
 import (
 	"bufio"
+	"fmt"
 	"log"
 	"os"
 	"sort"
@@ -86,16 +87,7 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 //
 // If param trud is false, custom alphabetical order is used
 // If param trud is true, traditional alphabetical order is used.
-func SortWords(trud bool) [][]string {
-
-	var letters []rune
-	if trud {
-		// Letters in traditional alphabetical order
-		letters = []rune("aäbdefghiklmnoøprsštuvwyzž")
-	} else {
-		// Letters in custom alphabetical order
-		letters = []rune("aäeoøiuywlrmnbpvfgkdtzsžšh")
-	}
+func SortWords(letters []rune) [][]string {
 
 	// Create map of all letters in order
 	alphabet = make(map[rune]int)
@@ -125,4 +117,37 @@ func SortWords(trud bool) [][]string {
 	}
 
 	return splitLines
+}
+
+// SortByDistance sorts a list of words by Levenshtein distance
+func SortByDistance() [][]string {
+	// Open file containing rows of words
+	file, err := os.Open("C:/Users/Nils/Go/io/words_to_sort.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	fmt.Println("file loaded")
+	var lines []string
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		// adds extra distance added for quick sorting (this will be eliminated when database is implemented)
+		lines = append(lines, strings.Split(scanner.Text(), "\t")[2]+"\t"+scanner.Text())
+	}
+	sort.Strings(lines)
+	fmt.Println("lines split; test: \n" + lines[0] + "\n" + lines[1] + "\n" + lines[2] + "\n")
+	// Return results as 2D array of strings, sorted by levenshtein distance
+	var splitLines [][]string
+	for i := 0; i < len(lines); i++ {
+		// removes extra distance added for quick sorting (this will be eliminated when database is implemented)
+		trimmedLine := strings.Split(lines[i], "\t")
+		// fmt.Printf("%s %s %s %s\n", trimmedLine[1], trimmedLine[2], trimmedLine[3], trimmedLine[4])
+		trimmedLine = []string{trimmedLine[1], trimmedLine[2], trimmedLine[3], trimmedLine[4]}
+		// fmt.Printf("%s %s %s %s\n", trimmedLine[0], trimmedLine[1], trimmedLine[2], trimmedLine[3])
+		splitLines = append(splitLines, trimmedLine)
+	}
+
+	return splitLines
+
 }
