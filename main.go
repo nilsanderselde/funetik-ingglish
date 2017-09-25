@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -18,6 +17,7 @@ type templateHandler struct {
 	templ    *template.Template
 	order    []rune
 	path     string
+	sortType string
 }
 
 // handle http request
@@ -30,25 +30,21 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		"SortByDistance": customsort.SortByDistance,
 	}
 
-	var sortType string
-
 	if t.path == "/customsort" {
 
-		if r.URL.Query()["fun"] != nil {
-			t.order = []rune("aäeiywuøolrmnbpvfgkdtzsžšh")
-			sortType = "customsort.html"
+		t.order = []rune("aäeiywuøolrmnbpvfgkdtzsžšh")
+		t.sortType = "customsort.html"
+
+		if r.URL.Query()["order"] != nil {
+			if r.URL.Query()["order"][0] == "trud" {
+				t.order = []rune("aäbdefghiklmnoøprsštuvwyzž")
+				t.sortType = "customsort.html"
+			} else if r.URL.Query()["order"][0] == "dist" {
+				t.sortType = "distsort.html"
+			}
 		}
 
-		if r.URL.Query()["trud"] != nil {
-			t.order = []rune("aäbdefghiklmnoøprsštuvwyzž")
-			sortType = "customsort.html"
-		}
-
-		if r.URL.Query()["dist"] != nil {
-			sortType = "distsort.html"
-		}
-
-		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(filepath.Join("templates", t.filename), filepath.Join("templates", sortType)))
+		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(filepath.Join("templates", t.filename), filepath.Join("templates", t.sortType)))
 
 	} else {
 		t.templ = template.Must(
@@ -57,7 +53,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 	// t.once.Do(func() { // do once prevents dynamic rendering of templates based on query string
 	// }
-	fmt.Println(string(t.order) + " " + r.URL.Path)
+	// fmt.Println(string(t.order) + " " + r.URL.Path)
 	t.templ.Execute(w, t.order)
 }
 

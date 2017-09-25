@@ -7,7 +7,6 @@ package customsort
 
 import (
 	"bufio"
-	"fmt"
 	"log"
 	"os"
 	"sort"
@@ -87,8 +86,6 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 //
 func SortWords(letters []rune) [][]string {
 
-	fmt.Println("INSIDE THE FUNCTION" + string(letters))
-
 	// Create map of all letters in order
 	alphabet = make(map[rune]int)
 	for index, r := range letters {
@@ -109,6 +106,7 @@ func SortWords(letters []rune) [][]string {
 		lines = append(lines, scanner.Text())
 	}
 	sort.Sort(CustomAlphabeticalOrder(lines))
+	// sort.Sort(sort.Reverse(CustomAlphabeticalOrder(lines))) // if it is reversed
 
 	// Return results as 2D array of strings, sorted by the first string in each subarray
 	var splitLines [][]string
@@ -135,6 +133,7 @@ func SortByDistance() [][]string {
 		lines = append(lines, strings.Split(scanner.Text(), "\t")[2]+"\t"+scanner.Text())
 	}
 	sort.Strings(lines)
+	// sort.Sort(sort.Reverse(sort.Strings(lines))) // if it is reversed ---DOESNT WORK
 
 	// Return results as 2D array of strings, sorted by levenshtein distance
 	var splitLines [][]string
