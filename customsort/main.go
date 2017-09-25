@@ -85,9 +85,9 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 // It splits a tab-delimited text file into lines, and sorts by the
 // first word in each line (useful for dictionary/glossary/encyclopedia sorting)
 //
-// If param trud is false, custom alphabetical order is used
-// If param trud is true, traditional alphabetical order is used.
 func SortWords(letters []rune) [][]string {
+
+	fmt.Println("INSIDE THE FUNCTION" + string(letters))
 
 	// Create map of all letters in order
 	alphabet = make(map[rune]int)
@@ -128,26 +128,21 @@ func SortByDistance() [][]string {
 	}
 	defer file.Close()
 
-	fmt.Println("file loaded")
 	var lines []string
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		// adds extra distance added for quick sorting (this will be eliminated when database is implemented)
+		// adds extra distance added for quick sorting
 		lines = append(lines, strings.Split(scanner.Text(), "\t")[2]+"\t"+scanner.Text())
 	}
 	sort.Strings(lines)
-	fmt.Println("lines split; test: \n" + lines[0] + "\n" + lines[1] + "\n" + lines[2] + "\n")
+
 	// Return results as 2D array of strings, sorted by levenshtein distance
 	var splitLines [][]string
 	for i := 0; i < len(lines); i++ {
-		// removes extra distance added for quick sorting (this will be eliminated when database is implemented)
+		// removes extra distance added for quick sorting
 		trimmedLine := strings.Split(lines[i], "\t")
-		// fmt.Printf("%s %s %s %s\n", trimmedLine[1], trimmedLine[2], trimmedLine[3], trimmedLine[4])
 		trimmedLine = []string{trimmedLine[1], trimmedLine[2], trimmedLine[3], trimmedLine[4]}
-		// fmt.Printf("%s %s %s %s\n", trimmedLine[0], trimmedLine[1], trimmedLine[2], trimmedLine[3])
 		splitLines = append(splitLines, trimmedLine)
 	}
-
 	return splitLines
-
 }

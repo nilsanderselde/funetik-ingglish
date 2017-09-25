@@ -6,3 +6,9 @@ th {
     user-select: none;
     cursor: default;
 }
+table {
+    width: 100%;
+}
+td {
+    width: 25%;
+}
