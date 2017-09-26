@@ -1,77 +1,123 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+html {
     background: #333;
     color: #eee;
+    background: url(../images/ulimpik-näšinul-park-2560w.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-nav, header{
+
+nav,
+header {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header {
     text-align: center;
     padding-bottom: 20px;
     width: 100%;
     max-width: 900px;
     margin: auto;
-    background: #222;
 }
+
 header img {
     width: 100%;
+    max-width: 400px;
     height: auto;
+    margin: auto;
+    display: block;
 }
+
+nav {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 nav li {
-    display: inline-block;
     padding: 0 20px;
 }
-table{
+
+table {
     margin: auto;
     padding: 10px;
 }
-td, th {
+
+td,
+th {
     padding: 5px 10px;
 }
-.wørdz {
-    width: 100%;
-    max-width: 900px;
-    border-collapse: collapse;
-    background: #eee;
-    color: black;
-}
-.wørdz th {
-    text-align: left;
+
+th {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.wørdz {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, .2);
+    color: black;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+    margin-bottom: 40px;
+}
+
+.thry td {
+    width: 33.333%;
+}
+
+.for td {
+    width: 25%;
+}
+
+.wørdz th {
+    text-align: left;
     cursor: default;
     background: #444;
-    border: 3px solid #eee;
+    /* border: 3px solid #eee; */
     color: #eee;
     font-weight: normal;
     line-height: 2em;
 }
-.wørdz td {
-    width: 25%;
-}
 
 .wørdz tr:nth-of-type(even) {
-    background: rgba(100,100,100,.1);
+    background: rgba(100, 100, 100, .1);
 }
+
 a {
     font-weight: bold;
     text-decoration: none;
 }
+
 a span {
     text-decoration: underline;
 }
-a:link, a:visited {
+
+a:link,
+a:visited {
     color: white;
 }
-a:hover, a:active {
+
+a:hover,
+a:active {
     color: yellowgreen;
 }
+
 nav a {
     font-size: 1.2rem;
     text-decoration: underline

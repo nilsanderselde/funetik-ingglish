@@ -24,6 +24,7 @@ type templateHandler struct {
 
 // handle http request
 func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+
 	// t.once.Do(func() {
 	funcMap := template.FuncMap{
 		"GetStats":       runestats.GetStats,
