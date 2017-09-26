@@ -11,10 +11,14 @@ import (
 	"os"
 	"sort"
 	"strings"
+
+	"gitlab.com/nilsanderselde/funetik-ingglish/params"
 )
 
-var letters []rune
-var alphabet map[rune]int
+var (
+	letters  []rune
+	alphabet []rune
+)
 
 // CustomAlphabeticalOrder is the alias for array of strings to be sorted
 type CustomAlphabeticalOrder []string
@@ -25,6 +29,15 @@ func (s CustomAlphabeticalOrder) Len() int {
 
 func (s CustomAlphabeticalOrder) Swap(i, j int) {
 	s[i], s[j] = s[j], s[i]
+}
+
+func findIndex(r rune) int {
+	for i := 0; i < len(alphabet); i++ {
+		if r == alphabet[i] {
+			return i
+		}
+	}
+	return -1
 }
 
 func (s CustomAlphabeticalOrder) Less(i, j int) bool {
@@ -48,9 +61,9 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 
 	for k := 0; k < minlength; k++ {
 		letter1 := []rune(strings.ToLower(string(word1)))[k]
-		letter1order := alphabet[letter1]
+		letter1order := findIndex(letter1)
 		letter2 := []rune(strings.ToLower(string(word2)))[k]
-		letter2order := alphabet[letter2]
+		letter2order := findIndex(letter2)
 
 		// fmt.Print(string(letter1) + ": " + strconv.Itoa(letter1order))
 		// fmt.Println("\t" + string(letter2) + ": " + strconv.Itoa(letter2order))
@@ -79,18 +92,20 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 	return false
 }
 
+// // Params encapsulates data to be passed to mapped functions
+// type Params struct {
+// 	Reverse bool
+// 	Order   []rune
+// }
+
 // SortWords sorts a list of words
 //
 // It splits a tab-delimited text file into lines, and sorts by the
 // first word in each line (useful for dictionary/glossary/encyclopedia sorting)
 //
-func SortWords(letters []rune) [][]string {
+func SortWords(args params.Params) [][]string {
 
-	// Create map of all letters in order
-	alphabet = make(map[rune]int)
-	for index, r := range letters {
-		alphabet[r] = index
-	}
+	alphabet = args.Order
 
 	// Open file containing rows of words
 	file, err := os.Open("C:/Users/Nils/Go/io/words_to_sort.txt")
@@ -105,20 +120,56 @@ func SortWords(letters []rune) [][]string {
 	for scanner.Scan() {
 		lines = append(lines, scanner.Text())
 	}
-	sort.Sort(CustomAlphabeticalOrder(lines))
-	// sort.Sort(sort.Reverse(CustomAlphabeticalOrder(lines))) // if it is reversed
+	if args.Reverse {
+		sort.Sort(sort.Reverse(CustomAlphabeticalOrder(lines)))
+	} else {
+		sort.Sort(CustomAlphabeticalOrder(lines))
+	}
 
 	// Return results as 2D array of strings, sorted by the first string in each subarray
 	var splitLines [][]string
 	for i := 0; i < len(lines); i++ {
 		splitLines = append(splitLines, strings.Split(lines[i], "\t"))
 	}
+	return splitLines
+}
 
+// SortByTrud sorts a list of words by the funetik spelling in pseudo-traditional order
+func SortByTrud(args params.Params) [][]string {
+
+	// Open file containing rows of words
+	file, err := os.Open("C:/Users/Nils/Go/io/words_to_sort.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer file.Close()
+
+	var lines []string
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		// adds extra traditional words added for quick sorting
+		lines = append(lines, strings.Split(scanner.Text(), "\t")[1]+"\t"+scanner.Text())
+	}
+	if args.Reverse {
+		sort.Sort(sort.Reverse(sort.StringSlice(lines)))
+	} else {
+		sort.Strings(lines)
+	}
+
+	// Return results as 2D array of strings, sorted by Levenshtein distance
+	var splitLines [][]string
+	for i := 0; i < len(lines); i++ {
+		// removes extra distance added for quick sorting
+		trimmedLine := strings.Split(lines[i], "\t")
+		trimmedLine = []string{trimmedLine[1], trimmedLine[2], trimmedLine[3], trimmedLine[4]}
+		splitLines = append(splitLines, trimmedLine)
+	}
 	return splitLines
 }
 
 // SortByDistance sorts a list of words by Levenshtein distance
-func SortByDistance() [][]string {
+func SortByDistance(args params.Params) [][]string {
+
 	// Open file containing rows of words
 	file, err := os.Open("C:/Users/Nils/Go/io/words_to_sort.txt")
 	if err != nil {
@@ -132,8 +183,11 @@ func SortByDistance() [][]string {
 		// adds extra distance added for quick sorting
 		lines = append(lines, strings.Split(scanner.Text(), "\t")[2]+"\t"+scanner.Text())
 	}
-	sort.Strings(lines)
-	// sort.Sort(sort.Reverse(sort.Strings(lines))) // if it is reversed ---DOESNT WORK
+	if args.Reverse {
+		sort.Sort(sort.Reverse(sort.StringSlice(lines)))
+	} else {
+		sort.Strings(lines)
+	}
 
 	// Return results as 2D array of strings, sorted by levenshtein distance
 	var splitLines [][]string

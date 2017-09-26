@@ -1,10 +1,10 @@
-{{ define "content" }}
-    {{ range SortByDistance }}
+{{define "wordsSorted"}}
+    {{range SortByDistance .}}
         <tr>
             <td>{{index . 0}}</td>
             <td>{{index . 1}}</td>
             <td>{{index . 2}}</td>
             <td>{{index . 3}}</td>
         </tr>
-    {{ end }}
-{{ end }}
+    {{end}}
+{{end}}

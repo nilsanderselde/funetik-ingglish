@@ -1,19 +1,12 @@
-<html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="/static/stylesheets/main.css">
-    <title>Funetik Inggliš</title>
-</head>
-
-<body>
+{{define "levdist.html"}}
+{{template "_header.html"}}
     <table>
         <tr>
             <th>Funetik</th>
             <th>Trudišinul</th>
             <th>Distins</th>
         </tr>
-        {{ range GetDistances }}
+        {{range GetDistances}}
         <tr>
             <td>{{index . 0}}</td>
             <td>{{index . 1}}</td>
@@ -21,6 +14,5 @@
         </tr>
         {{end}}
     </table>
-</body>
-
-</html>
+{{template "_footer.html"}}
+{{end}}

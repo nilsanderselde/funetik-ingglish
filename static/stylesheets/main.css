@@ -1,14 +1,78 @@
-th {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #eee;
+    font-size: 16px;
+}
+nav, header{
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: #222;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+table{
+    margin: auto;
+    padding: 10px;
+}
+td, th {
+    padding: 5px 10px;
+}
+.wørdz {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: #eee;
+    color: black;
+}
+.wørdz th {
     text-align: left;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+    background: #444;
+    border: 3px solid #eee;
+    color: #eee;
+    font-weight: normal;
+    line-height: 2em;
 }
-table {
-    width: 100%;
-}
-td {
+.wørdz td {
     width: 25%;
+}
+
+.wørdz tr:nth-of-type(even) {
+    background: rgba(100,100,100,.1);
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+a span {
+    text-decoration: underline;
+}
+a:link, a:visited {
+    color: white;
+}
+a:hover, a:active {
+    color: yellowgreen;
+}
+nav a {
+    font-size: 1.2rem;
+    text-decoration: underline
 }

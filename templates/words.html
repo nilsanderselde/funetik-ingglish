@@ -1,24 +1,48 @@
-{{ define "words.html" }}
-<html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="/static/stylesheets/main.css">
-    <title>Funetik Inggliš</title>
-</head>
-
-<body>
-
-    <table>
+{{define "words.html"}}
+{{template "_header.html"}}
+    
+    <table class="wørdz">
         <tr>
-            <th><a href="?order=fun">Funetik</a></th>
-            <th><a href="?order=trud">Trudišinul</a></th>
-            <th><a href="?order=dist">Distins</a></th>
-            <th>Part uv Spytš</th>
+            <th>
+                {{if .Fun}} {{if .Reverse}}
+                <a href="?sortby=fun&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span> 🡅</a>
+                {{else}}
+                <a href="?sortby=fun&order=desc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span> 🡇</a>
+                {{end}} {{else}}
+                <a href="?sortby=fun&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span></a>
+                {{end}} 
+                <br>
+                {{if .Altfun}} {{if .Reverse}}
+                <a href="?sortby=altfun&order=asc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Swdo-Trudišinul</span> 🡅</a>
+                {{else}}
+                <a href="?sortby=altfun&order=desc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Swdo-Trudišinul</span> 🡇</a>
+                {{end}} {{else}}
+                <a href="?sortby=altfun&order=asc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Swdo-Trudišinul</span></a>
+                {{end}}
+            </th>
+            <th>
+                {{if .Trud}} {{if .Reverse}}
+                <a href="?sortby=trud&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span> 🡅</a>
+                {{else}}
+                <a href="?sortby=trud&order=desc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span> 🡇</a>
+                {{end}} {{else}}
+                <a href="?sortby=trud&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span></a>
+                {{end}}
+            </th>
+            <th>
+                {{if .Dist}} {{if .Reverse}}
+                <a href="?sortby=dist&order=asc"><span>Distins</span> 🡅</a>
+                {{else}}
+                <a href="?sortby=dist&order=desc"><span>Distins</span> 🡇</a>
+                {{end}} {{else}}
+                <a href="?sortby=dist&order=asc"><span>Distins</span></a>
+                {{end}}
+            </th>
+            <th>
+                Part uv Spytš
+            </th>
         </tr>
-        {{ template "content" . }}
+        {{template "wordsSorted" .}}
     </table>
-</body>
-
-</html>
-{{ end }}
+{{template "_footer.html"}}
+{{end}}
