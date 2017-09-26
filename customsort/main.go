@@ -92,11 +92,52 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 	return false
 }
 
-// // Params encapsulates data to be passed to mapped functions
-// type Params struct {
-// 	Reverse bool
-// 	Order   []rune
-// }
+// CustomAlphabeticalOrder is the alias for array of strings to be sorted
+type IgnoreCaseTrudOrder []string
+
+func (s IgnoreCaseTrudOrder) Len() int {
+	return len(s)
+}
+
+func (s IgnoreCaseTrudOrder) Swap(i, j int) {
+	s[i], s[j] = s[j], s[i]
+}
+
+func (s IgnoreCaseTrudOrder) Less(i, j int) bool {
+
+	word1 := []rune(strings.Split(s[i], "\t")[0])
+	word2 := []rune(strings.Split(s[j], "\t")[0])
+	length1 := len(word1)
+	length2 := len(word2)
+
+	var minlength int
+	if length1 < length2 {
+		minlength = length1
+	} else if length1 > length2 {
+		minlength = length2
+	} else {
+		minlength = length1
+	}
+
+	for k := 0; k < minlength; k++ {
+		letter1 := []rune(strings.ToLower(string(word1)))[k]
+		letter2 := []rune(strings.ToLower(string(word2)))[k]
+
+		// if on last letter and word is the same so far, return true if first
+		// word is shorter
+		if k == minlength-1 {
+			if letter1 == letter2 {
+				return length1 < length2
+			}
+		}
+		if letter1 > letter2 {
+			return false
+		} else if letter1 < letter2 {
+			return true
+		}
+	}
+	return false
+}
 
 // SortWords sorts a list of words
 //
@@ -151,9 +192,9 @@ func SortByTrud(args params.Params) [][]string {
 		lines = append(lines, strings.Split(scanner.Text(), "\t")[1]+"\t"+scanner.Text())
 	}
 	if args.Reverse {
-		sort.Sort(sort.Reverse(sort.StringSlice(lines)))
+		sort.Sort(sort.Reverse(IgnoreCaseTrudOrder(lines)))
 	} else {
-		sort.Strings(lines)
+		sort.Sort(IgnoreCaseTrudOrder(lines))
 	}
 
 	// Return results as 2D array of strings, sorted by Levenshtein distance

@@ -74,6 +74,7 @@ th {
     max-width: 900px;
     border-collapse: collapse;
     background: rgba(255, 255, 255, .2);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(255, 255, 255, .4));
     color: black;
     box-shadow: 10px 10px 10px rgba(0,0,0,.05);
     margin-bottom: 40px;
