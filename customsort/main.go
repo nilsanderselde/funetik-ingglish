@@ -55,18 +55,11 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 	} else {
 		minlength = length1
 	}
-	// fmt.Print(string(word1) + ": " + strconv.Itoa(length1))
-	// fmt.Print("; " + string(word2) + ": " + strconv.Itoa(length2))
-	// fmt.Println("; minlength: " + strconv.Itoa(minlength))
-
 	for k := 0; k < minlength; k++ {
 		letter1 := []rune(strings.ToLower(string(word1)))[k]
 		letter1order := findIndex(letter1)
 		letter2 := []rune(strings.ToLower(string(word2)))[k]
 		letter2order := findIndex(letter2)
-
-		// fmt.Print(string(letter1) + ": " + strconv.Itoa(letter1order))
-		// fmt.Println("\t" + string(letter2) + ": " + strconv.Itoa(letter2order))
 
 		// if on last letter and word is the same so far, return true if first
 		// word is shorter
@@ -77,18 +70,11 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 		}
 
 		if letter1order > letter2order {
-			// fmt.Println(">> " + string(word1) + " is after " + string(word2))
-			// fmt.Println()
 			return false
 		} else if letter1order < letter2order {
-			// fmt.Println(">> " + string(word1) + " is before " + string(word2))
-			// fmt.Println()
 			return true
 		}
-
 	}
-	// fmt.Println(">> " + string(word1) + " is equal to " + string(word2))
-	// fmt.Println()
 	return false
 }
 
