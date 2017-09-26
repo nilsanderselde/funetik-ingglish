@@ -32,6 +32,8 @@ header img {
     height: auto;
     margin: auto;
     display: block;
+    position: relative;
+    top: 40px;
 }
 
 nav {
