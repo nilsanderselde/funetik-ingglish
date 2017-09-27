@@ -135,14 +135,6 @@ Dhu 4 nw letoorz kaan also by ritin with daigraafs if yw kaan't taip dhu nw keri
 * ž→zh
 * š→sh
 
-Yw kqn also dxust ywz dhu uridxinul keriktjrz, but yw cjdn't dw dhis. It ljks bqd.
->*You can also just use the original characters, but you shouldn't do this. It looks bad.*
-
-* ä→q
-* ø→j
-* ž→x
-* š→c
-
 ## Ubäwt dhis Ripazitory *(About this Repository)*
 
 U kulekšin uv twlz dhät Ai häv ywzd tw wørk an dhis funetik orthagrify for Inggliš.

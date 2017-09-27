@@ -31,7 +31,7 @@ func GetDistances() [][]string {
 		current := scanner.Text()
 		words := strings.Split(current, "\t")
 		distance := FindDistance([]rune(words[0]), []rune(words[1]), true)
-		results = append(results, []string{words[0], words[1], strconv.Itoa(distance)})
+		results = append(results, []string{ /*words[0]*/ "" /*words[1]*/, "", strconv.Itoa(distance)})
 	}
 	return results
 }
