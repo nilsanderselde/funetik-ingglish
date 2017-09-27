@@ -88,14 +88,23 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// })
 	// do once prevents dynamic rendering of templates based on query string
 	t.templ.Execute(w, t.args)
+}
 
+// Sets HTTP headers for handler passed to function
+func setHeaders(h http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// cache-control headers
+		w.Header().Set("Vary", "Accept-Encoding")
+		w.Header().Set("Cache-Control", "public, max-age=7776000")
+		h.ServeHTTP(w, r)
+	})
 }
 
 func main() {
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
-	http.Handle("/", &templateHandler{filename: "words.html", path: "/"})
-	http.Handle("/runestats", &templateHandler{filename: "runestats.html"})
-	http.Handle("/levdist", &templateHandler{filename: "levdist.html"})
+	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
+	http.Handle("/", setHeaders(&templateHandler{filename: "words.html", path: "/"}))
+	http.Handle("/runestats", setHeaders(&templateHandler{filename: "runestats.html"}))
+	http.Handle("/levdist", setHeaders(&templateHandler{filename: "levdist.html"}))
 
 	// start server
 	if err := http.ListenAndServe(":8080", nil); err != nil {

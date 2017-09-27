@@ -78,7 +78,7 @@ func (s CustomAlphabeticalOrder) Less(i, j int) bool {
 	return false
 }
 
-// CustomAlphabeticalOrder is the alias for array of strings to be sorted
+// IgnoreCaseTrudOrder is the type for an array of strings to be case insensitively sorted
 type IgnoreCaseTrudOrder []string
 
 func (s IgnoreCaseTrudOrder) Len() int {
