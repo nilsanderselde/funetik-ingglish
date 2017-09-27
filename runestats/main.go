@@ -58,44 +58,14 @@ func GetStats() [][]string {
 		log.Fatal(err)
 	}
 
-	// // Print counts for each rune
-	// for _, k := range runes {
-	// 	fmt.Print(string(k), "\t", allRunes[k], "\t", wordInit[k], "\r\n")
-	// }
-
-	// // Save counts for each rune to file
-
-	// f, err := os.Create("C:/Users/Nils/Go/io/output_from_runestats.txt")
-
-	// if err != nil {
-	// 	log.Fatal(f)
-	// }
-	// // check(err)
-
-	// defer f.Close()
-
 	results := make([][]string, len(runes))
 
 	for i, k := range runes {
-		results[i] = make([]string, 3)
+		results[i] = make([]string, 4)
 		results[i][0] = string(k)
 		results[i][1] = fmt.Sprintf("%d", allRunes[k])
 		results[i][2] = fmt.Sprintf("%d", wordInit[k])
-
-		// fmt.Sprintf("%s</td><td>%d</td><td>%d</td>", string(k), allRunes[k], wordInit[k])
+		results[i][3] = fmt.Sprintf("%.1f%%", float64(wordInit[k])/float64(allRunes[k])*100)
 	}
-
-	// for _, k := range results {
-	// 	fmt.Println(k)
-	// }
-
 	return results
-
-	// fmt.Println("Results saved in out.txt")
 }
-
-// func check(e error) {
-// 	if e != nil {
-// 		panic(e)
-// 	}
-// }

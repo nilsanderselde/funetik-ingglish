@@ -4,35 +4,34 @@
         <tr>
             <th>
                 {{if .Fun}} {{if .Reverse}}
-                <a href="?sortby=fun&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span> 🡇</a>
+                <a href="?sortby=fun&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span><i> 🡇</i></a>
                 {{else}}
-                <a href="?sortby=fun&order=desc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span> 🡅</a>
+                <a href="?sortby=fun&order=desc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span><i> 🡅</i></a>
                 {{end}} {{else}}
-                <a href="?sortby=fun&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span></a>
+                <a href="?sortby=fun&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span><i class="hide"> 🡅</i></a>
                 {{end}} 
-                <br>
                 {{if .Altfun}} {{if .Reverse}}
-                <a href="?sortby=altfun&order=asc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Swdo-Trudišinul</span> 🡇</a>
+                <a href="?sortby=altfun&order=asc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Alt</span><i> 🡇</i></a>
                 {{else}}
-                <a href="?sortby=altfun&order=desc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Swdo-Trudišinul</span> 🡅</a>
+                <a href="?sortby=altfun&order=desc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Alt</span><i> 🡅</i></a>
                 {{end}} {{else}}
-                <a href="?sortby=altfun&order=asc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Swdo-Trudišinul</span></a>
+                <a href="?sortby=altfun&order=asc" title="aäbdefghiklmnoøprsštuvwyzž"><span>Alt</span></a>
                 {{end}}
             </th>
             <th>
                 {{if .Trud}} {{if .Reverse}}
-                <a href="?sortby=trud&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span> 🡇</a>
+                <a href="?sortby=trud&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span><i> 🡇</i></a>
                 {{else}}
-                <a href="?sortby=trud&order=desc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span> 🡅</a>
+                <a href="?sortby=trud&order=desc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span><i> 🡅</i></a>
                 {{end}} {{else}}
                 <a href="?sortby=trud&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span></a>
                 {{end}}
             </th>
             <th>
                 {{if .Dist}} {{if .Reverse}}
-                <a href="?sortby=dist&order=asc"><span>Distins</span> 🡇</a>
+                <a href="?sortby=dist&order=asc"><span>Distins</span><i> 🡇</i></a>
                 {{else}}
-                <a href="?sortby=dist&order=desc"><span>Distins</span> 🡅</a>
+                <a href="?sortby=dist&order=desc"><span>Distins</span><i> 🡅</i></a>
                 {{end}} {{else}}
                 <a href="?sortby=dist&order=asc"><span>Distins</span></a>
                 {{end}}

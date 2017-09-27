@@ -1,16 +1,18 @@
 {{define "runestats.html"}}
 {{template "_header.html"}}
-    <table class="wørdz thry">
+    <table class="wørdz for">
         <tr>
             <th>Letør</th>
             <th>Käwnt</th>
-            <th>Wørd-Inišul</th>
+            <th>Først Letør</th>
+            <th>% Først Letør</th>
         </tr>
         {{range GetStats}}
         <tr>
             <td>{{index . 0}}</td>
             <td>{{index . 1}}</td>
             <td>{{index . 2}}</td>
+            <td>{{index . 3}}</td>
         </tr>
         {{end}}
     </table>
