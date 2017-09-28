@@ -1,14 +1,20 @@
 {{define "wordsSorted"}}
     {{range ShowWords .}}
         {{if eq (index . 0) "-1"}}
-        <tr class="no-results"><td colspan="4"><span><a href="\"><i>😂</i> nuthin hyr läl <i>🥝</i></a></span></td></tr>
+        <tr class="no-results"><td colspan="7"><span><a href="\"><i>😂</i> nuthin hyr läl <i>🥝</i></a></span></td></tr>
         {{else}}
 
             <tr>
-                <td>{{index . 0}}</td>
+                <td>
+                    <a href="edit?id={{index . 0}}" title="Edit dhis row">{{index . 0}}</a>
+                    <a href="flaag?id={{index . 0}}" title="Fläg dhis listing äz eronyis">{{if (index . 0)}}🏴{{else}}🏳️{{end}}</a>
+                </td>
                 <td>{{index . 1}}</td>
                 <td>{{index . 2}}</td>
                 <td>{{index . 3}}</td>
+                <td>{{index . 4}}</td>
+                <td>{{index . 5}}</td>
+                <td>{{index . 6}}</td>
             </tr>
             {{end}}
     {{end}}

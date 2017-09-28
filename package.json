@@ -1,0 +1,23 @@
+{
+  "name": "funetik-ingglish",
+  "version": "1.0.0",
+  "description": "funetik ingglish",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/nilsanderselde/funetik-ingglish.git"
+  },
+  "author": "Nils Anders Elde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/nilsanderselde/funetik-ingglish/issues"
+  },
+  "homepage": "https://gitlab.com/nilsanderselde/funetik-ingglish#README",
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^3.0.0",
+    "webpack": "^3.6.0"
+  }
+}

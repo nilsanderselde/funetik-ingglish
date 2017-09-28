@@ -25,7 +25,7 @@ type templateHandler struct {
 
 const (
 	// DefaultNum is default number of words per page
-	DefaultNum int = 50
+	DefaultNum int = 20
 )
 
 // handle http request
@@ -40,62 +40,71 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if t.path == "/" {
+		// reset prev page to force handler to recreate it if needed
 		t.args.PreviousPage = ""
-		// t.args.NextPage = ""
-		t.args.New = true
-		t.args.Old = false
-		t.args.Dist = false
-		t.args.Reverse = false
-		t.args.CurrentPage = "?sortby=new"
 
+		// default for asc/desc column headers in template
+		// t.args.Reverse = false
+
+		// if there is a sortby value
 		if r.URL.Query()["sortby"] != nil {
-			if r.URL.Query()["sortby"][0] == "old" {
-				t.args.New = false
-				t.args.Old = true
-				t.args.CurrentPage = "?sortby=old"
-
-				if r.URL.Query()["order"] != nil {
-					if r.URL.Query()["order"][0] == "desc" {
-						t.args.Query += " ORDER BY old DESC;"
-						t.args.Reverse = true
-					} else {
-						t.args.Query += " ORDER BY old ASC;"
-					}
-				} else {
-					t.args.Query += " ORDER BY old ASC;"
-				}
-
-			} else if r.URL.Query()["sortby"][0] == "dist" {
-				t.args.New = false
-				t.args.Dist = true
-				t.args.CurrentPage = "?sortby=dist"
-
-				if r.URL.Query()["order"] != nil {
-					if r.URL.Query()["order"][0] == "desc" {
-						t.args.Query += " ORDER BY dist DESC;"
-						t.args.Reverse = true
-					} else {
-						t.args.Query += " ORDER BY dist ASC;"
-					}
-				} else {
-					t.args.Query += " ORDER BY dist ASC;"
-				}
-			} else if r.URL.Query()["order"] != nil {
-				if r.URL.Query()["order"][0] == "desc" {
-					t.args.Query += " ORDER BY words.funsort DESC;"
+			// if it's set to sort by "new"
+			if r.URL.Query()["sortby"][0] == "new" {
+				t.args.New = true
+				t.args.Old = false
+				t.args.Dist = false
+				t.args.CurrentPage = "?sortby=new"
+				t.args.Query += " ORDER BY funsort"
+				if r.URL.Query()["order"] != nil && r.URL.Query()["order"][0] == "desc" {
+					t.args.Query += " DESC;"
+					t.args.CurrentPage += "&order=desc"
 					t.args.Reverse = true
 				} else {
-					t.args.Query += " ORDER BY words.funsort ASC;"
+					t.args.Query += " ASC;"
+					t.args.CurrentPage += "&order=asc"
+					t.args.Reverse = false
+				}
+				// if it's set to sort by "old"
+			} else if r.URL.Query()["sortby"][0] == "old" {
+				t.args.New = false
+				t.args.Old = true
+				t.args.Dist = false
+				t.args.CurrentPage = "?sortby=old"
+				t.args.Query += " ORDER BY trud"
+				if r.URL.Query()["order"] != nil && r.URL.Query()["order"][0] == "desc" {
+					t.args.Query += " DESC;"
+					t.args.CurrentPage += "&order=desc"
+					t.args.Reverse = true
+				} else {
+					t.args.Query += " ASC;"
+					t.args.CurrentPage += "&order=asc"
+					t.args.Reverse = false
+				}
+				// if it's set to sort by "dist"
+			} else if r.URL.Query()["sortby"][0] == "dist" {
+				t.args.New = false
+				t.args.Old = false
+				t.args.Dist = true
+				t.args.CurrentPage = "?sortby=dist"
+				t.args.Query += " ORDER BY dist"
+				if r.URL.Query()["order"] != nil && r.URL.Query()["order"][0] == "desc" {
+					t.args.Query += " DESC;"
+					t.args.CurrentPage += "&order=desc"
+					t.args.Reverse = true
+				} else {
+					t.args.Query += " ASC;"
+					t.args.CurrentPage += "&order=asc"
+					t.args.Reverse = false
 				}
 			}
-			if r.URL.Query()["order"][0] == "desc" {
-				t.args.CurrentPage += "&order=desc"
-			} else {
-				t.args.CurrentPage += "&order=asc"
-			}
-
 		} else {
-			t.args.Query += ";"
+			// default values: sort by new spelling, ascending, starting at zero, incrementing by DefaultNum
+			t.args.New = true
+			t.args.Old = false
+			t.args.Dist = false
+			t.args.CurrentPage = "?sortby=new&order=asc"
+			t.args.Reverse = false
+			t.args.Query += " ORDER BY funsort ASC;"
 		}
 		// if there is a valid "num" query string
 		if r.URL.Query()["num"] != nil {
@@ -195,15 +204,23 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.Handle("/", &templateHandler{filename: "words.html", path: "/",
-		query: `SELECT COALESCE(words.ritin, words.fun) as new,
-				words.funsil,
-				words.trud as old,
-				words.pus,
-				words.numsil,
-				words.dist,
-				words.funsort`,
-		queryFrom: ` FROM words
-					WHERE words.kamin = true`},
+		query: `
+SELECT
+	id,
+    COALESCE(fun, ''),
+    COALESCE(funsil, ''),
+    COALESCE(trud, ''),
+    COALESCE(pus, ''),
+    COALESCE(numsil, '0'),
+    COALESCE(dist, '0'),
+    COALESCE(funsort, '')`,
+		queryFrom: `
+FROM words
+	`},
+	/* SQL scratch area
+	COALESCE(COALESCE(ritin, fun), '') as new,
+	WHERE kamin = true
+	*/
 	)
 	http.HandleFunc("/favicon.ico", faviconHandler)
 	http.Handle("/runestats", &templateHandler{filename: "runestats.html"})

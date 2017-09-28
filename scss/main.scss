@@ -1,0 +1,310 @@
+html {
+    background: #333;
+    color: #eee;
+    background: url(../images/ulimpik-näšinul-park-2560w.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  
+  nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  header {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: auto;
+      display: block;
+      position: relative;
+      top: 40px;
+      z-index: -1;
+    }
+  }
+  
+  nav {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      padding: 0 20px;
+      display: inline-block;
+    }
+  }
+  
+  table {
+    margin: auto;
+    padding: 10px;
+  }
+  
+  td {
+    padding: 5px 10px;
+  }
+  
+  th {
+    padding: 5px 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .wørdz {
+    width: 80%;
+    /* max-width: 900px; */
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 50vh, rgba(255, 255, 255, 0.6) 100vh);
+    background-attachment: fixed;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.2);
+    margin-bottom: 20px;
+    font-size: .8em;
+  }
+  
+  .thry td {
+    width: 33.333%;
+  }
+  
+  .wørdz {
+    td {
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    th {
+      text-align: left;
+      cursor: default;
+      background: #444;
+      color: #eee;
+      line-height: 2em;
+      border-right: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    td:nth-of-type(1) a:nth-of-type(2) {
+      float: right;
+    }
+  }
+  
+  #id {
+    width: 10%;
+  }
+  
+  #nw, #pru, #old {
+    width: 20%;
+  }
+  
+  #dist, #pus, #sil {
+    width: 10%;
+  }
+  
+  .wørdz tr:nth-of-type(even) {
+    background: rgba(100, 100, 100, 0.1);
+  }
+  
+  a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .wørdz th {
+    white-space: nowrap;
+    a {
+      span {
+        text-decoration: underline;
+      }
+      &:link, &:visited {
+        color: #eee;
+      }
+      &:hover, &:active {
+        color: #7BA9E0;
+      }
+    }
+  }
+  
+  nav a {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+    transition: all .15s linear;
+  }
+  
+  a {
+    &:link, &:visited {
+      color: #333;
+    }
+    &:hover, &:active {
+      color: #333;
+      text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+    }
+  }
+  
+  nav {
+    li {
+      &:nth-of-type(1) a {
+        &:hover, &:active {
+          text-shadow: -6px 3px 6px rgba(97, 164, 241, 0.67);
+        }
+      }
+      &:nth-of-type(3) a {
+        &:hover, &:active {
+          text-shadow: 6px 3px 6px rgba(97, 164, 241, 0.67);
+        }
+      }
+    }
+    &.bottom {
+      ul {
+        cursor: default;
+        font-size: 1.5em;
+      }
+      li {
+        padding: 0 2px;
+      }
+      a {
+        &:link, &:visited {
+          color: #eee;
+        }
+        &.back {
+          &:hover, &:active {
+            color: #eee;
+            text-shadow: -6px 3px 6px rgba(255, 255, 255, 0.6);
+          }
+        }
+        &.next {
+          &:hover, &:active {
+            color: #eee;
+            text-shadow: 6px 3px 6px rgba(255, 255, 255, 0.6);
+          }
+        }
+      }
+      i {
+        position: relative;
+        top: -.2em;
+      }
+    }
+  }
+  
+  i {
+    font-style: normal;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .no-results {
+    td {
+      text-align: left;
+      font-size: 3rem;
+      font-weight: bold;
+      height: 600px;
+      position: relative;
+    }
+    background: transparent !important;
+    span {
+      -webkit-animation: spin 18s infinite;
+      -moz-animation: spin 18s infinite;
+      animation: spin 18s infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      margin: -30px 0 0 -250px;
+      text-align: center;
+      &:hover {
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
+      }
+    }
+    i {
+      position: relative;
+      display: inline-block;
+      /* width: 500px; */
+    }
+    a {
+      &:link, &:visited {
+        color: #333;
+      }
+      &:hover, &:active {
+        color: #333;
+        text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+      }
+    }
+    i {
+      &:nth-of-type(1) {
+        left: 0;
+      }
+      &:nth-of-type(2) {
+        right: 0;
+      }
+      -webkit-animation: spin2 8s infinite;
+      -moz-animation: spin2 8s infinite;
+      animation: spin2 8s infinite;
+      position: absolute;
+    }
+  }
+  
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  
+  
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  @-moz-keyframes spin2 {
+    100% {
+      -moz-transform: rotate(-360deg);
+    }
+  }
+  
+  
+  @-webkit-keyframes spin2 {
+    100% {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+  
+  
+  @keyframes spin2 {
+    100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }

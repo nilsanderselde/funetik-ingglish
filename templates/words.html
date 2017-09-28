@@ -1,48 +1,40 @@
 {{define "words.html"}}
 {{template "_header.html"}}
-<table class="wørdz for">
+<table class="wørdz">
     <tr>
-        <th>
-            {{if .New}} {{if .Reverse}}
-            <a href="?sortby=new&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span><i> 🡇</i></a>
-            {{else}}
-            <a href="?sortby=new&order=desc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span><i> 🡅</i></a>
-            {{end}} {{else}}
-            <a href="?sortby=new&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span><i></i></a>
-            {{end}} 
+        <th id="id">
+            ID
         </th>
-        <th>
-            {{if .Old}} {{if .Reverse}}
-            <a href="?sortby=old&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span><i> 🡇</i></a>
-            {{else}}
-            <a href="?sortby=old&order=desc" title="abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span><i> 🡅</i></a>
-            {{end}} {{else}}
-            <a href="?sortby=old&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span></a>
-            {{end}}
+        <th id="nw">
+            <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Keriktør ordør: 
+aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span>{{if .New}}<i>{{if .Reverse}} 🡇{{else}} 🡅{{end}}</i>{{end}}</a>
         </th>
-        <th>
-            {{if .Dist}} {{if .Reverse}}
-            <a href="?sortby=dist&order=asc"><span>Distins</span><i> 🡇</i></a>
-            {{else}}
-            <a href="?sortby=dist&order=desc"><span>Distins</span><i> 🡅</i></a>
-            {{end}} {{else}}
-            <a href="?sortby=dist&order=asc"><span>Distins</span></a>
-            {{end}}
+        <th id="pru">
+            ·Pruˌnun·syˈei·šin
         </th>
-        <th>
+        <th id="old">
+            <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Keriktør ordør: 
+abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span>{{if .Old}}<i>{{if .Reverse}} 🡇{{else}} 🡅{{end}}</i>{{end}}</a>
+        </th>
+        <th id="dist">
+            <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Minimum numbør uv tšendžiz  
+tw get frum old tw nw speling"><span>Distins</span>{{if .Dist}}<i>{{if .Reverse}} 🡇{{else}} 🡅{{end}}</i>{{end}}</a>
+        </th>
+        <th id="pus">
             Part uv Spytš
+        </th>
+        <th id="sil">
+            Silubuls
         </th>
     </tr>
     {{template "wordsSorted" .}}
 </table>
 <nav class="bottom">
     <ul>
-        
-        <li{{if not .PreviousPage}} class="hidden"{{end}}><a href="{{if .PreviousPage}}{{.PreviousPage}}{{else}}#{{end}}">Previous Page</a></li>
-        
-        <li{{if not .NextPage}} class="hidden"{{end}}><a href="{{if .NextPage}}{{.NextPage}}{{else}}#{{end}}">Next Page</a></li>
+        {{if .PreviousPage}}<li><a href="{{.PreviousPage}}" class="back"><i>👈🏻</i> Back</a></li>{{end}}
+        {{if and .PreviousPage .NextPage}}<li>&bull;</li>{{end}}
+        {{if .NextPage}}<li><a href="{{.NextPage}}" class="next">Next <i>👉🏻</i></a></li>{{end}}
     </ul>
 </nav>
-
 {{template "_footer.html"}}
 {{end}}
