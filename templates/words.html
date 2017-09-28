@@ -1,39 +1,48 @@
 {{define "words.html"}}
 {{template "_header.html"}}
-    <table class="wørdz for">
-        <tr>
-            <th>
-                {{if .Fun}} {{if .Reverse}}
-                <a href="?sortby=fun&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span><i> 🡇</i></a>
-                {{else}}
-                <a href="?sortby=fun&order=desc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span><i> 🡅</i></a>
-                {{end}} {{else}}
-                <a href="?sortby=fun&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Funetik</span><i> 🡅</i></a>
-                {{end}} 
-            </th>
-            <th>
-                {{if .Trud}} {{if .Reverse}}
-                <a href="?sortby=trud&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span><i> 🡇</i></a>
-                {{else}}
-                <a href="?sortby=trud&order=desc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span><i> 🡅</i></a>
-                {{end}} {{else}}
-                <a href="?sortby=trud&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Trudišinul</span></a>
-                {{end}}
-            </th>
-            <th>
-                {{if .Dist}} {{if .Reverse}}
-                <a href="?sortby=dist&order=asc"><span>Distins</span><i> 🡇</i></a>
-                {{else}}
-                <a href="?sortby=dist&order=desc"><span>Distins</span><i> 🡅</i></a>
-                {{end}} {{else}}
-                <a href="?sortby=dist&order=asc"><span>Distins</span></a>
-                {{end}}
-            </th>
-            <th>
-                Part uv Spytš
-            </th>
-        </tr>
-        {{template "wordsSorted" .}}
-    </table>
+<table class="wørdz for">
+    <tr>
+        <th>
+            {{if .New}} {{if .Reverse}}
+            <a href="?sortby=new&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span><i> 🡇</i></a>
+            {{else}}
+            <a href="?sortby=new&order=desc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span><i> 🡅</i></a>
+            {{end}} {{else}}
+            <a href="?sortby=new&order=asc" title="aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span><i></i></a>
+            {{end}} 
+        </th>
+        <th>
+            {{if .Old}} {{if .Reverse}}
+            <a href="?sortby=old&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span><i> 🡇</i></a>
+            {{else}}
+            <a href="?sortby=old&order=desc" title="abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span><i> 🡅</i></a>
+            {{end}} {{else}}
+            <a href="?sortby=old&order=asc" title="abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span></a>
+            {{end}}
+        </th>
+        <th>
+            {{if .Dist}} {{if .Reverse}}
+            <a href="?sortby=dist&order=asc"><span>Distins</span><i> 🡇</i></a>
+            {{else}}
+            <a href="?sortby=dist&order=desc"><span>Distins</span><i> 🡅</i></a>
+            {{end}} {{else}}
+            <a href="?sortby=dist&order=asc"><span>Distins</span></a>
+            {{end}}
+        </th>
+        <th>
+            Part uv Spytš
+        </th>
+    </tr>
+    {{template "wordsSorted" .}}
+</table>
+<nav class="bottom">
+    <ul>
+        
+        <li{{if not .PreviousPage}} class="hidden"{{end}}><a href="{{if .PreviousPage}}{{.PreviousPage}}{{else}}#{{end}}">Previous Page</a></li>
+        
+        <li{{if not .NextPage}} class="hidden"{{end}}><a href="{{if .NextPage}}{{.NextPage}}{{else}}#{{end}}">Next Page</a></li>
+    </ul>
+</nav>
+
 {{template "_footer.html"}}
 {{end}}
