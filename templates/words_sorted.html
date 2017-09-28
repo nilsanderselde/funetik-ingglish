@@ -1,0 +1,15 @@
+{{define "wordsSorted"}}
+    {{range ShowWords .}}
+        {{if eq (index . 0) "-1"}}
+        <tr class="no-results"><td colspan="4"><span><a href="\"><i>😂</i> nuthin hyr läl <i>🥝</i></a></span></td></tr>
+        {{else}}
+
+            <tr>
+                <td>{{index . 0}}</td>
+                <td>{{index . 1}}</td>
+                <td>{{index . 2}}</td>
+                <td>{{index . 3}}</td>
+            </tr>
+            {{end}}
+    {{end}}
+{{end}}

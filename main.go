@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -22,7 +21,6 @@ type templateHandler struct {
 	query     string
 	queryFrom string
 	args      params.Params
-	sortBy    string // template filename fragment
 }
 
 const (
@@ -42,7 +40,8 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if t.path == "/" {
-		t.sortBy = "words_sort_new.html"
+		t.args.PreviousPage = ""
+		// t.args.NextPage = ""
 		t.args.New = true
 		t.args.Old = false
 		t.args.Dist = false
@@ -53,7 +52,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			if r.URL.Query()["sortby"][0] == "old" {
 				t.args.New = false
 				t.args.Old = true
-				t.sortBy = "words_sort_old.html"
 				t.args.CurrentPage = "?sortby=old"
 
 				if r.URL.Query()["order"] != nil {
@@ -70,7 +68,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			} else if r.URL.Query()["sortby"][0] == "dist" {
 				t.args.New = false
 				t.args.Dist = true
-				t.sortBy = "words_sort_dist.html"
 				t.args.CurrentPage = "?sortby=dist"
 
 				if r.URL.Query()["order"] != nil {
@@ -137,12 +134,13 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 					t.args.PreviousPage += "&start=" + strconv.Itoa(currStart-currNum)
 					// PreviousPage will be nil on first page of results
 				} else {
-					t.args.PreviousPage = ""
+
 				}
 			} else { // if there isn't a valid start query string, set the starting
 				// position to 0 in both the template's args and query string
 				t.args.Start = 0
 				t.args.NextPage += "&start=" + strconv.Itoa(0+DefaultNum)
+				t.args.PreviousPage = ""
 			}
 		} else { // if missing a valid "num" query string
 			// set everything to defaults (start at 0, DefaultNum words per page)
@@ -155,7 +153,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		// join the template files for the wordlist
 		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
 			filepath.Join("templates", t.filename),
-			filepath.Join("templates", t.sortBy),
+			filepath.Join("templates", "words_sorted.html"),
 			filepath.Join("templates", "_header.html"),
 			filepath.Join("templates", "_footer.html"),
 		))
@@ -167,21 +165,15 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		))
 	}
 	// see if next page button should be hidden before fetching rows
-	fmt.Println("\nNext page query" + t.args.NextPage)
 	numrows := dbconnect.CountRows(t.queryFrom)
-	fmt.Print(numrows)
-	fmt.Print(" <= ")
-	fmt.Print(t.args.Start)
-	fmt.Println("?")
 	// if total number of rows is less than or equal to the number the next page would start on,
 	//	 dont show a next page link.
 	if numrows < t.args.Start+t.args.Num {
 		t.args.NextPage = ""
-		fmt.Println("yeah, dont show link")
-	} else {
-		fmt.Println("nope")
 	}
-	fmt.Println("Next page query" + t.args.NextPage)
+	if numrows < t.args.Start {
+		t.args.PreviousPage = ""
+	}
 
 	t.templ.Execute(w, t.args)
 }

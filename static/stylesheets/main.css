@@ -20,7 +20,8 @@ header {
     padding-bottom: 20px;
     width: 100%;
     max-width: 900px;
-    margin: auto;}
+    margin: auto;
+}
 
 header img {
     width: 100%;
@@ -167,3 +168,105 @@ i {
 .hidden {
     visibility: hidden;
 }
+
+.no-results td {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 600px;
+    position: relative;
+}
+
+.no-results {
+    background: transparent !important;
+}
+
+.no-results span {
+    -webkit-animation: spin 18s infinite;
+    -moz-animation: spin 18s infinite;
+    animation: spin 18s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    margin: -70px 0 0 -250px;
+    text-align: center;
+    /* display: block; */
+
+}
+
+.no-results span:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.no-results a {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+}
+
+.no-results a:link,
+.no-results a:visited {
+    color: #333;
+}
+
+.no-results a:hover,
+.no-results a:active {
+    color: #333;
+    text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+
+}
+.no-results i:nth-of-type(1){
+    left: 0;
+}
+.no-results i:nth-of-type(2){
+    right: 0;
+}
+.no-results i {
+    -webkit-animation: spin2 8s infinite;
+    -moz-animation: spin2 8s infinite;
+    animation: spin2 8s infinite;
+    position: absolute;
+    /* display: inline-block; */
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin2 {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin2 {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin2 {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
