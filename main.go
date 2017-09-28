@@ -1,12 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
 	"path/filepath"
 	"strconv"
 
+	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
 	"gitlab.com/nilsanderselde/funetik-ingglish/levdist"
 	"gitlab.com/nilsanderselde/funetik-ingglish/params"
 	"gitlab.com/nilsanderselde/funetik-ingglish/runestats"
@@ -98,60 +100,88 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		} else {
 			t.args.Query += ";"
 		}
+		// if there is a valid "num" query string
 		if r.URL.Query()["num"] != nil {
+
+			// get the current value of it
 			currNum, err := strconv.Atoi(r.URL.Query()["num"][0])
 			if err != nil {
 				log.Fatal(err)
 			}
+
+			// set the template's args object's value to it
 			t.args.Num = currNum
+
+			// create the next page query string for the "next page" link
 			t.args.NextPage = t.args.CurrentPage + "&num=" + strconv.Itoa(currNum)
 
+			// if there is a valid "start" query string
 			if r.URL.Query()["start"] != nil {
+
+				// get the current value of it
 				currStart, err := strconv.Atoi(r.URL.Query()["start"][0])
 				if err != nil {
 					log.Fatal(err)
 				}
+
+				// set the template's args object's value to it
 				t.args.Start = currStart
+
+				// add to the next page query string
 				t.args.NextPage += "&start=" + strconv.Itoa(currStart+currNum)
+
+				// if the current starting number is creater than or equal to the
+				// number of words per page, add a previous page button
 				if currStart >= currNum {
-					// PreviousPage will be nil on first page of results
 					t.args.PreviousPage = t.args.CurrentPage + "&num=" + strconv.Itoa(currNum)
 					t.args.PreviousPage += "&start=" + strconv.Itoa(currStart-currNum)
+					// PreviousPage will be nil on first page of results
 				} else {
 					t.args.PreviousPage = ""
 				}
-
-				if err != nil {
-					log.Fatal(err)
-				}
-			} else {
+			} else { // if there isn't a valid start query string, set the starting
+				// position to 0 in both the template's args and query string
 				t.args.Start = 0
 				t.args.NextPage += "&start=" + strconv.Itoa(0+DefaultNum)
 			}
-		} else { // if missing either num or start query string
+		} else { // if missing a valid "num" query string
+			// set everything to defaults (start at 0, DefaultNum words per page)
 			t.args.Num = DefaultNum
 			t.args.Start = 0
+			// create the default nextpage query string for the "next page" link
 			t.args.NextPage = t.args.CurrentPage + "&num=" + strconv.Itoa(DefaultNum)
 			t.args.NextPage += "&start=" + strconv.Itoa(0+DefaultNum)
 		}
-
+		// join the template files for the wordlist
 		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
 			filepath.Join("templates", t.filename),
 			filepath.Join("templates", t.sortBy),
 			filepath.Join("templates", "_header.html"),
 			filepath.Join("templates", "_footer.html"),
 		))
-	} else {
+	} else { // not word list, just a regular page, join the template files
 		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
 			filepath.Join("templates", t.filename),
 			filepath.Join("templates", "_header.html"),
 			filepath.Join("templates", "_footer.html"),
 		))
 	}
-
-	// if numrows := dbconnect.CountRows(t.queryFrom); numrows <= t.args.Start {
-	// 	t.args.NextPage = ""
-	// }
+	// see if next page button should be hidden before fetching rows
+	fmt.Println("\nNext page query" + t.args.NextPage)
+	numrows := dbconnect.CountRows(t.queryFrom)
+	fmt.Print(numrows)
+	fmt.Print(" <= ")
+	fmt.Print(t.args.Start)
+	fmt.Println("?")
+	// if total number of rows is less than or equal to the number the next page would start on,
+	//	 dont show a next page link.
+	if numrows < t.args.Start+t.args.Num {
+		t.args.NextPage = ""
+		fmt.Println("yeah, dont show link")
+	} else {
+		fmt.Println("nope")
+	}
+	fmt.Println("Next page query" + t.args.NextPage)
 
 	t.templ.Execute(w, t.args)
 }
@@ -173,9 +203,9 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.Handle("/", &templateHandler{filename: "words.html", path: "/",
-		query: `SELECT words.fun,
+		query: `SELECT COALESCE(words.ritin, words.fun) as new,
 				words.funsil,
-				words.trud,
+				words.trud as old,
 				words.pus,
 				words.numsil,
 				words.dist,
