@@ -49,7 +49,8 @@ table {
     padding: 10px;
 }
 
-td, th {
+td,
+th {
     padding: 5px 5px;
 }
 
@@ -80,11 +81,10 @@ th {
         color: #eee;
         line-height: 2em;
         border-right: 1px solid rgba(0, 0, 0, 0.4);
-
         >a {
-          i {
-            padding-left: .1em;
-          }
+            i {
+                float: right;
+            }
             >span {
                 text-decoration: underline;
             }
@@ -97,9 +97,9 @@ th {
                 color: #7BA9E0;
             }
         }
-        >span{
-          cursor: help;
-          border-bottom: 1px  dotted #eee;
+        >span {
+            cursor: help;
+            border-bottom: 1px dotted #eee;
         }
     }
     td {
@@ -115,28 +115,35 @@ th {
     width: 33.333%;
 }
 
+$header_offset: .55em;
 #id {
-  width: 3.5rem;
+    width: 3.5rem;
+    a {
+        position: relative;
+        left: $header_offset;
+    }
 }
+
 #pus {
     width: 3.8rem;
 }
 
-#nw {
-  // width: 22%;
+#nw a {
+    position: relative;
+    left: $header_offset;
 }
-#pru {
-  // width: 22%;
-}
-#old {
-    // width: 22%;
+
+#old a {
+    position: relative;
+    left: $header_offset;
 }
 
 #dist {
     width: 2.5rem;
 }
+
 #sil {
-    width: 1.3rem;
+    width: 1.4rem;
 }
 
 a {

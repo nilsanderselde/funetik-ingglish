@@ -9,7 +9,6 @@ package levdist
 
 import (
 	"bufio"
-	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -17,10 +16,12 @@ import (
 
 // GetDistances calculates Levenshtein distances between words stored in a tabular text file
 func GetDistances() [][]string {
-	file, err := os.Open("C:/Users/Nils/Go/io/words_for_distance.txt")
+	file, err := os.Open("../../../../io/words_for_distance.txt")
+
+	notfound := [][]string{{"file not found"}}
 
 	if err != nil {
-		log.Fatal(err)
+		return notfound
 	}
 	defer file.Close()
 
@@ -31,7 +32,7 @@ func GetDistances() [][]string {
 		current := scanner.Text()
 		words := strings.Split(current, "\t")
 		distance := FindDistance([]rune(words[0]), []rune(words[1]), true)
-		results = append(results, []string{ /*words[0]*/ "" /*words[1]*/, "", strconv.Itoa(distance)})
+		results = append(results, []string{words[0], words[1], strconv.Itoa(distance)})
 	}
 	return results
 }
@@ -43,24 +44,18 @@ func FindDistance(word1 []rune, word2 []rune, flipping bool) int {
 	// Get length of each word
 	var length1 = len(word1)
 	var length2 = len(word2)
-	// fmt.Printf("\nlen(%s) = %d\n", string(word1), length1)
-	// fmt.Printf("len(%s) = %d\n", string(word2), length2)
 
 	// Create a 2D array whose dimensions are the length of each word + 1
-	// fmt.Println("initial array: ")
 	var pathArray = make([][]int, length1+1)
 	for i := 0; i < length1+1; i++ {
 		pathArray[i] = make([]int, length2+1)
 	}
 	for i := 0; i < length1+1; i++ {
-		pathArray[i][0] = i // column 0: 0,1,2,3,4,...
+		pathArray[i][0] = i
 	}
 	for j := 0; j < length2+1; j++ {
-		pathArray[0][j] = j // row 0: 0,1,2,3,4,...
+		pathArray[0][j] = j
 	}
-	// for _, element := range pathArray {
-	// 	fmt.Println(element)
-	// }
 
 	// Compare each letter in first word with each letter in second word
 	for i := 0; i < length1; i++ {
@@ -70,18 +65,15 @@ func FindDistance(word1 []rune, word2 []rune, flipping bool) int {
 
 			// Deleting a letter
 			del := pathArray[i][j+1] + 1
-			// fmt.Print("del = " + strconv.Itoa(del))
 
 			// Inserting a letter
 			ins := pathArray[i+1][j] + 1
-			// fmt.Print("; ins = " + strconv.Itoa(ins))
 
 			// Replacing a letter
 			rep := pathArray[i][j]
 			if rune1 != rune2 {
 				rep++
 			}
-			// fmt.Print("; rep = " + strconv.Itoa(rep))
 
 			// Flipping letters (ab -> ba) (if enabled)
 			flp := rep + 1
@@ -90,7 +82,6 @@ func FindDistance(word1 []rune, word2 []rune, flipping bool) int {
 					flp = pathArray[i-1][j-1] + 1
 				}
 			}
-			// fmt.Print("; flp = " + strconv.Itoa(flp))
 
 			// Set current array value to whichever path is shortest
 			min1 := del
@@ -103,17 +94,11 @@ func FindDistance(word1 []rune, word2 []rune, flipping bool) int {
 			}
 			if min1 < min2 {
 				pathArray[i+1][j+1] = min1
-				// fmt.Println("; min = " + strconv.Itoa(min1))
 			} else {
 				pathArray[i+1][j+1] = min2
-				// fmt.Println("; min = " + strconv.Itoa(min2))
 			}
 		}
 	}
-	// fmt.Println("final array: ")
-	// for _, element := range pathArray {
-	// 	fmt.Println(element)
-	// }
 
 	return pathArray[length1][length2]
 }

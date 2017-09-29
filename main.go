@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -27,11 +26,6 @@ const (
 	// DefaultNum is default number of words per page
 	DefaultNum int = 20
 )
-
-// Redirect redirects to the passed URL
-func Redirect(url string) {
-	fmt.Println("test")
-}
 
 // handle http request
 func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
@@ -126,11 +120,14 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 		// if there is a valid "num" query string
 		if r.URL.Query()["num"] != nil {
-
 			// get the current value of it
 			currNum, err := strconv.Atoi(r.URL.Query()["num"][0])
 			if err != nil {
 				// log.Fatal(err)
+				currNum = DefaultNum
+			}
+			// prevent massive queries
+			if currNum > 1000 {
 				currNum = DefaultNum
 			}
 
@@ -235,10 +232,12 @@ func setHeaders(h http.Handler) http.Handler {
 }
 
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "relative/path/to/favicon.ico")
+	http.ServeFile(w, r, "./static/favicon.ico")
 }
 
 func main() {
+	dbconnect.DBInfo = dbconnect.GetDBInfo()
+
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
 	http.Handle("/", &templateHandler{filename: "words.html",
