@@ -1,6 +1,6 @@
 {{define "wordsSorted"}}
 {{$curr := .CurrentPage}}
-    {{range GetWords .}}
+    {{range ShowWords .}}
         {{if eq (index . 0) "-1"}}
         <tr class="no-results"><td colspan="7"><span><a href="\"><i>😂</i> nuthin hyr läl <i>😭</i></a></span></td></tr>
         {{else}}

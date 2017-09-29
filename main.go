@@ -27,7 +27,6 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-
 	dbconnect.DBInfo = dbconnect.GetDBInfo()
 
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))

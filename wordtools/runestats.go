@@ -1,7 +1,7 @@
 // Nils Elde
 // https://gitlab.com/nilsanderselde
 
-package runestats
+package wordtools
 
 import (
 	"bufio"

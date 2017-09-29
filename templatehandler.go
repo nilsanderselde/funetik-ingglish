@@ -7,10 +7,8 @@ import (
 	"strconv"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
-	"gitlab.com/nilsanderselde/funetik-ingglish/levdist"
 	"gitlab.com/nilsanderselde/funetik-ingglish/params"
-	"gitlab.com/nilsanderselde/funetik-ingglish/runestats"
-	"gitlab.com/nilsanderselde/funetik-ingglish/words"
+	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
 type templateHandler struct {
@@ -30,9 +28,9 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	aSort, aCurr, aNext, aPrev := &t.args.Sort, &t.args.CurrentPage, &t.args.NextPage, &t.args.PreviousPage
 
 	funcMap := template.FuncMap{
-		"GetStats":     runestats.GetStats,
-		"GetDistances": levdist.GetDistances,
-		"GetWords":     words.GetWords,
+		"GetStats":     wordtools.GetStats,
+		"GetDistances": wordtools.GetDistances,
+		"ShowWords":    dbconnect.ShowWords,
 	}
 
 	if t.filename == "words.html" {

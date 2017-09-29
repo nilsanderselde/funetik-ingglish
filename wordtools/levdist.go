@@ -5,7 +5,7 @@
 // Includes commented out print statements which can help demonstrate how this
 // algorithm works
 
-package levdist
+package wordtools
 
 import (
 	"bufio"
