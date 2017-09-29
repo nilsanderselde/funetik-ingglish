@@ -7,10 +7,9 @@
             <tr>
                 <td>
                     <a href="edit?id={{index . 0}}" title="Edit dhis row">{{index . 0}}</a>
-                    <a href="{{$curr}}&id={{index . 0}}" title="Fläg dhis listing äz eronyis">{{if eq (index . 7) "true"}}🏴{{else}}🏳️{{end}}</a>
                 </td>
                 <td>{{index . 1}}</td>
-                <td>{{index . 2}}</td>
+                <td>{{index . 2}}<a href="{{$curr}}&id={{index . 0}}#{{index . 0}}" title="Fläg dhis listing äz eronyis" id="{{index . 0}}">{{if eq (index . 7) "true"}}🏴{{else}}🏳️{{end}}</a></td>
                 <td>{{index . 3}}</td>
                 <td>{{index . 4}}</td>
                 <td>{{index . 5}}</td>
