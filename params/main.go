@@ -1,11 +1,12 @@
 package params
 
-// Params encapsulates data to be passed to mapped functions
+// TemplateParams encapsulates data to be passed to mapped functions
 // in templates
-type Params struct {
+type TemplateParams struct {
 	New          bool
 	Old          bool
 	Dist         bool
+	ID           int
 	Reverse      bool
 	Query        string
 	Start        int
@@ -13,6 +14,7 @@ type Params struct {
 	CurrentPage  string
 	NextPage     string
 	PreviousPage string
+	Words        [][]string
 }
 
 // Row contains fields for all columns in a row to
