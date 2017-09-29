@@ -6,11 +6,12 @@ type TemplateParams struct {
 	New          bool
 	Old          bool
 	Dist         bool
-	ID           int
+	ID           bool
 	Reverse      bool
 	Query        string
 	Start        int
 	Num          int
+	Sort         string
 	CurrentPage  string
 	NextPage     string
 	PreviousPage string

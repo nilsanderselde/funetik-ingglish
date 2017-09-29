@@ -37,9 +37,9 @@ func Redirect(url string) {
 func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	// pointers to TemplateParams fields for more readable code
-	aNew, aOld, aDist := &t.args.New, &t.args.Old, &t.args.Dist
+	aNew, aOld, aDist, aID := &t.args.New, &t.args.Old, &t.args.Dist, &t.args.ID
 	aRev, aQ, aStart, aNum := &t.args.Reverse, &t.args.Query, &t.args.Start, &t.args.Num
-	aCurr, aNext, aPrev := &t.args.CurrentPage, &t.args.NextPage, &t.args.PreviousPage
+	aSort, aCurr, aNext, aPrev := &t.args.Sort, &t.args.CurrentPage, &t.args.NextPage, &t.args.PreviousPage
 
 	funcMap := template.FuncMap{
 		"GetStats":     runestats.GetStats,
@@ -60,53 +60,67 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 		// if there is a sortby value
 		if r.URL.Query()["sortby"] != nil {
-			// if it's set to sort by "new"
-			if r.URL.Query()["sortby"][0] == "new" {
-				*aNew, *aOld, *aDist = true, false, false
-				*aCurr = "?sortby=new"
-				*aQ += " ORDER BY funsort"
+			// if it's set to sort by "id"
+			if r.URL.Query()["sortby"][0] == "id" {
+				*aNew, *aOld, *aDist, *aID = false, false, false, true
+				*aSort = "?sortby=id"
+				*aQ += " ORDER BY id"
 				if r.URL.Query()["order"] != nil && r.URL.Query()["order"][0] == "desc" {
 					*aQ += " DESC;"
-					*aCurr += "&order=desc"
+					*aSort += "&order=desc"
 					*aRev = true
 				} else {
 					*aQ += " ASC;"
-					*aCurr += "&order=asc"
+					*aSort += "&order=asc"
+					*aRev = false
+				}
+				// if it's set to sort by "new"
+			} else if r.URL.Query()["sortby"][0] == "new" {
+				*aNew, *aOld, *aDist, *aID = true, false, false, false
+				*aSort = "?sortby=new"
+				*aQ += " ORDER BY funsort"
+				if r.URL.Query()["order"] != nil && r.URL.Query()["order"][0] == "desc" {
+					*aQ += " DESC;"
+					*aSort += "&order=desc"
+					*aRev = true
+				} else {
+					*aQ += " ASC;"
+					*aSort += "&order=asc"
 					*aRev = false
 				}
 				// if it's set to sort by "old"
 			} else if r.URL.Query()["sortby"][0] == "old" {
-				*aNew, *aOld, *aDist = false, true, false
-				*aCurr = "?sortby=old"
+				*aNew, *aOld, *aDist, *aID = false, true, false, false
+				*aSort = "?sortby=old"
 				*aQ += " ORDER BY trud"
 				if r.URL.Query()["order"] != nil && r.URL.Query()["order"][0] == "desc" {
 					*aQ += " DESC;"
-					*aCurr += "&order=desc"
+					*aSort += "&order=desc"
 					*aRev = true
 				} else {
 					*aQ += " ASC;"
-					*aCurr += "&order=asc"
+					*aSort += "&order=asc"
 					*aRev = false
 				}
 				// if it's set to sort by "dist"
 			} else if r.URL.Query()["sortby"][0] == "dist" {
-				*aNew, *aOld, *aDist = false, false, true
-				*aCurr = "?sortby=dist"
+				*aNew, *aOld, *aDist, *aID = false, false, true, false
+				*aSort = "?sortby=dist"
 				*aQ += " ORDER BY dist"
 				if r.URL.Query()["order"] != nil && r.URL.Query()["order"][0] == "desc" {
 					*aQ += " DESC;"
-					*aCurr += "&order=desc"
+					*aSort += "&order=desc"
 					*aRev = true
 				} else {
 					*aQ += " ASC;"
-					*aCurr += "&order=asc"
+					*aSort += "&order=asc"
 					*aRev = false
 				}
 			}
 		} else {
 			// default values: sort by new spelling, ascending, starting at zero, incrementing by DefaultNum
-			*aNew, *aOld, *aDist = true, false, false
-			*aCurr = "?sortby=new&order=asc"
+			*aNew, *aOld, *aDist, *aID = true, false, false, false
+			*aSort = "?sortby=new&order=asc"
 			*aRev = false
 			*aQ += " ORDER BY funsort ASC;"
 		}
@@ -124,7 +138,8 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			*aNum = currNum
 
 			// create the next page query string for the "next page" link
-			*aNext = *aCurr + "&num=" + strconv.Itoa(currNum)
+			*aNext = *aSort + "&num=" + strconv.Itoa(currNum)
+			*aCurr = *aNext
 
 			// if there is a valid "start" query string
 			if r.URL.Query()["start"] != nil {
@@ -141,11 +156,11 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 				// add to the next page query string
 				*aNext += "&start=" + strconv.Itoa(currStart+currNum)
-
+				*aCurr += "&start=" + strconv.Itoa(currStart)
 				// if the current starting number is creater than or equal to the
 				// number of words per page, add a previous page button
 				if currStart >= currNum {
-					*aPrev = *aCurr + "&num=" + strconv.Itoa(currNum)
+					*aPrev = *aSort + "&num=" + strconv.Itoa(currNum)
 					*aPrev += "&start=" + strconv.Itoa(currStart-currNum)
 					// PreviousPage will be nil on first page of results
 				} else {
@@ -155,6 +170,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 				// position to 0 in both the template's args and query string
 				*aStart = 0
 				*aNext += "&start=" + strconv.Itoa(0+DefaultNum)
+				*aCurr += "&start=" + strconv.Itoa(0)
 				*aPrev = ""
 			}
 		} else { // if missing a valid "num" query string
@@ -162,21 +178,21 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			*aNum = DefaultNum
 			*aStart = 0
 			// create the default nextpage query string for the "next page" link
-			*aNext = *aCurr + "&num=" + strconv.Itoa(DefaultNum)
-			*aNext += "&start=" + strconv.Itoa(0+DefaultNum)
+			*aNext = *aSort + "&num=" + strconv.Itoa(DefaultNum) + "&start=" + strconv.Itoa(0+DefaultNum)
+			*aCurr = *aSort + "&num=" + strconv.Itoa(DefaultNum) + "&start=" + strconv.Itoa(0)
 		}
 
 		if r.URL.Query()["id"] != nil {
 			// if it's set to sort by "new"
 			id := r.URL.Query()["id"][0]
-			// *aCurr += "&id=" + id
-			// fmt.Println(*aCurr)
+			// *aSort += "&id=" + id
+			// fmt.Println(*aSort)
 
 			dbconnect.FlagRow(id)
 
-			// fmt.Printf("%s%s%s\n", r.Host, r.URL.Path, *aCurr)
+			// fmt.Printf("%s%s%s\n", r.Host, r.URL.Path, *aSort)
 
-			// http.Redirect(w, r, fmt.Sprintf("%s%s%s", r.Host, r.URL.Path, *aCurr), 201)
+			// http.Redirect(w, r, fmt.Sprintf("%s%s%s", r.Host, r.URL.Path, *aSort), 201)
 		}
 
 		// join the template files for the wordlist

@@ -3,7 +3,7 @@
 <table class="wørdz">
     <tr>
         <th id="id">
-            ID
+            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}} 🡇{{else}} 🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="nw">
             <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Keriktør ordør: 
