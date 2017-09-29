@@ -5,18 +5,27 @@ html {
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-  }
-  
-  nav {
+}
+
+nav {
     user-select: none;
     text-align: center;
     padding-bottom: 20px;
     width: 100%;
     max-width: 900px;
     margin: auto;
-  }
-  
-  header {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 0 20px;
+        display: inline-block;
+    }
+}
+
+header {
     user-select: none;
     text-align: center;
     padding-bottom: 20px;
@@ -24,46 +33,35 @@ html {
     max-width: 900px;
     margin: auto;
     img {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      margin: auto;
-      display: block;
-      position: relative;
-      top: 40px;
-      z-index: -1;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: auto;
+        display: block;
+        position: relative;
+        top: 40px;
+        z-index: -1;
     }
-  }
-  
-  nav {
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      padding: 0 20px;
-      display: inline-block;
-    }
-  }
-  
-  table {
+}
+
+table {
     margin: auto;
     padding: 10px;
-  }
-  
-  td {
-    padding: 5px 10px;
-  }
-  
-  th {
-    padding: 5px 10px;
+}
+
+td, th {
+    padding: 5px 5px;
+}
+
+th {
     user-select: none;
-  }
-  
-  .wørdz {
+}
+
+.wørdz {
     width: 80%;
+    max-width: 777px;
     border-collapse: collapse;
+    table-layout: fixed;
     background-color: rgba(255, 255, 255, 0.2);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 50vh, rgba(255, 255, 255, 0.6) 100vh);
     background-attachment: fixed;
@@ -71,192 +69,212 @@ html {
     box-shadow: 0px 0px 10px rgba(200, 200, 200, 0.2);
     margin-bottom: 20px;
     font-size: .8em;
-  }
-  
-  .thry td {
-    width: 33.333%;
-  }
-  
-  .wørdz {
-    td {
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
+    tr:nth-of-type(even) {
+        background: rgba(100, 100, 100, 0.1);
     }
     th {
-      text-align: left;
-      cursor: default;
-      background: #444;
-      color: #eee;
-      line-height: 2em;
-      border-right: 1px solid rgba(0, 0, 0, 0.4);
+        white-space: nowrap;
+        text-align: center;
+        cursor: default;
+        background: #444;
+        color: #eee;
+        line-height: 2em;
+        border-right: 1px solid rgba(0, 0, 0, 0.4);
+
+        >a {
+          i {
+            padding-left: .1em;
+          }
+            >span {
+                text-decoration: underline;
+            }
+            &:link,
+            &:visited {
+                color: #eee;
+            }
+            &:hover,
+            &:active {
+                color: #7BA9E0;
+            }
+        }
+        >span{
+          cursor: help;
+          border-bottom: 1px  dotted #eee;
+        }
+    }
+    td {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        overflow: scroll-x;
     }
     td:nth-of-type(1) a:nth-of-type(2) {
-      float: right;
+        float: right;
     }
-  }
-  
-  #id {
-    width: 10%;
-  }
-  
-  #nw, #pru, #old {
-    width: 20%;
-  }
-  
-  #dist, #pus, #sil {
-    width: 10%;
-  }
-  
-  .wørdz tr:nth-of-type(even) {
-    background: rgba(100, 100, 100, 0.1);
-  }
-  
-  a {
+}
+
+.thry td {
+    width: 33.333%;
+}
+
+#id {
+  width: 3.5rem;
+}
+#pus {
+    width: 3.8rem;
+}
+
+#nw {
+  // width: 22%;
+}
+#pru {
+  // width: 22%;
+}
+#old {
+    // width: 22%;
+}
+
+#dist {
+    width: 2.5rem;
+}
+#sil {
+    width: 1.3rem;
+}
+
+a {
     font-weight: bold;
     text-decoration: none;
-  }
-  
-  .wørdz th {
-    white-space: nowrap;
+    &:link,
+    &:visited {
+        color: #333;
+    }
+    &:hover,
+    &:active {
+        color: #333;
+        text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+    }
+}
+
+nav {
     a {
-      span {
-        text-decoration: underline;
-      }
-      &:link, &:visited {
-        color: #eee;
-      }
-      &:hover, &:active {
-        color: #7BA9E0;
-      }
+        font-size: 1.2em;
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+        transition: all .15s linear;
     }
-  }
-  
-  nav a {
-    font-size: 1.2em;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
-    transition: all .15s linear;
-  }
-  
-  a {
-    &:link, &:visited {
-      color: #333;
-    }
-    &:hover, &:active {
-      color: #333;
-      text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
-    }
-  }
-  
-  nav {
     li {
-      &:nth-of-type(1) a {
-        &:hover, &:active {
-          text-shadow: -6px 3px 6px rgba(97, 164, 241, 0.67);
+        &:nth-of-type(1) a {
+            &:hover,
+            &:active {
+                text-shadow: -6px 3px 6px rgba(97, 164, 241, 0.67);
+            }
         }
-      }
-      &:nth-of-type(3) a {
-        &:hover, &:active {
-          text-shadow: 6px 3px 6px rgba(97, 164, 241, 0.67);
+        &:nth-of-type(3) a {
+            &:hover,
+            &:active {
+                text-shadow: 6px 3px 6px rgba(97, 164, 241, 0.67);
+            }
         }
-      }
     }
     &.bottom {
-      ul {
-        cursor: default;
-        font-size: 1.5em;
-      }
-      li {
-        padding: 0 2px;
-      }
-      a {
-        &:link, &:visited {
-          color: #eee;
+        ul {
+            cursor: default;
+            font-size: 1.5em;
         }
-        &.back {
-          &:hover, &:active {
-            color: #eee;
-            text-shadow: -6px 3px 6px rgba(255, 255, 255, 0.6);
-          }
+        li {
+            padding: 0 2px;
         }
-        &.next {
-          &:hover, &:active {
-            color: #eee;
-            text-shadow: 6px 3px 6px rgba(255, 255, 255, 0.6);
-          }
+        a {
+            &:link,
+            &:visited {
+                color: #eee;
+            }
+            &.back {
+                &:hover,
+                &:active {
+                    color: #eee;
+                    text-shadow: -6px 3px 6px rgba(255, 255, 255, 0.6);
+                }
+            }
+            &.next {
+                &:hover,
+                &:active {
+                    color: #eee;
+                    text-shadow: 6px 3px 6px rgba(255, 255, 255, 0.6);
+                }
+            }
         }
-      }
-      i {
-        position: relative;
-        top: -.2em;
-      }
+        i {
+            position: relative;
+            top: -.2em;
+        }
     }
-  }
-  
-  i {
+}
+
+i {
     font-style: normal;
-  }
-  
-  .hidden {
+}
+
+.hidden {
     visibility: hidden;
-  }
-  
-  .no-results {
+}
+
+.no-results {
     td {
-      text-align: left;
-      font-size: 3rem;
-      font-weight: bold;
-      height: 600px;
-      position: relative;
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        height: 600px;
+        position: relative;
     }
     background: transparent !important;
     span {
-      animation: spin 18s infinite;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 500px;
-      margin: -30px 0 0 -250px;
-      text-align: center;
-      &:hover {
-        animation-play-state: paused;
-      }
+        animation: spin 18s infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        margin: -30px 0 0 -250px;
+        text-align: center;
+        &:hover {
+            animation-play-state: paused;
+        }
     }
     i {
-      position: relative;
-      display: inline-block;
+        position: relative;
+        display: inline-block;
     }
     a {
-      &:link, &:visited {
-        color: #333;
-      }
-      &:hover, &:active {
-        color: #333;
-        text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
-      }
+        &:link,
+        &:visited {
+            color: #333;
+        }
+        &:hover,
+        &:active {
+            color: #333;
+            text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+        }
     }
     i {
-      &:nth-of-type(1) {
-        left: 0;
-        animation: spin2 9s linear infinite;
-      }
-      &:nth-of-type(2) {
-        right: 0;
-        animation: spin 9s linear infinite;
-      }
-      
-      position: absolute;
+        &:nth-of-type(1) {
+            left: 0;
+            animation: spin2 9s linear infinite;
+        }
+        &:nth-of-type(2) {
+            right: 0;
+            animation: spin 9s linear infinite;
+        }
+        position: absolute;
     }
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  @keyframes spin2 {
+}
+
+@keyframes spin2 {
     100% {
-      -webkit-transform: rotate(-360deg);
-      transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
     }
-  }
+}

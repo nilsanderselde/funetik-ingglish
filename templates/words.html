@@ -3,28 +3,28 @@
 <table class="wørdz">
     <tr>
         <th id="id">
-            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}} 🡇{{else}} 🡅{{end}}</i>{{end}}</a>
+            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="nw">
             <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Keriktør ordør: 
-aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span>{{if .New}}<i>{{if .Reverse}} 🡇{{else}} 🡅{{end}}</i>{{end}}</a>
+aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span>{{if .New}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="pru">
             ·Pruˌnun·syˈei·šin
         </th>
         <th id="old">
             <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Keriktør ordør: 
-abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span>{{if .Old}}<i>{{if .Reverse}} 🡇{{else}} 🡅{{end}}</i>{{end}}</a>
+abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span>{{if .Old}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="dist">
-            <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Minimum numbør uv tšendžiz  
-tw get frum old tw nw speling"><span>Distins</span>{{if .Dist}}<i>{{if .Reverse}} 🡇{{else}} 🡅{{end}}</i>{{end}}</a>
+            <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Distins iz dhu minimum numbør uv 
+tšendžiz tw get frum old tw nw speling"><span>Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
-            Part uv Spytš
+            <span title="Part uv Spytš">PuS</span>
         </th>
         <th id="sil">
-            Silubuls
+            <span title="Silubulz">Silz</span>
         </th>
     </tr>
     {{template "wordsSorted" .}}
