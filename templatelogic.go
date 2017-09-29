@@ -7,16 +7,17 @@ import (
 	"strconv"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
-	"gitlab.com/nilsanderselde/funetik-ingglish/params"
+	"gitlab.com/nilsanderselde/funetik-ingglish/structs"
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
+// templateHandler contains all fields needed to process and execute templates
 type templateHandler struct {
 	filename  string
 	templ     *template.Template
 	query     string
 	queryFrom string
-	args      params.TemplateParams
+	args      structs.TemplateParams
 }
 
 // handle http request
@@ -41,7 +42,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		// put two pieces of query together
 		*aQ = t.query + t.queryFrom
 
-		// reset prev page to force handler to recreate it if needed
+		// reset prev page to force templateHandler to recreate it if needed
 		*aPrev = ""
 
 		// if there is a sortby value

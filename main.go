@@ -35,7 +35,7 @@ func main() {
 		query: `
 SELECT
 	id,
-    COALESCE(fun, ''),
+    COALESCE(COALESCE(ritin, fun), '') as fun,
     COALESCE(funsil, ''),
     COALESCE(trud, ''),
     COALESCE(pus, ''),
@@ -44,10 +44,10 @@ SELECT
 	COALESCE(funsort, ''),
 	COALESCE(flaagd, 'false')`,
 		queryFrom: `
-FROM words
+FROM words WHERE fun LIKE '%ar%' AND trud LIKE '%or%'
 	`},
 	/* SQL scratch area
-	COALESCE(COALESCE(ritin, fun), '') as new,
+	COALESCE(fun, '') as new,
 	WHERE kamin = true
 	*/
 	)
