@@ -44,7 +44,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	funcMap := template.FuncMap{
 		"GetStats":     runestats.GetStats,
 		"GetDistances": levdist.GetDistances,
-		"ShowWords":    words.GetWords,
+		"GetWords":     words.GetWords,
 	}
 
 	if t.filename == "words.html" {
@@ -169,8 +169,8 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		if r.URL.Query()["id"] != nil {
 			// if it's set to sort by "new"
 			id := r.URL.Query()["id"][0]
-			*aCurr += "&id=" + id
-			fmt.Println(*aCurr)
+			// *aCurr += "&id=" + id
+			// fmt.Println(*aCurr)
 
 			dbconnect.FlagRow(id)
 

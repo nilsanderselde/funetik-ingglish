@@ -6,7 +6,6 @@ import (
 )
 
 // GetWords calls the database io function and pass arguments to template
-func GetWords(args params.TemplateParams) params.TemplateParams {
-	args.Words = dbconnect.PostgresIO(args.Query, args.Start, args.Num)
-	return args
+func GetWords(args params.TemplateParams) [][]string {
+	return dbconnect.PostgresIO(args.Query, args.Start, args.Num)
 }
