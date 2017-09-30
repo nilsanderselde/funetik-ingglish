@@ -7,7 +7,7 @@ import (
 	"strconv"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
-	"gitlab.com/nilsanderselde/funetik-ingglish/structs"
+	"gitlab.com/nilsanderselde/funetik-ingglish/global"
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
@@ -17,7 +17,12 @@ type templateHandler struct {
 	templ     *template.Template
 	query     string
 	queryFrom string
-	args      structs.TemplateParams
+	args      global.TemplateParams
+}
+
+// creates random number to prompt page reloads after db changes
+func randomRune() string {
+	return string(global.CurrRand)
 }
 
 // handle http request
@@ -32,8 +37,8 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		"GetStats":     wordtools.GetStats,
 		"GetDistances": wordtools.GetDistances,
 		"ShowWords":    dbconnect.ShowWords,
+		"Random":       randomRune,
 	}
-
 	if t.filename == "words.html" {
 		if r.URL.Path != "/" {
 			http.NotFound(w, r)

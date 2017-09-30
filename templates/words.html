@@ -31,9 +31,10 @@ tšendžiz tw get frum old tw nw speling"><span>Dist</span>{{if .Dist}}<i>{{if .
 </table>
 <nav class="bottom">
     <ul>
-        {{if .PreviousPage}}<li><a href="{{.PreviousPage}}" class="back"><i>👈🏻</i> Back</a></li>{{end}}
-        {{if and .PreviousPage .NextPage}}<li>&bull;</li>{{end}}
-        {{if .NextPage}}<li><a href="{{.NextPage}}" class="next">Next <i>👉🏻</i></a></li>{{end}}
+        {{if .PreviousPage}}<li><a href="{{.PreviousPage}}" class="back"><i>🡄</i> Back</a></li>{{else}}
+        <li><a class="disabled"><i>🡄</i> Back</a></li>{{end}}
+        {{if .NextPage}}<li><a href="{{.NextPage}}" class="next">Next <i>🡆</i></a></li>{{else}}
+        <li><a class="disabled">Next <i>🡆</i></a></li>{{end}}
     </ul>
 </nav>
 {{template "_footer.html"}}

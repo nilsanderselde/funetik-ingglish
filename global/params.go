@@ -1,4 +1,4 @@
-package structs
+package global
 
 // TemplateParams encapsulates data to be
 // passed to mapped functions in templates
@@ -17,3 +17,10 @@ type TemplateParams struct {
 	PreviousPage string
 	Words        [][]string
 }
+
+var (
+	// CurrRand stores the current random rune
+	CurrRand = 'a'
+	// LastRand stores the previous random rune so generator doesn't repeat itself
+	LastRand = 'a'
+)

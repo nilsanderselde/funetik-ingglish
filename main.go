@@ -44,7 +44,7 @@ SELECT
 	COALESCE(funsort, ''),
 	COALESCE(flaagd, 'false')`,
 		queryFrom: `
-FROM words WHERE fun LIKE '%ar%' AND trud LIKE '%or%'
+FROM words
 	`},
 	/* SQL scratch area
 	COALESCE(fun, '') as new,

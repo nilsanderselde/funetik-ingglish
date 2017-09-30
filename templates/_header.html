@@ -10,8 +10,16 @@
 <body>
     <header>
         <img src="/static/images/logo.png" width="400" height="291">
+        <script type="text/javascript">
+            /* prevents page reloads from toggling flags */
+            var uri = window.location.toString();
+            if (uri.indexOf("&id") > 0) {
+                var clean_uri = uri.substring(0, uri.indexOf("&id"));
+                window.history.replaceState({}, document.title, clean_uri);
+            }
+        </script>
     </header>
-    <nav>
+    <nav class="top">
         <ul>
             <li><a href="/">Wørds</a></li>
             <li><a href="levdist">Kälkyøleit Distins</a></li>
