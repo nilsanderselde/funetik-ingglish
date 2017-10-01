@@ -7,43 +7,39 @@
 
 package wordtools
 
-import (
-	"bufio"
-	"os"
-	"strconv"
-	"strings"
-)
-
 // GetDistances calculates Levenshtein distances between words stored in a tabular text file
-func GetDistances() [][]string {
-	file, err := os.Open("../../../../io/words_for_distance.txt")
+// func GetDistances() [][]string {
+// 	file, err := os.Open("../../../../io/words_for_distance.txt")
 
-	notfound := [][]string{{"file not found"}}
+// 	notfound := [][]string{{"file not found"}}
 
-	if err != nil {
-		return notfound
-	}
-	defer file.Close()
+// 	if err != nil {
+// 		return notfound
+// 	}
+// 	defer file.Close()
 
-	var results [][]string
+// 	var results [][]string
 
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		current := scanner.Text()
-		words := strings.Split(current, "\t")
-		distance := FindDistance([]rune(words[0]), []rune(words[1]), true)
-		results = append(results, []string{words[0], words[1], strconv.Itoa(distance)})
-	}
-	return results
-}
+// 	scanner := bufio.NewScanner(file)
+// 	for scanner.Scan() {
+// 		current := scanner.Text()
+// 		words := strings.Split(current, "\t")
+// 		distance := FindDistance([]rune(words[0]), []rune(words[1]), true)
+// 		results = append(results, []string{words[0], words[1], strconv.Itoa(distance)})
+// 	}
+// 	return results
+// }
 
-// FindDistance calculates Levenshtein distance between two words
-// If flipping is true, flipping two adjacent letters counts as one move
-func FindDistance(word1 []rune, word2 []rune, flipping bool) int {
+// FindDistance calculates Levenshtein distance between two words.
+// If flipping is true, flipping two adjacent letters counts as one move.
+func FindDistance(funS string, trudS string, flipping bool) int {
+
+	fun := []rune(funS)
+	trud := []rune(trudS)
 
 	// Get length of each word
-	var length1 = len(word1)
-	var length2 = len(word2)
+	var length1 = len(fun)
+	var length2 = len(trud)
 
 	// Create a 2D array whose dimensions are the length of each word + 1
 	var pathArray = make([][]int, length1+1)
@@ -60,8 +56,8 @@ func FindDistance(word1 []rune, word2 []rune, flipping bool) int {
 	// Compare each letter in first word with each letter in second word
 	for i := 0; i < length1; i++ {
 		for j := 0; j < length2; j++ {
-			rune1 := word1[i]
-			rune2 := word2[j]
+			rune1 := fun[i]
+			rune2 := trud[j]
 
 			// Deleting a letter
 			del := pathArray[i][j+1] + 1
@@ -78,7 +74,7 @@ func FindDistance(word1 []rune, word2 []rune, flipping bool) int {
 			// Flipping letters (ab -> ba) (if enabled)
 			flp := rep + 1
 			if flipping && i+1 > 1 && j+1 > 1 {
-				if word1[i-1] == rune2 && word2[j-1] == rune1 {
+				if fun[i-1] == rune2 && trud[j-1] == rune1 {
 					flp = pathArray[i-1][j-1] + 1
 				}
 			}

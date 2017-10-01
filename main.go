@@ -29,12 +29,7 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	dbconnect.DBInfo = dbconnect.GetDBInfo()
 
-	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
-	http.HandleFunc("/favicon.ico", faviconHandler)
-	http.Handle("/", &templateHandler{filename: "words.html",
-		query: `
-SELECT
-	id,
+	wordsQuery := `SELECT id,
     COALESCE(COALESCE(ritin, fun), '') as fun,
     COALESCE(funsil, ''),
     COALESCE(trud, ''),
@@ -42,20 +37,16 @@ SELECT
     COALESCE(numsil, '0'),
     COALESCE(dist, '0'),
 	COALESCE(funsort, ''),
-	COALESCE(flaagd, 'false')`,
-		queryFrom: `
-FROM words
-	`},
-	/* SQL scratch area
-	COALESCE(fun, '') as new,
-	WHERE kamin = true
-	*/
-	)
+	COALESCE(flaagd, 'false')
+`
+	wordsQueryFrom := `FROM words` // split up because two queries must use this part
 
+	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
+	http.HandleFunc("/favicon.ico", faviconHandler)
+	http.Handle("/", &templateHandler{filename: "words.html", query: wordsQuery, queryFrom: wordsQueryFrom})
 	http.Handle("/runestats", &templateHandler{filename: "runestats.html"})
-	http.Handle("/levdist", &templateHandler{filename: "levdist.html"})
 
-	// start server
+	// Start Server
 	if err := http.ListenAndServe(":8080", nil); err != nil {
 		log.Fatal("ListenAndServe:", err)
 	}
