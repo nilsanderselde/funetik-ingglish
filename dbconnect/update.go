@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"log"
 	"strconv"
+	"time"
 
+	"github.com/briandowns/spinner"
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
@@ -14,7 +16,10 @@ import (
 // 2. numsil   (count syllable markings from funsil)
 // 3. funsort  (substitution cipher on fun)
 // 4. dist     (calc lev dist between fun and trud)
-func UpdateAllAutoValues() {
+func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
+	if !(fun || numsil || funsort || dist) {
+		return // don't bother connecting if no updates will occur
+	}
 	db, err := sql.Open("postgres", DBInfo)
 	if err != nil {
 		log.Fatal(err)
@@ -26,30 +31,77 @@ func UpdateAllAutoValues() {
 		log.Fatal(err)
 	}
 
-	// update fun and numsil with values generated using funsil
-	rows, err := db.Query("SELECT id, funsil FROM words;")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer rows.Close()
+	if fun || numsil {
+		start := time.Now()
+		message := "Updating"
+		if fun {
+			message += " fun"
+			if numsil {
+				message += " and"
+			}
+		}
+		if numsil {
+			message += " numsil"
+		}
+		fmt.Print(message + "... ")
+		s := spinner.New(spinner.CharSets[13], 100*time.Millisecond)
+		s.Start()
 
-	for rows.Next() {
-		UpdateFun(rows, db)
-		UpdateNumsil(rows, db)
+		// update fun and/or numsil with values generated using funsil
+		rows, err := db.Query("SELECT id, funsil FROM words;")
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer rows.Close()
+
+		for rows.Next() {
+			if fun {
+				UpdateFun(rows, db)
+			}
+			if numsil {
+				UpdateNumsil(rows, db)
+			}
+		}
+		t := time.Now()
+		elapsed := t.Sub(start)
+		s.Stop()
+		fmt.Println("Done. (", elapsed, ")")
 	}
 
-	// update funsort and dist with values generated using fun and trud
-	rows, err = db.Query("SELECT id, fun, trud FROM words;")
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer rows.Close()
+	if funsort || dist {
+		start := time.Now()
+		message := "Updating"
+		if funsort {
+			message += " funsort"
+			if dist {
+				message += " and"
+			}
+		}
+		if dist {
+			message += " dist"
+		}
+		fmt.Print(message + "... ")
 
-	for rows.Next() {
-		UpdateFunsort(rows, db)
-		UpdateDist(rows, db)
+		// update funsort and dist with values generated using fun and trud (for dist, use written form if different)
+		rows, err := db.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin FROM words where id > 49152;")
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer rows.Close()
+
+		for rows.Next() {
+			if funsort {
+				UpdateFunsort(rows, db)
+			}
+			if dist {
+				UpdateDist(rows, db)
+			}
+		}
+		t := time.Now()
+		elapsed := t.Sub(start)
+		fmt.Println("Done. (", elapsed, ")")
 	}
-	fmt.Println("All automatically generated columns updated.")
+
 }
 
 // UpdateFun updates passed row with generated
@@ -94,7 +146,9 @@ func UpdateNumsil(row *sql.Rows, db *sql.DB) {
 func UpdateFunsort(row *sql.Rows, db *sql.DB) {
 	var id int
 	var fun string
-	err := row.Scan(&id, &fun)
+	var trud string
+	var funritin string
+	err := row.Scan(&id, &fun, &trud, &funritin)
 
 	// Generate value for "funsort"
 	funsort := wordtools.SubstitutionCypher(fun)
@@ -114,10 +168,11 @@ func UpdateDist(row *sql.Rows, db *sql.DB) {
 	var id int
 	var fun string
 	var trud string
-	err := row.Scan(&id, &fun, &trud)
+	var funritin string
+	err := row.Scan(&id, &fun, &trud, &funritin)
 
 	// Generate value for "dist" (true means flipping two adjacent letters is considered one move)
-	dist := wordtools.FindDistance(fun, trud, true)
+	dist := wordtools.FindDistance(funritin, trud, true)
 
 	// update with new dist value
 	var updateString string

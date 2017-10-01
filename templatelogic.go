@@ -11,6 +11,14 @@ import (
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
+// Options for ?update=all (func UpdateAllAutoValues)
+const (
+	fun     bool = true
+	numsil  bool = true
+	funsort bool = true
+	dist    bool = true
+)
+
 // templateHandler contains all fields needed to process and execute templates
 type templateHandler struct {
 	filename  string
@@ -53,7 +61,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		// if set to update automatically generated values
 		if r.URL.Query()["update"] != nil {
 			if r.URL.Query()["update"][0] == "all" {
-				dbconnect.UpdateAllAutoValues()
+				dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist)
 			}
 		}
 

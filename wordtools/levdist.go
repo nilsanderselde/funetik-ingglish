@@ -7,29 +7,6 @@
 
 package wordtools
 
-// GetDistances calculates Levenshtein distances between words stored in a tabular text file
-// func GetDistances() [][]string {
-// 	file, err := os.Open("../../../../io/words_for_distance.txt")
-
-// 	notfound := [][]string{{"file not found"}}
-
-// 	if err != nil {
-// 		return notfound
-// 	}
-// 	defer file.Close()
-
-// 	var results [][]string
-
-// 	scanner := bufio.NewScanner(file)
-// 	for scanner.Scan() {
-// 		current := scanner.Text()
-// 		words := strings.Split(current, "\t")
-// 		distance := FindDistance([]rune(words[0]), []rune(words[1]), true)
-// 		results = append(results, []string{words[0], words[1], strconv.Itoa(distance)})
-// 	}
-// 	return results
-// }
-
 // FindDistance calculates Levenshtein distance between two words.
 // If flipping is true, flipping two adjacent letters counts as one move.
 func FindDistance(funS string, trudS string, flipping bool) int {
@@ -95,6 +72,5 @@ func FindDistance(funS string, trudS string, flipping bool) int {
 			}
 		}
 	}
-
 	return pathArray[length1][length2]
 }
