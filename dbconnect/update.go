@@ -123,60 +123,15 @@ COMMIT;
 // 	ABCDEFGHIJKLMNOPQRSTUVWXYZ
 func SubstitutionCypher(fun string) (funSort string) {
 	funRunes := []rune(strings.ToLower(fun))
-	for _, r := range funRunes {
-		switch r {
-		case 'a':
-			funSort += string('A')
-		case 'ä':
-			funSort += string('B')
-		case 'e':
-			funSort += string('C')
-		case 'i':
-			funSort += string('D')
-		case 'y':
-			funSort += string('E')
-		case 'w':
-			funSort += string('F')
-		case 'u':
-			funSort += string('G')
-		case 'ø':
-			funSort += string('H')
-		case 'o':
-			funSort += string('I')
-		case 'l':
-			funSort += string('J')
-		case 'r':
-			funSort += string('K')
-		case 'm':
-			funSort += string('L')
-		case 'n':
-			funSort += string('M')
-		case 'b':
-			funSort += string('N')
-		case 'p':
-			funSort += string('O')
-		case 'v':
-			funSort += string('P')
-		case 'f':
-			funSort += string('Q')
-		case 'g':
-			funSort += string('R')
-		case 'k':
-			funSort += string('S')
-		case 'd':
-			funSort += string('T')
-		case 't':
-			funSort += string('U')
-		case 'z':
-			funSort += string('V')
-		case 's':
-			funSort += string('W')
-		case 'ž':
-			funSort += string('X')
-		case 'š':
-			funSort += string('Y')
-		case 'h':
-			funSort += string('Z')
+
+	cypher := [][]rune{[]rune("aäeiywuøolrmnbpvfgkdtzsžšh"),
+		[]rune("ABCDEFGHIJKLMNOPQRSTUVWXYZ")}
+
+	for _, r1 := range funRunes {
+		for i, r2 := range cypher[0] {
+			if r1 == r2 {
+				funSort += string(cypher[1][i])
+			}
 		}
 	}
 	return funSort
