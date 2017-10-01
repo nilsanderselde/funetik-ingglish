@@ -14,7 +14,7 @@ func SubstitutionCypher(fun string) (funsort string) {
 	funRunes := []rune(strings.ToLower(fun))
 
 	cypher := [][]rune{
-		[]rune("aäeiywuøolrmnbpvfgkdtzsžšh"),
+		[]rune("aäeiywuøorlnmbpvfgkdtzsžšh"),
 		[]rune("ABCDEFGHIJKLMNOPQRSTUVWXYZ")}
 
 	for _, r1 := range funRunes {

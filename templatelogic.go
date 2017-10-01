@@ -15,10 +15,10 @@ import (
 
 // Options for ?update=all (func UpdateAllAutoValues)
 const (
-	fun     bool = true
-	numsil  bool = true
+	fun     bool = false
+	numsil  bool = false
 	funsort bool = true
-	dist    bool = true
+	dist    bool = false
 )
 
 // templateHandler contains all fields needed to process and execute templates

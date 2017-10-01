@@ -62,7 +62,6 @@ func GetWords(query string, start int, num int) [][]string {
 			err = rows.Scan(&id, &fun, &funsil, &trud, &pus, &numsil, &dist, &funsort, &fläg)
 			results = append(results, []string{strconv.Itoa(id), fun, funsil, trud, strconv.Itoa(dist),
 				pus, strconv.Itoa(numsil), strconv.FormatBool(fläg)})
-			// fmt.Printf("%s %s %s %s %s %s %s %s\n", strconv.Itoa(id), fun, funsil, trud, strconv.Itoa(dist), pus, strconv.Itoa(numsil), strconv.FormatBool(fläg))
 			if err != nil {
 				// log.Fatal(err)
 				return notfound

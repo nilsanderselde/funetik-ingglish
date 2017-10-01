@@ -32,8 +32,8 @@ Dhu älfubit for Funetik Inggliš iz ureindžd with väwlz først, dhen [sonøri
 >*The alphabet for Phonetic English is arranged with vowels first, then [sonorant](https://en.wikipedia.org/wiki/Sonorant) consonants, and then [obstruent](https://en.wikipedia.org/wiki/Obstruent) consonants. Obstruent consonants are arranged in pairs with the [voiced](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) one first.*
 
 ```
-aäeiywuøolrmnbpvfgkdtzsžšh
-AÄEIYWUØOLRMNBPVFGKDTZSŽŠH
+aäeiywuøorlnmbpvfgkdtzsžšh
+AÄEIYWUØORLNMBPVFGKDTZSŽŠH
 ```
 
 <strong>a</strong> as in <strong>a</strong>t *(<strong>o</strong>ught)*  
@@ -45,10 +45,10 @@ AÄEIYWUØOLRMNBPVFGKDTZSŽŠH
 <strong>u</strong> as in f<strong>u</strong>n *(f<strong>u</strong>n)*  
 <strong>ø</strong> as in w<strong>ø</strong>d *(w<strong>oul</strong>d, w<strong>oo</strong>d)*  
 <strong>o</strong> as in <strong>o</strong>nly *(<strong>o</strong>nly)*  
-<strong>l</strong> as in <strong>l</strong>o *(<strong>l</strong>ow)*  
 <strong>r</strong> as in <strong>r</strong>o *(<strong>r</strong>ow)*  
-<strong>m</strong> as in <strong>m</strong>äp *(<strong>m</strong>ap)*  
+<strong>l</strong> as in <strong>l</strong>o *(<strong>l</strong>ow)*  
 <strong>n</strong> as in <strong>n</strong>äp *(<strong>n</strong>ap)*  
+<strong>m</strong> as in <strong>m</strong>äp *(<strong>m</strong>ap)*  
 <strong>b</strong> as in <strong>b</strong>ät *(<strong>b</strong>at)*  
 <strong>p</strong> as in <strong>p</strong>ät *(<strong>p</strong>at)*  
 <strong>v</strong> as in ly<strong>v</strong> *(lea<strong>v</strong>e)*  
@@ -80,25 +80,7 @@ AÄEIYWUØOLRMNBPVFGKDTZSŽŠH
 
 ### Älfubit Sang *(Alphabet Song)*
 
-aäbd
-efgh
-iklm
-noøp
-rsš
-tuv
-wy
-zž
-
 ![Älfubit Sang](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/älfubit-sang.png)
-
-### Trudišinul Ordør *(Traditional Order)*
-
-
-```
-aäbdefghiklmnoøprsštuvwyzž
-AÄBDEFGHIKLMNOØPRSŠTUVWYZŽ
-```
-
 
 ## [Speling änd Stäts *(Spelling and Stats)*](https://docs.google.com/spreadsheets/d/1DC8Bau9AnGinHlOgKrrFx7jOX2EnOsVh6xWJa-E_2JA/edit#gid=1251527383)
 
