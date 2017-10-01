@@ -96,15 +96,19 @@ th {
         }
         >span {
             cursor: help;
-            border-bottom: 1px dotted #eee;
         }
     }
     td {
         border-right: 1px solid rgba(255, 255, 255, 0.2);
         overflow: scroll-x;
     }
-    td:nth-of-type(3) a {
-        float: right;
+    td:nth-of-type(2) {
+        >span {
+            cursor: help;
+        }
+        >a {
+            float: right;
+        }
     }
 }
 
@@ -176,7 +180,6 @@ nav {
             }
         }
     }
-
     &.bottom {
         ul {
             cursor: default;
@@ -216,8 +219,7 @@ nav {
             }
         }
         i {
-            position: relative;
-            // top: -.2em;
+            position: relative; // top: -.2em;
         }
     }
 }

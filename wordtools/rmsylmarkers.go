@@ -1,3 +1,6 @@
+// Nils Elde
+// https://gitlab.com/nilsanderselde
+
 package wordtools
 
 // RemoveSyllableMarkers generates "fun" field value by stripping "funsil" of syllable markers ˈˌ·

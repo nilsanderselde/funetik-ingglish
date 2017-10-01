@@ -1,6 +1,11 @@
+// Nils Elde
+// https://gitlab.com/nilsanderselde
+
 package wordtools
 
-import "strings"
+import (
+	"strings"
+)
 
 // SubstitutionCypher substitutes letters from the first row below to the letter
 // directly below it to allow sorting based on a custom alphabet in SQL.

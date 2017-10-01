@@ -1,3 +1,6 @@
+// Nils Elde
+// https://gitlab.com/nilsanderselde
+
 package global
 
 // TemplateParams encapsulates data to be

@@ -1,9 +1,11 @@
+// Nils Elde
+// https://gitlab.com/nilsanderselde
+
 package dbconnect
 
 import (
 	"database/sql"
 	"fmt"
-	"log"
 	"strconv"
 	"time"
 
@@ -11,25 +13,33 @@ import (
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
-// UpdateAllAutoValues automatically fills values for:
+// UpdateAutoValues automatically fills values for:
 // 1. fun      (remove syllable markings from funsil)
 // 2. numsil   (count syllable markings from funsil)
 // 3. funsort  (substitution cipher on fun)
 // 4. dist     (calc lev dist between fun and trud)
-func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
+func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, rowID int) {
 	if !(fun || numsil || funsort || dist) {
 		return // don't bother connecting if no updates will occur
 	}
 	db, err := sql.Open("postgres", DBInfo)
 	if err != nil {
-		log.Fatal(err)
+		// log.Fatal(err)
+		fmt.Println(err)
 	}
 	defer db.Close()
 
 	err = db.Ping()
 	if err != nil {
-		log.Fatal(err)
+		// log.Fatal(err)
+		fmt.Println(err)
 	}
+
+	queryFrom := "FROM words"
+	if rowID != -1 {
+		queryFrom += " WHERE id = " + strconv.Itoa(rowID)
+	}
+	queryFrom += ";"
 
 	if fun || numsil {
 		start := time.Now()
@@ -48,9 +58,10 @@ func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
 		s.Start()
 
 		// update fun and/or numsil with values generated using funsil
-		rows, err := db.Query("SELECT id, funsil FROM words;")
+		rows, err := db.Query("SELECT id, funsil " + queryFrom)
 		if err != nil {
-			log.Fatal(err)
+			// log.Fatal(err)
+			fmt.Println(err)
 		}
 		defer rows.Close()
 
@@ -81,11 +92,14 @@ func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
 			message += " dist"
 		}
 		fmt.Print(message + "... ")
+		s := spinner.New(spinner.CharSets[13], 100*time.Millisecond)
+		s.Start()
 
 		// update funsort and dist with values generated using fun and trud (for dist, use written form if different)
-		rows, err := db.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin FROM words where id > 49152;")
+		rows, err := db.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin " + queryFrom)
 		if err != nil {
-			log.Fatal(err)
+			// log.Fatal(err)
+			fmt.Println(err)
 		}
 		defer rows.Close()
 
@@ -99,6 +113,7 @@ func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
 		}
 		t := time.Now()
 		elapsed := t.Sub(start)
+		s.Stop()
 		fmt.Println("Done. (", elapsed, ")")
 	}
 
@@ -118,7 +133,8 @@ func UpdateFun(row *sql.Rows, db *sql.DB) {
 	updateFun := db.QueryRow("UPDATE words SET fun = '" + fun + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateFun.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Fatal(err)
+		// log.Fatal(err)
+		fmt.Println(err)
 	}
 }
 
@@ -137,7 +153,8 @@ func UpdateNumsil(row *sql.Rows, db *sql.DB) {
 	updateNumsil := db.QueryRow("UPDATE words SET numsil = '" + strconv.Itoa(numsil) + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateNumsil.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Fatal(err)
+		// log.Fatal(err)
+		fmt.Println(err)
 	}
 }
 
@@ -158,7 +175,8 @@ func UpdateFunsort(row *sql.Rows, db *sql.DB) {
 	updateFunsort := db.QueryRow("UPDATE words SET funsort = '" + funsort + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateFunsort.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Fatal(err)
+		// log.Fatal(err)
+		fmt.Println(err)
 	}
 }
 
@@ -179,6 +197,13 @@ func UpdateDist(row *sql.Rows, db *sql.DB) {
 	updateDist := db.QueryRow("UPDATE words SET dist = '" + strconv.Itoa(dist) + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateDist.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Fatal(err)
+		// log.Fatal(err)
+		fmt.Println(err)
 	}
+}
+
+// UpdateAllAutoValues automatically generates values for all rows
+// (About 15 minutes with all tasks enabled and 50,000 words)
+func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
+	UpdateAutoValues(fun, numsil, funsort, dist, -1)
 }

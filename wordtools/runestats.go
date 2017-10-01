@@ -4,15 +4,12 @@
 package wordtools
 
 import (
-	"bufio"
 	"fmt"
-	"log"
-	"os"
 )
 
-// GetStats counts occurrences of characters in a text file given an alphabet and
+// CalculateStats counts occurrences of characters in a text file given an alphabet and
 // saves results to different text file.
-func GetStats() [][]string {
+func CalculateStats(words []string) [][]string {
 	// Runes in alphabetical order
 	runes := []rune("aäeoøiuywlrmnbpvfgkdtzsžšh")
 
@@ -27,21 +24,9 @@ func GetStats() [][]string {
 		wordInit[r] = 0
 	}
 
-	// Open file in which to count runes
-	file, err := os.Open("C:/Users/Nils/Go/io/words_for_runestats.txt")
-
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer file.Close()
-
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		current := scanner.Text()
-
-		// Add all letters to map of total letter counts
+	for _, word := range words {
 		index := 0
-		for _, element := range current {
+		for _, element := range word {
 			// For each rune in the string, if it's in the map...
 			if _, ok := allRunes[element]; ok {
 				// ...increment its count
@@ -53,9 +38,6 @@ func GetStats() [][]string {
 				}
 			}
 		}
-	}
-	if err := scanner.Err(); err != nil {
-		log.Fatal(err)
 	}
 
 	results := make([][]string, len(runes))

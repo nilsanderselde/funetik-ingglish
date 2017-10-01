@@ -1,3 +1,6 @@
+// Nils Elde
+// https://gitlab.com/nilsanderselde
+
 package main
 
 import (
@@ -8,7 +11,6 @@ import (
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
-	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
 // Options for ?update=all (func UpdateAllAutoValues)
@@ -42,7 +44,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	aSort, aCurr, aNext, aPrev := &t.args.Sort, &t.args.CurrentPage, &t.args.NextPage, &t.args.PreviousPage
 
 	funcMap := template.FuncMap{
-		"GetStats":  wordtools.GetStats,
+		"GetStats":  dbconnect.GetStats,
 		"ShowWords": dbconnect.ShowWords,
 		"Random":    randomRune,
 	}
@@ -83,7 +85,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			} else if *sortBy == "dist" {
 				*aNew, *aOld, *aDist, *aID = false, false, true, false
 				*aSort = "?sortby=dist"
-				*aQ += " ORDER BY dist"
+				*aQ += " ORDER BY dist, funsort"
 			} else {
 				*aNew, *aOld, *aDist, *aID = true, false, false, false
 				*aSort = "?sortby=new"

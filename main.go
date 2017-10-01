@@ -1,3 +1,6 @@
+// Nils Elde
+// https://gitlab.com/nilsanderselde
+
 package main
 
 import (
