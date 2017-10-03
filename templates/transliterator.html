@@ -1,7 +1,12 @@
 {{define "transliterator.html"}}
 {{template "_header.html"}}
-<form method="get">
-    <textarea placeholder="Enter traditionally spelled English text here."></textarea>
+
+
+<form action="/login" method="post">
+    Username:<input type="text" name="username">
+    Password:<input type="password" name="password">
+    <input type="submit" value="Login">
 </form>
+
 {{template "_footer.html"}}
 {{end}}

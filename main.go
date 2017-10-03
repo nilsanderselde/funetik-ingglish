@@ -31,6 +31,7 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	dbconnect.DBInfo = dbconnect.GetDBInfo()
+	// dbconnect.RestoreBackup()
 
 	wordsQuery := `SELECT id,
     COALESCE(COALESCE(ritin, fun), '') as fun,
@@ -42,7 +43,7 @@ func main() {
 	COALESCE(funsort, ''),
 	COALESCE(flaagd, 'false')
 `
-	wordsQueryFrom := `FROM words` // split up because two queries must use this part
+	wordsQueryFrom := `FROM words WHERE flaagd` // split up because two queries must use this part
 
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
