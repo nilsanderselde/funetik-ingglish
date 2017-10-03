@@ -1,12 +1,43 @@
 html {
-    background: #333;
-    color: #eee;
+    background: #eee;
+    color: #333;
     background: url(../images/ulimpik-näšinul-park-2560w.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-
+section {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+p {
+    margin: .5rem 0;
+    
+}
+h1 {
+    margin: 0;
+}
+h2{
+    font-size: 1.2rem;
+    margin: 1.5rem 0 .5rem 0;
+}
+textarea {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    width: 100%;
+}
+form{
+    text-align: center;
+}
+input[type="submit"] {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 nav {
     user-select: none;
     text-align: center;
@@ -77,12 +108,14 @@ table {
     background-attachment: fixed;
     color: black;
     margin: 0 auto 20px auto;
-    @media (max-width: 1000px){
-        margin-left: 10px;
-    }
     &.words {
         width: 80%;
         max-width: 600px;
+        td:nth-of-type(4),
+        td:nth-of-type(5),
+        td:nth-of-type(6) {
+            text-align: center;
+        }
     }
     &.stats {
         th:nth-of-type(1), td:nth-of-type(1)  {
@@ -96,9 +129,10 @@ table {
         }
     }
     &.key{
-        position: fixed;
+        font-size: .8em;
+        position: absolute;
+        bottom: 10px;
         right: 10px;
-        top: 331px;
         caption {
             font-size: 1.2em;
             font-weight: bold;
@@ -106,6 +140,9 @@ table {
             background: #444;
             color: #eee;
             border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        }
+        td:nth-of-type(1) {
+            text-align: center;
         }
     }
     tr:nth-of-type(even) {
@@ -153,6 +190,7 @@ table {
         border-right: 1px solid rgba(255, 255, 255, 0.2);
         overflow: scroll-x;
         font-size: .8em;
+        text-align: left;
         &:nth-last-of-type(1) {
             border: 0;
         }

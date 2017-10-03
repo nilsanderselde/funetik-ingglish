@@ -48,6 +48,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		"ShowWords": dbconnect.ShowWords,
 		"Random":    randomRune,
 	}
+
 	// special processing for words list based on query strings
 	if t.filename == "words.html" {
 		if r.URL.Path != "/" {
@@ -182,6 +183,10 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		))
 
 	} else {
+		if t.filename == "translit.html" {
+			t.args.Translit = dbconnect.ProcessTrud(r)
+		}
+
 		// not word list, just a regular page, join the template files
 		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
 			filepath.Join("templates", t.filename),

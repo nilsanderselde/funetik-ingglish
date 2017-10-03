@@ -1,0 +1,16 @@
+{{define "translit.html"}}
+{{template "_header.html"}}
+<section>
+    <p>Tränzlitøreitør dhät traiz tw tränzlitøreit trudišinul sentinsiz for funetik wunz.</p>
+    <form action="/translit" method="post" enctype="application/x-www-form-urlencoded">
+        <textarea name="inputtext" cols="80" rows="10" placeholder="Type in here and press Submit. Try to avoid doubling up punctuation."></textarea><br>
+        <input type="submit" />
+    </form>
+    {{if .Translit}}
+    <h2>Tränzlitøreišin:</h2>
+    <textarea name="inputtext" cols="80" rows="10">{{.Translit}}</textarea><br>
+    {{end}}
+</section>
+
+{{template "_footer.html"}}
+{{end}}

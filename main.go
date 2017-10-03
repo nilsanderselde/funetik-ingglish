@@ -43,12 +43,13 @@ func main() {
 	COALESCE(funsort, ''),
 	COALESCE(flaagd, 'false')
 `
-	wordsQueryFrom := `FROM words WHERE flaagd` // split up because two queries must use this part
+	wordsQueryFrom := `FROM words` // split up because two queries must use this part
 
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
 	http.Handle("/", &templateHandler{filename: "words.html", query: wordsQuery, queryFrom: wordsQueryFrom})
 	http.Handle("/runestats", &templateHandler{filename: "runestats.html"})
+	http.Handle("/translit", &templateHandler{filename: "translit.html"})
 
 	// Start Server
 	if err := http.ListenAndServe(":8080", nil); err != nil {

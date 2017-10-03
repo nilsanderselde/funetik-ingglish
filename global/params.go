@@ -19,6 +19,7 @@ type TemplateParams struct {
 	NextPage     string
 	PreviousPage string
 	Words        [][]string
+	Translit     string
 }
 
 var (
