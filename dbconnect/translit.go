@@ -25,7 +25,7 @@ func ProcessTrud(r *http.Request) string {
 					if i == 0 {
 						result += strings.Title(GetFun(trud)) + " "
 					} else {
-						if last == '.' {
+						if last == '.' || last == '!' || last == '?' {
 							result += strings.Title(GetFun(trud)) + " "
 						} else {
 							result += GetFun(trud) + " "
