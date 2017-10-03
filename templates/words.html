@@ -1,6 +1,76 @@
-{{define "words.html"}}
-{{template "_header.html"}}
-<table class="results words">
+{{define "words.html"}} {{template "_header.html"}}
+<table class="key">
+    <caption>Ky</caption>
+    <tr>
+        <th>
+            Simbul
+        </th>
+        <th>
+            Part uv Spytš
+        </th>
+    </tr>
+    <tr>
+        <td>N</td>
+        <td>Noun</td>
+    </tr>
+    <tr>
+        <td>P</td>
+        <td>Plural</td>
+    </tr>
+    <tr>
+        <td>h</td>
+        <td>Noun Phrase</td>
+    </tr>
+    <tr>
+        <td>V</td>
+        <td>Verb (usu participle)</td>
+    </tr>
+    <tr>
+        <td>t</td>
+        <td>Verb (transitive)</td>
+    </tr>
+    <tr>
+        <td>i</td>
+        <td>Verb (intransitive)</td>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>Adjective</td>
+    </tr>
+    <tr>
+        <td>v</td>
+        <td>Adverb</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>Conjunction</td>
+    </tr>
+    <tr>
+        <td>P</td>
+        <td>Preposition</td>
+    </tr>
+    <tr>
+        <td>!</td>
+        <td>Interjection</td>
+    </tr>
+    <tr>
+        <td>r</td>
+        <td>Pronoun</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>Definite Article</td>
+    </tr>
+    <tr>
+        <td>I</td>
+        <td>Indefinite Article</td>
+    </tr>
+    <tr>
+        <td>o</td>
+        <td>Nominative</td>
+    </tr>
+</table>
+<table class="words">
     <tr>
         <th id="id">
             <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
@@ -26,6 +96,7 @@ tšendžiz tw get frum old tw nw speling"><span>Dist</span>{{if .Dist}}<i>{{if .
     </tr>
     {{template "wordsSorted" .}}
 </table>
+
 <nav class="bottom">
     <ul>
         {{if .PreviousPage}}
@@ -33,18 +104,17 @@ tšendžiz tw get frum old tw nw speling"><span>Dist</span>{{if .Dist}}<i>{{if .
             document.addEventListener("keydown", function (evt) {
                 evt = evt || window.event;
                 if (evt.keyCode == 37) {
-                    window.location='{{.PreviousPage}}'
+                    window.location = '{{.PreviousPage}}'
                 }
             });
         </script>
         <li><a href="{{.PreviousPage}}" class="back" title="Keyboard shortcut: left arrow"><i>🡄</i> Back</a></li>{{else}}
-        <li><a class="disabled"><i>🡄</i> Back</a></li>{{end}}
-        {{if .NextPage}}
+        <li><a class="disabled"><i>🡄</i> Back</a></li>{{end}} {{if .NextPage}}
         <script>
             document.addEventListener("keydown", function (evt) {
                 evt = evt || window.event;
                 if (evt.keyCode == 39) {
-                    window.location='{{.NextPage}}'
+                    window.location = '{{.NextPage}}'
                 }
             });
         </script>
@@ -52,5 +122,4 @@ tšendžiz tw get frum old tw nw speling"><span>Dist</span>{{if .Dist}}<i>{{if .
         <li><a class="disabled">Next <i>🡆</i></a></li>{{end}}
     </ul>
 </nav>
-{{template "_footer.html"}}
-{{end}}
+{{template "_footer.html"}} {{end}}
