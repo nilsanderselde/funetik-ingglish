@@ -1,6 +1,6 @@
 {{define "words.html"}}
 {{template "_header.html"}}
-<table class="wørdz">
+<table class="results words">
     <tr>
         <th id="id">
             <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
@@ -28,9 +28,27 @@ tšendžiz tw get frum old tw nw speling"><span>Dist</span>{{if .Dist}}<i>{{if .
 </table>
 <nav class="bottom">
     <ul>
-        {{if .PreviousPage}}<li><a href="{{.PreviousPage}}" class="back"><i>🡄</i> Back</a></li>{{else}}
+        {{if .PreviousPage}}
+        <script>
+            document.addEventListener("keydown", function (evt) {
+                evt = evt || window.event;
+                if (evt.keyCode == 37) {
+                    window.location='{{.PreviousPage}}'
+                }
+            });
+        </script>
+        <li><a href="{{.PreviousPage}}" class="back" title="Keyboard shortcut: left arrow"><i>🡄</i> Back</a></li>{{else}}
         <li><a class="disabled"><i>🡄</i> Back</a></li>{{end}}
-        {{if .NextPage}}<li><a href="{{.NextPage}}" class="next">Next <i>🡆</i></a></li>{{else}}
+        {{if .NextPage}}
+        <script>
+            document.addEventListener("keydown", function (evt) {
+                evt = evt || window.event;
+                if (evt.keyCode == 39) {
+                    window.location='{{.NextPage}}'
+                }
+            });
+        </script>
+        <li><a href="{{.NextPage}}" class="next" title="Keyboard shortcut: right arrow">Next <i>🡆</i></a></li>{{else}}
         <li><a class="disabled">Next <i>🡆</i></a></li>{{end}}
     </ul>
 </nav>

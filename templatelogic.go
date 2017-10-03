@@ -15,10 +15,10 @@ import (
 
 // Options for ?update=all (func UpdateAllAutoValues)
 const (
-	fun     bool = false
-	numsil  bool = false
+	fun     bool = true
+	numsil  bool = true
 	funsort bool = true
-	dist    bool = false
+	dist    bool = true
 )
 
 // templateHandler contains all fields needed to process and execute templates
@@ -63,7 +63,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		// if set to update automatically generated values
 		if r.URL.Query()["update"] != nil {
 			if r.URL.Query()["update"][0] == "all" {
-				dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist)
+				dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, true)
 			}
 		}
 
@@ -85,7 +85,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			} else if *sortBy == "dist" {
 				*aNew, *aOld, *aDist, *aID = false, false, true, false
 				*aSort = "?sortby=dist"
-				*aQ += " ORDER BY dist, funsort"
+				*aQ += " ORDER BY dist"
 			} else {
 				*aNew, *aOld, *aDist, *aID = true, false, false, false
 				*aSort = "?sortby=new"
@@ -93,11 +93,11 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			}
 			// ascending or descending
 			if r.URL.Query()["order"] != nil && r.URL.Query()["order"][0] == "desc" {
-				*aQ += " DESC;"
+				*aQ += " DESC, id DESC;"
 				*aSort += desc
 				*aRev = true
 			} else {
-				*aQ += " ASC;"
+				*aQ += " ASC, id ASC;"
 				*aSort += asc
 				*aRev = false
 			}
@@ -106,7 +106,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			*aNew, *aOld, *aDist, *aID = true, false, false, false
 			*aSort = "?sortby=new&order=asc"
 			*aRev = false
-			*aQ += " ORDER BY funsort ASC;"
+			*aQ += " ORDER BY funsort ASC, id asc;"
 		}
 		// if there is a valid "num" query string...
 		if r.URL.Query()["num"] != nil {

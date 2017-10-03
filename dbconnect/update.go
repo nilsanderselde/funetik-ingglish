@@ -18,7 +18,7 @@ import (
 // 2. numsil   (count syllable markings from funsil)
 // 3. funsort  (substitution cipher on fun)
 // 4. dist     (calc lev dist between fun and trud)
-func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, rowID int) {
+func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, isFlaagd bool, rowID int) {
 	if !(fun || numsil || funsort || dist) {
 		return // don't bother connecting if no updates will occur
 	}
@@ -35,9 +35,18 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, rowID int)
 		fmt.Println(err)
 	}
 
-	queryFrom := "FROM words"
-	if rowID != -1 {
-		queryFrom += " WHERE id = " + strconv.Itoa(rowID)
+	queryFrom := " FROM words"
+	if rowID != -1 || isFlaagd {
+		queryFrom += " WHERE"
+		if rowID != -1 {
+			queryFrom += " id = " + strconv.Itoa(rowID)
+			if isFlaagd {
+				queryFrom += " AND"
+			}
+		}
+		if isFlaagd {
+			queryFrom += " flaagd; UPDATE words SET flaagd = false"
+		}
 	}
 	queryFrom += ";"
 
@@ -58,7 +67,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, rowID int)
 		s.Start()
 
 		// update fun and/or numsil with values generated using funsil
-		rows, err := db.Query("SELECT id, funsil " + queryFrom)
+		rows, err := db.Query("SELECT id, funsil" + queryFrom)
 		if err != nil {
 			// log.Fatal(err)
 			fmt.Println(err)
@@ -96,7 +105,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, rowID int)
 		s.Start()
 
 		// update funsort and dist with values generated using fun and trud (for dist, use written form if different)
-		rows, err := db.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin " + queryFrom)
+		rows, err := db.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin" + queryFrom)
 		if err != nil {
 			// log.Fatal(err)
 			fmt.Println(err)
@@ -204,6 +213,6 @@ func UpdateDist(row *sql.Rows, db *sql.DB) {
 
 // UpdateAllAutoValues automatically generates values for all rows
 // (About 15 minutes with all tasks enabled and 50,000 words)
-func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
-	UpdateAutoValues(fun, numsil, funsort, dist, -1)
+func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool, isFlaagd bool) {
+	UpdateAutoValues(fun, numsil, funsort, dist, isFlaagd, -1)
 }
