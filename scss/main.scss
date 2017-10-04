@@ -7,10 +7,14 @@ html {
     font-size: 16px;
 }
 section, article {
-    display: block;
+    display: block;    
+}
+section, article, table {
+    margin: 0 auto 20px auto;   
+}
+section, article, .words {
     width: 80%;
-    max-width: 600px;
-    margin: auto;
+    max-width: 700px;
 }
 article, table {
     background-color: rgba(255, 255, 255, 0.2);    
@@ -28,14 +32,14 @@ article{
         text-decoration: underline;
     }
 }
-p {
-    margin: .2em 0 .5em;
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 1em 0 .1em;
 }
 h1{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 h2{
-    font-size: 1.2rem; 
+    font-size: 1.3rem; 
     
 }
 h3{
@@ -74,7 +78,9 @@ h3{
     font-size: .9em;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    border-radius: 10px;
+    text-align: left;
+    
 }
 
 .ui-icon {
@@ -180,11 +186,7 @@ sub {
 table {
     border-collapse: collapse;
     table-layout: fixed;
-    color: black;
-    margin: 0 auto 20px auto;
     &.words {
-        width: 80%;
-        max-width: 600px;
         td:nth-of-type(4),
         td:nth-of-type(5),
         td:nth-of-type(6) {

@@ -13,6 +13,11 @@ import (
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
 )
 
+const (
+	// DefaultNum is default number of words per page
+	DefaultNum int = 32
+)
+
 // Options for ?update=all (func UpdateAllAutoValues)
 const (
 	fun     bool = true

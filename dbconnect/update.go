@@ -45,7 +45,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, isFlaagd b
 			}
 		}
 		if isFlaagd {
-			queryFrom += " flaagd; COMMIT;" // UPDATE words SET flaagd = false"
+			queryFrom += " flaagd; COMMIT; UPDATE words SET flaagd = false"
 		}
 	}
 	queryFrom += ";"

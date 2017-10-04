@@ -10,11 +10,6 @@ import (
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
 )
 
-const (
-	// DefaultNum is default number of words per page
-	DefaultNum int = 20
-)
-
 // Sets HTTP headers for handler passed to function
 func setHeaders(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -43,7 +38,7 @@ func main() {
 	COALESCE(funsort, ''),
 	COALESCE(flaagd, 'false')
 `
-	wordsQueryFrom := `FROM words` // split up because two queries must use this part
+	wordsQueryFrom := `FROM words WHERE pus IS NOT NULL` // split up because two queries must use this part
 
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
