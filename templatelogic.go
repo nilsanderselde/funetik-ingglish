@@ -189,7 +189,15 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	} else {
 		if t.filename == "translit.html" {
-			t.args.TranslitOutput, t.args.TranslitInput = dbconnect.ProcessTrud(r)
+
+			cha := make(chan dbconnect.Output)
+
+			go dbconnect.ProcessTrud(cha, r)
+
+			outStruct := <-cha // waits till getA() returns
+
+			t.args.TranslitOutput = outStruct.OutputLines
+			t.args.TranslitInput = outStruct.PrevInput
 		}
 
 		// not word list, just a regular page, join the template files

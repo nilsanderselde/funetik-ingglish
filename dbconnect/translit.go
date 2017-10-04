@@ -16,10 +16,18 @@ var (
 	UnknownWords []string
 )
 
+// Output encapsulates the two return values of ProcessTrud:
+// a slice of strings, each a line of the output text;
+// and the original input string.
+type Output struct {
+	OutputLines []string
+	PrevInput   string
+}
+
 // ProcessTrud tries to process form input by transliterating
 // traditional to funetik spellings.
-func ProcessTrud(r *http.Request) (outputLines []string, input string) {
-
+func ProcessTrud(ch chan Output, r *http.Request) {
+	outStruct := Output{}
 	// attempt to parse form
 	err := r.ParseForm()
 	// if form was parsed successfully
@@ -32,7 +40,7 @@ func ProcessTrud(r *http.Request) (outputLines []string, input string) {
 				text := r.Form["inputtext"][0]
 
 				// make a copy to place back in translit text area
-				input = text
+				outStruct.PrevInput = text
 
 				// for collecting words after transliteration attempt
 				var words []string
@@ -78,14 +86,13 @@ func ProcessTrud(r *http.Request) (outputLines []string, input string) {
 				// Split one-line results string into separate lines
 				scanner = bufio.NewScanner(strings.NewReader(output))
 				for scanner.Scan() {
-					outputLines = append(outputLines, scanner.Text())
+					outStruct.OutputLines = append(outStruct.OutputLines, scanner.Text())
 				}
 				// fmt.Println(UnknownWords)
-				return outputLines, input
 			}
 		}
 	}
-	return outputLines, input
+	ch <- outStruct
 }
 
 // prevents the first letter after the apostrophe in a contraction
