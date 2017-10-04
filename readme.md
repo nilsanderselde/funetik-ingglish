@@ -9,11 +9,11 @@
 
 Äftør studying Linggwistiks, Späniš, Rušin, änd Finiš, I keim tw ryilaiz džust häw kamplikeitid änd käwntørintwitiv äwr älfubit änd speling sistim for Umerikin Inggliš iz. Tšildrin änd forin spykørz häv trubul disaiføring dhu labirinthyin änd arbitrery sistim uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz. Ai disaidid tw rywørk Umerikin Inggliš in u wei dhät iz kunsistint änd intwitiv.
 
->*After studying Linguistics, Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is. Children and foreign speakers have trouble decyphering the labyrinthian and arbitrary system of "rules" (which aren't really rules) and unnormalized foreign spellings. I decided to rework American English in a way that is consistent and intuitive. *
+>*After studying Linguistics, Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is. Children and foreign speakers have trouble decyphering the labyrinthian and arbitrary system of "rules" (which aren't really rules) and unnormalized foreign spellings. I decided to rework American English in a way that is consistent and intuitive.*
 
 Nätšørul lengwidžiz ar al spokin or saind, weräz ritin "lenggwidž" iz džust [orthagrify](https://en.wikipedia.org/wiki/Orthography). Bai kryeiting u nw orthagrify, Ai'm nat äkšwuly tšendžing Inggliž itself ät al. 
 
->*Natural languages are all spoken or signed, whereas written "language" is just [orthography](https://en.wikipedia.org/wiki/Orthography). By creating a new orthography, I'm not actually changing English itself at all.
+>*Natural languages are all spoken or signed, whereas written "language" is just [orthography](https://en.wikipedia.org/wiki/Orthography). By creating a new orthography, I'm not actually changing English itself at all.*
 
 With dhis orthagrify, ekstru nalidž wødn't by rikwaird tw pik up u bøk änd ryd evry wørd kurektly.
 

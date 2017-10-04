@@ -23,9 +23,13 @@ article{
         width: 100%;
         height: auto;
     }
+    a{
+        font-weight: normal;
+        text-decoration: underline;
+    }
 }
 p {
-    
+    margin: .2em 0 .5em;
 }
 h1{
     font-size: 1.3rem;
@@ -39,6 +43,46 @@ h3{
     
 }
 
+.ui-accordion {
+    margin: 0 0 2em;
+    text-align: right;
+    
+}
+.ui-accordion-header {
+    transition: all .2s linear;
+    font-size: 1rem;
+    padding: .2rem 0 !important;
+    color: rgb(49, 98, 153);
+    display: inline-block !important;
+    &:hover {
+        text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.4);
+        color: #333;
+    }
+    &[aria-expanded="false"] .ui-accordion-header-icon::after {
+        content: "🡇";
+    }
+    &[aria-expanded="true"] .ui-accordion-header-icon::after {
+        content: "🡅";
+    }
+    .text {
+        font-style: italic;
+    }
+}
+.ui-accordion-content {
+    padding: .3em !important;
+    font-style: italic;
+    font-size: .9em;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.ui-icon {
+    text-indent: 0;
+}
+
+
+.ui-accordion-header
 
 textarea {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)); 
@@ -159,6 +203,9 @@ table {
         }
     }
     &.key{
+        position: absolute;
+        top: 10px;
+        right: 10px;
         caption {
             font-size: 1.2em;
             font-weight: bold;
@@ -169,6 +216,10 @@ table {
         }
         td:nth-of-type(1) {
             text-align: center;
+        }
+        td, th {
+       padding: 2px 5px;
+    
         }
     }
     tr:nth-of-type(even) {
@@ -270,7 +321,10 @@ a {
         text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
     }
 }
-
+ul{
+    cursor: default;
+    
+}
 nav {
     &.top {
         a {
@@ -288,6 +342,18 @@ nav {
             &:nth-of-type(2) a {
                 &:hover,
                 &:active {
+                    text-shadow: -2px 4px 6px rgba(97, 164, 241, 0.67);
+                }
+            }
+            &:nth-of-type(3) a {
+                &:hover,
+                &:active {
+                    text-shadow: 2px 4px 6px rgba(97, 164, 241, 0.67);
+                }
+            }
+            &:nth-of-type(4) a {
+                &:hover,
+                &:active {
                     text-shadow: 6px 3px 6px rgba(97, 164, 241, 0.67);
                 }
             }
@@ -295,7 +361,6 @@ nav {
     }
     &.bottom {
         ul {
-            cursor: default;
             font-size: 1.5em;
         }
         li {
