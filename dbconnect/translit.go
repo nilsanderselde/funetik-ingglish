@@ -54,7 +54,13 @@ func ProcessTrud(r *http.Request) (outputLines []string, input string) {
 				var output string
 				// transliterate words
 				for i, trud := range words {
-					if trud != "\n" { // don't process strings containing saved newlines
+					// if it's a single symbol by itself, just add it to output
+					if len(trud) == 1 {
+						if hasPunc([]rune(trud)[0]) || trud == "\n" {
+							output += trud
+							continue
+						}
+					} else { // don't process strings containing saved newlines
 						if i == 0 { // for first word in input, store the funetik spelling in title case
 							output += capitalizeContraction(getFun(trud)) + " "
 						} else { // for words following sentence-terminating punctuation, store the funetik spellings in title case
@@ -64,8 +70,6 @@ func ProcessTrud(r *http.Request) (outputLines []string, input string) {
 								output += getFun(trud) + " "
 							}
 						}
-					} else {
-						output += trud
 					}
 
 					stringR := []rune(trud)        // convert string to rune array to access last character
@@ -76,6 +80,7 @@ func ProcessTrud(r *http.Request) (outputLines []string, input string) {
 				for scanner.Scan() {
 					outputLines = append(outputLines, scanner.Text())
 				}
+				// fmt.Println(UnknownWords)
 				return outputLines, input
 			}
 		}
@@ -158,12 +163,12 @@ func getFun(trud string) (fun string) {
 		err = rows.Scan(&fun)
 		if err != nil {
 			// fmt.Println("not found, returning trud:", trud)
-			return trud
+			UnknownWords = append(UnknownWords, trud)
+			return leading + trud + trailing
 		}
 	}
-	fun = leading + fun + trailing
 	// fmt.Println(fun)
-	return fun
+	return leading + fun + trailing
 }
 
 // replace ‘’“” with basic versions

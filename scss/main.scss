@@ -6,52 +6,99 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-section, article {
-    display: block;    
+
+section,
+article {
+    display: block;
 }
-section, article, table {
-    margin: 0 auto 20px auto;   
+
+section,
+article,
+table {
+    margin: 0 auto 20px auto;
 }
-section, article, .words {
+
+section,
+article,
+.words {
     width: 80%;
     max-width: 700px;
 }
-article, table {
-    background-color: rgba(255, 255, 255, 0.2);    
+
+article,
+table {
+    background-color: rgba(255, 255, 255, 0.2);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40vh, rgba(255, 255, 255, 0.7) 100vh);
     background-attachment: fixed;
     padding: 10px;
 }
-article{
-    img{
+
+article {
+    img {
         width: 100%;
         height: auto;
     }
-    a{
+    a {
         font-weight: normal;
         text-decoration: underline;
     }
 }
-p, h1, h2, h3, h4, h5, h6 {
-    margin: 1em 0 .1em;
+
+.letters li>span {
+    cursor: help;
+    position: relative;
+    &:hover {
+        text-decoration: underline;
+    }
+    &[title]:hover:after {
+        content: attr(title);
+        padding: 4px 8px;
+        color: #333;
+        position: absolute;
+        right: 110%;
+        top: 0;
+        white-space: nowrap;
+        background: #eee;
+        z-index: 2;
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px #222;
+    }
 }
-h1{
+
+.col {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1em;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: .5em 0 .1em;
+}
+
+h1 {
     font-size: 1.5rem;
 }
-h2{
-    font-size: 1.3rem; 
-    
+
+h2 {
+    font-size: 1.3rem;
 }
-h3{
+
+h3 {
     font-size: 1.1rem;
-    
 }
 
 .ui-accordion {
-    margin: 0 0 2em;
     text-align: right;
-    
+    margin: 0 0 1.4em;
 }
+
 .ui-accordion-header {
     transition: all .2s linear;
     font-size: 1rem;
@@ -72,32 +119,30 @@ h3{
         font-style: italic;
     }
 }
+
 .ui-accordion-content {
-    padding: .3em !important;
+    padding: .3em .5em !important;
     font-style: italic;
     font-size: .9em;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: left;
-    
 }
 
 .ui-icon {
     text-indent: 0;
 }
 
-
-.ui-accordion-header
-
 textarea {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)); 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
     max-width: 100%;
     min-width: 100%;
-    max-height: 200px;
-    min-height: 200px;  
+    min-height: 200px;
 }
-textarea, #results {
+
+textarea,
+#results {
     border: 1px solid rgba(0, 0, 0, 0.4);
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
@@ -107,17 +152,21 @@ textarea, #results {
     font-size: .8rem;
     padding: 2px;
 }
+
 #results {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6));    
-    overflow-y: scroll;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6));
+    overflow-y: auto;
 }
-form{
+
+form {
     text-align: center;
 }
+
 input[type="submit"] {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 nav {
     user-select: none;
     text-align: center;
@@ -143,11 +192,10 @@ header {
     width: 100%;
     max-width: 900px;
     margin: auto;
-    h1{
+    h1 {
         width: 100%;
         max-width: 400px;
         margin: auto;
-        
     }
     img {
         width: 100%;
@@ -168,19 +216,22 @@ caption {
 th {
     user-select: none;
 }
+
 sup,
 sub {
-	height: 0;
-	line-height: 1;
-	vertical-align: baseline;
-	_vertical-align: bottom;
-	position: relative;
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    _vertical-align: bottom;
+    position: relative;
 }
+
 sup {
-	bottom: 1ex;
+    bottom: 1ex;
 }
+
 sub {
-	top: .5ex;
+    top: .5ex;
 }
 
 table {
@@ -194,17 +245,19 @@ table {
         }
     }
     &.stats {
-        th:nth-of-type(1), td:nth-of-type(1)  {
+        th:nth-of-type(1),
+        td:nth-of-type(1) {
             display: none;
         }
-        td:nth-of-type(2)  {
+        td:nth-of-type(2) {
             text-align: center;
         }
-        th:nth-of-type(n+3), td:nth-of-type(n+3)  {
+        th:nth-of-type(n+3),
+        td:nth-of-type(n+3) {
             text-align: right;
         }
     }
-    &.key{
+    &.key {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -219,9 +272,9 @@ table {
         td:nth-of-type(1) {
             text-align: center;
         }
-        td, th {
-       padding: 2px 5px;
-    
+        td,
+        th {
+            padding: 2px 5px;
         }
     }
     tr:nth-of-type(even) {
@@ -282,29 +335,31 @@ table {
             }
         }
     }
-
 }
-
-
 
 $header_offset: .55em;
 #id {
     width: 2.5rem;
 }
+
 #pus {
     width: 3.8rem;
 }
+
 #nw a {
     position: relative;
     left: $header_offset;
 }
+
 #old a {
     position: relative;
     left: $header_offset;
 }
+
 #dist {
     width: 2.5rem;
 }
+
 #sil {
     width: 1.4rem;
 }
@@ -323,10 +378,11 @@ a {
         text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
     }
 }
-ul{
+
+ul {
     cursor: default;
-    
 }
+
 nav {
     &.top {
         a {
@@ -369,7 +425,7 @@ nav {
             padding: 0 8px;
         }
         a {
-            color: #eee;            
+            color: #eee;
             &:link,
             &:visited,
             &:hover,
@@ -392,7 +448,7 @@ nav {
                 opacity: .2;
                 &:hover,
                 &:active {
-                    text-shadow: none;                
+                    text-shadow: none;
                 }
                 i {
                     visibility: hidden;
