@@ -47,9 +47,10 @@ func main() {
 
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
-	http.Handle("/", &templateHandler{filename: "words.html", query: wordsQuery, queryFrom: wordsQueryFrom})
-	http.Handle("/runestats", &templateHandler{filename: "runestats.html"})
-	http.Handle("/translit", &templateHandler{filename: "translit.html"})
+	http.Handle("/", &templateHandler{filename: "home.html"})
+	http.Handle("/woordz", &templateHandler{filename: "words.html", query: wordsQuery, queryFrom: wordsQueryFrom})
+	http.Handle("/staats", &templateHandler{filename: "runestats.html"})
+	http.Handle("/traanzlit", &templateHandler{filename: "translit.html"})
 
 	// Start Server
 	if err := http.ListenAndServe(":8080", nil); err != nil {
