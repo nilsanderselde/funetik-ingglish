@@ -37,17 +37,21 @@ func ProcessTrud(ch chan Output, r *http.Request) {
 		if r.Form["inputtext"] != nil {
 			// if the input text field is not blank
 			if r.Form["inputtext"][0] != "" {
-				// save input text as "text"
-				text := r.Form["inputtext"][0]
+				// save first 2500 runes of input text
+				input := r.Form["inputtext"][0]
+				inputR := []rune(input)
+				if len(inputR) > 2500 {
+					input = string(inputR[0:2500])
+				}
 
 				// make a copy to place back in translit text area
-				outStruct.PrevInput = text
+				outStruct.PrevInput = input
 
 				// for collecting words after transliteration attempt
 				var words []string
 
 				// load text into scanner to split it in lines
-				scanner := bufio.NewScanner(strings.NewReader(text))
+				scanner := bufio.NewScanner(strings.NewReader(input))
 				for scanner.Scan() { // for each line, split it into words by spaces
 					newWords := strings.Fields(scanner.Text())
 					for _, trud := range newWords {

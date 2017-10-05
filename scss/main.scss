@@ -22,6 +22,7 @@ main {
         color: #333;
     }
 }
+
 .nobg {
     background: transparent;
 }
@@ -32,8 +33,7 @@ table {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40vh, rgba(255, 255, 255, 0.7) 100vh);
     background-attachment: fixed;
     padding: 10px;
-    font-size: .8em;    
-    
+    font-size: .8em;
 }
 
 p {
@@ -47,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: .5em 0 .1em;
+    margin: .3em 0;
 }
 
 h1 {
@@ -107,7 +107,6 @@ nav {
     &.top {
         a {
             text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
-            
         }
         li {
             &:nth-of-type(1) a {
@@ -196,7 +195,6 @@ header {
     }
 }
 
-
 table {
     margin: 0 auto 20px auto;
     border-collapse: collapse;
@@ -251,7 +249,6 @@ table {
     caption {
         padding: 5px 5px;
     }
-    
     th {
         user-select: none;
         white-space: nowrap;
@@ -325,7 +322,6 @@ table {
         line-height: 1;
         font-size: .82rem;
     }
-
     &.nolink {
         transition: border-color .2s linear;
         border-bottom: 1px dashed transparent;
@@ -334,12 +330,11 @@ table {
             border-color: #333;
         }
     }
-
 }
+
 .icon {
     float: right;
 }
-
 
 .col {
     width: 40%;
@@ -423,19 +418,19 @@ $header_offset: .55em;
 }
 
 textarea {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    border: 0;
+    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.4);
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
     min-width: 100%;
-    height: 200px;    
+    height: 200px;
     min-height: 200px;
     font-size: .8rem;
-    padding: 2px;
+    padding: 4px;
     margin-top: 1rem;
 }
 
@@ -503,14 +498,19 @@ ul {
         padding: .3em .5em !important;
         font-style: italic;
         font-size: .9em;
-        background: rgba(255, 255, 255, 0.2);
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.3);
         border-radius: 10px;
         text-align: left;
     }
     .ui-icon {
         text-indent: 0;
     }
+}
+
+::selection {
+    color: #eee; 
+    background: rgba(49, 98, 153, .99);
 }
 
 @keyframes spin {
