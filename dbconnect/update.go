@@ -18,7 +18,9 @@ import (
 // 2. numsil   (count syllable markings from funsil)
 // 3. funsort  (substitution cipher on fun)
 // 4. dist     (calc lev dist between fun and trud)
-func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, isFlaagd bool, rowID int) {
+// onlyFlaagd means only flaagd will be processed
+// rowID used to specify row to update, use -1 for all
+func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd bool, rowID int) {
 	if !(fun || numsil || funsort || dist) {
 		return // don't bother connecting if no updates will occur
 	}
@@ -36,15 +38,15 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, isFlaagd b
 	}
 
 	queryFrom := " FROM words"
-	if rowID != -1 || isFlaagd {
+	if rowID != -1 || onlyFlaagd {
 		queryFrom += " WHERE"
 		if rowID != -1 {
 			queryFrom += " id = " + strconv.Itoa(rowID)
-			if isFlaagd {
+			if onlyFlaagd {
 				queryFrom += " AND"
 			}
 		}
-		if isFlaagd {
+		if onlyFlaagd {
 			queryFrom += " flaagd; COMMIT; UPDATE words SET flaagd = false"
 		}
 	}
@@ -213,6 +215,6 @@ func UpdateDist(row *sql.Rows, db *sql.DB) {
 
 // UpdateAllAutoValues automatically generates values for all rows
 // (About 15 minutes with all tasks enabled and 50,000 words)
-func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool, isFlaagd bool) {
-	UpdateAutoValues(fun, numsil, funsort, dist, isFlaagd, -1)
+func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd bool) {
+	UpdateAutoValues(fun, numsil, funsort, dist, onlyFlaagd, -1)
 }

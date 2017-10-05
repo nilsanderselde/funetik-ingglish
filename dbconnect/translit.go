@@ -9,6 +9,7 @@ import (
 	"log"
 	"net/http"
 	"strings"
+	"unicode"
 )
 
 var (
@@ -48,7 +49,7 @@ func ProcessTrud(ch chan Output, r *http.Request) {
 				// load text into scanner to split it in lines
 				scanner := bufio.NewScanner(strings.NewReader(text))
 				for scanner.Scan() { // for each line, split it into words by spaces
-					newWords := strings.Split(scanner.Text(), " ")
+					newWords := strings.Fields(scanner.Text())
 					for _, trud := range newWords {
 						if trud != "" { // don't store empty strings as words
 							words = append(words, trud) // add truditional spelling to list of words
@@ -58,30 +59,16 @@ func ProcessTrud(ch chan Output, r *http.Request) {
 					words = append(words, "\n")
 				}
 
-				var last rune
 				var output string
 				// transliterate words
-				for i, trud := range words {
+				for _, trud := range words {
 					// if it's a single symbol by itself, just add it to output
-					if len(trud) == 1 {
-						if hasPunc([]rune(trud)[0]) || trud == "\n" {
-							output += trud
-							continue
-						}
-					} else { // don't process strings containing saved newlines
-						if i == 0 { // for first word in input, store the funetik spelling in title case
-							output += capitalizeContraction(getFun(trud)) + " "
-						} else { // for words following sentence-terminating punctuation, store the funetik spellings in title case
-							if last == '.' || last == '!' || last == '?' {
-								output += capitalizeContraction(getFun(trud)) + " "
-							} else { // otherwise just store the funetik spelling
-								output += getFun(trud) + " "
-							}
-						}
-					}
+					if len(trud) == 1 && (unicode.IsPunct([]rune(trud)[0]) || trud == "\n") {
+						output += trud
+						continue
 
-					stringR := []rune(trud)        // convert string to rune array to access last character
-					last = stringR[len(stringR)-1] // save last character for next iteration
+					}
+					output += getFun(trud) + " "
 				}
 				// Split one-line results string into separate lines
 				scanner = bufio.NewScanner(strings.NewReader(output))
@@ -93,27 +80,6 @@ func ProcessTrud(ch chan Output, r *http.Request) {
 		}
 	}
 	ch <- outStruct
-}
-
-// prevents the first letter after the apostrophe in a contraction
-// from being capitalized by strings.Title (as in "Don'T")
-func capitalizeContraction(word string) (capitalized string) {
-	wordR := []rune(word)
-	capitalized += strings.Title(string(wordR[0]))
-	capitalized += string(wordR[1:])
-	return capitalized
-}
-
-func hasPunc(r rune) bool {
-	if r == '`' || r == '~' || r == '!' || r == '@' || r == '#' || r == '$' ||
-		r == '%' || r == '^' || r == '&' || r == '*' || r == '(' || r == ')' ||
-		r == '_' || r == '+' || r == '-' || r == '=' || r == '[' || r == ']' ||
-		r == '\\' || r == '{' || r == '}' || r == '|' || r == ';' || r == '\'' ||
-		r == ':' || r == '"' || r == ',' || r == '.' || r == '/' || r == '<' ||
-		r == '>' || r == '?' {
-		return true
-	}
-	return false
 }
 
 // getFun tries to return the corresponding funetik spelling of an English word
@@ -134,7 +100,7 @@ func getFun(trud string) (fun string) {
 
 	// as long as first character is punctuation, add it to leading symbol string
 	// and remove it from word string (trud)
-	for hasPunc(stringR[0]) {
+	for unicode.IsPunct(stringR[0]) {
 		leading += string(stringR[0])
 		stringR = stringR[1:]
 		// fmt.Printf("{%s},{%s}\n", leading, string(stringR))
@@ -142,7 +108,7 @@ func getFun(trud string) (fun string) {
 	}
 	// as long as last character is punctuation, add it to trailing symbol string
 	// and remove it from word string (trud)
-	for hasPunc(stringR[len(stringR)-1]) {
+	for unicode.IsPunct(stringR[len(stringR)-1]) {
 		trailing += string(stringR[len(stringR)-1])
 		stringR = stringR[0 : len(stringR)-1]
 		// fmt.Printf("{%s},{%s}\n", string(stringR), trailing)
@@ -160,6 +126,18 @@ func getFun(trud string) (fun string) {
 		trud = newTrud
 	}
 
+	// determine if case is upper or title, optimisticly
+	isUpperCase := true
+	isTitleCase := true
+	for i, r := range []rune(trud) {
+		if !unicode.IsUpper(r) {
+			if i == 0 {
+				isTitleCase = false
+			}
+			isUpperCase = false
+		}
+	}
+
 	// update fun and/or numsil with values generated using funsil
 	// fmt.Println(">>", trud)
 	rows := db.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE trud = $1;", trud)
@@ -174,6 +152,14 @@ func getFun(trud string) (fun string) {
 			return leading + trud + trailing
 		}
 	}
+
+	// format funetik spelling with saved case pattern
+	if isUpperCase {
+		fun = strings.ToUpper(fun)
+	} else if isTitleCase {
+		fun = capitalizeContraction(fun)
+	}
+
 	// fmt.Println(fun)
 	return leading + fun + trailing
 }
@@ -190,4 +176,13 @@ func replaceRunes(trud []rune) (newTrud string) {
 		}
 	}
 	return newTrud
+}
+
+// prevents the first letter after the apostrophe in a contraction
+// from being capitalized by strings.Title (as in "Don'T")
+func capitalizeContraction(word string) (capitalized string) {
+	wordR := []rune(word)
+	capitalized += strings.Title(string(wordR[0]))
+	capitalized += string(wordR[1:])
+	return capitalized
 }

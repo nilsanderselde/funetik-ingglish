@@ -1,20 +1,20 @@
 {{define "translit.html"}}
 {{template "_header.html"}}
-<section>
-    <p>Tränzlitøreitør dhät traiz tw tränzlitøreit trudišinul sentinsiz intw funetik wunz.</p>
+<main>
+    <p>Tränzlitøreitør dhät traiz tw tränzlitøreit trudišinul sentinsiz intw funetik wunz. It kørintly kän't tšwz
+        kørektly frum u grwp uv haminimz (e.g. use/use, read/read) bikuz it kän't undørständ dhu semäntik kantekst uv
+        wørdz.
+    </p>
     <form action="/traanzlit" method="post" enctype="application/x-www-form-urlencoded">
-        <textarea name="inputtext" cols="80" rows="10" placeholder="Type in here and press Tränzlit.">{{if .TranslitInput}}{{.TranslitInput}}{{end}}</textarea><br>
+        <textarea name="inputtext" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Type in here and press Tränzlit.">{{if .TranslitInput}}{{.TranslitInput}}{{end}}</textarea><br>
         <input type="submit" value="Tränzlit" />
     </form>
     {{if .TranslitOutput}}
     <h2>Tränzlitøreišin:</h2>
-    <div id="results">
-    {{range .TranslitOutput}}
-        {{.}}<br>
+    <textarea cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{range .TranslitOutput}}
+{{.}}{{end}}</textarea>
     {{end}}
-    </div>
-    {{end}}
-</section>
+</main>
 
 {{template "_footer.html"}}
 {{end}}
