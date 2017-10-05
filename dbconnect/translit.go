@@ -6,7 +6,6 @@ package dbconnect
 import (
 	"bufio"
 	"database/sql"
-	"log"
 	"net/http"
 	"strings"
 	"unicode"
@@ -90,13 +89,15 @@ func ProcessTrud(ch chan Output, r *http.Request) {
 func getFun(trud string) (fun string) {
 	db, err := sql.Open("postgres", DBInfo)
 	if err != nil {
-		log.Fatal(err)
+		// log.Fatal(err)
+		return ""
 	}
 	defer db.Close()
 
 	err = db.Ping()
 	if err != nil {
-		log.Fatal(err)
+		// log.Fatal(err)
+		return ""
 	}
 	stringR := []rune(trud)
 	var leading string
@@ -117,17 +118,32 @@ func getFun(trud string) (fun string) {
 		stringR = stringR[0 : len(stringR)-1]
 		// fmt.Printf("{%s},{%s}\n", string(stringR), trailing)
 	}
-
 	trud = replaceRunes(stringR) //
 
-	// attempt to split trud by hyphen and recursively process each part
-	trudSplit := strings.Split(trud, "-")
-	if len(trudSplit) > 1 {
+	// if trud contains hyphen in middle
+	if strings.ContainsRune(trud, '-') {
+		// split trud by hyphen and recursively process each part
+		trudSplit := strings.Split(trud, "-")
+		// if len(trudSplit) > 1 {
 		newTrud := getFun(trudSplit[0])
 		for i := 1; i < len(trudSplit); i++ {
 			newTrud += "-" + getFun(trudSplit[i])
 		}
 		trud = newTrud
+		// }
+	}
+
+	// if trud contains slash in middle
+	if strings.ContainsRune(trud, '/') {
+		// split trud by slash and recursively process each part
+		trudSplit := strings.Split(trud, "/")
+		// if len(trudSplit) > 1 {
+		newTrud := getFun(trudSplit[0])
+		for i := 1; i < len(trudSplit); i++ {
+			newTrud += "/" + getFun(trudSplit[i])
+		}
+		trud = newTrud
+		// }
 	}
 
 	// determine if case is upper or title, optimisticly
