@@ -19,7 +19,7 @@ main {
     }
     a:link,
     a:visited {
-        color: #333;
+        color: #000;
     }
 }
 
@@ -262,7 +262,6 @@ table {
             border: 0;
         }
         >a {
-            text-decoration: none;
             >i {
                 position: relative;
                 left: 2px;
@@ -298,7 +297,14 @@ table {
         }
         a:link,
         a:visited {
-            color: #333;
+            color: #000;
+        }
+    }
+    a{
+        text-decoration: none;
+        &:hover,
+        &:active {
+            text-decoration: underline;
         }
     }
 }
@@ -418,9 +424,9 @@ $header_offset: .55em;
 }
 
 textarea {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     border: 0;
-    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
     box-sizing: border-box;
@@ -481,7 +487,7 @@ ul {
         color: rgb(49, 98, 153);
         display: inline-block !important;
         &:hover {
-            text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.4);
+            text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.3);
             color: #333;
         }
         &[aria-expanded="false"] .ui-accordion-header-icon::after {
@@ -499,7 +505,8 @@ ul {
         font-style: italic;
         font-size: .9em;
         background: rgba(255, 255, 255, 0.3);
-        box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: .2em 0;
         border-radius: 10px;
         text-align: left;
     }
