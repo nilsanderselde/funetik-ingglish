@@ -6,22 +6,22 @@
             <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="nw">
-            <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Keriktør ordør: 
-aäeiywuøolrmnbpvfgkdtzsžšh"><span>Nw Speling</span>{{if .New}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}"><span title="Keriktør ordør: 
+                aäeiywuøolrmnbpvfgkdtzsžšh" class="info">Nw Speling</span>{{if .New}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="old">
-            <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Keriktør ordør: 
-abcdefghijklmnopqrstuvwxyz"><span>Old Speling</span>{{if .Old}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}"><span title="Keriktør ordør: 
+                abcdefghijklmnopqrstuvwxyz" class="info">Old Speling</span>{{if .Old}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="dist">
-            <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}" title="Distins iz dhu minimum numbør uv 
-tšendžiz tw get frum old tw nw speling"><span>Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
+            <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}"><span title="Min # uv 
+                tšendžiz tw get frum old tw nw" class="info">Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
-            <span title="Part uv Spytš">PuS</span>
+            <span title="Part uv Spytš" class="info nolink">PuS</span>
         </th>
         <th id="sil">
-            <span title="Silubulz">Silz</span>
+            <span title="Silubulz" class="info nolink">Silz</span>
         </th>
     </tr>
     {{template "wordsSorted" .}}
