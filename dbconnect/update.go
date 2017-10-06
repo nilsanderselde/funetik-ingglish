@@ -47,7 +47,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 			}
 		}
 		if onlyFlaagd {
-			queryFrom += " flaagd; COMMIT; UPDATE words SET flaagd = false"
+			queryFrom += " flaagd"
 		}
 	}
 	queryFrom += ";"
@@ -74,7 +74,6 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 			// log.Fatal(err)
 			fmt.Println(err)
 		}
-		defer rows.Close()
 
 		for rows.Next() {
 			if fun {
@@ -84,6 +83,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 				UpdateNumsil(rows, db)
 			}
 		}
+		rows.Close()
 		t := time.Now()
 		elapsed := t.Sub(start)
 		s.Stop()
@@ -112,7 +112,6 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 			// log.Fatal(err)
 			fmt.Println(err)
 		}
-		defer rows.Close()
 
 		for rows.Next() {
 			if funsort {
@@ -122,12 +121,12 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 				UpdateDist(rows, db)
 			}
 		}
+		rows.Close()
 		t := time.Now()
 		elapsed := t.Sub(start)
 		s.Stop()
 		fmt.Println("Done. (", elapsed, ")")
 	}
-
 }
 
 // UpdateFun updates passed row with generated
