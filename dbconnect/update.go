@@ -126,6 +126,13 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		elapsed := t.Sub(start)
 		s.Stop()
 		fmt.Println("Done. (", elapsed, ")")
+
+		// clear all flags
+		_, err = db.Exec("UPDATE words SET flaagd = false WHERE flaagd;")
+		if err != nil {
+			// log.Fatal(err)
+			fmt.Println(err)
+		}
 	}
 }
 
