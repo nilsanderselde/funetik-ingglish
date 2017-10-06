@@ -75,10 +75,10 @@ a {
     }
     &.icon {
         text-decoration: none;
+        float: right;
         &:link,
         &:visited {
             color: #333;
-            text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
         }
     }
 }
@@ -338,9 +338,7 @@ table {
     }
 }
 
-.icon {
-    float: right;
-}
+
 
 .col {
     width: 40%;
