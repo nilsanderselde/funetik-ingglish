@@ -18,10 +18,10 @@ const (
 
 // Options for ?update=all (func UpdateAllAutoValues)
 const (
-	fun     bool = true
-	numsil  bool = true
-	funsort bool = true
-	dist    bool = true
+	fun        bool = true
+	numsil     bool = true
+	funsort    bool = true
+	dist       bool = true
 	onlyFlaagd bool = true
 )
 
@@ -38,9 +38,10 @@ func handleWordList(t *templateHandler, r *http.Request) {
 	*aPrev = ""
 
 	// if set to update automatically generated values
-	if r.URL.Query()["update"] != nil {
-		if r.URL.Query()["update"][0] == "all" {
-
+	if r.URL.Query()["updeit"] != nil {
+		if r.URL.Query()["updeit"][0] == "al" {
+			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, false)
+		} else if r.URL.Query()["updeit"][0] == "flaagd" {
 			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, true)
 		}
 	}
