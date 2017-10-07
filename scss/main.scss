@@ -21,6 +21,10 @@ main {
     a:visited {
         color: #000;
     }
+    a:hover,
+    a:active{
+        border-color: #000;
+    }
 }
 
 .nobg {
@@ -48,6 +52,7 @@ h4,
 h5,
 h6 {
     margin: .3em 0;
+    line-height: 1.5em;
 }
 
 h1 {
@@ -63,18 +68,24 @@ h3 {
 }
 
 a {
-    transition: color .2s linear, text-shadow .2s linear;
+    transition: color .2s linear, text-shadow .2s linear, border-color .2s linear;
+    text-decoration: none;        
+
+
     &:link,
     &:visited {
         color: rgb(49, 98, 153);
+        border-bottom: 1px solid rgb(49, 98, 153);
     }
     &:hover,
     &:active {
         color: #333;
+        border-color: #333;
         text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
     }
     &.icon {
         text-decoration: none;
+        border: 0;
         float: right;
         &:link,
         &:visited {
@@ -91,9 +102,12 @@ nav {
     max-width: 900px;
     margin: auto;
     a {
-        text-decoration: none;
         font-weight: bold;
         font-size: 1.2em;
+        &:link,
+        &:visited {
+            border:0;
+        }
     }
     ul {
         list-style-type: none;
@@ -274,6 +288,7 @@ table {
             &:link,
             &:visited {
                 color: #eee;
+                border: 0;
             }
             &:hover,
             &:active {
@@ -302,14 +317,10 @@ table {
             }
             &:hover,
             &:active {
-                text-decoration: underline;
+                border-color: #000;
             }
         }
     }
-    a{
-        text-decoration: none;        
-    }
-
 }
 
 .info {
