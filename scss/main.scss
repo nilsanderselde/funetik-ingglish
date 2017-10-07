@@ -295,18 +295,21 @@ table {
         &:nth-last-of-type(1) {
             border: 0;
         }
-        a:link,
-        a:visited {
-            color: #000;
+        a{
+            &:link,
+            &:visited {
+                color: #000;
+            }
+            &:hover,
+            &:active {
+                text-decoration: underline;
+            }
         }
     }
     a{
-        text-decoration: none;
-        &:hover,
-        &:active {
-            text-decoration: underline;
-        }
+        text-decoration: none;        
     }
+
 }
 
 .info {
