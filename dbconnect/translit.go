@@ -54,14 +54,18 @@ func ProcessTrud(ch chan Output, r *http.Request) {
 				scanner := bufio.NewScanner(strings.NewReader(input))
 				for scanner.Scan() { // for each line, split it into words by spaces
 					newWords := strings.Fields(scanner.Text())
+					var isBlank bool
 					for _, trud := range newWords {
 						if trud != "" { // don't store empty strings as words
 							words = append(words, trud) // add truditional spelling to list of words
-							words = append(words, "\n")
+						} else {
+							isBlank = true
 						}
 					}
 					// Add a newline character as a "word" to be reinserted before displaying results
-
+					if !isBlank {
+						words = append(words, "\n")
+					}
 				}
 
 				var output string
