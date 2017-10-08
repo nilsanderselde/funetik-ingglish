@@ -199,7 +199,7 @@ AND NOT EXISTS (SELECT trud FROM words WHERE LOWER(trud) = '` + strings.ToLower(
 	}
 
 	// format funetik spelling with saved case pattern
-	if isUpperCase {
+	if isUpperCase && len(trud) > 1 {
 		fun = strings.ToUpper(fun)
 	} else if isTitleCase {
 		fun = capitalizeContraction(fun)
