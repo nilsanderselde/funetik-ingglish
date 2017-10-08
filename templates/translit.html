@@ -20,12 +20,12 @@
             </div>
         </div>
     <form action="/traanzlit" method="post" enctype="application/x-www-form-urlencoded">
-        <textarea name="inputtext" cols="80" rows="10" maxlength="2500" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Type in here and press Tränzlit.">{{if .TranslitInput}}{{.TranslitInput}}{{end}}</textarea><br>
+        <textarea id="input" name="inputtext" cols="80" rows="10" maxlength="2500" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Type in here and press Tränzlit.">{{if .TranslitInput}}{{.TranslitInput}}{{end}}</textarea><br>
         <input type="submit" value="Tränzlit" />
     </form>
     {{if .TranslitOutput}}
     <h2>Tränzlitøreišin:</h2>
-    <textarea cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{range .TranslitOutput}}
+    <textarea id="output" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{range .TranslitOutput}}
 {{.}}{{end}}</textarea>
     {{end}}
 </main>
@@ -39,5 +39,12 @@
         });
     });
 </script>
+{{if .TranslitOutput}}
+<script>
+    $("#input, #output").on("scroll", function() {
+        $("#input, #output").scrollTop($(this).scrollTop());
+    });
+</script>
+{{end}}
 {{template "_footer.html"}}
 {{end}}
