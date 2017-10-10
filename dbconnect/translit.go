@@ -172,6 +172,16 @@ func getFun(trud string) (fun string) {
 				word = newWord
 			}
 
+			// if word is possessive, look up word without ending and readd either 'z or 's depending on final letter
+			if strings.HasSuffix(word, "'s") {
+				newWordR := []rune(getFun(strings.TrimSuffix(word, "'s")))
+				if strings.ContainsAny(string(newWordR[len(newWordR)-1]), "pfkt") || strings.HasSuffix(string(newWordR), "th") {
+					word = string(newWordR) + "'s"
+				} else {
+					word = string(newWordR) + "'z"
+				}
+			}
+
 			addToList := true
 			wordR := []rune(word)
 			for _, r := range wordR {
