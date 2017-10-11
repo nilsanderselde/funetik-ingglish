@@ -5,7 +5,6 @@ package dbconnect
 
 import (
 	"database/sql"
-	"log"
 	"math/rand"
 	"strconv"
 	"time"
@@ -44,7 +43,8 @@ func FlagRow(id string) {
 	var flägString string
 	err = flägResult.Scan(&flägString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Fatal(err)
+		// log.Fatal(err)
+		return
 	}
 	var fläg bool
 	fläg, err = strconv.ParseBool(flägString)
@@ -54,6 +54,7 @@ func FlagRow(id string) {
 	var updateString string
 	err = updateFläg.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Fatal(err)
+		// log.Fatal(err)
+		return
 	}
 }

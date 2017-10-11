@@ -6,7 +6,6 @@ package dbconnect
 import (
 	"bufio"
 	"fmt"
-	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -20,7 +19,9 @@ func GetDBInfo() string {
 	file, err := os.Open("db/dbinfo")
 
 	if err != nil {
-		log.Fatal(err)
+		// log.Fatal(err)
+		fmt.Println("Could not find file.")
+		return ""
 	}
 	defer file.Close()
 
