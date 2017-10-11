@@ -8,11 +8,8 @@ import (
 	"fmt"
 )
 
-// UpdateAutoValues automatically fills values for:
-// 1. fun      (remove syllable markings from funsil)
-// 2. numsil   (count syllable markings from funsil)
-// 3. funsort  (substitution cipher on fun)
-// 4. dist     (calc lev dist between fun and trud)
+// RestoreBackup executes a massive amount of SQL insert statements
+// to rebuild database
 func RestoreBackup() {
 	db, err := sql.Open("postgres", DBInfo)
 	if err != nil {
