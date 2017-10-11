@@ -87,7 +87,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		t := time.Now()
 		elapsed := t.Sub(start)
 		s.Stop()
-		fmt.Println("Done. (", elapsed, ")")
+		fmt.Printf("Done. (%v)\n", elapsed)
 	}
 
 	if funsort || dist {
@@ -125,7 +125,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		t := time.Now()
 		elapsed := t.Sub(start)
 		s.Stop()
-		fmt.Println("Done. (", elapsed, ")")
+		fmt.Printf("Done. (%v)\n", elapsed)
 
 		// clear all flags
 		_, err = db.Exec("UPDATE words SET flaagd = false WHERE flaagd;")
