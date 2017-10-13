@@ -1,0 +1,198 @@
+{{define "keyboard.html"}}
+{{template "_header.html" .}}
+<main>
+{{if .DisplayTrud}}
+    <h1>Keyboard Layout</h1>
+    <p>I created a Windows keyboard layout if you want to try typing in Funetik Inggliš.</p>
+    <p>The download contains setup.exe, which installs the "Inggliš (Funetik) keyboard layout in Windows. Once installed, press
+        Ctrl+Shift to switch between layouts.</p>
+    <p>It also contains ingfun.klc, the keyboard layout file for <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22339"
+        target="_blank">Microsoft Keyboard Layout Creator</a>.</p>
+    <p><strong>Download link:</strong> <a href="/static/downloads/funetik-inggliš-windows-keyboard-layout.zip">funetik-inggliš-windows-keyboard-layout.zip</a></p>
+    <h2>Demo Keyboard</h2>
+    <p>You can get an idea of what the keyboard layout looks like below. Click the shift key on the keyboard below or hold down
+        on your keyboard's actual shift key to see the alternate letters.</p>
+    <p>The gray keys have a story behind them. They were changed in some version of this keyboard as it was being developed. You
+        can hover over these keys to read about the version history.
+    </p>
+    <p>The dark gray keys are the only ones that are different from 
+        the standard English layout in the final version.</p>
+{{else}}
+    <h1>Kybord Leiäwt</h1>
+    <p>Ai kryeitid u Windows kybord leiäwt if yw want tw try taiping in Funetik Inggliš.</p>
+    <p>Dhu däwnlod kunteinz setup.exe, witš instalz dhu "Inggliš (Funetik) kybord leiäwt in Windows. Wuns instald, pres Ctrl+Shift
+        tw switš bitwyn leiäwts.</p>
+    <p>It also kunteinz ingfun.klc, dhu kybord leiäwt fail for <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22339"
+        target="_blank">Microsoft Keyboard Layout Creator</a>.</p>
+    <p><strong>Däwnlod link:</strong> <a href="/static/downloads/funetik-inggliš-windows-keyboard-layout.zip">funetik-inggliš-windows-keyboard-layout.zip</a></p>
+    <h2>Demo Kybord</h2>
+    <p>Yw kän get en aidyu uv wut dhu kybord leiäwt løks laik bilo. Klik dhu šift ky an dhu kybord bilo or hold däwn
+        an yor kybord'z äkšøwul šift ky tw sy dhu altørnit letørz.</p>
+    <p>Dhu grei kyz häv u story bihaind dhem. Dhei wør tšeindžd in sum vøržin uv dhis kybord äz it wuz bying divelupt. Yw
+        kän huvør ovør dhyz kyz tw ryd ubäwt dhu vøržin histøry.
+    </p>
+    <p>Dhu dark grei kyz ar dhu only wunz dhät ar difrint frum
+        dhu ständørd Inggliš leiäwt in dhu fainul vøržin.</p>
+{{end}}
+
+
+    <div class="kbd">
+        <div class="row">
+            <div class="detailed" id="grave" onpointerover="getDetails(event)"><span class="normal">`</span><span class="shifted hidden">~</span></div>
+            <div><span class="normal">1</span><span class="shifted hidden">!</span></div>
+            <div class="detailed" id="two"><span class="normal">2</span><span class="shifted hidden">@</span></div>
+            <div><span class="normal">3</span><span class="shifted hidden">#</span></div>
+            <div><span class="normal">4</span><span class="shifted hidden">$</span></div>
+            <div><span class="normal">5</span><span class="shifted hidden">%</span></div>
+            <div class="detailed" id="six"><span class="normal">6</span><span class="shifted hidden">^</span></div>
+            <div class="detailed" id="seven"><span class="normal">7</span><span class="shifted hidden">&amp;</span></div>
+            <div><span class="normal">8</span><span class="shifted hidden">*</span></div>
+            <div><span class="normal">9</span><span class="shifted hidden">(</span></div>
+            <div><span class="normal">0</span><span class="shifted hidden">)</span></div>
+            <div><span class="normal">-</span><span class="shifted hidden">_</span></div>
+            <div class="detailed" id="equals"><span class="normal">=</span><span class="shifted hidden">+</span></div>
+            <div class="varsize">Backspace</div>
+        </div>
+    
+        <div class="row">
+            <div class="varsize">Tab</div>
+            <div class="new" id="aa"><span class="normal">ä</span><span class="shifted hidden">Ä</span></div>
+            <div class="detailed" id="w"><span class="normal">w</span><span class="shifted hidden">W</span></div>
+            <div><span class="normal">e</span><span class="shifted hidden">E</span></div>
+            <div><span class="normal">r</span><span class="shifted hidden">R</span></div>
+            <div><span class="normal">t</span><span class="shifted hidden">T</span></div>
+            <div class="detailed" id="y"><span class="normal">y</span><span class="shifted hidden">Y</span></div>
+            <div><span class="normal">u</span><span class="shifted hidden">U</span></div>
+            <div><span class="normal">i</span><span class="shifted hidden">I</span></div>
+            <div><span class="normal">o</span><span class="shifted hidden">O</span></div>
+            <div><span class="normal">p</span><span class="shifted hidden">P</span></div>
+            <div class="detailed" id="lbracket"><span class="normal">[</span><span class="shifted hidden">{</span></div>
+            <div class="detailed" id="rbracket"><span class="normal">]</span><span class="shifted hidden">}</span></div>
+            <div class="detailed" id="backslash"><span class="normal">\</span><span class="shifted hidden">|</span></div>
+        </div>
+    
+        <div class="row">
+            <div class="varsize">Caps Lock</div>
+            <div><span class="normal">a</span><span class="shifted hidden">A</span></div>
+            <div><span class="normal">s</span><span class="shifted hidden">S</span></div>
+            <div><span class="normal">d</span><span class="shifted hidden">D</span></div>
+            <div><span class="normal">f</span><span class="shifted hidden">F</span></div>
+            <div><span class="normal">g</span><span class="shifted hidden">G</span></div>
+            <div><span class="normal">h</span><span class="shifted hidden">H</span></div>
+            <div class="new" id="oo"><span class="normal">ø</span><span class="shifted hidden">Ø</span></div>
+            <div><span class="normal">k</span><span class="shifted hidden">K</span></div>
+            <div class="detailed" id="l"><span class="normal">l</span><span class="shifted hidden">L</span></div>
+            <div class="detailed" id="semicolon"><span class="normal">;</span><span class="shifted hidden">:</span></div>
+            <div class="detailed" id="quote"><span class="normal">'</span><span class="shifted hidden">"</span></div>
+            <div class="varsize">Enter</div>        
+        </div>
+
+        <div class="row">
+            <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
+            <div><span class="normal">z</span><span class="shifted hidden">Z</span></div>
+            <div class="new" id="zh"><span class="normal">ž</span><span class="shifted hidden">Ž</span></div>
+            <div class="new" id="sh"><span class="normal">š</span><span class="shifted hidden">Š</span></div>
+            <div><span class="normal">v</span><span class="shifted hidden">V</span></div>
+            <div><span class="normal">b</span><span class="shifted hidden">B</span></div>
+            <div><span class="normal">n</span><span class="shifted hidden">N</span></div>
+            <div><span class="normal">m</span><span class="shifted hidden">M</span></div>
+            <div class="detailed" id="comma"><span class="normal">,</span><span class="shifted hidden">&lt;</span></div>
+            <div class="detailed" id="period"><span class="normal">.</span><span class="shifted hidden">&gt;</span></div>
+            <div class="detailed" id="slash"><span class="normal">/</span><span class="shifted hidden">?</span></div>
+            <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
+        </div>
+        <div class="row">
+            <div class="varsize">Ctrl</div>
+            <div class="varsize">Alt</div>
+            <div class="space">Space</div>
+            <div class="varsize">Alt</div>
+            <div class="varsize">Ctrl</div>
+        </div>
+    </div>
+    <aside id="details">
+        test
+    </aside>
+</main>
+<script>
+    let shiftState = false
+    let normalKeys = document.getElementsByClassName("normal")
+    let shiftedKeys = document.getElementsByClassName("shifted")
+    let shiftKeys = document.getElementsByClassName("shift")
+    function shiftDown(){
+        for (i = 0; i < normalKeys.length; i++) {
+            normalKeys[i].className += " hidden";
+        }
+        for (i = 0; i < shiftedKeys.length; i++) {
+            shiftedKeys[i].className = "shifted";
+        }
+        for (i = 0; i < shiftKeys.length; i++) {
+            shiftKeys[i].className = "varsize shift down";
+        }
+    }
+    function shiftUp(){
+        for (i = 0; i < normalKeys.length; i++) {
+            shiftedKeys[i].className += " hidden";
+        }
+        for (i = 0; i < shiftedKeys.length; i++) {
+            normalKeys[i].className = "normal";
+        }
+        for (i = 0; i < shiftKeys.length; i++) {
+            shiftKeys[i].className = "varsize shift";
+        }
+    }
+    function pressShift() {
+        if (!shiftState) {
+            shiftDown()
+            shiftState = true
+        } else {
+            shiftUp()
+            shiftState = false
+        }
+    }
+    document.addEventListener("keydown", function (evt) {
+        evt = evt || window.event
+        if (evt.keyCode == 16) {
+            shiftDown()
+        }
+    });
+    document.addEventListener("keyup", function (evt) {
+        evt = evt || window.event
+        if (evt.keyCode == 16) {
+            shiftUp()
+        }
+    });
+
+    let detailBox = document.getElementById("details")
+
+    details = {
+        grave : "test",
+        two : "",
+        six : "",
+        seven : "",
+        equals : "",
+        aa : "",
+        w : "",
+        y : "",
+        lbracket : "",
+        rbracket : "",
+        backslash : "",
+        oo : "",
+        l : "",
+        semicolon : "",
+        quote : "",
+        zh : "",
+        sh : "",
+        comma : "",
+        slash : ""
+    }
+
+    function getDetails(event) {
+        event = event || window.event; 
+        var target = event.target || event.srcElement;
+        console.log(target.id)
+        detailBox.innerHTML = details[target.id]
+    }
+</script>
+
+{{template "_footer.html"}}
+{{end}}
