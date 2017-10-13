@@ -1,203 +1,165 @@
-{{define "home.html"}} {{template "_header.html"}}
+{{define "home.html"}}
+{{template "_header.html" .}}
 <main>
-    <h1>Funetik Inggliš <em>(Phonetic English)</em></h1>
-    <h2>Intrudukšin <em>(Introduction)</em></h2>
+    {{if .DisplayTrud}}
+    <h1>Phonetic English</h1>
+    <h2>Introduction</h2>
+    <p>
+        After studying linguistics, Spanish, and Russian, I came to realize just how complicated and counterintuitive our alphabet
+        and spelling system for English is. Children and foreign speakers have trouble decyphering the labyrinthian and arbitrary
+        system of "rules" (which aren't really rules) and unnormalized foreign spellings. I decided to rework the alphabet in
+        a way that is consistent and intuitive, for fun and to see what it might look like.
+    </p>
+    <p>
+        Natural languages are all spoken or signed, whereas written "language" is
+        <a href="https://en.wikipedia.org/wiki/Orthography" target="_blank">orthography</a>. By creating a new orthography, I'm
+        not actually changing English itself at all.
+    </p>
+    <p>
+        With this orthography, extra knowledge wouldn't be required to pick up a book and read every word correctly.
+    </p>
+    <p>
+        This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy could
+        continue to be used in a similar way as Latin (as a scientific standard) or Chinese characters (as symbols to join mutually
+        unintelligible languages).
+    </p>
+    
+    <h2>The Alphabet</h2>
+    <h3>Phonetic Order</h3>
+    <p class="älfubit">a ä e i y w u ø o r l n m b p v f g k d t z s ž š h<br>A Ä E I Y W U Ø O R L N M B P V F G K D T Z S Ž Š H</p>    
+    <p>
+        The alphabet for Phonetic English is arranged with vowels first, then
+        <a href="https://en.wikipedia.org/wiki/Sonorant" target="_blank">sonorant</a> consonants, and then
+        <a href="https://en.wikipedia.org/wiki/Obstruent" target="_blank">obstruent</a> consonants. Obstruent consonants are
+        arranged in pairs with the
+        <a href="https://en.wikipedia.org/wiki/Voice_%28phonetics%29" target="_blank">voiced</a> one first. Y and W serve both
+        as vowels and consonants, being <a href="https://en.wikipedia.org/wiki/Semivowel" target="_blank">semivowels</a> (
+        <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a>: j, w) when unstressed
+        before a vowel.
+    </p>
+    </div>
+    </div>
+    {{else}}
+    <h1>Funetik Inggliš</h1>
+    <h2>Intrudukšin</h2>
     <p>
         Äftør studying linggwistiks, Späniš, änd Rušin, Ai keim tw ryølaiz džust häw kamplikeitid änd käwntørintwitiv äwør älfubit
-        änd speling sistum for Inggliš iz. Tšildrin änd forin spykørz häv trubul disaiføring dhu labirinthyin änd arbitrery
-        sistum uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz. Ai disaidid tw rywørk dhu älfubit in u wei
-        dhät iz kunsistint änd intwitiv, for fun änd tw sy wut it mait løk laik.
+        änd speling sistum for Inggliš iz. Tšildrin änd forin spykørz häv trubul disaiføring dhu labirinthyin änd arbitrery sistum
+        uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz. Ai disaidid tw rywørk dhu älfubit in u wei dhät iz
+        kunsistint änd intwitiv, for fun änd tw sy wut it mait løk laik.
     </p>
-    <div id="trud1" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active"
-            role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0">
-            <span class="text">(Old Speling)</span>
-        </h3>
-        <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" id="ui-id-2"
-            aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: block; height: 21px;">
-            <p>
-                After studying linguistics, Spanish, and Russian, I came to realize just how complicated and counterintuitive our alphabet
-                and spelling system for English is. Children and foreign speakers have trouble decyphering the labyrinthian
-                and arbitrary system of "rules" (which aren't really rules) and unnormalized foreign spellings. I decided
-                to rework the alphabet in a way that is consistent and intuitive, for fun and to see what it might look like.
-            </p>
-        </div>
-    </div>
     <p>
         Nätšørul lengwidžiz ar al spokin or saind, weräz ritin "lenggwidž" iz
-        <a href="https://en.wikipedia.org/wiki/Orthography" target="_blank">orthagrify</a>. Bai kryeiting u nw orthagrify,
-        Ai'm nat äkšwuly tšendžing Inggliž itself ät al.
+        <a href="https://en.wikipedia.org/wiki/Orthography" target="_blank">orthagrify</a>. Bai kryeiting u nw orthagrify, Ai'm
+        nat äkšwuly tšendžing Inggliž itself ät al.
     </p>
-    <div id="trud2" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all"
-            role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1">
-            <span class="text">(Old Speling)</span>
-        </h3>
-        <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-4" aria-labelledby="ui-id-3"
-            role="tabpanel" aria-hidden="true" style="display: none; height: 21px;">
-            <p>
-                Natural languages are all spoken or signed, whereas written "language" is
-                <a href="https://en.wikipedia.org/wiki/Orthography" target="_blank">orthography</a>. By creating a new orthography,
-                I'm not actually changing English itself at all.
-            </p>
-        </div>
-    </div>
     <p>
         With dhis orthagrify, ekstru nalidž wødn't by rikwaird tw pik up u bøk änd ryd evry wørd kurektly.
     </p>
-    <div id="trud3" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all"
-            role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1">
-            <span class="text">(Old Speling)</span>
-        </h3>
-        <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-6" aria-labelledby="ui-id-5"
-            role="tabpanel" aria-hidden="true" style="display: none; height: 21px;">
-            <p>
-                With this orthography, extra knowledge wouldn't be required to pick up a book and read every word correctly.
-            </p>
-        </div>
-    </div>
     <p>
         Dhis raiting sistum wød prabibly kryeit sum kunfywžin for nan-Umerikin Inggliš spykørz, so dhe ständørd orthagrify kød kuntinyw
         tw by ywzd in u similør wei äz Lätin (äz u saiintifik ständørd) or Tšainyz keriktørz (äz simbulz tw džoin mywtšøwuly
         unintelidžibul lenggwidžiz).
     </p>
-    <div id="trud4" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all"
-            role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1">
-            <span class="text">(Old Speling)</span>
-        </h3>
-        <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-8" aria-labelledby="ui-id-7"
-            role="tabpanel" aria-hidden="true" style="display: none; height: 21px;">
-            <p>
-                This writing system would probably create some confusion for non-American English speakers, so the standard orthagraphy could
-                continue to be used in a similar way as Latin (as a scientific standard) or Chinese characters (as symbols
-                to join mutually unintelligible languages).
-            </p>
-        </div>
-    </div>
-    <h2>Dhu Älfubit <em>(The Alphabet)</em></h2>
-    <h3>Funetik Ordør <em>(Phonetic Order)</em></h3>
+    <h2>Dhu Älfubit</h2>
+    <h3>Funetik Ordør</h3>
+    <p class="älfubit">a ä e i y w u ø o r l n m b p v f g k d t z s ž š h<br>A Ä E I Y W U Ø O R L N M B P V F G K D T Z S Ž Š H</p>
     <p>
         Dhu älfubit for Funetik Inggliš iz ureindžd with väwlz først, dhen
         <a href="https://en.wikipedia.org/wiki/Sonorant" target="_blank">sonørint</a> kansunintz, änd dhen
-        <a href="https://en.wikipedia.org/wiki/Obstruent" target="_blank">abstrwint</a> kansunintz. Abstrwint kansunintz
-        ar ureindžd in perz with dhu
-        <a href="https://en.wikipedia.org/wiki/Voice_%28phonetics%29" target="_blank">voist</a> wun først. Ž, Š änd H ar läst bikuz
-        dhei ar ywzd in daigräfs ('dž', 'tž', 'dh', 'th') änd puzišining them läst sepøreits dhu daigräfs frum dhu phonym reprisentid bai dhu
-        først kerikter uv the daigräf (d, t).
-        
-        Y änd W sørv both
-        äz väwlz änd kansunintz, bying <a href="https://en.wikipedia.org/wiki/Semivowel" target="_blank">semyväwlz</a> (
-        <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a>: j, w) wen unstrest
-        bifor u väwl.
+        <a href="https://en.wikipedia.org/wiki/Obstruent" target="_blank">abstrwint</a> kansunintz. Abstrwint kansunintz ar ureindžd
+        in perz with dhu
+        <a href="https://en.wikipedia.org/wiki/Voice_%28phonetics%29" target="_blank">voist</a> wun først. Ž, Š änd H ar läst
+        bikuz dhei ar ywzd in daigräfs ('dž', 'tž', 'dh', 'th') änd puzišining them läst sepøreits dhu daigräfs frum dhu phonym
+        reprisentid bai dhu først kerikter uv the daigräf (d, t). Y änd W sørv both äz väwlz änd kansunintz, bying
+        <a href="https://en.wikipedia.org/wiki/Semivowel" target="_blank">semyväwlz</a> (
+        <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a>: j, w) wen unstrest bifor
+        u väwl.
     </p>
-    <div id="trud5" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all"
-            role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1">
-            <span class="text">(Old Speling)</span>
-        </h3>
-        <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-10" aria-labelledby="ui-id-9"
-            role="tabpanel" aria-hidden="true" style="display: none; height: 21px;">
-            <p>
-                The alphabet for Phonetic English is arranged with vowels first, then
-                <a href="https://en.wikipedia.org/wiki/Sonorant" target="_blank">sonorant</a> consonants, and then
-                <a href="https://en.wikipedia.org/wiki/Obstruent" target="_blank">obstruent</a> consonants. Obstruent consonants
-                are arranged in pairs with the
-                <a href="https://en.wikipedia.org/wiki/Voice_%28phonetics%29" target="_blank">voiced</a> one first. Y and
-                W serve both as vowels and consonants, being <a href="https://en.wikipedia.org/wiki/Semivowel" target="_blank">semivowels</a>                (
-                <a href="https://en.wikipedia.org/wiki/International_Phonetic_Alphabet" target="_blank">IPA</a>: j, w) when
-                unstressed before a vowel.
-            </p>
-        </div>
-    </div>
+    {{end}}
 
     <div class="col letters">
         <ul>
-            <li><span title="IPA: ɑ/ɔ/ɒ" class="info nolink"><strong>a</strong> as in b<strong>a</strong>t <em>(b<strong>ou</strong>ght)</em></span></li>
-            <li><span title="IPA: æ" class="info nolink"><strong>ä</strong> as in b<strong>ä</strong>t <em>(b<strong>a</strong>t)</em></span></li>
-            <li><span title="IPA: ɛ/e" class="info nolink"><strong>e</strong> as in b<strong>e</strong>t <em>(b<strong>e</strong>t)</em></span></li>
-            <li><span title="IPA: ɪ" class="info nolink"><strong>i</strong> as in b<strong>i</strong>t <em>(b<strong>i</strong>t)</em></span></li>
-            <li><span title="IPA: i/j" class="info nolink"><strong>y</strong> as in b<strong>y</strong>t <em>(b<strong>ea</strong>t)</em></span></li>
-            <li><span title="IPA: u/w" class="info nolink"><strong>w</strong> as in b<strong>w</strong>t <em>(b<strong>oo</strong>t)</em></span></li>
-            <li><span title="IPA: ʌ/ɐ" class="info nolink"><strong>u</strong> as in b<strong>u</strong>t <em>(b<strong>u</strong>t)</em></span></li>
-            <li><span title="IPA: ʊ" class="info nolink"><strong>ø</strong> as in p<strong>ø</strong>t <em>(p<strong>u</strong>t)</em></span></li>
-            <li><span title="IPA: oʊ/əʊ/əʉ" class="info nolink"><strong>o</strong> as in b<strong>o</strong>t <em>(b<strong>oa</strong>t)</em></span></li>
-            <li><span title="IPA: ɹ̠" class="info nolink"><strong>r</strong> as in <strong>r</strong>o <em>(<strong>r</strong>ow)</em></span></li>
-            <li><span title="IPA: l" class="info nolink"><strong>l</strong> as in <strong>l</strong>o <em>(<strong>l</strong>ow)</em></span></li>
-            <li><span title="IPA: n" class="info nolink"><strong>n</strong> as in <strong>n</strong>äp <em>(<strong>n</strong>ap)</em></span></li>
-            <li><span title="IPA: m" class="info nolink"><strong>m</strong> as in <strong>m</strong>äp <em>(<strong>m</strong>ap)</em></span></li>
+            <li><span data-title="IPA: ɑ/ɔ/ɒ" class="info toleft nolink"><strong>a</strong> as in b<strong>a</strong>t <em>(b<strong>ou</strong>ght)</em></span></li>
+            <li><span data-title="IPA: æ" class="info toleft nolink"><strong>ä</strong> as in b<strong>ä</strong>t <em>(b<strong>a</strong>t)</em></span></li>
+            <li><span data-title="IPA: ɛ/e" class="info toleft nolink"><strong>e</strong> as in b<strong>e</strong>t <em>(b<strong>e</strong>t)</em></span></li>
+            <li><span data-title="IPA: ɪ" class="info toleft nolink"><strong>i</strong> as in b<strong>i</strong>t <em>(b<strong>i</strong>t)</em></span></li>
+            <li><span data-title="IPA: i/j" class="info toleft nolink"><strong>y</strong> as in b<strong>y</strong>t <em>(b<strong>ea</strong>t)</em></span></li>
+            <li><span data-title="IPA: u/w" class="info toleft nolink"><strong>w</strong> as in b<strong>w</strong>t <em>(b<strong>oo</strong>t)</em></span></li>
+            <li><span data-title="IPA: ʌ/ɐ" class="info toleft nolink"><strong>u</strong> as in b<strong>u</strong>t <em>(b<strong>u</strong>t)</em></span></li>
+            <li><span data-title="IPA: ʊ" class="info toleft nolink"><strong>ø</strong> as in p<strong>ø</strong>t <em>(p<strong>u</strong>t)</em></span></li>
+            <li><span data-title="IPA: oʊ/əʊ/əʉ" class="info toleft nolink"><strong>o</strong> as in b<strong>o</strong>t <em>(b<strong>oa</strong>t)</em></span></li>
+            <li><span data-title="IPA: ɹ̠" class="info toleft nolink"><strong>r</strong> as in <strong>r</strong>o <em>(<strong>r</strong>ow)</em></span></li>
+            <li><span data-title="IPA: l" class="info toleft nolink"><strong>l</strong> as in <strong>l</strong>o <em>(<strong>l</strong>ow)</em></span></li>
+            <li><span data-title="IPA: n" class="info toleft nolink"><strong>n</strong> as in <strong>n</strong>äp <em>(<strong>n</strong>ap)</em></span></li>
+            <li><span data-title="IPA: m" class="info toleft nolink"><strong>m</strong> as in <strong>m</strong>äp <em>(<strong>m</strong>ap)</em></span></li>
         </ul>
-        <h3><a href="https://en.wikipedia.org/wiki/Diphthong" target="_blank">Difthangs</a></h3>
+        <h3><a href="https://en.wikipedia.org/wiki/Diphthong" target="_blank">{{if .DisplayTrud}}Diphthongs{{else}}Difthangz{{end}}</a></h3>
         <ul>
-            <li><span title="IPA: aɪ/ɑe" class="info nolink"><strong>ai</strong> as in <strong>ai</strong>l <em>(<strong>ai</strong>sle, <strong>i</strong>sle)</em></span></li>
-            <li><span title="IPA: aʊ/æɔ" class="info nolink"><strong>äw</strong> as in <strong>äw</strong>l <em>(<strong>ow</strong>l)</em></span></li>
-            <li><span title="IPA: eɪ/æɪ" class="info nolink"><strong>ei</strong> as in <strong>ei</strong>l <em>(<strong>a</strong>le, <strong>ai</strong>l)</em></span></li>
-            <li><span title="IPA: ɔɪ/oɪ" class="info nolink"><strong>oi</strong> as in <strong>oi</strong>l <em>(<strong>oi</strong>l)</em>
+            <li><span data-title="IPA: aɪ/ɑe" class="info toleft nolink"><strong>ai</strong> as in <strong>ai</strong>l <em>(<strong>ai</strong>sle, <strong>i</strong>sle)</em></span></li>
+            <li><span data-title="IPA: aʊ/æɔ" class="info toleft nolink"><strong>äw</strong> as in <strong>äw</strong>l <em>(<strong>ow</strong>l)</em></span></li>
+            <li><span data-title="IPA: eɪ/æɪ" class="info toleft nolink"><strong>ei</strong> as in <strong>ei</strong>l <em>(<strong>a</strong>le, <strong>ai</strong>l)</em></span></li>
+            <li><span data-title="IPA: ɔɪ/oɪ" class="info toleft nolink"><strong>oi</strong> as in <strong>oi</strong>l <em>(<strong>oi</strong>l)</em>
         </ul>
-    </div><div class="col letters">
+    </div>
+    <div class="col letters">
         <ul>
-            <li><span title="IPA: b" class="info nolink"><strong>b</strong> as in <strong>b</strong>ät <em>(<strong>b</strong>at)</em></span></li>
-            <li><span title="IPA: p" class="info nolink"><strong>p</strong> as in <strong>p</strong>ät <em>(<strong>p</strong>at)</em></span></li>
-            <li><span title="IPA: v" class="info nolink"><strong>v</strong> as in ly<strong>v</strong> <em>(lea<strong>v</strong>e)</em></span></li>
-            <li><span title="IPA: f" class="info nolink"><strong>f</strong> as in ly<strong>f</strong> <em>(lea<strong>f</strong>)</em></span></li>
-            <li><span title="IPA: ɡ" class="info nolink"><strong>g</strong> as in <strong>g</strong>ørl <em>(<strong>g</strong>irl)</em></span></li>
-            <li><span title="IPA: k" class="info nolink"><strong>k</strong> as in <strong>k</strong>ørl <em>(<strong>c</strong>url)</em></span></li>
-            <li><span title="IPA: d" class="info nolink"><strong>d</strong> as in <strong>d</strong>un <em>(<strong>d</strong>one)</em></span></li>
-            <li><span title="IPA: t" class="info nolink"><strong>t</strong> as in <strong>t</strong>un <em>(<strong>t</strong>on)</em></span></li>
-            <li><span title="IPA: z" class="info nolink"><strong>z</strong> as in <strong>z</strong>w <em>(<strong>z</strong>oo)</em></span></li>
-            <li><span title="IPA: s" class="info nolink"><strong>s</strong> as in <strong>s</strong>w <em>(<strong>s</strong>ue)</em></span></li>
-            <li><span title="IPA: ʒ" class="info nolink"><strong>ž</strong> as in me<strong>ž</strong>ør <em>(mea<strong>s</strong>ure)</em></span></li>
-            <li><span title="IPA: ʃ" class="info nolink"><strong>š</strong> as in pre<strong>š</strong>ør <em>(pre<strong>ss</strong>ure)</em></span></li>
-            <li><span title="IPA: h" class="info nolink"><strong>h</strong> as in <strong>h</strong>äpy <em>(<strong>h</strong>appy)</em>
+            <li><span data-title="IPA: b" class="info toleft nolink"><strong>b</strong> as in <strong>b</strong>ät <em>(<strong>b</strong>at)</em></span></li>
+            <li><span data-title="IPA: p" class="info toleft nolink"><strong>p</strong> as in <strong>p</strong>ät <em>(<strong>p</strong>at)</em></span></li>
+            <li><span data-title="IPA: v" class="info toleft nolink"><strong>v</strong> as in ly<strong>v</strong> <em>(lea<strong>v</strong>e)</em></span></li>
+            <li><span data-title="IPA: f" class="info toleft nolink"><strong>f</strong> as in ly<strong>f</strong> <em>(lea<strong>f</strong>)</em></span></li>
+            <li><span data-title="IPA: ɡ" class="info toleft nolink"><strong>g</strong> as in <strong>g</strong>ørl <em>(<strong>g</strong>irl)</em></span></li>
+            <li><span data-title="IPA: k" class="info toleft nolink"><strong>k</strong> as in <strong>k</strong>ørl <em>(<strong>c</strong>url)</em></span></li>
+            <li><span data-title="IPA: d" class="info toleft nolink"><strong>d</strong> as in <strong>d</strong>un <em>(<strong>d</strong>one)</em></span></li>
+            <li><span data-title="IPA: t" class="info toleft nolink"><strong>t</strong> as in <strong>t</strong>un <em>(<strong>t</strong>on)</em></span></li>
+            <li><span data-title="IPA: z" class="info toleft nolink"><strong>z</strong> as in <strong>z</strong>w <em>(<strong>z</strong>oo)</em></span></li>
+            <li><span data-title="IPA: s" class="info toleft nolink"><strong>s</strong> as in <strong>s</strong>w <em>(<strong>s</strong>ue)</em></span></li>
+            <li><span data-title="IPA: ʒ" class="info toleft nolink"><strong>ž</strong> as in me<strong>ž</strong>ør <em>(mea<strong>s</strong>ure)</em></span></li>
+            <li><span data-title="IPA: ʃ" class="info toleft nolink"><strong>š</strong> as in pre<strong>š</strong>ør <em>(pre<strong>ss</strong>ure)</em></span></li>
+            <li><span data-title="IPA: h" class="info toleft nolink"><strong>h</strong> as in <strong>h</strong>äpy <em>(<strong>h</strong>appy)</em>
         </ul>
-
-        <h3><a href="https://en.wikipedia.org/wiki/Digraph_%28orthography%29" target="_blank">Daigräfs</a></h3>
+        <h3><a href="https://en.wikipedia.org/wiki/Digraph_%28orthography%29" target="_blank">{{if .DisplayTrud}}Digraphs{{else}}Daigräfs{{end}}</a></h3>
         <ul>
-            <li><span title="IPA: ŋ" class="info nolink"><strong>ng</strong> as in stra<strong>ng</strong> <em>(stro<strong>ng</strong>)</em></span></li>
-            <li><span title="IPA: ð" class="info nolink"><strong>dh</strong> as in <strong>dh</strong>en <em>(<strong>th</strong>en)</em></span></li>
-            <li><span title="IPA: θ" class="info nolink"><strong>th</strong> as in <strong>th</strong>in <em>(<strong>th</strong>in)</em></span></li>
-            <li><span title="IPA: d͡ʒ" class="info nolink"><strong>dž</strong> as in <strong>dž</strong>ir <em>(<strong>j</strong>eer)</em></span></li>
-            <li><span title="IPA: t͡ʃ" class="info nolink"><strong>tš</strong> as in <strong>tš</strong>ir <em>(<strong>ch</strong>eer)</em>
+            <li><span data-title="IPA: ŋ" class="info toleft nolink"><strong>ng</strong> as in stra<strong>ng</strong> <em>(stro<strong>ng</strong>)</em></span></li>
+            <li><span data-title="IPA: ð" class="info toleft nolink"><strong>dh</strong> as in <strong>dh</strong>en <em>(<strong>th</strong>en)</em></span></li>
+            <li><span data-title="IPA: θ" class="info toleft nolink"><strong>th</strong> as in <strong>th</strong>in <em>(<strong>th</strong>in)</em></span></li>
+            <li><span data-title="IPA: d͡ʒ" class="info toleft nolink"><strong>dž</strong> as in <strong>dž</strong>ir <em>(<strong>j</strong>eer)</em></span></li>
+            <li><span data-title="IPA: t͡ʃ" class="info toleft nolink"><strong>tš</strong> as in <strong>tš</strong>ir <em>(<strong>ch</strong>eer)</em>
         </ul>
     </div>
     
-    <h2>Wer ar C, J, Q, and X? <em>(Where are C, J, Q and X?)</em></h2>
+
+{{if .DisplayTrud}}
+    <h2>Where are C, J, Q and X?</h2>
+    <p>C, Q and X are redundant letters:</p>
+    <ul>
+        <li>C is either K or S. 'Ch' is a combination of T and Š, so it's written as 'tš'.</li>
+        <li>Q pretty much only appears with U, and sounds like 'kw', so 'kw' is how to write this in Phonetic English
+        </li>
+        <li>X iz 'ks', 'gz', or just 'z'.</li>
+    </ul>
+    <p>J, the voiced counterpart of 'ch', is used about as infrequently. It's written as 'dž'.</p>
+
+    <h2>Alternate Spellings</h2>
+    <p>The 4 new letters can also be written with digraphs and trigraphs if you can't type the new characters.</p>
+    <ul>
+        <li>ä→aa</li>
+        <li>ø→oo</li>
+        <li>ž→zh</li>
+        <li>š→sh</li>
+    </ul>
+
+    <!-- <h2>Credits</h2> -->
+{{else}}
+    <h2>Wer ar C, J, Q, and X?</h2>
     <p>C, Q änd X ar ridundint letørz:</p>
     <ul>
         <li>C iz aidhør K or S. 'Ch' iz u kambineišin uv T änd Š, so it's ritin äz 'tš'.</li>
         <li>Q prity mutš only upyrz with U, änd säwndz laik 'kw', so 'kw' iz häw tw rait dhis in Funetik Inggliš.</li>
         <li>X iz 'ks', 'gz', or džust 'z'.</li>
     </ul>
-    <div id="trud8" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all"
-            role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="false" aria-expanded="false" tabindex="-1">
-            <span class="text">(Old Speling)</span>
-                </h3>
-                <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-16" aria-labelledby="ui-id-15"
-                    role="tabpanel" aria-hidden="true" style="display: none; height: 21px;">
-                    <p>C, Q and X are redundant letters:</p>
-                    <ul>
-                        <li>C is either K or S. 'Ch' is a combination of T and Š, so it's written as 'tš'.</li>
-                        <li>Q pretty much only appears with U, and sounds like 'kw', so 'kw' is how to write this in Phonetic
-                            English
-                        </li>
-                        <li>X iz 'ks', 'gz', or just 'z'.</li>
-                    </ul>
-                </div>
-    </div>
     <p>J, dhu voist käwntørpart uv 'ch', iz ywzd ubäwt äz infrykwintly. It's ritin äz 'dž'.</p>
-    <div id="trud9" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all"
-            role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="-1">
-            <span class="text">(Old Speling)</span>
-        </h3>
-        <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-18" aria-labelledby="ui-id-17"
-            role="tabpanel" aria-hidden="true" style="display: none; height: 21px;">
-            <p>J, the voiced counterpart of 'ch', is used about as infrequently. It's written as 'dž'.</p>
-        </div>
-    </div>
-    <h2>Altørnit Spelingz <em>(Alternate Spellings)</em></h2>
+    <h2>Altørnit Spelingz</h2>
     <p>Dhu 4 nw letoorz kaan also by ritin with daigraafs änd traigraafs if yw kaan't taip dhu nw keriktoorz.</p>
     <ul>
         <li>ä→aa</li>
@@ -205,123 +167,11 @@
         <li>ž→zh</li>
         <li>š→sh</li>
     </ul>
-    <div id="trud10" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all"
-            role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="-1">
-            <span class="text">(Old Speling)</span>
-        </h3>
-        <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-20" aria-labelledby="ui-id-19"
-            role="tabpanel" aria-hidden="true" style="display: none; height: 21px;">
-            <p>The 4 new letters can also be written with digraphs and trigraphs if you can't type the new characters.</p>
-            <ul>
-                <li>ä→aa</li>
-                <li>ø→oo</li>
-                <li>ž→zh</li>
-                <li>š→sh</li>
-            </ul>
-        </div>
-    </div>
 
-    <h2>Kybord Leiäwt <em>(Keybord Layout)</em></h2>
-    <p>Ai kryeitid u Windows kybord leiäwt if yw want tw try taiping in Funetik Inggliš.</p>
-    <p>Dhu däwnlod kunteinz setup.exe, witš instalz dhu "Inggliš (Funetik) kybord leiäwt in Windows. Wuns instald, pres Ctrl+Shift
-        tw switš bitwyn leiäwts.</p>
-    <p>It also kunteinz ingfun.klc, dhu kybord leiäwt fail for <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22339" target="_blank">Microsoft Keyboard Layout Creator</a>.</p>
-    <p><strong>Däwnlod link:</strong> <a href="/static/downloads/funetik-inggliš-windows-keyboard-layout.zip">funetik-inggliš-windows-keyboard-layout.zip</a></p>
-    <div id="trud11" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
-        <h3 class="ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all"
-            role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="-1">
-                <span class="text">(Old Speling)</span>
-            </h3>
-        <div class="ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-22" aria-labelledby="ui-id-21"
-            role="tabpanel" aria-hidden="true" style="display: none; height: 21px;">
-            <p>I created a Windows keyboard layout if you want to try typing in Funetik Inggliš.</p>
-            <p>The download contains setup.exe, which installs the "Inggliš (Funetik) keyboard layout in Windows. Once installed,
-                press Ctrl+Shift to switch between layouts.</p>
-            <p>It also contains ingfun.klc, the keyboard layout file for <a href="https://www.microsoft.com/en-us/download/details.aspx?id=22339" target="_blank">Microsoft Keyboard Layout Creator</a>.</p>
-            <p><strong>Download link:</strong> <a href="/static/downloads/funetik-inggliš-windows-keyboard-layout.zip">funetik-inggliš-windows-keyboard-layout.zip</a></p>
-        </div>
-    </div>
-    <p>
-        <img alt="Kybord" class="lazy" src="/static/images/keyboard.png">
-    </p>
-    <p>
-        <img alt="Kybord with Shift prest" class="lazy" src="/static/images/keyboard_shift.png">
-    </p>
-    <p>
-        <img alt="Kybord with Caps Lock prest" class="lazy" src="/static/images/keyboard_caps.png">
-    </p>
-    <!-- <h2>Kredits <em>(Credits)</em></h2> -->
-    <p></p>
+
+    <!-- <h2>Kredits</h2> -->
+
+{{end}}
 </main>
-<script src="/static/scripts/jquery-3.2.1.min.js"></script>
-<script src="/static/scripts/jquery-ui.min.js"></script>
-<script>
-    $(function () {
-        $("#trud1").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud2").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud3").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud4").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud5").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud6").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud7").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud8").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud9").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-    $(function () {
-        $("#trud10").accordion({
-            collapsible: true,
-            active: false
-        });
-    });    
-    $(function () {
-        $("#trud11").accordion({
-            collapsible: true,
-            active: false
-        });
-    });
-</script>
-{{template "_footer.html"}} {{end}}
+{{template "_footer.html"}}
+{{end}}

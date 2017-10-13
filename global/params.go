@@ -21,6 +21,7 @@ type TemplateParams struct {
 	Words          [][]string
 	TranslitOutput []string
 	TranslitInput  string
+	DisplayTrud    bool
 }
 
 var (

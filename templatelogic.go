@@ -12,8 +12,6 @@ import (
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
 )
 
-
-
 // templateHandler contains all fields needed to process and execute templates
 type templateHandler struct {
 	filename  string
@@ -47,6 +45,14 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if t.filename == "words.html" {
 		handleWordList(t, r)
 
+		if r.URL.Query()["orth"] != nil && r.URL.Query()["orth"][0] == "trud" {
+			t.args.CurrentPage += "&orth=fun"
+			t.args.DisplayTrud = true
+		} else {
+			t.args.CurrentPage += "&orth=trud"
+			t.args.DisplayTrud = false
+		}
+
 		// join the template files for the wordlist
 		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
 			filepath.Join("templates", t.filename),
@@ -66,6 +72,14 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 			t.args.TranslitOutput = outStruct.OutputLines
 			t.args.TranslitInput = outStruct.PrevInput
+		}
+
+		if r.URL.Query()["orth"] != nil && r.URL.Query()["orth"][0] == "trud" {
+			t.args.CurrentPage = "?orth=fun"
+			t.args.DisplayTrud = true
+		} else {
+			t.args.CurrentPage = "?orth=trud"
+			t.args.DisplayTrud = false
 		}
 
 		// not word list, just a regular page, join the template files

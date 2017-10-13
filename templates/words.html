@@ -1,4 +1,7 @@
-{{define "words.html"}} {{template "_header.html"}}
+{{define "words.html"}}
+{{template "_header.html" .}}
+
+{{if .DisplayTrud}}
 
 <table class="words">
     <tr>
@@ -6,22 +9,22 @@
             <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="nw">
-            <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}"><span title="Keriktør ordør: 
-                aäeiywuøolrmnbpvfgkdtzsžšh" class="info">Nw Speling</span>{{if .New}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Character order:
+aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">New Spelling</span>{{if .New}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="old">
-            <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}"><span title="Keriktør ordør: 
-                abcdefghijklmnopqrstuvwxyz" class="info">Old Speling</span>{{if .Old}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Character order:
+abcdefghijklmnopqrstuvwxyz" class="info above">Old Spelling</span>{{if .Old}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="dist">
-            <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}"><span title="Min # uv 
-                tšendžiz tw get frum old tw nw" class="info">Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
+            <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Min # of changes 
+to get from old to new" class="info above">Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
-            <span title="Part uv Spytš" class="info nolink">PuS</span>
+            <span data-title="Part of Speech" class="info above nolink">PoS</span>
         </th>
         <th id="sil">
-            <span title="Silubulz" class="info nolink">Silz</span>
+            <span data-title="Syllables" class="info above nolink">Syls</span>
         </th>
     </tr>
     {{template "wordsSorted" .}}
@@ -38,23 +41,23 @@
                 }
             });
         </script>
-        <li><a href="{{.PreviousPage}}" class="back" title="Keyboard shortcut: left arrow"><i>🡄</i> Back</a></li>{{else}}
+        <li><a href="{{.PreviousPage}}" class="back" data-title="Keyboard shortcut: left arrow"><i>🡄</i> Back</a></li>{{else}}
         <li><a class="disabled"><i>🡄</i> Back</a></li>{{end}} {{if .NextPage}}
         <script>
             document.addEventListener("keydown", function (evt) {
-                evt = evt || window.event;
+                evt = evt || window.event
                 if (evt.keyCode == 68) { /*39*/
                     window.location = '{{.NextPage}}'
                 }
             });
         </script>
-        <li><a href="{{.NextPage}}" class="next" title="Keyboard shortcut: right arrow">Next <i>🡆</i></a></li>{{else}}
+        <li><a href="{{.NextPage}}" class="next" data-title="Keyboard shortcut: right arrow">Next <i>🡆</i></a></li>{{else}}
         <li><a class="disabled">Next <i>🡆</i></a></li>{{end}}
     </ul>
 </nav>
 
 <table class="key">
-    <tr><th>Simbul</th><th>Part uv Spytš</th></tr>
+    <tr><th>Symbol</th><th>Part of Speech</th></tr>
     <tr><td>N</td><td>Noun</td></tr>
     <tr><td>P</td><td>Plural</td></tr>
     <tr><td>h</td><td>Noun Phrase</td></tr>
@@ -71,4 +74,80 @@
     <tr><td>I</td><td>Indefinite Article</td></tr>
     <tr><td>o</td><td>Nominative</td></tr>
 </table>
-{{template "_footer.html"}} {{end}}
+
+{{else}}
+<table class="words">
+    <tr>
+        <th id="id">
+            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
+        </th>
+        <th id="nw">
+            <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Keriktør ordør: 
+aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">Nw Speling</span>{{if .New}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+        </th>
+        <th id="old">
+            <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Keriktør ordør: 
+abcdefghijklmnopqrstuvwxyz" class="info above">Old Speling</span>{{if .Old}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+        </th>
+        <th id="dist">
+            <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Min # uv tšendžiz 
+tw get frum old tw nw" class="info above">Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
+        </th>
+        <th id="pus">
+            <span data-title="Part uv Spytš" class="info above nolink">PuS</span>
+        </th>
+        <th id="sil">
+            <span data-title="Silubulz" class="info above nolink">Silz</span>
+        </th>
+    </tr>
+    {{template "wordsSorted" .}}
+</table>
+
+<nav class="bottom">
+    <ul>
+        {{if .PreviousPage}}
+        <script>
+            document.addEventListener("keydown", function (evt) {
+                evt = evt || window.event;
+                if (evt.keyCode == 65) { /*37*/
+                    window.location = '{{.PreviousPage}}'
+                }
+            });
+        </script>
+        <li><a href="{{.PreviousPage}}" class="back" data-title="Keyboard shortcut: left arrow"><i>🡄</i> Bäk</a></li>{{else}}
+        <li><a class="disabled"><i>🡄</i> Bäk</a></li>{{end}} {{if .NextPage}}
+        <script>
+            document.addEventListener("keydown", function (evt) {
+                evt = evt || window.event;
+                if (evt.keyCode == 68) { /*39*/
+                    window.location = '{{.NextPage}}'
+                }
+            });
+        </script>
+        <li><a href="{{.NextPage}}" class="next" data-title="Keyboard shortcut: right arrow">Nekst <i>🡆</i></a></li>{{else}}
+        <li><a class="disabled">Nekst <i>🡆</i></a></li>{{end}}
+    </ul>
+</nav>
+
+<table class="key">
+    <tr><th>Simbul</th><th>Part uv Spytš</th></tr>
+    <tr><td>N</td><td>Näwn</td></tr>
+    <tr><td>P</td><td>Plørul</td></tr>
+    <tr><td>h</td><td>Näwn Freiz</td></tr>
+    <tr><td>V</td><td>Vørb (už partisipul)</td></tr>
+    <tr><td>t</td><td>Vørb (tränzitiv)</td></tr>
+    <tr><td>i</td><td>Vørb (intränzitiv)</td></tr>
+    <tr><td>A</td><td>Ädžiktiv</td></tr>
+    <tr><td>v</td><td>Ädvørb</td></tr>
+    <tr><td>C</td><td>Kandžugeišin</td></tr>
+    <tr><td>P</td><td>Prepuzišin</td></tr>
+    <tr><td>!</td><td>Intørdžekšin</td></tr>
+    <tr><td>r</td><td>Pronäwn</td></tr>
+    <tr><td>D</td><td>Definit Artikul</td></tr>
+    <tr><td>I</td><td>Indefinit Artikul</td></tr>
+    <tr><td>o</td><td>Naminitiv</td></tr>
+</table>
+{{end}}
+
+{{template "_footer.html"}}
+{{end}}

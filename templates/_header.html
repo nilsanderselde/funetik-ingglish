@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/static/stylesheets/normalize.css">    
     <link rel="stylesheet" href="/static/stylesheets/jquery-ui.min.css">    
     <link rel="stylesheet" href="/static/stylesheets/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
     <title>Funetik Inggliš</title>
 </head>
 
@@ -21,13 +22,23 @@
                 window.history.replaceState({}, document.title, clean_uri);
             }
         </script>
+        <a href="{{.CurrentPage}}" class="orth">{{if .DisplayTrud}}Ryd dhis peidž in Funetik Inggliš{{else}}Read this page in traditional English{{end}}</a>
     </header>
     <nav class="top">
         <ul>
+        {{if .DisplayTrud}}
+            <li><a href="/?orth=trud">Home</a></li>
+            <li><a href="/traanzlit?orth=trud">Translit</a></li>   
+            <li><a href="/woordz?orth=trud">Words</a></li>            
+            <li><a href="/kybord?orth=trud">Keyboard</a></li>
+            <li><a href="/staats?orth=trud">Stats</a></li>
+        {{else}}
             <li><a href="/">Hom</a></li>
-            <li><a href="/woordz">Wørdz</a></li>
-            <li><a href="/staats">Stäts</a></li>
             <li><a href="/traanzlit">Tränzlit</a></li>
+            <li><a href="/woordz">Wørdz</a></li>            
+            <li><a href="/kybord">Kybord</a></li>
+            <li><a href="/staats">Stäts</a></li>
+        {{end}}
         </ul>
     </nav>
 {{end}}
