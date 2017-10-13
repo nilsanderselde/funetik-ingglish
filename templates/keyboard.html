@@ -35,81 +35,69 @@
         dhu ständørd Inggliš leiäwt in dhu fainul vøržin.</p>
 {{end}}
 
+{{if eq .KbdVer "1"}}
+{{template "1.html"}}
+{{else if eq .KbdVer "2"}}
+{{template "2.html"}}    
+{{else if eq .KbdVer "3"}}
+{{template "3.html"}}
+{{else if eq .KbdVer "4"}}
+{{template "4.html"}}
+{{else if eq .KbdVer "5"}}
+{{template "5.html"}}
+{{else if eq .KbdVer "6"}}
+{{template "6.html"}}
+{{else if eq .KbdVer "7"}}
+{{template "7.html"}}
+{{else if eq .KbdVer "8"}}
+{{template "8.html"}}
+{{else if eq .KbdVer "9"}}
+{{template "9.html"}}
+{{else if eq .KbdVer "10"}}
+{{template "10.html"}}
+{{else if eq .KbdVer "11"}}
+{{template "11.html"}}
+{{else}}
+{{template "12.html"}}
+{{end}}
 
-<div class="kbd">
-    <div class="row">
-        <div class="detailed" onpointerover="getDetails('grave')"><span class="normal">`</span><span class="shifted hidden">~</span></div>
-        <div><span class="normal">1</span><span class="shifted hidden">!</span></div>
-        <div class="detailed" onpointerover="getDetails('two')"><span class="normal">2</span><span class="shifted hidden">@</span></div>
-        <div><span class="normal">3</span><span class="shifted hidden">#</span></div>
-        <div><span class="normal">4</span><span class="shifted hidden">$</span></div>
-        <div><span class="normal">5</span><span class="shifted hidden">%</span></div>
-        <div class="detailed" onpointerover="getDetails('six')"><span class="normal">6</span><span class="shifted hidden">^</span></div>
-        <div class="detailed" onpointerover="getDetails('seven')"><span class="normal">7</span><span class="shifted hidden">&amp;</span></div>
-        <div><span class="normal">8</span><span class="shifted hidden">*</span></div>
-        <div><span class="normal">9</span><span class="shifted hidden">(</span></div>
-        <div><span class="normal">0</span><span class="shifted hidden">)</span></div>
-        <div><span class="normal">-</span><span class="shifted hidden">_</span></div>
-        <div class="detailed" onpointerover="getDetails('equals')"><span class="normal">=</span><span class="shifted hidden">+</span></div>
-        <div class="varsize">Backspace</div>
-    </div>
+{{if .DisplayTrud}}
+<p class="versions">
+<span>Keyboard Version: </span>
+<a href="?v=1&orth=trud">1</a>
+<a href="?v=2&orth=trud">2</a>
+<a href="?v=3&orth=trud">3</a>
+<a href="?v=4&orth=trud">4</a>
+<a href="?v=5&orth=trud">5</a>
+<a href="?v=6&orth=trud">6</a>
+<a href="?v=7&orth=trud">7</a>
+<a href="?v=8&orth=trud">8</a>
+<a href="?v=9&orth=trud">9</a>
+<a href="?v=10&orth=trud">10</a>
+<a href="?v=11&orth=trud">11</a>
+<a href="?v=12&orth=trud" class="large"><span>Final</span></a>
+</p>
 
-    <div class="row">
-        <div class="varsize">Tab</div>
-        <div class="new" onpointerover="getDetails('aa')"><span class="normal">ä</span><span class="shifted hidden">Ä</span></div>
-        <div class="detailed" onpointerover="getDetails('w')"><span class="normal">w</span><span class="shifted hidden">W</span></div>
-        <div><span class="normal">e</span><span class="shifted hidden">E</span></div>
-        <div><span class="normal">r</span><span class="shifted hidden">R</span></div>
-        <div><span class="normal">t</span><span class="shifted hidden">T</span></div>
-        <div class="detailed" onpointerover="getDetails('y')"><span class="normal">y</span><span class="shifted hidden">Y</span></div>
-        <div><span class="normal">u</span><span class="shifted hidden">U</span></div>
-        <div><span class="normal">i</span><span class="shifted hidden">I</span></div>
-        <div><span class="normal">o</span><span class="shifted hidden">O</span></div>
-        <div><span class="normal">p</span><span class="shifted hidden">P</span></div>
-        <div class="detailed" onpointerover="getDetails('lbracket')"><span class="normal">[</span><span class="shifted hidden">{</span></div>
-        <div class="detailed" onpointerover="getDetails('rbracket')"><span class="normal">]</span><span class="shifted hidden">}</span></div>
-        <div class="detailed" onpointerover="getDetails('backslash')"><span class="normal">\</span><span class="shifted hidden">|</span></div>
-    </div>
+{{else}}
+<p class="versions">
+<span>Kybord Vøržin: </span>
+<a href="?v=1&orth=fun">1</a>
+<a href="?v=2&orth=fun">2</a>
+<a href="?v=3&orth=fun">3</a>
+<a href="?v=4&orth=fun">4</a>
+<a href="?v=5&orth=fun">5</a>
+<a href="?v=6&orth=fun">6</a>
+<a href="?v=7&orth=fun">7</a>
+<a href="?v=8&orth=fun">8</a>
+<a href="?v=9&orth=fun">9</a>
+<a href="?v=10&orth=fun">10</a>
+<a href="?v=11&orth=fun">11</a>
+<a href="?v=12&orth=fun" class="large"><span>Fainul</span></a>
+{{end}}
 
-    <div class="row">
-        <div class="varsize">Caps Lock</div>
-        <div><span class="normal">a</span><span class="shifted hidden">A</span></div>
-        <div><span class="normal">s</span><span class="shifted hidden">S</span></div>
-        <div><span class="normal">d</span><span class="shifted hidden">D</span></div>
-        <div><span class="normal">f</span><span class="shifted hidden">F</span></div>
-        <div><span class="normal">g</span><span class="shifted hidden">G</span></div>
-        <div><span class="normal">h</span><span class="shifted hidden">H</span></div>
-        <div class="new" onpointerover="getDetails('oo')"><span class="normal">ø</span><span class="shifted hidden">Ø</span></div>
-        <div><span class="normal">k</span><span class="shifted hidden">K</span></div>
-        <div class="detailed" onpointerover="getDetails('l')"><span class="normal">l</span><span class="shifted hidden">L</span></div>
-        <div class="detailed" onpointerover="getDetails('semicolon')"><span class="normal">;</span><span class="shifted hidden">:</span></div>
-        <div class="detailed" onpointerover="getDetails('quote')"><span class="normal">'</span><span class="shifted hidden">"</span></div>
-        <div class="varsize">Enter</div>        
-    </div>
+<aside id="details"></aside>
 
-    <div class="row">
-        <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
-        <div><span class="normal">z</span><span class="shifted hidden">Z</span></div>
-        <div class="new" onpointerover="getDetails('zh')"><span class="normal">ž</span><span class="shifted hidden">Ž</span></div>
-        <div class="new" onpointerover="getDetails('sh')"><span class="normal">š</span><span class="shifted hidden">Š</span></div>
-        <div><span class="normal">v</span><span class="shifted hidden">V</span></div>
-        <div><span class="normal">b</span><span class="shifted hidden">B</span></div>
-        <div><span class="normal">n</span><span class="shifted hidden">N</span></div>
-        <div><span class="normal">m</span><span class="shifted hidden">M</span></div>
-        <div class="detailed" onpointerover="getDetails('comma')"><span class="normal">,</span><span class="shifted hidden">&lt;</span></div>
-        <div class="detailed" onpointerover="getDetails('period')"><span class="normal">.</span><span class="shifted hidden">&gt;</span></div>
-        <div class="detailed" onpointerover="getDetails('slash')"><span class="normal">/</span><span class="shifted hidden">?</span></div>
-        <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
-    </div>
-    <div class="row">
-        <div class="varsize">Ctrl</div>
-        <div class="varsize">Alt</div>
-        <div class="space">Space</div>
-        <div class="varsize">Alt</div>
-        <div class="varsize">Ctrl</div>
-    </div>
-    </div>
-    <aside id="details"></aside>
+
 </main>
 <script>
     let shiftState = false
@@ -159,36 +147,6 @@
             shiftUp()
         }
     });
-
-    let detailBox = document.getElementById("details")
-
-    details = {
-        grave : "grave",
-        two : "2",
-        six : "6",
-        seven : "",
-        equals : "",
-        aa : "Versions 1, 2: ä Ä<br>Version 3: æ Æ",
-        w : "",
-        y : "",
-        lbracket : "Version 3: ' \"",
-        rbracket : "Version 3: ? [",
-        backslash : "Version 3: / ]",
-        oo : "Versions 1, 2, 3: ʃ Ʃ",
-        l : "Version 2: л Л<br>Version 3: λ Λ",
-        semicolon : "Version 3: ā Ā",
-        quote : "Version 3: . :",
-        zh : "Versions 1, 2: ʒ Ʒ<br>Version 3: ē Ē",
-        sh : "Versions 1, 2: ï Ï<br>Version 3: ī Ī",
-        comma : "Version 3: ū Ū",
-        period : "Version 3: ʒ Ʒ",
-        slash : "Version 3: , ;"        
-    }
-
-    function getDetails(key) {
-        detailBox.innerHTML = details[key]
-    }
 </script>
-
 {{template "_footer.html"}}
 {{end}}
