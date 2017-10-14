@@ -55,30 +55,12 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			filepath.Join("templates", "_footer.html"),
 		))
 
-	} else if t.filename == "keyboard.html" {
-		pickKeyboard(t, r)
-		displayOrth(t, r, true)
-
-		// join the template files for the wordlist
-		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
-			filepath.Join("templates", t.filename),
-			filepath.Join("templates", "keyboards", "1.html"),
-			filepath.Join("templates", "keyboards", "2.html"),
-			filepath.Join("templates", "keyboards", "3.html"),
-			filepath.Join("templates", "keyboards", "4.html"),
-			filepath.Join("templates", "keyboards", "5.html"),
-			filepath.Join("templates", "keyboards", "6.html"),
-			filepath.Join("templates", "keyboards", "7.html"),
-			filepath.Join("templates", "keyboards", "8.html"),
-			filepath.Join("templates", "keyboards", "9.html"),
-			filepath.Join("templates", "keyboards", "10.html"),
-			filepath.Join("templates", "keyboards", "11.html"),
-			filepath.Join("templates", "keyboards", "12.html"),
-			filepath.Join("templates", "_header.html"),
-			filepath.Join("templates", "_footer.html"),
-		))
-
 	} else {
+		if t.filename == "kbd.html" {
+			pickKeyboard(t, r)
+			displayOrth(t, r, true)
+		}
+
 		if t.filename == "translit.html" {
 
 			cha := make(chan dbconnect.Output)
@@ -122,23 +104,5 @@ func displayOrth(t *templateHandler, r *http.Request, additive bool) {
 			t.args.CurrentPage = "?orth=trud"
 		}
 		t.args.DisplayTrud = false
-	}
-}
-
-// pickKeyboard determines which keyboard layout to show on keyboard page
-func pickKeyboard(t *templateHandler, r *http.Request) {
-
-	if r.URL.Query()["v"] != nil {
-		v := &r.URL.Query()["v"][0]
-
-		if *v == "1" || *v == "2" || *v == "3" || *v == "4" ||
-			*v == "5" || *v == "6" || *v == "7" || *v == "8" ||
-			*v == "9" || *v == "10" || *v == "11" {
-			t.args.CurrentPage = "?v=" + *v
-		} else {
-			t.args.CurrentPage = "?v=12"
-		}
-	} else {
-		t.args.CurrentPage = "?v=12"
 	}
 }

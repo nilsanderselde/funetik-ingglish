@@ -1,4 +1,4 @@
-{{define "keyboard.html"}}
+{{define "kbd.html"}}
 {{template "_header.html" .}}
 <main>
 {{if .DisplayTrud}}
@@ -35,31 +35,44 @@
         dhu ständørd Inggliš leiäwt in dhu fainul vøržin.</p>
 {{end}}
 
-{{if eq .KbdVer "1"}}
-{{template "1.html"}}
-{{else if eq .KbdVer "2"}}
-{{template "2.html"}}    
-{{else if eq .KbdVer "3"}}
-{{template "3.html"}}
-{{else if eq .KbdVer "4"}}
-{{template "4.html"}}
-{{else if eq .KbdVer "5"}}
-{{template "5.html"}}
-{{else if eq .KbdVer "6"}}
-{{template "6.html"}}
-{{else if eq .KbdVer "7"}}
-{{template "7.html"}}
-{{else if eq .KbdVer "8"}}
-{{template "8.html"}}
-{{else if eq .KbdVer "9"}}
-{{template "9.html"}}
-{{else if eq .KbdVer "10"}}
-{{template "10.html"}}
-{{else if eq .KbdVer "11"}}
-{{template "11.html"}}
-{{else}}
-{{template "12.html"}}
-{{end}}
+<div class="kbd">
+    <div class="row">
+        {{range (index .Kbd 0)}}
+        <div{{if (index . 2)}} class="{{index . 2}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        {{end}}
+        <div class="varsize">Backspace</div>
+    </div>
+
+    <div class="row">
+            <div class="varsize">Tab</div>
+            {{range (index .Kbd 1)}}
+            <div{{if (index . 2)}} class="{{index . 2}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+            {{end}}
+            </div>
+    
+        <div class="row">
+            <div class="varsize">Caps Lock</div>
+            {{range (index .Kbd 2)}}
+            <div{{if (index . 2)}} class="{{index . 2}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+            {{end}}
+            <div class="varsize">Enter</div>        
+        </div>
+    
+        <div class="row">
+            <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
+            {{range (index .Kbd 3)}}
+            <div{{if (index . 2)}} class="{{index . 2}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+            {{end}}
+                <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
+        </div>
+        <div class="row">
+            <div class="varsize">Ctrl</div>
+            <div class="varsize">Alt</div>
+            <div class="space">Space</div>
+            <div class="varsize">Alt</div>
+            <div class="varsize">Ctrl</div>
+        </div>
+</div>
 
 {{if .DisplayTrud}}
 <p class="versions">
@@ -95,15 +108,75 @@
 <a href="?v=12&orth=fun" class="large"><span>Fainul</span></a>
 {{end}}
 
-<aside id="details"></aside>
+<aside>
+{{if .DisplayTrud}}
+    {{if eq .KbdVer "1"}}
+        test
+    {{else if eq .KbdVer "2"}}
+
+    {{else if eq .KbdVer "3"}}
+
+    {{else if eq .KbdVer "4"}}
+
+    {{else if eq .KbdVer "5"}}
+
+    {{else if eq .KbdVer "6"}}
+
+    {{else if eq .KbdVer "7"}}
+
+    {{else if eq .KbdVer "8"}}
+
+    {{else if eq .KbdVer "9"}}
+
+    {{else if eq .KbdVer "10"}}
+
+    {{else if eq .KbdVer "11"}}
+
+    {{else}}
+
+    {{end}}
+{{else}}
+    {{if eq .KbdVer "1"}}
+
+    {{else if eq .KbdVer "2"}}
+
+    {{else if eq .KbdVer "3"}}
+
+    {{else if eq .KbdVer "4"}}
+
+    {{else if eq .KbdVer "5"}}
+
+    {{else if eq .KbdVer "6"}}
+
+    {{else if eq .KbdVer "7"}}
+
+    {{else if eq .KbdVer "8"}}
+
+    {{else if eq .KbdVer "9"}}
+
+    {{else if eq .KbdVer "10"}}
+
+    {{else if eq .KbdVer "11"}}
+
+    {{else}}
+
+    {{end}}
+{{end}}
+</aside>
 
 
 </main>
 <script>
     let shiftState = false
-    let normalKeys = document.getElementsByClassName("normal")
-    let shiftedKeys = document.getElementsByClassName("shifted")
-    let shiftKeys = document.getElementsByClassName("shift")
+    var normalKeys
+    var shiftedKeys
+    var shiftKeys
+    window.addEventListener("load", function () {
+        normalKeys = document.getElementsByClassName("normal")
+        shiftedKeys = document.getElementsByClassName("shifted")
+        shiftKeys = document.getElementsByClassName("shift")
+    })
+
     function shiftDown(){
         for (i = 0; i < normalKeys.length; i++) {
             normalKeys[i].className += " hidden";

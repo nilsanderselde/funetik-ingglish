@@ -43,7 +43,7 @@ func main() {
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
 	http.Handle("/", &templateHandler{filename: "home.html"})
-	http.Handle("/kybord", &templateHandler{filename: "keyboard.html"})
+	http.Handle("/kybord", &templateHandler{filename: "kbd.html"})
 	http.Handle("/woordz", &templateHandler{filename: "words.html", query: wordsQuery, queryFrom: wordsQueryFrom})
 	http.Handle("/staats", &templateHandler{filename: "stats.html"})
 	http.Handle("/traanzlit", &templateHandler{filename: "translit.html"})

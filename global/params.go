@@ -22,6 +22,8 @@ type TemplateParams struct {
 	TranslitOutput []string
 	TranslitInput  string
 	DisplayTrud    bool
+	KbdVer         string
+	Kbd            [][][]string
 }
 
 var (
