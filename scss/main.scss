@@ -22,37 +22,37 @@ main {
         color: #000;
     }
     a:hover,
-    a:active{
+    a:active {
         border-color: #000;
     }
-    
-    p, h1, h2, h3, li {
+    p,
+    h1,
+    h2,
+    h3,
+    li {
         line-height: 1.4em;
     }
-
-    p, h1 {
-        margin: 0 0 .5em;    
+    p,
+    h1 {
+        margin: 0 0 .5em;
     }
     p {
         color: #222;
     }
-
     h1 {
         font-size: 1.5rem;
         font-weight: normal;
     }
-
-    h2, h3{
-        margin: .5em 0 .2em;        
+    h2,
+    h3 {
+        margin: .5em 0 .2em;
     }
-
     h2 {
         font-size: 1.2rem;
     }
-
     h3 {
         font-size: 1rem;
-        opacity: .8;    
+        opacity: .8;
         font-style: italic;
     }
 }
@@ -74,9 +74,7 @@ table {
 
 a {
     transition: color .2s linear, text-shadow .2s linear, border-color .2s linear;
-    text-decoration: none;        
-
-
+    text-decoration: none;
     &:link,
     &:visited {
         color: rgb(49, 98, 153);
@@ -112,7 +110,7 @@ nav {
         font-size: 1.2em;
         &:link,
         &:visited {
-            border:0;
+            border: 0;
         }
     }
     ul {
@@ -219,9 +217,10 @@ header {
         top: 40px;
         z-index: -1;
     }
-    .orth{
+    .orth {
         line-height: 3em;
-        &:link, &:visited {
+        &:link,
+        &:visited {
             color: black;
         }
     }
@@ -332,7 +331,7 @@ table {
         &:nth-last-of-type(1) {
             border: 0;
         }
-        a{
+        a {
             &:link,
             &:visited {
                 color: #000;
@@ -426,7 +425,7 @@ div.kbd {
         div {
             $key: 40px;
             font-size: 1rem;
-            background: rgba(255,255,255,.5);
+            background: rgba(255, 255, 255, .5);
             max-width: $key;
             min-width: $key;
             height: $key;
@@ -439,27 +438,24 @@ div.kbd {
             cursor: default;
             user-select: none;
         }
-        .hidden{
+        .hidden {
             display: none;
-        }
-        .final, .old{
-            color: white;
-            cursor: help;
         }
         .final {
             background: #444;
-            border-color: #666;            
+            border-color: #666;
+            color: white;
         }
-        .old{
+        .old {
             background: #666;
-            border-color: #888;            
+            border-color: #888;
+            color: white;
         }
-
         .varsize,
         .space {
             font-size: .6rem;
             font-weight: bold;
-            max-width: initial;            
+            max-width: initial;
         }
         .space {
             width: 333px;
@@ -484,11 +480,11 @@ div.kbd {
 @keyframes keyglow {
     0% {
         background: rgba(49, 98, 153, 1);
-        border-color: rgb(134, 170, 206);        
+        border-color: rgb(134, 170, 206);
     }
     94% {
         background: rgba(49, 98, 153, 1);
-        border-color: rgb(134, 170, 206);        
+        border-color: rgb(134, 170, 206);
     }
     96% {
         background: rgba(49, 98, 153, .7);
@@ -504,36 +500,39 @@ div.kbd {
     }
 }
 
-
 .versions {
-    $defver: .8rem;
-    $finver: 1rem;
+    $small: .8rem;
+    $big: 1rem;
     vertical-align: bottom;
     cursor: default;
     text-align: right;
     font-size: 0;
     >span {
-        font-size: $defver;
-        line-height: $defver;
-        margin-right: .1rem;        
+        font-size: $small;
+        line-height: 1.2rem;
+        margin-right: .1rem;
     }
-    a{
+    a {
         display: inline-block;
         vertical-align: bottom;
-        min-width: .6rem;
+        min-width: $big;
+        height: $big;
+        border: 1px solid rgb(49, 98, 153);
         text-align: center;
         margin-right: .3rem;
-        font-size: $defver;
-        line-height: $defver;
+        font-size: $small;
+        line-height: $big;
+        padding: 2px;
         &.large {
-            font-size: $finver;
+            font-size: $big;
             >span {
-                line-height: $finver;   
-                font-weight: bold;             
+                line-height: $big;
+                font-weight: bold;
             }
         }
     }
 }
+
 .col {
     width: 40%;
     display: inline-block;
@@ -588,7 +587,8 @@ div.kbd {
     }
 }
 
-textarea, aside {
+textarea,
+aside {
     background: rgba(255, 255, 255, 0.3);
     border: 0;
     box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
@@ -601,11 +601,13 @@ textarea, aside {
     padding: 4px;
     margin-top: 1rem;
 }
+
 textarea {
-    height: 200px;    
+    height: 200px;
 }
+
 aside {
-    height: 100px;    
+    height: 100px;
 }
 
 form {
@@ -644,13 +646,15 @@ sub {
 ul {
     cursor: default;
 }
+
 .älfubit {
-    font-family: 'Roboto Mono', monospace;    
+    font-family: 'Roboto Mono', monospace;
     font-size: 1.36rem;
     opacity: .5;
 }
+
 ::selection {
-    color: #eee; 
+    color: #eee;
     background: rgba(49, 98, 153, .99);
 }
 
