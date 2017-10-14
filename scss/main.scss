@@ -19,11 +19,11 @@ main {
     }
     a:link,
     a:visited {
-        color: #000;
+        color: black;
     }
     a:hover,
     a:active {
-        border-color: #000;
+        border-color: black;
     }
     p,
     h1,
@@ -68,7 +68,7 @@ table {
     background-attachment: fixed;
     padding: 10px;
     box-sizing: border-box;
-    font-size: .8em;
+    font-size: .8rem;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -334,11 +334,11 @@ table {
         a {
             &:link,
             &:visited {
-                color: #000;
+                color: black;
             }
             &:hover,
             &:active {
-                border-color: #000;
+                border-color: black;
             }
         }
     }
@@ -370,6 +370,7 @@ $header_offset: .55em;
 #sil {
     width: 2rem;
 }
+
 
 .info {
     position: relative;
@@ -436,7 +437,6 @@ div.kbd {
             padding: 2px;
             margin: 1px;
             cursor: default;
-            user-select: none;
         }
         .hidden {
             display: none;
@@ -525,9 +525,18 @@ div.kbd {
         padding: 2px;
         &.large {
             font-size: $big;
-            >span {
-                line-height: $big;
-                font-weight: bold;
+            font-weight: bold;
+        }
+        &.active{
+            background: rgb(49, 98, 153);
+            border-color: black;
+            &:link,
+            &:visited{
+                color: white;
+            }
+            &:hover,
+            &:active{
+                color: white;
             }
         }
     }
@@ -606,10 +615,6 @@ textarea {
     height: 200px;
 }
 
-aside {
-    height: 100px;
-}
-
 form {
     text-align: center;
 }
@@ -668,4 +673,19 @@ ul {
     100% {
         transform: rotate(-360deg);
     }
+}
+dl {
+    margin: 0;
+    
+}
+dt{
+    font-style: italic;
+    opacity: .7;
+}
+dd{
+    padding-bottom: 1em;
+    
+}
+dd:last-of-type {
+    padding: 0;
 }
