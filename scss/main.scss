@@ -10,8 +10,6 @@ html {
 main {
     color: #222;
     display: block;
-    margin: auto;
-    max-width: 700px;
     img {
         width: 100%;
         height: auto;
@@ -97,13 +95,16 @@ a {
     }
 }
 
+main, header, nav, table.words, table.stats {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto 20px;    
+}
+
 nav {
+    display: block;
     user-select: none;
     text-align: center;
-    padding-bottom: 20px;
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
     a {
         font-weight: bold;
         font-size: 1.2em;
@@ -199,10 +200,6 @@ nav {
 header {
     user-select: none;
     text-align: center;
-    padding-bottom: 10px;
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
     h1 {
         width: 100%;
         max-width: 400px;
@@ -226,11 +223,9 @@ header {
 }
 
 table {
-    margin: 0 auto 20px auto;
     border-collapse: collapse;
     table-layout: fixed;
     &.words {
-        max-width: 700px;
         td:nth-of-type(4),
         td:nth-of-type(5),
         td:nth-of-type(6) {
@@ -238,16 +233,12 @@ table {
         }
     }
     &.stats {
+        td, th {
+            text-align: center;            
+        }
         th:nth-of-type(1),
         td:nth-of-type(1) {
             display: none;
-        }
-        td:nth-of-type(2) {
-            text-align: center;
-        }
-        th:nth-of-type(n+3),
-        td:nth-of-type(n+3) {
-            text-align: right;
         }
     }
     &.key {
@@ -396,7 +387,7 @@ $header_offset: .55em;
     }
     &.above {
         &[data-title]:hover:after {
-            bottom: 110%;
+            bottom: 108%;
             left: 0;
         }
     }
@@ -421,7 +412,6 @@ div.kbd {
         display: flex;
         width: 100%;
         div {
-            overflow: hidden;
             $key: 39px;
             font-size: 1rem;
             background: rgba(255, 255, 255, .5);
@@ -437,6 +427,9 @@ div.kbd {
             @media screen and (min-width: 700px) {
                 min-width: 39px;
             }
+            span{
+                overflow: hidden;            
+            }
         }
         .hidden {
             display: none;
@@ -450,6 +443,10 @@ div.kbd {
             background: #666;
             border-color: #888;
             color: white;
+        }
+        .final,
+        .old {
+            cursor: help;
         }
         .varsize,
         .space {
@@ -550,8 +547,9 @@ div.kbd {
         line-height: $big;
         padding: 2px;
         &.large {
-            font-size: $big;
+            font-size: $small;
             font-weight: bold;
+            padding: 2px 6px;
         }
         &.active {
             background: rgb(49, 98, 153);

@@ -41,21 +41,21 @@
 <div class="kbd">
     <div class="row">
         {{range (index .Kbd 0)}}
-        <div{{if (index . 2)}} class="{{index . 2}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="varsize">Backspace</div>
     </div>
     <div class="row">
         <div class="varsize">Tab</div>
         {{range (index .Kbd 1)}}
-        <div{{if (index . 2)}} class="{{index . 2}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         </div>
 
     <div class="row">
         <div class="varsize">Caps Lock</div>
         {{range (index .Kbd 2)}}
-        <div{{if (index . 2)}} class="{{index . 2}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="varsize">Enter</div>        
     </div>
@@ -63,15 +63,19 @@
     <div class="row">
         <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
         {{range (index .Kbd 3)}}
-        <div{{if (index . 2)}} class="{{index . 2}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
             <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
     </div>
-    <div class="row">
+    <div class="row bottom">
         <div class="varsize">Ctrl</div>
+        <div class="vargin"></div>
         <div class="varsize">Alt</div>
+        <div class="vargin"></div>        
         <div class="space">Space</div>
+        <div class="vargin"></div>        
         <div class="varsize">Alt</div>
+        <div class="vargin"></div>        
         <div class="varsize">Ctrl</div>
     </div>
 </div>
@@ -87,8 +91,7 @@
 <a href="?v=6&orth=trud" class="{{if eq .KbdVer "6"}}active{{end}}">6</a>
 <a href="?v=7&orth=trud" class="{{if eq .KbdVer "7"}}active{{end}}">7</a>
 <a href="?v=8&orth=trud" class="{{if eq .KbdVer "8"}}active{{end}}">8</a>
-<a href="?v=9&orth=trud" class="{{if eq .KbdVer "9"}}active{{end}}">9</a>
-<a href="?v=10&orth=trud" class="large{{if eq .KbdVer "10"}} active{{end}}">Final</a>
+<a href="?v=9&orth=trud" class="large{{if eq .KbdVer "9"}} active{{end}}">Final</a>
 </p>
 
 {{else}}
@@ -102,8 +105,7 @@
 <a href="?v=6&orth=fun" class="{{if eq .KbdVer "6"}}active{{end}}">6</a>
 <a href="?v=7&orth=fun" class="{{if eq .KbdVer "7"}}active{{end}}">7</a>
 <a href="?v=8&orth=fun" class="{{if eq .KbdVer "8"}}active{{end}}">8</a>
-<a href="?v=9&orth=fun" class="{{if eq .KbdVer "9"}}active{{end}}">9</a>
-<a href="?v=10&orth=fun" class="large{{if eq .KbdVer "10"}} active{{end}}">Fainul</a>
+<a href="?v=9&orth=fun" class="large{{if eq .KbdVer "9"}} active{{end}}">Fainul</a>
 {{end}}
 
 <aside>
@@ -134,15 +136,11 @@
 
         {{else if eq .KbdVer "7"}}
         <dt>Funetik (Vøržin 7)</dt>
-        <dd>Ūic kīnd uv sōduz šød ēū bē geting frum dhat plās ūith Jōi, Žon, and Haūørd?</dd>
+        <dd>Úic kínd uv sóduz šød éú bé geting frum dhat plás úith Jói, Žon, and Haúørd?</dd>
 
         {{else if eq .KbdVer "8"}}
-        <dt></dt>
-        <dd></dd>
-
-        {{else if eq .KbdVer "9"}}
-        <dt></dt>
-        <dd></dd>
+        <dt>Funetik (Vørzhin 7)</dt>        
+        <dd>Úitsh kínd uv sóduz shød éú bé geting frum dhat plás úith Dzhói, Zhon, and Haúørd?</dd>
 
         {{else}}
         <dt>Funetik (Fainul Vørzin)</dt>
@@ -153,14 +151,14 @@
         <dd>Which kind of sodas should you be getting from that place with Joy, Jean, and Howard?</dd>
 
         <dt>International Phonetic Alphabet</dt>
-        <dd>wɪt͡ʃ kaɪnd ʌv soʊdʌz ʃʊd ju bi ɡɛtɪŋ frʌm ðæt pleɪs wɪθ d͡ʒɔɪ, ʒɑn, ænd haʊwrd?</dd>
+        <dd>wɪt͡ʃ kaɪnd ʌv soʊdʌz ʃʊd ju bi ɡɛtɪŋ frʌm ðæt pleɪs wɪθ d͡ʒɔɪ, ʒɑ̃, ænd haʊwrd?</dd>
     </dl>
 </aside>
 
 
 </main>
 <script>
-    let shiftState = false
+    let shiftState
     var normalKeys
     var shiftedKeys
     var shiftKeys
@@ -205,12 +203,14 @@
         evt = evt || window.event
         if (evt.keyCode == 16) {
             shiftDown()
+            shiftState = true            
         }
     });
     document.addEventListener("keyup", function (evt) {
         evt = evt || window.event
         if (evt.keyCode == 16) {
             shiftUp()
+            shiftState = false            
         }
     });
 </script>
