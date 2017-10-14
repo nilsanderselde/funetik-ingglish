@@ -16,6 +16,7 @@ type TemplateParams struct {
 	Num            int
 	Sort           string
 	CurrentPage    string
+	ChangeOrth     string
 	NextPage       string
 	PreviousPage   string
 	Words          [][]string

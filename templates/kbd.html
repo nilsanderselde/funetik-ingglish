@@ -10,7 +10,7 @@
         target="_blank">Microsoft Keyboard Layout Creator</a>.</p>
     <p><strong>Download link:</strong> <a href="/static/downloads/funetik-inggliš-windows-keyboard-layout.zip">funetik-inggliš-windows-keyboard-layout.zip</a></p>
     <h2>Demo Keyboard</h2>
-    <p>You can get an idea of what the keyboard layout looks like below. Click the shift key on the keyboard below or hold down
+    <p>You can get an idea of what the keyboard layout looks like below. Click the Shift key on the keyboard below or hold down
         on your keyboard's actual shift key to see the alternate letters.</p>
     <p>You can also see the history of the phonetic keyboard by clicking on the version links below it.</p>
     <p>The dark gray keys are the ones that made it to the final version, while the lighter gray keys are ones that were just
@@ -28,7 +28,7 @@
         target="_blank">Microsoft Keyboard Layout Creator</a>.</p>
     <p><strong>Däwnlod link:</strong> <a href="/static/downloads/funetik-inggliš-windows-keyboard-layout.zip">funetik-inggliš-windows-keyboard-layout.zip</a></p>
     <h2>Demo Kybord</h2>
-    <p>Yw kän get en aidyu uv wut dhu kybord leiäwt løks laik bilo. Klik dhu šift ky an dhu kybord bilo or hold däwn
+    <p>Yw kän get en aidyu uv wut dhu kybord leiäwt løks laik bilo. Klik dhu Šift ky an dhu kybord bilo or hold däwn
         an yor kybord'z äkšøwul šift ky tw sy dhu altørnit letørz.</p>
     <p>Yw kän also sy dhu histøry uv dhu funetik kybord bai kliking an dhu vøržin links bilo it.</p>
     <p>Dhu dark grei kyz ar dhu wunz dhät maid it tw dhu fainul vøržin, wail dhu laitør grei kyz ar wunz dhät wør džust
@@ -41,31 +41,31 @@
 <div class="kbd">
     <div class="row">
         {{range (index .Kbd 0)}}
-        <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="varsize hideoverflow">Backspace</div>
     </div>
     <div class="row">
         <div class="varsize">Tab</div>
         {{range (index .Kbd 1)}}
-        <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         </div>
 
     <div class="row">
         <div class="varsize hideoverflow">Caps Lock</div>
         {{range (index .Kbd 2)}}
-        <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="varsize">Enter</div>        
     </div>
 
     <div class="row">
-        <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
+        <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()">Shift</div>
         {{range (index .Kbd 3)}}
-        <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-            <div class="varsize shift" onpointerdown="javascript:pressShift()">Shift</div>
+        <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()">Shift</div>
     </div>
     <div class="row bottom">
         <div class="varsize">Ctrl</div>
@@ -108,7 +108,7 @@
 <a href="?v=9&orth=fun" class="large{{if eq .KbdVer "9"}} active{{end}}">Fainul</a>
 {{end}}
 
-<aside>
+<aside id="kbddemo">
     <dl>
         {{if eq .KbdVer "1"}}
         <dt>Funetik (Vrʒin 1)</dt>
@@ -176,7 +176,7 @@
             shiftedKeys[i].className = "shifted";
         }
         for (i = 0; i < shiftKeys.length; i++) {
-            shiftKeys[i].className = "varsize shift down";
+            shiftKeys[i].className = "varsize shift down info above";
         }
     }
     function shiftUp(){
@@ -187,7 +187,7 @@
             normalKeys[i].className = "normal";
         }
         for (i = 0; i < shiftKeys.length; i++) {
-            shiftKeys[i].className = "varsize shift";
+            shiftKeys[i].className = "varsize shift info above";
         }
     }
     function pressShift() {

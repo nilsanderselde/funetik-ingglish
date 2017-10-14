@@ -91,20 +91,24 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 // concat is true if query string should be concatenated to an existing query string
 // using & instead of ?
 func displayOrth(t *templateHandler, r *http.Request, additive bool) {
-
-	if r.URL.Query()["orth"] != nil && r.URL.Query()["orth"][0] == "trud" {
+	t.args.ChangeOrth = t.args.CurrentPage
+	if r.URL.Query()["orth"] != nil && r.URL.Query()["orth"][0] == "fun" {
 		if additive {
 			t.args.CurrentPage += "&orth=fun"
+			t.args.ChangeOrth += "&orth=trud"
 		} else {
 			t.args.CurrentPage = "?orth=fun"
+			t.args.ChangeOrth = "?orth=trud"
 		}
-		t.args.DisplayTrud = true
+		t.args.DisplayTrud = false
 	} else {
 		if additive {
 			t.args.CurrentPage += "&orth=trud"
+			t.args.ChangeOrth += "&orth=fun"
 		} else {
 			t.args.CurrentPage = "?orth=trud"
+			t.args.ChangeOrth = "?orth=fun"
 		}
-		t.args.DisplayTrud = false
+		t.args.DisplayTrud = true
 	}
 }
