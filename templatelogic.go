@@ -44,7 +44,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// special processing for words list based on query strings
 	if t.filename == "words.html" {
 		handleWordList(t, r)
-
 		displayOrth(t, r, true)
 
 		// join the template files for the wordlist
@@ -56,24 +55,27 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		))
 
 	} else {
+		// for keyboard page, decide which keyboard to display based on query string,
+		// then decide which orthagraphy to use based on concatenative query string
 		if t.filename == "kbd.html" {
 			pickKeyboard(t, r)
 			displayOrth(t, r, true)
+		} else {
+			// for pages without their own, unique query strings,
+			// decide which orthagraphy to use based on a new query string (non-concat)
+			displayOrth(t, r, false)
+
+			// for tranliteration page, open channel, send input,
+			// wait for output
+			if t.filename == "translit.html" {
+				cha := make(chan dbconnect.Output)
+				go dbconnect.ProcessTrud(cha, r)
+				outStruct := <-cha // waits till getA() returns
+				t.args.TranslitOutput = outStruct.OutputLines
+				t.args.TranslitInput = outStruct.PrevInput
+			}
+
 		}
-
-		if t.filename == "translit.html" {
-
-			cha := make(chan dbconnect.Output)
-
-			go dbconnect.ProcessTrud(cha, r)
-
-			outStruct := <-cha // waits till getA() returns
-
-			t.args.TranslitOutput = outStruct.OutputLines
-			t.args.TranslitInput = outStruct.PrevInput
-		}
-
-		displayOrth(t, r, false)
 
 		// not word list, just a regular page, join the template files
 		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
