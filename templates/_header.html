@@ -14,31 +14,24 @@
 <body>
     <header>
         <h1><a href="/"><img src="/static/images/logo.png" width="400" height="261" alt="ÄØŽŠ"></a></h1>
-        <script type="text/javascript">
-            /* prevents page reloads from toggling flags */
-            var uri = window.location.toString();
-            if (uri.indexOf("&id") > 0) {
-                var clean_uri = uri.substring(0, uri.indexOf("&id"));
-                window.history.replaceState({}, document.title, clean_uri);
-            }
-        </script>
-        <a href="{{.CurrentPage}}" class="orth">{{if .DisplayTrud}}Ryd dhis peidž in Funetik Inggliš{{else}}Read this page in traditional English{{end}}</a>
+
+        <nav class="top">
+            <ul>
+            {{if .DisplayTrud}}
+                <li><a href="/?orth=trud">Home</a></li>
+                <li><a href="/traanzlit?orth=trud">Translit</a></li>   
+                <li><a href="/woordz?orth=trud">Words</a></li>            
+                <li><a href="/kybord?orth=trud">Keyboard</a></li>
+                <li><a href="/staats?orth=trud">Stats</a></li>
+            {{else}}
+                <li><a href="/">Hom</a></li>
+                <li><a href="/traanzlit">Tränzlit</a></li>
+                <li><a href="/woordz">Wørdz</a></li>            
+                <li><a href="/kybord">Kybord</a></li>
+                <li><a href="/staats">Stäts</a></li>
+            {{end}}
+            </ul>
+        </nav>
     </header>
-    <nav class="top">
-        <ul>
-        {{if .DisplayTrud}}
-            <li><a href="/?orth=trud">Home</a></li>
-            <li><a href="/traanzlit?orth=trud">Translit</a></li>   
-            <li><a href="/woordz?orth=trud">Words</a></li>            
-            <li><a href="/kybord?orth=trud">Keyboard</a></li>
-            <li><a href="/staats?orth=trud">Stats</a></li>
-        {{else}}
-            <li><a href="/">Hom</a></li>
-            <li><a href="/traanzlit">Tränzlit</a></li>
-            <li><a href="/woordz">Wørdz</a></li>            
-            <li><a href="/kybord">Kybord</a></li>
-            <li><a href="/staats">Stäts</a></li>
-        {{end}}
-        </ul>
-    </nav>
+    <div id="orth"><a href="{{.ChangeOrth}}"{{if .DisplayTrud}} data-title="Read this page in Phonetic English" class="info below">Ryd dhis peidž in Funetik Inggliš{{else}}>Read this page in traditional English{{end}}</a></div>    
 {{end}}

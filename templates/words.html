@@ -3,7 +3,7 @@
 
 {{if .DisplayTrud}}
 
-<table class="words">
+<table id="words">
     <tr>
         <th id="id">
             <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
@@ -21,10 +21,10 @@ abcdefghijklmnopqrstuvwxyz" class="info above">Old Spelling</span>{{if .Old}}<i>
 to get from old to new" class="info above">Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
-            <span data-title="Part of Speech" class="info above nolink">PoS</span>
+            <span data-title="Part of Speech" class="info above nolink hover">PoS</span>
         </th>
         <th id="sil">
-            <span data-title="Syllables" class="info above nolink">Syls</span>
+            <span data-title="Syllables" class="info above nolink hover">Syls</span>
         </th>
     </tr>
     {{template "wordsSorted" .}}
@@ -55,25 +55,28 @@ to get from old to new" class="info above">Dist</span>{{if .Dist}}<i>{{if .Rever
         <li><a class="disabled">Next <i>🡆</i></a></li>{{end}}
     </ul>
 </nav>
-
-<table class="key">
-    <tr><th>Symbol</th><th>Part of Speech</th></tr>
-    <tr><td>N</td><td>Noun</td></tr>
-    <tr><td>P</td><td>Plural</td></tr>
-    <tr><td>h</td><td>Noun Phrase</td></tr>
-    <tr><td>V</td><td>Verb (usu participle)</td></tr>
-    <tr><td>t</td><td>Verb (transitive)</td></tr>
-    <tr><td>i</td><td>Verb (intransitive)</td></tr>
-    <tr><td>A</td><td>Adjective</td></tr>
-    <tr><td>v</td><td>Adverb</td></tr>
-    <tr><td>C</td><td>Conjunction</td></tr>
-    <tr><td>P</td><td>Preposition</td></tr>
-    <tr><td>!</td><td>Interjection</td></tr>
-    <tr><td>r</td><td>Pronoun</td></tr>
-    <tr><td>D</td><td>Definite Article</td></tr>
-    <tr><td>I</td><td>Indefinite Article</td></tr>
-    <tr><td>o</td><td>Nominative</td></tr>
-</table>
+<aside id="legend">
+    <table>
+        <tr><td>N</td><td>Näwn</td></tr>
+        <tr><td>P</td><td>Plørul</td></tr>
+        <tr><td>h</td><td>Näwn Freiz</td></tr>
+        <tr><td>V</td><td>Vørb (už partisipul)</td></tr>
+        <tr><td>t</td><td>Vørb (tränzitiv)</td></tr>
+        <tr><td>i</td><td>Vørb (intränzitiv)</td></tr>
+        <tr><td>A</td><td>Ädžiktiv</td></tr>
+    </table>
+    
+    <table>
+        <tr><td>v</td><td>Ädvørb</td></tr>
+        <tr><td>C</td><td>Kandžugeišin</td></tr>
+        <tr><td>P</td><td>Prepuzišin</td></tr>
+        <tr><td>!</td><td>Intørdžekšin</td></tr>
+        <tr><td>r</td><td>Pronäwn</td></tr>
+        <tr><td>D</td><td>Definit Artikul</td></tr>
+        <tr><td>I</td><td>Indefinit Artikul</td></tr>
+        <tr><td>o</td><td>Naminitiv</td></tr>
+    </table>
+</aside>
 
 {{else}}
 <table class="words">
@@ -94,10 +97,10 @@ abcdefghijklmnopqrstuvwxyz" class="info above">Old Speling</span>{{if .Old}}<i>{
 tw get frum old tw nw" class="info above">Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
-            <span data-title="Part uv Spytš" class="info above nolink">PuS</span>
+            <span data-title="Part uv Spytš" class="info above nolink hover">PuS</span>
         </th>
         <th id="sil">
-            <span data-title="Silubulz" class="info above nolink">Silz</span>
+            <span data-title="Silubulz" class="info above nolink hover">Silz</span>
         </th>
     </tr>
     {{template "wordsSorted" .}}
@@ -128,26 +131,42 @@ tw get frum old tw nw" class="info above">Dist</span>{{if .Dist}}<i>{{if .Revers
         <li><a class="disabled">Nekst <i>🡆</i></a></li>{{end}}
     </ul>
 </nav>
+<aside id="legend">
+    <table>
+        <tr><td>N</td><td>Näwn</td></tr>
+        <tr><td>P</td><td>Plørul</td></tr>
+        <tr><td>h</td><td>Näwn Freiz</td></tr>
+        <tr><td>V</td><td>Vørb (už partisipul)</td></tr>
+        <tr><td>t</td><td>Vørb (tränzitiv)</td></tr>
+        <tr><td>i</td><td>Vørb (intränzitiv)</td></tr>
+        <tr><td>A</td><td>Ädžiktiv</td></tr>
+    </table>
+    
+    <table>
+        <tr><td>v</td><td>Ädvørb</td></tr>
+        <tr><td>C</td><td>Kandžugeišin</td></tr>
+        <tr><td>P</td><td>Prepuzišin</td></tr>
+        <tr><td>!</td><td>Intørdžekšin</td></tr>
+        <tr><td>r</td><td>Pronäwn</td></tr>
+        <tr><td>D</td><td>Definit Artikul</td></tr>
+        <tr><td>I</td><td>Indefinit Artikul</td></tr>
+        <tr><td>o</td><td>Naminitiv</td></tr>
+    </table>
+</aside>
 
-<table class="key">
-    <tr><th>Simbul</th><th>Part uv Spytš</th></tr>
-    <tr><td>N</td><td>Näwn</td></tr>
-    <tr><td>P</td><td>Plørul</td></tr>
-    <tr><td>h</td><td>Näwn Freiz</td></tr>
-    <tr><td>V</td><td>Vørb (už partisipul)</td></tr>
-    <tr><td>t</td><td>Vørb (tränzitiv)</td></tr>
-    <tr><td>i</td><td>Vørb (intränzitiv)</td></tr>
-    <tr><td>A</td><td>Ädžiktiv</td></tr>
-    <tr><td>v</td><td>Ädvørb</td></tr>
-    <tr><td>C</td><td>Kandžugeišin</td></tr>
-    <tr><td>P</td><td>Prepuzišin</td></tr>
-    <tr><td>!</td><td>Intørdžekšin</td></tr>
-    <tr><td>r</td><td>Pronäwn</td></tr>
-    <tr><td>D</td><td>Definit Artikul</td></tr>
-    <tr><td>I</td><td>Indefinit Artikul</td></tr>
-    <tr><td>o</td><td>Naminitiv</td></tr>
-</table>
+
 {{end}}
+
+<script>
+    /* prevents page reloads from toggling flags */
+    var uri = window.location.toString()
+    console.log(uri)
+    if (uri.indexOf("&id") > 0) {
+        var clean_uri = uri.substring(0, uri.indexOf("&id"))
+        window.history.replaceState({}, document.title, clean_uri)
+        console.log(document.title + clean_uri)
+    }
+</script>
 
 {{template "_footer.html"}}
 {{end}}

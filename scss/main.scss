@@ -54,9 +54,6 @@ main {
     }
 }
 
-.nobg {
-    background: transparent;
-}
 
 main,
 table {
@@ -69,42 +66,51 @@ table {
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
 }
 
-a {
-    transition: color .2s linear, text-shadow .2s linear, border-color .2s linear;
-    text-decoration: none;
-    &:link,
-    &:visited {
-        color: rgb(49, 98, 153);
-        border-bottom: 1px solid rgb(49, 98, 153);
+
+main, header, #orth, #words, #stats {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;    
+}
+
+main, #orth, #words, #stats, #legend {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;    
+}
+
+header {
+    user-select: none;
+    position: relative;
+    h1 {
+
+        margin:0;
+        img {
+            display: block;
+            margin: auto;
+            position: relative;
+            top: 10px;
+        }   
     }
-    &:hover,
-    &:active {
-        color: #333;
-        border-color: #333;
-        text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
-    }
-    &.icon {
-        text-decoration: none;
-        border: 0;
-        float: right;
-        width: 20px;
+
+}
+#orth {
+    position: relative;
+    top: -.8em;
+    z-index: 1;
+    text-align: center;
+    line-height: 0;
+    a{
+    margin: 0 10px;
         &:link,
         &:visited {
-            color: #333;
+            color: black;
         }
     }
 }
-
-main, header, nav, table.words, table.stats {
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto 20px;    
-}
-
 nav {
     display: block;
     user-select: none;
-    text-align: center;
     a {
         font-weight: bold;
         font-size: 1.2em;
@@ -114,19 +120,21 @@ nav {
         }
     }
     ul {
+        display: inline-block;
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
-    li {
-        padding: 0 20px;
-        display: inline-block;
-    }
     &.top {
+        position: absolute;
+        left: 10px;
+        top: 70px;
+        margin: 0;
         a {
             text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
         }
         li {
+            display: block;
             &:nth-of-type(1) a {
                 &:hover,
                 &:active {
@@ -160,8 +168,11 @@ nav {
         }
     }
     &.bottom {
+        text-align: center;
+        margin-top: 10px;
         li {
             padding: 0 8px;
+            display: inline-block;            
         }
         a {
             color: #eee;
@@ -197,68 +208,24 @@ nav {
     }
 }
 
-header {
-    user-select: none;
-    text-align: center;
-    h1 {
-        width: 100%;
-        max-width: 400px;
-        margin: auto;
-    }
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        position: relative;
-        top: 40px;
-        z-index: -1;
-    }
-    .orth {
-        line-height: 3em;
-        &:link,
-        &:visited {
-            color: black;
-        }
-    }
-}
 
 table {
     border-collapse: collapse;
     table-layout: fixed;
-    &.words {
+    &#words {
         td:nth-of-type(4),
         td:nth-of-type(5),
         td:nth-of-type(6) {
             text-align: center;
         }
     }
-    &.stats {
+    &#stats {
         td, th {
             text-align: center;            
         }
         th:nth-of-type(1),
         td:nth-of-type(1) {
             display: none;
-        }
-    }
-    &.key {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        caption {
-            font-size: 1.2em;
-            font-weight: bold;
-            cursor: default;
-            background: #444;
-            color: #eee;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-        }
-        td:nth-of-type(1) {
-            text-align: center;
-        }
-        td,
-        th {
-            padding: 2px 5px;
         }
     }
     tr:nth-of-type(even) {
@@ -308,8 +275,8 @@ table {
                 }
             }
         }
-        .info.nolink:hover {
-            border-color: #eee;
+        .info.nolink.hover:hover {
+            border-color: #eee !important;
         }
     }
     td {
@@ -333,6 +300,32 @@ table {
     }
 }
 
+#legend {
+    display: flex;
+    align-content: top;
+    table {
+        display: inline-block;
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: default;
+            background: #444;
+            color: #eee;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+        }
+        td:nth-of-type(1) {
+            text-align: center;
+            font-weight: bold;
+        }
+        td,
+        th {
+            padding: 2px 5px;
+        }
+    }
+
+}
+
+/* words table th*/
 $header_offset: .55em;
 #id {
     width: 2.8rem;
@@ -359,6 +352,8 @@ $header_offset: .55em;
 #sil {
     width: 2rem;
 }
+/* end */
+
 
 .info {
     position: relative;
@@ -378,9 +373,11 @@ $header_offset: .55em;
         font-size: .82rem;
     }
     &.nolink {
+        cursor: help;
+    }
+    &.hover{
         transition: border-color .2s linear;
         border-bottom: 1px dashed transparent;
-        cursor: help;
         &:hover {
             border-color: #333;
         }
@@ -389,6 +386,12 @@ $header_offset: .55em;
         &[data-title]:hover:after {
             bottom: 108%;
             left: 0;
+        }
+    }
+    &.below {
+        &[data-title]:hover:after {
+            top: 120%;
+            left: 9px;
         }
     }
     &.toleft {
@@ -409,6 +412,7 @@ div.kbd {
     $collapse: 333px;
     margin: 1rem 0;
     min-width: 240px;
+    cursor: default;    
     .row {
         font-size: 0;
         display: flex;
@@ -425,7 +429,6 @@ div.kbd {
             flex: 1 1 auto;
             padding: 2px;
             margin: 1px;
-            cursor: default;
             @media screen and (min-width: 700px) {
                 min-width: 39px;
             }
@@ -502,29 +505,6 @@ div.kbd {
     }
 }
 
-@keyframes keyglow {
-    0% {
-        background: rgba(49, 98, 153, 1);
-        border-color: rgb(134, 170, 206);
-    }
-    94% {
-        background: rgba(49, 98, 153, 1);
-        border-color: rgb(134, 170, 206);
-    }
-    96% {
-        background: rgba(49, 98, 153, .7);
-        border-color: rgb(103, 150, 197);
-    }
-    98% {
-        background: rgba(49, 98, 153, .7);
-        border-color: rgb(103, 150, 197);
-    }
-    100% {
-        background: rgba(49, 98, 153, 1);
-        border-color: rgb(134, 170, 206);
-    }
-}
-
 .versions {
     $small: .8rem;
     $big: 1rem;
@@ -571,11 +551,30 @@ div.kbd {
     }
 }
 
-.col {
-    width: 40%;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 1em;
+a {
+    transition: color .2s linear, text-shadow .2s linear, border-color .2s linear;
+    text-decoration: none;
+    &:link,
+    &:visited {
+        color: rgb(49, 98, 153);
+        border-bottom: 1px solid rgb(49, 98, 153);
+    }
+    &:hover,
+    &:active {
+        color: #333;
+        border-color: #333;
+        text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+    }
+    &.icon {
+        text-decoration: none;
+        border: 0;
+        float: right;
+        width: 20px;
+        &:link,
+        &:visited {
+            color: #333;
+        }
+    }
 }
 
 .no-results {
@@ -625,8 +624,18 @@ div.kbd {
     }
 }
 
+.nobg {
+    background: transparent;
+}
+.col {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1em;
+}
+
 textarea,
-aside {
+#kbddemo {
     background: rgba(255, 255, 255, 0.3);
     border: 0;
     box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
@@ -692,17 +701,6 @@ ul {
     background: rgba(49, 98, 153, .99);
 }
 
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spin2 {
-    100% {
-        transform: rotate(-360deg);
-    }
-}
 
 dl {
     margin: 0;
@@ -719,4 +717,39 @@ dd {
 
 dd:last-of-type {
     padding: 0;
+}
+
+@keyframes keyglow {
+    0% {
+        background: rgba(49, 98, 153, 1);
+        border-color: rgb(134, 170, 206);
+    }
+    94% {
+        background: rgba(49, 98, 153, 1);
+        border-color: rgb(134, 170, 206);
+    }
+    96% {
+        background: rgba(49, 98, 153, .7);
+        border-color: rgb(103, 150, 197);
+    }
+    98% {
+        background: rgba(49, 98, 153, .7);
+        border-color: rgb(103, 150, 197);
+    }
+    100% {
+        background: rgba(49, 98, 153, 1);
+        border-color: rgb(134, 170, 206);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    100% {
+        transform: rotate(-360deg);
+    }
 }

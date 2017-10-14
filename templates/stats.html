@@ -3,7 +3,7 @@
 <script>
     var people, asc0 = -1, /*asc1 = 1 //not used,*/ asc2 = 1, asc3 = 1, asc4 = 1, asc5 = 1;
     window.onload = function () {
-        people = document.getElementById("stats");
+        people = document.getElementById("statsBody");
     }
 
     function sort_table(tbody, col, asc) {
@@ -36,7 +36,7 @@
     }
 </script>
 
-<table class="stats">
+<table id="stats">
     <thead>
         {{if .DisplayTrud}}
         <tr class="sort">
@@ -59,7 +59,7 @@
         {{end}}
 
     </thead>
-    <tbody id="stats">
+    <tbody id="statsBody">
         {{range GetStats}}
         <tr>
             <td>{{index . 0}}</td>
