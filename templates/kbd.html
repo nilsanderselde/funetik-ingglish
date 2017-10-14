@@ -43,7 +43,7 @@
         {{range (index .Kbd 0)}}
         <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-        <div class="varsize">Backspace</div>
+        <div class="varsize hideoverflow">Backspace</div>
     </div>
     <div class="row">
         <div class="varsize">Tab</div>
@@ -53,7 +53,7 @@
         </div>
 
     <div class="row">
-        <div class="varsize">Caps Lock</div>
+        <div class="varsize hideoverflow">Caps Lock</div>
         {{range (index .Kbd 2)}}
         <div{{if (index . 2)}} class="{{index . 2}} info above"{{end}}{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
