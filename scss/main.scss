@@ -67,13 +67,7 @@ table {
 }
 
 
-main, header, #orth, #words, #stats {
-    max-width: 700px;
-    width: 100%;
-    margin: auto;    
-}
-
-main, #orth, #words, #stats, #legend {
+main, header, #orth, #words, #stats, #legend {
     max-width: 700px;
     width: 100%;
     margin: auto;    
@@ -83,7 +77,6 @@ header {
     user-select: none;
     position: relative;
     h1 {
-
         margin:0;
         img {
             display: block;
@@ -100,6 +93,7 @@ header {
     z-index: 1;
     text-align: center;
     line-height: 0;
+    font-style: italic;
     a{
     margin: 0 10px;
         &:link,
@@ -213,6 +207,7 @@ table {
     border-collapse: collapse;
     table-layout: fixed;
     &#words {
+        margin-top: 10px;
         td:nth-of-type(4),
         td:nth-of-type(5),
         td:nth-of-type(6) {
@@ -220,6 +215,7 @@ table {
         }
     }
     &#stats {
+        margin-top: 10px;        
         td, th {
             text-align: center;            
         }
@@ -408,7 +404,7 @@ $header_offset: .55em;
     }
 }
 
-div.kbd {
+#kbd {
     $collapse: 333px;
     margin: 1rem 0;
     min-width: 240px;

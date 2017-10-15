@@ -13,22 +13,22 @@
 
 <body>
     <header>
-        <h1><a href="/"><img src="/static/images/logo.png" width="400" height="261" alt="ÄØŽŠ"></a></h1>
+        <h1><img src="/static/images/logo.png" width="400" height="261" alt="ÄØŽŠ"></h1>
 
         <nav class="top">
             <ul>
             {{if .DisplayTrud}}
-                <li><a href="/?orth=trud">Home</a></li>
-                <li><a href="/traanzlit?orth=trud">Translit</a></li>   
-                <li><a href="/woordz?orth=trud">Words</a></li>            
-                <li><a href="/kybord?orth=trud">Keyboard</a></li>
-                <li><a href="/staats?orth=trud">Stats</a></li>
-            {{else}}
                 <li><a href="/">Hom</a></li>
                 <li><a href="/traanzlit">Tränzlit</a></li>
                 <li><a href="/woordz">Wørdz</a></li>            
                 <li><a href="/kybord">Kybord</a></li>
                 <li><a href="/staats">Stäts</a></li>
+            {{else}}
+                <li><a href="/?orth=fun">Home</a></li>
+                <li><a href="/traanzlit?orth=fun">Translit</a></li>   
+                <li><a href="/woordz?orth=fun">Words</a></li>            
+                <li><a href="/kybord?orth=fun">Keyboard</a></li>
+                <li><a href="/staats?orth=fun">Stats</a></li>
             {{end}}
             </ul>
         </nav>
