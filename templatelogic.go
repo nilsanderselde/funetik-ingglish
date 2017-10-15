@@ -34,11 +34,9 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		"ShowWords": dbconnect.ShowWords,
 		"Random":    randomRune,
 	}
-	if t.filename == "home.html" {
-		if r.URL.Path != "/" {
-			http.NotFound(w, r)
-			return
-		}
+	if t.filename == "home.html" && r.URL.Path != "/" {
+		http.NotFound(w, r)
+		return
 	}
 
 	// special processing for words list based on query strings
