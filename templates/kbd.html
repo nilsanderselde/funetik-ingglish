@@ -38,7 +38,7 @@
         </p>
 {{end}}
 
-<div class="kbd">
+<div id="kbd">
     <div class="row">
         {{range (index .Kbd 0)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
@@ -83,29 +83,29 @@
 {{if .DisplayTrud}}
 <p class="versions">
 <span>Keyboard Version: </span>
-<a href="?v=1&orth=trud" class="{{if eq .KbdVer "1"}}active{{end}}">1</a>
-<a href="?v=2&orth=trud" class="{{if eq .KbdVer "2"}}active{{end}}">2</a>
-<a href="?v=3&orth=trud" class="{{if eq .KbdVer "3"}}active{{end}}">3</a>
-<a href="?v=4&orth=trud" class="{{if eq .KbdVer "4"}}active{{end}}">4</a>
-<a href="?v=5&orth=trud" class="{{if eq .KbdVer "5"}}active{{end}}">5</a>
-<a href="?v=6&orth=trud" class="{{if eq .KbdVer "6"}}active{{end}}">6</a>
-<a href="?v=7&orth=trud" class="{{if eq .KbdVer "7"}}active{{end}}">7</a>
-<a href="?v=8&orth=trud" class="{{if eq .KbdVer "8"}}active{{end}}">8</a>
-<a href="?v=9&orth=trud" class="large{{if eq .KbdVer "9"}} active{{end}}">Final</a>
+<a href="?v=1&orth=trud#kbd" class="{{if eq .KbdVer "1"}}active{{end}}">1</a>
+<a href="?v=2&orth=trud#kbd" class="{{if eq .KbdVer "2"}}active{{end}}">2</a>
+<a href="?v=3&orth=trud#kbd" class="{{if eq .KbdVer "3"}}active{{end}}">3</a>
+<a href="?v=4&orth=trud#kbd" class="{{if eq .KbdVer "4"}}active{{end}}">4</a>
+<a href="?v=5&orth=trud#kbd" class="{{if eq .KbdVer "5"}}active{{end}}">5</a>
+<a href="?v=6&orth=trud#kbd" class="{{if eq .KbdVer "6"}}active{{end}}">6</a>
+<a href="?v=7&orth=trud#kbd" class="{{if eq .KbdVer "7"}}active{{end}}">7</a>
+<a href="?v=8&orth=trud#kbd" class="{{if eq .KbdVer "8"}}active{{end}}">8</a>
+<a href="?v=9&orth=trud#kbd" class="large{{if eq .KbdVer "9"}} active{{end}}">Final</a>
 </p>
 
 {{else}}
 <p class="versions">
 <span>Kybord Vøržin: </span>
-<a href="?v=1&orth=fun" class="{{if eq .KbdVer "1"}}active{{end}}">1</a>
-<a href="?v=2&orth=fun" class="{{if eq .KbdVer "2"}}active{{end}}">2</a>
-<a href="?v=3&orth=fun" class="{{if eq .KbdVer "3"}}active{{end}}">3</a>
-<a href="?v=4&orth=fun" class="{{if eq .KbdVer "4"}}active{{end}}">4</a>
-<a href="?v=5&orth=fun" class="{{if eq .KbdVer "5"}}active{{end}}">5</a>
-<a href="?v=6&orth=fun" class="{{if eq .KbdVer "6"}}active{{end}}">6</a>
-<a href="?v=7&orth=fun" class="{{if eq .KbdVer "7"}}active{{end}}">7</a>
-<a href="?v=8&orth=fun" class="{{if eq .KbdVer "8"}}active{{end}}">8</a>
-<a href="?v=9&orth=fun" class="large{{if eq .KbdVer "9"}} active{{end}}">Fainul</a>
+<a href="?v=1&orth=fun#kbd" class="{{if eq .KbdVer "1"}}active{{end}}">1</a>
+<a href="?v=2&orth=fun#kbd" class="{{if eq .KbdVer "2"}}active{{end}}">2</a>
+<a href="?v=3&orth=fun#kbd" class="{{if eq .KbdVer "3"}}active{{end}}">3</a>
+<a href="?v=4&orth=fun#kbd" class="{{if eq .KbdVer "4"}}active{{end}}">4</a>
+<a href="?v=5&orth=fun#kbd" class="{{if eq .KbdVer "5"}}active{{end}}">5</a>
+<a href="?v=6&orth=fun#kbd" class="{{if eq .KbdVer "6"}}active{{end}}">6</a>
+<a href="?v=7&orth=fun#kbd" class="{{if eq .KbdVer "7"}}active{{end}}">7</a>
+<a href="?v=8&orth=fun#kbd" class="{{if eq .KbdVer "8"}}active{{end}}">8</a>
+<a href="?v=9&orth=fun#kbd" class="large{{if eq .KbdVer "9"}} active{{end}}">Fainul</a>
 {{end}}
 
 <aside id="kbddemo">
@@ -151,7 +151,7 @@
         <dd>Which kind of sodas should you be getting from that place with Joy, Jean, and Howard?</dd>
 
         <dt>International Phonetic Alphabet</dt>
-        <dd>wɪt͡ʃ kaɪnd ʌv soʊdʌz ʃʊd ju bi ɡɛtɪŋ frʌm ðæt pleɪs wɪθ d͡ʒɔɪ, ʒɑ̃, ænd haʊwrd?</dd>
+        <dd>wɪt͡ʃ kaɪnd ʌv soʊdʌz ʃʊd ju bi ɡɛtɪŋ fɹ̠ʌm ðæt pleɪs wɪθ d͡ʒɔɪ, ʒɑ̃, ænd haʊwɹ̠d?</dd>
     </dl>
 </aside>
 
