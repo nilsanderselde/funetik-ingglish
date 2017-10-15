@@ -47,6 +47,7 @@ func main() {
 	http.Handle("/woordz", &templateHandler{filename: "words.html", query: wordsQuery, queryFrom: wordsQueryFrom})
 	http.Handle("/staats", &templateHandler{filename: "stats.html"})
 	http.Handle("/traanzlit", &templateHandler{filename: "translit.html"})
+	http.Handle("/kredits", &templateHandler{filename: "credits.html"})
 
 	// Start Server
 	if err := http.ListenAndServe(":8080", nil); err != nil {

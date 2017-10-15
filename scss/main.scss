@@ -31,13 +31,13 @@ main {
     }
     p,
     h1 {
-        margin: 0 0 .5em;
+        margin: .25em 0;
     }
     p {
         color: #222;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: normal;
     }
     h2,
@@ -119,7 +119,16 @@ nav {
         margin: 0;
         padding: 0;
     }
-    &.top {
+     /* used on license page to get back to top of page */
+    &.toTop {
+        padding: 1em 0;
+        a:link,
+        a:visited{
+            color: #316299;
+        }
+    }
+    /* main navigation */
+    &.top { 
         position: absolute;
         left: 10px;
         top: 70px;
@@ -685,11 +694,17 @@ sub {
 ul {
     cursor: default;
 }
+article, section{
+    margin-bottom: 2em;
+}
 
 .älfubit {
     font-family: 'Roboto Mono', monospace;
     font-size: 1.36rem;
     opacity: .5;
+}
+pre {
+    font-family: 'Roboto Mono', monospace;    
 }
 
 ::selection {

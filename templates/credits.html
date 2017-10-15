@@ -1,0 +1,114 @@
+{{define "credits.html"}}
+{{template "_header.html" .}}
+<main>
+    {{if .DisplayTrud}}
+
+<h1 id="top">Credits</h1>
+<section>
+    <ul>
+        <li><a href="#cmu">The CMU Pronouncing Dictionary</a></li>
+        <li><a href="#nltk">The Natural Language Toolkit</a></li>
+    </ul>
+</section>
+
+<article>
+    <h2 id="cmu"><a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">The CMU Pronouncing Dictionary</a></h2>
+
+    <p>Most of the phonetic transliterations for Phonetic English were adapted from or at least compared against
+    the CMU Pronouncing Dictionary. I only used about a third of
+    their data, and made several broad changes affecting all or many of the words to make them consistent
+    with the funeticization I thought could represent a general American accent. The changes I made were 
+    informed by my own
+    intuitions and idiolect, as well as what I learned in my study of linguistics, but not based on a large
+    sampling of speaker data. I would like to expand this site to all users to create accounts and submit
+    their own pronunciations of words, linked to their demographic data.</p>
+
+    <h3>License</h3>
+    <pre>CMUdict  --  Major Version: 0.07
+
+Copyright (C) 1993-2015 Carnegie Mellon University. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+    The contents of this file are deemed to be source code.
+
+2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+
+This work was supported in part by funding from the Defense Advanced
+Research Projects Agency, the Office of Naval Research and the National
+Science Foundation of the United States of America, and by member
+companies of the Carnegie Mellon Sphinx Speech Consortium. We acknowledge
+the contributions of many volunteers to the expansion and improvement of
+this dictionary.
+
+THIS SOFTWARE IS PROVIDED BY CARNEGIE MELLON UNIVERSITY ``AS IS'' AND
+ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL CARNEGIE MELLON UNIVERSITY
+NOR ITS EMPLOYEES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+    
+<a href="https://raw.githubusercontent.com/aparrish/rwet-examples/master/pronouncing/cmudict-0.7b" 
+            target="_blank">The original dictionary can be found on GitHub.</a>
+
+<nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+
+</article>
+    
+    
+
+<article>
+<h2 id="nltk"><a href="http://nltk.org" target="_blank">The Natural Language Toolkit</a></h2>
+
+<p>I based my implementation for calculating Levenshtein distance on the Python implementation
+in the Natural Language Toolkit, part of the nltk.metrics.distance module.</p>
+
+<h3><a href="http://www.nltk.org/_modules/nltk/metrics/distance.html" target="_blank">Distance Metrics</a></h3>
+
+<pre>Copyright (C) 2001-2017 NLTK Project
+Author: Edward Loper <edloper@gmail.com>
+        Steven Bird <stevenbird1@gmail.com>
+        Tom Lippincott <tom@cs.columbia.edu>
+URL: <http://nltk.org/>
+For license information, see LICENSE.TXT</pre>
+
+<h3>LICENSE.TXT</h3>
+
+<pre>Copyright (C) 2001-2014 NLTK Project
+
+Licensed under the Apache License, Version 2.0 (the 'License');
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a>
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an 'AS IS' BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</pre>
+
+
+<nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+
+
+</article>
+
+    {{else}}
+
+    {{end}}
+</main>
+{{template "_footer.html"}}
+{{end}}

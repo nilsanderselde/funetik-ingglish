@@ -25,6 +25,7 @@ type TemplateParams struct {
 	DisplayTrud    bool
 	KbdVer         string
 	Kbd            [][][]string
+	MultipleOrth   bool
 }
 
 var (

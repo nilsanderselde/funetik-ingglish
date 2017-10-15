@@ -34,9 +34,14 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		"ShowWords": dbconnect.ShowWords,
 		"Random":    randomRune,
 	}
+	// Show 404 for unknown paths
 	if t.filename == "home.html" && r.URL.Path != "/" {
 		http.NotFound(w, r)
 		return
+	}
+	// List files that are to only show traditional English, with no transliteration option
+	if t.filename != "credits.html" {
+		t.args.MultipleOrth = true
 	}
 
 	// special processing for words list based on query strings
