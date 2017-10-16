@@ -172,7 +172,7 @@ func getFun(trud string) (fun string) {
 				word = newWord
 			}
 
-			// if word is possessive, look up word without ending and readd either 'z or 's depending on final letter
+			// cases for productive contractions
 			if strings.HasSuffix(word, "'s") {
 				newWordR := []rune(getFun(strings.TrimSuffix(word, "'s")))
 				if strings.ContainsAny(string(newWordR[len(newWordR)-1]), "pfkt") || strings.HasSuffix(string(newWordR), "th") {
@@ -180,6 +180,21 @@ func getFun(trud string) (fun string) {
 				} else {
 					word = string(newWordR) + "'z"
 				}
+			} else if strings.HasSuffix(word, "'re") {
+				newWordR := []rune(getFun(strings.TrimSuffix(word, "'re")))
+				word = string(newWordR) + "'r"
+			} else if strings.HasSuffix(word, "'d") {
+				newWordR := []rune(getFun(strings.TrimSuffix(word, "'d")))
+				word = string(newWordR) + "'d"
+			} else if strings.HasSuffix(word, "'ve") {
+				newWordR := []rune(getFun(strings.TrimSuffix(word, "'ve")))
+				word = string(newWordR) + "'v"
+			} else if strings.HasSuffix(word, "'d've") {
+				newWordR := []rune(getFun(strings.TrimSuffix(word, "'d've")))
+				word = string(newWordR) + "'d'v"
+			} else if strings.HasSuffix(word, "'ll") {
+				newWordR := []rune(getFun(strings.TrimSuffix(word, "'ll")))
+				word = string(newWordR) + "'l"
 			}
 
 			addToList := true
