@@ -95,6 +95,22 @@ header {
     }
 }
 
+footer {
+    color: white;
+    a:link,
+    a:visited {
+        color: #eee;
+        border-bottom: 1px solid rgb(49, 98, 153);
+    }
+    a:hover,
+    a:active {
+        color: rgb(49, 98, 153);
+        border-bottom: 1px solid rgb(49, 98, 153);
+        text-shadow: 1px 0 10px black;
+    }
+    text-align: center;
+}
+
 #orth {
     position: relative;
     top: -.8em;
