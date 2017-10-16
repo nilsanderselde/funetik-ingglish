@@ -1,9 +1,8 @@
-{{define "credits.html"}}
+{{define "about.html"}}
 {{template "_header.html" .}}
 <main>
-    {{if .DisplayTrud}}
 
-<h1 id="top">Credits</h1>
+<h1>About</h1>
 
 <p>To populate the Funetik Inggliš (FI) database with words and their phonetic representations, I used several sources,
     three with just the English spelling and one that also contained phonetic data.</p>
@@ -30,15 +29,22 @@
         <p>While descriptive grammar is the only way to go (my idiolect is certainly not "better"), I had to choose one way to write each word for the purposes of this thought experiment.</p>
 <p>As long as it's consistent, it's better than the amalgam of historical accidents which is our current orthography.</p>
 
+<h2 id="top">Credits</h2>
 <section>
     <ul>
         <li><a href="#cmu">The CMU Pronouncing Dictionary</a></li>
+        <li><a href="#dwyl">english-words from dwyl on github</a></li>
+
+        <li><a href="#silorg">wordsEn.txt from sil.org</a></li>
+        <li><a href="#contractions">Wikipedia:List of English contractions</a></li>
+
+        
         <li><a href="#nltk">The Natural Language Toolkit</a></li>
     </ul>
 </section>
 
 <article>
-    <h2 id="cmu"><a href="https://raw.githubusercontent.com/aparrish/rwet-examples/master/pronouncing/cmudict-0.7b">The CMU Pronouncing Dictionary</a></h2>
+    <h2 id="cmu">The CMU Pronouncing Dictionary</h2>
 
     <p>Source of pronunciation data which was substantially reformatted into a more readable format, with symbols for stress and syllable boundaries replacing the
         system of numbers.</p>
@@ -50,7 +56,8 @@
         intuitions and idiolect, as well as what I learned in my study of linguistics, but not based on a large
         sampling of speaker data.</p>
 
-    <p>Website: http://www.speech.cs.cmu.edu/cgi-bin/cmudict</p>
+    <p><a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU Pronouncing Dictionary Website</a></p>
+    <p><a href="https://raw.githubusercontent.com/aparrish/rwet-examples/master/pronouncing/cmudict-0.7b">CMU Pronouncing Dictionary (data)</a></p>
 
     <h3>License</h3>
     <pre>CMUdict  --  Major Version: 0.07
@@ -96,12 +103,15 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
     
 
 <article>
-    <h2 id="dwyl"><a href="https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt" target="_blank">"english-words" from dwyl on github</a></h2>
-    <p><a href="https://github.com/dwyl/english-words" target="_blank">GitHub user dwyl reformatted a list of words originally from Project Gutenberg.</a></p>
+    <h2 id="dwyl">english-words from dwyl on github</a></h2>
 
-    <h3><a href="https://github.com/dwyl/english-words/blob/master/LICENSE.md" target="_blank">License for this GitHub repository</a></h3>
+    <p>GitHub user dwyl reformatted a list of words originally from Project Gutenberg.</p>
 
-    <h3>Data was gathered from the following sources:</h3>
+    <p><a href="https://github.com/dwyl/english-words" target="_blank">GitHub repository for dwyl/english-words</a></p>
+    <p><a href="https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt" target="_blank">english-words (data)</a></p>
+    <p><a href="https://github.com/dwyl/english-words/blob/master/LICENSE.md" target="_blank">License for english-words</a></p>
+
+    <h3>Original Data Sources</h3> 
 <pre>
 <a href="http://www.gutenberg.org/etext/3201" target="_blank">http://www.gutenberg.org/etext/3201</a>
 
@@ -131,55 +141,46 @@ Copyright Status	Not copyrighted in the United States. If you live elsewhere che
 </article>
 
 <article>
-    <h2 id="sil"><a href="http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt" target="_blank">wordsEn.txt from sil.org</a></h2>
+    <h2 id="silorg">wordsEn.txt from sil.org</h2>
 
-    <h3><a href="http://www-01.sil.org/linguistics/wordlists/english/" target="_blank">Description of wordsEn.txt from sil.org</a></h3>
     <p>A list of 109582 English words compiled and corrected in 1991 from lists obtained from the Interociter bulletin board. The original read.me file said that the list came from Public Brand Software.</p>
     <p>This word list includes inflected forms, such as plural nouns and the -s, -ed and -ing forms of verbs. Thus the number of lexical stems represented in the list is considerably smaller than the total number of words.</p>
 
+    <p><a href="http://www-01.sil.org/linguistics/wordlists/english/" target="_blank">Description of wordsEn.txt</a></p>
+    <p><a href="http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt" target="_blank">wordsEn.txt (data)</a></p>
+
     <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
 </article>
 
 <article>
-    <h2 id="contractions"><a href="https://en.wikipedia.org/wiki/Wikipedia:List_of_English_contractions">Wikipedia:List of English contractions</a></h2>
+    <h2 id="contractions">Wikipedia: List of English contractions</a></h2>
     <p>The few contractions that already were present in the word database were augmented with
         this list of contractions.</p>
+        <p><a href="https://en.wikipedia.org/wiki/Wikipedia:List_of_English_contractions" target="_blank">List of English contractions</a></p>
     
-        <h3><a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></h3>
-    
-    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
-    
-    
+        <p><a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></p>
     
     <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
-    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
-    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
-    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
-    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
-    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
-        
 </article>
 
-
-
 <article>
-<h2 id="nltk"><a href="http://nltk.org" target="_blank">The Natural Language Toolkit</a></h2>
+<h2 id="nltk">The Natural Language Toolkit</h2>
 
 <p>I based my implementation for calculating Levenshtein distance on the Python implementation
 in the Natural Language Toolkit, part of the nltk.metrics.distance module.</p>
 
-<h3><a href="http://www.nltk.org/_modules/nltk/metrics/distance.html" target="_blank">Distance Metrics</a></h3>
+<p><a href="http://www.nltk.org/_modules/nltk/metrics/distance.html" target="_blank">NLTK Distance Metrics module</a></p>
 
 <pre>Copyright (C) 2001-2017 NLTK Project
 Author: Edward Loper &lt;edloper@gmail.com&gt;
         Steven Bird &lt;stevenbird1@gmail.com&gt;
         Tom Lippincott &lt;tom@cs.columbia.edu&gt;
 URL: &lt;<a href="http://nltk.org/" target="_blank">http://nltk.org/</a>&gt;
-For license information, see LICENSE.TXT</pre>
+For license information, see LICENSE.TXT
 
-<h3>LICENSE.TXT</h3>
+LICENSE.TXT
 
-<pre>Copyright (C) 2001-2014 NLTK Project
+Copyright (C) 2001-2014 NLTK Project
 
 Licensed under the Apache License, Version 2.0 (the 'License');
 you may not use this file except in compliance with the License.
@@ -195,11 +196,6 @@ limitations under the License.</pre>
 <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
 </article>
 
-
-
-    {{else}}
-
-    {{end}}
 </main>
 {{template "_footer.html"}}
 {{end}}

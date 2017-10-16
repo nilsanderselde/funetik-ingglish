@@ -40,7 +40,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	// List files that are to only show traditional English, with no transliteration option
-	if t.filename != "credits.html" {
+	if t.filename != "about.html" {
 		t.args.MultipleOrth = true
 	}
 
