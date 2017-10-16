@@ -1,3 +1,30 @@
+#stats {
+    margin-top: 10px;
+    td,
+    th {
+        text-align: center;
+    }
+    th:nth-of-type(1),
+    td:nth-of-type(1) {
+        display: none;
+    }
+    th:nth-of-type(2) {
+        width: 5rem;
+    }
+    th:nth-of-type(3) {
+        width: 5.5rem;
+    }
+    th:nth-of-type(4) {
+        width: 6rem;
+    }
+    th:nth-of-type(5) {
+        width: 7rem;
+    }
+    th:nth-of-type(6) {
+        width: 8rem;
+    }
+}
+
 
 .nobg {
     background: transparent;
@@ -33,10 +60,6 @@ textarea {
     height: 200px;
 }
 
-form {
-    text-align: center;
-}
-
 input[type="submit"] {
     font-size: .6rem;
     font-weight: bold;
@@ -64,8 +87,9 @@ i {
     font-style: normal;
 }
 
-.hidden {
+i.hidden {
     visibility: hidden;
+    display: none;
 }
 
 sup,

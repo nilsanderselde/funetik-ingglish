@@ -9,15 +9,15 @@ $header_offset: .55em;
     width: 3.8rem;
 }
 
-#nw a {
-    position: relative;
-    left: $header_offset;
-}
+// #nw a {
+//     position: relative;
+//     left: $header_offset;
+// }
 
-#old a {
-    position: relative;
-    left: $header_offset;
-}
+// #old a {
+//     position: relative;
+//     left: $header_offset;
+// }
 
 #dist {
     width: 3rem;
@@ -25,6 +25,15 @@ $header_offset: .55em;
 
 #sil {
     width: 2rem;
+}
+
+#words {
+    margin-top: 10px;
+    td:nth-of-type(4),
+    td:nth-of-type(5),
+    td:nth-of-type(6) {
+        text-align: center;
+    }
 }
 
 #legend {
