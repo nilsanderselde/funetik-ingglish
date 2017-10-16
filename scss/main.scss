@@ -36,39 +36,6 @@ main {
     a:active {
         border-color: black;
     }
-    p {
-        margin: .3rem 0 1rem 0;
-    }
-    h1,
-    h2,
-    h3 {
-        margin: 1.2rem 0 .5rem 0;
-    }
-    p,
-    h1,
-    h2,
-    h3,
-    li {
-        line-height: 1.3em;
-        &:first-of-type{
-            margin-top: 0;
-        }
-    }
-    p {
-        color: #222;
-    }
-    h1 {
-        font-size: 1.8rem;
-        font-weight: normal;
-    }
-    h2 {
-        font-size: 1.2rem;
-    }
-    h3 {
-        font-size: 1rem;
-        opacity: .8;
-        font-style: italic;
-    }
 }
 
 main {
@@ -79,7 +46,39 @@ main {
     box-sizing: border-box;
     font-size: .8rem;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
-    
+    color: #222;
+}
+
+
+p {
+    margin: .3rem 0 1rem 0;
+}
+h1,
+h2,
+h3 {
+    margin: 1rem 0 .5rem 0;
+}
+p,
+h1,
+h2,
+h3,
+li {
+    line-height: 1.3em;
+    &:first-of-type{
+        margin-top: 0;
+    }
+}
+h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+h2 {
+    font-size: 1.2rem;
+}
+h3 {
+    font-size: 1rem;
+    opacity: .8;
+    font-style: italic;
 }
 
 #fillY {
