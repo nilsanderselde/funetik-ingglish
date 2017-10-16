@@ -1,13 +1,15 @@
 {{define "translit.html"}}
 {{template "_header.html" .}}
-<main>
+<main class="nobg">
     {{if .DisplayTrud}}
+    <h1>Transliterator</h2>
     <p>
         Below is a transliterator that tries to transliterate traditional sentences into phonetic ones. It currently can't choose
         correctly from a group of homonyms (e.g. use/use, read/read) because it can't understand context.
     </p>
     <p><strong>Maximum input length: 2500 characters</strong></p>
     {{else}}
+    <h1>Tränzlitøreitør</h2>        
     <p>Bilo iz u tränzlitøreitør dhät traiz tw tränzlitøreit trudišinul sentinsiz intw funetik wunz. It kørintly kän't tšwz kørektly
         frum u grwp uv hamunimz (e.g. use/use, read/read) bikuz it kän't undørständ kantekst.
     </p>

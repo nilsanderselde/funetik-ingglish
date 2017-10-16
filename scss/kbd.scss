@@ -1,0 +1,146 @@
+
+#kbd {
+    $collapse: 333px;
+    margin: 1rem 0;
+    min-width: 240px;
+    cursor: default;
+    .row {
+        font-size: 0;
+        display: flex;
+        width: 100%;
+        div {
+            $key: 39px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, .5);
+            max-width: $key;
+            height: $key;
+            line-height: $key;
+            border: 1px outset #ccc;
+            text-align: center;
+            flex: 1 1 auto;
+            padding: 2px;
+            margin: 1px;
+            @media screen and (min-width: 700px) {
+                min-width: 39px;
+            }
+        }
+        .hidden {
+            display: none;
+        }
+        .final {
+            background: #444;
+            border-color: #666;
+            color: white;
+        }
+        .old {
+            background: #666;
+            border-color: #888;
+            color: white;
+        }
+        .final,
+        .old {
+            cursor: help;
+        }
+        .varsize,
+        .space {
+            font-size: .6rem;
+            font-weight: bold;
+            max-width: initial;
+        }
+        .shift {
+            cursor: pointer;
+            background: rgb(49, 98, 153);
+            border-color: rgb(103, 150, 197);
+            color: white;
+            text-shadow: 1px 1px 2px rgba(49, 98, 153, 1);
+            animation: keyglow 4s linear infinite;
+            
+            &.down {
+                background: rgb(44, 90, 139);
+                font-size: .58rem;
+                
+                border-style: inset;
+                animation: none;
+                box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+        }
+        .hideoverflow {
+            @media screen and (max-width: $collapse) {
+                overflow: hidden;
+            }
+        }
+        &.bottom {
+            div {
+                min-width: 50px;
+                @media screen and (max-width: $collapse) {
+                    min-width: initial;
+                }
+                &.vargin {
+                    padding: 0;
+                    margin: 0;
+                    max-width: 10px;
+                    min-width: 0;
+                    font-size: 0;
+                    background: transparent;
+                    border: none;
+                    @media screen and (max-width: $collapse) {
+                        min-width: 0;
+                        max-width: 0;
+                    }
+                }
+                &.space {
+                    width: 333px;
+                    max-width: inherit;
+                    @media screen and (max-width: $collapse) {
+                        width: initial;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.versions {
+    $small: .8rem;
+    $big: 1rem;
+    vertical-align: bottom;
+    cursor: default;
+    text-align: right;
+    font-size: 0;
+    >span {
+        font-size: $small;
+        line-height: 1.7rem;
+        margin-right: 1px;
+        margin-bottom: 2px;
+    }
+    a {
+        display: inline-block;
+        vertical-align: bottom;
+        min-width: $big;
+        height: $big;
+        border: 1px solid rgb(49, 98, 153);
+        text-align: center;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        font-size: $small;
+        line-height: $big;
+        padding: 2px;
+        &.large {
+            font-size: $small;
+            font-weight: bold;
+            padding: 2px 6px;
+        }
+        &.active {
+            background: rgb(49, 98, 153);
+            border-color: black;
+            &:link,
+            &:visited {
+                color: white;
+            }
+            &:hover,
+            &:active {
+                color: white;
+            }
+        }
+    }
+}

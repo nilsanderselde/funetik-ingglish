@@ -1,0 +1,94 @@
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    &#words {
+        margin-top: 10px;
+        td:nth-of-type(4),
+        td:nth-of-type(5),
+        td:nth-of-type(6) {
+            text-align: center;
+        }
+    }
+    &#stats {
+        margin-top: 10px;
+        td,
+        th {
+            text-align: center;
+        }
+        th:nth-of-type(1),
+        td:nth-of-type(1) {
+            display: none;
+        }
+    }
+    tr:nth-of-type(even) {
+        background: rgba(100, 100, 100, 0.1);
+    }
+    td,
+    caption {
+        padding: 5px 5px;
+    }
+    th {
+        user-select: none;
+        white-space: nowrap;
+        text-align: center;
+        cursor: default;
+        background: #444;
+        color: #eee;
+        line-height: 2em;
+        border-right: 1px solid rgba(0, 0, 0, 0.4);
+        &:nth-last-of-type(1) {
+            border: 0;
+        }
+        >a {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            padding: 5px 5px;
+            >i {
+                position: relative;
+                left: 2px;
+            }
+            >span {
+                padding-bottom: 1px;
+                border-bottom: 1px solid #eee;
+                transition: .1s border-color linear;
+            }
+            &:link,
+            &:visited {
+                color: #eee;
+                border: 0;
+            }
+            &:hover,
+            &:active {
+                color: #7BA9E0;
+                >span {
+                    border-color: #7BA9E0;
+                }
+            }
+        }
+        .info.nolink.hover:hover {
+            border-color: #eee !important;
+        }
+    }
+    td {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        overflow: scroll-x;
+        text-align: left;
+        color: #222;
+        &:nth-last-of-type(1) {
+            border: 0;
+        }
+        a {
+            &:link,
+            &:visited {
+                color: black;
+            }
+            &:hover,
+            &:active {
+                border-color: black;
+            }
+        }
+    }
+}

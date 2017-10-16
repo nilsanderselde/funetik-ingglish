@@ -1,0 +1,127 @@
+
+.nobg {
+    background: transparent;
+}
+
+.col {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1em;
+}
+.center{
+    text-align: center;
+}
+textarea,
+#kbddemo {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0;
+    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    font-size: .8rem;
+    padding: 4px;
+    margin-top: 1rem;
+    border-radius: 10px;
+
+}
+
+textarea {
+    height: 200px;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="submit"] {
+    font-size: .6rem;
+    font-weight: bold;
+    margin-top: 7px;
+    width: 97px;
+    height: 39px;
+    background: rgb(49, 98, 153);
+    border-color: rgb(103, 150, 197);
+    border-width: 1px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(49, 98, 153, 1);
+    animation: keyglow 4s linear infinite;
+    cursor: pointer;
+    &:active {
+        background: rgb(44, 90, 139);
+        font-size: .58rem;
+        border-style: inset;
+        animation: none;
+        box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+}
+
+i {
+    font-style: normal;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+sup,
+sub {
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+    position: relative;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+ul {
+    cursor: default;
+}
+
+article,
+section {
+    margin-bottom: 2em;
+}
+
+.älfubit {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.36rem;
+    opacity: .5;
+}
+
+
+::selection {
+    color: #eee;
+    background: rgba(49, 98, 153, .99);
+}
+
+.straikthrw {
+    text-decoration: line-through;
+}
+
+dl {
+    margin: 0;
+}
+
+dt {
+    font-style: italic;
+    opacity: .7;
+}
+
+dd {
+    padding-bottom: 1em;
+}
+
+dd:last-of-type {
+    padding: 0;
+}

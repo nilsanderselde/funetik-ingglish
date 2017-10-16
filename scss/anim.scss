@@ -1,0 +1,35 @@
+
+@keyframes keyglow {
+    0% {
+        background: rgba(49, 98, 153, 1);
+        border-color: rgb(134, 170, 206);
+    }
+    94% {
+        background: rgba(49, 98, 153, 1);
+        border-color: rgb(134, 170, 206);
+    }
+    96% {
+        background: rgba(49, 98, 153, .7);
+        border-color: rgb(103, 150, 197);
+    }
+    98% {
+        background: rgba(49, 98, 153, .7);
+        border-color: rgb(103, 150, 197);
+    }
+    100% {
+        background: rgba(49, 98, 153, 1);
+        border-color: rgb(134, 170, 206);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    100% {
+        transform: rotate(-360deg);
+    }
+}

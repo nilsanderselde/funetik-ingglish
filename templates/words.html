@@ -1,6 +1,7 @@
 {{define "words.html"}}
 {{template "_header.html" .}}
-
+<main>
+        
 {{if .DisplayTrud}}
 
 <table id="words">
@@ -30,53 +31,6 @@ to get from old to new" class="info above">Dist</span>{{if .Dist}}<i>{{if .Rever
     {{template "wordsSorted" .}}
 </table>
 
-<nav class="bottom">
-    <ul>
-        {{if .PreviousPage}}
-        <script>
-            document.addEventListener("keydown", function (evt) {
-                evt = evt || window.event;
-                if (evt.keyCode == 65) { /*37*/
-                    window.location = '{{.PreviousPage}}'
-                }
-            });
-        </script>
-        <li><a href="{{.PreviousPage}}" class="back" data-title="Keyboard shortcut: left arrow"><i>🡄</i> Back</a></li>{{else}}
-        <li><a class="disabled"><i>🡄</i> Back</a></li>{{end}} {{if .NextPage}}
-        <script>
-            document.addEventListener("keydown", function (evt) {
-                evt = evt || window.event
-                if (evt.keyCode == 68) { /*39*/
-                    window.location = '{{.NextPage}}'
-                }
-            });
-        </script>
-        <li><a href="{{.NextPage}}" class="next" data-title="Keyboard shortcut: right arrow">Next <i>🡆</i></a></li>{{else}}
-        <li><a class="disabled">Next <i>🡆</i></a></li>{{end}}
-    </ul>
-</nav>
-<aside id="legend">
-    <table>
-        <tr><td>N</td><td>Näwn</td></tr>
-        <tr><td>P</td><td>Plørul</td></tr>
-        <tr><td>h</td><td>Näwn Freiz</td></tr>
-        <tr><td>V</td><td>Vørb (už partisipul)</td></tr>
-        <tr><td>t</td><td>Vørb (tränzitiv)</td></tr>
-        <tr><td>i</td><td>Vørb (intränzitiv)</td></tr>
-        <tr><td>A</td><td>Ädžiktiv</td></tr>
-    </table>
-    
-    <table>
-        <tr><td>v</td><td>Ädvørb</td></tr>
-        <tr><td>C</td><td>Kandžugeišin</td></tr>
-        <tr><td>P</td><td>Prepuzišin</td></tr>
-        <tr><td>!</td><td>Intørdžekšin</td></tr>
-        <tr><td>r</td><td>Pronäwn</td></tr>
-        <tr><td>D</td><td>Definit Artikul</td></tr>
-        <tr><td>I</td><td>Indefinit Artikul</td></tr>
-        <tr><td>o</td><td>Naminitiv</td></tr>
-    </table>
-</aside>
 
 {{else}}
 <table id="words">
@@ -106,48 +60,87 @@ tw get frum old tw nw" class="info above">Dist</span>{{if .Dist}}<i>{{if .Revers
     {{template "wordsSorted" .}}
 </table>
 
+{{end}}
+
+
 <nav class="bottom">
-    <ul>
-        {{if .PreviousPage}}
-        <script>
-            document.addEventListener("keydown", function (evt) {
-                evt = evt || window.event;
-                if (evt.keyCode == 65) { /*37*/
-                    window.location = '{{.PreviousPage}}'
-                }
-            });
-        </script>
-        <li><a href="{{.PreviousPage}}" class="back" data-title="Keyboard shortcut: left arrow"><i>🡄</i> Bäk</a></li>{{else}}
-        <li><a class="disabled"><i>🡄</i> Bäk</a></li>{{end}} {{if .NextPage}}
-        <script>
-            document.addEventListener("keydown", function (evt) {
-                evt = evt || window.event;
-                if (evt.keyCode == 68) { /*39*/
-                    window.location = '{{.NextPage}}'
-                }
-            });
-        </script>
-        <li><a href="{{.NextPage}}" class="next" data-title="Keyboard shortcut: right arrow">Nekst <i>🡆</i></a></li>{{else}}
-        <li><a class="disabled">Nekst <i>🡆</i></a></li>{{end}}
-    </ul>
-</nav>
+        <ul>
+            {{if .PreviousPage}}
+            <script>
+                document.addEventListener("keydown", function (evt) {
+                    evt = evt || window.event;
+                    if (evt.keyCode == 65) { /*37*/
+                        window.location = '{{.PreviousPage}}'
+                    }
+                });
+            </script>
+            <li><a href="{{.PreviousPage}}" class="back" data-title="Keyboard shortcut: left arrow"><i>🡄</i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{else}}
+            <li><a class="disabled"><i>🡄</i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{end}} {{if .NextPage}}
+            <script>
+                document.addEventListener("keydown", function (evt) {
+                    evt = evt || window.event;
+                    if (evt.keyCode == 68) { /*39*/
+                        window.location = '{{.NextPage}}'
+                    }
+                });
+            </script>
+            <li><a href="{{.NextPage}}" class="next" data-title="Keyboard shortcut: right arrow">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i>🡆</i></a></li>{{else}}
+            <li><a class="disabled">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i>🡆</i></a></li>{{end}}
+        </ul>
+    </nav>
+
+
+{{if .DisplayTrud}}
+<h3 class="center">Part of Speech Symbols</h3>
+<aside id="legend">
+    <table>
+        <tr><td>N</td><td>Noun</td></tr>
+        <tr><td>P</td><td>Plural</td></tr>
+        <tr><td>h</td><td>Noun Phrase</td></tr>
+        <tr><td>V</td><td>Verb (usu. participle)</td></tr>
+    </table>
+    <table>
+        <tr><td>t</td><td>Verb (transitive)</td></tr>
+        <tr><td>i</td><td>Verb (intransitive)</td></tr>
+        <tr><td>A</td><td>Adjective</td></tr>
+        <tr><td>v</td><td>Adverb</td></tr>
+    </table>
+    
+    <table>
+        <tr><td>C</td><td>Conjugation</td></tr>
+        <tr><td>P</td><td>Preposition</td></tr>
+        <tr><td>!</td><td>Interjection</td></tr>
+        <tr><td>r</td><td>Pronoun</td></tr>
+    </table>
+    <table>
+        <tr><td>D</td><td>Definite Article</td></tr>
+        <tr><td>I</td><td>Indefinite Article</td></tr>
+        <tr><td>o</td><td>Nominitive</td></tr>
+    </table>
+</aside>
+{{else}}
+<h3 class="center">Part uv Spytš Simbulz</h3>        
 <aside id="legend">
     <table>
         <tr><td>N</td><td>Näwn</td></tr>
         <tr><td>P</td><td>Plørul</td></tr>
         <tr><td>h</td><td>Näwn Freiz</td></tr>
-        <tr><td>V</td><td>Vørb (už partisipul)</td></tr>
+        <tr><td>V</td><td>Vørb (yuž. partisipul)</td></tr>
+    </table>
+    <table>
         <tr><td>t</td><td>Vørb (tränzitiv)</td></tr>
         <tr><td>i</td><td>Vørb (intränzitiv)</td></tr>
         <tr><td>A</td><td>Ädžiktiv</td></tr>
+        <tr><td>v</td><td>Ädvørb</td></tr>
     </table>
     
     <table>
-        <tr><td>v</td><td>Ädvørb</td></tr>
         <tr><td>C</td><td>Kandžugeišin</td></tr>
         <tr><td>P</td><td>Prepuzišin</td></tr>
         <tr><td>!</td><td>Intørdžekšin</td></tr>
         <tr><td>r</td><td>Pronäwn</td></tr>
+    </table>
+    <table>
         <tr><td>D</td><td>Definit Artikul</td></tr>
         <tr><td>I</td><td>Indefinit Artikul</td></tr>
         <tr><td>o</td><td>Naminitiv</td></tr>
@@ -157,6 +150,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if .Dist}}<i>{{if .Revers
 
 {{end}}
 
+</main>
 <script>
     /* prevents page reloads from toggling flags */
     var uri = window.location.toString()

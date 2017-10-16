@@ -1,0 +1,110 @@
+/* words table th*/
+
+$header_offset: .55em;
+#id {
+    width: 2.8rem;
+}
+
+#pus {
+    width: 3.8rem;
+}
+
+#nw a {
+    position: relative;
+    left: $header_offset;
+}
+
+#old a {
+    position: relative;
+    left: $header_offset;
+}
+
+#dist {
+    width: 3rem;
+}
+
+#sil {
+    width: 2rem;
+}
+
+#legend {
+    opacity: .8;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-content: top;
+    h3 {
+        text-align: center;
+        color: black;    
+        
+        font-weight: normal;
+        font-style: italic;     
+    }
+    table {
+        background: transparent;
+        display: inline-block;
+        td:nth-of-type(1) {
+            text-align: center;
+            font-weight: bold;
+        }
+        td,
+        th {
+            background: transparent;
+            padding: 2px 5px;
+            color: black;    
+            
+            white-space: nowrap;
+        }
+        tr {
+            background: transparent;
+            
+        }
+    }
+}
+
+.no-results {
+    background: transparent !important;
+    td {
+        text-align: left;
+        font-size: 3rem;
+        font-weight: bold;
+        height: 600px;
+        position: relative;
+    }
+    span {
+        animation: spin 18s infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 500px;
+        margin: -30px 0 0 -250px;
+        text-align: center;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+    a {
+        &:link,
+        &:visited {
+            color: #333;
+        }
+        &:hover,
+        &:active {
+            color: #333;
+            text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+        }
+    }
+    i {
+        position: relative;
+        display: inline-block;
+        &:nth-of-type(1) {
+            left: 0;
+            animation: spin2 9s linear infinite;
+        }
+        &:nth-of-type(2) {
+            right: 0;
+            animation: spin 9s linear infinite;
+        }
+        position: absolute;
+    }
+}
