@@ -1,9 +1,34 @@
 // Nils Elde
 // https://gitlab.com/nilsanderselde
 //
-// Calculates Levenshtein distances between words stored in a tabular text file.
-// Includes commented out print statements which can help demonstrate how this
-// algorithm works
+// Calculates Levenshtein distances between two strings.
+//
+// Based on the Python implementation in the Natural Language Toolkit,
+// part of the nltk.metrics.distance module. License for the NLTK
+// Levenshtein implementation below:
+//
+// Copyright (C) 2001-2017 NLTK Project
+// Author: Edward Loper <edloper@gmail.com>
+// Steven Bird <stevenbird1@gmail.com>
+// Tom Lippincott <tom@cs.columbia.edu>
+// URL: <http://nltk.org/>
+// For license information, see LICENSE.TXT
+//
+// LICENSE.TXT
+// Copyright (C) 2001-2014 NLTK Project
+//
+// Licensed under the Apache License, Version 2.0 (the 'License');
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an 'AS IS' BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
 
 package wordtools
 

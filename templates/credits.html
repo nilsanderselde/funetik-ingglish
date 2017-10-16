@@ -4,6 +4,32 @@
     {{if .DisplayTrud}}
 
 <h1 id="top">Credits</h1>
+
+<p>To populate the Funetik Inggliš (FI) database with words and their phonetic representations, I used several sources,
+    three with just the English spelling and one that also contained phonetic data.</p>
+
+<p>I performed SQL intersections on the data, to identify words which appeared in multiple sources
+    as important words to include in this initial word database, which I hope will continue to grow.</p>
+
+<p>I would like to expand this site to all users to create accounts and submit
+    their own pronunciations of words, linked to their demographic data.</p>
+
+<p>There are likely still inaccurate phonetic representations in the database, either from the source material 
+    or from an over-reaching regular expression based SQL update statement which changed too many things.
+    An example of this was changing words like "competition", which was represented as "K AA2 M P AH0 T IH1 SH AH0 N"
+    in the CMU list, which would be "kamputišun" in FI. I deemed it more accurate to write this as "kampitišin".
+    The first instance of schwa after "kamp" could fairly be either 'ʌ' or 'ɪ', I think, but the final vowel before 'n' should
+    definitely be 'ɪ', not 'ʌ', as 'ʌ' in this position sounds and feels awkward. Simply replacing all words ending in -un 
+    with -in wouldn't work, though, as the word "fun" would become "fin". Therefore, a more nuanced approach and a lot of proofreading
+    was required.</p>
+<p>While that is a seemingly minor change, other changes were broader (FI: bradør <span class="straikthrw">brɔdør</span>).
+        For instance, in the interest of refining an elegant
+        orthography, I elected not to include the open-mid back rounded vowel (ɔ), present in American English speakers without the
+        <a href="https://en.wikipedia.org/wiki/Cot%E2%80%93caught_merger" target="_blank">cot–caught merger</a>. The CMU authors evidently did 
+        pronounce words with this vowel, and as such I had to replace 'ɔ' with 'o' or 'a'. The CMU authors used 'ɔ' for both "almost" (AO1 L M OW2 S T) and "war" (W AO1 R).</p>
+        <p>While descriptive grammar is the only way to go (my idiolect is certainly not "better"), I had to choose one way to write each word for the purposes of this thought experiment.</p>
+<p>As long as it's consistent, it's better than the amalgam of historical accidents which is our current orthography.</p>
+
 <section>
     <ul>
         <li><a href="#cmu">The CMU Pronouncing Dictionary</a></li>
@@ -12,16 +38,19 @@
 </section>
 
 <article>
-    <h2 id="cmu"><a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">The CMU Pronouncing Dictionary</a></h2>
+    <h2 id="cmu"><a href="https://raw.githubusercontent.com/aparrish/rwet-examples/master/pronouncing/cmudict-0.7b">The CMU Pronouncing Dictionary</a></h2>
 
+    <p>Source of pronunciation data which was substantially reformatted into a more readable format, with symbols for stress and syllable boundaries replacing the
+        system of numbers.</p>
     <p>Most of the phonetic transliterations for Phonetic English were adapted from or at least compared against
-    the CMU Pronouncing Dictionary. I only used about a third of
-    their data, and made several broad changes affecting all or many of the words to make them consistent
-    with the funeticization I thought could represent a general American accent. The changes I made were 
-    informed by my own
-    intuitions and idiolect, as well as what I learned in my study of linguistics, but not based on a large
-    sampling of speaker data. I would like to expand this site to all users to create accounts and submit
-    their own pronunciations of words, linked to their demographic data.</p>
+        the CMU Pronouncing Dictionary. I only used about a third of
+        their data, and made several broad changes affecting all or many of the words to make them consistent
+        with the funeticization I thought could represent a general American accent. The changes I made were 
+        informed by my own
+        intuitions and idiolect, as well as what I learned in my study of linguistics, but not based on a large
+        sampling of speaker data.</p>
+
+    <p>Website: http://www.speech.cs.cmu.edu/cgi-bin/cmudict</p>
 
     <h3>License</h3>
     <pre>CMUdict  --  Major Version: 0.07
@@ -59,15 +88,79 @@ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
 THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
-    
-<a href="https://raw.githubusercontent.com/aparrish/rwet-examples/master/pronouncing/cmudict-0.7b" 
-            target="_blank">The original dictionary can be found on GitHub.</a>
 
 <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
 
 </article>
     
     
+
+<article>
+    <h2 id="dwyl"><a href="https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt" target="_blank">"english-words" from dwyl on github</a></h2>
+    <p><a href="https://github.com/dwyl/english-words" target="_blank">GitHub user dwyl reformatted a list of words originally from Project Gutenberg.</a></p>
+
+    <h3><a href="https://github.com/dwyl/english-words/blob/master/LICENSE.md" target="_blank">License for this GitHub repository</a></h3>
+
+    <h3>Data was gathered from the following sources:</h3>
+<pre>
+<a href="http://www.gutenberg.org/etext/3201" target="_blank">http://www.gutenberg.org/etext/3201</a>
+
+Moby Word Lists by Grady Ward
+
+Help
+Bibliographic Record [help] Creator	Ward, Grady
+Title	Moby Word Lists
+Language	English
+LoC Class	PS: Language and Literatures: American literature
+EText-No.	3201
+Release Date	2002-05-01
+Copyright Status	Not copyrighted in the United States. If you live elsewhere check the laws of your country before downloading this ebook.
+
+Moby Thesaurus List by Grady Ward
+<a href="http://www.gutenberg.org/etext/3202" target="_blank">http://www.gutenberg.org/etext/3202</a>
+Creator	Ward, Grady
+Title	Moby Thesaurus List
+Language	English
+LoC Class	PS: Language and Literatures: American literature
+EText-No.	3202
+Release Date	2002-05-01
+Copyright Status	Not copyrighted in the United States. If you live elsewhere check the laws of your country before downloading this ebook.
+</pre>
+
+<nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+</article>
+
+<article>
+    <h2 id="sil"><a href="http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt" target="_blank">wordsEn.txt from sil.org</a></h2>
+
+    <h3><a href="http://www-01.sil.org/linguistics/wordlists/english/" target="_blank">Description of wordsEn.txt from sil.org</a></h3>
+    <p>A list of 109582 English words compiled and corrected in 1991 from lists obtained from the Interociter bulletin board. The original read.me file said that the list came from Public Brand Software.</p>
+    <p>This word list includes inflected forms, such as plural nouns and the -s, -ed and -ing forms of verbs. Thus the number of lexical stems represented in the list is considerably smaller than the total number of words.</p>
+
+    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+</article>
+
+<article>
+    <h2 id="contractions"><a href="https://en.wikipedia.org/wiki/Wikipedia:List_of_English_contractions">Wikipedia:List of English contractions</a></h2>
+    <p>The few contractions that already were present in the word database were augmented with
+        this list of contractions.</p>
+    
+        <h3><a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></h3>
+    
+    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+    
+    
+    
+    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+    <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
+        
+</article>
+
+
 
 <article>
 <h2 id="nltk"><a href="http://nltk.org" target="_blank">The Natural Language Toolkit</a></h2>
@@ -78,10 +171,10 @@ in the Natural Language Toolkit, part of the nltk.metrics.distance module.</p>
 <h3><a href="http://www.nltk.org/_modules/nltk/metrics/distance.html" target="_blank">Distance Metrics</a></h3>
 
 <pre>Copyright (C) 2001-2017 NLTK Project
-Author: Edward Loper <edloper@gmail.com>
-        Steven Bird <stevenbird1@gmail.com>
-        Tom Lippincott <tom@cs.columbia.edu>
-URL: <http://nltk.org/>
+Author: Edward Loper &lt;edloper@gmail.com&gt;
+        Steven Bird &lt;stevenbird1@gmail.com&gt;
+        Tom Lippincott &lt;tom@cs.columbia.edu&gt;
+URL: &lt;<a href="http://nltk.org/" target="_blank">http://nltk.org/</a>&gt;
 For license information, see LICENSE.TXT</pre>
 
 <h3>LICENSE.TXT</h3>
@@ -99,12 +192,10 @@ distributed under the License is distributed on an 'AS IS' BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.</pre>
-
-
 <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
-
-
 </article>
+
+
 
     {{else}}
 
