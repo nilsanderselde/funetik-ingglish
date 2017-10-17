@@ -7,6 +7,7 @@ import (
 	"html/template"
 	"net/http"
 	"path/filepath"
+	"strings"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
@@ -14,7 +15,7 @@ import (
 
 // templateHandler contains all fields needed to process and execute templates
 type templateHandler struct {
-	filename  string
+	filenames []string
 	templ     *template.Template
 	query     string
 	queryFrom string
@@ -35,23 +36,23 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		"Random":    randomRune,
 	}
 	// Show 404 for unknown paths
-	if t.filename == "home.html" && r.URL.Path != "/" {
+	if t.filenames[0] == "home.html" && r.URL.Path != "/" {
 		http.NotFound(w, r)
 		return
 	}
 	// List files that are to only show traditional English, with no transliteration option
-	if t.filename != "about.html" {
+	if t.filenames[0] != "about.html" {
 		t.args.MultipleOrth = true
 	}
 
 	// special processing for words list based on query strings
-	if t.filename == "words.html" {
+	if t.filenames[0] == "words.html" {
 		handleWordList(t, r)
 		displayOrth(t, r, true)
 
 		// join the template files for the wordlist
-		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
-			filepath.Join("templates", t.filename),
+		t.templ = template.Must(template.New(t.filenames[0]).Funcs(funcMap).ParseFiles(
+			filepath.Join("templates", t.filenames[0]),
 			filepath.Join("templates", "words_sorted.html"),
 			filepath.Join("templates", "_header.html"),
 			filepath.Join("templates", "_footer.html"),
@@ -60,7 +61,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	} else {
 		// for keyboard page, decide which keyboard to display based on query string,
 		// then decide which orthagraphy to use based on concatenative query string
-		if t.filename == "kbd.html" {
+		if t.filenames[0] == "kbd.html" {
 			pickKeyboard(t, r)
 			displayOrth(t, r, true)
 		} else {
@@ -70,22 +71,22 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 			// for tranliteration page, open channel, send input,
 			// wait for output
-			if t.filename == "translit.html" {
+			if t.filenames[0] == "translit.html" {
 				cha := make(chan dbconnect.Output)
 				go dbconnect.ProcessTrud(cha, r)
-				outStruct := <-cha // waits till getA() returns
+				outStruct := <-cha
 				t.args.TranslitOutput = outStruct.OutputLines
 				t.args.TranslitInput = outStruct.PrevInput
 			}
-
 		}
+		templateName := strings.TrimSuffix(t.filenames[0], "*.html")
+		for i := range t.filenames {
+			t.filenames[i] = "templates/" + t.filenames[i]
+		}
+		t.filenames = append(t.filenames, "templates/_header.html", "templates/_footer.html")
 
 		// not word list, just a regular page, join the template files
-		t.templ = template.Must(template.New(t.filename).Funcs(funcMap).ParseFiles(
-			filepath.Join("templates", t.filename),
-			filepath.Join("templates", "_header.html"),
-			filepath.Join("templates", "_footer.html"),
-		))
+		t.templ = template.Must(template.New(templateName).Funcs(funcMap).ParseFiles(t.filenames...))
 	}
 	t.templ.Execute(w, t.args)
 }

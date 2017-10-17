@@ -42,12 +42,12 @@ COALESCE(flaagd, 'false')
 
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
-	http.Handle("/", &templateHandler{filename: "home.html"})
-	http.Handle("/kybord", &templateHandler{filename: "kbd.html"})
-	http.Handle("/woordz", &templateHandler{filename: "words.html", query: wordsQuery, queryFrom: wordsQueryFrom})
-	http.Handle("/staats", &templateHandler{filename: "stats.html"})
-	http.Handle("/traanzlit", &templateHandler{filename: "translit.html"})
-	http.Handle("/ubaawt", &templateHandler{filename: "about.html"})
+	http.Handle("/", &templateHandler{filenames: []string{"home.html"}})
+	http.Handle("/kybord", &templateHandler{filenames: []string{"kbd.html"}})
+	http.Handle("/woordz", &templateHandler{filenames: []string{"words.html", "words_sorted.html"}, query: wordsQuery, queryFrom: wordsQueryFrom})
+	http.Handle("/staats", &templateHandler{filenames: []string{"stats.html"}})
+	http.Handle("/traanzlit", &templateHandler{filenames: []string{"translit.html"}})
+	http.Handle("/ubaawt", &templateHandler{filenames: []string{"about.html"}})
 
 	// Start Server
 	if err := http.ListenAndServe(":8080", nil); err != nil {
