@@ -30,12 +30,12 @@
                 <li><a href="/woordz?orth=fun">Wørdz</a></li>            
                 <li><a href="/kybord?orth=fun">Kybord</a></li>
                 <li><a href="/staats?orth=fun">Stäts</a></li>
-                <li><a href="/ubaawt">Ubäwt</a></li>
+                <li><a href="/ubaawt?orth=fun">Ubäwt</a></li>
             {{end}}
     
             </ul>
         </nav>
     </header>
-    {{if .MultipleOrth}}<div id="orth"><a href="{{.ChangeOrth}}"{{if .DisplayTrud}} data-title="Read this page in Phonetic English" class="info below">Ryd dhis peidž in Funetik Inggliš{{else}}>Read this page in traditional English{{end}}</a></div>{{end}}
+    {{if not .SingleOrth}}<div id="orth"><a href="{{.ChangeOrth}}"{{if .DisplayTrud}} data-title="Read this page in Phonetic English" class="info below">Ryd dhis peidž in Funetik Inggliš{{else}}>Read this page in traditional English{{end}}</a></div>{{end}}
     <div id="fillY">
 {{end}}
