@@ -4,6 +4,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
 	"strings"
@@ -30,61 +31,47 @@ func randomRune() string {
 
 // handle http request
 func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	// Show 404 for unknown paths
-	if strings.TrimPrefix(t.filenames[0], "templates/") == "home.html" && r.URL.Path != "/" {
-		http.NotFound(w, r)
-		return
-	}
-	// List files that are to only show traditional English, with no transliteration option
-	if strings.TrimPrefix(t.filenames[0], "templates/") != "about.html" {
-		t.args.MultipleOrth = true
-	}
 
-	// special processing for words list based on query strings
-	if strings.TrimPrefix(t.filenames[0], "templates/") == "words.html" {
-		handleWordList(t, r)
-		displayOrth(t, r, true)
+	filename := strings.TrimPrefix(t.filenames[0], "templates/")
+	var additive bool
 
-	} else {
-		// for keyboard page, decide which keyboard to display based on query string,
-		// then decide which orthagraphy to use based on concatenative query string
-		if strings.TrimPrefix(t.filenames[0], "templates/") == "kbd.html" {
-			pickKeyboard(t, r)
-			displayOrth(t, r, true)
-		} else {
-			// for pages without their own, unique query strings,
-			// decide which orthagraphy to use based on a new query string (non-concat)
-			displayOrth(t, r, false)
-
-			// for tranliteration page, open channel, send input,
-			// wait for output
-			if strings.TrimPrefix(t.filenames[0], "templates/") == "translit.html" {
-				cha := make(chan dbconnect.Output)
-				go dbconnect.ProcessTrud(cha, r)
-				outStruct := <-cha
-				t.args.TranslitOutput = outStruct.OutputLines
-				t.args.TranslitInput = outStruct.PrevInput
-			}
+	switch filename {
+	case "home.html":
+		if r.URL.Path != "/" {
+			http.NotFound(w, r)
+			return
 		}
-
+	case "about.html":
+		t.args.SingleOrth = true
+	case "words.html":
+		handleWordList(t, r)
+		additive = true
+	case "kbd.html":
+		pickKeyboard(t, r)
+		additive = true
+	case "translit.html":
+		cha := make(chan dbconnect.Output)
+		go dbconnect.ProcessTrud(cha, r)
+		outStruct := <-cha
+		t.args.TranslitOutput = outStruct.OutputLines
+		t.args.TranslitInput = outStruct.PrevInput
 	}
+
+	displayOrth(t, r, additive)
 
 	t.once.Do(func() {
-
 		funcMap := template.FuncMap{
 			"GetStats":  dbconnect.GetStats,
 			"ShowWords": dbconnect.ShowWords,
 			"Random":    randomRune,
 		}
-
 		templateName := strings.TrimSuffix(t.filenames[0], "*.html")
 		for i := range t.filenames {
 			t.filenames[i] = "templates/" + t.filenames[i]
 		}
 		t.filenames = append(t.filenames, "templates/_header.html", "templates/_footer.html")
-
 		t.templ = template.Must(template.New(templateName).Funcs(funcMap).ParseFiles(t.filenames...))
-
+		fmt.Println("Parsing", t.filenames)
 	})
 	t.templ.Execute(w, t.args)
 }
