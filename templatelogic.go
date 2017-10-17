@@ -4,7 +4,6 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"net/http"
 	"strings"
@@ -41,7 +40,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.MultipleOrth = true
 	}
 
-	fmt.Println(t.filenames[0])
 	// special processing for words list based on query strings
 	if strings.TrimPrefix(t.filenames[0], "templates/") == "words.html" {
 		handleWordList(t, r)

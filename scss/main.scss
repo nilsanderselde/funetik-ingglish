@@ -50,6 +50,21 @@ main {
 }
 
 
+#fillY {
+    flex: 1 1 auto;
+}
+main,
+header,
+#orth,
+#words,
+#stats,
+#legend {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;  
+}
+
 p {
     margin: .3rem 0 1rem 0;
 }
@@ -63,7 +78,7 @@ h1,
 h2,
 h3,
 li {
-    line-height: 1.3em;
+    line-height: 1.5em;
     &:first-of-type{
         margin-top: 0;
     }
@@ -81,20 +96,6 @@ h3 {
     font-style: italic;
 }
 
-#fillY {
-    flex: 1 1 auto;
-}
-main,
-header,
-#orth,
-#words,
-#stats,
-#legend {
-    max-width: 700px;
-    width: 100%;
-    margin: auto;
-    border-radius: 10px;  
-}
 
 a {
     transition: color .2s linear, text-shadow .2s linear, border-color .2s linear;
