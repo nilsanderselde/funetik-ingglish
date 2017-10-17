@@ -4,10 +4,11 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
-	"path/filepath"
 	"strings"
+	"sync"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
@@ -15,6 +16,7 @@ import (
 
 // templateHandler contains all fields needed to process and execute templates
 type templateHandler struct {
+	once      sync.Once
 	filenames []string
 	templ     *template.Template
 	query     string
@@ -29,12 +31,6 @@ func randomRune() string {
 
 // handle http request
 func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-
-	funcMap := template.FuncMap{
-		"GetStats":  dbconnect.GetStats,
-		"ShowWords": dbconnect.ShowWords,
-		"Random":    randomRune,
-	}
 	// Show 404 for unknown paths
 	if t.filenames[0] == "home.html" && r.URL.Path != "/" {
 		http.NotFound(w, r)
@@ -49,14 +45,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if t.filenames[0] == "words.html" {
 		handleWordList(t, r)
 		displayOrth(t, r, true)
-
-		// join the template files for the wordlist
-		t.templ = template.Must(template.New(t.filenames[0]).Funcs(funcMap).ParseFiles(
-			filepath.Join("templates", t.filenames[0]),
-			filepath.Join("templates", "words_sorted.html"),
-			filepath.Join("templates", "_header.html"),
-			filepath.Join("templates", "_footer.html"),
-		))
 
 	} else {
 		// for keyboard page, decide which keyboard to display based on query string,
@@ -79,15 +67,27 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 				t.args.TranslitInput = outStruct.PrevInput
 			}
 		}
+
+	}
+
+	t.once.Do(func() {
+
+		funcMap := template.FuncMap{
+			"GetStats":  dbconnect.GetStats,
+			"ShowWords": dbconnect.ShowWords,
+			"Random":    randomRune,
+		}
+
 		templateName := strings.TrimSuffix(t.filenames[0], "*.html")
 		for i := range t.filenames {
 			t.filenames[i] = "templates/" + t.filenames[i]
 		}
 		t.filenames = append(t.filenames, "templates/_header.html", "templates/_footer.html")
 
-		// not word list, just a regular page, join the template files
 		t.templ = template.Must(template.New(templateName).Funcs(funcMap).ParseFiles(t.filenames...))
-	}
+		fmt.Println(t.filenames)
+
+	})
 	t.templ.Execute(w, t.args)
 }
 
