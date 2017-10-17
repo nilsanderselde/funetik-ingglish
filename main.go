@@ -29,14 +29,14 @@ func main() {
 	// dbconnect.RestoreBackup()
 
 	wordsQuery := `SELECT id,
-    COALESCE(COALESCE(ritin, fun), '') as fun,
-    COALESCE(funsil, ''),
-    COALESCE(trud, ''),
-    COALESCE(pus, ''),
-    COALESCE(numsil, '0'),
-    COALESCE(dist, '0'),
-	COALESCE(funsort, ''),
-	COALESCE(flaagd, 'false')
+COALESCE(COALESCE(ritin, fun), '') as fun,
+COALESCE(funsil, ''),
+COALESCE(trud, ''),
+COALESCE(pus, ''),
+COALESCE(numsil, '0'),
+COALESCE(dist, '0'),
+COALESCE(funsort, ''),
+COALESCE(flaagd, 'false')
 `
 	wordsQueryFrom := `FROM words WHERE pus IS NOT NULL` //tshekt != true` // split up because two queries must use this part
 
