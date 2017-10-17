@@ -37,14 +37,14 @@ func handleWordList(t *templateHandler, r *http.Request) {
 	// reset prev page to force templateHandler to recreate it if needed
 	*aPrev = ""
 
-	// if set to update automatically generated values
-	if r.URL.Query()["updeit"] != nil {
-		if r.URL.Query()["updeit"][0] == "al" {
-			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, false)
-		} else if r.URL.Query()["updeit"][0] == "flaagd" {
-			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, true)
-		}
-	}
+	// // if set to update automatically generated values
+	// if r.URL.Query()["updeit"] != nil {
+	// 	if r.URL.Query()["updeit"][0] == "al" {
+	// 		dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, false)
+	// 	} else if r.URL.Query()["updeit"][0] == "flaagd" {
+	// 		dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, true)
+	// 	}
+	// }
 
 	// if set to sort by value
 	if r.URL.Query()["sortby"] != nil {
