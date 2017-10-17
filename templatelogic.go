@@ -32,24 +32,25 @@ func randomRune() string {
 // handle http request
 func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// Show 404 for unknown paths
-	if t.filenames[0] == "home.html" && r.URL.Path != "/" {
+	if strings.TrimPrefix(t.filenames[0], "templates/") == "home.html" && r.URL.Path != "/" {
 		http.NotFound(w, r)
 		return
 	}
 	// List files that are to only show traditional English, with no transliteration option
-	if t.filenames[0] != "about.html" {
+	if strings.TrimPrefix(t.filenames[0], "templates/") != "about.html" {
 		t.args.MultipleOrth = true
 	}
 
+	fmt.Println(t.filenames[0])
 	// special processing for words list based on query strings
-	if t.filenames[0] == "words.html" {
+	if strings.TrimPrefix(t.filenames[0], "templates/") == "words.html" {
 		handleWordList(t, r)
 		displayOrth(t, r, true)
 
 	} else {
 		// for keyboard page, decide which keyboard to display based on query string,
 		// then decide which orthagraphy to use based on concatenative query string
-		if t.filenames[0] == "kbd.html" {
+		if strings.TrimPrefix(t.filenames[0], "templates/") == "kbd.html" {
 			pickKeyboard(t, r)
 			displayOrth(t, r, true)
 		} else {
@@ -59,7 +60,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 			// for tranliteration page, open channel, send input,
 			// wait for output
-			if t.filenames[0] == "translit.html" {
+			if strings.TrimPrefix(t.filenames[0], "templates/") == "translit.html" {
 				cha := make(chan dbconnect.Output)
 				go dbconnect.ProcessTrud(cha, r)
 				outStruct := <-cha
@@ -85,7 +86,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.filenames = append(t.filenames, "templates/_header.html", "templates/_footer.html")
 
 		t.templ = template.Must(template.New(templateName).Funcs(funcMap).ParseFiles(t.filenames...))
-		fmt.Println(t.filenames)
 
 	})
 	t.templ.Execute(w, t.args)
