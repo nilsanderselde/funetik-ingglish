@@ -6,9 +6,9 @@
 
 <table id="words">
     <tr>
-        <th id="id">
+        {{/*<th id="id">
             <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if eq .SortBy "id"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
-        </th>
+        </th>*/}}
         <th id="nw">
             <a href="?sortby=funsort&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Character order:
 aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">New Spelling</span>{{if eq .SortBy "funsort"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
@@ -35,9 +35,9 @@ to get from old to new" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i
 {{else}}
 <table id="words">
     <tr>
-        <th id="id">
+        {{/*<th id="id">
             <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if eq .SortBy "id"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
-        </th>
+        </th>*/}}
         <th id="nw">
             <a href="?sortby=funsort&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Keriktør ordør: 
 aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">Nw Speling</span>{{if eq .SortBy "funsort"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
