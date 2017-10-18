@@ -61,10 +61,10 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			"Random":    randomRune,
 		}
 		templateName := strings.TrimSuffix(t.filenames[0], "*.html")
+		t.filenames = append(t.filenames, "_header.html", "_footer.html")
 		for i := range t.filenames {
 			t.filenames[i] = "templates/" + t.filenames[i]
 		}
-		t.filenames = append(t.filenames, "templates/_header.html", "templates/_footer.html")
 		t.templ = template.Must(template.New(templateName).Funcs(funcMap).ParseFiles(t.filenames...))
 		fmt.Println("Parsing", t.filenames)
 	})

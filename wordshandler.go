@@ -16,13 +16,12 @@ const (
 	DefaultNum int = 32
 )
 
-// Options for ?update=all (func UpdateAllAutoValues)
+// Options for dbconnect.Update...AutoValues
 const (
-	fun        bool = true
-	numsil     bool = true
-	funsort    bool = true
-	dist       bool = true
-	onlyFlaagd bool = true
+	fun     bool = true
+	numsil  bool = true
+	funsort bool = true
+	dist    bool = true
 )
 
 func handleWordList(t *templateHandler, r *http.Request) {
@@ -38,29 +37,28 @@ COALESCE(dist, '0'),
 COALESCE(funsort, ''),
 COALESCE(flaagd, 'false')
 `
-	wordsQueryFrom := "FROM words" //tshekt != true` // split up because two queries must use this part
-
-	// put two pieces of postgres query together
+	wordsQueryFrom := "FROM words"
 	t.args.PQuery = wordsQuery + wordsQueryFrom
 
-	// reset prev page to force templateHandler to recreate it if needed
-	t.args.PreviousPage = ""
-
+	// get URL query string
 	urlQ := r.URL.Query()
 
 	// if set to update automatically generated values
 	if urlQ["updeit"] != nil {
 		/*if urlQ["updeit"][0] == "al" {
-			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, false)
+			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist)
 		} else */if urlQ["updeit"][0] == "flaagd" {
-			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, true)
+			dbconnect.UpdateFlaggedAutoValues(fun, numsil, funsort, dist)
 		}
 	}
+	/* // flag row if URL contains query string for id
+	if urlQ["id"] != nil {
+		dbconnect.FlagRow(urlQ["id"][0])
+	} */
 
 	// column to sort by
 	sortby := "funsort"
 	if urlQ["sortby"] != nil {
-		// sort by id, truditional spelling, distance, or default (funsort)
 		columns := []string{"id", "trud", "dist"}
 		for _, s := range columns {
 			if urlQ["sortby"][0] == s {
@@ -107,8 +105,6 @@ COALESCE(flaagd, 'false')
 		}
 	}
 	t.args.Start = start
-
-	// set next page and current page query strings
 	t.args.NextPage += "&start=" + strconv.Itoa(start+num)
 	t.args.CurrentPage += "&start=" + strconv.Itoa(start)
 
@@ -119,18 +115,12 @@ COALESCE(flaagd, 'false')
 		t.args.PreviousPage = ""
 	}
 
-	// // flag row if URL contains query string for id
-	// if urlQ["id"] != nil {
-	// 	dbconnect.FlagRow(urlQ["id"][0])
-	// }
-
-	// see if next page button should be hidden because there's no more results
+	// see if next page link should be hidden because there's no more results
 	numrows := dbconnect.CountRows(wordsQueryFrom)
 	if numrows < start+num {
 		t.args.NextPage = ""
 	}
-	// if the number of rows returned is less than the starting number, the starting number is too high
-	// and backwards results navigation should be disabled
+	// if num rows returned less than start num, disable previous page link
 	if numrows < start {
 		t.args.PreviousPage = ""
 	}

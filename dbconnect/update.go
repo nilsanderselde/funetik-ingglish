@@ -221,6 +221,12 @@ func UpdateDist(row *sql.Rows, db *sql.DB) {
 
 // UpdateAllAutoValues automatically generates values for all rows
 // (About 15 minutes with all tasks enabled and 50,000 words)
-func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd bool) {
-	UpdateAutoValues(fun, numsil, funsort, dist, onlyFlaagd, -1)
+func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
+	UpdateAutoValues(fun, numsil, funsort, dist, false, -1)
+}
+
+// UpdateFlaggedAutoValues automatically generates values for all flaagd rows
+// (About 15 minutes with all tasks enabled and 50,000 words)
+func UpdateFlaggedAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
+	UpdateAutoValues(fun, numsil, funsort, dist, true, -1)
 }

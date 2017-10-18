@@ -31,7 +31,6 @@ func main() {
 
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("./static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
-
 	http.Handle("/", &templateHandler{filenames: []string{"home.html"}})
 	http.Handle("/kybord", &templateHandler{filenames: []string{"kbd.html"}})
 	http.Handle("/woordz", &templateHandler{filenames: []string{"words.html", "words_sorted.html"}})
