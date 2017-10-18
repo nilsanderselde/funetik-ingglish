@@ -27,8 +27,21 @@ const (
 
 func handleWordList(t *templateHandler, r *http.Request) {
 
+	// SQL query split into two parts because the FROM section is used twice
+	wordsQuery := `SELECT id,
+COALESCE(COALESCE(ritin, fun), '') as fun,
+COALESCE(funsil, ''),
+COALESCE(trud, ''),
+COALESCE(pus, ''),
+COALESCE(numsil, '0'),
+COALESCE(dist, '0'),
+COALESCE(funsort, ''),
+COALESCE(flaagd, 'false')
+`
+	wordsQueryFrom := "FROM words" //tshekt != true` // split up because two queries must use this part
+
 	// put two pieces of postgres query together
-	t.args.PQuery = t.query + t.queryFrom
+	t.args.PQuery = wordsQuery + wordsQueryFrom
 
 	// reset prev page to force templateHandler to recreate it if needed
 	t.args.PreviousPage = ""
@@ -112,14 +125,12 @@ func handleWordList(t *templateHandler, r *http.Request) {
 	// }
 
 	// see if next page button should be hidden because there's no more results
-	numrows := dbconnect.CountRows(t.queryFrom)
+	numrows := dbconnect.CountRows(wordsQueryFrom)
 	if numrows < start+num {
 		t.args.NextPage = ""
 	}
 	// if the number of rows returned is less than the starting number, the starting number is too high
-	// and backwards results navigation should also be disabled (this would only achievable by manually
-	// entering a huge starting number, but due to the growing nature of the database, setting a hard limit
-	// to start doesn't make sense)
+	// and backwards results navigation should be disabled
 	if numrows < start {
 		t.args.PreviousPage = ""
 	}

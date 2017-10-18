@@ -4,6 +4,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
 	"strings"
@@ -18,8 +19,6 @@ type templateHandler struct {
 	once      sync.Once
 	filenames []string
 	templ     *template.Template
-	query     string
-	queryFrom string
 	args      global.TemplateParams
 }
 
@@ -53,7 +52,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.TranslitOutput = outStruct.OutputLines
 		t.args.TranslitInput = outStruct.PrevInput
 	}
-
 	displayOrth(t, r, additive)
 
 	t.once.Do(func() {
@@ -68,7 +66,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		}
 		t.filenames = append(t.filenames, "templates/_header.html", "templates/_footer.html")
 		t.templ = template.Must(template.New(templateName).Funcs(funcMap).ParseFiles(t.filenames...))
-		// fmt.Println("Parsing", t.filenames)
+		fmt.Println("Parsing", t.filenames)
 	})
 	t.templ.Execute(w, t.args)
 }

@@ -25,27 +25,16 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	// Load database connection info and calculate data for stats page
 	dbconnect.DBInfo = dbconnect.GetDBInfo()
-
 	dbconnect.StatsInit()
-
-	wordsQuery := `SELECT id,
-COALESCE(COALESCE(ritin, fun), '') as fun,
-COALESCE(funsil, ''),
-COALESCE(trud, ''),
-COALESCE(pus, ''),
-COALESCE(numsil, '0'),
-COALESCE(dist, '0'),
-COALESCE(funsort, ''),
-COALESCE(flaagd, 'false')
-`
-	wordsQueryFrom := `FROM words` //tshekt != true` // split up because two queries must use this part
 
 	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("./static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
+
 	http.Handle("/", &templateHandler{filenames: []string{"home.html"}})
 	http.Handle("/kybord", &templateHandler{filenames: []string{"kbd.html"}})
-	http.Handle("/woordz", &templateHandler{filenames: []string{"words.html", "words_sorted.html"}, query: wordsQuery, queryFrom: wordsQueryFrom})
+	http.Handle("/woordz", &templateHandler{filenames: []string{"words.html", "words_sorted.html"}})
 	http.Handle("/staats", &templateHandler{filenames: []string{"stats.html"}})
 	http.Handle("/traanzlit", &templateHandler{filenames: []string{"translit.html"}})
 	http.Handle("/ubaawt", &templateHandler{filenames: []string{"about.html"}})
