@@ -41,8 +41,8 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			http.NotFound(w, r)
 			return
 		}
-	case "about.html":
-		t.args.SingleOrth = true
+	// case "about.html":
+	// 	t.args.SingleOrth = true
 	case "words.html":
 		handleWordList(t, r)
 		additive = true

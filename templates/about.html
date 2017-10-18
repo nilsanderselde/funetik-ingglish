@@ -1,7 +1,7 @@
 {{define "about.html"}}
 {{template "_header.html" .}}
 <main>
-
+{{if .DisplayTrud}}
 <h1>About</h1>
 
 <p>To populate the Funetik Inggliš (FI) database with words and their phonetic representations, I used several sources,
@@ -285,6 +285,267 @@ See the License for the specific language governing permissions and
 limitations under the License.</pre>
 <nav class="toTop"><a href="#top">🡅 Top 🡅</a></nav>
 </article>
+
+{{else}}
+
+<h1>Ubäwt</h1>
+<p><em>(Dhis peidž wuz tränslitøreitid ywzing dhis sait's twl.)</em></p>
+<p>Tw papyøleit dhu Funetik Inggliš (FI) deitubeis with wørdz änd dher funetik repruzinteišinz, Ai ywzd sevørul sorsiz, thry with džust dhu Inggliš speling änd wun dhät also kunteind funetik deitu.</p>
+
+<p>Ai pørformd SQL intørsekšinz an dhu deitu, tw aidentifai wørdz witš upird in multipul sorsiz äz importint wørdz tw inklwd in dhis inišul wørd deitubeis, witš Ai hop wil kuntinyw tw gro.</p>
+
+<p>Ai wød laik tw ekspänd dhis sait tw al ywzørz tw kryeit ukäwnts änd submit dher on pronunsyeišinz uv wørdz, lingkt tw dher demigräfik deitu.</p>
+
+<p>Dher ar laikly stil inäkyørut funetik repruzinteišinz in dhu deitubeis, aidhør frum dhu sors mutiryul or frum en ovør-rytšing regyølør eksprešin beist SQL updeit steitmint witš tšeindžd tw meny thingz. En egzämpul uv dhis waz tšeindžing wørdz laik "kampitišin," witš waz repruzentid äz "K AA2 M P AH0 T IH1 SH AH0 N" in dhu CMU list, witš wød by "kamputišun" in FI. Ai dymd it mor äkyørit tw rait dhis äz "kampitišin." Dhu først instins uv schwa äftør "kamp" kød ferly by aidhør 'ʌ' or 'ɪ,' Ai thingk, but dhu fainul väwul bifor 'n' šød definitly by 'ɪ,' nat 'ʌ,' äz 'ʌ' in dhis puzišin säwndz änd fylz akwørd. Simply ripleising al wørdz ending in -un with -in wødn't wørk, dho, äz dhu wørd "fun" wød bikum "fin." Dherfor, u mor nwanst uprotš änd u lat uv prwfryding waz rikwaiørd.</p>
+
+<p>Wail dhät iz u symingly mainør tšeindž, udhør tšeindžiz wør <span class="straikthrw">brɔdør</span> bradør. For instins, in dhu intrist uv rufaining en eligint orthagrufy, Ai ilektid nat tw inklwd dhu opin-mid bäk räwndid väwul (ɔ,) prezint in Umerikin Inggliš spykørz withäwt dhu <a href="https://en.wikipedia.org/wiki/Cot%E2%80%93caught_merger" target="_blank">cot–caught mørdžør</a>. Dhu CMU athørz evidintly did prunäwns wørdz with dhis väwul, änd äz sutš Ai häd tw ripleis 'ɔ' with 'o' or 'u.' Dhu CMU athørz ywzd 'ɔ' for both "almost" (AO1 L M OW2 S T) änd "wor" (W AO1 R.)</p>
+
+<p>Wail diskriptiv grämør iz dhu only wei tw go (mai idiolect iz sørtinly nat "betør,)" Ai häd tw tšwz wun wei tw rait ytš wørd for dhu pørpusiz uv dhis that ekspirimint. Äz lang äz it's kunsistint, it's betør dhän dhu umälgum uv historikul äksidints witš iz äwør kørint orthagrufy.</p>
+
+<h2 id="top">Kredits</h2>
+<section>
+    <ul>
+        <li><a href="#cmu">Dhu CMU Prunäwnsing Dikšinery</a></li>
+        <li><a href="#dwyl">english-wørdz frum dwyl an github</a></li>
+        <li><a href="#silorg">wordsEn.txt frum sil.org</a></li>
+        <li><a href="#contractions">Wikipedia: List uv Inggliš kunträkšinz</a></li>
+        <li><a href="#pos">Part uv Spytš Deitubeis an GitHub</a></li>
+        <li><a href="#nltk">NLTK Distins Metriks</a></li>
+    </ul>
+</section>
+<article>
+    <h2 id="cmu">Dhu CMU Prunäwnsing Dikšinery</h2>
+<p>Sors uv pronunsyeišin deitu witš waz substänšuly reformatted intw u mor rydubul formät, with simbulz for stres änd silubul bäwndøryz ripleising dhu sistum uv numbørz.</p>
+
+<p>Most uv dhu funetik transliterations for Funetik Inggliš wør udäptid frum or ät lyst kumperd ugenst dhu CMU Prunäwnsing Dikšinery. Ai only ywzd ubäwt u thørd uv dher deitu, änd meid sevørul brad tšeindžiz ufekting al or meny uv dhu wørdz tw meik dhem kunsistint with dhu funeticization Ai that kød reprizent u dženørul Umerikin äksent. Dhu tšeindžiz Ai meid wør informd bai mai on intuitions änd idiolect, äz wel äz wut Ai lørnd in mai study uv linggwistiks, but nat beist an u lardž sämpling uv spykør deitu.</p> 
+
+<ul>
+    <li><a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict">CMU Prunäwnsing Dikšinery (website)</a></li>
+    <li><a href="https://raw.githubusercontent.com/aparrish/rwet-examples/master/pronouncing/cmudict-0.7b">CMU Prunäwnsing Dikšinery (deitu)</a></li>
+</ul>
+
+<h3>Laisinz</h3>
+<pre>CMUdict -- Meidžør Vøržin: 0.07 
+
+Kapyrait (C) 1993-2015 Karnegy Mellon Ywnivørsity. Al raits rizørvd. 
+
+Rydistribywšin änd ywz in sors änd bainury formz, with or withäwt 
+madifikeišin, ar pørmitid pruvaidid dhät dhu faloing kundišinz 
+ar met: 
+
+1. Redistributions uv sors kod must ritein dhu ubuv kapyrait 
+notis, dhis list uv kundišinz änd dhu faloing diskleimør. 
+Dhu kantents uv dhis fail ar dymd tw by sors kod. 
+
+2. Redistributions in bainury form must ryprudws dhu ubuv kapyrait 
+notis, dhis list uv kundišinz änd dhu faloing diskleimør in 
+dhu dakyømenteišin änd/or udhør mutiryulz pruvaidid with dhu 
+distribywšin. 
+
+Dhis wørk waz suportid in part bai funding frum dhu Difens Ädvänst 
+Rysørtš Pradžekts Eidžinsy, dhu Afis uv Neivul Rysørtš änd dhu Näšinul 
+Saiins Fäwndeišin uv dhu Ywnaitid Steits uv Umeriku, änd bai membør 
+kumpunyz uv dhu Karnegy Mellon Sfingks Spytš Kunsoršyum. Wy äknalidž 
+dhu kantribywšinz uv meny valuntirz tw dhu ekspänšin änd imprwvmint uv 
+dhis dikšinery. 
+
+DHIS SAFTWER IZ PRUVAIDID BAI KARNEGY MELLON YWNIVØRSITY ``ÄZ IZ'' ÄND 
+ENY IKSPREST OR IMPLAID WORUNTYZ, INKLWDING, BUT NAT LIMITID TW, 
+DHU IMPLAID WORUNTYZ UV MERCHANTABILITY ÄND FITNIS FOR U PØRTIKYØLØR 
+PØRPIS AR DISKLEIMD. IN NO EVENT ŠÄL KARNEGY MELLON YWNIVØRSITY 
+NOR ITS EMPLOIYZ BY LAIUBUL FOR ENY DØREKT, INDØREKT, INSIDENTUL, 
+SPEŠUL, IGZEMPLØRY, OR KANSUKWENŠUL DÄMUDŽIZ (INKLWDING, BUT NAT 
+LIMITID TW, PROKYØRMINT UV SUBSTITWT GUDZ OR SØRVISIZ; LAS UV YWZ, 
+DEITU, OR PRAFITS; OR BIZNIS INTØRUPŠIN) HÄWEVØR KAZD ÄND AN ENY 
+THIRY UV LAIIBILITY, WEDHØR IN KANTRÄKT, STRIKT LAIIBILITY, OR TORT 
+(INKLWDING NEGLIDŽINS OR UDHØRWAIZ) ØRAIZING IN ENY WEI ÄWT UV DHU YWZ 
+UV DHIS SAFTWER, YVIN IF ÄDVAIZD UV DHU PASIBILITY UV SUTŠ DÄMIDŽ.</pre>
+<nav class="toTop"><a href="#top">🡅 Tap 🡅</a></nav>
+</article>
+
+
+<article>
+    <h2 id="dwyl">english-wørdz frum dwyl an github</a></h2>
+    <p>GitHub ywzør dwyl reformatted u list uv wørdz øridžinuly frum Pradžekt Gutenberg.</p>
+
+
+    <ul>
+        <li><a href="https://github.com/dwyl/english-words" target="_blank">GitHub rypazitory for dwyl/english-wørdz</a></li>
+        <li><a href="https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt" target="_blank">english-wørdz (deitu)</a></li>
+        <li><a href="https://github.com/dwyl/english-words/blob/master/LICENSE.md" target="_blank">Laisinz for english-wørdz</a></li>
+    </ul>
+
+    <h3>Øridžinul Deitu Sorsiz</h3> 
+    <pre>
+    <a href="http://www.gutenberg.org/etext/3201" target="_blank">http://www.gutenberg.org/etext/3201</a>
+
+Moby Wørd Lists bai Grady Word 
+
+Help 
+Bibliographic Rekørd [help] Kryeitør Word, Grady 
+Taitul Moby Wørd Lists 
+Länggwidž Inggliš 
+LoC Kläs PS: Länggwidž änd Literatures: Umerikin litøritšør 
+EText-No. 3201 
+Rilys Deit 2002-05-01 
+Kapyrait Stätis Nat kapyraitid in dhu Ywnaitid Steits. If yw laiv elswer tšek dhu laz uv yør kuntry bifor däwnloding dhis ebook. 
+
+Moby Thusarus List bai Grady Word 
+<a href="http://www.gutenberg.org/etext/3202" target="_blank">http://www.gutenberg.org/etext/3202</a>
+Kryeitør Word, Grady 
+Taitul Moby Thusarus List 
+Länggwidž Inggliš 
+LoC Kläs PS: Länggwidž änd Literatures: Umerikin litøritšør 
+EText-No. 3202 
+Rilys Deit 2002-05-01 
+Kapyrait Stätis Nat kapyraitid in dhu Ywnaitid Steits. If yw laiv elswer tšek dhu laz uv yør kuntry bifor däwnloding dhis ebook.</pre>
+
+<nav class="toTop"><a href="#top">🡅 Tap 🡅</a></nav>
+</article>
+
+<article>
+    <h2 id="silorg">wordsEn.txt frum sil.org</h2>
+    
+        <p>U list uv 109582 Inggliš wørdz kumpaild änd kørektid in 1991 frum lists ubteind frum dhu Interociter bulitin bord. Dhu øridžinul read.me fail sed dhät dhu list keim frum Publik Bränd Saftwer.</p>
+        <p>Dhis wørd list inklwdz inflektid formz, sutš äz plurul näwnz änd dhu -s, -ed änd -ing formz uv vørbz. Dhus dhu numbør uv leksikul stemz repruzentid in dhu list iz kunsidøribly smalør dhän dhu totul numbør uv wørdz.</p>
+        
+            <ul>
+                <li><a href="http://www-01.sil.org/linguistics/wordlists/english/" target="_blank">Diskripšin uv wordsEn.txt</a></li>
+                <li><a href="http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt" target="_blank">wordsEn.txt (deitu)</a></li>
+           </ul>
+        
+            <nav class="toTop"><a href="#top">🡅 Tap 🡅</a></nav>
+       </article>
+        
+        <article>
+            <h2 id="contractions">Wikipedia: List uv Inggliš kunträkšinz</h2>
+            <p>Dhu fyw kunträkšinz dhät alredy wør prezint in dhu wørd deitubeis wør agmentid with dhis list uv kunträkšinz.</p>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Wikipedia:List_of_English_contractions" target="_blank">List uv Inggliš kunträkšinz</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Kryeitiv Kaminz Ätribywšin-ShareAlike 3.0 Unported Laisinz</a></li>
+           </ul>
+    
+        
+        <nav class="toTop"><a href="#top">🡅 Tap 🡅</a></nav>
+   </article>
+    
+    <article>
+        <h2 id="pos">Part uv Spytš Deitubeis an GitHub</h2>
+        
+            <p>Dhis iz u greit list uv wørdz with simbulz for wut part uv spytš dhei kän by.</p>
+            <p>Ai stil nyd tw meik šør dhät wer hamunimz ar nat homophonic (e.g. dhu vørb änd näwn "rekørd,)" dhu part(s)-uv-spytš entry iz split upropryitly.</p>
+            <p>Also, nat al wørdz ar kørintly tägd with part(s)-uv-spytš.</p>
+            
+                <ul>
+                    <li><a href="https://github.com/en-wl/wordlist/blob/master/pos/README" target="_blank">Readme for Parts uv Spytš Deitubeis</a></li>
+                    <li><a href="https://raw.githubusercontent.com/en-wl/wordlist/master/pos/part-of-speech.txt" target="_blank">Parts uv Spytš Deitubeis</a></li>
+                </ul>
+            
+                <pre>Part Uv Spytš Deitubeis 
+Džwlai 23, 2000 
+
+Kumpaild bai Kevin Atkinson &lt;kevina@users.sourceforge.net&gt;
+
+Dhu part-uv-speech.txt fail kunteinz iz u kambineišin uv 
+"Moby (tm) Part-uv-Spytš II" änd dhu WordNet deitubeis. 
+
+KAPYRAIT 
+
+Dhu Moby deitubeis waz iksplisitly plyzd in dhu publik domein: 
+
+Dhu Moby leksikan pradžekt iz kumplyt änd häz 
+bin pleis intw dhu publik domein. Ywz, sel, 
+rywørk, eksørpt änd ywz in eny wei an eny plätform. 
+
+Pleising dhis mutiryul an intørnul or publik sørvørz iz 
+also enkøridžd. Dhu kumpailør iz nat uwer uv eny 
+eksport rystrikšinz so fryly distribywt wørld-waid. 
+
+Yw kän verivai dhu publik domein stätis bai kantäkting 
+
+Grady Word 
+3449 Marthu Kart. 
+Arcata, KU 95521-4884 
+
+grady@netcom.com 
+grady@northcoast.com 
+
+
+Dhu WordNet deitubeis iz undør dhu faloing Kapyrait: 
+
+Dhis saftwer änd deitubeis iz bying pruvaidid tw yw, dhu LAISINSY, bai 
+Prinstin Ywnivørsity undør dhu faloing laisinz. Bai ubteining, ywzing 
+änd/or kapying dhis saftwer änd deitubeis, yw ugry dhät yw häv 
+red, undørstud, änd wil kumplai with dhyz tørmz änd kundišinz:. 
+
+Pørmišin tw ywz, kapy, madifai änd distribywt dhis saftwer änd 
+deitubeis änd its dakyømenteišin for eny pørpis änd withäwt fy or 
+roiulty iz hirbai gräntid, pruvaidid dhät yw ugry tw kumplai with 
+dhu faloing kapyrait notis änd steitmints, inklwding dhu diskleimør, 
+änd dhät dhu seim upir an AL kapyz uv dhu saftwer, deitubeis änd 
+dakyømenteišin, inklwding madifikeišinz dhät yw meik for intørnul 
+ywz or for distribywšin. 
+
+WordNet 1.6 Kapyrait 1997 bai Prinstin Ywnivørsity. Al raits rizørvd. 
+
+DHIS SAFTWER ÄND DEITUBEIS IZ PRUVAIDID "ÄZ IZ" ÄND PRINSTIN 
+YWNIVØRSITY MEIKS NO REPRUZINTEIŠINZ OR WORUNTYZ, EKSPRES OR 
+IMPLAID. BAI WEI UV EGZÄMPUL, BUT NAT LIMITEIŠIN, PRINSTIN 
+YWNIVØRSITY MEIKS NO REPRUZINTEIŠINZ OR WORUNTYZ UV MØRTŠINT- 
+UBILITY OR FITNIS FOR ENY PØRTIKYØLØR PØRPIS OR DHÄT DHU YWZ 
+UV DHU LAISINST SAFTWER, DEITUBEIS OR DAKYØMENTEIŠIN WIL NAT 
+INFRINDŽ ENY THØRD PARTY PÄTINTS, KAPYRAITS, TREIDMARKS OR 
+UDHØR RAITS. 
+
+Dhu neim uv Prinstin Ywnivørsity or Prinstin mei nat by ywzd in 
+ädvørtaizing or publisity pørteining tw distribywšin uv dhu saftwer 
+änd/or deitubeis. Taitul tw kapyrait in dhis saftwer, deitubeis änd 
+eny usošyeitid dakyømenteišin šäl ät al taimz rimein with 
+Prinstin Ywnivørsity änd LAISINSY ugryz tw prizørv seim. 
+
+Ai usain no udišinul kapyrait tw dhu kumbaind deitubeis änd dhu 
+saftwer iz iksplisitly bying plyzd in dhu publik domein. Häwevør, Ai 
+wød upryšyeit kredit for mai wørk.</pre>
+<nav class="toTop"><a href="#top">🡅 Tap 🡅</a></nav>
+
+</article>
+
+
+<article>
+<h2 id="nltk">NLTK Distins Metriks</h2>
+
+<p>Ai beist mai implimenteišin for kälkyøleiting Levenshtein distins an dhu Paithan implimenteišin in dhu Nätšørul Länggwidž Toolkit, part uv dhu nltk.metrics.distance madžwl.</p>
+
+<ul>
+    <li><a href="http://www.nltk.org/_modules/nltk/metrics/distance.html" target="_blank">NLTK Distins Metriks madžwl</a></li>
+</ul>
+
+<pre>Kapyrait (C) 2001-2017 NLTK Pradžekt 
+Athør: Edwørd Lopør &lt;edloper@gmail.com> 
+Styvin Børd &lt;stevenbird1@gmail.com> 
+Tam Lippincott &lt;tom@cs.columbia.edu> 
+URL:  &lt;<a href="http://nltk.org/" target="_blank">http://nltk.org/</a>&gt;
+For laisinz inførmeišin, sy LICENSE.TXT 
+
+LICENSE.TXT 
+
+Kapyrait (C) 2001-2014 NLTK Pradžekt 
+
+Laisinst undør dhu Upätšy Laisinz, Vøržin 2.0 (dhu 'Laisinz;)' 
+yw mei nat ywz dhis fail eksept in kumplaiins with dhu Laisinz. 
+Yw mei ubtein u kapy uv dhu Laisinz ät 
+
+<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/laisinsiz/LAISINZ-2.0</a>
+
+Unles rikwaiørd bai äplikubul la or ugryd tw in raiting, saftwer 
+distribyutid undør dhu Laisinz iz distribyutid an en 'ÄZ IZ' BEISIS, 
+WITHÄWT WORUNTYZ OR KUNDIŠINZ UV ENY KAIND, aidhør ekspres or implaid. 
+Sy dhu Laisinz for dhu spusifik länggwidž guvørning pørmišinz änd 
+limiteišinz undør dhu Laisinz.</pre>
+<nav class="toTop"><a href="#top">🡅 Tap 🡅</a></nav>
+</article>
+
+{{end}}
 
 </main>
 {{template "_footer.html"}}
