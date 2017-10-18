@@ -40,7 +40,7 @@ COALESCE(flaagd, 'false')
 `
 	wordsQueryFrom := `FROM words` //tshekt != true` // split up because two queries must use this part
 
-	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))))
+	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("./static")))))
 	http.HandleFunc("/favicon.ico", faviconHandler)
 	http.Handle("/", &templateHandler{filenames: []string{"home.html"}})
 	http.Handle("/kybord", &templateHandler{filenames: []string{"kbd.html"}})
