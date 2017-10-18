@@ -7,19 +7,19 @@
 <table id="words">
     <tr>
         {{/*<th id="id">
-            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
+            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if eq .SortBy "id"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>*/}}
         <th id="nw">
-            <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Character order:
-aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">New Spelling</span>{{if .New}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=funsort&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Character order:
+aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">New Spelling</span>{{if eq .SortBy "funsort"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="old">
-            <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Character order:
-abcdefghijklmnopqrstuvwxyz" class="info above">Old Spelling</span>{{if .Old}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=trud&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Character order:
+abcdefghijklmnopqrstuvwxyz" class="info above">Old Spelling</span>{{if eq .SortBy "trud"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="dist">
             <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Min # of changes 
-to get from old to new" class="info above">Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
+to get from old to new" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
             <span data-title="Part of Speech" class="info above nolink hover">PoS</span>
@@ -36,19 +36,19 @@ to get from old to new" class="info above">Dist</span>{{if .Dist}}<i>{{if .Rever
 <table id="words">
     <tr>
         {{/*<th id="id">
-            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if .ID}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
+            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if eq .SortBy "id"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>*/}}
         <th id="nw">
-            <a href="?sortby=new&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Keriktør ordør: 
-aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">Nw Speling</span>{{if .New}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=funsort&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Keriktør ordør: 
+aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">Nw Speling</span>{{if eq .SortBy "funsort"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="old">
-            <a href="?sortby=old&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Keriktør ordør: 
-abcdefghijklmnopqrstuvwxyz" class="info above">Old Speling</span>{{if .Old}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=trud&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Keriktør ordør: 
+abcdefghijklmnopqrstuvwxyz" class="info above">Old Speling</span>{{if eq .SortBy "trud"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="dist">
             <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Min # uv tšendžiz 
-tw get frum old tw nw" class="info above">Dist</span>{{if .Dist}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
+tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
             <span data-title="Part uv Spytš" class="info above nolink hover">PuS</span>

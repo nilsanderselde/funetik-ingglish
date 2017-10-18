@@ -6,26 +6,33 @@ package global
 // TemplateParams encapsulates data to be
 // passed to mapped functions in templates
 type TemplateParams struct {
-	New            bool
-	Old            bool
-	Dist           bool
-	ID             bool
-	Reverse        bool
-	Query          string
-	Start          int
-	Num            int
-	Sort           string
-	CurrentPage    string
-	ChangeOrth     string
-	NextPage       string
-	PreviousPage   string
-	Words          [][]string
+	// words page
+	SortBy  string
+	Reverse bool
+	Start   int
+	Num     int
+
+	Words  [][]string
+	SortQ  string
+	PQuery string
+
+	NextPage     string
+	PreviousPage string
+	// end words page
+
+	//translit page
 	TranslitOutput []string
 	TranslitInput  string
-	DisplayTrud    bool
-	KbdVer         string
-	Kbd            [][][]string
-	SingleOrth     bool
+
+	// kbd page
+	KbdVer string
+	Kbd    [][][]string
+
+	// all pages
+	CurrentPage string
+	SingleOrth  bool
+	ChangeOrth  string
+	DisplayTrud bool
 }
 
 var (

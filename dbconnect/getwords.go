@@ -14,7 +14,7 @@ import (
 
 // ShowWords calls the database io function and passes arguments to template
 func ShowWords(args global.TemplateParams) [][]string {
-	return GetWords(args.Query, args.Start, args.Num)
+	return GetWords(args.PQuery, args.Start, args.Num)
 }
 
 // GetWords receives SQL requests and returns requested data from the database. This package will not be shared in the repository for security reasons.
