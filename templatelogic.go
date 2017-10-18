@@ -34,23 +34,37 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	var additive bool
 
 	switch filename {
+	case "about.html":
+		t.args.TitleTrud = "About"
+		t.args.TitleFun = "Ubäwt"
 	case "home.html":
 		if r.URL.Path != "/" {
 			http.NotFound(w, r)
 			return
 		}
-	case "words.html":
-		handleWordList(t, r)
-		additive = true
+		t.args.TitleTrud = "Home"
+		t.args.TitleFun = "Hom"
 	case "kbd.html":
 		pickKeyboard(t, r)
 		additive = true
+		t.args.TitleTrud = "Keyboard"
+		t.args.TitleFun = "Kybord"
+	case "stats.html":
+		t.args.TitleTrud = "Stats"
+		t.args.TitleFun = "Stäts"
 	case "translit.html":
 		cha := make(chan dbconnect.Output)
 		go dbconnect.ProcessTrud(cha, r)
 		outStruct := <-cha
 		t.args.TranslitOutput = outStruct.OutputLines
 		t.args.TranslitInput = outStruct.PrevInput
+		t.args.TitleTrud = "Transliterator"
+		t.args.TitleFun = "Tränzlitøreitør"
+	case "words.html":
+		handleWordList(t, r)
+		additive = true
+		t.args.TitleTrud = "Words"
+		t.args.TitleFun = "Wørdz"
 	}
 	displayOrth(t, r, additive)
 

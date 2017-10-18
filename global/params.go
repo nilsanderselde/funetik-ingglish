@@ -33,6 +33,8 @@ type TemplateParams struct {
 	SingleOrth  bool
 	ChangeOrth  string
 	DisplayTrud bool
+	TitleTrud   string
+	TitleFun    string
 }
 
 var (
