@@ -3,3 +3,5 @@ Thumbs.db
 npm-debug.log
 /db
 funetik-ingglish
+build.ps1
+deploy.py
