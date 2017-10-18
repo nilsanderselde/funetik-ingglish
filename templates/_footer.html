@@ -1,7 +1,11 @@
 {{define "_footer.html"}}
 </div>
 <footer>
-    <p>Copyright &copy; 2017 <a href="https://gitlab.com/nilsanderselde/funetik-ingglish" target="_blank">Nils Elde</a><span class="separator"> | </span><a href="/ubaawt">Credits and Licenses</a>
+    {{if .DisplayTrud}}
+    <p>Site, images, most of the source code, and data formatting/editing (<a href="/ubaawt">except where noted</a>) by Nils Elde and under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="blank">no copyright</a>.</p>
+    {{else}}
+    <p>Sait, imidžiz, most uv dhu sors kod, änd deitu formatting/editing (<a href="/ubaawt">eksept wer notid</a>) bai Nils Elde änd undør <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="blank">no kapyrait</a>.</p>
+    {{end}}
 </footer>
 </body>
 </html>

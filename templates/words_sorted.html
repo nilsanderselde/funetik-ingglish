@@ -6,9 +6,7 @@
         <tr class="no-results"><td colspan="6"><span><a href="\"><i>😂</i> nuthin hyr läl <i>😭</i></a></span></td></tr>
         {{else}}
         <tr>
-            {{/*<td>
-                <a href="edit?id={{index . 0}}" data-title="Edit dhis row" class="info toright">{{index . 0}}</a>
-            </td>*/}}
+            <td>{{/*<a href="edit?id={{index . 0}}" data-title="Edit dhis row" class="info toright">*/}}{{index . 0}}{{/*</a>*/}}</td>
             <td><span data-title="{{index . 2}}" class="info toright nolink hover">{{index . 1}}</span>{{/*a href="{{$curr}}&id={{index . 0}}&r={{$rand}}#{{index . 0}}" data-title="Fläg dhis listing for editing" id="{{index . 0}}" class="icon info toright">{{if eq (index . 7) "true"}}🏴{{else}}🏳️{{end}}</a>*/}}</td>
             <td><a href="https://www.merriam-webster.com/dictionary/{{index . 3}}" target="_blank">{{index . 3}}</a></td>
             <td>{{index . 4}}</td>
