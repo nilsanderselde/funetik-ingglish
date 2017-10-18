@@ -26,7 +26,8 @@ func faviconHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	dbconnect.DBInfo = dbconnect.GetDBInfo()
-	// dbconnect.RestoreBackup()
+
+	dbconnect.StatsInit()
 
 	wordsQuery := `SELECT id,
 COALESCE(COALESCE(ritin, fun), '') as fun,
