@@ -35,14 +35,13 @@ func handleWordList(t *templateHandler, r *http.Request) {
 
 	urlQ := r.URL.Query()
 
-	// // if set to update automatically generated values
-	{ // if urlQ["updeit"] != nil {
-		// 	if urlQ["updeit"][0] == "al" {
-		// 		dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, false)
-		// 	} else if urlQ["updeit"][0] == "flaagd" {
-		// 		dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, true)
-		// 	}
-		// }
+	// if set to update automatically generated values
+	if urlQ["updeit"] != nil {
+		/*if urlQ["updeit"][0] == "al" {
+			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, false)
+		} else */if urlQ["updeit"][0] == "flaagd" {
+			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, true)
+		}
 	}
 
 	// column to sort by
