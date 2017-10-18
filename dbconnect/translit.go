@@ -118,7 +118,7 @@ func getFun(trud string) (fun string) {
 	// as long as last character is punctuation, add it to trailing symbol string
 	// and remove it from word string (trud)
 	for len(trudR) > 1 && (unicode.IsPunct(trudR[len(trudR)-1]) || unicode.IsSymbol(trudR[len(trudR)-1])) {
-		trailing += string(trudR[len(trudR)-1])
+		trailing = string(trudR[len(trudR)-1]) + trailing
 		trudR = trudR[0 : len(trudR)-1]
 		// fmt.Printf("{%s},{%s}\n", string(trudR), trailing)
 	}
