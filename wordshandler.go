@@ -45,96 +45,83 @@ func handleWordList(t *templateHandler, r *http.Request) {
 		// }
 	}
 
-	// if set to sort by value
+	// column to sort by
+	sortby := "funsort"
 	if urlQ["sortby"] != nil {
 		// sort by id, truditional spelling, distance, or default (funsort)
 		columns := []string{"id", "trud", "dist"}
-		sortby := "funsort"
 		for _, s := range columns {
 			if urlQ["sortby"][0] == s {
 				sortby = s
 			}
 		}
-		t.args.SortBy = sortby
-		t.args.SortQ = "?sortby=" + sortby
-		t.args.PQuery += " ORDER BY " + sortby
 	}
+	t.args.SortBy = sortby
+	t.args.SortQ = "?sortby=" + sortby
+	t.args.PQuery += " ORDER BY " + sortby
+
 	// ascending or descending
+	order := "asc"
 	if urlQ["order"] != nil {
 		reverse := "desc"
-		order := "asc"
 		if urlQ["order"][0] == reverse {
 			order = reverse
 			t.args.Reverse = true
 		} else {
 			t.args.Reverse = false
 		}
-		t.args.PQuery += " " + order + ", id " + order + ";"
-		t.args.SortQ += "&order=" + order
 	}
+	t.args.PQuery += " " + order + ", id " + order + ";"
+	t.args.SortQ += "&order=" + order
 
-	// if there is a valid "num" query string...
+	// number of words per page
+	num := DefaultNum
 	if urlQ["num"] != nil {
-		// ...get the current value of it, preventing massive queries
-		currNum, err := strconv.Atoi(urlQ["num"][0])
-		if err != nil || currNum > 1000 {
-			currNum = DefaultNum
+		curr, err := strconv.Atoi(urlQ["num"][0])
+		if err == nil || curr <= 100 {
+			num = curr
 		}
-		// ...set the template's args object's value to it
-		t.args.Num = currNum
+	}
+	t.args.Num = num
+	t.args.NextPage = t.args.SortQ + "&num=" + strconv.Itoa(num)
+	t.args.CurrentPage = t.args.NextPage
 
-		// create the next page query string for the "next page" link
-		t.args.NextPage = t.args.SortQ + "&num=" + strconv.Itoa(currNum)
-		t.args.CurrentPage = t.args.NextPage
-
-		// if there is a valid "start" query string...
-		if urlQ["start"] != nil {
-
-			// ...get the current value of it
-			currStart, err := strconv.Atoi(urlQ["start"][0])
-			if err != nil {
-				currStart = 0
-			}
-			// ...set the template's args object's value to it
-			t.args.Start = currStart
-
-			// add to the next page query string
-			t.args.NextPage += "&start=" + strconv.Itoa(currStart+currNum)
-			t.args.CurrentPage += "&start=" + strconv.Itoa(currStart)
-			// if curr starting number >= num of words per page, add prev page button
-			if currStart >= currNum {
-				t.args.PreviousPage = t.args.SortQ + "&num=" + strconv.Itoa(currNum)
-				t.args.PreviousPage += "&start=" + strconv.Itoa(currStart-currNum)
-				// PreviousPage will be nil on first page of results
-			} else {
-
-			}
-		} else { // if there isn't a valid start query string, set starting position to 0 in both template's args and query string
-			t.args.Start = 0
-			t.args.NextPage += "&start=" + strconv.Itoa(0+DefaultNum)
-			t.args.CurrentPage += "&start=" + strconv.Itoa(0)
-			t.args.PreviousPage = ""
+	// offset from beginning of results
+	var start int
+	if urlQ["start"] != nil {
+		curr, err := strconv.Atoi(urlQ["start"][0])
+		if err == nil {
+			start = curr
 		}
-	} else { // if missing a valid "num" query string, set everything to defaults (start at 0, DefaultNum words per page)
-		t.args.Num = DefaultNum
-		t.args.Start = 0
-		// create the default nextpage query string for the "next page" link
-		t.args.NextPage = t.args.SortQ + "&num=" + strconv.Itoa(DefaultNum) + "&start=" + strconv.Itoa(0+DefaultNum)
-		t.args.CurrentPage = t.args.SortQ + "&num=" + strconv.Itoa(DefaultNum) + "&start=" + strconv.Itoa(0)
+	}
+	t.args.Start = start
+
+	// set next page and current page query strings
+	t.args.NextPage += "&start=" + strconv.Itoa(start+num)
+	t.args.CurrentPage += "&start=" + strconv.Itoa(start)
+
+	// if there is a previous page, create the query string for the link to it
+	if start >= num {
+		t.args.PreviousPage = t.args.SortQ + "&num=" + strconv.Itoa(num) + "&start=" + strconv.Itoa(start-num)
+	} else {
+		t.args.PreviousPage = ""
 	}
 
-	if urlQ["id"] != nil {
-		// if it's set to sort by "new"
-		id := urlQ["id"][0]
-		dbconnect.FlagRow(id)
-	}
+	// // flag row if URL contains query string for id
+	// if urlQ["id"] != nil {
+	// 	dbconnect.FlagRow(urlQ["id"][0])
+	// }
 
-	// see if next page button should be hidden before fetching rows
+	// see if next page button should be hidden because there's no more results
 	numrows := dbconnect.CountRows(t.queryFrom)
-	if numrows < t.args.Start+t.args.Num {
+	if numrows < start+num {
 		t.args.NextPage = ""
 	}
-	if numrows < t.args.Start {
+	// if the number of rows returned is less than the starting number, the starting number is too high
+	// and backwards results navigation should also be disabled (this would only achievable by manually
+	// entering a huge starting number, but due to the growing nature of the database, setting a hard limit
+	// to start doesn't make sense)
+	if numrows < start {
 		t.args.PreviousPage = ""
 	}
 }
