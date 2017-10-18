@@ -1,4 +1,3 @@
-@import "about";
 @import "anim";
 @import "headnavfoot";
 @import "info";
@@ -36,17 +35,23 @@ main {
     a:active {
         border-color: black;
     }
-}
-
-main {
     background-color: rgba(255, 255, 255, 0.2);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40vh, rgba(255, 255, 255, 0.86) 90vh, rgba(255, 255, 255, .5) 100vh);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40vh, rgba(255, 255, 255, 0.8) 80vh, rgba(255, 255, 255, .7) 100vh);
     background-attachment: fixed;
     padding: 10px;
     box-sizing: border-box;
     font-size: .8rem;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
-    color: #222;
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    $bgcolor: rgba(0, 0, 0, 0.2);
+    background: $bgcolor;
+    box-shadow: 0 0 5px 10px $bgcolor;
+    text-shadow: 2px 2px 2px $bgcolor;
+    margin-top: 20px;
 }
 
 
@@ -55,13 +60,15 @@ main {
 }
 main,
 header,
+footer,
 #orth,
 #words,
 #stats,
 #legend {
     max-width: 700px;
     width: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;    
     border-radius: 10px;  
 }
 
