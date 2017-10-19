@@ -4,7 +4,7 @@
 {{$random := Random}}
     {{range ShowWords .}}
         {{if eq (index . 0) "-1"}}
-        <tr class="no-results"><td colspan="6"><span><a href="\"><i>😂</i> nuthin hyr läl <i>😭</i></a></span></td></tr>
+        <tr class="no-results"><td colspan="{{if $isDev}}6{{else}}5{{end}}"><span><a href="\"><i>😂</i> nuthin hyr <i>😭</i></a></span></td></tr>
         {{else}}
         <tr>
             {{if $isDev}}<td>{{index . 0}}</td>{{end}}
