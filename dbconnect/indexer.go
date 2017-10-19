@@ -2,7 +2,6 @@ package dbconnect
 
 import (
 	"database/sql"
-	"fmt"
 	"log"
 	"strconv"
 
@@ -47,6 +46,4 @@ func IndexByInitial() {
 		}
 
 	}
-	fmt.Println(global.InitialIndex)
-
 }
