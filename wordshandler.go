@@ -40,8 +40,7 @@ COALESCE(funsort, ''),
 COALESCE(flaagd, 'false')
 `
 	wordsQueryFrom := "FROM words"
-	t.args.PQuery = wordsQuery + wordsQueryFrom
-
+	fullQuery := wordsQuery + wordsQueryFrom
 	// get URL query string
 	urlQ := r.URL.Query()
 
@@ -69,8 +68,8 @@ COALESCE(flaagd, 'false')
 		}
 	}
 	t.args.SortBy = sortby
-	t.args.SortQ = "?sortby=" + sortby
-	t.args.PQuery += " ORDER BY " + sortby
+	sortQ := "?sortby=" + sortby
+	fullQuery += " ORDER BY " + sortby
 
 	// ascending or descending
 	order := "asc"
@@ -83,8 +82,8 @@ COALESCE(flaagd, 'false')
 			t.args.Reverse = false
 		}
 	}
-	t.args.PQuery += " " + order + ", id " + order + ";"
-	t.args.SortQ += "&order=" + order
+	fullQuery += " " + order + ", id " + order + ";"
+	sortQ += "&order=" + order
 
 	// number of words per page
 	num := DefaultNum
@@ -95,8 +94,8 @@ COALESCE(flaagd, 'false')
 		}
 	}
 	t.args.Num = num
-	t.args.NextPage = t.args.SortQ + "&num=" + strconv.Itoa(num)
-	t.args.CurrentPage = t.args.NextPage
+	nextPage := sortQ + "&num=" + strconv.Itoa(num)
+	currentPage := t.args.NextPage
 
 	// offset from beginning of results
 	var start int
@@ -107,12 +106,12 @@ COALESCE(flaagd, 'false')
 		}
 	}
 	t.args.Start = start
-	t.args.NextPage += "&start=" + strconv.Itoa(start+num)
-	t.args.CurrentPage += "&start=" + strconv.Itoa(start)
+	nextPage += "&start=" + strconv.Itoa(start+num)
+	currentPage += "&start=" + strconv.Itoa(start)
 
 	// if there is a previous page, create the query string for the link to it
 	if start >= num {
-		t.args.PreviousPage = t.args.SortQ + "&num=" + strconv.Itoa(num) + "&start=" + strconv.Itoa(start-num)
+		t.args.PreviousPage = sortQ + "&num=" + strconv.Itoa(num) + "&start=" + strconv.Itoa(start-num)
 	} else {
 		t.args.PreviousPage = ""
 	}
@@ -126,4 +125,10 @@ COALESCE(flaagd, 'false')
 	if numrows < start {
 		t.args.PreviousPage = ""
 	}
+
+	t.args.PQuery = fullQuery
+	t.args.SortQ = sortQ
+	t.args.NextPage = nextPage
+	t.args.CurrentPage = currentPage
+
 }
