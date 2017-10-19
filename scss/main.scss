@@ -6,12 +6,15 @@
 @import "table";
 @import "words";
 
+$roboto: 'Roboto', sans-serif;
+$monoto: 'Roboto Mono', monospace;
+
 html {
     background: #eee;
     color: #333;
     background: url(../images/ulimpik-naashinul-park-2560w.jpg) no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     font-size: 16px;
 }
 body{

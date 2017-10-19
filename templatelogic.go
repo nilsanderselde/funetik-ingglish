@@ -65,6 +65,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	case "words.html":
 		handleWordList(t, r)
 		additive = true
+		t.args.InitialIndex = global.InitialIndex
 		t.args.TitleTrud = "Words"
 		t.args.TitleFun = "Wørdz"
 	}

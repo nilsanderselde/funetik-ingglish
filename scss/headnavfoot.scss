@@ -1,5 +1,7 @@
-
-
+$roboto: 'Roboto',
+sans-serif;
+$monoto: 'Roboto Mono',
+monospace;
 header {
     user-select: none;
     position: relative;
@@ -15,14 +17,11 @@ header {
     flex: 0 0 auto;
 }
 
-
-
 nav {
-    flex: 0 0 auto;    
+    flex: 0 0 auto;
     display: block;
     user-select: none;
     a {
-        font-weight: bold;
         font-size: 1.2em;
         &:link,
         &:visited {
@@ -36,9 +35,12 @@ nav {
         padding: 0;
     }
     /* used on license page to get back to top of page */
-    &.toTop, &.bottom {
+    &.toTop{
+        padding: 1em 0;        
+    }
+    &.toTop,
+    &.backnext {
         text-align: center;
-        padding: 1em 0;
         a:link,
         a:visited {
             color: #316299;
@@ -52,6 +54,7 @@ nav {
         margin: 0;
         a {
             text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+            font-weight: bold;
         }
         li {
             display: block;
@@ -63,14 +66,16 @@ nav {
             }
         }
     }
-    &.bottom {
+    &.backnext {
         text-align: center;
-        margin-top: 10px;
+        margin: 10px 0;
+        font-size: 1.2rem;
         li {
             padding: 0 8px;
             display: inline-block;
         }
         a {
+            font-weight: bold;
             &.back {
                 &:hover,
                 &:active {
@@ -95,6 +100,41 @@ nav {
             }
         }
     }
+    &.letters {
+        text-align: center;
+        margin-top: 10px;
+        font-family: $roboto;
+        $small: 1.05rem;
+        $big: 1.1rem;
+        vertical-align: bottom;
+        cursor: default;
+        font-size: 0;
+        li {
+            padding: 0 2px 4px 2px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        a {
+            display: inline-block;
+            vertical-align: bottom;
+            min-width: $big;
+            height: $big;
+            border: 1px solid rgb(49, 98, 153);
+            text-align: center;
+            font-size: $small;
+            line-height: $big;
+            padding: 1px;
+            &:active, &:focus {
+                background: rgb(49, 98, 153);
+                border-color: black;
+                color: white;
+                transition: none;
+            }
+        }
+    }
 }
 
 #orth {
@@ -113,10 +153,9 @@ nav {
     }
 }
 
-
 footer {
     color: white;
-    text-shadow: rgba(0,0,0,.5);
+    text-shadow: rgba(0, 0, 0, .5);
     text-align: center;
     font-size: .7rem;
     margin: 20px 0 10px 0;
@@ -137,4 +176,3 @@ footer {
         opacity: .5;
     }
 }
-

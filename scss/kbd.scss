@@ -142,5 +142,12 @@
                 color: white;
             }
         }
+        &:active, &:focus {
+            background: rgb(49, 98, 153);
+            border-color: black;
+            color: white;
+            transition: none;
+            
+        }
     }
 }

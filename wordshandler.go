@@ -15,7 +15,7 @@ import (
 
 const (
 	// DefaultNum is default number of words per page
-	DefaultNum int = 30
+	DefaultNum int = 20
 )
 
 // Options for dbconnect.Update...AutoValues

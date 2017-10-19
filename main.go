@@ -33,6 +33,7 @@ func main() {
 	// Load database connection info and calculate data for stats page
 	dbconnect.DBInfo = dbconnect.GetDBInfo()
 	dbconnect.StatsInit()
+	dbconnect.IndexByInitial()
 
 	http.Handle(ROOT+"/static/", setHeaders(http.StripPrefix(ROOT+"/static/", http.FileServer(http.Dir("./static")))))
 	http.HandleFunc(ROOT+"/favicon.ico", faviconHandler)

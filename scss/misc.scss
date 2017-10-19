@@ -43,7 +43,7 @@ textarea,
     background: rgba(255, 255, 255, 0.5);
     border: 0;
     box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     color: #222;
     box-sizing: border-box;
     width: 100%;
@@ -112,6 +112,7 @@ sub {
 
 ul {
     cursor: default;
+
 }
 
 article:not(:last-of-type),
@@ -129,7 +130,7 @@ article:nth-of-type(odd) {
 
 pre {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
-    font-family: 'Roboto Mono', monospace;
+    font-family: $monoto;
     white-space: pre-wrap;
     font-size: .7rem;
     padding: .5rem;
@@ -140,7 +141,7 @@ pre {
     border-radius: 10px;
 }
 .älfubit {
-    font-family: 'Roboto Mono', monospace;
+    font-family: $monoto;
     font-size: 1.36rem;
     opacity: .5;
 }

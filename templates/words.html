@@ -62,32 +62,40 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i>
 
 {{end}}
 
+<nav class="letters">
+    <ul>
+    {{$displaytrud := .DisplayTrud}}
+    {{range .InitialIndex}}
+        <li><a href="?sortby=funsort&order=asc&num=20&start={{.Index}}&orth={{if $displaytrud}}trud{{else}}fun{{end}}">{{.Letter}}</a></li>
+    {{end}}
+    </ul>
+</nav>
 
-<nav class="bottom">
-        <ul>
-            {{if .PreviousPage}}
-            <script>
-                document.addEventListener("keydown", function (evt) {
-                    evt = evt || window.event;
-                    if (evt.keyCode == 65) { /*37*/
-                        window.location = '{{.PreviousPage}}'
-                    }
-                });
-            </script>
-            <li><a href="{{.PreviousPage}}" class="back" data-title="Keyboard shortcut: left arrow"><i>🡄</i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{else}}
-            <li><a class="disabled"><i>🡄</i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{end}} {{if .NextPage}}
-            <script>
-                document.addEventListener("keydown", function (evt) {
-                    evt = evt || window.event;
-                    if (evt.keyCode == 68) { /*39*/
-                        window.location = '{{.NextPage}}'
-                    }
-                });
-            </script>
-            <li><a href="{{.NextPage}}" class="next" data-title="Keyboard shortcut: right arrow">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i>🡆</i></a></li>{{else}}
-            <li><a class="disabled">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i>🡆</i></a></li>{{end}}
-        </ul>
-    </nav>
+<nav class="backnext">
+    <ul>
+        {{if .PreviousPage}}
+        <script>
+            document.addEventListener("keydown", function (evt) {
+                evt = evt || window.event;
+                if (evt.keyCode == 65) { /*37*/
+                    window.location = '{{.PreviousPage}}'
+                }
+            });
+        </script>
+        <li><a href="{{.PreviousPage}}" class="back info toleft" data-title="Keyboard shortcut: A"><i>🡄</i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{else}}
+        <li><a class="disabled"><i>🡄</i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{end}} {{if .NextPage}}
+        <script>
+            document.addEventListener("keydown", function (evt) {
+                evt = evt || window.event;
+                if (evt.keyCode == 68) { /*39*/
+                    window.location = '{{.NextPage}}'
+                }
+            });
+        </script>
+        <li><a href="{{.NextPage}}" class="next info toright" data-title="Keyboard shortcut: D">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i>🡆</i></a></li>{{else}}
+        <li><a class="disabled">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i>🡆</i></a></li>{{end}}
+    </ul>
+</nav>
 
 
 {{if .DisplayTrud}}
