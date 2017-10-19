@@ -26,6 +26,15 @@ body{
 main {
     color: #222;
     display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40vh, rgba(255, 255, 255, 0.8) 80vh, rgba(255, 255, 255, .7) 100vh);
+    background-attachment: fixed;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: .8rem;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
     img {
         width: 100%;
         height: auto;
@@ -38,15 +47,7 @@ main {
     a:active {
         border-color: black;
     }
-    background-color: rgba(255, 255, 255, 0.2);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40vh, rgba(255, 255, 255, 0.8) 80vh, rgba(255, 255, 255, .7) 100vh);
-    background-attachment: fixed;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: .8rem;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
-    position: relative;
-    z-index: 1;
+
 }
 
 footer {
