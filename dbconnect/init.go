@@ -16,11 +16,10 @@ var DBInfo string
 
 // GetDBInfo gets the info to connect to database from external file
 func GetDBInfo() string {
-	file, err := os.Open("db/dbinfo")
+	file, err := os.Open("env/dbinfo")
 
 	if err != nil {
-		// log.Fatal(err)
-		fmt.Println("Could not find file.")
+		fmt.Println("DB connection information not found.")
 		return ""
 	}
 	defer file.Close()
