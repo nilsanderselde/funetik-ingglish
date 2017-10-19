@@ -3,6 +3,16 @@
 
 package global
 
+var (
+	// IsDev toggles configuration of program in several places depending on if
+	// it is in development or production mode
+	IsDev = true
+	// CurrRand stores the current random rune
+	CurrRand = 'a'
+	// LastRand stores the previous random rune so generator doesn't repeat itself
+	LastRand = 'a'
+)
+
 // TemplateParams encapsulates data to be
 // passed to mapped functions in templates
 type TemplateParams struct {
@@ -36,11 +46,7 @@ type TemplateParams struct {
 	TitleTrud   string
 	TitleFun    string
 	Root        string
-}
 
-var (
-	// CurrRand stores the current random rune
-	CurrRand = 'a'
-	// LastRand stores the previous random rune so generator doesn't repeat itself
-	LastRand = 'a'
-)
+	// Development mode on or off
+	IsDev bool
+}

@@ -4,12 +4,14 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net"
 	"net/http"
 	"os"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
+	"gitlab.com/nilsanderselde/funetik-ingglish/global"
 )
 
 const (
@@ -20,6 +22,14 @@ const (
 )
 
 func main() {
+	// First, determine if program should run in dev or prod mode
+	file, err := os.Open("env/isdev")
+	if err != nil {
+		fmt.Println("Production mode selected.")
+		global.IsDev = false
+	}
+	defer file.Close()
+
 	// Load database connection info and calculate data for stats page
 	dbconnect.DBInfo = dbconnect.GetDBInfo()
 	dbconnect.StatsInit()
@@ -33,19 +43,21 @@ func main() {
 	http.Handle(ROOT+"/traanzlit", &templateHandler{filenames: []string{"translit.html"}})
 	http.Handle(ROOT+"/ubaawt", &templateHandler{filenames: []string{"about.html"}})
 
-	// // start server (development)
-	// if err := http.ListenAndServe(":8080", nil); err != nil {
-	// 	log.Fatal("ListenAndServe:", err)
-	// }
-
-	// start server (production)
-	os.Remove(SOCK)
-	unixListener, err := net.Listen("unix", SOCK)
-	if err != nil {
-		log.Fatal(err)
+	if global.IsDev {
+		// start server (development)
+		if err := http.ListenAndServe(":8080", nil); err != nil {
+			log.Fatal("ListenAndServe:", err)
+		}
+	} else {
+		// start server (production)
+		os.Remove(SOCK)
+		unixListener, err := net.Listen("unix", SOCK)
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer unixListener.Close()
+		http.Serve(unixListener, nil)
 	}
-	defer unixListener.Close()
-	http.Serve(unixListener, nil)
 }
 
 // Sets HTTP headers for handler passed to function

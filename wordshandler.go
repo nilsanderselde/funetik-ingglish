@@ -8,6 +8,8 @@ import (
 	"net/http"
 	"strconv"
 
+	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
 )
 
@@ -44,17 +46,17 @@ COALESCE(flaagd, 'false')
 	urlQ := r.URL.Query()
 
 	// if set to update automatically generated values
-	if urlQ["updeit"] != nil {
-		/*if urlQ["updeit"][0] == "al" {
+	if global.IsDev && urlQ["updeit"] != nil {
+		if urlQ["updeit"][0] == "al" {
 			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist)
-		} else */if urlQ["updeit"][0] == "flaagd" {
+		} else if urlQ["updeit"][0] == "flaagd" {
 			dbconnect.UpdateFlaggedAutoValues(fun, numsil, funsort, dist)
 		}
 	}
-	/* // flag row if URL contains query string for id
-	if urlQ["id"] != nil {
+	// flag row if URL contains query string for id
+	if global.IsDev && urlQ["id"] != nil {
 		dbconnect.FlagRow(urlQ["id"][0])
-	} */
+	}
 
 	// column to sort by
 	sortby := "funsort"
