@@ -24,9 +24,9 @@ const (
 func main() {
 	// First, determine if program should run in dev or prod mode
 	file, err := os.Open("env/isdev")
-	if err != nil {
-		fmt.Println("Production mode selected.")
-		global.IsDev = false
+	if err == nil {
+		fmt.Println("Development mode enabled.")
+		global.IsDev = true
 	}
 	defer file.Close()
 
