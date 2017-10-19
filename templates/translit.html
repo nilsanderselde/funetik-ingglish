@@ -17,12 +17,11 @@
     {{end}}
     
     <form action="{{.Root}}/traanzlit" method="post" enctype="application/x-www-form-urlencoded">
-        <textarea id="input" name="inputtext" cols="80" rows="10" maxlength="2500" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="{{if .DisplayTrud}}Type in here and press Translit.{{else}}Taip in hyr änd pres Tränzlit.{{end}}">{{if .TranslitInput}}{{.TranslitInput}}{{end}}</textarea><br>
-        <input type="submit" value="{{if .DisplayTrud}}Translit{{else}}Tränzlit{{end}}" />
+        <textarea id="input" name="inputtext" cols="80" rows="10" maxlength="2500" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="{{if .DisplayTrud}}Type in here and press Translit.{{else}}Taip in hyr änd pres Tränzlit.{{end}}">{{if .TranslitInput}}{{.TranslitInput}}{{end}}</textarea>
+        <p><input type="submit" value="{{if .DisplayTrud}}Translit{{else}}Tränzlit{{end}}" /></p>
     </form>
 
     {{if .TranslitOutput}}
-    <h2>Tränzlitøreišin:</h2>
     <textarea id="output" cols="80" rows="10" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{range .TranslitOutput}}
 {{.}}{{end}}</textarea>
     {{end}}
