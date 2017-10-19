@@ -55,9 +55,9 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.TitleTrud = "Stats"
 		t.args.TitleFun = "Stäts"
 	case "translit.html":
-		cha := make(chan dbconnect.Output)
-		go dbconnect.ProcessTrud(cha, r)
-		outStruct := <-cha
+		ch := make(chan dbconnect.Output)
+		go dbconnect.ProcessTrud(ch, r)
+		outStruct := <-ch
 		t.args.TranslitOutput = outStruct.OutputLines
 		t.args.TranslitInput = outStruct.PrevInput
 		t.args.TitleTrud = "Transliterator"
