@@ -16,7 +16,7 @@ const (
 	// ROOT is the subdirectory to be appended to all URLs on this server
 	ROOT = "/funing"
 	// SOCK is the UNIX socket for this server
-	SOCK = "/web/nec/funing/go.sock"
+	SOCK = "/web/nec/tmp/funing.sock"
 )
 
 func main() {
@@ -39,15 +39,8 @@ func main() {
 	// }
 
 	// start server (production)
-
 	os.Remove(SOCK)
-	// Look up address
-	socketAddress, err := net.ResolveUnixAddr("unix", SOCK)
-	if err != nil {
-		log.Fatal(err)
-	}
-	// Start listening
-	unixListener, err := net.ListenUnix("unix", socketAddress)
+	unixListener, err := net.Listen("unix", SOCK)
 	if err != nil {
 		log.Fatal(err)
 	}
