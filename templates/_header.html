@@ -4,33 +4,33 @@
         
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="/static/stylesheets/normalize.css">    
-    <link rel="stylesheet" href="/static/stylesheets/jquery-ui.min.css">    
-    <link rel="stylesheet" href="/static/stylesheets/main.css">
+    <link rel="stylesheet" href="{{.Root}}/static/stylesheets/normalize.css">    
+    <link rel="stylesheet" href="{{.Root}}/static/stylesheets/jquery-ui.min.css">    
+    <link rel="stylesheet" href="{{.Root}}/static/stylesheets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
     <title>{{if .DisplayTrud}}{{.TitleTrud}}{{else}}{{.TitleFun}}{{end}} - Funetik Inggliš</title>
 </head>
 
 <body>
     <header>
-        <h1><img src="/static/images/logo.png" width="400" height="261" alt="ÄØŽŠ"></h1>
+        <h1><img src="{{.Root}}/static/images/logo.png" width="400" height="261" alt="ÄØŽŠ"></h1>
 
         <nav class="top">
             <ul>
             {{if .DisplayTrud}}
-                <li><a href="/">Home</a></li>
-                <li><a href="/traanzlit">Translit</a></li>   
-                <li><a href="/woordz">Words</a></li>            
-                <li><a href="/kybord">Keyboard</a></li>
-                <li><a href="/staats">Stats</a></li>
-                <li><a href="/ubaawt">About</a></li>                
+                <li><a href="{{.Root}}">Home</a></li>
+                <li><a href="{{.Root}}/traanzlit">Translit</a></li>   
+                <li><a href="{{.Root}}/woordz">Words</a></li>            
+                <li><a href="{{.Root}}/kybord">Keyboard</a></li>
+                <li><a href="{{.Root}}/staats">Stats</a></li>
+                <li><a href="{{.Root}}/ubaawt">About</a></li>                
             {{else}}
-                <li><a href="/?orth=fun">Hom</a></li>
-                <li><a href="/traanzlit?orth=fun">Tränzlit</a></li>
-                <li><a href="/woordz?orth=fun">Wørdz</a></li>            
-                <li><a href="/kybord?orth=fun">Kybord</a></li>
-                <li><a href="/staats?orth=fun">Stäts</a></li>
-                <li><a href="/ubaawt?orth=fun">Ubäwt</a></li>
+                <li><a href="{{.Root}}/?orth=fun">Hom</a></li>
+                <li><a href="{{.Root}}/traanzlit?orth=fun">Tränzlit</a></li>
+                <li><a href="{{.Root}}/woordz?orth=fun">Wørdz</a></li>            
+                <li><a href="{{.Root}}/kybord?orth=fun">Kybord</a></li>
+                <li><a href="{{.Root}}/staats?orth=fun">Stäts</a></li>
+                <li><a href="{{.Root}}/ubaawt?orth=fun">Ubäwt</a></li>
             {{end}}
     
             </ul>

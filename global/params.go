@@ -35,6 +35,7 @@ type TemplateParams struct {
 	DisplayTrud bool
 	TitleTrud   string
 	TitleFun    string
+	Root        string
 }
 
 var (

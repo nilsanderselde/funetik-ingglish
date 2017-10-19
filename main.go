@@ -5,10 +5,47 @@ package main
 
 import (
 	"log"
+	"net"
 	"net/http"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
 )
+
+const (
+	// ROOT is the subdirectory to be appended to all URLs on this server
+	ROOT = "/funing"
+	// SOCK is the UNIX socket for this server
+	SOCK = "/web/nec/funing/go.sock"
+)
+
+func main() {
+	// Load database connection info and calculate data for stats page
+	dbconnect.DBInfo = dbconnect.GetDBInfo()
+	dbconnect.StatsInit()
+
+	http.Handle(ROOT+"/static/", setHeaders(http.StripPrefix(ROOT+"/static/", http.FileServer(http.Dir("./static")))))
+	http.HandleFunc(ROOT+"/favicon.ico", faviconHandler)
+	http.Handle(ROOT+"/", &templateHandler{filenames: []string{"home.html"}})
+	http.Handle(ROOT+"/kybord", &templateHandler{filenames: []string{"kbd.html"}})
+	http.Handle(ROOT+"/woordz", &templateHandler{filenames: []string{"words.html", "words_sorted.html"}})
+	http.Handle(ROOT+"/staats", &templateHandler{filenames: []string{"stats.html"}})
+	http.Handle(ROOT+"/traanzlit", &templateHandler{filenames: []string{"translit.html"}})
+	http.Handle(ROOT+"/ubaawt", &templateHandler{filenames: []string{"about.html"}})
+
+	// // start server (development)
+	// if err := http.ListenAndServe(":8080", nil); err != nil {
+	// 	log.Fatal("ListenAndServe:", err)
+	// }
+
+	// start server (production)
+	go func() {
+		unix, err := net.Listen("unix", SOCK)
+		if err != nil {
+			log.Fatal(err)
+		}
+		http.Serve(unix, nil)
+	}()
+}
 
 // Sets HTTP headers for handler passed to function
 func setHeaders(h http.Handler) http.Handler {
@@ -22,24 +59,4 @@ func setHeaders(h http.Handler) http.Handler {
 
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./static/favicon.ico")
-}
-
-func main() {
-	// Load database connection info and calculate data for stats page
-	dbconnect.DBInfo = dbconnect.GetDBInfo()
-	dbconnect.StatsInit()
-
-	http.Handle("/static/", setHeaders(http.StripPrefix("/static/", http.FileServer(http.Dir("./static")))))
-	http.HandleFunc("/favicon.ico", faviconHandler)
-	http.Handle("/", &templateHandler{filenames: []string{"home.html"}})
-	http.Handle("/kybord", &templateHandler{filenames: []string{"kbd.html"}})
-	http.Handle("/woordz", &templateHandler{filenames: []string{"words.html", "words_sorted.html"}})
-	http.Handle("/staats", &templateHandler{filenames: []string{"stats.html"}})
-	http.Handle("/traanzlit", &templateHandler{filenames: []string{"translit.html"}})
-	http.Handle("/ubaawt", &templateHandler{filenames: []string{"about.html"}})
-
-	// Start Server
-	if err := http.ListenAndServe(":8080", nil); err != nil {
-		log.Fatal("ListenAndServe:", err)
-	}
 }

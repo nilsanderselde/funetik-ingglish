@@ -16,7 +16,7 @@
     <p><strong>Mäksimum inpøt lengkth: 2500 keriktørz</strong></p>
     {{end}}
     
-    <form action="/traanzlit" method="post" enctype="application/x-www-form-urlencoded">
+    <form action="{{.Root}}/traanzlit" method="post" enctype="application/x-www-form-urlencoded">
         <textarea id="input" name="inputtext" cols="80" rows="10" maxlength="2500" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="{{if .DisplayTrud}}Type in here and press Translit.{{else}}Taip in hyr änd pres Tränzlit.{{end}}">{{if .TranslitInput}}{{.TranslitInput}}{{end}}</textarea><br>
         <input type="submit" value="{{if .DisplayTrud}}Translit{{else}}Tränzlit{{end}}" />
     </form>
@@ -30,7 +30,7 @@
 </main>
 
 {{if .TranslitOutput}}
-<script src="/static/scripts/jquery-3.2.1.min.js"></script>
+<script src="{{.Root}}/static/scripts/jquery-3.2.1.min.js"></script>
 <script>
     $("#input, #output").on("scroll", function() {
         $("#input, #output").scrollTop($(this).scrollTop());

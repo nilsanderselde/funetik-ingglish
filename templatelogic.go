@@ -32,13 +32,15 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	filename := strings.TrimPrefix(t.filenames[0], "templates/")
 	var additive bool
+	t.args.Root = ROOT
 
 	switch filename {
 	case "about.html":
 		t.args.TitleTrud = "About"
 		t.args.TitleFun = "Ubäwt"
 	case "home.html":
-		if r.URL.Path != "/" {
+		fmt.Println(r.URL.Path)
+		if r.URL.Path != t.args.Root+"/" {
 			http.NotFound(w, r)
 			return
 		}
