@@ -5,7 +5,9 @@ package main
 
 import (
 	"log"
+	"net"
 	"net/http"
+	"os"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
 )
@@ -31,31 +33,26 @@ func main() {
 	http.Handle(ROOT+"/traanzlit", &templateHandler{filenames: []string{"translit.html"}})
 	http.Handle(ROOT+"/ubaawt", &templateHandler{filenames: []string{"about.html"}})
 
-	// start server (development)
-	if err := http.ListenAndServe(":8080", nil); err != nil {
-		log.Fatal("ListenAndServe:", err)
-	}
+	// // start server (development)
+	// if err := http.ListenAndServe(":8080", nil); err != nil {
+	// 	log.Fatal("ListenAndServe:", err)
+	// }
 
 	// start server (production)
 
-	// unix, err := net.Listen("unix", SOCK)
-	// if err != nil {
-	// 	log.Fatal("Listen error: ", err)
-	// }
-	// sigchan := make(chan os.Signal, 1)
-	// signal.Notify(sigchan, os.Interrupt, syscall.SIGTERM)
-	// go func(unix net.Listener, c chan os.Signal) {
-	// 	sig := <-c
-	// 	log.Printf("Caught signal %s: shutting down.", sig)
-	// 	unix.Close()
-	// 	os.Exit(0)
-	// }(unix, sigchan)
-
-	// http.Serve(unix, nil)
-
-	// if err := os.Remove(SOCK); err != nil {
-	// 	log.Fatal(err)
-	// }
+	os.Remove(SOCK)
+	// Look up address
+	socketAddress, err := net.ResolveUnixAddr("unix", SOCK)
+	if err != nil {
+		log.Fatal(err)
+	}
+	// Start listening
+	unixListener, err := net.ListenUnix("unix", socketAddress)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer unixListener.Close()
+	http.Serve(unixListener, nil)
 }
 
 // Sets HTTP headers for handler passed to function
