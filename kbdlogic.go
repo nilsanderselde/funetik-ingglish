@@ -594,11 +594,11 @@ func pickKeyboard(t *templateHandler, r *http.Request) {
 		}
 		t.args.Kbd[1] = [][]string{
 			{"ä", "Ä", "final", æIPA},
-			defW,
+			{"w", "W", "", uwIPA},
 			defE,
 			defR,
 			defT,
-			defY,
+			{"y", "Y", "", ijIPA},
 			defU,
 			defI,
 			defO,
