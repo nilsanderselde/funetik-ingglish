@@ -1,8 +1,6 @@
 package dbconnect
 
 import (
-	"database/sql"
-
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
@@ -22,20 +20,7 @@ func GetStats() [][]string {
 func StatsInit() {
 	stats = [][]string{{"-1", "-1", "-1", "-1", "-1", "-1"}}
 
-	db, err := sql.Open("postgres", DBInfo)
-	if err != nil {
-		// log.Fatal(err)
-		return
-	}
-	defer db.Close()
-
-	err = db.Ping()
-	if err != nil {
-		// log.Fatal(err)
-		return
-	}
-
-	rows, err := db.Query("SELECT fun FROM words;")
+	rows, err := DB.Query("SELECT fun FROM words;")
 	if err != nil {
 		// log.Fatal(err)
 		return

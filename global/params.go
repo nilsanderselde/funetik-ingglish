@@ -18,6 +18,7 @@ var (
 	Alphabet = []string{"a", "ä", "e", "i", "y", "w", "u", "ø", "o", "r", "l", "n", "m", "b", "p", "v", "f", "g", "k", "d", "t", "z", "s", "ž", "š", "h"}
 )
 
+// InitialIndexValue stores the start number for the first word starting with the stored letter
 type InitialIndexValue struct {
 	Letter string
 	Index  string

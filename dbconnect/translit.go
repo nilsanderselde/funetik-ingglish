@@ -5,7 +5,6 @@ package dbconnect
 
 import (
 	"bufio"
-	"database/sql"
 	"fmt"
 	"net/http"
 	"strings"
@@ -92,18 +91,7 @@ func ProcessTrud(ch chan Output, r *http.Request) {
 
 // getFun tries to return the corresponding funetik spelling of an English word
 func getFun(trud string) (fun string) {
-	db, err := sql.Open("postgres", DBInfo)
-	if err != nil {
-		// log.Fatal(err)
-		return ""
-	}
-	defer db.Close()
 
-	err = db.Ping()
-	if err != nil {
-		// log.Fatal(err)
-		return ""
-	}
 	trudR := []rune(trud)
 	var leading string
 	var trailing string
@@ -138,11 +126,11 @@ func getFun(trud string) (fun string) {
 
 	// update fun and/or numsil with values generated using funsil
 	// fmt.Println(">>", trud)
-	row := db.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE trud = $1;", trud)
-	err = row.Scan(&fun)
+	row := DB.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE trud = $1;", trud)
+	err := row.Scan(&fun)
 	if err != nil {
 		// fmt.Println("not found, checking lowercase:", trud)
-		row = db.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE trud = $1;", strings.ToLower(trud))
+		row = DB.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE trud = $1;", strings.ToLower(trud))
 		err = row.Scan(&fun)
 		if err != nil {
 			// renamed variable as it may be either an unknown word returned in original form or a hyphenated/slashed word
@@ -210,7 +198,7 @@ func getFun(trud string) (fun string) {
 
 			// add to unknown word table
 			if addToList {
-				_, err = db.Exec(`INSERT INTO unknown (trud)
+				_, err = DB.Exec(`INSERT INTO unknown (trud)
 SELECT '` + word + `'
 WHERE NOT EXISTS (SELECT trud FROM unknown WHERE LOWER(trud) = '` + strings.ToLower(word) + `')
 AND NOT EXISTS (SELECT trud FROM words WHERE LOWER(trud) = '` + strings.ToLower(word) + `')`)

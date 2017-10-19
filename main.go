@@ -4,6 +4,7 @@
 package main
 
 import (
+	"database/sql"
 	"fmt"
 	"log"
 	"net"
@@ -33,6 +34,19 @@ func main() {
 	// Load database connection info and calculate data for stats page
 	dbconnect.DBInfo = dbconnect.GetDBInfo()
 
+	dbconnect.DB, err = sql.Open("postgres", dbconnect.DBInfo)
+	if err != nil {
+		// log.Fatal(err)
+		fmt.Println("Couldn't connect to database.")
+	}
+	defer dbconnect.DB.Close()
+
+	err = dbconnect.DB.Ping()
+	if err != nil {
+		// log.Fatal(err)
+		fmt.Println("Database ping failed.")
+	}
+
 	// Precalculate data for site
 	dbconnect.StatsInit()
 	dbconnect.IndexByInitial()
@@ -57,7 +71,7 @@ func main() {
 		os.Remove(SOCK)
 		unixListener, err := net.Listen("unix", SOCK)
 		if err != nil {
-			log.Fatal(err)
+			log.Fatal("Listen (UNIX socket): ", err)
 		}
 		defer unixListener.Close()
 		http.Serve(unixListener, nil)

@@ -5,14 +5,20 @@ package dbconnect
 
 import (
 	"bufio"
+	"database/sql"
 	"fmt"
 	"os"
 	"strconv"
 	"strings"
 )
 
-// DBInfo stores the info used to connect to the database
-var DBInfo string
+var (
+	// DBInfo stores the info used to connect to the database
+	DBInfo string
+
+	// DB is database connection
+	DB *sql.DB
+)
 
 // GetDBInfo gets the info to connect to database from external file
 func GetDBInfo() string {

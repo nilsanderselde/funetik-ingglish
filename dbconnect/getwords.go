@@ -24,23 +24,8 @@ func GetWords(query string, start int, num int) [][]string {
 	results := [][]string{}
 	notfound := [][]string{{"-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"}}
 
-	// fmt.Println(query + "\nStarting at " + strconv.Itoa(start) + " with " + strconv.Itoa(num) + " results per page.")
-
-	db, err := sql.Open("postgres", DBInfo)
-	if err != nil {
-		// log.Fatal(err)
-		return notfound
-	}
-	defer db.Close()
-
-	err = db.Ping()
-	if err != nil {
-		// log.Fatal(err)
-		return notfound
-	}
-
 	// get query
-	rows, err := db.Query(query)
+	rows, err := DB.Query(query)
 	if err != nil {
 		// log.Fatal(err)
 		return notfound
@@ -91,14 +76,14 @@ func CountRows(queryFrom string) int {
 	}
 	defer db.Close()
 
-	err = db.Ping()
+	err = DB.Ping()
 	if err != nil {
 		// log.Fatal(err)
 		return -1
 	}
 
 	// get total number of rows
-	rowcount, err := db.Query("SELECT COUNT(*)" + queryFrom + ";")
+	rowcount, err := DB.Query("SELECT COUNT(*)" + queryFrom + ";")
 	if err != nil {
 		// log.Fatal(err)
 		return -1

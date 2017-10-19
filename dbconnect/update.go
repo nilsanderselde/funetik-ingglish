@@ -24,18 +24,6 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 	if !(fun || numsil || funsort || dist) {
 		return // don't bother connecting if no updates will occur
 	}
-	db, err := sql.Open("postgres", DBInfo)
-	if err != nil {
-		// log.Fatal(err)
-		fmt.Println(err)
-	}
-	defer db.Close()
-
-	err = db.Ping()
-	if err != nil {
-		// log.Fatal(err)
-		fmt.Println(err)
-	}
 
 	queryFrom := " FROM words"
 	if rowID != -1 || onlyFlaagd {
@@ -69,7 +57,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		s.Start()
 
 		// update fun and/or numsil with values generated using funsil
-		rows, err := db.Query("SELECT id, funsil" + queryFrom)
+		rows, err := DB.Query("SELECT id, funsil" + queryFrom)
 		if err != nil {
 			// log.Fatal(err)
 			fmt.Println(err)
@@ -77,10 +65,10 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 
 		for rows.Next() {
 			if fun {
-				UpdateFun(rows, db)
+				UpdateFun(rows)
 			}
 			if numsil {
-				UpdateNumsil(rows, db)
+				UpdateNumsil(rows)
 			}
 		}
 		rows.Close()
@@ -107,7 +95,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		s.Start()
 
 		// update funsort and dist with values generated using fun and trud (for dist, use written form if different)
-		rows, err := db.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin" + queryFrom)
+		rows, err := DB.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin" + queryFrom)
 		if err != nil {
 			// log.Fatal(err)
 			fmt.Println(err)
@@ -115,10 +103,10 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 
 		for rows.Next() {
 			if funsort {
-				UpdateFunsort(rows, db)
+				UpdateFunsort(rows)
 			}
 			if dist {
-				UpdateDist(rows, db)
+				UpdateDist(rows)
 			}
 		}
 		rows.Close()
@@ -128,7 +116,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		fmt.Printf("Done. (%v)\n", elapsed)
 
 		// clear all flags
-		_, err = db.Exec("UPDATE words SET flaagd = false WHERE flaagd;")
+		_, err = DB.Exec("UPDATE words SET flaagd = false WHERE flaagd;")
 		if err != nil {
 			// log.Fatal(err)
 			fmt.Println(err)
@@ -138,7 +126,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 
 // UpdateFun updates passed row with generated
 // value for column "fun" (funetik spelling)
-func UpdateFun(row *sql.Rows, db *sql.DB) {
+func UpdateFun(row *sql.Rows) {
 	var id int
 	var funsil string
 	err := row.Scan(&id, &funsil)
@@ -147,7 +135,7 @@ func UpdateFun(row *sql.Rows, db *sql.DB) {
 
 	// update with new fun value
 	var updateString string
-	updateFun := db.QueryRow("UPDATE words SET fun = '" + fun + "' WHERE id = " + strconv.Itoa(id) + ";")
+	updateFun := DB.QueryRow("UPDATE words SET fun = '" + fun + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateFun.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
 		// log.Fatal(err)
@@ -157,7 +145,7 @@ func UpdateFun(row *sql.Rows, db *sql.DB) {
 
 // UpdateNumsil updates passed row with generated
 // value for column  "numsil" (number of syllables)
-func UpdateNumsil(row *sql.Rows, db *sql.DB) {
+func UpdateNumsil(row *sql.Rows) {
 	var id int
 	var funsil string
 	err := row.Scan(&id, &funsil)
@@ -167,7 +155,7 @@ func UpdateNumsil(row *sql.Rows, db *sql.DB) {
 
 	// update with new numsil value
 	var updateString string
-	updateNumsil := db.QueryRow("UPDATE words SET numsil = '" + strconv.Itoa(numsil) + "' WHERE id = " + strconv.Itoa(id) + ";")
+	updateNumsil := DB.QueryRow("UPDATE words SET numsil = '" + strconv.Itoa(numsil) + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateNumsil.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
 		// log.Fatal(err)
@@ -177,7 +165,7 @@ func UpdateNumsil(row *sql.Rows, db *sql.DB) {
 
 // UpdateFunsort updates passed row with generated
 // value for column "funsort" (funetik sort order)
-func UpdateFunsort(row *sql.Rows, db *sql.DB) {
+func UpdateFunsort(row *sql.Rows) {
 	var id int
 	var fun string
 	var trud string
@@ -189,7 +177,7 @@ func UpdateFunsort(row *sql.Rows, db *sql.DB) {
 
 	// update with new funsort value
 	var updateString string
-	updateFunsort := db.QueryRow("UPDATE words SET funsort = '" + funsort + "' WHERE id = " + strconv.Itoa(id) + ";")
+	updateFunsort := DB.QueryRow("UPDATE words SET funsort = '" + funsort + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateFunsort.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
 		// log.Fatal(err)
@@ -199,7 +187,7 @@ func UpdateFunsort(row *sql.Rows, db *sql.DB) {
 
 // UpdateDist updates passed row with calculated
 // value for column "levdist" (Levenshtein distance)
-func UpdateDist(row *sql.Rows, db *sql.DB) {
+func UpdateDist(row *sql.Rows) {
 	var id int
 	var fun string
 	var trud string
@@ -211,7 +199,7 @@ func UpdateDist(row *sql.Rows, db *sql.DB) {
 
 	// update with new dist value
 	var updateString string
-	updateDist := db.QueryRow("UPDATE words SET dist = '" + strconv.Itoa(dist) + "' WHERE id = " + strconv.Itoa(id) + ";")
+	updateDist := DB.QueryRow("UPDATE words SET dist = '" + strconv.Itoa(dist) + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateDist.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
 		// log.Fatal(err)
