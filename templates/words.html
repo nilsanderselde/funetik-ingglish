@@ -75,7 +75,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i>
     <ul>
         {{if .PreviousPage}}
         <script>
-            document.addEventListener("keydown", function (evt) {
+            document.addEventListener("keyup", function (evt) {
                 evt = evt || window.event;
                 if (evt.keyCode == 65) { /*37*/
                     window.location = '{{.PreviousPage}}'
@@ -85,7 +85,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i>
         <li><a href="{{.PreviousPage}}" class="back info toleft" data-title="Keyboard shortcut: A"><i>🡄</i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{else}}
         <li><a class="disabled"><i>🡄</i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{end}} {{if .NextPage}}
         <script>
-            document.addEventListener("keydown", function (evt) {
+            document.addEventListener("keyup", function (evt) {
                 evt = evt || window.event;
                 if (evt.keyCode == 68) { /*39*/
                     window.location = '{{.NextPage}}'
