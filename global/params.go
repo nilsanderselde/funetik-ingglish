@@ -6,7 +6,7 @@ package global
 var (
 	// IsDev toggles configuration of program in several places depending on if
 	// it is in development or production mode
-	IsDev = true
+	IsDev bool
 	// CurrRand stores the current random rune
 	CurrRand = 'a'
 	// LastRand stores the previous random rune so generator doesn't repeat itself
