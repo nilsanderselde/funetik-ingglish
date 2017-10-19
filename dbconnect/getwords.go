@@ -5,7 +5,6 @@ package dbconnect
 
 import (
 	"database/sql"
-	"fmt"
 	"strconv"
 	"time"
 
@@ -19,11 +18,11 @@ var wordList = [][]string{{"-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"}}
 
 // ShowWords calls the database io function and passes arguments to template
 func ShowWords(args global.TemplateParams) [][]string {
-	fmt.Println("HTTP request")
+	// fmt.Println("HTTP request")
 	for !ready {
 		time.Sleep(1000 * time.Millisecond)
 		ready = true
-		fmt.Println("Too many requests. Here's the cached version.")
+		// fmt.Println("Too many requests. Here's the cached version.")
 		return wordList
 	}
 	return GetWords(args.PQuery, args.Start, args.Num)
@@ -33,7 +32,7 @@ func ShowWords(args global.TemplateParams) [][]string {
 // returns true if more results can be found (to avoid next button to empty page)
 func GetWords(query string, start int, num int) [][]string {
 	ready = false
-	fmt.Println("Getting words")
+	// fmt.Println("Getting words")
 
 	results := [][]string{}
 	notfound := [][]string{{"-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"}}
