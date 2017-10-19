@@ -15,7 +15,7 @@ import (
 
 const (
 	// DefaultNum is default number of words per page
-	DefaultNum int = 32
+	DefaultNum int = 30
 )
 
 // Options for dbconnect.Update...AutoValues
@@ -90,7 +90,7 @@ COALESCE(flaagd, 'false')
 	num := DefaultNum
 	if urlQ["num"] != nil {
 		curr, err := strconv.Atoi(urlQ["num"][0])
-		if err == nil || curr <= 100 {
+		if err == nil && curr <= 100 {
 			num = curr
 		}
 	}
