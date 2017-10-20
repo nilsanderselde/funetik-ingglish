@@ -51,7 +51,7 @@ func main() {
 	global.RowCount = dbconnect.CountRows()
 	dbconnect.StatsInit()
 	dbconnect.IndexByInitial()
-	fmt.Println("Stats and initial letter index precalculated. Ready to go.")
+	fmt.Println("Precalculation complete.\nReady.")
 
 	http.Handle(ROOT+"/static/", setHeaders(http.StripPrefix(ROOT+"/static/", http.FileServer(http.Dir("./static")))))
 	http.HandleFunc(ROOT+"/favicon.ico", faviconHandler)

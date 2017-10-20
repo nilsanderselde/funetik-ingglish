@@ -4,15 +4,35 @@
 package dbconnect
 
 import (
+	"fmt"
 	"strconv"
+
+	"gitlab.com/nilsanderselde/funetik-ingglish/global"
 
 	// postgres drivers
 	_ "github.com/lib/pq"
 )
 
+var busy bool
+var wordList [][]string
+
+// ShowWords calls the database io function and passes arguments to template
+func ShowWords(args global.TemplateParams) [][]string {
+	fmt.Println("HTTP request")
+	for busy {
+		busy = false
+		fmt.Println("Too many requests. Here's the cached version.")
+		return wordList
+	}
+	return GetWords(args.PQuery, args.Start, args.Num)
+}
+
 // GetWords receives SQL requests and returns requested data from the database. This package will not be shared in the repository for security reasons.
 // returns true if more results can be found (to avoid next button to empty page)
-func GetWords(ch chan [][]string, query string, start int, num int) {
+func GetWords(query string, start int, num int) [][]string {
+	busy = true
+	fmt.Println("Getting words")
+
 	results := [][]string{}
 	noresults := [][]string{{"-1", "-1", "-1", "-1", "-1", "-1", "-1", "-1"}}
 
@@ -48,10 +68,12 @@ func GetWords(ch chan [][]string, query string, start int, num int) {
 	}
 	// Only return results if they are all good, otherwise return array with one row of -1s
 	if len(results) != 0 {
-		ch <- results
+		busy = false
+		wordList = results
+		return results
 	}
 loadfailure:
-	ch <- noresults
+	return noresults
 }
 
 // CountRows counts the number of rows returned by a query that is passed to it

@@ -37,7 +37,6 @@ type TemplateParams struct {
 	Start        int
 	Num          int
 	Alphabet     []string
-	Words        [][]string
 	SortQ        string
 	PQuery       string
 	InitialIndex []InitialIndexValue

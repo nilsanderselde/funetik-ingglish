@@ -43,6 +43,5 @@ func GetDBInfo() string {
 	password := login[3]
 	dbname := login[4]
 
-	fmt.Println("Ready to connect.")
 	return fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
 }

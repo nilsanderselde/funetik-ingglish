@@ -65,9 +65,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.TitleFun = "Tränzlitøreitør"
 	case "words.html":
 		handleWordList(t, r)
-		ch := make(chan [][]string)
-		go dbconnect.GetWords(ch, t.args.PQuery, t.args.Start, t.args.Num)
-		t.args.Words = <-ch
 		additive = true
 		t.args.InitialIndex = global.InitialIndex
 		t.args.TitleTrud = "Words"
@@ -77,6 +74,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	t.once.Do(func() {
 		funcMap := template.FuncMap{
+			"ShowWords": dbconnect.ShowWords,
 			"Random": randomRune,
 		}
 		templateName := strings.TrimSuffix(t.filenames[0], "*.html")
