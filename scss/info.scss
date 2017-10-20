@@ -1,20 +1,26 @@
 
 .info {
     position: relative;
-    &[data-title]:hover:after {
+    &[data-title]:after {
         font-weight: normal;
         content: attr(data-title);
-        padding: 4px 4px;
+        padding: 2px;
         color: #333;
         position: absolute;
         white-space: nowrap;
-        background: #eee;
+        background: white;
         z-index: 2;
         border-radius: 5px;
-        box-shadow: 0px 0px 4px #222;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.4);
         text-shadow: none;
         line-height: 1;
-        font-size: .82rem;
+        font-size: .8rem;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    &[data-title]:hover:after {
+        opacity: 1;
     }
     &.nolink {
         cursor: help;
@@ -27,25 +33,25 @@
         }
     }
     &.above {
-        &[data-title]:hover:after {
+        &[data-title]:after {
             bottom: 108%;
-            left: 0;
+            left: 5px;
         }
     }
     &.below {
-        &[data-title]:hover:after {
+        &[data-title]:after {
             top: 120%;
             left: 9px;
         }
     }
     &.toleft {
-        &[data-title]:hover:after {
+        &[data-title]:after {
             top: -2px;
             right: 110%;
         }
     }
     &.toright {
-        &[data-title]:hover:after {
+        &[data-title]:after {
             top: -2px;
             left: 110%;
         }

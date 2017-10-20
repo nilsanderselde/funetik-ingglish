@@ -23,6 +23,12 @@
             @media screen and (min-width: 700px) {
                 min-width: 39px;
             }
+            &:not(.shift)[data-title] {
+                &:active, &:focus {
+                    border-style: inset;
+                    font-size: .98rem;
+                }
+            }
         }
         .hidden {
             display: none;
@@ -58,7 +64,6 @@
             &.down {
                 background: rgb(44, 90, 139);
                 font-size: .58rem;
-                
                 border-style: inset;
                 animation: none;
                 box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);

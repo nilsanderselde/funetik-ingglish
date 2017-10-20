@@ -41,21 +41,21 @@
 <div id="kbd">
     <div class="row">
         {{range (index .Kbd 0)}}
-        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="varsize hideoverflow">Backspace</div>
     </div>
     <div class="row">
         <div class="varsize">Tab</div>
         {{range (index .Kbd 1)}}
-        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         </div>
 
     <div class="row">
         <div class="varsize hideoverflow">Caps Lock</div>
         {{range (index .Kbd 2)}}
-        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="varsize">Enter</div>        
     </div>
@@ -63,7 +63,7 @@
     <div class="row">
         <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()">Shift</div>
         {{range (index .Kbd 3)}}
-        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()">Shift</div>
     </div>
@@ -154,8 +154,41 @@
         <dd>wɪt͡ʃ kaɪnd ʌv soʊdʌz ʃʊd ju bi ɡɛtɪŋ fɹ̠ʌm ðæt pleɪs wɪθ d͡ʒɔɪ, ʒɑ̃, ænd haʊwɹ̠d?</dd>
     </dl>
 </aside>
-
-
+<audio class="hidden" id="aFon" src="{{.Root}}/static/audio/phonemes/a.mp3" preload></audio>
+<audio class="hidden" id="aaFon" src="{{.Root}}/static/audio/phonemes/aa.mp3" preload></audio>
+<audio class="hidden" id="aawFon" src="{{.Root}}/static/audio/phonemes/aaw.mp3" preload></audio>
+<audio class="hidden" id="aiFon" src="{{.Root}}/static/audio/phonemes/ai.mp3" preload></audio>
+<audio class="hidden" id="bFon" src="{{.Root}}/static/audio/phonemes/b.mp3" preload></audio>
+<audio class="hidden" id="dFon" src="{{.Root}}/static/audio/phonemes/d.mp3" preload></audio>
+<audio class="hidden" id="dhFon" src="{{.Root}}/static/audio/phonemes/dh.mp3" preload></audio>
+<audio class="hidden" id="dzhFon" src="{{.Root}}/static/audio/phonemes/dzh.mp3" preload></audio>
+<audio class="hidden" id="eFon" src="{{.Root}}/static/audio/phonemes/e.mp3" preload></audio>
+<audio class="hidden" id="eiFon" src="{{.Root}}/static/audio/phonemes/ei.mp3" preload></audio>
+<audio class="hidden" id="fFon" src="{{.Root}}/static/audio/phonemes/f.mp3" preload></audio>
+<audio class="hidden" id="gFon" src="{{.Root}}/static/audio/phonemes/g.mp3" preload></audio>
+<audio class="hidden" id="hFon" src="{{.Root}}/static/audio/phonemes/h.mp3" preload></audio>
+<audio class="hidden" id="iFon" src="{{.Root}}/static/audio/phonemes/i.mp3" preload></audio>
+<audio class="hidden" id="kFon" src="{{.Root}}/static/audio/phonemes/k.mp3" preload></audio>
+<audio class="hidden" id="lFon" src="{{.Root}}/static/audio/phonemes/l.mp3" preload></audio>
+<audio class="hidden" id="mFon" src="{{.Root}}/static/audio/phonemes/m.mp3" preload></audio>
+<audio class="hidden" id="nFon" src="{{.Root}}/static/audio/phonemes/n.mp3" preload></audio>
+<audio class="hidden" id="ngFon" src="{{.Root}}/static/audio/phonemes/ng.mp3" preload></audio>
+<audio class="hidden" id="oFon" src="{{.Root}}/static/audio/phonemes/o.mp3" preload></audio>
+<audio class="hidden" id="oiFon" src="{{.Root}}/static/audio/phonemes/oi.mp3" preload></audio>
+<audio class="hidden" id="ooFon" src="{{.Root}}/static/audio/phonemes/oo.mp3" preload></audio>
+<audio class="hidden" id="pFon" src="{{.Root}}/static/audio/phonemes/p.mp3" preload></audio>
+<audio class="hidden" id="rFon" src="{{.Root}}/static/audio/phonemes/r.mp3" preload></audio>
+<audio class="hidden" id="sFon" src="{{.Root}}/static/audio/phonemes/s.mp3" preload></audio>
+<audio class="hidden" id="shFon" src="{{.Root}}/static/audio/phonemes/sh.mp3" preload></audio>
+<audio class="hidden" id="tFon" src="{{.Root}}/static/audio/phonemes/t.mp3" preload></audio>
+<audio class="hidden" id="thFon" src="{{.Root}}/static/audio/phonemes/th.mp3" preload></audio>
+<audio class="hidden" id="tshFon" src="{{.Root}}/static/audio/phonemes/tsh.mp3" preload></audio>
+<audio class="hidden" id="uFon" src="{{.Root}}/static/audio/phonemes/u.mp3" preload></audio>
+<audio class="hidden" id="vFon" src="{{.Root}}/static/audio/phonemes/v.mp3" preload></audio>
+<audio class="hidden" id="wFon" src="{{.Root}}/static/audio/phonemes/w.mp3" preload></audio>
+<audio class="hidden" id="yFon" src="{{.Root}}/static/audio/phonemes/y.mp3" preload></audio>
+<audio class="hidden" id="zFon" src="{{.Root}}/static/audio/phonemes/z.mp3" preload></audio>
+<audio class="hidden" id="zhFon" src="{{.Root}}/static/audio/phonemes/zh.mp3" preload></audio>
 </main>
 <script>
     let shiftState
@@ -213,6 +246,10 @@
             shiftState = false            
         }
     });
+
+    function pleiFon(fon) {
+        document.getElementById(fon+'Fon').play();
+    }
 </script>
 {{template "_footer.html" .}}
 {{end}}
