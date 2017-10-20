@@ -24,7 +24,7 @@
                 min-width: 39px;
             }
             &:not(.shift)[data-title] {
-                &:active, &:focus {
+                &:active {
                     border-style: inset;
                     font-size: .98rem;
                 }
