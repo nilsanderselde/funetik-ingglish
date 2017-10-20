@@ -52,6 +52,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.TitleTrud = "Keyboard"
 		t.args.TitleFun = "Kybord"
 	case "stats.html":
+		t.args.Stats = global.Stats
 		t.args.TitleTrud = "Stats"
 		t.args.TitleFun = "Stäts"
 	case "translit.html":
@@ -76,8 +77,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	t.once.Do(func() {
 		funcMap := template.FuncMap{
-			"GetStats": dbconnect.GetStats,
-			"Random":   randomRune,
+			"Random": randomRune,
 		}
 		templateName := strings.TrimSuffix(t.filenames[0], "*.html")
 		t.filenames = append(t.filenames, "_header.html", "_footer.html")

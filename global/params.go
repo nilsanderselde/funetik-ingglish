@@ -18,6 +18,8 @@ var (
 	Alphabet = []string{"a", "ä", "e", "i", "y", "w", "u", "ø", "o", "r", "l", "n", "m", "b", "p", "v", "f", "g", "k", "d", "t", "z", "s", "ž", "š", "h"}
 	// RowCount counts number of rows in DB
 	RowCount int
+	// Stats stores the stats about the words in the database
+	Stats [][]string
 )
 
 // InitialIndexValue stores the start number for the first word starting with the stored letter
@@ -30,22 +32,22 @@ type InitialIndexValue struct {
 // passed to mapped functions in templates
 type TemplateParams struct {
 	// words page
-	SortBy   string
-	Reverse  bool
-	Start    int
-	Num      int
-	Alphabet []string
-
+	SortBy       string
+	Reverse      bool
+	Start        int
+	Num          int
+	Alphabet     []string
 	Words        [][]string
 	SortQ        string
 	PQuery       string
 	InitialIndex []InitialIndexValue
-
 	NextPage     string
 	PreviousPage string
-	// end words page
 
-	//translit page
+	// stats page
+	Stats [][]string
+
+	// translit page
 	TranslitOutput []string
 	TranslitInput  string
 
