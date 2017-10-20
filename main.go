@@ -48,6 +48,7 @@ func main() {
 	}
 
 	// Precalculate data for site
+	global.RowCount = dbconnect.CountRows()
 	dbconnect.StatsInit()
 	dbconnect.IndexByInitial()
 	fmt.Println("Stats and initial letter index precalculated. Ready to go.")

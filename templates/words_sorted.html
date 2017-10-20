@@ -2,7 +2,7 @@
 {{$currentpage := .CurrentPage}}
 {{$isDev := .IsDev}}
 {{$random := Random}}
-    {{range ShowWords .}}
+    {{range .Words}}
         {{if eq (index . 0) "-1"}}
         <tr class="no-results"><td colspan="{{if $isDev}}6{{else}}5{{end}}"><span><a href="\"><i>😂</i> nuthin hyr <i>😭</i></a></span></td></tr>
         {{else}}

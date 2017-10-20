@@ -117,12 +117,11 @@ COALESCE(flaagd, 'false')
 	}
 
 	// see if next page link should be hidden because there's no more results
-	numrows := dbconnect.CountRows(wordsQueryFrom)
-	if numrows < start+num {
+	if global.RowCount < start+num {
 		t.args.NextPage = ""
 	}
 	// if num rows returned less than start num, disable previous page link
-	if numrows < start {
+	if global.RowCount < start {
 		t.args.PreviousPage = ""
 	}
 

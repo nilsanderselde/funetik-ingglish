@@ -16,6 +16,8 @@ var (
 	InitialIndex []InitialIndexValue
 	// Alphabet lists Funetik Inggliš letters in order. Used to allow jumping to letter on word page.
 	Alphabet = []string{"a", "ä", "e", "i", "y", "w", "u", "ø", "o", "r", "l", "n", "m", "b", "p", "v", "f", "g", "k", "d", "t", "z", "s", "ž", "š", "h"}
+	// RowCount counts number of rows in DB
+	RowCount int
 )
 
 // InitialIndexValue stores the start number for the first word starting with the stored letter
