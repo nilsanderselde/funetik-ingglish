@@ -5,8 +5,8 @@
     <h1>Phonetic English</h1>
     <h2>Introduction</h2>
     <p>
-        After studying linguistics, Spanish, and Russian, I came to realize just how complicated and counterintuitive our alphabet
-        and spelling system for English is. Children and foreign speakers have trouble decyphering the labyrinthian and arbitrary
+        Our alphabet and spelling system for English is complicated and counterintuitive. 
+        Children and foreign speakers have trouble decyphering the labyrinthian and arbitrary
         system of "rules" (which aren't really rules) and unnormalized foreign spellings. I decided to rework the alphabet in
         a way that is consistent and intuitive, for fun and to see what it might look like.
     </p>
@@ -43,8 +43,8 @@
     <h1>Funetik Inggliš</h1>
     <h2>Intrudukšin</h2>
     <p>
-        Äftør studying linggwistiks, Späniš, änd Rušin, Ai keim tw ryølaiz džust häw kamplikeitid änd käwntørintwitiv äwør älfubit
-        änd speling sistum for Inggliš iz. Tšildrin änd forin spykørz häv trubul disaiføring dhu labirinthyin änd arbitrery sistum
+        Äwør älfubit änd speling sistum for Inggliš iz kamplikeitid änd käwntørintwitiv. 
+        Tšildrin änd forin spykørz häv trubul disaiføring dhu labirinthyin änd arbitrery sistum
         uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz. Ai disaidid tw rywørk dhu älfubit in u wei dhät iz
         kunsistint änd intwitiv, for fun änd tw sy wut it mait løk laik.
     </p>
@@ -63,7 +63,10 @@
     </p>
     <h2>Dhu Älfubit</h2>
     <h3>Funetik Ordør</h3>
-    <p class="älfubit">a ä e i y w u ø o r l n m b p v f g k d t z s ž š h<br>A Ä E I Y W U Ø O R L N M B P V F G K D T Z S Ž Š H</p>
+    <p class="alphabet">
+        <span><span><span>a ä e i y w u ø o r l n m</span> <span>b p v f g k d t z s ž š h</span></span>
+        <span class="nomobile">A Ä E I Y W U Ø O R L N M B P V F G K D T Z S Ž Š H</span>
+    </p>
     <p>
         Dhu älfubit for Funetik Inggliš iz ureindžd with väwulz først, dhen
         <a href="https://en.wikipedia.org/wiki/Sonorant" target="_blank">sonørint</a> kansunintz, änd dhen
@@ -78,56 +81,63 @@
     </p>
     {{end}}
 
-    <div class="col letters">
-        <ul>
-            <li><span onpointerdown="pleiFon('a');" data-title="IPA: ɑ/ɔ/ɒ" class="info toleft nolink hover"><strong>a</strong> as in b<strong>a</strong>t <em>(b<strong>ou</strong>ght)</em></span></li>
-            <li><span onpointerdown="pleiFon('aa');" data-title="IPA: æ" class="info toleft nolink hover"><strong>ä</strong> as in b<strong>ä</strong>t <em>(b<strong>a</strong>t)</em></span></li>
-            <li><span onpointerdown="pleiFon('e');" data-title="IPA: ɛ/e" class="info toleft nolink hover"><strong>e</strong> as in b<strong>e</strong>t <em>(b<strong>e</strong>t)</em></span></li>
-            <li><span onpointerdown="pleiFon('i');" data-title="IPA: ɪ" class="info toleft nolink hover"><strong>i</strong> as in b<strong>i</strong>t <em>(b<strong>i</strong>t)</em></span></li>
-            <li><span onpointerdown="pleiFon('y');" data-title="IPA: i/j" class="info toleft nolink hover"><strong>y</strong> as in b<strong>y</strong>t <em>(b<strong>ea</strong>t)</em></span></li>
-            <li><span onpointerdown="pleiFon('w');" data-title="IPA: u/w" class="info toleft nolink hover"><strong>w</strong> as in b<strong>w</strong>t <em>(b<strong>oo</strong>t)</em></span></li>
-            <li><span onpointerdown="pleiFon('u');" data-title="IPA: ʌ/ɐ" class="info toleft nolink hover"><strong>u</strong> as in b<strong>u</strong>t <em>(b<strong>u</strong>t)</em></span></li>
-            <li><span onpointerdown="pleiFon('oo');" data-title="IPA: ʊ" class="info toleft nolink hover"><strong>ø</strong> as in p<strong>ø</strong>t <em>(p<strong>u</strong>t)</em></span></li>
-            <li><span onpointerdown="pleiFon('o');" data-title="IPA: oʊ/əʊ/əʉ" class="info toleft nolink hover"><strong>o</strong> as in b<strong>o</strong>t <em>(b<strong>oa</strong>t)</em></span></li>
-            <li><span onpointerdown="pleiFon('r');" data-title="IPA: ɹ̠" class="info toleft nolink hover"><strong>r</strong> as in <strong>r</strong>o <em>(<strong>r</strong>ow)</em></span></li>
-            <li><span onpointerdown="pleiFon('l');" data-title="IPA: l" class="info toleft nolink hover"><strong>l</strong> as in <strong>l</strong>o <em>(<strong>l</strong>ow)</em></span></li>
-            <li><span onpointerdown="pleiFon('n');" data-title="IPA: n" class="info toleft nolink hover"><strong>n</strong> as in <strong>n</strong>äp <em>(<strong>n</strong>ap)</em></span></li>
-            <li><span onpointerdown="pleiFon('m');" data-title="IPA: m" class="info toleft nolink hover"><strong>m</strong> as in <strong>m</strong>äp <em>(<strong>m</strong>ap)</em></span></li>
-        </ul>
-        <h3><a href="https://en.wikipedia.org/wiki/Diphthong" target="_blank">{{if .DisplayTrud}}Diphthongs{{else}}Difthangz{{end}}</a></h3>
-        <ul>
-            <li><span onpointerdown="pleiFon('ai');" data-title="IPA: aɪ/ɑe" class="info toleft nolink hover"><strong>ai</strong> as in <strong>ai</strong>l <em>(<strong>ai</strong>sle, <strong>i</strong>sle)</em></span></li>
-            <li><span onpointerdown="pleiFon('aaw');" data-title="IPA: aʊ/æɔ" class="info toleft nolink hover"><strong>äw</strong> as in <strong>äw</strong>l <em>(<strong>ow</strong>l)</em></span></li>
-            <li><span onpointerdown="pleiFon('ei');" data-title="IPA: eɪ/æɪ" class="info toleft nolink hover"><strong>ei</strong> as in <strong>ei</strong>l <em>(<strong>a</strong>le, <strong>ai</strong>l)</em></span></li>
-            <li><span onpointerdown="pleiFon('oi');" data-title="IPA: ɔɪ/oɪ" class="info toleft nolink hover"><strong>oi</strong> as in <strong>oi</strong>l <em>(<strong>oi</strong>l)</em>
-        </ul>
+    <div>
+        <div class="col">
+            <ul>
+                <li><span onpointerdown="pleiFon('a');" data-title="IPA: ɑ/ɔ/ɒ" class="info toright nolink hover"><strong>a</strong> as in b<strong>a</strong>t <em>(b<strong>ou</strong>ght)</em></span></li>
+                <li><span onpointerdown="pleiFon('aa');" data-title="IPA: æ" class="info toright nolink hover"><strong>ä</strong> as in b<strong>ä</strong>t <em>(b<strong>a</strong>t)</em></span></li>
+                <li><span onpointerdown="pleiFon('e');" data-title="IPA: ɛ/e" class="info toright nolink hover"><strong>e</strong> as in b<strong>e</strong>t <em>(b<strong>e</strong>t)</em></span></li>
+                <li><span onpointerdown="pleiFon('i');" data-title="IPA: ɪ" class="info toright nolink hover"><strong>i</strong> as in b<strong>i</strong>t <em>(b<strong>i</strong>t)</em></span></li>
+                <li><span onpointerdown="pleiFon('y');" data-title="IPA: i/j" class="info toright nolink hover"><strong>y</strong> as in b<strong>y</strong>t <em>(b<strong>ea</strong>t)</em></span></li>
+                <li><span onpointerdown="pleiFon('w');" data-title="IPA: u/w" class="info toright nolink hover"><strong>w</strong> as in b<strong>w</strong>t <em>(b<strong>oo</strong>t)</em></span></li>
+                <li><span onpointerdown="pleiFon('u');" data-title="IPA: ʌ/ɐ" class="info toright nolink hover"><strong>u</strong> as in b<strong>u</strong>t <em>(b<strong>u</strong>t)</em></span></li>
+                <li><span onpointerdown="pleiFon('oo');" data-title="IPA: ʊ" class="info toright nolink hover"><strong>ø</strong> as in p<strong>ø</strong>t <em>(p<strong>u</strong>t)</em></span></li>
+                <li><span onpointerdown="pleiFon('o');" data-title="IPA: oʊ/əʊ/əʉ" class="info toright nolink hover"><strong>o</strong> as in b<strong>o</strong>t <em>(b<strong>oa</strong>t)</em></span></li>
+                <li><span onpointerdown="pleiFon('r');" data-title="IPA: ɹ̠" class="info toright nolink hover"><strong>r</strong> as in <strong>r</strong>o <em>(<strong>r</strong>ow)</em></span></li>
+                <li><span onpointerdown="pleiFon('l');" data-title="IPA: l" class="info toright nolink hover"><strong>l</strong> as in <strong>l</strong>o <em>(<strong>l</strong>ow)</em></span></li>
+                <li><span onpointerdown="pleiFon('n');" data-title="IPA: n" class="info toright nolink hover"><strong>n</strong> as in <strong>n</strong>äp <em>(<strong>n</strong>ap)</em></span></li>
+                <li><span onpointerdown="pleiFon('m');" data-title="IPA: m" class="info toright nolink hover"><strong>m</strong> as in <strong>m</strong>äp <em>(<strong>m</strong>ap)</em></span></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li><span onpointerdown="pleiFon('b');" data-title="IPA: b" class="info toright nolink hover"><strong>b</strong> as in <strong>b</strong>ät <em>(<strong>b</strong>at)</em></span></li>
+                <li><span onpointerdown="pleiFon('p');" data-title="IPA: p" class="info toright nolink hover"><strong>p</strong> as in <strong>p</strong>ät <em>(<strong>p</strong>at)</em></span></li>
+                <li><span onpointerdown="pleiFon('v');" data-title="IPA: v" class="info toright nolink hover"><strong>v</strong> as in ly<strong>v</strong> <em>(lea<strong>v</strong>e)</em></span></li>
+                <li><span onpointerdown="pleiFon('f');" data-title="IPA: f" class="info toright nolink hover"><strong>f</strong> as in ly<strong>f</strong> <em>(lea<strong>f</strong>)</em></span></li>
+                <li><span onpointerdown="pleiFon('g');" data-title="IPA: ɡ" class="info toright nolink hover"><strong>g</strong> as in <strong>g</strong>ørl <em>(<strong>g</strong>irl)</em></span></li>
+                <li><span onpointerdown="pleiFon('k');" data-title="IPA: k" class="info toright nolink hover"><strong>k</strong> as in <strong>k</strong>ørl <em>(<strong>c</strong>url)</em></span></li>
+                <li><span onpointerdown="pleiFon('d');" data-title="IPA: d" class="info toright nolink hover"><strong>d</strong> as in <strong>d</strong>un <em>(<strong>d</strong>one)</em></span></li>
+                <li><span onpointerdown="pleiFon('t');" data-title="IPA: t" class="info toright nolink hover"><strong>t</strong> as in <strong>t</strong>un <em>(<strong>t</strong>on)</em></span></li>
+                <li><span onpointerdown="pleiFon('z');" data-title="IPA: z" class="info toright nolink hover"><strong>z</strong> as in <strong>z</strong>w <em>(<strong>z</strong>oo)</em></span></li>
+                <li><span onpointerdown="pleiFon('s');" data-title="IPA: s" class="info toright nolink hover"><strong>s</strong> as in <strong>s</strong>w <em>(<strong>s</strong>ue)</em></span></li>
+                <li><span onpointerdown="pleiFon('zh');" data-title="IPA: ʒ" class="info toright nolink hover"><strong>ž</strong> as in me<strong>ž</strong>ør <em>(mea<strong>s</strong>ure)</em></span></li>
+                <li><span onpointerdown="pleiFon('sh');" data-title="IPA: ʃ" class="info toright nolink hover"><strong>š</strong> as in pre<strong>š</strong>ør <em>(pre<strong>ss</strong>ure)</em></span></li>
+                <li><span onpointerdown="pleiFon('h');" data-title="IPA: h" class="info toright nolink hover"><strong>h</strong> as in <strong>h</strong>äpy <em>(<strong>h</strong>appy)</em>
+            </ul>
+        </div>
     </div>
-    <div class="col letters">
-        <ul>
-            <li><span onpointerdown="pleiFon('b');" data-title="IPA: b" class="info toleft nolink hover"><strong>b</strong> as in <strong>b</strong>ät <em>(<strong>b</strong>at)</em></span></li>
-            <li><span onpointerdown="pleiFon('p');" data-title="IPA: p" class="info toleft nolink hover"><strong>p</strong> as in <strong>p</strong>ät <em>(<strong>p</strong>at)</em></span></li>
-            <li><span onpointerdown="pleiFon('v');" data-title="IPA: v" class="info toleft nolink hover"><strong>v</strong> as in ly<strong>v</strong> <em>(lea<strong>v</strong>e)</em></span></li>
-            <li><span onpointerdown="pleiFon('f');" data-title="IPA: f" class="info toleft nolink hover"><strong>f</strong> as in ly<strong>f</strong> <em>(lea<strong>f</strong>)</em></span></li>
-            <li><span onpointerdown="pleiFon('g');" data-title="IPA: ɡ" class="info toleft nolink hover"><strong>g</strong> as in <strong>g</strong>ørl <em>(<strong>g</strong>irl)</em></span></li>
-            <li><span onpointerdown="pleiFon('k');" data-title="IPA: k" class="info toleft nolink hover"><strong>k</strong> as in <strong>k</strong>ørl <em>(<strong>c</strong>url)</em></span></li>
-            <li><span onpointerdown="pleiFon('d');" data-title="IPA: d" class="info toleft nolink hover"><strong>d</strong> as in <strong>d</strong>un <em>(<strong>d</strong>one)</em></span></li>
-            <li><span onpointerdown="pleiFon('t');" data-title="IPA: t" class="info toleft nolink hover"><strong>t</strong> as in <strong>t</strong>un <em>(<strong>t</strong>on)</em></span></li>
-            <li><span onpointerdown="pleiFon('z');" data-title="IPA: z" class="info toleft nolink hover"><strong>z</strong> as in <strong>z</strong>w <em>(<strong>z</strong>oo)</em></span></li>
-            <li><span onpointerdown="pleiFon('s');" data-title="IPA: s" class="info toleft nolink hover"><strong>s</strong> as in <strong>s</strong>w <em>(<strong>s</strong>ue)</em></span></li>
-            <li><span onpointerdown="pleiFon('zh');" data-title="IPA: ʒ" class="info toleft nolink hover"><strong>ž</strong> as in me<strong>ž</strong>ør <em>(mea<strong>s</strong>ure)</em></span></li>
-            <li><span onpointerdown="pleiFon('sh');" data-title="IPA: ʃ" class="info toleft nolink hover"><strong>š</strong> as in pre<strong>š</strong>ør <em>(pre<strong>ss</strong>ure)</em></span></li>
-            <li><span onpointerdown="pleiFon('h');" data-title="IPA: h" class="info toleft nolink hover"><strong>h</strong> as in <strong>h</strong>äpy <em>(<strong>h</strong>appy)</em>
-        </ul>
-        <h3><a href="https://en.wikipedia.org/wiki/Digraph_%28orthography%29" target="_blank">{{if .DisplayTrud}}Digraphs{{else}}Daigräfs{{end}}</a></h3>
-        <ul>
-            <li><span onpointerdown="pleiFon('ng');" data-title="IPA: ŋ" class="info toleft nolink hover"><strong>ng</strong> as in stra<strong>ng</strong> <em>(stro<strong>ng</strong>)</em></span></li>
-            <li><span onpointerdown="pleiFon('dh');" data-title="IPA: ð" class="info toleft nolink hover"><strong>dh</strong> as in <strong>dh</strong>en <em>(<strong>th</strong>en)</em></span></li>
-            <li><span onpointerdown="pleiFon('th');" data-title="IPA: θ" class="info toleft nolink hover"><strong>th</strong> as in <strong>th</strong>in <em>(<strong>th</strong>in)</em></span></li>
-            <li><span onpointerdown="pleiFon('dzh');" data-title="IPA: d͡ʒ" class="info toleft nolink hover"><strong>dž</strong> as in <strong>dž</strong>ir <em>(<strong>j</strong>eer)</em></span></li>
-            <li><span onpointerdown="pleiFon('tsh');" data-title="IPA: t͡ʃ" class="info toleft nolink hover"><strong>tš</strong> as in <strong>tš</strong>ir <em>(<strong>ch</strong>eer)</em>
-        </ul>
+    <div>
+        <div class="col">
+            <h3><a href="https://en.wikipedia.org/wiki/Diphthong" target="_blank">{{if .DisplayTrud}}Diphthongs{{else}}Difthangz{{end}}</a></h3>
+            <ul>
+                <li><span onpointerdown="pleiFon('ai');" data-title="IPA: aɪ/ɑe" class="info toright nolink hover"><strong>ai</strong> as in <strong>ai</strong>l <em>(<strong>ai</strong>sle, <strong>i</strong>sle)</em></span></li>
+                <li><span onpointerdown="pleiFon('aaw');" data-title="IPA: aʊ/æɔ" class="info toright nolink hover"><strong>äw</strong> as in <strong>äw</strong>l <em>(<strong>ow</strong>l)</em></span></li>
+                <li><span onpointerdown="pleiFon('ei');" data-title="IPA: eɪ/æɪ" class="info toright nolink hover"><strong>ei</strong> as in <strong>ei</strong>l <em>(<strong>a</strong>le, <strong>ai</strong>l)</em></span></li>
+                <li><span onpointerdown="pleiFon('oi');" data-title="IPA: ɔɪ/oɪ" class="info toright nolink hover"><strong>oi</strong> as in <strong>oi</strong>l <em>(<strong>oi</strong>l)</em>
+            </ul>
+        </div>
+        <div class="col">
+            <h3><a href="https://en.wikipedia.org/wiki/Digraph_%28orthography%29" target="_blank">{{if .DisplayTrud}}Digraphs{{else}}Daigräfs{{end}}</a></h3>
+            <ul>
+                <li><span onpointerdown="pleiFon('ng');" data-title="IPA: ŋ" class="info toright nolink hover"><strong>ng</strong> as in stra<strong>ng</strong> <em>(stro<strong>ng</strong>)</em></span></li>
+                <li><span onpointerdown="pleiFon('dh');" data-title="IPA: ð" class="info toright nolink hover"><strong>dh</strong> as in <strong>dh</strong>en <em>(<strong>th</strong>en)</em></span></li>
+                <li><span onpointerdown="pleiFon('th');" data-title="IPA: θ" class="info toright nolink hover"><strong>th</strong> as in <strong>th</strong>in <em>(<strong>th</strong>in)</em></span></li>
+                <li><span onpointerdown="pleiFon('dzh');" data-title="IPA: d͡ʒ" class="info toright nolink hover"><strong>dž</strong> as in <strong>dž</strong>ir <em>(<strong>j</strong>eer)</em></span></li>
+                <li><span onpointerdown="pleiFon('tsh');" data-title="IPA: t͡ʃ" class="info toright nolink hover"><strong>tš</strong> as in <strong>tš</strong>ir <em>(<strong>ch</strong>eer)</em>
+            </ul>
+        </div>
     </div>
-    
 
 {{if .DisplayTrud}}
     <h2>Where are C, J, Q and X?</h2>
@@ -165,7 +175,6 @@
         <li>ž→zh</li>
         <li>š→sh</li>
     </ul>
-
 {{end}}
 
 <audio class="hidden" id="aFon" src="{{.Root}}/static/audio/phonemes/a.mp3" preload></audio>
