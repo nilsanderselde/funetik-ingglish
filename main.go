@@ -90,5 +90,5 @@ func setHeaders(h http.Handler) http.Handler {
 }
 
 func faviconHandler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "./static/favicon.ico")
+	http.ServeFile(w, r, ROOT+"/static/favicon.ico")
 }
