@@ -75,7 +75,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	t.once.Do(func() {
 		funcMap := template.FuncMap{
 			"ShowWords": dbconnect.ShowWords,
-			"Random": randomRune,
+			"Random":    randomRune,
 		}
 		templateName := strings.TrimSuffix(t.filenames[0], "*.html")
 		t.filenames = append(t.filenames, "_header.html", "_footer.html")
