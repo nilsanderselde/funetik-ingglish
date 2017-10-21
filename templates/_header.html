@@ -4,6 +4,7 @@
         
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{.Root}}/static/stylesheets/normalize.css">    
     <link rel="stylesheet" href="{{.Root}}/static/stylesheets/jquery-ui.min.css">    
     <link rel="stylesheet" href="{{.Root}}/static/stylesheets/main.css">
@@ -13,7 +14,8 @@
 
 <body>
     <header>
-        <h1><img src="{{.Root}}/static/images/logo.png" width="400" height="261" alt="ÄØŽŠ"></h1>
+        <h1><img src="{{.Root}}/static/images/logo.png" width="400" height="261" alt="ÄØŽŠ">
+        {{if not .SingleOrth}}<div id="orth"><a href="{{.ChangeOrth}}"{{if .DisplayTrud}} data-title="View in Phonetic English" class="info below">Vyw in Funetik Inggliš{{else}}>View in traditional English{{end}}</a></div>{{end}}</h1>
 
         <nav class="top">
             <ul>
@@ -36,6 +38,6 @@
             </ul>
         </nav>
     </header>
-    {{if not .SingleOrth}}<div id="orth"><a href="{{.ChangeOrth}}"{{if .DisplayTrud}} data-title="Read this page in Phonetic English" class="info below">Ryd dhis peidž in Funetik Inggliš{{else}}>Read this page in traditional English{{end}}</a></div>{{end}}
+
     <div id="fillY">
 {{end}}

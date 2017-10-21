@@ -20,7 +20,7 @@
             flex: 1 1 auto;
             padding: 2px;
             margin: 1px;
-            @media screen and (min-width: 700px) {
+            @media screen and (min-width: 699px) {
                 min-width: 39px;
             }
             &:not(.shift)[data-title] {
@@ -134,6 +134,7 @@
             font-size: $small;
             font-weight: bold;
             padding: 2px 6px;
+            width: 34px;
         }
         &.active {
             background: rgb(49, 98, 153);

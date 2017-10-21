@@ -2,16 +2,20 @@
 table {
     border-collapse: collapse;
     table-layout: fixed;
-
-
+    box-sizing: border-box;
+    tbody {
+        width: 100%;
+    }
     tr:nth-of-type(even) {
         background: rgba(100, 100, 100, 0.1);
     }
     td,
     caption {
-        padding: 5px 5px;
+        padding: 5px 3px;
+        box-sizing: border-box;
     }
     th {
+        box-sizing: border-box;
         user-select: none;
         white-space: nowrap;
         text-align: center;
@@ -38,6 +42,16 @@ table {
                 border-bottom: 1px solid #eee;
                 transition: .1s border-color linear;
             }
+            .nomobile {
+                @media (max-width: 499px) {
+                    display: none;
+                }
+            }
+            .mobile {
+                @media (min-width: 500px) {
+                    display: none;
+                }
+            }
             &:link,
             &:visited {
                 color: #eee;
@@ -57,7 +71,6 @@ table {
     }
     td {
         border-right: 1px solid rgba(255, 255, 255, 0.2);
-        overflow: scroll-x;
         text-align: left;
         color: #222;
         &:nth-last-of-type(1) {

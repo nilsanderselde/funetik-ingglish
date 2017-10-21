@@ -9,6 +9,14 @@
 $roboto: 'Roboto', sans-serif;
 $monoto: 'Roboto Mono', monospace;
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 html {
     background: #eee;
     color: #333;
@@ -30,7 +38,6 @@ main {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40vh, rgba(255, 255, 255, 0.8) 80vh, rgba(255, 255, 255, .7) 100vh);
     background-attachment: fixed;
     padding: 10px;
-    box-sizing: border-box;
     font-size: .8rem;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.1);
     position: relative;
@@ -65,31 +72,37 @@ footer {
 main,
 header,
 footer,
-#orth,
 #words,
 #stats,
 #legend {
     max-width: 700px;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;    
-    border-radius: 10px;  
+    box-sizing: border-box;
+    @media screen and (min-width: 700px) {
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    @media screen and (min-width: 701px) {
+        border-radius: 10px;      
+        
+    }
 }
 
 p {
     margin: .3rem 0 1rem 0;
+    line-height: 1.5em;
 }
 h1,
 h2,
 h3 {
     margin: 1rem 0 .5rem 0;
+    line-height: 1.5em;
+    
 }
 p,
 h1,
 h2,
-h3,
 li {
-    line-height: 1.5em;
     &:first-of-type{
         margin-top: 0;
     }

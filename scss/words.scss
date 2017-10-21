@@ -1,26 +1,20 @@
 /* words table th*/
 
 $header_offset: .55em;
-#id {
-    width: 2.8rem;
-}
-
-#pus {
-    width: 3.8rem;
-}
-
 // #nw a {
 //     position: relative;
 //     left: $header_offset;
 // }
-
 // #old a {
 //     position: relative;
 //     left: $header_offset;
 // }
-
 #dist {
-    width: 3rem;
+    width: 3.2rem;
+}
+
+#pus {
+    width: 3.6rem;
 }
 
 #sil {
@@ -29,28 +23,76 @@ $header_offset: .55em;
 
 #words {
     margin-top: 10px;
+    td:nth-of-type(3),
     td:nth-of-type(4),
-    td:nth-of-type(5),
-    td:nth-of-type(6) {
+    td:nth-of-type(5) {
         text-align: center;
+    }
+    th:nth-of-type(4),
+    td:nth-of-type(4),
+    th:nth-of-type(5),
+    td:nth-of-type(5) {
+        text-align: center;
+        @media (max-width: 299px) {
+            display: none;
+        }
+    }
+    th:nth-of-type(3),
+    td:nth-of-type(3) {
+        @media (max-width: 199px) {
+            display: none;
+        }
+    }
+    th:nth-of-type(2),
+    td:nth-of-type(2) {
+        @media (max-width: 119px) {
+            display: none;
+        }
+    }
+
+
+    td {
+        .icon {
+            display: none;
+        }
+        overflow-x: auto;
+        .info {
+            &:after {
+                @media (max-width: 499px) {
+                    display: none;
+                }
+            }
+            transition: 0;
+            border-width: 0px;
+        }
     }
 }
 
 #legend {
     cursor: default;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: top;
     margin-bottom: 10px;
+    text-align: center;
     h3 {
         text-align: center;
         font-weight: normal;
-        font-style: italic;     
+        font-style: italic;
+    }
+    @media screen and (max-width: 599px) and (min-width: 400px) {
+        div {
+            display: block !important;
+        }
+    }
+    @media (max-width: 299px) {
+        display: none;
+    }
+    div {
+        display: inline;
     }
     table {
         background: transparent;
+        width: 140px;
         display: inline-block;
+        text-align: left;
         td:nth-of-type(1) {
             text-align: center;
             font-weight: bold;
@@ -59,13 +101,15 @@ $header_offset: .55em;
         th {
             background: transparent;
             padding: 2px 5px;
-            color: #444;    
+            color: #444;
             white-space: nowrap;
             border: 0;
         }
         tr {
             background: transparent;
-            
+        }
+        @media screen and (min-width: 499px) {
+            &:nth-of-type(odd) {}
         }
     }
 }

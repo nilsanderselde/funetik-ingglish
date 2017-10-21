@@ -6,14 +6,11 @@
 
 <table id="words">
     <tr>
-        {{if .IsDev}}<th id="id">
-            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if eq .SortBy "id"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
-        </th>{{end}}
         <th id="nw">
-            <a href="?sortby=funsort&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">New Spelling</span>{{if eq .SortBy "funsort"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=funsort&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">New<span class="nomobile"> Spelling</span></span>{{if eq .SortBy "funsort"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="old">
-            <a href="?sortby=trud&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="abcdefghijklmnopqrstuvwxyz" class="info above">Old Spelling</span>{{if eq .SortBy "trud"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=trud&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="abcdefghijklmnopqrstuvwxyz" class="info above">Old<span class="nomobile"> Spelling</span></span>{{if eq .SortBy "trud"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="dist">
             <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Min # of changes 
@@ -33,14 +30,11 @@ to get from old to new" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i
 {{else}}
 <table id="words">
     <tr>
-        {{if .IsDev}}<th id="id">
-            <a href="?sortby=id&order={{if .Reverse}}asc{{else}}desc{{end}}"><span>ID</span>{{if eq .SortBy "id"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{end}}</a>
-        </th>{{end}}
         <th id="nw">
-            <a href="?sortby=funsort&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">Nw Speling</span>{{if eq .SortBy "funsort"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=funsort&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">Nw<span class="nomobile"> Speling</span></span>{{if eq .SortBy "funsort"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="old">
-            <a href="?sortby=trud&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="abcdefghijklmnopqrstuvwxyz" class="info above">Old Speling</span>{{if eq .SortBy "trud"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
+            <a href="?sortby=trud&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="abcdefghijklmnopqrstuvwxyz" class="info above">Old<span class="nomobile"> Speling</span></span>{{if eq .SortBy "trud"}}<i>{{if .Reverse}}🡇{{else}}🡅{{end}}</i>{{else}}<i class="hidden">🡇</i>{{end}}</a>
         </th>
         <th id="dist">
             <a href="?sortby=dist&order={{if .Reverse}}asc{{else}}desc{{end}}"><span data-title="Min # uv tšendžiz 
@@ -96,57 +90,61 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i>
 
 {{if .DisplayTrud}}
 <aside id="legend">
+    <div>
     <table>
         <tr><td>N</td><td>Noun</td></tr>
         <tr><td>p</td><td>Plural</td></tr>
         <tr><td>h</td><td>Noun Phrase</td></tr>
-        <tr><td>V</td><td>Verb (usu. participle)</td></tr>
+        <tr><td>r</td><td>Pronoun</td></tr>
     </table>
     <table>
+        <tr><td>V</td><td>Verb (usu.<br>participle)</td></tr>
         <tr><td>t</td><td>Verb (transitive)</td></tr>
         <tr><td>i</td><td>Verb (intransitive)</td></tr>
+    </table>
+</div><div>
+    <table>
         <tr><td>A</td><td>Adjective</td></tr>
         <tr><td>v</td><td>Adverb</td></tr>
-    </table>
-    
-    <table>
         <tr><td>C</td><td>Conjugation</td></tr>
         <tr><td>P</td><td>Preposition</td></tr>
-        <tr><td>!</td><td>Interjection</td></tr>
-        <tr><td>r</td><td>Pronoun</td></tr>
     </table>
     <table>
         <tr><td>D</td><td>Definite Article</td></tr>
         <tr><td>I</td><td>Indefinite Article</td></tr>
         <tr><td>o</td><td>Nominitive</td></tr>
+        <tr><td>!</td><td>Interjection</td></tr>        
     </table>
+</div>
 </aside>
 {{else}}
 <aside id="legend">
+    <div>
     <table>
         <tr><td>N</td><td>Näwn</td></tr>
         <tr><td>P</td><td>Plørul</td></tr>
         <tr><td>h</td><td>Näwn Freiz</td></tr>
-        <tr><td>V</td><td>Vørb (yuž. partisipul)</td></tr>
+        <tr><td>r</td><td>Pronäwn</td></tr>
     </table>
     <table>
+        <tr><td>V</td><td>Vørb (yuž.<br>partisipul)</td></tr>
         <tr><td>t</td><td>Vørb (tränzitiv)</td></tr>
         <tr><td>i</td><td>Vørb (intränzitiv)</td></tr>
+    </table>
+    </div><div>
+    <table>
         <tr><td>A</td><td>Ädžiktiv</td></tr>
         <tr><td>v</td><td>Ädvørb</td></tr>
-    </table>
-    
-    <table>
         <tr><td>C</td><td>Kandžugeišin</td></tr>
         <tr><td>P</td><td>Prepuzišin</td></tr>
-        <tr><td>!</td><td>Intørdžekšin</td></tr>
-        <tr><td>r</td><td>Pronäwn</td></tr>
     </table>
     <table>
         <tr><td>D</td><td>Definit Artikul</td></tr>
         <tr><td>I</td><td>Indefinit Artikul</td></tr>
         <tr><td>o</td><td>Naminitiv</td></tr>
+        <tr><td>!</td><td>Intørdžekšin</td></tr>        
     </table>
+    </div>
 </aside>
 
 
