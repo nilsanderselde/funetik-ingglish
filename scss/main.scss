@@ -71,7 +71,6 @@ footer {
 }
 main,
 header,
-footer,
 #words,
 #stats,
 #legend {
@@ -83,26 +82,28 @@ footer,
         margin-right: auto;  
     }
     @media screen and (min-width: 701px) {
-        border-radius: 10px;      
-        
+        border-radius: 10px;
     }
-}
-
-p {
-    margin: .3rem 0 1rem 0;
-    line-height: 1.5em;
-}
-h1,
-h2,
-h3 {
-    margin: 1rem 0 .5rem 0;
-    line-height: 1.5em;
-    
 }
 p,
 h1,
 h2,
+h3,
 li {
+    line-height: 1.5em;
+    
+}
+p {
+    margin: .3rem 0 1rem 0;
+}
+h1,
+h2, 
+h3 {
+    margin: 1rem 0 .5rem 0;    
+}
+p,
+h1,
+h2 {
     &:first-of-type{
         margin-top: 0;
     }

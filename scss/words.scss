@@ -49,21 +49,16 @@ $header_offset: .55em;
             display: none;
         }
     }
-
-
     td {
         .icon {
             display: none;
         }
-        overflow-x: auto;
-        .info {
-            &:after {
-                @media (max-width: 499px) {
-                    display: none;
-                }
+        @media (max-width: 499px) {
+            .info {
+                transition: 0;
+                border-width: 0px;
             }
-            transition: 0;
-            border-width: 0px;
+            overflow-x: auto;
         }
     }
 }
@@ -107,9 +102,6 @@ $header_offset: .55em;
         }
         tr {
             background: transparent;
-        }
-        @media screen and (min-width: 499px) {
-            &:nth-of-type(odd) {}
         }
     }
 }
