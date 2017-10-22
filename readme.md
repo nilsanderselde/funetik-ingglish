@@ -7,7 +7,7 @@
 
 ## Intrudukšin *(Introduction)*
 
-Äftør studying Linggwistiks, Späniš, Rušin, änd Finiš, I keim tw ryilaiz džust häw kamplikeitid änd käwntørintwitiv äwr älfubit änd speling sistim for Umerikin Inggliš iz. Tšildrin änd forin spykørz häv trubul disaiføring dhu labirinthyin änd arbitrery sistim uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz. Ai disaidid tw rywørk Umerikin Inggliš in u wei dhät iz kunsistint änd intwitiv.
+Äftør studying Linggwistiks, Späniš, Rušin, änd Finiš, I keim tw ryilaiz džust haw kamplikeitid änd kawntørintwitiv awr älfubit änd speling sistim for Umerikin Inggliš iz. Tšildrin änd forin spykørz häv trubul disaiføring dhu labirinthyin änd arbitrery sistim uv "rwlz" (witš arn't rily rwlz) änd unnormulaizd forin spelingz. Ai disaidid tw rywørk Umerikin Inggliš in u wei dhät iz kunsistint änd intwitiv.
 
 >*After studying Linguistics, Spanish, Russian, and Finnish, I came to realize just how complicated and counterintuitive our alphabet and spelling system for American English is. Children and foreign speakers have trouble decyphering the labyrinthian and arbitrary system of "rules" (which aren't really rules) and unnormalized foreign spellings. I decided to rework American English in a way that is consistent and intuitive.*
 
@@ -27,7 +27,7 @@ Dhis raiting sistim wød prabibly kryeit sum kunfywžin for nan-Umerikin Inggli�
 
 ### Funetik Ordør *(Phonetic Order)*
 
-Dhu älfubit for Funetik Inggliš iz ureindžd with väwlz først, dhen [sonørint](https://en.wikipedia.org/wiki/Sonorant) kansunintz, änd dhen [abstrwint](https://en.wikipedia.org/wiki/Obstruent) kansunintz. Abstrwint kansunintz ar ureindžd in perz with dhu [voist](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) wun først.
+Dhu älfubit for Funetik Inggliš iz ureindžd with vawlz først, dhen [sonørint](https://en.wikipedia.org/wiki/Sonorant) kansunintz, änd dhen [abstrwint](https://en.wikipedia.org/wiki/Obstruent) kansunintz. Abstrwint kansunintz ar ureindžd in perz with dhu [voist](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) wun først.
 
 >*The alphabet for Phonetic English is arranged with vowels first, then [sonorant](https://en.wikipedia.org/wiki/Sonorant) consonants, and then [obstruent](https://en.wikipedia.org/wiki/Obstruent) consonants. Obstruent consonants are arranged in pairs with the [voiced](https://en.wikipedia.org/wiki/Voice_%28phonetics%29) one first.*
 
@@ -66,7 +66,7 @@ AÄEIYWUØORLNMBPVFGKDTZSŽŠH
 ### [Difthangs](https://en.wikipedia.org/wiki/Diphthong)
 
 <strong>ai</strong> as in <strong>ai</strong>l *(<strong>ai</strong>sle, <strong>i</strong>sle)*  
-<strong>äw</strong> as in <strong>äw</strong>l *(<strong>ow</strong>l)*  
+<strong>aw</strong> as in <strong>aw</strong>l *(<strong>ow</strong>l)*  
 <strong>ei</strong> as in <strong>ei</strong>l *(<strong>a</strong>le, <strong>ai</strong>l)*  
 <strong>oi</strong> as in <strong>oi</strong>l *(<strong>oi</strong>l)*
 
@@ -96,7 +96,7 @@ Funetik Inggliš also meiks wørdz slaitly šortør an ävridž. In dhu 4353-wø
 
 C, Q änd X ar ridundint letørz:  
 * C iz aidhør K or S. 'Ch' iz u kambineišin uv T änd Š, so it's ritin äz 'tš'.
-* Q prity mutš only upyrz with U, änd säwndz laik 'kw', so 'kw' iz häw tw rait dhis in Funetik Inggliš. 
+* Q prity mutš only upyrz with U, änd sawndz laik 'kw', so 'kw' iz haw tw rait dhis in Funetik Inggliš. 
 * X iz 'ks', 'gz', or džust 'z'
 
 >*C, Q and X are redundant letters:*
@@ -104,7 +104,7 @@ C, Q änd X ar ridundint letørz:
 >* *Q pretty much only appears with U, and sounds like 'kw', so 'kw' is how to write this in Phonetic English*
 >* *X iz 'ks', 'gz', or just 'z'*
 
-J, dhu voist käwntørpart uv 'ch', iz ywzd ubäwt äz infrykwintly. It's ritin äz 'dž'.
+J, dhu voist kawntørpart uv 'ch', iz ywzd ubawt äz infrykwintly. It's ritin äz 'dž'.
 >*J, the voiced counterpart of 'ch', is used about as infrequently. It's written as 'dž'.*
 
 ## Altørnit Spelingz *(Alternate Spellings)*
@@ -117,7 +117,7 @@ Dhu 4 nw letoorz kaan also by ritin with daigraafs if yw kaan't taip dhu nw keri
 * ž→zh
 * š→sh
 
-## Ubäwt dhis Ripazitory *(About this Repository)*
+## Ubawt dhis Ripazitory *(About this Repository)*
 
 U kulekšin uv twlz dhät Ai häv ywzd tw wørk an dhis funetik orthagrify for Inggliš.
 
@@ -141,7 +141,7 @@ Contains setup.exe, which installs the Inggliš (Funetik) keyboard layout for th
 
 Also contains ingfun.klc, the keyboard layout file for [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=22339).
 
-## Kybord Leiäwt
+## Kybord Leiawt
 
 ![Kybord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/keyboard.png)
 

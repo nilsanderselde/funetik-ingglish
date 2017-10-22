@@ -60,7 +60,7 @@ func main() {
 	http.Handle(ROOT+"/woordz", &templateHandler{filenames: []string{"words.html", "words_sorted.html"}})
 	http.Handle(ROOT+"/staats", &templateHandler{filenames: []string{"stats.html"}})
 	http.Handle(ROOT+"/traanzlit", &templateHandler{filenames: []string{"translit.html"}})
-	http.Handle(ROOT+"/ubaawt", &templateHandler{filenames: []string{"about.html"}})
+	http.Handle(ROOT+"/ubawt", &templateHandler{filenames: []string{"about.html"}})
 
 	if global.IsDev {
 		// start server (development)
