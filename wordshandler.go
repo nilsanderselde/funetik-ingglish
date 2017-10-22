@@ -24,6 +24,8 @@ const (
 	numsil  bool = true
 	funsort bool = true
 	dist    bool = true
+	ipa     bool = true
+	ritin   bool = true
 )
 
 func handleWordList(t *templateHandler, r *http.Request) {
@@ -47,9 +49,9 @@ COALESCE(flaagd, 'false')
 	// if set to update automatically generated values
 	if global.IsDev && urlQ["updeit"] != nil {
 		if urlQ["updeit"][0] == "al" {
-			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist)
+			dbconnect.UpdateAllAutoValues(fun, numsil, funsort, dist, ipa, ritin)
 		} else if urlQ["updeit"][0] == "flaagd" {
-			dbconnect.UpdateFlaggedAutoValues(fun, numsil, funsort, dist)
+			dbconnect.UpdateFlaggedAutoValues(fun, numsil, funsort, dist, ipa, ritin)
 		}
 	}
 	// flag row if URL contains query string for id
@@ -95,7 +97,7 @@ COALESCE(flaagd, 'false')
 	}
 	t.args.Num = num
 	nextPage := sortQ + "&num=" + strconv.Itoa(num)
-	currentPage := t.args.NextPage
+	currentPage := nextPage
 
 	// offset from beginning of results
 	var start int
@@ -129,5 +131,4 @@ COALESCE(flaagd, 'false')
 	t.args.SortQ = sortQ
 	t.args.NextPage = nextPage
 	t.args.CurrentPage = currentPage
-
 }
