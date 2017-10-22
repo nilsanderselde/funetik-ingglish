@@ -66,7 +66,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, 
 			message += " numsil"
 		}
 		fmt.Print(message + "... ")
-		s := spinner.New(spinner.CharSets[13], 100*time.Millisecond)
+		s := spinner.New(spinner.CharSets[33], 100*time.Millisecond)
 		s.Start()
 
 		// update fun and/or numsil with values generated using funsil
@@ -103,7 +103,7 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, 
 			message += " dist"
 		}
 		fmt.Print(message + "... ")
-		s := spinner.New(spinner.CharSets[13], 100*time.Millisecond)
+		s := spinner.New(spinner.CharSets[33], 100*time.Millisecond)
 		s.Start()
 
 		// update funsort and dist with values generated using fun and trud (for dist, use written form if different)
