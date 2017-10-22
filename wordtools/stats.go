@@ -48,12 +48,13 @@ func CountLetters(words []string) [][]string {
 
 	for i, k := range runes {
 		results[i] = make([]string, 6)
-		results[i][0] = fmt.Sprintf("%d", i+1)
-		results[i][1] = string(k)
-		results[i][2] = fmt.Sprintf("%d", allRunes[k])
-		results[i][3] = fmt.Sprintf("%.1f%%", float64(allRunes[k])/float64(totalRunes)*100)
-		results[i][4] = fmt.Sprintf("%d", wordInit[k])
-		results[i][5] = fmt.Sprintf("%.1f%%", float64(wordInit[k])/float64(allRunes[k])*100)
+		results[i][0] = string(k)
+		results[i][1] = fmt.Sprintf("%d", allRunes[k])
+		results[i][2] = fmt.Sprintf("%.1f%%", float64(allRunes[k])/float64(totalRunes)*100)
+		results[i][3] = fmt.Sprintf("%d", wordInit[k])
+		results[i][4] = fmt.Sprintf("%.1f%%", float64(wordInit[k])/float64(allRunes[k])*100)
+		results[i][5] = fmt.Sprintf("%d", i+1)
+
 	}
 	return results
 }
@@ -62,7 +63,7 @@ func CountLetters(words []string) [][]string {
 // returns the results in a slice of slices of strings.
 func CountPhonemes(words []string) [][]string {
 	// Runes in alphabetical order
-	runes := []rune("aäeiywuøorlnmbpvfgkdtzsžšhŋðθʤʧīãāõjʍ")
+	runes := []rune("aīãäeāiyjwʍuøoõrlnŋmbpvfgkdðʤtθʧzsžšh")
 
 	totalRunes := 0
 
@@ -97,14 +98,46 @@ func CountPhonemes(words []string) [][]string {
 
 	results := make([][]string, len(runes))
 
-	for i, k := range runes {
+	for i, r := range runes {
+		var rwn string
+		switch r {
+		case 'ŋ':
+			rwn = "ng"
+		case 'ð':
+			rwn = "dh"
+		case 'θ':
+			rwn = "th"
+		case 'ʤ':
+			rwn = "dž"
+		case 'ʧ':
+			rwn = "tš"
+		case 'ī':
+			rwn = "ai"
+		case 'ã':
+			rwn = "aw"
+		case 'ā':
+			rwn = "ei"
+		case 'õ':
+			rwn = "oi"
+		case 'j':
+			rwn = "y (K)"
+		case 'ʍ':
+			rwn = "w (K)"
+		case 'y':
+			rwn = "y (V)"
+		case 'w':
+			rwn = "w (V)"
+		default:
+			rwn = string(r)
+		}
+
 		results[i] = make([]string, 6)
-		results[i][0] = fmt.Sprintf("%d", i+1)
-		results[i][1] = string(k)
-		results[i][2] = fmt.Sprintf("%d", allRunes[k])
-		results[i][3] = fmt.Sprintf("%.1f%%", float64(allRunes[k])/float64(totalRunes)*100)
-		results[i][4] = fmt.Sprintf("%d", wordInit[k])
-		results[i][5] = fmt.Sprintf("%.1f%%", float64(wordInit[k])/float64(allRunes[k])*100)
+		results[i][0] = rwn
+		results[i][1] = fmt.Sprintf("%d", allRunes[r])
+		results[i][2] = fmt.Sprintf("%.1f%%", float64(allRunes[r])/float64(totalRunes)*100)
+		results[i][3] = fmt.Sprintf("%d", wordInit[r])
+		results[i][4] = fmt.Sprintf("%.1f%%", float64(wordInit[r])/float64(allRunes[r])*100)
+		results[i][5] = fmt.Sprintf("%d", i+1)
 	}
 	return results
 }
