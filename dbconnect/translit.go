@@ -5,7 +5,6 @@ package dbconnect
 
 import (
 	"bufio"
-	"fmt"
 	"net/http"
 	"strings"
 	"unicode"
@@ -82,7 +81,6 @@ func ProcessTrud(ch chan Output, r *http.Request) {
 				for scanner.Scan() {
 					outStruct.OutputLines = append(outStruct.OutputLines, scanner.Text())
 				}
-				// fmt.Println(UnknownWords)
 			}
 		}
 	}
@@ -101,14 +99,12 @@ func getFun(trud string) (fun string) {
 	for len(trudR) > 1 && (unicode.IsPunct(trudR[0]) || unicode.IsSymbol(trudR[0])) {
 		leading += string(trudR[0])
 		trudR = trudR[1:]
-		// fmt.Printf("{%s},{%s}\n", leading, string(trudR))
 	}
 	// as long as last character is punctuation, add it to trailing symbol string
 	// and remove it from word string (trud)
 	for len(trudR) > 1 && (unicode.IsPunct(trudR[len(trudR)-1]) || unicode.IsSymbol(trudR[len(trudR)-1])) {
 		trailing = string(trudR[len(trudR)-1]) + trailing
 		trudR = trudR[0 : len(trudR)-1]
-		// fmt.Printf("{%s},{%s}\n", string(trudR), trailing)
 	}
 	trud = replaceRunes(trudR) //
 
@@ -125,11 +121,10 @@ func getFun(trud string) (fun string) {
 	}
 
 	// update fun and/or numsil with values generated using funsil
-	// fmt.Println(">>", trud)
 	row := DB.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE trud = $1;", trud)
 	err := row.Scan(&fun)
 	if err != nil {
-		// fmt.Println("not found, checking lowercase:", trud)
+		// if not found, check lowercase
 		row = DB.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE trud = $1;", strings.ToLower(trud))
 		err = row.Scan(&fun)
 		if err != nil {
@@ -202,9 +197,6 @@ func getFun(trud string) (fun string) {
 SELECT '` + word + `'
 WHERE NOT EXISTS (SELECT trud FROM unknown WHERE LOWER(trud) = '` + strings.ToLower(word) + `')
 AND NOT EXISTS (SELECT trud FROM words WHERE LOWER(trud) = '` + strings.ToLower(word) + `')`)
-				if err != nil {
-					fmt.Println("word not saved")
-				}
 			}
 
 			return leading + word + trailing
@@ -218,7 +210,6 @@ AND NOT EXISTS (SELECT trud FROM words WHERE LOWER(trud) = '` + strings.ToLower(
 		fun = capitalizeContraction(fun)
 	}
 
-	// fmt.Println(fun)
 	return leading + fun + trailing
 }
 
