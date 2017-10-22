@@ -1,6 +1,8 @@
 package dbconnect
 
 import (
+	"log"
+
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
@@ -9,27 +11,30 @@ import (
 // stats page. The results are stored in a variable which is retrieved
 // by GetStats
 func StatsInit() {
-	rows, err := DB.Query("SELECT fun FROM words;")
+	rows, err := DB.Query("SELECT fun, ipa FROM words;")
 	if err != nil {
-		// log.Fatal(err)
+		log.Fatal(err)
 		return
 	}
 	defer rows.Close()
 
-	words := []string{}
+	var funWørdz, ipaWørdz []string
 	for rows.Next() {
-		var word string
-		err := rows.Scan(&word)
+		var fun string
+		var ipa string
+		err := rows.Scan(&fun, &ipa)
 		if err != nil {
-			// log.Fatal(err)
+			log.Fatal(err)
 			return
 		}
-		words = append(words, word)
+		funWørdz = append(funWørdz, fun)
+		ipaWørdz = append(ipaWørdz, ipa)
 	}
 	err = rows.Err()
 	if err != nil {
-		// log.Fatal(err)
+		log.Fatal(err)
 		return
 	}
-	global.Stats = wordtools.CalculateStats(words)
+	global.RuneStats = wordtools.CountLetters(funWørdz)
+	global.PhonStats = wordtools.CountPhonemes(ipaWørdz)
 }
