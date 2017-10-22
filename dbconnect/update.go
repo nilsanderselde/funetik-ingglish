@@ -6,12 +6,25 @@ package dbconnect
 import (
 	"database/sql"
 	"fmt"
+	"log"
 	"strconv"
 	"time"
 
 	"github.com/briandowns/spinner"
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
+
+// UpdateAllAutoValues automatically generates values for all rows
+// (About 15 minutes with all tasks enabled and 50,000 words)
+func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, ritin bool) {
+	UpdateAutoValues(fun, numsil, funsort, dist, ipa, ritin, false, -1)
+}
+
+// UpdateFlaggedAutoValues automatically generates values for all flaagd rows
+// (About 15 minutes with all tasks enabled and 50,000 words)
+func UpdateFlaggedAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, ritin bool) {
+	UpdateAutoValues(fun, numsil, funsort, dist, ipa, ritin, true, -1)
+}
 
 // UpdateAutoValues automatically fills values for:
 // 1. fun      (remove syllable markings from funsil)
@@ -20,8 +33,8 @@ import (
 // 4. dist     (calc lev dist between fun and trud)
 // onlyFlaagd means only flaagd will be processed
 // rowID used to specify row to update, use -1 for all
-func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd bool, rowID int) {
-	if !(fun || numsil || funsort || dist) {
+func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, ritin bool, onlyFlaagd bool, rowID int) {
+	if !(fun || numsil || funsort || dist || ipa || ritin) {
 		return // don't bother connecting if no updates will occur
 	}
 
@@ -59,16 +72,15 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		// update fun and/or numsil with values generated using funsil
 		rows, err := DB.Query("SELECT id, funsil" + queryFrom)
 		if err != nil {
-			// log.Fatal(err)
-			fmt.Println(err)
+			log.Println(err)
 		}
 
 		for rows.Next() {
 			if fun {
-				UpdateFun(rows)
+				updateFun(rows)
 			}
 			if numsil {
-				UpdateNumsil(rows)
+				updateNumsil(rows)
 			}
 		}
 		rows.Close()
@@ -97,16 +109,15 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		// update funsort and dist with values generated using fun and trud (for dist, use written form if different)
 		rows, err := DB.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin" + queryFrom)
 		if err != nil {
-			// log.Fatal(err)
-			fmt.Println(err)
+			log.Println(err)
 		}
 
 		for rows.Next() {
 			if funsort {
-				UpdateFunsort(rows)
+				updateFunsort(rows)
 			}
 			if dist {
-				UpdateDist(rows)
+				updateDist(rows)
 			}
 		}
 		rows.Close()
@@ -118,15 +129,83 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, onlyFlaagd
 		// clear all flags
 		_, err = DB.Exec("UPDATE words SET flaagd = false WHERE flaagd;")
 		if err != nil {
-			// log.Fatal(err)
-			fmt.Println(err)
+			log.Println(err)
+		}
+		if ipa {
+			updateIPA()
+		}
+		if ritin {
+			updateRitin()
 		}
 	}
 }
 
-// UpdateFun updates passed row with generated
+// Update IPA generates the rough IPA representation of words by
+// consolidating diphthongs and digraphs into single characters,
+// and by splitting y and w into semivowels and vowels
+func updateIPA() {
+	fmt.Println("Updating ipa...")
+
+	_, err := DB.Exec(`update words set ipa = funsil;
+	
+update words set ipa = regexp_replace(funsil, 'ng', 'ŋ')
+where id in (select id from words where funsil similar TO '%ng%');
+
+update words set ipa = regexp_replace(funsil, 'dh', 'ð')
+where id in (select id from words where funsil similar TO '%dh%');
+
+update words set ipa = regexp_replace(funsil, 'th', 'θ')
+where id in (select id from words where funsil similar TO '%th%');
+
+update words set ipa = regexp_replace(funsil, 'dž', 'ʤ')
+where id in (select id from words where funsil similar TO '%dž%');
+
+update words set ipa = regexp_replace(funsil, 'tš', 'ʧ')
+where id in (select id from words where funsil similar TO '%tš%');
+
+update words set ipa = regexp_replace(funsil, 'ai', 'ī')
+where id in (select id from words where funsil similar TO '%ai%');
+
+update words set ipa = regexp_replace(funsil, 'aw', 'ã')
+where id in (select id from words where funsil similar TO '%aw%');
+
+update words set ipa = regexp_replace(funsil, 'ei', 'ā')
+where id in (select id from words where funsil similar TO '%ei%');
+
+update words set ipa = regexp_replace(funsil, 'oi', 'õ')
+where id in (select id from words where funsil similar TO '%oi%');
+
+update words set ipa = regexp_replace(funsil, 'y([aäeoøiu])', 'j\1')
+where id in (select id from words where funsil similar TO '%y[aäeoøiu]%');
+
+update words set ipa = regexp_replace(funsil, 'w([aäeoøiu])', 'ʍ\1')
+where id in (select id from words where funsil similar TO '%w[aäeoøiu]%');`)
+
+	if err != nil {
+		log.Println(err)
+	} else {
+		fmt.Println("Done.")
+	}
+
+}
+
+// updateRitin updates the written form of words that that differ from their pronounced form
+// where it can be easily derived (in the case of syllable boundaries between d/t and h, insert dash)
+func updateRitin() {
+	fmt.Println("Updating ritin...")
+	_, err := DB.Exec(`update words set ritin = regexp_replace(fun, 'th', 't-h') where funsil similar to '%t[ˈˌ·]h%';
+update words set ritin = regexp_replace(fun, 'dh', 'd-h') where funsil similar to '%d[ˈˌ·]h%';`)
+	if err != nil {
+		log.Println(err)
+	} else {
+		fmt.Println("Done.")
+	}
+
+}
+
+// updateFun updates passed row with generated
 // value for column "fun" (funetik spelling)
-func UpdateFun(row *sql.Rows) {
+func updateFun(row *sql.Rows) {
 	var id int
 	var funsil string
 	err := row.Scan(&id, &funsil)
@@ -138,14 +217,13 @@ func UpdateFun(row *sql.Rows) {
 	updateFun := DB.QueryRow("UPDATE words SET fun = '" + fun + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateFun.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		// log.Fatal(err)
-		fmt.Println(err)
+		log.Println(err)
 	}
 }
 
-// UpdateNumsil updates passed row with generated
+// updateNumsil updates passed row with generated
 // value for column  "numsil" (number of syllables)
-func UpdateNumsil(row *sql.Rows) {
+func updateNumsil(row *sql.Rows) {
 	var id int
 	var funsil string
 	err := row.Scan(&id, &funsil)
@@ -158,14 +236,13 @@ func UpdateNumsil(row *sql.Rows) {
 	updateNumsil := DB.QueryRow("UPDATE words SET numsil = '" + strconv.Itoa(numsil) + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateNumsil.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		// log.Fatal(err)
-		fmt.Println(err)
+		log.Println(err)
 	}
 }
 
-// UpdateFunsort updates passed row with generated
+// updateFunsort updates passed row with generated
 // value for column "funsort" (funetik sort order)
-func UpdateFunsort(row *sql.Rows) {
+func updateFunsort(row *sql.Rows) {
 	var id int
 	var fun string
 	var trud string
@@ -180,14 +257,13 @@ func UpdateFunsort(row *sql.Rows) {
 	updateFunsort := DB.QueryRow("UPDATE words SET funsort = '" + funsort + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateFunsort.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		// log.Fatal(err)
-		fmt.Println(err)
+		log.Println(err)
 	}
 }
 
-// UpdateDist updates passed row with calculated
+// updateDist updates passed row with calculated
 // value for column "levdist" (Levenshtein distance)
-func UpdateDist(row *sql.Rows) {
+func updateDist(row *sql.Rows) {
 	var id int
 	var fun string
 	var trud string
@@ -202,19 +278,6 @@ func UpdateDist(row *sql.Rows) {
 	updateDist := DB.QueryRow("UPDATE words SET dist = '" + strconv.Itoa(dist) + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateDist.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		// log.Fatal(err)
-		fmt.Println(err)
+		log.Println(err)
 	}
-}
-
-// UpdateAllAutoValues automatically generates values for all rows
-// (About 15 minutes with all tasks enabled and 50,000 words)
-func UpdateAllAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
-	UpdateAutoValues(fun, numsil, funsort, dist, false, -1)
-}
-
-// UpdateFlaggedAutoValues automatically generates values for all flaagd rows
-// (About 15 minutes with all tasks enabled and 50,000 words)
-func UpdateFlaggedAutoValues(fun bool, numsil bool, funsort bool, dist bool) {
-	UpdateAutoValues(fun, numsil, funsort, dist, true, -1)
 }

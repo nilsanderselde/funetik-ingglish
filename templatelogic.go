@@ -38,7 +38,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	switch filename {
 	case "about.html":
 		t.args.TitleTrud = "About"
-		t.args.TitleFun = "Ubäwt"
+		t.args.TitleFun = "Ubawt"
 	case "home.html":
 		if r.URL.Path != t.args.Root+"/" {
 			http.NotFound(w, r)
@@ -52,7 +52,8 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.TitleTrud = "Keyboard"
 		t.args.TitleFun = "Kybord"
 	case "stats.html":
-		t.args.Stats = global.Stats
+		t.args.PhonStats = global.PhonStats
+		t.args.RuneStats = global.RuneStats
 		t.args.TitleTrud = "Stats"
 		t.args.TitleFun = "Stäts"
 	case "translit.html":
@@ -92,7 +93,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 // concat is true if query string should be concatenated to an existing query string
 // using & instead of ?
 func displayOrth(t *templateHandler, r *http.Request, additive bool) {
-
 	t.args.ChangeOrth = t.args.CurrentPage
 	if additive {
 		t.args.CurrentPage += "&orth="

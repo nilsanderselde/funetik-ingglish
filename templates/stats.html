@@ -1,7 +1,7 @@
 {{define "stats.html"}}
 {{template "_header.html" .}}
 <main>
-<table id="stats">
+<table class="stats">
     <thead>
         {{if .DisplayTrud}}
         <tr class="sort">
@@ -22,10 +22,46 @@
             <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 5, asc5); asc5 *= -1; asc0 = 1; asc2 = 1; asc3 = 1; asc4 = 1;"><span data-title="% uv ukørinsiz ät bigining uv wørd" class="info above"><span class="nomobile">Fryk ä</span><span class="mobile">Ä</span>z 1<sup>st</sup> %</span><i class=""></i></a></th>
         </tr>
         {{end}}
+    </thead>
+    <tbody id="statsBody">
+        {{range .RuneStats}}
+        <tr>
+            <td>{{index . 0}}</td>
+            <td>{{index . 1}}</td>
+            <td>{{index . 2}}</td>
+            <td>{{index . 3}}</td>
+            <td>{{index . 4}}</td>
+            <td>{{index . 5}}</td>
+        </tr>
+        {{end}}
+    </tbody>
+</table>
+
+<table class="stats">
+    <thead>
+        {{if .DisplayTrud}}
+        <tr class="sort">
+            <th></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 0, asc0); asc0 *= -1; asc2 = 1; asc3 = 1; asc4 = 1; asc5 = 1;"><span><span class="mobile">a</span><span class="nomobile">Phoneme</span></span><i class="arrow sort"></i></a></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 2, asc2); asc2 *= -1; asc3 = 1; asc4 = 1; asc5 = 1; asc0 = 1;"><span data-title="# of all phoneme occurrences" class="info above">Freq<span class="nomobile">uency</span></span><i class=""></i></a></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 3, asc3); asc3 *= -1; asc4 = 1; asc5 = 1; asc0 = 1; asc2 = 1;"><span data-title="% of all phoneme occurrences" class="info above">Freq<span class="nomobile">uency</span> %</span><i class=""></i></a></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 4, asc4); asc4 *= -1; asc5 = 1; asc0 = 1; asc2 = 1; asc3 = 1;"><span data-title="# of occurrences at beginning of word" class="info above"><span class="nomobile">Freq a</span><span class="mobile">A</span>s 1<sup>st</sup></span><i class=""></i></a></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 5, asc5); asc5 *= -1; asc0 = 1; asc2 = 1; asc3 = 1; asc4 = 1;"><span data-title="% of occurrences at beginning of word" class="info above"><span class="nomobile">Freq a</span><span class="mobile">A</span>s 1<sup>st</sup> %</span><i class=""></i></a></th>
+        </tr>
+        {{else}}
+        <tr class="sort">
+            <th></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 0, asc0); asc0 *= -1; asc2 = 1; asc3 = 1; asc4 = 1; asc5 = 1;"><span><span class="mobile">Fon</span><span class="nomobile">Fonym</span></span><i class="arrow sort"></i></a></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 2, asc2); asc2 *= -1; asc3 = 1; asc4 = 1; asc5 = 1; asc0 = 1;"><span data-title="# uv al fonym ukørinsiz" class="info above">Fryk<span class="nomobile">winsy</span></span><i class=""></i></a></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 3, asc3); asc3 *= -1; asc4 = 1; asc5 = 1; asc0 = 1; asc2 = 1;"><span data-title="% uv al fonym ukørinsiz" class="info above">Fryk<span class="nomobile">winsy</span> %</span><i class=""></i></a></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 4, asc4); asc4 *= -1; asc5 = 1; asc0 = 1; asc2 = 1; asc3 = 1;"><span data-title="# uv ukørinsiz ät bigining uv wørd" class="info above"><span class="nomobile">Fryk ä</span><span class="mobile">Ä</span>z 1<sup>st</sup></span><i class=""></i></a></th>
+            <th><a href="javascript:void(0);" onclick="javascript:sort_table(people, 5, asc5); asc5 *= -1; asc0 = 1; asc2 = 1; asc3 = 1; asc4 = 1;"><span data-title="% uv ukørinsiz ät bigining uv wørd" class="info above"><span class="nomobile">Fryk ä</span><span class="mobile">Ä</span>z 1<sup>st</sup> %</span><i class=""></i></a></th>
+        </tr>
+        {{end}}
 
     </thead>
     <tbody id="statsBody">
-        {{range .Stats}}
+        {{range .PhonStats}}
         <tr>
             <td>{{index . 0}}</td>
             <td>{{index . 1}}</td>

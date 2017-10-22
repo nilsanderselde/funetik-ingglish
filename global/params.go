@@ -18,8 +18,10 @@ var (
 	Alphabet = []string{"a", "ä", "e", "i", "y", "w", "u", "ø", "o", "r", "l", "n", "m", "b", "p", "v", "f", "g", "k", "d", "t", "z", "s", "ž", "š", "h"}
 	// RowCount counts number of rows in DB
 	RowCount int
-	// Stats stores the stats about the words in the database
-	Stats [][]string
+	// PhonStats stores the phoneme stats about the words in the database
+	PhonStats [][]string
+	// RuneStats stores the rune stats about the words in the database
+	RuneStats [][]string
 )
 
 // InitialIndexValue stores the start number for the first word starting with the stored letter
@@ -44,7 +46,8 @@ type TemplateParams struct {
 	PreviousPage string
 
 	// stats page
-	Stats [][]string
+	PhonStats [][]string
+	RuneStats [][]string
 
 	// translit page
 	TranslitOutput []string
