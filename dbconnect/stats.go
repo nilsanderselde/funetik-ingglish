@@ -1,8 +1,6 @@
 package dbconnect
 
 import (
-	"log"
-
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
@@ -13,7 +11,7 @@ import (
 func StatsInit() {
 	rows, err := DB.Query("SELECT fun, ipa FROM words;")
 	if err != nil {
-		log.Fatal(err)
+		// log.Fatal(err)
 		return
 	}
 	defer rows.Close()
@@ -24,7 +22,7 @@ func StatsInit() {
 		var ipa string
 		err := rows.Scan(&fun, &ipa)
 		if err != nil {
-			log.Fatal(err)
+			// log.Fatal(err)
 			return
 		}
 		funWørdz = append(funWørdz, fun)
@@ -32,7 +30,7 @@ func StatsInit() {
 	}
 	err = rows.Err()
 	if err != nil {
-		log.Fatal(err)
+		// log.Fatal(err)
 		return
 	}
 	global.RuneStats = wordtools.CountLetters(funWørdz)

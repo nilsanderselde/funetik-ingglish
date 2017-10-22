@@ -3,7 +3,6 @@ package dbconnect
 import (
 	"database/sql"
 	"fmt"
-	"log"
 	"strconv"
 
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
@@ -29,7 +28,7 @@ func IndexByInitial() {
 		case err == sql.ErrNoRows:
 			fmt.Println("No words start with that letter.")
 		case err != nil:
-			log.Fatal("IndexByInitial: ", err)
+			// log.Fatal("IndexByInitial: ", err)
 		default:
 			global.InitialIndex[i].Letter = global.Alphabet[i]
 			global.InitialIndex[i].Index = strconv.Itoa(start - 1)
