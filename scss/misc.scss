@@ -4,12 +4,12 @@ table.stats {
     th {
         text-align: center;
     }
-    th:nth-of-type(1),
-    td:nth-of-type(1) {
-        display: none;
+
+    th:nth-of-type(1) {
+        width: 2rem;
     }
     th:nth-of-type(2) {
-        width: 2rem;
+        width: 3rem;
     }
     th:nth-of-type(3) {
         width: 3rem;
@@ -20,8 +20,9 @@ table.stats {
     th:nth-of-type(5) {
         width: 3rem;
     }
-    th:nth-of-type(6) {
-        width: 3rem;
+    th:nth-of-type(6),
+    td:nth-of-type(6) {
+        display: none;
     }
 }
 
@@ -57,6 +58,7 @@ textarea,
 
 textarea {
     height: 200px;
+    overflow-x: hidden;
 }
 
 input[type="submit"] {
@@ -109,6 +111,7 @@ i {
     } 
     &.down {
         transform: rotate(180deg);
+        top: .1rem !important;                 
     }
     &.right,
     &.left {
