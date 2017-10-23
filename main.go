@@ -40,18 +40,17 @@ func main() {
 		fmt.Println("Couldn't connect to database.")
 	}
 	defer dbconnect.DB.Close()
-
 	err = dbconnect.DB.Ping()
-	if err != nil {
+	if err == nil {
+		// Precalculate data for site
+		global.RowCount = dbconnect.CountRows()
+		dbconnect.StatsInit()
+		dbconnect.IndexByInitial()
+		fmt.Println("Precalculation complete.\nReady.")
+	} else {
 		// log.Fatal(err)
 		fmt.Println("Database ping failed.")
 	}
-
-	// Precalculate data for site
-	global.RowCount = dbconnect.CountRows()
-	dbconnect.StatsInit()
-	dbconnect.IndexByInitial()
-	fmt.Println("Precalculation complete.\nReady.")
 
 	http.Handle(ROOT+"/static/", setHeaders(http.StripPrefix(ROOT+"/static/", http.FileServer(http.Dir("./static")))))
 	http.HandleFunc(ROOT+"/favicon.ico", faviconHandler)
