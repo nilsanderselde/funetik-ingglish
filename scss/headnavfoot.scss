@@ -196,12 +196,13 @@ nav {
 }
 
 footer {
+    background: radial-gradient(rgba(0,0,0,1) 25%, rgba(0,0,0,0) 76%);
     color: white;
     text-shadow: rgba(0, 0, 0, .5);
     text-align: center;
     font-size: .8rem;
-    margin: 20px 0 10px 0;
-    padding: 10px;
+    max-width: 900px;
+    margin: auto;
     a:link,
     a:visited {
         color: #eee;
@@ -212,5 +213,9 @@ footer {
         color: #eee;
         border-bottom: 1px solid rgb(49, 98, 153);
         text-shadow: 1px 0 10px white;
+    }
+    p{
+        padding: 40px 0 20px;
+        margin: 0;
     }
 }
