@@ -7,3 +7,4 @@ build.py
 deploy.py
 Thumbs.db
 npm-debug.log
+createtar.py
