@@ -37,7 +37,7 @@ func GetDBInfo() string {
 		login = strings.Split(scanner.Text(), ",")
 	}
 
-	if len(login) == 6 {
+	if len(login) == 5 {
 		host := login[0]
 		port, _ := strconv.Atoi(login[1])
 		user := login[2]
