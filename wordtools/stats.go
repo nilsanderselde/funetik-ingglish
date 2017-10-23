@@ -63,7 +63,7 @@ func CountLetters(words []string) [][]string {
 // returns the results in a slice of slices of strings.
 func CountPhonemes(words []string) [][]string {
 	// Runes in alphabetical order
-	runes := []rune("aīãäeāiyjwʍuøoõrlnŋmbpvfgkdðʤtθʧzsžšh")
+	runes := []rune("aīãäeāiyjwʍuøoõrlnŋmbpvfgkdʤðtʧθzsžšh")
 
 	totalRunes := 0
 
