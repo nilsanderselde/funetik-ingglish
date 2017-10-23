@@ -37,11 +37,15 @@ func GetDBInfo() string {
 		login = strings.Split(scanner.Text(), ",")
 	}
 
-	host := login[0]
-	port, _ := strconv.Atoi(login[1])
-	user := login[2]
-	password := login[3]
-	dbname := login[4]
+	if len(login) == 6 {
+		host := login[0]
+		port, _ := strconv.Atoi(login[1])
+		user := login[2]
+		password := login[3]
+		dbname := login[4]
+		return fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
+	}
+	fmt.Println("Invalid database connection information provided.")
+	return ""
 
-	return fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
 }
