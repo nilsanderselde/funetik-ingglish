@@ -1,8 +1,9 @@
-Thumbs.db
 /node_modules
-npm-debug.log
+/.vscode
 /env
 funetik-ingglish
 build.ps1
+build.py
 deploy.py
-/.vscode
+Thumbs.db
+npm-debug.log
