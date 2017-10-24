@@ -50,40 +50,40 @@
         {{range (index .Kbd 0)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-        <div class="varsize hideoverflow">Backspace</div>
+        <div class="varsize hideoverflow"><span>Backspace</span></div>
     </div>
     <div class="row">
-        <div class="varsize">Tab</div>
+        <div class="varsize"><span>Tab</span></div>
         {{range (index .Kbd 1)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         </div>
 
     <div class="row">
-        <div class="varsize hideoverflow">Caps Lock</div>
+        <div class="varsize hideoverflow"><span>Caps Lock</span></div>
         {{range (index .Kbd 2)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-        <div class="varsize">Enter</div>        
+        <div class="varsize"><span>Enter</span></div>        
     </div>
 
     <div class="row">
-        <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()">Shift</div>
+        <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
         {{range (index .Kbd 3)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-        <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()">Shift</div>
+        <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
     </div>
     <div class="row bottom">
-        <div class="varsize">Ctrl</div>
+        <div class="varsize"><span>Ctrl</span></div>
         <div class="vargin"></div>
-        <div class="varsize">Alt</div>
+        <div class="varsize"><span>Alt</span></div>
+        <div class="vargin"></div>
+        <div class="space"><span>Space</span></div>
+        <div class="vargin"></div>
+        <div class="varsize"><span>Alt</span></div>
         <div class="vargin"></div>        
-        <div class="space">Space</div>
-        <div class="vargin"></div>        
-        <div class="varsize">Alt</div>
-        <div class="vargin"></div>        
-        <div class="varsize">Ctrl</div>
+        <div class="varsize"><span>Ctrl</span></div>
     </div>
 </div>
 
