@@ -15,11 +15,7 @@
         own character while a more frequent one is a digraph (like 'ei' and 'ž'), but it was done to enhance legibility (to avoid spellings
         like "dzhudzh" for "judge" and "tshørtsh" for "church") and in order to be consistent ('š' is more common than 'ai').
     </p>
-    <p>
-        In the second table, 'w' and 'y' are labeled as either <strong>consonant (K)</strong> or <strong>vowel (V)</strong>. I represented the phonemes
-        in the Phonetic English orthography so it would be easier to read in the context of the other data. To see 
-        which IPA symbols these phonemes represent, visit the <a href="{{.Root}}">home page</a>.
-    </p>
+
     
     {{else}}
     <h1>Stäts</h1>
@@ -35,11 +31,7 @@
         on keriktør wail u mor frykwint wun iz u digraph (laik 'ei' änd 'ž'), but it waz dun tw enhäns ledžubility (tw uvoid spelingz 
         laik "dzhudzh" for "judge" änd "tshørtsh" for "church") änd in ordør tw by kunsistint ('š' iz mor kamin dhän 'ai'). 
     </p>
-    <p>
-        In dhu sekind teibul, 'w' änd 'y' ar leibuld äz aidhør <strong>kansunint (K)</strong> or <strong>väwul (V)</strong>. Ai repruzentid dhu fonymz 
-        in dhu Funetik Inggliš orthagrify so it wød by yzyør tw red in dhu kantekst uv dhu udhør deitu. Tw sy 
-        witš IPA simbulz dhyz fonymz reprizent, vizit dhu <a href="{{.Root}}">home peidž</a>. 
-    </p>
+
     {{end}}
     <h2>{{if .DisplayTrud}}Letters{{else}}Letørz{{end}}</h2>    
     <table class="stats">
@@ -98,7 +90,22 @@
             {{end}}
         </tbody>
     </table>
-    <h2>{{if .DisplayTrud}}Phonemes{{else}}Fonymz{{end}}</h2>
+    {{if .DisplayTrud}}
+    <h2>Phonemes</h2>
+    <p>
+        'w' and 'y' are labeled as either <strong>consonant (K)</strong> or <strong>vowel (V)</strong>. I represented the phonemes
+        in the Phonetic English orthography so it would be easier to read in the context of the other data. To see 
+        which IPA symbols these phonemes correspond to, visit the <a href="{{.Root}}">home page</a>.
+    </p>
+    {{else}}
+    <h2>Fonymz</h2>
+    <p>
+        'w' änd 'y' ar leibuld äz aidhør <strong>kansunint (K)</strong> or <strong>väwul (V)</strong>. Ai repruzentid dhu fonymz 
+        in dhu Funetik Inggliš orthagrify so it wød by yzyør tw red in dhu kantekst uv dhu udhør deitu. Tw sy 
+        witš IPA simbulz dhyz fonymz korispand tw, vizit dhu <a href="{{.Root}}">home peidž</a>. 
+    </p>
+    {{end}}
+
     <table class="stats">
         <thead id="phonStatsHead">
             {{if .DisplayTrud}}
@@ -113,10 +120,10 @@
                     <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% of all phoneme occurrences" class="info above">Freq<span class="nomobile">uency</span> %</span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# of occurrences at beginning of word" class="info above"><span class="nomobile">Freq a</span>1<sup>st</sup></span><i class="hidden"></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# of occurrences at beginning of word" class="info above"><span class="nomobile">Freq as </span>1<sup>st</sup></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% of occurrences at beginning of word" class="info above"><span class="nomobile">Freq a</span>1<sup>st</sup> %</span><i class="hidden"></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% of occurrences at beginning of word" class="info above"><span class="nomobile">Freq as </span>1<sup>st</sup> %</span><i class="hidden"></i></a>
                 </th>
                 <th></th>            
             </tr>
