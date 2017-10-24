@@ -41,63 +41,44 @@
         witš IPA simbulz dhyz fonymz reprizent, vizit dhu <a href="{{.Root}}">home peidž</a>. 
     </p>
     {{end}}
+    <h2>{{if .DisplayTrud}}Letters{{else}}Letørz{{end}}</h2>    
     <table class="stats">
         <thead id="runeStatsHead">
             {{if .DisplayTrud}}
             <tr class="sort">
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 5, 0)"><span>
-                        <span class="mobile">a</span><span class="nomobile">Letter</span></span>
-                    <i class="arrow sort"></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 5, 0)"><span><span class="mobile">a</span><span class="nomobile">Letter</span></span><i class="arrow sort"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 1)"><span data-title="# of all letter occurrences" class="info above">
-                        Freq<span class="nomobile">uency</span> (%)</span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 1)"><span data-title="# of all letter occurrences" class="info above">Freq<span class="nomobile">uency</span></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% of all letter occurrences" class="info above">
-                        Freq<span class="nomobile">uency</span></span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% of all letter occurrences" class="info above">Freq<span class="nomobile">uency</span> %</span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# of occurrences at beginning of word" class="info above">
-                    <span class="nomobile">Freq a</span><span class="mobile">A</span>s 1<sup>st</sup></span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# of occurrences at beginning of word" class="info above"><span class="nomobile">Freq as </span>1<sup>st</sup></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% of occurrences at beginning of word" class="info above">
-                    <span class="nomobile">Freq a</span><span class="mobile">A</span>s 1<sup>st</sup> (%)</span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% of occurrences at beginning of word" class="info above"><span class="nomobile">Freq as </span>1<sup>st</sup> %</span><i class="hidden"></i></a>
                 </th>
                 <th></th>            
             </tr>
             {{else}}
             <tr class="sort">
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 5, 0)"><span>
-                        <span class="mobile">a</span><span class="nomobile">Letør</span></span>
-                    <i class="arrow sort"></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 5, 0)"><span><span class="mobile">a</span><span class="nomobile">Letør</span></span><i class="arrow sort"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 1)"><span data-title="# uv al letør ukørinsiz" class="info above">
-                    Fryk<span class="nomobile">winsy</span></span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 1)"><span data-title="# uv al letør ukørinsiz" class="info above">Fryk<span class="nomobile">winsy</span></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% uv al letør ukørinsiz" class="info above">
-                    Fryk<span class="nomobile">winsy</span> (%)</span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% uv al letør ukørinsiz" class="info above">Fryk<span class="nomobile">winsy</span> %</span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# uv ukørinsiz ät bigining uv wørd" class="info above">
-                    <span class="nomobile">Fryk ä</span><span class="mobile">Ä</span>z 1<sup>st</sup></span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# uv ukørinsiz ät bigining uv wørd" class="info above"><span class="nomobile">Fryk äz </span>1<sup>st</sup></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% uv ukørinsiz ät bigining uv wørd" class="info above">
-                    <span class="nomobile">Fryk ä</span><span class="mobile">Ä</span>z 1<sup>st</sup> (%)</span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% uv ukørinsiz ät bigining uv wørd" class="info above"><span class="nomobile">Fryk äz </span>1<sup>st</sup> %</span><i class="hidden"></i></a>
                 </th>
                 <th></th>            
             </tr>
@@ -117,63 +98,44 @@
             {{end}}
         </tbody>
     </table>
+    <h2>{{if .DisplayTrud}}Phonemes{{else}}Fonymz{{end}}</h2>
     <table class="stats">
         <thead id="phonStatsHead">
             {{if .DisplayTrud}}
             <tr class="sort">
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 5, 0)"><span>
-                        Phon<span class="nomobile">eme</span></span>
-                    <i class="arrow sort"></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 5, 0)"><span><span class="mobile">a</span><span class="nomobile">Phoneme</span></span><i class="arrow sort"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 1)"><span data-title="# of all phoneme occurrences" class="info above">
-                        Freq<span class="nomobile">uency</span> (%)</span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 1)"><span data-title="# of all phoneme occurrences" class="info above">Freq<span class="nomobile">uency</span></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% of all phoneme occurrences" class="info above">
-                        Freq<span class="nomobile">uency</span></span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% of all phoneme occurrences" class="info above">Freq<span class="nomobile">uency</span> %</span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# of occurrences at beginning of word" class="info above">
-                    <span class="nomobile">Freq a</span><span class="mobile">A</span>s 1<sup>st</sup></span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# of occurrences at beginning of word" class="info above"><span class="nomobile">Freq a</span>1<sup>st</sup></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% of occurrences at beginning of word" class="info above">
-                    <span class="nomobile">Freq a</span><span class="mobile">A</span>s 1<sup>st</sup> (%)</span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% of occurrences at beginning of word" class="info above"><span class="nomobile">Freq a</span>1<sup>st</sup> %</span><i class="hidden"></i></a>
                 </th>
                 <th></th>            
             </tr>
             {{else}}
             <tr class="sort">
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 5, 0)"><span>
-                        Fon<span class="nomobile">ym</span></span>
-                    <i class="arrow sort"></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 5, 0)"><span><span class="mobile">a</span><span class="nomobile">Fonym</span></span><i class="arrow sort"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 1)"><span data-title="# uv al fonym ukørinsiz" class="info above">
-                    Fryk<span class="nomobile">winsy</span></span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 1)"><span data-title="# uv al fonym ukørinsiz" class="info above">Fryk<span class="nomobile">winsy</span></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% uv al fonym ukørinsiz" class="info above">
-                    Fryk<span class="nomobile">winsy</span> (%)</span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 1, 2)"><span data-title="% uv al fonym ukørinsiz" class="info above">Fryk<span class="nomobile">winsy</span> %</span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# uv ukørinsiz ät bigining uv wørd" class="info above">
-                    <span class="nomobile">Fryk ä</span><span class="mobile">Ä</span>z 1<sup>st</sup></span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 3, 3)"><span data-title="# uv ukørinsiz ät bigining uv wørd" class="info above"><span class="nomobile">Fryk äz </span>1<sup>st</sup></span><i class="hidden"></i></a>
                 </th>
                 <th>
-                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% uv ukørinsiz ät bigining uv wørd" class="info above">
-                    <span class="nomobile">Fryk ä</span><span class="mobile">Ä</span>z 1<sup>st</sup> (%)</span>
-                    <i class=""></i></a>
+                    <a href="javascript:void(0)" onpointerdown="sortTable(this, 4, 4)"><span data-title="% uv ukørinsiz ät bigining uv wørd" class="info above"><span class="nomobile">Fryk äz </span>1<sup>st</sup> %</span><i class="hidden"></i></a>
                 </th>
                 <th></th>            
             </tr>
@@ -223,8 +185,6 @@
                     if ((col == 5 && col == lastSortBy) || col == lastCol) {
                         colOrder.value[i] *= -1
                     }
-
-
                 }
                 // otherwise, sort ascending
                 lastSortBy = sortBy
@@ -262,7 +222,7 @@
         }
         // clear existing arrows before adding in new ones
         for (i = 0; i < colIcons.value.length; i++){
-            colIcons.value[i].className = ""
+            colIcons.value[i].className = "hidden"
         }
         colIcons.value[col].className = "arrow sort "+icon
     }

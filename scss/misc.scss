@@ -24,6 +24,13 @@ table.stats {
     td:nth-of-type(6) {
         display: none;
     }
+
+    th:nth-of-type(3),
+    td:nth-of-type(3) {
+        @media (max-width: 399px) {
+            display: none;
+        }
+    }
 }
 
 
