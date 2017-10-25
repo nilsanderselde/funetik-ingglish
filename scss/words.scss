@@ -50,6 +50,44 @@ $header_offset: .55em;
         }
     }
 }
+nav.letters {
+    text-shadow: none;
+    
+    text-align: center;
+    margin-top: 10px;
+    font-family: $roboto;
+    $small: 1.05rem;
+    $big: 1.1rem;
+    vertical-align: bottom;
+    cursor: default;
+    font-size: 0;
+    li {
+        padding: 0 2px 4px 2px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    a {
+        display: inline-block;
+        vertical-align: bottom;
+        min-width: $big;
+        height: $big;
+        border: 1px solid rgb(49, 98, 153);
+        text-align: center;
+        font-size: $small;
+        line-height: $big;
+        padding: 1px;
+        &:active, &:focus {
+            background: rgb(49, 98, 153);
+            border-color: black;
+            color: white;
+            transition: none;
+        }
+    }
+
+}
 
 #legend {
     cursor: default;

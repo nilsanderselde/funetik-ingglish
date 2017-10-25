@@ -5,6 +5,8 @@
     min-width: 240px;
     user-select: none;    
     cursor: default;
+    text-shadow: none;
+    
     .row {
         font-size: 0;
         display: flex;
@@ -111,6 +113,7 @@
 }
 
 .versions {
+    text-shadow: none;    
     $small: .8rem;
     $big: 1rem;
     vertical-align: bottom;

@@ -126,42 +126,7 @@ nav {
             }
         }
     }
-    &.letters {
-        text-align: center;
-        margin-top: 10px;
-        font-family: $roboto;
-        $small: 1.05rem;
-        $big: 1.1rem;
-        vertical-align: bottom;
-        cursor: default;
-        font-size: 0;
-        li {
-            padding: 0 2px 4px 2px;
-        }
-        ul {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        a {
-            display: inline-block;
-            vertical-align: bottom;
-            min-width: $big;
-            height: $big;
-            border: 1px solid rgb(49, 98, 153);
-            text-align: center;
-            font-size: $small;
-            line-height: $big;
-            padding: 1px;
-            &:active, &:focus {
-                background: rgb(49, 98, 153);
-                border-color: black;
-                color: white;
-                transition: none;
-            }
-        }
 
-    }
 }
 
 #orth {
@@ -172,6 +137,9 @@ nav {
     line-height: 0;
     font-style: italic;
     font-size: 1rem;
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
+    
+    
     a {
         &:link,
         &:visited {
@@ -196,13 +164,14 @@ nav {
 }
 
 footer {
-    background: radial-gradient(rgba(0,0,0,1) 25%, rgba(0,0,0,0) 76%);
+    // background: radial-gradient(rgba(0,0,0,1) 25%, rgba(0,0,0,0) 76%);
+    background: #111;
     color: white;
     text-shadow: rgba(0, 0, 0, .5);
     text-align: center;
     font-size: .8rem;
-    max-width: 900px;
-    margin: auto;
+    max-width: 700px;
+    margin: 20px auto 0;
     a:link,
     a:visited {
         color: #eee;
@@ -215,7 +184,7 @@ footer {
         text-shadow: 1px 0 10px white;
     }
     p{
-        padding: 40px 0 20px;
+        padding: 20px 10px;
         margin: 0;
     }
 }
