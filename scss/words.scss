@@ -1,14 +1,5 @@
-/* words table th*/
-
 $header_offset: .55em;
-// #nw a {
-//     position: relative;
-//     left: $header_offset;
-// }
-// #old a {
-//     position: relative;
-//     left: $header_offset;
-// }
+
 #dist {
     width: 3.2rem;
 }
@@ -50,9 +41,6 @@ $header_offset: .55em;
         }
     }
     td {
-        .icon {
-            display: none;
-        }
         @media (max-width: 499px) {
             .info {
                 transition: 0;
