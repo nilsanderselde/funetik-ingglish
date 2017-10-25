@@ -31,6 +31,8 @@ func UpdateFlaggedAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa
 // 2. numsil   (count syllable markings from funsil)
 // 3. funsort  (substitution cipher on fun)
 // 4. dist     (calc lev dist between fun and trud)
+// 5. ipa      (substitute digraphs for single characters)
+// 6. ritin    (generates written form for certain words)
 // onlyFlaagd means only flaagd will be processed
 // rowID used to specify row to update, use -1 for all
 func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, ritin bool, onlyFlaagd bool, rowID int) {
@@ -38,41 +40,41 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, 
 		return // don't bother connecting if no updates will occur
 	}
 
-	queryFrom := " FROM words"
+	var queryEnd string
 	if rowID != -1 || onlyFlaagd {
-		queryFrom += " WHERE"
 		if rowID != -1 {
-			queryFrom += " id = " + strconv.Itoa(rowID)
+			queryEnd += " id = " + strconv.Itoa(rowID)
 			if onlyFlaagd {
-				queryFrom += " AND"
+				queryEnd += " AND"
 			}
 		}
 		if onlyFlaagd {
-			queryFrom += " flaagd"
+			queryEnd += " flaagd"
 		}
 	}
-	queryFrom += ";"
+	queryEnd += ";"
 
 	if fun || numsil {
-		start := time.Now()
-		message := "Updating"
+		var processes string
 		if fun {
-			message += " fun"
+			processes += " fun"
 			if numsil {
-				message += " and"
+				processes += " and"
 			}
 		}
 		if numsil {
-			message += " numsil"
+			processes += " numsil"
 		}
-		fmt.Print(message + "... ")
-		s := spinner.New(spinner.CharSets[33], 100*time.Millisecond)
-		s.Start()
+		p := updateBegin(processes)
 
+		qWhere := queryEnd
+		if queryEnd != ";" {
+			qWhere = " WHERE" + queryEnd
+		}
 		// update fun and/or numsil with values generated using funsil
-		rows, err := DB.Query("SELECT id, funsil" + queryFrom)
+		rows, err := DB.Query("SELECT id, funsil FROM words" + qWhere)
 		if err != nil {
-			log.Println(err)
+			log.Fatal(err)
 		}
 
 		for rows.Next() {
@@ -84,32 +86,30 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, 
 			}
 		}
 		rows.Close()
-		t := time.Now()
-		elapsed := t.Sub(start)
-		s.Stop()
-		fmt.Printf("Done. (%v)\n", elapsed)
+		updateEnd(p)
 	}
 
 	if funsort || dist {
-		start := time.Now()
-		message := "Updating"
+		var processes string
 		if funsort {
-			message += " funsort"
+			processes += " funsort"
 			if dist {
-				message += " and"
+				processes += " and"
 			}
 		}
 		if dist {
-			message += " dist"
+			processes += " dist"
 		}
-		fmt.Print(message + "... ")
-		s := spinner.New(spinner.CharSets[33], 100*time.Millisecond)
-		s.Start()
+		p := updateBegin(processes)
 
+		qWhere := queryEnd
+		if queryEnd != ";" {
+			qWhere = " WHERE" + queryEnd
+		}
 		// update funsort and dist with values generated using fun and trud (for dist, use written form if different)
-		rows, err := DB.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin" + queryFrom)
+		rows, err := DB.Query("SELECT id, fun, trud, COALESCE(COALESCE(ritin, fun), '') as funritin FROM words" + qWhere)
 		if err != nil {
-			log.Println(err)
+			log.Fatal(err)
 		}
 
 		for rows.Next() {
@@ -121,86 +121,112 @@ func UpdateAutoValues(fun bool, numsil bool, funsort bool, dist bool, ipa bool, 
 			}
 		}
 		rows.Close()
-		t := time.Now()
-		elapsed := t.Sub(start)
-		s.Stop()
-		fmt.Printf("Done. (%v)\n", elapsed)
+		updateEnd(p)
+	}
+	if ipa {
+		p := updateBegin(" ipa")
+		updateIPA(queryEnd)
+		updateEnd(p)
+	}
+	if ritin {
+		p := updateBegin(" ritin")
+		updateRitin(queryEnd)
+		updateEnd(p)
+	}
 
+	if onlyFlaagd {
 		// clear all flags
-		_, err = DB.Exec("UPDATE words SET flaagd = false WHERE flaagd;")
+		_, err := DB.Exec("UPDATE words SET flaagd = false WHERE flaagd;")
 		if err != nil {
-			log.Println(err)
-		}
-		if ipa {
-			updateIPA()
-		}
-		if ritin {
-			updateRitin()
+			log.Fatal(err)
 		}
 	}
+
+}
+
+type progress struct {
+	start time.Time
+	s     *spinner.Spinner
+}
+
+func updateBegin(processes string) (p progress) {
+	start := time.Now()
+	fmt.Print("Updating" + processes)
+	anim := []string{"       ", ".      ", "..     ", "...    ", "....   ", ".....  ", "...... ", ".......", "...... ", ".....  ", "....   ", "...    ", "..     ", ".      "}
+	s := spinner.New(anim, 100*time.Millisecond)
+	s.Start()
+	return progress{start, s}
+}
+
+func updateEnd(p progress) {
+	t := time.Now()
+	elapsed := t.Sub(p.start)
+	p.s.Stop()
+	fmt.Printf("... Done. (%v)\n", elapsed)
 }
 
 // Update IPA generates the rough IPA representation of words by
 // consolidating diphthongs and digraphs into single characters,
 // and by splitting y and w into semivowels and vowels
-func updateIPA() {
-	fmt.Println("Updating ipa...")
-
-	_, err := DB.Exec(`update words set ipa = funsil;
-	
-update words set ipa = regexp_replace(funsil, 'ng', 'ŋ')
-where id in (select id from words where funsil similar TO '%ng%');
-
-update words set ipa = regexp_replace(funsil, 'dh', 'ð')
-where id in (select id from words where funsil similar TO '%dh%');
-
-update words set ipa = regexp_replace(funsil, 'th', 'θ')
-where id in (select id from words where funsil similar TO '%th%');
-
-update words set ipa = regexp_replace(funsil, 'dž', 'ʤ')
-where id in (select id from words where funsil similar TO '%dž%');
-
-update words set ipa = regexp_replace(funsil, 'tš', 'ʧ')
-where id in (select id from words where funsil similar TO '%tš%');
-
-update words set ipa = regexp_replace(funsil, 'ai', 'ī')
-where id in (select id from words where funsil similar TO '%ai%');
-
-update words set ipa = regexp_replace(funsil, 'aw', 'ã')
-where id in (select id from words where funsil similar TO '%aw%');
-
-update words set ipa = regexp_replace(funsil, 'ei', 'ā')
-where id in (select id from words where funsil similar TO '%ei%');
-
-update words set ipa = regexp_replace(funsil, 'oi', 'õ')
-where id in (select id from words where funsil similar TO '%oi%');
-
-update words set ipa = regexp_replace(funsil, 'y([aäeoøiu])', 'j\1')
-where id in (select id from words where funsil similar TO '%y[aäeoøiu]%');
-
-update words set ipa = regexp_replace(funsil, 'w([aäeoøiu])', 'ʍ\1')
-where id in (select id from words where funsil similar TO '%w[aäeoøiu]%');`)
-
-	if err != nil {
-		log.Println(err)
-	} else {
-		fmt.Println("Done.")
+func updateIPA(queryEnd string) {
+	queryWhere := queryEnd
+	if queryEnd != ";" {
+		queryEnd = " AND" + queryEnd
+		queryWhere = " WHERE" + queryWhere
 	}
 
+	_, err := DB.Exec(`update words set ipa = funsil` + queryWhere + `
+	
+update words set ipa = regexp_replace(funsil, 'ng', 'ŋ', 'g')
+where id in (select id from words where funsil similar TO '%ng%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'dh', 'ð', 'g')
+where id in (select id from words where funsil similar TO '%dh%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'th', 'θ', 'g')
+where id in (select id from words where funsil similar TO '%th%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'dž', 'ʤ', 'g')
+where id in (select id from words where funsil similar TO '%dž%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'tš', 'ʧ', 'g')
+where id in (select id from words where funsil similar TO '%tš%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'ai', 'ā', 'g')
+where id in (select id from words where funsil similar TO '%ai%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'aw', 'å', 'g')
+where id in (select id from words where funsil similar TO '%aw%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'ei', 'ē', 'g')
+where id in (select id from words where funsil similar TO '%ei%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'oi', 'ō', 'g')
+where id in (select id from words where funsil similar TO '%oi%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'y([aäeoøiu])', 'j\1', 'g')
+where id in (select id from words where funsil similar TO '%y[aäeoøiu]%')` + queryEnd + `
+
+update words set ipa = regexp_replace(funsil, 'w([aäeoøiu])', 'ʍ\1', 'g')
+where id in (select id from words where funsil similar TO '%w[aäeoøiu]%')` + queryEnd)
+
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 // updateRitin updates the written form of words that that differ from their pronounced form
 // where it can be easily derived (in the case of syllable boundaries between d/t and h, insert dash)
-func updateRitin() {
-	fmt.Println("Updating ritin...")
-	_, err := DB.Exec(`update words set ritin = regexp_replace(fun, 'th', 't-h') where funsil similar to '%t[ˈˌ·]h%';
-update words set ritin = regexp_replace(fun, 'dh', 'd-h') where funsil similar to '%d[ˈˌ·]h%';`)
-	if err != nil {
-		log.Println(err)
-	} else {
-		fmt.Println("Done.")
-	}
+func updateRitin(queryEnd string) {
 
+	if queryEnd != ";" {
+		queryEnd = " AND" + queryEnd
+	}
+	_, err := DB.Exec(`update words set ritin = regexp_replace(fun, 'th', 't-h', 'g') where funsil similar to '%t[ˈˌ·]h%'` + queryEnd + `
+update words set ritin = regexp_replace(fun, 'dh', 'd-h', 'g') where funsil similar to '%d[ˈˌ·]h%'` + queryEnd)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 // updateFun updates passed row with generated
@@ -217,7 +243,7 @@ func updateFun(row *sql.Rows) {
 	updateFun := DB.QueryRow("UPDATE words SET fun = '" + fun + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateFun.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Println(err)
+		log.Fatal(err)
 	}
 }
 
@@ -236,7 +262,7 @@ func updateNumsil(row *sql.Rows) {
 	updateNumsil := DB.QueryRow("UPDATE words SET numsil = '" + strconv.Itoa(numsil) + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateNumsil.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Println(err)
+		log.Fatal(err)
 	}
 }
 
@@ -257,7 +283,7 @@ func updateFunsort(row *sql.Rows) {
 	updateFunsort := DB.QueryRow("UPDATE words SET funsort = '" + funsort + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateFunsort.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Println(err)
+		log.Fatal(err)
 	}
 }
 
@@ -278,6 +304,6 @@ func updateDist(row *sql.Rows) {
 	updateDist := DB.QueryRow("UPDATE words SET dist = '" + strconv.Itoa(dist) + "' WHERE id = " + strconv.Itoa(id) + ";")
 	err = updateDist.Scan(&updateString)
 	if err != nil && err != sql.ErrNoRows {
-		log.Println(err)
+		log.Fatal(err)
 	}
 }
