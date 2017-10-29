@@ -73,7 +73,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i 
                 }
             });
         </script>
-        <li><a href="{{.PreviousPage}}" class="back info toleft" data-title="Keyboard shortcut: A"><i class="arrow left blue"></i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{else}}
+        <li><a href="{{.PreviousPage}}" class="back info toleft" data-title="A or left arrow"><i class="arrow left blue"></i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{else}}
         <li><a class="disabled"><i class="arrow left blue"></i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{end}} {{if .NextPage}}
         <script>
             document.addEventListener("keyup", function (evt) {
@@ -84,7 +84,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i 
                 }
             });
         </script>
-        <li><a href="{{.NextPage}}" class="next info toright" data-title="Keyboard shortcut: D">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i class="arrow right blue"></i></a></li>{{else}}
+        <li><a href="{{.NextPage}}" class="next info toright" data-title="D or right arrow">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i class="arrow right blue"></i></a></li>{{else}}
         <li><a class="disabled">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i class="arrow right blue"></i></a></li>{{end}}
     </ul>
 </nav>
