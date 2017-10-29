@@ -7,19 +7,29 @@ var (
 	// IsDev toggles configuration of program in several places depending on if
 	// it is in development or production mode
 	IsDev bool
+
 	// CurrRand stores the current random rune
 	CurrRand = 'a'
+
 	// LastRand stores the previous random rune so generator doesn't repeat itself
 	LastRand = 'a'
+
 	// InitialIndex stores the offset amounts for the first word starting with each letter
 	// of the alphabet, to enable browsing by letter on the words page
 	InitialIndex []InitialIndexValue
+
 	// Alphabet lists Funetik Inggliš letters in order. Used to allow jumping to letter on word page.
 	Alphabet = []string{"a", "ä", "e", "i", "y", "w", "u", "ø", "o", "r", "l", "n", "m", "b", "p", "v", "f", "g", "k", "d", "t", "z", "s", "ž", "š", "h"}
-	// RowCount counts number of rows in DB
+
+	// RowCount stores number of rows in DB
 	RowCount int
+
+	// RowCountF stores formatted number of rows in DB
+	RowCountF string
+
 	// PhonStats stores the phoneme stats about the words in the database
 	PhonStats [][]string
+
 	// RuneStats stores the rune stats about the words in the database
 	RuneStats [][]string
 )
@@ -48,6 +58,8 @@ type TemplateParams struct {
 	// stats page
 	PhonStats [][]string
 	RuneStats [][]string
+	RowCount  int
+	RowCountF string
 
 	// translit page
 	TranslitOutput []string

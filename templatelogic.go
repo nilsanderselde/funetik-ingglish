@@ -52,6 +52,7 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.TitleTrud = "Keyboard"
 		t.args.TitleFun = "Kybord"
 	case "stats.html":
+		t.args.RowCountF = global.RowCountF
 		t.args.PhonStats = global.PhonStats
 		t.args.RuneStats = global.RuneStats
 		t.args.TitleTrud = "Stats"

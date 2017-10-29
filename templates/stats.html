@@ -1,10 +1,11 @@
 {{define "stats.html"}}
 {{template "_header.html" .}}
 <main>
+        
      {{if .DisplayTrud}}
     <h1>Stats</h1>
-    <p>This page provides some information about the occurrences of both the letters of Phonetic English and the phonemes, represented
-        by one or more letters. The first table shows statistics about letters, the second about phonemes. Both tables list the
+    <p>This page provides information about the letters and phonemes in the {{.RowCountF}} words in this database.
+        The first table shows statistics about letters, the second about phonemes. Both tables list the
         total number of occurrences in this database (frequency, also expressed as a percent), and
         the occurrences at the beginning of a word. The final column is the percent of letter or phoneme occurrences which are
         at the beginning of a word (column 4 divided by column 2).
@@ -19,8 +20,8 @@
     
     {{else}}
     <h1>Stäts</h1>
-    <p>Dhis peidž pruvaidz sum inførmeišin ubawt dhu ukørinsiz uv both dhu letørz uv Funetik Inggliš änd dhu fonymz, 
-        repruzentid bai wun or mor letørz. Dhu først teibul šoz stutistiks ubawt letørz, dhu sekind ubawt fonymz. Both teibulz
+    <p>Dhis peidž pruvaidz inførmeišin ubawt dhu letørz änd fonymz in dhu {{.RowCountF}} words in dhis deitubeis.
+        Dhu først teibul šoz stutistiks ubawt letørz, dhu sekind ubawt fonymz. Both teibulz
         list dhu totul numbør uv ukørinsiz in dhis deitubeis (frykwinsy, also iksprest äz u pørsent),
         änd dhu ukørinsiz ät dhu bigining uv u wørd. Dhu fainul kalum iz dhu pørsent uv letør or fonym ukørinsiz witš ar ät dhu
         bigining uv u wørd (kalum 4 divaidid bai kalum 2).

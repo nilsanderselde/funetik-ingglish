@@ -1,6 +1,9 @@
 package dbconnect
 
 import (
+	"golang.org/x/text/language"
+	"golang.org/x/text/message"
+
 	"gitlab.com/nilsanderselde/funetik-ingglish/global"
 	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
 )
@@ -35,4 +38,6 @@ func StatsInit() {
 	}
 	global.RuneStats = wordtools.CountLetters(funWørdz)
 	global.PhonStats = wordtools.CountPhonemes(ipaWørdz)
+	p := message.NewPrinter(language.English)
+	global.RowCountF = p.Sprint(global.RowCount)
 }
