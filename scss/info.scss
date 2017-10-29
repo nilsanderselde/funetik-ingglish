@@ -38,13 +38,13 @@
     &.above {
         &[data-title]:after {
             bottom: 108%;
-            right: -50%;
+            right: -6px;
         }
     }
     &.below {
         &[data-title]:after {
             top: 116%;
-            left: 13px;
+            left: 5px;
         }
     }
     &.toleft {
