@@ -222,8 +222,7 @@ func updateRitin(queryEnd string) {
 	if queryEnd != ";" {
 		queryEnd = " AND" + queryEnd
 	}
-	_, err := DB.Exec(`update words set ritin = regexp_replace(fun, 'th', 't-h', 'g') where funsil similar to '%t[ˈˌ·]h%'` + queryEnd + `
-update words set ritin = regexp_replace(fun, 'dh', 'd-h', 'g') where funsil similar to '%d[ˈˌ·]h%'` + queryEnd)
+	_, err := DB.Exec("update words set ritin = regexp_replace(fun, '([tdsz])h', '\\1-h', 'g') where funsil similar to '%[tdsz][ˈˌ·]h%'" + queryEnd)
 	if err != nil {
 		log.Fatal(err)
 	}
