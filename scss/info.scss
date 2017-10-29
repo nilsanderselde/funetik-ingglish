@@ -4,7 +4,7 @@
     &[data-title]:after {
         font-weight: normal;
         content: attr(data-title);
-        padding: 2px 3px;
+        padding: 4px 3px 2px;
         color: #333;
         position: absolute;
         white-space: nowrap;
@@ -57,6 +57,18 @@
         &[data-title]:after {
             top: 0px;
             left: 110%;
+        }
+    }
+}
+.backnext {
+    .info.toleft {
+        &[data-title]:after {
+            top: 4px;
+        }
+    }
+    .info.toright {
+        &[data-title]:after {
+            top: 4px;
         }
     }
 }
