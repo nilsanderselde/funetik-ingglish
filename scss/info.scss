@@ -49,13 +49,13 @@
     }
     &.toleft {
         &[data-title]:after {
-            top: 0px;
+            top: -2px;
             right: 108%;
         }
     }
     &.toright {
         &[data-title]:after {
-            top: 0px;
+            top: -2px;
             left: 110%;
         }
     }
