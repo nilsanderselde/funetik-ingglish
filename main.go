@@ -56,7 +56,7 @@ func main() {
 	http.HandleFunc(ROOT+"/favicon.ico", faviconHandler)
 	http.Handle(ROOT+"/", &templateHandler{filenames: []string{"home.html"}})
 	http.Handle(ROOT+"/kybord", &templateHandler{filenames: []string{"kbd.html"}})
-	http.Handle(ROOT+"/woordz", &templateHandler{filenames: []string{"words.html", "words_sorted.html"}})
+	http.Handle(ROOT+"/woordz", &templateHandler{filenames: []string{"words.html", "wordlist.html"}})
 	http.Handle(ROOT+"/staats", &templateHandler{filenames: []string{"stats.html"}})
 	http.Handle(ROOT+"/traanzlit", &templateHandler{filenames: []string{"translit.html"}})
 	http.Handle(ROOT+"/ubawt", &templateHandler{filenames: []string{"about.html"}})
