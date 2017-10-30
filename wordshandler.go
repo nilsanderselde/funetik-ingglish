@@ -84,7 +84,18 @@ COALESCE(flaagd, 'false')
 			t.args.Reverse = false
 		}
 	}
-	fullQuery += " " + order + ", funsort " + order + ", trud " + order + ", id " + order + ";"
+	fullQuery += " " + order
+	switch sortby {
+	case "id":
+		fullQuery += ", funsort " + order + ", trud " + order
+	case "trud":
+		fullQuery += ", funsort " + order + ", id " + order
+	case "dist":
+		fullQuery += ", funsort " + order + ", trud " + order + ", id " + order
+	default:
+		fullQuery += ", trud " + order + ", id " + order
+	}
+	fullQuery += ";"
 	sortQ += "&order=" + order
 
 	// number of words per page
