@@ -12,12 +12,12 @@ header {
             margin: auto;
             position: relative;
             top: 10px;
-            @media screen and (max-width: 499px) {
+            @media screen and (max-width: 519px) {
                 max-width: 60%;
                 height: auto;
             }
         }
-        @media screen and (max-width: 499px) {
+        @media screen and (max-width: 519px) {
             margin-right: 10px;
         }
     }
@@ -67,7 +67,7 @@ nav {
                 }
             }
         }
-        @media screen and (max-width: 499px) {
+        @media screen and (max-width: 519px) {
             top: 10%;
             font-size: .9em;
         }
@@ -75,7 +75,7 @@ nav {
             top: 10%;
             font-size: .8em;
         }
-        @media screen and (max-width: 319px) {
+        @media screen and (max-width: 329px) {
             position: static;
             ul{
                 display: flex;
