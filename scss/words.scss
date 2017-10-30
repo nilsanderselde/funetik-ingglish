@@ -93,17 +93,19 @@ nav.letters {
     cursor: default;
     margin-bottom: 10px;
     text-align: center;
+    font-size: 0;
+    line-height: 0;
     h3 {
         text-align: center;
         font-weight: normal;
         font-style: italic;
     }
-    @media screen and (max-width: 599px) and (min-width: 400px) {
+    @media screen and (max-width: 649px) /*and (min-width: 400px) */{
         div {
             display: block !important;
         }
     }
-    @media (max-width: 299px) {
+    @media (max-width: 199px) {
         display: none;
     }
     div {
@@ -111,9 +113,11 @@ nav.letters {
     }
     table {
         background: transparent;
-        width: 140px;
+        width: 150px;
         display: inline-block;
         text-align: left;
+        font-size: .8rem;
+        line-height: 1;
         td:nth-of-type(1) {
             text-align: center;
             font-weight: bold;
