@@ -1,7 +1,7 @@
 
 .info {
     position: relative;
-    &[data-title]:after {
+    &[data-title]::after {
         font-weight: normal;
         content: attr(data-title);
         padding: 4px 3px 2px;
@@ -22,7 +22,7 @@
             display: none;
         }
     }
-    &[data-title]:hover:after {
+    &[data-title]:hover::after {
         opacity: 1;
     }
     &.nolink {
@@ -36,25 +36,25 @@
         }
     }
     &.above {
-        &[data-title]:after {
+        &[data-title]::after {
             bottom: 108%;
             right: -6px;
         }
     }
     &.below {
-        &[data-title]:after {
+        &[data-title]::after {
             top: 116%;
             left: 5px;
         }
     }
     &.toleft {
-        &[data-title]:after {
+        &[data-title]::after {
             top: -2px;
             right: 108%;
         }
     }
     &.toright {
-        &[data-title]:after {
+        &[data-title]::after {
             top: -2px;
             left: 110%;
         }
@@ -62,12 +62,12 @@
 }
 .backnext {
     .info.toleft {
-        &[data-title]:after {
+        &[data-title]::after {
             top: 4px;
         }
     }
     .info.toright {
-        &[data-title]:after {
+        &[data-title]::after {
             top: 4px;
         }
     }
