@@ -117,7 +117,6 @@ input[type="submit"] {
 }
 
 #kbd {
-
     *[onpointerdown^="pleiFon"]::before {
         right: 2px;
         top: 2px;
@@ -130,6 +129,23 @@ input[type="submit"] {
         top: 3px;
         height: 11.5px;
      }
+     @media screen and (max-width: 500px) {
+
+        *[onpointerdown^="pleiFon"] span {
+            position: relative;
+            top: 4px;
+        }
+
+        *[onpointerdown^="pleiFon"]::before {
+            width: 11px;
+            height: 11px;
+            right: 20%;
+        }
+        *[onpointerdown^="pleiFon"]:active::before {
+            top: 3px;
+            height: 10.5px;
+        }       
+    }
 }
 
 i {
