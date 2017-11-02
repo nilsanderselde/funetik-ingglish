@@ -107,8 +107,8 @@ COALESCE(flaagd, 'false')
 		}
 	}
 	t.args.Num = num
-	nextPage := sortQ + "&num=" + strconv.Itoa(num)
-	currentPage := nextPage
+	currentPage := sortQ + "&num=" + strconv.Itoa(num)
+	nextPage := currentPage
 
 	// offset from beginning of results
 	var start int

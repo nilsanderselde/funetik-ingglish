@@ -574,7 +574,7 @@ func pickKeyboard(t *templateHandler, r *http.Request) {
 		// default (version 9) keyboard if no version query
 		// exists or if version query is "9".
 		// it's in its own block so it can be easily collapsed.
-		t.args.CurrentPage = "?v=9"
+		t.args.CurrentPage = r.URL.Path
 		t.args.KbdVer = "9"
 
 		t.args.Kbd[0] = [][]string{

@@ -31,9 +31,9 @@ func randomRune() string {
 func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	filename := strings.TrimPrefix(t.filenames[0], "templates/")
-	var additive bool
 	t.args.Root = ROOT
 	t.args.IsDev = global.IsDev
+	t.args.CurrentPage = r.URL.Path
 
 	switch filename {
 	case "about.html":
@@ -48,7 +48,6 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.TitleFun = "Hom"
 	case "kbd.html":
 		pickKeyboard(t, r)
-		additive = true
 		t.args.TitleTrud = "Keyboard"
 		t.args.TitleFun = "Kybord"
 	case "stats.html":
@@ -67,12 +66,11 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		t.args.TitleFun = "Tränzlitøreitør"
 	case "words.html":
 		handleWordList(t, r)
-		additive = true
 		t.args.InitialIndex = global.InitialIndex
 		t.args.TitleTrud = "Words"
 		t.args.TitleFun = "Wørdz"
 	}
-	displayOrth(t, r, additive)
+	displayOrth(t, r)
 
 	t.once.Do(func() {
 		funcMap := template.FuncMap{
@@ -91,23 +89,28 @@ func (t *templateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 // displayOrth determines which orthography to display page in based on query string.
-// concat is true if query string should be concatenated to an existing query string
-// using & instead of ?
-func displayOrth(t *templateHandler, r *http.Request, additive bool) {
+func displayOrth(t *templateHandler, r *http.Request) {
 	t.args.ChangeOrth = t.args.CurrentPage
-	if additive {
+	currentPage := t.args.CurrentPage
+	var justOrth bool
+	if len(r.URL.Query()) != 0 {
 		t.args.CurrentPage += "&orth="
 		t.args.ChangeOrth += "&orth="
 	} else {
 		t.args.CurrentPage = "?orth="
 		t.args.ChangeOrth = "?orth="
+		justOrth = true
 	}
 	if r.URL.Query()["orth"] != nil && r.URL.Query()["orth"][0] == "fun" {
 		t.args.CurrentPage += "fun"
-		t.args.ChangeOrth += "trud"
+		if justOrth {
+			t.args.ChangeOrth = r.URL.Path
+		} else {
+			t.args.ChangeOrth = currentPage
+		}
 		t.args.DisplayTrud = false
 	} else {
-		t.args.CurrentPage += "trud"
+		t.args.CurrentPage = currentPage
 		t.args.ChangeOrth += "fun"
 		t.args.DisplayTrud = true
 	}
