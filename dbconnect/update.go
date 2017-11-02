@@ -226,6 +226,11 @@ func updateRitin(queryEnd string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	_, err = DB.Exec("update words set ritin = regexp_replace(fun, 'ng', 'n-g', 'g') where funsil similar to '%n[ˈˌ·]g%'" + queryEnd)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 // updateFun updates passed row with generated
