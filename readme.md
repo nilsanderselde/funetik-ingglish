@@ -4,7 +4,7 @@
 
 [Funetik Inggliš Website](https://nils.elde.codes/funing/)
 
-## Intrudukšin *(Introduction)*
+## Diskripšin *(Discription)*
 
 Go-based web server that serves a database of English words and their representation in a phonetic American English orthography.
 
