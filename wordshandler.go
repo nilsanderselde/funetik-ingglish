@@ -107,8 +107,6 @@ COALESCE(flaagd, 'false')
 		}
 	}
 	t.args.Num = num
-	currentPage := sortQ + "&num=" + strconv.Itoa(num)
-	nextPage := currentPage
 
 	// offset from beginning of results
 	var start int
@@ -119,27 +117,24 @@ COALESCE(flaagd, 'false')
 		}
 	}
 	t.args.Start = start
-	nextPage += "&start=" + strconv.Itoa(start+num)
-	currentPage += "&start=" + strconv.Itoa(start)
+
+	pagePrefix := sortQ + "&num=" + strconv.Itoa(num) + "&start="
+	t.args.CurrentPage = pagePrefix + strconv.Itoa(start)
 
 	// if there is a previous page, create the query string for the link to it
-	if start >= num {
-		t.args.PreviousPage = sortQ + "&num=" + strconv.Itoa(num) + "&start=" + strconv.Itoa(start-num)
+	if start >= num && global.RowCount >= start {
+		t.args.PreviousPage = pagePrefix + strconv.Itoa(start-num)
 	} else {
-		t.args.PreviousPage = ""
+		t.args.PreviousPage = pagePrefix + "0"
 	}
 
 	// see if next page link should be hidden because there's no more results
-	if global.RowCount < start+num {
+	if global.RowCount > start+num {
+		t.args.NextPage = pagePrefix + strconv.Itoa(start+num)
+	} else {
 		t.args.NextPage = ""
-	}
-	// if num rows returned less than start num, disable previous page link
-	if global.RowCount < start {
-		t.args.PreviousPage = ""
 	}
 
 	t.args.PQuery = fullQuery
 	t.args.SortQ = sortQ
-	t.args.NextPage = nextPage
-	t.args.CurrentPage = currentPage
 }
