@@ -45,7 +45,7 @@ func main() {
 		// Precalculate data for site
 		global.RowCount = dbconnect.CountRows()
 		dbconnect.StatsInit()
-		dbconnect.IndexByInitial()
+		dbconnect.Indexer()
 		fmt.Println("Precalculation complete.\nReady.")
 	} else {
 		// log.Fatal(err)

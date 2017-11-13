@@ -52,11 +52,31 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i 
 
 {{end}}
 {{if eq .SortBy "funsort"}}
-<nav class="letters">
+<nav class="index">
     <ul>
     {{$displaytrud := .DisplayTrud}}
-    {{range .InitialIndex}}
-        <li><a href="?sortby=funsort&order=asc&num=20&start={{.Index}}&orth={{if $displaytrud}}trud{{else}}fun{{end}}">{{.Letter}}</a></li>
+    {{range .FunetikIndex}}
+        <li><a href="?sortby=funsort&order=asc&num=20&start={{.Offset}}&orth={{if $displaytrud}}trud{{else}}fun{{end}}">{{.Value}}</a></li>
+    {{end}}
+    </ul>
+</nav>
+{{else if eq .SortBy "trud"}}
+<nav class="index">
+    <ul>
+    {{$displaytrud := .DisplayTrud}}
+    {{range .TrudIndex}}
+        <li><a href="?sortby=trud&order=asc&num=20&start={{.Offset}}&orth={{if $displaytrud}}trud{{else}}fun{{end}}">{{.Value}}</a></li>
+    {{end}}
+    </ul>
+</nav>
+{{else if eq .SortBy "dist"}}
+
+<nav class="index dist">
+    <ul>
+        <li><span>Dist:</span></li>
+    {{$displaytrud := .DisplayTrud}}
+    {{range .DistIndex}}
+        <li><a href="?sortby=dist&order=asc&num=20&start={{.Offset}}&orth={{if $displaytrud}}trud{{else}}fun{{end}}">{{.Value}}</a></li>
     {{end}}
     </ul>
 </nav>
