@@ -51,7 +51,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i 
 </table>
 
 {{end}}
-
+{{if eq .SortBy "funsort"}}
 <nav class="letters">
     <ul>
     {{$displaytrud := .DisplayTrud}}
@@ -60,7 +60,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i 
     {{end}}
     </ul>
 </nav>
-
+{{end}}
 <nav class="backnext">
     <ul>
         {{if .PreviousPage}}
