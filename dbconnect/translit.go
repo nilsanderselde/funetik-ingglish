@@ -125,7 +125,7 @@ func getFun(trud string) (fun string) {
 	err := row.Scan(&fun)
 	if err != nil {
 		// if not found, check lowercase
-		row = DB.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE trud = $1;", strings.ToLower(trud))
+		row = DB.QueryRow("SELECT COALESCE(ritin, fun) FROM words WHERE lower(trud) = $1;", strings.ToLower(trud))
 		err = row.Scan(&fun)
 		if err != nil {
 			// renamed variable as it may be either an unknown word returned in original form or a hyphenated/slashed word
@@ -208,6 +208,8 @@ AND NOT EXISTS (SELECT trud FROM words WHERE LOWER(trud) = '` + strings.ToLower(
 		fun = strings.ToUpper(fun)
 	} else if isTitleCase {
 		fun = capitalizeContraction(fun)
+	} else {
+		fun = strings.ToLower(fun)
 	}
 
 	return leading + fun + trailing
