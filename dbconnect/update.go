@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"log"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/briandowns/spinner"
@@ -301,7 +302,7 @@ func updateDist(row *sql.Rows) {
 	err := row.Scan(&id, &fun, &trud, &funritin)
 
 	// Generate value for "dist" (true means flipping two adjacent letters is considered one move)
-	dist := wordtools.FindDistance(funritin, trud, true)
+	dist := wordtools.FindDistance(strings.ToLower(funritin), strings.ToLower(trud), true)
 
 	// update with new dist value
 	var updateString string
