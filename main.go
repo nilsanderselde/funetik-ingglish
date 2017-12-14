@@ -48,8 +48,7 @@ func main() {
 		dbconnect.Indexer()
 		fmt.Println("Precalculation complete.\nReady.")
 	} else {
-		// log.Fatal(err)
-		fmt.Println("Database ping failed.")
+		log.Fatal(err)
 	}
 
 	http.Handle(ROOT+"/static/", setHeaders(http.StripPrefix(ROOT+"/static/", http.FileServer(http.Dir("./static")))))
