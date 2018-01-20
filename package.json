@@ -14,9 +14,9 @@
   "author": "Nils Anders Elde",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/nilsanderselde/funetik-ingglish/issues"
+    "url": "https://github.com/nilsanderselde/funetik-ingglish/issues"
   },
-  "homepage": "https://gitlab.com/nilsanderselde/funetik-ingglish#README",
+  "homepage": "https://github.com/nilsanderselde/funetik-ingglish#README",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "css-loader": "^0.28.7",

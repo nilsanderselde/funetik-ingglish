@@ -1,5 +1,5 @@
 // Nils Elde
-// https://gitlab.com/nilsanderselde
+// https://github.com/nilsanderselde
 // This file contains the word list template logic
 
 package main

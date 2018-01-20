@@ -1,5 +1,5 @@
 // Nils Elde
-// https://gitlab.com/nilsanderselde
+// https://github.com/nilsanderselde
 //
 // Calculates Levenshtein distances between two strings.
 //
