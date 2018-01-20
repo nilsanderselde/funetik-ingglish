@@ -5,9 +5,7 @@
 @import "misc";
 @import "table";
 @import "words";
-
-$roboto: 'Roboto', sans-serif;
-$monoto: 'Roboto Mono', monospace;
+@import "_vars";
 
 html,body
 {
@@ -21,7 +19,13 @@ html {
     background: #eee;
     color: #333;
     font-family: $roboto;
-    font-size: 16px;
+    font-size: 18pt;
+    @media screen and (max-width: 900px) {
+        font-size: 16pt;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 12pt;
+    }
     background-image: url(../images/ulimpik-naashinul-park-2560w.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,24 +41,17 @@ body{
 .bggrad{
     background-color: rgba(255, 255, 255, 0.2);
     background: linear-gradient(to bottom,rgba(255,255,255,0) 40vh,rgba(255,255,255,.8) 70vh);    
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top;
-    max-width: 700px;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    @media screen and (min-width: 701px) { 
-        left: 50%;
-        margin-left: -350px;  
-    }
-    z-index: -1;
+    max-width: $pagewidth;
+    margin: auto;
+    min-height: 94vh;
 }
 
 main {
     color: #222;
     display: block;
-
     padding: 10px;
     font-size: .8rem;
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
@@ -85,10 +82,11 @@ header,
 #words,
 table.stats,
 #legend {
-    max-width: 700px;
+    max-width: $pagewidth;
     width: 100%;
+    padding: 0 2rem 2rem 2rem;
     box-sizing: border-box;
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: $pagewidth) {
         margin-left: auto;
         margin-right: auto;  
     }
@@ -117,8 +115,7 @@ h2 {
     }
 }
 h1 {
-    font-size: 1.8rem;
-    font-weight: normal;
+    font-size: 1.6rem;
 }
 h2 {
     font-size: 1.2rem;

@@ -1,37 +1,51 @@
 
 #kbd {
-    $collapse: 333px;
+    $collapse: 20rem;
     margin: 1rem 0;
     min-width: 240px;
+    // max-width: 680px;
     user-select: none;    
     cursor: default;
     text-shadow: none;
+    position: relative;
+    top: -400px;
+    z-index: 20;
+    background: white;
     
     .row {
         font-size: 0;
         display: flex;
         width: 100%;
         div {
-            $key: 39px;
-            font-size: 1rem;
-            background: rgba(255, 255, 255, .5);
+            // $key: 39px;
+            $key: 2.3rem;
             max-width: $key;
             height: $key;
             line-height: $key;
+            font-size: 1.2rem;
+            background: rgba(255, 255, 255, .5);
+
             border: 1px outset #ccc;
             text-align: center;
             flex: 1 1 auto;
             padding: 2px;
             margin: 1px;
-            @media screen and (min-width: 699px) {
-                min-width: 39px;
+            @media screen and (min-width: 30rem) {
+                // min-width: 39px;
+            }
+            @media screen and (max-width: 40rem) {
+                $key: 2rem;
+                max-width: $key;
+                height: $key;
+                line-height: $key;
+                font-size: 1rem;
             }
             span {
                 pointer-events: none;                
             }
             &:not(.shift)[data-title] {
                 &:active {
-                    font-size: .95rem;
+                    font-size: 15pt;
                     border-style: inset;
                     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);            
                 }
@@ -56,7 +70,7 @@
         }
         .varsize,
         .space {
-            font-size: .6rem;
+            font-size: 9.5pt;
             font-weight: bold;
             max-width: initial;
         }
@@ -70,7 +84,7 @@
             
             &.down {
                 background: rgb(44, 90, 139);
-                font-size: .55rem;
+                font-size: 9pt;
                 border-style: inset;
                 animation: none;
                 box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -116,6 +130,9 @@
     text-shadow: none;    
     $small: .8rem;
     $big: 1rem;
+    $wide: calc(2rem+3px);
+    max-width: 680px;
+    
     vertical-align: bottom;
     cursor: default;
     text-align: right;
@@ -142,7 +159,8 @@
             font-size: $small;
             font-weight: bold;
             padding: 2px 6px;
-            width: 34px;
+            width: $wide;
+            margin-right: 1px;
         }
         &.active {
             background: rgb(49, 98, 153);

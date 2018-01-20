@@ -1,3 +1,5 @@
+@import "_vars";
+
 table.stats {
     margin-top: 10px;
     // table-layout: auto;
@@ -37,15 +39,22 @@ table.stats {
 
 .nobg {
     background: transparent;
+    
 }
 
 .phoncol {
     display: inline-block;
     vertical-align: top;
     padding: 0 20px;
-    width: 190px;
+    max-width: 15em;
+    width: 100%;
     span {
         user-select: none;
+    }
+
+    *[onpointerdown^="pleiFon"]::before {
+        left: -17px;
+        top: 1px;
     }
 }
 .center{
@@ -55,16 +64,35 @@ textarea,
 #kbddemo {
     background: rgba(255, 255, 255, 0.5);
     border: 0;
-    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 2px 4px 3px rgba(0, 0, 0, 0.2);
+    
+    // box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
     font-family: $roboto;
     color: #222;
     box-sizing: border-box;
     width: 100%;
     resize: none;
     font-size: .8rem;
-    padding: 4px;
+    padding: .5rem;
     margin-top: 1rem;
     border-radius: 10px;
+}
+
+pre {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+    font-family: $monoto;
+    white-space: pre-wrap;
+    font-size: .7rem;
+    padding: .5rem;
+    margin: 0 0 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 320px;
+    box-shadow: inset 0 2px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    a, .breakall {
+        word-break: break-all; 
+    }
 }
 
 textarea {
@@ -112,10 +140,7 @@ input[type="submit"] {
 
 }
 
-.phoncol *[onpointerdown^="pleiFon"]::before {
-    left: -17px;
-    top: 1px;
-}
+
 
 #kbd {
     *[onpointerdown^="pleiFon"]::before {
@@ -230,23 +255,12 @@ article:nth-of-type(odd) {
     text-shadow: 2px 2px 2px rgba(255, 255, 255, .2);   
 }
 
-pre {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
-    font-family: $monoto;
-    white-space: pre-wrap;
-    font-size: .7rem;
-    padding: .5rem;
-    margin: 0 0 1rem;
-    overflow-y: auto;
-    max-height: 320px;
-    box-shadow: inset 0 2px 4px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-}
+
 .alphabet {
     font-family: $monoto;
-    font-size: 1.36rem;
+    font-size: 1.2em;
     color: rgba(49, 98, 153, .5); 
-    >span{
+    >span, >span>span{
         display: block;
     }
     
