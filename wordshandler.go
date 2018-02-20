@@ -1,5 +1,5 @@
 // Nils Elde
-// https://github.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 // This file contains the word list template logic
 
 package main
@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/global"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
+	"github.com/nilsanderselde/funetik-ingglish/dbconnect"
 )
 
 const (

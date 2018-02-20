@@ -1,5 +1,5 @@
 // Nils Elde
-// https://github.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package dbconnect
 
@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/global"
 )
 
 // Indexer gets the row number of the first word of each group

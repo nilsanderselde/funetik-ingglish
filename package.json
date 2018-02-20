@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/nilsanderselde/funetik-ingglish.git"
+    "url": "git+ssh://git@github.com:nilsanderselde/funetik-ingglish.git"
   },
   "author": "Nils Anders Elde",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nilsanderselde/funetik-ingglish/issues"
   },
-  "homepage": "https://github.com/nilsanderselde/funetik-ingglish#README",
+  "homepage": "https://github.com/nilsanderselde/funetik-ingglish#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "css-loader": "^0.28.7",

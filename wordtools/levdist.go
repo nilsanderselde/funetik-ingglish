@@ -1,5 +1,5 @@
 // Nils Elde
-// https://github.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 //
 // Calculates Levenshtein distances between two strings.
 //

@@ -1,4 +1,4 @@
-![Kybord](https://gitlab.com/nilsanderselde/funetik-ingglish/raw/master/images/logo-medium.png)
+![Kybord](https://github.com/nilsanderselde/funetik-ingglish/raw/master/images/logo-medium.png)
 
 # Funetik Inggliš *(Phonetic English)*
 

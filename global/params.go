@@ -1,5 +1,5 @@
 // Nils Elde
-// https://github.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package global
 

@@ -1,5 +1,5 @@
 // Nils Elde
-// https://github.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package dbconnect
 
@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/briandowns/spinner"
-	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
+	"github.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
 // UpdateAllAutoValues automatically generates values for all rows

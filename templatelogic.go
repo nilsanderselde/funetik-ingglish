@@ -1,5 +1,5 @@
 // Nils Elde
-// https://github.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package main
 
@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/dbconnect"
+	"github.com/nilsanderselde/funetik-ingglish/global"
 )
 
 // templateHandler contains all fields needed to process and execute templates

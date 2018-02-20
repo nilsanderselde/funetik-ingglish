@@ -1,5 +1,5 @@
 // Nils Elde
-// https://github.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package dbconnect
 
@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/global"
 )
 
 // NewRandomRune creates and stores a new rune for reloading the word list after toggling fields
