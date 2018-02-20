@@ -96,9 +96,10 @@ func displayOrth(t *templateHandler, r *http.Request) {
 	t.args.ChangeOrth = t.args.CurrentPage
 	currentPage := t.args.CurrentPage
 	var justOrth bool
-	if len(r.URL.Query()) != 0 {
+	if len(r.URL.Query()) > 1 {
 		t.args.CurrentPage += "&orth="
 		t.args.ChangeOrth += "&orth="
+		
 	} else {
 		t.args.CurrentPage = "?orth="
 		t.args.ChangeOrth = "?orth="
