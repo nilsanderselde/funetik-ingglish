@@ -2,9 +2,8 @@ node_modules/
 .vscode/
 env/
 funetik-ingglish
-build_windows.py
+build_windows.ps1
 build_linux.py
-createtar_windows.py
 createtar_linux.py
 deploy.py
 Thumbs.db
