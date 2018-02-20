@@ -83,6 +83,8 @@ COALESCE(flaagd, 'false')
 		} else {
 			t.args.Reverse = false
 		}
+	} else {
+		t.args.Reverse = false		
 	}
 	fullQuery += " " + order
 	switch sortby {
