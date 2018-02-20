@@ -226,13 +226,13 @@ article:nth-of-type(odd) {
 
 .alphabet {
     font-family: $monoto;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: rgba(49, 98, 153, .5); 
     >span, >span>span{
         display: block;
     }
     
-    @media screen and (max-width: 699px){
+    @media screen and (max-width: $breakthree){
         .nomobile{
             display: none;
         }
@@ -240,7 +240,7 @@ article:nth-of-type(odd) {
             display: block;
         }
     }
-    @media screen and (max-width: 349px){
+    @media screen and (max-width: $breakfive){
         >span>span>span {
             display: inline;
             text-align: center;
