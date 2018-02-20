@@ -20,10 +20,10 @@ html {
     color: #333;
     font-family: $roboto;
     font-size: 18pt;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: $breakzero) {
         font-size: 16pt;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: $breakone) {
         font-size: 12pt;
     }
     background-image: url(../images/ulimpik-naashinul-park-2560w.jpg);
@@ -52,7 +52,6 @@ body{
 main {
     color: #222;
     display: block;
-    padding: 10px;
     font-size: .8rem;
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
     position: relative;
@@ -69,7 +68,10 @@ main {
     a:active {
         border-color: black;
     }
-
+    @media screen and (max-width: $breakfour) {
+        padding-left: 1px !important;
+        padding-right: 1px !important;
+    }
 }
 
 

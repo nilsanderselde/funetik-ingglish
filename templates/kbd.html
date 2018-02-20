@@ -50,46 +50,46 @@
         {{range (index .Kbd 0)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-        <div class="varsize hideoverflow"><span>Backspace</span></div>
+        <div class="wider hideoverflow"><span>Backspace</span></div>
     </div>
     <div class="row">
-        <div class="varsize"><span>Tab</span></div>
+        <div class="wider"><span>Tab</span></div>
         {{range (index .Kbd 1)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         </div>
 
     <div class="row">
-        <div class="varsize hideoverflow"><span>Caps Lock</span></div>
+        <div class="wider hideoverflow"><span>Caps Lock</span></div>
         {{range (index .Kbd 2)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-        <div class="varsize"><span>Enter</span></div>        
+        <div class="wider"><span>Enter</span></div>        
     </div>
 
     <div class="row">
-        <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
+        <div class="shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
         {{range (index .Kbd 3)}}
         <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-        <div class="varsize shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
+        <div class="shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
     </div>
     <div class="row bottom">
-        <div class="varsize"><span>Ctrl</span></div>
+        <div class="wide"><span>Ctrl</span></div>
         <div class="vargin"></div>
-        <div class="varsize"><span>Alt</span></div>
+        <div class="wide"><span>Alt</span></div>
         <div class="vargin"></div>
         <div class="space"><span>Space</span></div>
         <div class="vargin"></div>
-        <div class="varsize"><span>Alt</span></div>
+        <div class="wide"><span>Alt</span></div>
         <div class="vargin"></div>        
-        <div class="varsize"><span>Ctrl</span></div>
+        <div class="wide"><span>Ctrl</span></div>
     </div>
 </div>
 
 {{if .DisplayTrud}}
 <p class="versions">
-<span>Keyboard Version: </span>
+<span><span>Keyboard </span>Version: </span>
 <a href="?v=1&orth=trud#kbd" class="{{if eq .KbdVer "1"}}active{{end}}">1</a>
 <a href="?v=2&orth=trud#kbd" class="{{if eq .KbdVer "2"}}active{{end}}">2</a>
 <a href="?v=3&orth=trud#kbd" class="{{if eq .KbdVer "3"}}active{{end}}">3</a>
@@ -103,7 +103,7 @@
 
 {{else}}
 <p class="versions">
-<span>Kybord Vøržin: </span>
+<span><span>Kybord </span>Vøržin: </span>
 <a href="?v=1&orth=fun#kbd" class="{{if eq .KbdVer "1"}}active{{end}}">1</a>
 <a href="?v=2&orth=fun#kbd" class="{{if eq .KbdVer "2"}}active{{end}}">2</a>
 <a href="?v=3&orth=fun#kbd" class="{{if eq .KbdVer "3"}}active{{end}}">3</a>
@@ -216,7 +216,7 @@
             shiftedKeys[i].className = "shifted";
         }
         for (i = 0; i < shiftKeys.length; i++) {
-            shiftKeys[i].className = "varsize shift down info above";
+            shiftKeys[i].className = "wide shift down info above";
         }
     }
     function shiftUp(){
@@ -227,7 +227,7 @@
             normalKeys[i].className = "normal";
         }
         for (i = 0; i < shiftKeys.length; i++) {
-            shiftKeys[i].className = "varsize shift info above";
+            shiftKeys[i].className = "wide shift info above";
         }
     }
     function pressShift() {
