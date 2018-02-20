@@ -1,5 +1,5 @@
 // Nils Elde
-// https://gitlab.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package main
 
@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/dbconnect"
+	"github.com/nilsanderselde/funetik-ingglish/global"
 )
 
 // templateHandler contains all fields needed to process and execute templates
@@ -96,9 +96,10 @@ func displayOrth(t *templateHandler, r *http.Request) {
 	t.args.ChangeOrth = t.args.CurrentPage
 	currentPage := t.args.CurrentPage
 	var justOrth bool
-	if len(r.URL.Query()) != 0 {
+	if len(r.URL.Query()) > 1 {
 		t.args.CurrentPage += "&orth="
 		t.args.ChangeOrth += "&orth="
+		
 	} else {
 		t.args.CurrentPage = "?orth="
 		t.args.ChangeOrth = "?orth="

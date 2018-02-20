@@ -1,12 +1,12 @@
 // Nils Elde
-// https://gitlab.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package dbconnect
 
 import (
 	"strconv"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/global"
 
 	// postgres drivers
 	_ "github.com/lib/pq"

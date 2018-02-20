@@ -1,3 +1,5 @@
+@import "_vars";
+
 table.stats {
     margin-top: 10px;
     // table-layout: auto;
@@ -37,15 +39,22 @@ table.stats {
 
 .nobg {
     background: transparent;
+    
 }
 
 .phoncol {
     display: inline-block;
     vertical-align: top;
     padding: 0 20px;
-    width: 190px;
+    max-width: 15em;
+    width: 100%;
     span {
         user-select: none;
+    }
+
+    *[onpointerdown^="pleiFon"]::before {
+        left: -17px;
+        top: 5px;
     }
 }
 .center{
@@ -55,16 +64,35 @@ textarea,
 #kbddemo {
     background: rgba(255, 255, 255, 0.5);
     border: 0;
-    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 2px 4px 3px rgba(0, 0, 0, 0.2);
+    
+    // box-shadow: 0 0 4px 2px rgba(255, 255, 255, 0.5);
     font-family: $roboto;
     color: #222;
     box-sizing: border-box;
     width: 100%;
     resize: none;
     font-size: .8rem;
-    padding: 4px;
+    padding: .5rem;
     margin-top: 1rem;
     border-radius: 10px;
+}
+
+pre {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+    font-family: $monoto;
+    white-space: pre-wrap;
+    font-size: .7rem;
+    padding: .5rem;
+    margin: 0 0 1rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 320px;
+    box-shadow: inset 0 2px 4px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    a, .breakall {
+        word-break: break-all; 
+    }
 }
 
 textarea {
@@ -112,42 +140,7 @@ input[type="submit"] {
 
 }
 
-.phoncol *[onpointerdown^="pleiFon"]::before {
-    left: -17px;
-    top: 1px;
-}
 
-#kbd {
-    *[onpointerdown^="pleiFon"]::before {
-        right: 2px;
-        top: 2px;
-     }
-     *[onpointerdown^="pleiFon"].old::before,
-     *[onpointerdown^="pleiFon"].final::before  {
-        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 57 57'> <path id='Path #2' fill='white' stroke='none' d='M 46.66,0.00 C 46.66,0.00 44.23,1.89 44.23,1.89 50.74,10.10 54.00,18.96 54.00,28.48 54.00,38.20 50.73,47.08 44.20,55.11 44.20,55.11 46.62,57.00 46.62,57.00 53.54,48.24 57.00,38.73 57.00,28.48 57.00,18.26 53.55,8.76 46.66,0.00 Z M 41.12,4.38 C 41.12,4.38 38.61,6.23 38.61,6.23 44.20,13.23 47.00,20.69 47.00,28.59 47.00,36.53 44.20,44.00 38.61,51.00 38.61,51.00 41.12,52.86 41.12,52.86 47.04,45.29 50.00,37.20 50.00,28.59 50.00,19.87 47.04,11.79 41.12,4.38 Z M 35.62,8.97 C 35.62,8.97 32.95,10.78 32.95,10.78 37.65,16.51 40.00,22.45 40.00,28.61 40.00,34.88 37.65,40.82 32.95,46.44 32.95,46.44 35.62,48.25 35.62,48.25 40.54,41.96 43.00,35.41 43.00,28.61 43.00,21.81 40.54,15.26 35.62,8.97 Z M 25.88,4.11 C 25.88,4.11 10.05,18.00 10.05,18.00 10.05,18.00 0.00,18.00 0.00,18.00 0.00,18.00 0.00,38.00 0.00,38.00 0.00,38.00 10.00,38.00 10.00,38.00 10.00,38.00 25.88,53.14 25.88,53.14 25.88,53.14 25.88,4.11 25.88,4.11 Z' /> </svg> ");
-     }
-      *[onpointerdown^="pleiFon"]:active::before {
-        top: 3px;
-        height: 11.5px;
-     }
-     @media screen and (max-width: 500px) {
-
-        *[onpointerdown^="pleiFon"] span {
-            position: relative;
-            top: 4px;
-        }
-
-        *[onpointerdown^="pleiFon"]::before {
-            width: 11px;
-            height: 11px;
-            right: 20%;
-        }
-        *[onpointerdown^="pleiFon"]:active::before {
-            top: 3px;
-            height: 10.5px;
-        }       
-    }
-}
 
 i {
     font-style: normal;
@@ -230,27 +223,16 @@ article:nth-of-type(odd) {
     text-shadow: 2px 2px 2px rgba(255, 255, 255, .2);   
 }
 
-pre {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
-    font-family: $monoto;
-    white-space: pre-wrap;
-    font-size: .7rem;
-    padding: .5rem;
-    margin: 0 0 1rem;
-    overflow-y: auto;
-    max-height: 320px;
-    box-shadow: inset 0 2px 4px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-}
+
 .alphabet {
     font-family: $monoto;
-    font-size: 1.36rem;
+    font-size: 1.4em;
     color: rgba(49, 98, 153, .5); 
-    >span{
+    >span, >span>span{
         display: block;
     }
     
-    @media screen and (max-width: 699px){
+    @media screen and (max-width: $breakthree){
         .nomobile{
             display: none;
         }
@@ -258,7 +240,7 @@ pre {
             display: block;
         }
     }
-    @media screen and (max-width: 349px){
+    @media screen and (max-width: $breakfive){
         >span>span>span {
             display: inline;
             text-align: center;

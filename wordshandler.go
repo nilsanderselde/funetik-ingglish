@@ -1,5 +1,5 @@
 // Nils Elde
-// https://gitlab.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 // This file contains the word list template logic
 
 package main
@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/global"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
+	"github.com/nilsanderselde/funetik-ingglish/dbconnect"
 )
 
 const (
@@ -125,7 +125,8 @@ COALESCE(flaagd, 'false')
 	if start >= num && global.RowCount >= start {
 		t.args.PreviousPage = pagePrefix + strconv.Itoa(start-num)
 	} else {
-		t.args.PreviousPage = pagePrefix + "0"
+		t.args.PreviousPage = ""
+		// t.args.PreviousPage = pagePrefix + "0"
 	}
 
 	// see if next page link should be hidden because there's no more results

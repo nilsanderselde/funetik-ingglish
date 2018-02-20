@@ -1,5 +1,5 @@
 // Nils Elde
-// https://gitlab.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package dbconnect
 
@@ -7,8 +7,8 @@ import (
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
-	"gitlab.com/nilsanderselde/funetik-ingglish/wordtools"
+	"github.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/wordtools"
 )
 
 // StatsInit is called on time to get the current stats for the

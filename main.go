@@ -1,5 +1,5 @@
 // Nils Elde
-// https://gitlab.com/nilsanderselde
+// https://github.com/nilsanderselde/funetik-ingglish
 
 package main
 
@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"os"
 
-	"gitlab.com/nilsanderselde/funetik-ingglish/dbconnect"
-	"gitlab.com/nilsanderselde/funetik-ingglish/global"
+	"github.com/nilsanderselde/funetik-ingglish/dbconnect"
+	"github.com/nilsanderselde/funetik-ingglish/global"
 )
 
 const (

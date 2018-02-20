@@ -24,22 +24,22 @@ $header_offset: .55em;
     th:nth-of-type(5),
     td:nth-of-type(5) {
         text-align: center;
-        @media (max-width: 299px) {
+        @media (max-width: 399px) {
             display: none;
         }
     }
     th:nth-of-type(3),
     td:nth-of-type(3) {
-        @media (max-width: 199px) {
+        @media (max-width: 299px) {
             display: none;
         }
     }
-    th:nth-of-type(2),
-    td:nth-of-type(2) {
-        @media (max-width: 119px) {
-            display: none;
-        }
-    }
+    // th:nth-of-type(2),
+    // td:nth-of-type(2) {
+    //     @media (max-width: 249px) {
+    //         display: none;
+    //     }
+    // }
     td {
         @media (max-width: 499px) {
             .info {
@@ -56,8 +56,8 @@ nav.index {
     text-align: center;
     margin-top: 10px;
     font-family: $roboto;
-    $small: 1.05rem;
-    $big: 1.1rem;
+    $small: .9rem;
+    $big: 1rem;
     vertical-align: bottom;
     cursor: default;
     font-size: 0;
@@ -114,20 +114,21 @@ nav.index {
         font-weight: normal;
         font-style: italic;
     }
-    @media screen and (max-width: 649px) /*and (min-width: 400px) */{
-        div {
-            display: block !important;
-        }
-    }
-    @media (max-width: 199px) {
+
+    @media (max-width: 29px) {
         display: none;
     }
     div {
-        display: inline;
+        display: block;
+    }
+    @media screen and (min-width: 4rem) {
+        div {
+            display: inline-block !important;
+        }
     }
     table {
         background: transparent;
-        width: 150px;
+        width: 10em;
         display: inline-block;
         text-align: left;
         font-size: .8rem;

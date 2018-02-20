@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{.Root}}/static/stylesheets/normalize.css">    
     <link rel="stylesheet" href="{{.Root}}/static/stylesheets/jquery-ui.min.css">    
-    <link rel="stylesheet" href="{{.Root}}/static/stylesheets/main.css?3">
+    <link rel="stylesheet" href="{{.Root}}/static/stylesheets/main.css?4">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
     <title>{{if .DisplayTrud}}{{.TitleTrud}}{{else}}{{.TitleFun}}{{end}} - Funetik Inggliš</title>
 </head>
 
 <body>
-    <div class="bggrad"></div>
+    <div class="bggrad">
     <header>
         <h1><img src="{{.Root}}/static/images/logo.png" width="400" height="261" alt="ÄØŽŠ">
         {{if not .SingleOrth}}<div id="orth"><a href="{{.ChangeOrth}}"{{if .DisplayTrud}} data-title="View in Phonetic English" class="info below">Vyw in Funetik Inggliš{{else}}>View in traditional English{{end}}</a></div>{{end}}</h1>
