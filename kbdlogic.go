@@ -7,6 +7,8 @@ import (
 	"net/http"
 )
 
+// Default values for keys (Chosen by frequency of use)
+// {unshifted, shifted, final/old/default, IPA, soundfile}
 var (
 	defTilde = []string{"`", "~", "", "", ""}
 	def1     = []string{"1", "!", "", "", ""}
@@ -21,7 +23,7 @@ var (
 	def0     = []string{"0", ")", "", "", ""}
 	defDash  = []string{"-", "_", "", "", ""}
 	defEq    = []string{"=", "+", "", "", ""}
-	defQ     = []string{"ä", "Ä", "", "", ""}
+	defQ     = []string{"ä", "Ä", "final", æIPA, "aa"}
 	defW     = []string{"w", "W", "", wIPA, "w"}
 	defE     = []string{"e", "E", "", ɛIPA, "e"}
 	defR     = []string{"r", "R", "", rIPA, "r"}
@@ -46,7 +48,7 @@ var (
 	defSemi  = []string{";", ":", "", "", ""}
 	defQt    = []string{"'", "\"", "", "", ""}
 	defZ     = []string{"z", "Z", "", zIPA, "z"}
-	defX     = []string{"x", "X", "", "", ""}
+	defX     = []string{"x", "X", "", "", ""} // unused, included for completeness
 	defC     = []string{"c", "C", "", tʃIPA, "tsh"}
 	defV     = []string{"v", "V", "", vIPA, "v"}
 	defB     = []string{"b", "B", "", bIPA, "b"}
@@ -131,12 +133,12 @@ func pickKeyboard(t *templateHandler, r *http.Request) {
 				defEq,
 			}
 			t.args.Kbd[1] = [][]string{
-				{"ä", "Ä", "final", æIPA, "aa"},
+				defQ,
 				defW,
 				defE,
 				defR,
 				defT,
-				defY,
+				{"y", "Y", "", ijIPA, "y"},
 				defU,
 				defI,
 				defO,
@@ -303,7 +305,7 @@ func pickKeyboard(t *templateHandler, r *http.Request) {
 				defEq,
 			}
 			t.args.Kbd[1] = [][]string{
-				{"ä", "Ä", "final", æIPA, "aa"},
+				defQ,
 				defW,
 				defE,
 				defR,
@@ -596,7 +598,7 @@ func pickKeyboard(t *templateHandler, r *http.Request) {
 			defEq,
 		}
 		t.args.Kbd[1] = [][]string{
-			{"ä", "Ä", "final", æIPA, "aa"},
+			defQ,
 			{"w", "W", "", uwIPA, "w"},
 			defE,
 			defR,
