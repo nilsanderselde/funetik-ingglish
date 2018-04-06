@@ -48,31 +48,31 @@
 <div id="kbd">
     <div class="row">
         {{range (index .Kbd 0)}}
-        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="wider hideoverflow"><span>Backspace</span></div>
     </div>
     <div class="row">
         <div class="wider"><span>Tab</span></div>
         {{range (index .Kbd 1)}}
-        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         </div>
 
     <div class="row">
         <div class="wider hideoverflow"><span>Caps Lock</span></div>
         {{range (index .Kbd 2)}}
-        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
         <div class="wider"><span>Enter</span></div>        
     </div>
 
     <div class="row">
-        <div class="shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
+        <div class="shift info above" title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
         {{range (index .Kbd 3)}}
-        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} data-title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
+        <div class="{{if (index . 2)}}{{index . 2}} {{end}}{{if (index . 3)}}info above nolink{{end}}"{{if (index . 3)}} title="{{index . 3}}"{{end}}{{if (index . 4)}} onpointerdown="pleiFon('{{index . 4}}');"{{end}}><span class="normal">{{index . 0}}</span><span class="shifted hidden">{{index . 1}}</span></div>
         {{end}}
-        <div class="shift info above" data-title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
+        <div class="shift info above" title="Click or press" onpointerdown="javascript:pressShift()"><span>Shift</span></div>
     </div>
     <div class="row bottom">
         <div class="wide"><span>Ctrl</span></div>

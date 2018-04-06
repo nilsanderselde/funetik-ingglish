@@ -24,7 +24,7 @@ table {
         color: #eee;
         line-height: 2em;
         border-right: 1px solid rgba(0, 0, 0, 0.4);
-        text-shadow: none;
+        // text-shadow: none;
         &:nth-last-of-type(1) {
             border: 0;
         }
@@ -41,7 +41,7 @@ table {
             >span {
                 padding-bottom: 1px;
                 border-bottom: 1px solid #eee;
-                transition: .2s border-color linear;
+                // transition: .2s border-color linear;
             }
             .nomobile {
                 @media (max-width: 499px) {

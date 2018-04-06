@@ -7,20 +7,20 @@
 <table id="words">
     <tr>
         <th id="nw">
-            <a href="?sortby=funsort&order={{if and (not .Reverse) (eq .SortBy "funsort")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span data-title="aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">New<span class="nomobile"> Spelling</span></span>{{if eq .SortBy "funsort"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
+            <a href="?sortby=funsort&order={{if and (not .Reverse) (eq .SortBy "funsort")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span title="aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">New<span class="nomobile"> Spelling</span></span>{{if eq .SortBy "funsort"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
         </th>
         <th id="old">
-            <a href="?sortby=trud&order={{if and (not .Reverse) (eq .SortBy "trud")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span data-title="abcdefghijklmnopqrstuvwxyz" class="info above">Old<span class="nomobile"> Spelling</span></span>{{if eq .SortBy "trud"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
+            <a href="?sortby=trud&order={{if and (not .Reverse) (eq .SortBy "trud")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span title="abcdefghijklmnopqrstuvwxyz" class="info above">Old<span class="nomobile"> Spelling</span></span>{{if eq .SortBy "trud"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
         </th>
         <th id="dist">
-            <a href="?sortby=dist&order={{if and (not .Reverse) (eq .SortBy "dist")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span data-title="Min # of changes 
+            <a href="?sortby=dist&order={{if and (not .Reverse) (eq .SortBy "dist")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span title="Min # of changes 
 to get from old to new" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
-            <span data-title="Part of Speech" class="info above nolink hover">PoS</span>
+            <span title="Part of Speech" class="info above nolink hover">PoS</span>
         </th>
         <th id="sil">
-            <span data-title="Syllables" class="info above nolink hover">Syls</span>
+            <span title="Syllables" class="info above nolink hover">Syls</span>
         </th>
     </tr>
     {{template "wordlist.html" .}}
@@ -31,20 +31,20 @@ to get from old to new" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i
 <table id="words">
     <tr>
         <th id="nw">
-            <a href="?sortby=funsort&order={{if and (not .Reverse) (eq .SortBy "funsort")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span data-title="aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">Nw<span class="nomobile"> Speling</span></span>{{if eq .SortBy "funsort"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
+            <a href="?sortby=funsort&order={{if and (not .Reverse) (eq .SortBy "funsort")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span title="aäeiywuøolrmnbpvfgkdtzsžšh" class="info above">Nw<span class="nomobile"> Speling</span></span>{{if eq .SortBy "funsort"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
         </th>
         <th id="old">
-            <a href="?sortby=trud&order={{if and (not .Reverse) (eq .SortBy "trud")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span data-title="abcdefghijklmnopqrstuvwxyz" class="info above">Old<span class="nomobile"> Speling</span></span>{{if eq .SortBy "trud"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
+            <a href="?sortby=trud&order={{if and (not .Reverse) (eq .SortBy "trud")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span title="abcdefghijklmnopqrstuvwxyz" class="info above">Old<span class="nomobile"> Speling</span></span>{{if eq .SortBy "trud"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
         </th>
         <th id="dist">
-            <a href="?sortby=dist&order={{if and (not .Reverse) (eq .SortBy "dist")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span data-title="Min # uv tšendžiz 
+            <a href="?sortby=dist&order={{if and (not .Reverse) (eq .SortBy "dist")}}desc{{else}}asc{{end}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}"><span title="Min # uv tšendžiz 
 tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i class="arrow sort {{if .Reverse}}down">{{else}}up">{{end}}</i>{{end}}</a>
         </th>
         <th id="pus">
-            <span data-title="Part uv Spytš" class="info above nolink hover">PuS</span>
+            <span title="Part uv Spytš" class="info above nolink hover">PuS</span>
         </th>
         <th id="sil">
-            <span data-title="Silubulz" class="info above nolink hover">Silz</span>
+            <span title="Silubulz" class="info above nolink hover">Silz</span>
         </th>
     </tr>
     {{template "wordlist.html" .}}
@@ -93,7 +93,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i 
                 }
             });
         </script>
-        <li><a href="{{.PreviousPage}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}" class="back info toleft" data-title="A or left arrow"><i class="arrow left blue"></i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{else}}
+        <li><a href="{{.PreviousPage}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}" class="back info toleft" title="A or left arrow"><i class="arrow left blue"></i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{else}}
         <li><a class="disabled"><i class="arrow left blue"></i> {{if .DisplayTrud}}Back{{else}}Bäk{{end}}</a></li>{{end}} {{if .NextPage}}
         <script>
             document.addEventListener("keyup", function (evt) {
@@ -104,7 +104,7 @@ tw get frum old tw nw" class="info above">Dist</span>{{if eq .SortBy "dist"}}<i 
                 }
             });
         </script>
-        <li><a href="{{.NextPage}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}" class="next info toright" data-title="D or right arrow">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i class="arrow right blue"></i></a></li>{{else}}
+        <li><a href="{{.NextPage}}&orth={{if .DisplayTrud}}trud{{else}}fun{{end}}" class="next info toright" title="D or right arrow">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i class="arrow right blue"></i></a></li>{{else}}
         <li><a class="disabled">{{if .DisplayTrud}}Next{{else}}Nekst{{end}} <i class="arrow right blue"></i></a></li>{{end}}
     </ul>
 </nav>

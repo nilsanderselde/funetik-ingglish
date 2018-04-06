@@ -31,6 +31,7 @@ html {
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
+    backface-visibility: hidden;
 }
 body{
     display: flex;
@@ -53,7 +54,7 @@ main {
     color: #222;
     display: block;
     font-size: .8rem;
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
+    // text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
     position: relative;
     z-index: 1;
     img {
@@ -130,7 +131,7 @@ h3 {
 
 
 a {
-    transition: color .2s linear, text-shadow .2s linear, border-color .2s linear;
+    // transition: color .2s linear, text-shadow .2s linear, border-color .2s linear;
     text-decoration: none;
     &:link,
     &:visited {
@@ -141,7 +142,7 @@ a {
     &:active {
         color: #333;
         border-color: #333;
-        text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+        // text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
     }
     &.icon {
         text-decoration: none;

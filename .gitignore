@@ -8,3 +8,5 @@ createtar_linux.py
 deploy.py
 Thumbs.db
 npm-debug.log
+package.json
+package-lock.json

@@ -43,7 +43,7 @@ $header_offset: .55em;
     td {
         @media (max-width: 499px) {
             .info {
-                transition: 0;
+                // transition: 0;
                 border-width: 0px;
             }
             overflow-x: auto;
@@ -51,7 +51,7 @@ $header_offset: .55em;
     }
 }
 nav.index {
-    text-shadow: none;
+    // text-shadow: none;
     
     text-align: center;
     margin-top: 10px;
@@ -80,13 +80,12 @@ nav.index {
             }
             a {
                 padding: 1px;
-                
                 border: 1px solid rgb(49, 98, 153);
                 &:active, &:focus {
                     background: rgb(49, 98, 153);
                     border-color: black;
                     color: white;
-                    transition: none;
+                    // transition: none;
                 }
             }      
         }
@@ -99,8 +98,6 @@ nav.index {
             font-weight: bold;
         }
     }
-
-
 }
 
 #legend {
@@ -180,7 +177,7 @@ nav.index {
         &:hover,
         &:active {
             color: #333;
-            text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
+            // text-shadow: 0px 3px 6px rgba(97, 164, 241, 0.67);
         }
     }
     i {

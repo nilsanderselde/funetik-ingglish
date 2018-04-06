@@ -10,7 +10,7 @@
 
         {{else}}
         <tr>
-            <td><span data-title="{{index . 2}}" class="info toright nolink hover">{{index . 1}}</span>{{if $isDev}}<a href="{{$currentpage}}&id={{index . 0}}&r={{$random}}#{{index . 0}}" id="{{index . 0}}" class="icon">{{if eq (index . 7) "true"}}🏴{{else}}🏳️{{end}}</a>{{end}}</td>
+            <td><span title="{{index . 2}}" class="info toright nolink hover">{{index . 1}}</span>{{if $isDev}}<a href="{{$currentpage}}&id={{index . 0}}&r={{$random}}#{{index . 0}}" id="{{index . 0}}" class="icon">{{if eq (index . 7) "true"}}🏴{{else}}🏳️{{end}}</a>{{end}}</td>
             <td><a href="https://www.merriam-webster.com/dictionary/{{index . 3}}"{{if not $isDev}} target="_blank"{{end}}>{{index . 3}}</a></td>
             <td>{{index . 4}}</td>
             <td>{{index . 5}}</td>

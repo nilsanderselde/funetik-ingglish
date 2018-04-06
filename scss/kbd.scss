@@ -9,7 +9,7 @@
     // min-width: 240px;
     user-select: none;    
     cursor: default;
-    text-shadow: none;
+    // text-shadow: none;
     position: relative;
     z-index: 20;
     
@@ -143,7 +143,7 @@
             background: rgb(49, 98, 153);
             border-color: rgb(64, 120, 180);            
             color: white;
-            text-shadow: 1px 1px 2px rgba(49, 98, 153, 1);
+            // text-shadow: 1px 1px 2px rgba(49, 98, 153, 1);
             animation: keyglow 4s linear infinite;
             width: 70pt;
             @media screen and (max-width: $breakone) {
@@ -226,7 +226,7 @@
 }
 
 .versions {
-    text-shadow: none;    
+    // text-shadow: none;
     $small: .8rem;
     $big: 1rem;
     $wide: calc(2rem+3px);
@@ -282,7 +282,7 @@
             background: rgb(49, 98, 153);
             border-color: black;
             color: white;
-            transition: none;
+            // transition: none;
             
         }
     }
