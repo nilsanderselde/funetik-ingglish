@@ -19,13 +19,7 @@ html {
     background: #eee;
     color: #333;
     font-family: $roboto;
-    font-size: 18pt;
-    @media screen and (max-width: $breakzero) {
-        font-size: 16pt;
-    }
-    @media screen and (max-width: $breakone) {
-        font-size: 12pt;
-    }
+    // font-size: 18pt;
     background-image: url(../images/ulimpik-naashinul-park-2560w.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -37,6 +31,12 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    @media screen and (max-width: $breakzero) {
+        font-size: .88em;
+    }
+    @media screen and (max-width: $breakone) {
+        font-size: .67em;
+    }
 }
 
 .bggrad{
