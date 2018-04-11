@@ -31,11 +31,26 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+body, nav.index li{
+    font-size: 1.2em;
     @media screen and (max-width: $breakzero) {
-        font-size: .88em;
+        font-size: .95em;
     }
     @media screen and (max-width: $breakone) {
-        font-size: .67em;
+        font-size: .9em;
+    }
+    @media screen and (max-width: $breaktwo) {
+        font-size: .85em;
+    }
+    @media screen and (max-width: $breakthree) {
+        font-size: .8em;
+    }
+    @media screen and (max-width: $breakfour) {
+        font-size: .75em;
+    }
+    @media screen and (max-width: $breakfive) {
+        font-size: .7em;
     }
 }
 
@@ -53,7 +68,7 @@ body{
 main {
     color: #222;
     display: block;
-    font-size: .8rem;
+    // font-size: .8rem;
     // text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
     position: relative;
     z-index: 1;
@@ -69,9 +84,9 @@ main {
     a:active {
         border-color: black;
     }
-    @media screen and (max-width: $breakfour) {
-        padding-left: 1px !important;
-        padding-right: 1px !important;
+    @media screen and (max-width: $breakthree) {
+        padding-left: 2px !important;
+        padding-right: 2px !important;
     }
 }
 
@@ -83,8 +98,7 @@ main {
 main,
 header,
 #words,
-table.stats,
-#legend {
+table.stats {
     max-width: $pagewidth;
     width: 100%;
     padding: 0 2rem 2rem 2rem;

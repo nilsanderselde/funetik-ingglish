@@ -111,7 +111,7 @@ textarea {
 }
 
 input[type="submit"] {
-    font-size: .6rem;
+    font-size: 1em;
     font-weight: bold;
     display: block;
     margin: 10px 1px 1px 1px;
@@ -145,8 +145,8 @@ input[type="submit"] {
 
 i {
     font-style: normal;
-    width: .6rem;
-    height: .6rem;
+    width: .9rem;
+    height: .9rem;
     display: inline-block;
     @media (max-width: 219px) {
         display: none;

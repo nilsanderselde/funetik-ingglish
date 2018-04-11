@@ -29,7 +29,7 @@ nav {
     display: block;
     user-select: none;
     a {
-        font-size: 1.2em;
+        font-size: 1.6em;
         &:link,
         &:visited {
             border: 0;
@@ -147,7 +147,7 @@ nav {
     text-align: center;
     line-height: 0;
     font-style: italic;
-    font-size: 1rem;
+    font-size: .8em;
     // text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
     
     
@@ -180,7 +180,7 @@ footer {
     color: white;
     // text-shadow: rgba(0, 0, 0, .5);
     text-align: center;
-    font-size: .7rem;
+    // font-size: .7rem;
     margin: 0 auto;
     width: 100%;
     max-width: $pagewidth;
@@ -199,5 +199,6 @@ footer {
     p{
         padding: 20px 10px;
         margin: 0;
+        font-size: .8em;
     }
 }
